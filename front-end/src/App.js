@@ -4,26 +4,31 @@ import './App.css';
 import 'antd/dist/antd.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // Components
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
 import {BrowserRouter,Switch, Route} from "react-router-dom";
+import SiteNavbar from './Components/SiteNavbar';
+import SiteFooter from './Components/SiteFooter';
+import pageData from './Data/pageData'
 // Pages
-import Home from './Pages/Home'
-import About from './Pages/About/about'
 
 function App() {
+
+  const displayLinks = pageData.map((page) => {
+    return (
+      <Route path={`/${page.name}`}>
+        {page.display}
+      </Route>
+    )
+  })
+
   return (
     <BrowserRouter>
-      <Navbar />
+      <SiteNavbar />
+      <div className="site-container">
         <Switch>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
+          {displayLinks}
         </Switch>
-      <Footer />
+      </div>
+      <SiteFooter />
     </BrowserRouter>
   );
 }

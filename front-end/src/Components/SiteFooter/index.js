@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Footer () {
+function SiteFooter () {
     return (
         <h6>Footer</h6>
     )
 }
 
-export default Footer;
+export default SiteFooter;
