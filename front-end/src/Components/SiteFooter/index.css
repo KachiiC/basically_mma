@@ -1,0 +1,14 @@
+footer {
+    padding-top:25px;
+    border-top: 1px solid #e9ecef;
+}
+
+.footer-items {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.footer-items .footer-logos {
+    margin: 15px 25px;
+}

@@ -4,32 +4,32 @@ import './App.css';
 import 'antd/dist/antd.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // Components
-import {BrowserRouter,Switch, Route} from "react-router-dom";
+import {BrowserRouter, Switch, Route} from "react-router-dom";
 import SiteNavbar from './Components/SiteNavbar';
 import SiteFooter from './Components/SiteFooter';
-import pageData from './Data/pageData'
-// Pages
+import pagesData from './Data/pagesData'
+
 
 function App() {
 
-  const displayLinks = pageData.map((page) => {
+  const displayLinks = pagesData.map((page) => {
     return (
-      <Route path={`/${page.name}`}>
+      <Route path={page.name}>
         {page.display}
       </Route>
     )
   })
 
   return (
-    <BrowserRouter>
-      <SiteNavbar />
-      <div className="site-container">
-        <Switch>
-          {displayLinks}
-        </Switch>
-      </div>
-      <SiteFooter />
-    </BrowserRouter>
+        <BrowserRouter>
+          <SiteNavbar />
+          <div className="site-container">
+            <Switch>
+              {displayLinks}
+            </Switch>
+          </div>
+          <SiteFooter />
+        </BrowserRouter>
   );
 }
 
