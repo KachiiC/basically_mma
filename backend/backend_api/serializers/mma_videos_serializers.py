@@ -7,18 +7,18 @@ class FightHighlightsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = FightHighlights
-        fields = ('title', 'video_id', 'thumbnail_url', 'description')
+        fields = ('pk', 'title', 'video_id', 'thumbnail_url', 'description')
 
 
 class UFCVideosSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = UFCVideos
-        fields = ('title', 'video_id', 'thumbnail_url', 'description')
+        fields = ('pk', 'title', 'video_id', 'thumbnail_url', 'description')
 
 
 class BellatorVideosSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = BellatorVideos
-        fields = ('title', 'video_id', 'thumbnail_url', 'description')
+        fields = ('pk', 'title', 'video_id', 'thumbnail_url', 'description')

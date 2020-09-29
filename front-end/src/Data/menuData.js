@@ -2,7 +2,7 @@ const navbarMenu = [
     
     {   name: "What is MMA?",
         type: "basic",
-        link: "#"
+        link: "what-is-mma"
     },
     {   name: "History of MMA",
         type: "basic",
