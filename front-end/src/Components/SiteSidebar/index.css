@@ -1,3 +1,8 @@
+.sidebar-container {
+    width: 33.3%;
+    margin-top: 30px;
+}
+
 .single-widget-area {
     margin-bottom: 40px;
 }
@@ -6,7 +11,7 @@
     background: #000;
     color: #ffffff;
     height: 40px;
-    width: 90%;
+    width: 100%;
     padding: 0px 15px;
     margin-bottom: 30px;
     line-height: 40px;
@@ -24,7 +29,7 @@
 .sidebar-section-icon {
     height: 150px;
     width: 150px;
-    margin: 20px auto;
+    margin: 20px 0px;
     border-radius: 50%;
 }
 
@@ -33,7 +38,7 @@
 }
 
 .sidebar-list {
-    padding: 10px 15px 16px;
+    padding: 10px 16px 16px;
     height: 160px;
     width: 380px;
     display: inline-block;
@@ -42,7 +47,7 @@
 .sidebar-list img {
     margin-right: 8px;
     min-width: 200px;
-    min-height: 125px;
+    min-height: 120px;
     width: 50%;
     float: left;
 }

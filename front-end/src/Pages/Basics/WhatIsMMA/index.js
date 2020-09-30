@@ -1,11 +1,7 @@
 import React from 'react'
-// CSS
-
 // Components
 import SiteSignature from '../../../Components/SiteSidebar/SiteSignature'
-import MMANews from '../../../Components/SiteSidebar/MMANews'
 import MMAHighlights from '../../../Components/SiteSidebar/MMAHighlights'
-import TwitterWidget from '../../../Components/SiteSidebar/TwitterWidget'
 
 function WhatIsMMA () {
 
@@ -23,12 +19,6 @@ function WhatIsMMA () {
                     in contests with relatively few rules. Later, individual fighters incorporated multiple 
                     martial arts into their style. 
                 </p>
-                <div className="video-container">
-                    <h4>The First UFC event</h4>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sXm16YmM0BQ" 
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-                    picture-in-picture" allowfullscreen title="ufc 1" />                
-                </div>
                 <p>
                     Mixed martial arts is (by definition) the ability to mix serval disciplines whilst competing. 
                     In the early days of mixed martial arts, fighters only knew how to do one thing. They never 
@@ -39,13 +29,17 @@ function WhatIsMMA () {
                     important is to know how that style is going to match up with their opponent’s style (or styles) 
                     and which is going to be more effective.
                 </p>
+                <div className="video-container">
+                    <h4>The First UFC event</h4>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sXm16YmM0BQ" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture" allowfullscreen title="ufc 1" />                
+                </div>
 
             </div>
             <div className="sidebar-container">
                 <SiteSignature />
-                <MMANews />
                 <MMAHighlights />
-                <TwitterWidget />
             </div>
         </div>
     )

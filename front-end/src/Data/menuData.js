@@ -6,7 +6,7 @@ const navbarMenu = [
     },
     {   name: "History of MMA",
         type: "basic",
-        link: "#"
+        link: "history-of-mma"
     },
     {   name: "Rules of MMA",
         type: "basic",

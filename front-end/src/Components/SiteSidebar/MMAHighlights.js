@@ -53,7 +53,7 @@ function MMAHighlights (){
     return (
         <div className="single-widget-area">
             <div className="widget-title">
-                <h6>MMA News</h6>
+                <h6>MMA Highlights</h6>
             </div>
             {renderLogic}
         </div>
