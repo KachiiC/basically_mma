@@ -5,7 +5,9 @@ import About from '../Pages/Others/About/about'
 import Store from '../Pages/Others/Store/store'
     // Basic
     import WhatIsMMA from '../Pages/Basics/WhatIsMMA'
-import HistoryOfMMA from '../Pages/Basics/HistoryOfMMA'
+    import HistoryOfMMA from '../Pages/Basics/HistoryOfMMA'
+    import RulesOfMMA from '../Pages/Basics/RulesOfMMA'
+import TestPage from '../Pages/Test'
 
 const pagesData = [
     {
@@ -24,6 +26,16 @@ const pagesData = [
     {
         name:"/history-of-mma",
         display: <HistoryOfMMA />
+    },
+    {
+        name:"/rules-of-mma",
+        display: <RulesOfMMA />
+    },
+    // Advanced
+    // Test Page
+    {
+        name:"/test",
+        display: <TestPage />
     },
     {
         name: "",

@@ -1,0 +1,9 @@
+.rules-tab-background {
+    background-color: #F8F8FF;
+    min-height: 500px;
+}
+
+.rules-header {
+    text-align: center;
+    margin: 20px 0px;
+}

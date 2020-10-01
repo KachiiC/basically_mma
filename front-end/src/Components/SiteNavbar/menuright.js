@@ -1,6 +1,6 @@
 import React from 'react'
 // CSS
-import {Col} from 'react-bootstrap'
+
 // Components
 import {Link} from 'react-router-dom' 
 import menuData from '../../Data/menuData'
@@ -20,11 +20,9 @@ function Menuright () {
     })
 
     return (
-        <Col xs={4}>
-            <div className="navbar-nav nav-border">
+            <div className="navbar-nav nav-border navbar-section">
                 {displayTopMenu}
             </div>
-        </Col>
     )
 }
 

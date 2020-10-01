@@ -1,7 +1,6 @@
 import React from 'react'
 // CSS
 import './index.css'
-import {Col} from 'react-bootstrap'
 // Components
 import {Link} from 'react-router-dom'
 import SiteDropdown from './SiteDropdown'
@@ -9,13 +8,11 @@ import MenuRight from './menuright'
 
 function SiteNavbar () {
     return (
-        <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="mainNav">
+        <nav className="navbar navbar-expand-lg fixed-top bg-light" id="mainNav">
             < SiteDropdown />  
-            <Col xs={4}>
-                <div className="navbar-brand">
-                    <Link path to="/">Basically MMA</Link>
-                </div>
-            </Col>
+            <div className="navbar-brand navbar-section">
+                <Link path to="/">Basically MMA</Link>
+            </div>
             < MenuRight />
         </nav>
     )

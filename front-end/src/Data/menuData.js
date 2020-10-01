@@ -10,7 +10,7 @@ const navbarMenu = [
     },
     {   name: "Rules of MMA",
         type: "basic",
-        link: "#"
+        link: "rules-of-mma"
     },
     {   name: "MMA Dictionary",
         type: "basic",
