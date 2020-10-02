@@ -1,5 +1,5 @@
 const navbarMenu = [
-    
+    // Basics
     {   name: "What is MMA?",
         type: "basic",
         link: "what-is-mma"
@@ -14,8 +14,9 @@ const navbarMenu = [
     },
     {   name: "MMA Dictionary",
         type: "basic",
-        link: "#"
+        link: "mma-dictionary"
     },    
+    // Advanced
     {   name: "Fundamentals",
         type: "advanced",
         link: "#"
@@ -37,6 +38,7 @@ const navbarMenu = [
         type: "advanced",
         link: "#"
     },
+    // MMA World
     {
         name: "MMA Promotions",
         type: "MMA World",
@@ -57,6 +59,7 @@ const navbarMenu = [
         type: "MMA World",
         link: "#"
     },
+    // Other
     {
         name: "Store",
         type: "menu",

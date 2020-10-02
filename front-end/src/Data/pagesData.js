@@ -8,6 +8,7 @@ import Store from '../Pages/Others/Store/store'
     import HistoryOfMMA from '../Pages/Basics/HistoryOfMMA'
     import RulesOfMMA from '../Pages/Basics/RulesOfMMA'
 import TestPage from '../Pages/Test'
+import MMADictionary from '../Pages/Basics/MMADictionary'
 
 const pagesData = [
     {
@@ -30,6 +31,10 @@ const pagesData = [
     {
         name:"/rules-of-mma",
         display: <RulesOfMMA />
+    },
+    {
+        name:"/mma-dictionary",
+        display: <MMADictionary />
     },
     // Advanced
     // Test Page

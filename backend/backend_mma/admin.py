@@ -1,3 +1,4 @@
 from django.contrib import admin
+from .models.dictionary_models import *
 
-# Register your models here.
+admin.site.register(Dictionary)
