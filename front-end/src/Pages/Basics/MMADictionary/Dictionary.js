@@ -42,8 +42,8 @@ function Dictionary() {
     ):((isDisplayable)?(renderListOfTerms):(<Empty />))
 
     return (
-        <div className="site-section-container">
-            <h4 className="site-section-title"> MMA Dictionary</h4>
+        <div className="main-container">
+            <h4> MMA Dictionary</h4>
             <Collapse>
                 {renderLogic}
             </Collapse>
