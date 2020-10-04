@@ -8,10 +8,10 @@ urlpatterns = [
     path('mma_news/<int:pk>', mma_news_views.news_list_detail),
     # MMA Videos
     path('ufc_playlist/', mma_videos_views.ufc_playlist),
-    path('bellator_list/', mma_videos_views.bellator_playlist),
+    path('bellator_playlist/', mma_videos_views.bellator_playlist),
     path('highlights_playlist/', mma_videos_views.highlights_playlist),
     # MMA Videos Detail
     path('ufc_playlist/<int:pk>', mma_videos_views.ufc_playlist_detail),
-    path('bellator_list/<int:pk>', mma_videos_views.bellator_playlist_detail),
+    path('bellator_playlist/<int:pk>', mma_videos_views.bellator_playlist_detail),
     path('highlights_playlist/<int:pk>', mma_videos_views.highlights_playlist_detail),
 ]

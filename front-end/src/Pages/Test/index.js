@@ -1,10 +1,16 @@
 import React from 'react'
+// CSS
 import './index.css'
+// Components
+import VideoCarousel from '../../Components/VideoCarousel'
+
 
 function TestPage () {
     
     return (
-        <h1>Test Page</h1>
+        <>
+            <VideoCarousel />
+        </>
     )
 
 }

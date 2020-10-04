@@ -6,7 +6,7 @@ import '@brainhubeu/react-carousel/lib/style.css'
 import Icon from 'react-fa'
 import Carousel from '@brainhubeu/react-carousel';
 
-function FightHighlights (props){
+function UFCFights (props){
     
   const [isFetching, setIsFetching] = useState(true)
   const [youtube, setYoutube] = useState([]) 
@@ -14,7 +14,7 @@ function FightHighlights (props){
 
 
   useEffect(() => {
-      fetch("http://127.0.0.1:8000/backend_api/highlights_playlist") 
+      fetch("http://127.0.0.1:8000/backend_api/ufc_playlist") 
       .then((response) => { 
           return response.json() 
       })
@@ -64,16 +64,17 @@ function FightHighlights (props){
 
   return (
         <div className="video-slider-container">
-            <h5>Fight Highlights</h5>
-            <Carousel infinite addArrowClickHandler slidesPerScroll={3} slidesPerPage={3}
-            arrowRight={<Icon size="2x" name="angle-double-right" />}
-            arrowLeft={<Icon size="2x" name="angle-double-left" />}
-            >
-                {renderLogic}
-            </Carousel>
+            <h5>UFC Fights</h5>
+              <Carousel infinite addArrowClickHandler slidesPerScroll={3} slidesPerPage={3}
+                arrowRight={<Icon size="2x" name="angle-double-right" />}
+                arrowLeft={<Icon size="2x" name="angle-double-left" />}
+              >
+                  {renderLogic}
+              </Carousel>
         </div>
+
   )
 
 }
 
-export default FightHighlights
+export default UFCFights;

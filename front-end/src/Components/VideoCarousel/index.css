@@ -1,0 +1,11 @@
+.video-slider-container {
+    margin: 10px 0px 30px;
+}
+.video-slider-container h5 {
+    margin: 0 !important;
+    text-decoration: underline;
+}
+.video-slider-image {
+    height: 200px;
+    width: 356px;   
+}
