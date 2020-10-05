@@ -12,6 +12,7 @@ import MMADictionary from '../Pages/Basics/MMADictionary'
 import Fundamentals from '../Pages/Advanced/Fundamentals'
 // Other
 import TestPage from '../Pages/Test'
+import Techniques from '../Pages/Advanced/Techniques'
 
 const pagesData = [
     {
@@ -43,6 +44,10 @@ const pagesData = [
     {
         name:"/fundamentals",
         display: <Fundamentals />
+    },
+    {
+        name:"/techniques",
+        display: <Techniques />
     },
     // Test Page
     {

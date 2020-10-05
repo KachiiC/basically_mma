@@ -1,6 +1,6 @@
 from rest_framework import serializers
 # My Models
-from backend_mma.models.dictionary_models import *
+from backend_mma.models.dictionary_model import *
 
 
 class DictionarySerializer(serializers.ModelSerializer):  # MMA News

@@ -1,22 +1,22 @@
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import api_view
-from backend_mma.models.dictionary_model import *
-from backend_mma.serializers.dictionary_serializers import *
+from backend_mma.models.techniques_model import *
+from backend_mma.serializers.techniques_serializers import *
 
 
 @api_view(['GET', 'POST'])
-def dictionary_list(request):
+def techniques_list(request):
     if request.method == 'GET':
 
-        data = Dictionary.objects.all()
+        data = Techniques.objects.all()
 
-        serializer = DictionarySerializer(data, context={'request': request}, many=True)
+        serializer = TechniquesSerializer(data, context={'request': request}, many=True)
 
         return Response(serializer.data)
 
     elif request.method == 'POST':
-        serializer = DictionarySerializer(data=request.data, context={'request': request}, many=True)
+        serializer = TechniquesSerializer(data=request.data, context={'request': request}, many=True)
         if serializer.is_valid():
             serializer.save()
             return Response(status=status.HTTP_201_CREATED)
@@ -25,9 +25,9 @@ def dictionary_list(request):
 
 
 @api_view(['GET'])
-def dictionary_detail(request, pk):
-    term = Dictionary.objects.get(pk=pk)
+def techniques_detail(request, pk):
+    term = Techniques.objects.get(pk=pk)
 
-    serializer = DictionarySerializer(term)
+    serializer = TechniquesSerializer(term)
 
     return Response(serializer.data, status=status.HTTP_200_OK)

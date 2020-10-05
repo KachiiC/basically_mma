@@ -23,7 +23,7 @@ const navbarMenu = [
     },
     {   name: "Techniques",
         type: "advanced",
-        link: "#"
+        link: "techniques"
     },    
     {   name: "Fight Strategies",
         type: "advanced",
