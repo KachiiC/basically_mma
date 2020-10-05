@@ -9,8 +9,8 @@ function MMADictionary(props) {
 
     return (
         <>
-        <Introduction />
-        <DictionaryData />
+            <Introduction />
+            <DictionaryData />
         </>
     );
 }

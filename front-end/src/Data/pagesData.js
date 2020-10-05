@@ -3,12 +3,15 @@ import React from 'react'
 import Home from '../Pages/Others/Home'
 import About from '../Pages/Others/About/about'
 import Store from '../Pages/Others/Store/store'
-    // Basic
-    import WhatIsMMA from '../Pages/Basics/WhatIsMMA'
-    import HistoryOfMMA from '../Pages/Basics/HistoryOfMMA'
-    import RulesOfMMA from '../Pages/Basics/RulesOfMMA'
-import TestPage from '../Pages/Test'
+// Basic
+import WhatIsMMA from '../Pages/Basics/WhatIsMMA'
+import HistoryOfMMA from '../Pages/Basics/HistoryOfMMA'
+import RulesOfMMA from '../Pages/Basics/RulesOfMMA'
 import MMADictionary from '../Pages/Basics/MMADictionary'
+// Advanced
+import Fundamentals from '../Pages/Advanced/Fundamentals'
+// Other
+import TestPage from '../Pages/Test'
 
 const pagesData = [
     {
@@ -37,6 +40,10 @@ const pagesData = [
         display: <MMADictionary />
     },
     // Advanced
+    {
+        name:"/fundamentals",
+        display: <Fundamentals />
+    },
     // Test Page
     {
         name:"/test",

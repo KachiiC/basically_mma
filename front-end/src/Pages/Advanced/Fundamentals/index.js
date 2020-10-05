@@ -1,28 +1,28 @@
 import React from 'react'
-// CSS
-import './index.css'
 // Components
-import Introduction from './Tabs/Introduction'
-import Tabs from './Tabs'
+import FundamentalCards from './FundamentalCards'
+import FundamentalsIntroduction from './Introduction'
+import SiteSignature from '../../../Components/SiteSidebar/SiteSignature'
 import MMAHighlights from '../../../Components/SiteSidebar/MMAHighlights'
 import MMANews from '../../../Components/SiteSidebar/MMANews'
 
+function Fundamentals () {
 
-function RulesOfMMA () {
 
     return (
         <div className="site-row">
             <div className="main-container">
-                <Introduction />
-                <Tabs />
+                <h1>Fundamentals</h1>
+                <FundamentalsIntroduction />
+                <FundamentalCards />
             </div>
             <div className="sidebar-container">
+                <SiteSignature />
                 <MMAHighlights />
                 <MMANews />
             </div>
         </div>
+
     )
-
 }
-
-export default RulesOfMMA
+export default Fundamentals

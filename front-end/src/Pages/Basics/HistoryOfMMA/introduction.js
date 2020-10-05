@@ -2,9 +2,10 @@ import React from 'react'
 
 
 function Introduction() {
+    
     return (
         <>
-            <h2 className="site-title">History of Mixed Martial Arts</h2>
+            <h1>History of Mixed Martial Arts</h1>
             <p> 
                 Mixed Martial Arts (MMA) has been one of the fastest rising sports 
                 in the world for the better part of the last two decades. In modern 

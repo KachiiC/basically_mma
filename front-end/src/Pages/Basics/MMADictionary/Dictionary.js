@@ -42,12 +42,12 @@ function Dictionary() {
     ):((isDisplayable)?(renderListOfTerms):(<Empty />))
 
     return (
-        <div className="main-container">
+        <>
             <h4> MMA Dictionary</h4>
             <Collapse>
                 {renderLogic}
             </Collapse>
-        </div>
+        </>
     );
 
 }

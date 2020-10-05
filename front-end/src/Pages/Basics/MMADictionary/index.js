@@ -8,10 +8,12 @@ import Introduction from './Introduction'
 function MMADictionary(props) {
 
     return (
-        <>
+
+        <div className="main-container">
             <Introduction />
             <Dictionary />
-        </>
+        </div>
+        
     );
 }
 

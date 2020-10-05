@@ -3,7 +3,7 @@ import React from 'react';
 function Introduction (){
     return (
         <>
-            <h2>Rules of MMA</h2>
+            <h1>Rules of MMA</h1>
             <div>
                 <p>Most rule sets for mixed martial arts competitions have evolved since the early 
                     days of UFC 1 and Vale Tudo. As the knowledge about fighting techniques spread 

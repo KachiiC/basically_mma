@@ -4,11 +4,12 @@ import FightHighlights from './FightHighlights'
 import UFCFights from './UFCFights'
 
 function VideoCarousel () {
+    
     return (
         <>
-        <BellatorFights />
-        <UFCFights />
-        <FightHighlights />
+            <BellatorFights />
+            <UFCFights />
+            <FightHighlights />
         </>
     )
 }

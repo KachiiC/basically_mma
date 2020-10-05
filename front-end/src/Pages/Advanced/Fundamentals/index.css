@@ -1,0 +1,13 @@
+.fundamentals-card-container {
+    text-align: center;
+    width: 50%;
+}
+
+.fundamentals-card {
+    margin: auto;   
+}
+
+.fundamentals-row {
+    display: flex;
+    flex-wrap: wrap;
+}

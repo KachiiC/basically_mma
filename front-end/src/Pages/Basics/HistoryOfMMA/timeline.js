@@ -3,7 +3,7 @@ import React from 'react'
 import "./index.css"
 // Components
 import {Timeline} from 'antd';
-import TimelineData from '../../../Data/timelineData'
+import TimelineData from '../../../Data/Basics/timelineData'
 
 
 function MMATimeline(props) {

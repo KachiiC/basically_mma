@@ -19,7 +19,7 @@ const navbarMenu = [
     // Advanced
     {   name: "Fundamentals",
         type: "advanced",
-        link: "#"
+        link: "fundamentals"
     },
     {   name: "Techniques",
         type: "advanced",
