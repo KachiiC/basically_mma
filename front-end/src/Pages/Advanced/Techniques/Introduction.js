@@ -3,8 +3,8 @@ import React from 'react'
 function Introduction() {
     return (
         <>
-        <h2 className="site-title">Techniques and Positions</h2>
-        <div class="site-block-content">
+        <h1>Techniques and Positions</h1>
+        <div>
             <p>Techniques in MMA are generally categorised as either striking and 
                 grappling techniques. Striking is any technique which involves punches, 
                 kicks, elbows or knees. Although strikes can be thrown on the ground in MMA 
