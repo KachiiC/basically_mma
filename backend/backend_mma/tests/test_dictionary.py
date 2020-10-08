@@ -10,10 +10,12 @@ class DictionaryTest(APITestCase):
 
     expected = [
         Dictionary(
+            pk=1,
             name="jab",
             definition="A fast strike with the lead hand"
         ),
         Dictionary(
+            pk=2,
             name="cross",
             definition="A power strike with the rear hand"
         ),
