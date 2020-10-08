@@ -2,9 +2,7 @@ import React from 'react'
 // Components
 import FundamentalCards from './FundamentalCards'
 import FundamentalsIntroduction from './Introduction'
-import SiteSignature from '../../../Components/SiteSidebar/SiteSignature'
-import MMAHighlights from '../../../Components/SiteSidebar/MMAHighlights'
-import MMANews from '../../../Components/SiteSidebar/MMANews'
+import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 
 function Fundamentals () {
 
@@ -16,11 +14,7 @@ function Fundamentals () {
                 <FundamentalsIntroduction />
                 <FundamentalCards />
             </div>
-            <div className="sidebar-container">
-                <SiteSignature />
-                <MMAHighlights />
-                <MMANews />
-            </div>
+            <SiteSidebarLong />
         </div>
 
     )

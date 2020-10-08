@@ -4,10 +4,7 @@ import './index.css'
 // Sections
 import Timeline from './timeline'
 import Introduction from './introduction'
-import SiteSignature from '../../../Components/SiteSidebar/SiteSignature'
-import MMANews from '../../../Components/SiteSidebar/MMANews'
-import MMAHighlights from '../../../Components/SiteSidebar/MMAHighlights'
-import TwitterWidget from '../../../Components/SiteSidebar/TwitterWidget'
+import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 
 
 function HistoryOfMMA () {
@@ -18,12 +15,7 @@ function HistoryOfMMA () {
                 <Introduction />
                 <Timeline />
             </div>
-            <div className="sidebar-container">
-                <SiteSignature />
-                <MMANews/>
-                <MMAHighlights />
-                <TwitterWidget />
-            </div>
+            <SiteSidebarLong />
         </div>
     );
 }

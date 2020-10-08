@@ -4,8 +4,8 @@ import './index.css'
 // Components
 import Introduction from './Tabs/Introduction'
 import Tabs from './Tabs'
-import MMAHighlights from '../../../Components/SiteSidebar/MMAHighlights'
-import MMANews from '../../../Components/SiteSidebar/MMANews'
+import SiteSidebarShort from '../../../Components/SiteSidebar/SiteSidebarShort'
+
 
 
 function RulesOfMMA () {
@@ -16,10 +16,7 @@ function RulesOfMMA () {
                 <Introduction />
                 <Tabs />
             </div>
-            <div className="sidebar-container">
-                <MMAHighlights />
-                <MMANews />
-            </div>
+            <SiteSidebarShort />
         </div>
     )
 

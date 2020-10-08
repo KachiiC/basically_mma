@@ -1,8 +1,8 @@
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import api_view
-from backend_mma.models.dictionary_model import *
-from backend_mma.serializers.dictionary_serializers import *
+from backend_mma.models.dictionary_model import Dictionary
+from backend_mma.serializers.dictionary_serializers import DictionarySerializer
 
 
 @api_view(['GET', 'POST'])

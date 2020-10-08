@@ -4,9 +4,7 @@ import './index.css'
 //Components
 import Introduction from './Introduction.js';
 import TechniquesList from './TechniquesList'
-import SiteSignature from '../../../Components/SiteSidebar/SiteSignature'
-import MMAHighlights from '../../../Components/SiteSidebar/MMAHighlights'
-import MMANews from '../../../Components/SiteSidebar/MMANews'
+import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 
 
 function Techniques() {
@@ -17,11 +15,7 @@ function Techniques() {
                 <Introduction />
                 <TechniquesList />
             </div>
-            <div className="sidebar-container">
-                <SiteSignature />
-                <MMAHighlights />
-                <MMANews />
-            </div>
+            <SiteSidebarLong />
         </div>
     );
 }

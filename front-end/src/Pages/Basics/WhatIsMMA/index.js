@@ -1,7 +1,7 @@
 import React from 'react'
 // Components
-import SiteSignature from '../../../Components/SiteSidebar/SiteSignature'
-import MMAHighlights from '../../../Components/SiteSidebar/MMAHighlights'
+import SiteSidebarShort from '../../../Components/SiteSidebar/SiteSidebarShort'
+
 
 function WhatIsMMA () {
 
@@ -37,10 +37,7 @@ function WhatIsMMA () {
                 </div>
 
             </div>
-            <div className="sidebar-container">
-                <SiteSignature />
-                <MMAHighlights />
-            </div>
+            <SiteSidebarShort />
         </div>
     )
 }
