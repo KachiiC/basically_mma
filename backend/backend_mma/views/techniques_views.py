@@ -9,7 +9,7 @@ from backend_mma.serializers.techniques_serializers import *
 def techniques_list(request):
     if request.method == 'GET':
 
-        data = Techniques.objects.all()
+        data = Technique.objects.all()
 
         serializer = TechniquesSerializer(data, context={'request': request}, many=True)
 
@@ -26,7 +26,7 @@ def techniques_list(request):
 
 @api_view(['GET'])
 def techniques_detail(request, pk):
-    term = Techniques.objects.get(pk=pk)
+    term = Technique.objects.get(pk=pk)
 
     serializer = TechniquesSerializer(term)
 

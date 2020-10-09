@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Techniques(models.Model):
+class Technique(models.Model):
     name = models.CharField(max_length=100)
     type = models.CharField(max_length=100)
     discipline = models.CharField(max_length=100)

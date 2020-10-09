@@ -9,16 +9,16 @@ class DictionaryTest(APITestCase):
     endpoint = reverse('dictionary_list')
 
     dict_1 = Dictionary(
-            pk=1,
-            name="jab",
-            definition="A fast strike with the lead hand"
-        )
+        pk=1,
+        name="jab",
+        definition="A fast strike with the lead hand"
+    )
 
     dict_2 = Dictionary(
-            pk=2,
-            name="cross",
-            definition="A power strike with the rear hand"
-        )
+        pk=2,
+        name="cross",
+        definition="A power strike with the rear hand"
+    )
 
     expected = [dict_1, dict_2]
 
@@ -35,18 +35,17 @@ class DictionaryTest(APITestCase):
         assert response.data == serializer.data
 
     def test_get_single_word(self):
-        import uuid
-
         """ Retrieve an existing words"""
-        word_endpoint = reverse('dictionary_word', args=[self.dict_1.name])
+        word_endpoint = reverse('dictionary_word', args=[self.dict_1.pk])
 
-        word = Dictionary.objects.get(name=self.dict_1.name)
+        word = Dictionary.objects.get(pk=self.dict_1.pk)
 
         serializer = DictionarySerializer(word)
 
         response = self.client.get(word_endpoint)
-        assert(response.data, serializer.data)
-        assert(response.status_code, status.HTTP_200_OK)
+
+        assert response.status_code == status.HTTP_200_OK
+        assert response.data == serializer.data
 
     def test_post_new_word(self):
         """ Post new words"""
