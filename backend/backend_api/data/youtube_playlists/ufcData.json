@@ -1,6 +1,6 @@
 {
     "kind": "youtube#playlistItemListResponse",
-    "etag": "H0xBlaWb3YwlIRnPaX1Dfy4Fprk",
+    "etag": "NY83UjsCgQ48RCz0ibuqlkQjfKw",
     "items": [
         {
             "kind": "youtube#playlistItem",
@@ -634,36 +634,36 @@
         },
         {
             "kind": "youtube#playlistItem",
-            "etag": "eMWQWRV8QQB6fLL43NghFTKzW8Y",
-            "id": "UExhYUVlRnRObElKMVFDU1drQnZ4SXRiS1lFcEdFTkFTQy45RjNFMDhGQ0Q2RkFCQTc1",
+            "etag": "ns0TMwiRpWQUwhv_TszTlar6XMI",
+            "id": "UExhYUVlRnRObElKMVFDU1drQnZ4SXRiS1lFcEdFTkFTQy40QTA3NTU2RkM1QzlCMzYx",
             "snippet": {
-                "publishedAt": "2020-08-19T21:04:05Z",
+                "publishedAt": "2020-10-01T23:56:53Z",
                 "channelId": "UCGFG6QjQru4YRlBfZ1HqNFA",
-                "title": "Ufc 246 free fight conor mcgregor vs eddie alvarez",
-                "description": "",
+                "title": "Max Holloway v Alexander Volkonovski full fight replay | Watch UFC Fight Island on BT Sport 1 HD",
+                "description": "Alexander Volkonovski promised he was the man to beat Max Holloway in the featherweight division. He wasn't lying... On July 11th they run it back!\n\nWatch #UFC251: Usman v Burns, Volkanovski v Holloway, Yan v Aldo live on BT Sport 1 HD on July 11th.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/HCw2AwUvffw/default.jpg",
+                        "url": "https://i.ytimg.com/vi/oaeTtOQVfWw/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/HCw2AwUvffw/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/oaeTtOQVfWw/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/HCw2AwUvffw/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/oaeTtOQVfWw/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     },
                     "standard": {
-                        "url": "https://i.ytimg.com/vi/HCw2AwUvffw/sddefault.jpg",
+                        "url": "https://i.ytimg.com/vi/oaeTtOQVfWw/sddefault.jpg",
                         "width": 640,
                         "height": 480
                     },
                     "maxres": {
-                        "url": "https://i.ytimg.com/vi/HCw2AwUvffw/maxresdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/oaeTtOQVfWw/maxresdefault.jpg",
                         "width": 1280,
                         "height": 720
                     }
@@ -673,13 +673,103 @@
                 "position": 14,
                 "resourceId": {
                     "kind": "youtube#video",
-                    "videoId": "HCw2AwUvffw"
+                    "videoId": "oaeTtOQVfWw"
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "-0GhpmzBOCyBr7n6F08ZGvG_1so",
+            "id": "UExhYUVlRnRObElKMVFDU1drQnZ4SXRiS1lFcEdFTkFTQy5BRjJDODk5REM0NjkzMUIy",
+            "snippet": {
+                "publishedAt": "2020-10-01T23:57:02Z",
+                "channelId": "UCGFG6QjQru4YRlBfZ1HqNFA",
+                "title": "Tyron Woodley v Gilbert Burns full fight replay | Watch UFC Fight Island on BT Sport 1 HD",
+                "description": "Gilbert Burns came in to the fight with Tyron Woodley on a five-fight win streak. It was an utter domination from the number one contender...\n\nWatch UFC 251 and three other cards from #UFCFightIsland, live on BT Sport 1 HD from July 11th.\n\nHit 'Subscribe' above to ensure you never miss a video from the BT Sport YouTube channel.\n\nVisit and subscribe to our 'BT Sport Boxing' YouTube channel ➡️ http://www.youtube.com/c/btsportboxing\n\nTwitter: http://twitter.com/btsport\nFacebook: http://www.facebook.com/btsport\nInstagram:http://instagram.com/btsport\nWebsite: http://sport.bt.com",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/WCPBr1_MaWg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/WCPBr1_MaWg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/WCPBr1_MaWg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/WCPBr1_MaWg/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/WCPBr1_MaWg/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Basically MMA",
+                "playlistId": "PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC",
+                "position": 15,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "WCPBr1_MaWg"
+                }
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "TTS44jIBYNIufnudckQdxu67YpQ",
+            "id": "UExhYUVlRnRObElKMVFDU1drQnZ4SXRiS1lFcEdFTkFTQy4xOTEzQzhBQzU3MDNDNjcz",
+            "snippet": {
+                "publishedAt": "2020-10-01T23:57:31Z",
+                "channelId": "UCGFG6QjQru4YRlBfZ1HqNFA",
+                "title": "Woodley v Wonderboy full fight replay | Controversial result, but what a fight!",
+                "description": "Tyron Woodley and Stephen \"Wonderboy\" Thompson put on a five-round classic as the co-main event at UFC 205...\n\nWatch Tyron Woodley's first fight back since losing the title this Saturday on BT Sport 1 HD.\n\nSubscribe to our YouTube channel for the best videos from BT Sport  ➡️ http://bit.ly/17YTeL5\n\nSubscribe to our Boxing YouTube channel ➡️ http://po.st/NoFilterYT\n\nTwitter: http://twitter.com/btsport\n\nFacebook: http://www.facebook.com/btsport\n\nInstagram:http://instagram.com/btsport\n\nWebsite: http://sport.bt.com",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/8Xb55612vTE/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/8Xb55612vTE/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/8Xb55612vTE/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/8Xb55612vTE/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/8Xb55612vTE/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Basically MMA",
+                "playlistId": "PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC",
+                "position": 16,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "8Xb55612vTE"
                 }
             }
         }
     ],
     "pageInfo": {
-        "totalResults": 15,
+        "totalResults": 17,
         "resultsPerPage": 20
     }
 }

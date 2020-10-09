@@ -1,15 +1,15 @@
 {
     "kind": "youtube#playlistItemListResponse",
-    "etag": "IoYKyMupGnSPeQ8AMZHRxFvGkY4",
+    "etag": "RLdv-HyPFqy2KFlkWirt6EWJ9Ew",
     "items": [
         {
             "kind": "youtube#playlistItem",
-            "etag": "uwIGiX1bMvV0D7N6voaaCSrQnuE",
+            "etag": "Z0TBpbPM-0k9YOsJjzdUYW8W6SE",
             "id": "UExhYUVlRnRObElKMklaM28ya0U3ampaME5adTh0UDlZSi41NkI0NEY2RDEwNTU3Q0M2",
             "snippet": {
                 "publishedAt": "2020-06-27T15:46:25Z",
                 "channelId": "UCGFG6QjQru4YRlBfZ1HqNFA",
-                "title": "Full Fight | Michael Chandler vs. Eddie Alvarez One",
+                "title": "Full Fight | Michael Chandler vs. Eddie Alvarez One - Bellator 58",
                 "description": "FULL FIGHT FRIDAY: Look back at Bellator 58 Eddie Alvarez vs. Michael Chandler! And don't miss Michael Chandler vs. Brent Primus on June 24th only on PPV! \n\n#BellatorMMA #BellatorFullFight #ChandlervsAlverez",
                 "thumbnails": {
                     "default": {
@@ -184,12 +184,12 @@
         },
         {
             "kind": "youtube#playlistItem",
-            "etag": "RO7EfzhtsY3wMpmrC_zVt9nS_Cs",
+            "etag": "AlzeJZbFEt0QD6Taj5LfvRIpbm8",
             "id": "UExhYUVlRnRObElKMklaM28ya0U3ampaME5adTh0UDlZSi4xMkVGQjNCMUM1N0RFNEUx",
             "snippet": {
                 "publishedAt": "2020-06-27T15:47:28Z",
                 "channelId": "UCGFG6QjQru4YRlBfZ1HqNFA",
-                "title": "Full Fight | Chael Sonnen vs Wanderlei Silva",
+                "title": "Full Fight | Chael Sonnen vs Wanderlei Silva - Bellator 180",
                 "description": "Watch more full fights here: \nhttps://www.youtube.com/playlist?list=PLfbnS7oKXqsF-vU3FO7gnmifTtK5vmobT\n\nUpcoming events: http://www.bellator.com/events\n\nSubscribe for more Bellator MMA content! http://bit.ly/SubscribeBellatorYT \n\nFollow Bellator MMA\nFacebook: https://www.facebook.com/BellatorMMA\nTwitter: https://twitter.com/BellatorMMA\nInstagram: https://instagram.com/bellatormma/\nSnapchat: BellatorNation\n\nJoin #BellatorNation to gain exclusive access and benefits including fan-fests, ticket presales and much more! http://bellator.com/newsletter\n\nCheck out the Bellator MMA App: http://www.bellator.com/app",
                 "thumbnails": {
                     "default": {
@@ -454,12 +454,12 @@
         },
         {
             "kind": "youtube#playlistItem",
-            "etag": "7dM5Vu-w_PNi6vzsskVkmk1YUMY",
+            "etag": "IGfFRB413SZOuQd5to_WLbq5VZI",
             "id": "UExhYUVlRnRObElKMklaM28ya0U3ampaME5adTh0UDlZSi4wOTA3OTZBNzVEMTUzOTMy",
             "snippet": {
                 "publishedAt": "2020-06-27T15:47:19Z",
                 "channelId": "UCGFG6QjQru4YRlBfZ1HqNFA",
-                "title": "Full Fight | Paul Daley vs. Rory MacDonald",
+                "title": "Full Fight | Paul Daley vs. Rory MacDonald - Bellator 179",
                 "description": "Full Fight Friday: Look back at #Bellator179 Paul Daley vs. Rory MacDonald in it's entirety! And don't miss Rory MacDonald's upcoming fight at #Bellator192! \n\n#Bellator192 | SATURDAY, January 20th, 2018 | The Forum | Inglewood, CA. | On Paramount Network at 9/8c\n\nSubscribe for more Bellator MMA content! http://bit.ly/SubscribeBellatorYT \n\nFollow Bellator MMA\nFacebook: https://www.facebook.com/BellatorMMA\nTwitter: https://twitter.com/BellatorMMA\nInstagram: https://instagram.com/bellatormma/\nSnapchat: BellatorNation\n\nJoin #BellatorNation to gain exclusive access and benefits including fan-fests, ticket presales and much more! http://bellator.com/newsletter\n\nCheck out the Bellator MMA App: http://bellator.spike.com/app",
                 "thumbnails": {
                     "default": {
