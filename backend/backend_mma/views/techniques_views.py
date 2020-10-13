@@ -1,7 +1,7 @@
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import api_view
-from backend_mma.models.techniques_model import *
+from backend_mma.models.techniques_model import Technique
 from backend_mma.serializers.techniques_serializers import *
 
 

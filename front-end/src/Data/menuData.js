@@ -27,7 +27,7 @@ const navbarMenu = [
     },    
     {   name: "Fight Strategies",
         type: "advanced",
-        link: "#"
+        link: "fight-strategies"
     },
     {   name: "Weight Classes",
         type: "advanced",

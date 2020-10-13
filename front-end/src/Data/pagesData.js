@@ -13,6 +13,7 @@ import Fundamentals from '../Pages/Advanced/Fundamentals'
 // Other
 import TestPage from '../Pages/Test'
 import Techniques from '../Pages/Advanced/Techniques'
+import FightStrategies from '../Pages/Advanced/FightStrategies'
 
 const pagesData = [
     {
@@ -48,6 +49,10 @@ const pagesData = [
     {
         name:"/techniques",
         display: <Techniques />
+    },
+    {
+        name:"/fight-strategies",
+        display: <FightStrategies />
     },
     // Test Page
     {
