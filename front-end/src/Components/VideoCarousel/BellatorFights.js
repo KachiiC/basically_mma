@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react'
 // CSS
-import './index.css'
+import './VideoCarousel.css'
 // Components
 import {Empty} from 'antd'
 import Icon from 'react-fa'
@@ -12,14 +12,12 @@ const BellatorFights = () => {
   const [youtube, setYoutube] = useState([]) 
   const [isDisplayable, setIsDisplayable] = useState(false)
 
-
   useEffect(() => {
       fetch("http://127.0.0.1:8000/backend_api/bellator_playlist") 
       .then((response) => { 
           return response.json() 
       })
       .then((youtubeDataFromServer) => { 
-
           setYoutube(youtubeDataFromServer)
           setIsDisplayable(true)
           setIsFetching(false)
@@ -69,8 +67,7 @@ const BellatorFights = () => {
   return (
         <div className="video-slider-container">
             <h5>Bellator Videos</h5>
-            <Carousel infinite addArrowClickHandler 
-              slidesPerScroll={3} slidesPerPage={3}
+            <Carousel infinite addArrowClickHandler slidesPerScroll={3} slidesPerPage={3}
               arrowRight={<Icon size="2x" name="angle-double-right" />}
               arrowLeft={<Icon size="2x" name="angle-double-left" />}
             >

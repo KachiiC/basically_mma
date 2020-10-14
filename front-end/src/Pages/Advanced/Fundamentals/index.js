@@ -1,7 +1,9 @@
 import React from 'react'
+// CSS
+import './Fundamentals.css'
 // Components
-import FundamentalCards from './FundamentalCards'
-import FundamentalsIntroduction from './Introduction'
+import FundamentalsIntroduction from './Components/FundamentalsIntroduction'
+import FundamentalCards from './Components/FundamentalCards'
 import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 
 const Fundamentals = () => ( 

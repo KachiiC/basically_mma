@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Introduction() {
+function TechniquesIntroduction() {
     return (
         <>
         <h1>Techniques and Positions</h1>
@@ -20,4 +20,4 @@ function Introduction() {
     )
 }
 
-export default Introduction
+export default TechniquesIntroduction

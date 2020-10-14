@@ -1,13 +1,12 @@
 import React from 'react'
 // CSS
-import './index.css'
+import './navbar.css'
 // Components
 import {Link} from 'react-router-dom'
 import SiteDropdown from './SiteDropdown'
 import MenuRight from './menuright'
 
-const SiteNavbar = () =>  {
-    return (
+const SiteNavbar = () =>  (
         <nav className="navbar navbar-expand-lg fixed-top bg-light" id="mainNav">
             < SiteDropdown />  
             <div className="navbar-brand navbar-section">
@@ -16,6 +15,6 @@ const SiteNavbar = () =>  {
             < MenuRight />
         </nav>
     )
-}
+
 
 export default SiteNavbar;

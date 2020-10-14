@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 // CSS
-import './index.css'
+import './FightStrategies.css'
 // Components
-import FightStrategiesIntro from './Introduction'
-import FightStrategiesCard from './FightStrategiesCard'
-import Pictures from './FightStratData'
+import FightStrategiesIntro from './Components/FightStrategiesIntroduction'
+import FightStrategiesCard from './Components/FightStrategiesCard'
+import Pictures from '../../../Data/Advanced/FightStratData'
 import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 
 

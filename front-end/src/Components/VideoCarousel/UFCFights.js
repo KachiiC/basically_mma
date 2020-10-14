@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react'
 // CSS
-import './index.css'
+import './VideoCarousel.css'
 import '@brainhubeu/react-carousel/lib/style.css'
 // Components
 import Icon from 'react-fa'

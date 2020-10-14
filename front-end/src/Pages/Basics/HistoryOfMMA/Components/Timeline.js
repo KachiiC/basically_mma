@@ -1,9 +1,7 @@
 import React from 'react'
-// CSS
-import "./index.css"
 // Components
 import {Timeline} from 'antd';
-import TimelineData from '../../../Data/Basics/timelineData'
+import TimelineData from '../../../../Data/Basics/timelineData'
 
 
 const MMATimeline = () => {

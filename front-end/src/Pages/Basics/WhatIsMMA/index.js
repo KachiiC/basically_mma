@@ -32,7 +32,6 @@ const WhatIsMMA = () => (
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
                     picture-in-picture" allowfullscreen title="ufc 1" />                
                 </div>
-
             </div>
             <SiteSidebarShort />
         </div>

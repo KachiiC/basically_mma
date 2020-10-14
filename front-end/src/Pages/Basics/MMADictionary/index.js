@@ -1,9 +1,9 @@
 import React from 'react'
 // CSS
-import './index.css';
+import './MMADictionary.css';
 // Components
-import Dictionary from './Dictionary'
-import Introduction from './Introduction'
+import Dictionary from './Components/Dictionary'
+import Introduction from './Components/MMADictionaryIntroduction'
 import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong';
 
 const MMADictionary = () => (

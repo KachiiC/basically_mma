@@ -1,8 +1,9 @@
 import React, { useState, useEffect} from 'react'
 // CSS
-import './index.css'
+import './VideoCarousel.css'
 import '@brainhubeu/react-carousel/lib/style.css'
 // Components
+import {Empty} from 'antd'
 import Icon from 'react-fa'
 import Carousel from '@brainhubeu/react-carousel';
 
@@ -12,14 +13,12 @@ const FightHighlights = () => {
   const [youtube, setYoutube] = useState([]) 
   const [isDisplayable, setIsDisplayable] = useState(false)
 
-
   useEffect(() => {
       fetch("http://127.0.0.1:8000/backend_api/highlights_playlist") 
       .then((response) => { 
           return response.json() 
       })
       .then((youtubeDataFromServer) => { 
-
           setYoutube(youtubeDataFromServer)
           setIsDisplayable(true)
           setIsFetching(false)
@@ -60,7 +59,7 @@ const FightHighlights = () => {
   })
   
   const renderLogic = (isFetching)?(<h6>Loading</h6>):(
-    (isDisplayable)?(youtubeItems):(<h6>Not Loading</h6>))
+    (isDisplayable)?(youtubeItems):(<Empty />))
 
   return (
         <div className="video-slider-container">

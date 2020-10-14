@@ -2,7 +2,7 @@ import React from 'react'
 // CSS
 // Components
 import {Link} from 'react-router-dom' 
-import menuData from '../../Data/menuData'
+import menuData from '../../Data/Other/menuData'
 
 const Menuright = () =>  {
 

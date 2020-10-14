@@ -1,9 +1,9 @@
 import React from 'react'
 // CSS
-import './index.css'
+import './HistoryOfMMA.css'
 // Sections
-import Timeline from './timeline'
-import Introduction from './introduction'
+import Timeline from './Components/Timeline'
+import Introduction from './Components/HistoryOfMMAIntroduction'
 import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 
 

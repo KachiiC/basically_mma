@@ -1,10 +1,11 @@
 import React from 'react'
 // CSS
-import './index.css'
+import './RulesOfMMA.css'
 // Components
-import Introduction from './Introduction'
-import Tabs from './Tabs'
+import Introduction from './Components/RulesOfMMAIntroduction'
+import Tabs from './Components/Tabs'
 import SiteSidebarShort from '../../../Components/SiteSidebar/SiteSidebarShort'
+
 
 const RulesOfMMA = () => (
         <div className="site-row">

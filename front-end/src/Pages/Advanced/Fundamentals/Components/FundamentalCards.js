@@ -1,8 +1,7 @@
 import React from 'react'
-// CSS
-import './index.css'
+
 // Components
-import fundamentalsData from '../../../Data/Advanced/fundamentals'
+import fundamentalsData from '../../../../Data/Advanced/FundamentalsData'
 import Skeleton from '@material-ui/lab/Skeleton';
 
 const FundamentalCards = () => {
@@ -15,6 +14,7 @@ const FundamentalCards = () => {
             </div>
         )
     })
+    
     return (
         <div className="fundamentals-row">
             {displayCards}

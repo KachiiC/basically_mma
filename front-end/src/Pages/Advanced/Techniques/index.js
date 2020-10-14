@@ -1,16 +1,16 @@
 import React from 'react';
 //Css
-import './index.css'
+import './Techniques.css'
 //Components
-import Introduction from './Introduction.js';
-import TechniquesList from './TechniquesList'
+import TechniquesIntroduction from './Components/TechniquesIntroduction.js';
+import TechniquesList from './Components/TechniquesList'
 import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 
 
 const Techniques = () => (
         <div className="site-row">
             <div className="main-container">
-                <Introduction />
+                <TechniquesIntroduction />
                 <TechniquesList />
             </div>
             <SiteSidebarLong />
