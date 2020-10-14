@@ -5,6 +5,7 @@ import './index.css'
 import FightStrategiesIntro from './Introduction'
 import FightStrategiesCard from './FightStrategiesCard'
 import Pictures from './FightStratData'
+import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 
 
 const FightStrategies = () => {
@@ -18,17 +19,15 @@ const FightStrategies = () => {
       const changeVisibility = () => setShowModal(true)
   
       return (
-        <>
           <div className="gallery-item">
               <h1>{picture.name}</h1>
               <img src={picture.url} alt={picture.name} onClick={() => {changeVisibility();rename()}} />
           </div>
-        </> 
       )
     })
   
     return (
-        <>
+        <div className="site-row">
           { showModal && (
             <FightStrategiesCard closeModal={() => setShowModal(false)}>
               <div className="modal-content">
@@ -43,7 +42,8 @@ const FightStrategies = () => {
               {displayPictures}
             </div>
           </div>
-        </>
+          <SiteSidebarLong />
+        </div>
     );
 
 }

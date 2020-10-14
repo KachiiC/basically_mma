@@ -1,8 +1,6 @@
 import React from 'react'
 
-function Introduction() {
-    
-    return (
+const Introduction = () => (
         <>
             <h1>Mixed Martial Arts Terms</h1>
             <p>As with any sport, before you learn about strategies and the finer details -
@@ -19,6 +17,5 @@ function Introduction() {
             </p>
         </>
     )
-}
 
 export default Introduction

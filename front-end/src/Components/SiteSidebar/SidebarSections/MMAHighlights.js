@@ -5,7 +5,7 @@ import './index.css'
 import {Empty} from 'antd'
 
 
-function MMAHighlights (){
+const MMAHighlights = () => {
 
     const [isFetching, setIsFetching] = useState(true)
     const [highlightVideo, setHighlightVideo] = useState([]) 

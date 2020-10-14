@@ -4,10 +4,8 @@ import FundamentalCards from './FundamentalCards'
 import FundamentalsIntroduction from './Introduction'
 import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 
-function Fundamentals () {
+const Fundamentals = () => ( 
 
-
-    return (
         <div className="site-row">
             <div className="main-container">
                 <h1>Fundamentals</h1>
@@ -18,5 +16,5 @@ function Fundamentals () {
         </div>
 
     )
-}
+
 export default Fundamentals

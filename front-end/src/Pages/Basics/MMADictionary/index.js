@@ -6,9 +6,7 @@ import Dictionary from './Dictionary'
 import Introduction from './Introduction'
 import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong';
 
-function MMADictionary(props) {
-
-    return (
+const MMADictionary = () => (
         <div className="site-row">
             <div className="main-container">
                 <Introduction />
@@ -18,6 +16,5 @@ function MMADictionary(props) {
         </div>
         
     );
-}
 
 export default MMADictionary

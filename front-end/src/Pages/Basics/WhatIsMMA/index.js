@@ -2,10 +2,7 @@ import React from 'react'
 // Components
 import SiteSidebarShort from '../../../Components/SiteSidebar/SiteSidebarShort'
 
-
-function WhatIsMMA () {
-
-    return (
+const WhatIsMMA = () => (
         <div className="site-row">
             <div className="main-container">
                 <h1>What is MMA?</h1>
@@ -40,6 +37,5 @@ function WhatIsMMA () {
             <SiteSidebarShort />
         </div>
     )
-}
 
 export default WhatIsMMA

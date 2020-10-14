@@ -5,7 +5,7 @@ import './index.css'
 import {Empty} from 'antd'
 
 
-function MMANews (){
+const MMANews = () => {
 
     const [isFetching, setIsFetching] = useState(true)
     const [mmaNews, setMMANews] = useState([]) 

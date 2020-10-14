@@ -1,9 +1,7 @@
 import React from 'react'
 
-function Store () {
-    return (
+const Store = () => (
         <h1>Store</h1>
     )
-}
 
 export default Store;

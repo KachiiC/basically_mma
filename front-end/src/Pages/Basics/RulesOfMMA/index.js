@@ -2,15 +2,11 @@ import React from 'react'
 // CSS
 import './index.css'
 // Components
-import Introduction from './Tabs/Introduction'
+import Introduction from './Introduction'
 import Tabs from './Tabs'
 import SiteSidebarShort from '../../../Components/SiteSidebar/SiteSidebarShort'
 
-
-
-function RulesOfMMA () {
-
-    return (
+const RulesOfMMA = () => (
         <div className="site-row">
             <div className="main-container">
                 <Introduction />
@@ -19,7 +15,5 @@ function RulesOfMMA () {
             <SiteSidebarShort />
         </div>
     )
-
-}
 
 export default RulesOfMMA

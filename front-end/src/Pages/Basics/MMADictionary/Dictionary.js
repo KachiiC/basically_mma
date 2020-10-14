@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react'
 import { Collapse, Empty } from 'antd';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-function Dictionary() {
+const Dictionary = () => {
 
     const [isFetching, setIsFetching] = useState(true)
     const [terms, setTerms] = useState([]) 

@@ -6,7 +6,7 @@ import {Empty} from 'antd'
 import Icon from 'react-fa'
 import Carousel from '@brainhubeu/react-carousel';
 
-function BellatorFights (props){
+const BellatorFights = () => {
     
   const [isFetching, setIsFetching] = useState(true)
   const [youtube, setYoutube] = useState([]) 

@@ -1,7 +1,6 @@
 import React from 'react'
 
-function TwitterWidget (){
-    return (
+const TwitterWidget = () => (
         <div className="single-widget-area popular-post-widget">
             <div className="widget-title">
                 <h6>What's Happening?</h6>
@@ -15,6 +14,5 @@ function TwitterWidget (){
         </div>
 
     )
-}
 
 export default TwitterWidget

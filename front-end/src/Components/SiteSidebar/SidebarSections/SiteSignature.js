@@ -2,8 +2,7 @@ import React from 'react'
 // CSS
 import './index.css'
 
-function SiteSignature (){
-    return (
+const SiteSignature = () => (
         <div className="single-widget-area">
             <div className="widget-title">
                 <h6>Basically MMA</h6>
@@ -15,6 +14,5 @@ function SiteSignature (){
         </div>
 
     )
-}
 
 export default SiteSignature;

@@ -10,7 +10,7 @@ import SiteFooter from './Components/SiteFooter';
 import pagesData from './Data/pagesData'
 
 
-function App() {
+const App = () => {
 
   const displayLinks = pagesData.map((page) => {
     return (
@@ -31,6 +31,7 @@ function App() {
           <SiteFooter />
         </BrowserRouter>
   );
+  
 }
 
 export default App;

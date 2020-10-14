@@ -1,9 +1,7 @@
 import React from 'react'
 
 
-function Introduction() {
-    
-    return (
+const Introduction = () => (
         <>
             <h1>History of Mixed Martial Arts</h1>
             <p> 
@@ -26,6 +24,5 @@ function Introduction() {
             </p>
         </>
     )
-}
 
 export default Introduction

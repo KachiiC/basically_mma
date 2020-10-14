@@ -1,9 +1,7 @@
 import React from "react";
 
-function ProhibitedSubstances (){
-    return (
+const ProhibitedSubstances = () => (
         <>
-            <h3>Prohibited Substances</h3>
             <p>
                 <b>Use of prohibited substances:</b> 
                 The use of any illegal drug, narcotic, stimulant, depressant, or analgesic of any 
@@ -21,6 +19,5 @@ function ProhibitedSubstances (){
             </p>
         </>
     )
-}
 
  export default ProhibitedSubstances;

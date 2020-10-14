@@ -1,9 +1,7 @@
 import React from 'react';
 
-function MethodsOfVictory () {
-    return (
+const MethodsOfVictory = () => (
         <>
-        <h3>Methods of Victory</h3>
             <p> There are multiple ways to win in Mixed Martial Arts.</p>
             <p> <b>Knockout</b>: Athlete is knocked unconscious due to strikes or impact. <br />
                 <b>Technical Knockout</b>: The referee stops the contest.<br />
@@ -24,6 +22,5 @@ function MethodsOfVictory () {
             <p>The fight can also be scored as a draw (via unanimous, majority or split decision).</p>
         </>
     )
-}
 
 export default MethodsOfVictory

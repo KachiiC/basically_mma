@@ -1,10 +1,8 @@
 import React from 'react'
 
-function FundamentalsIntroduction () {
-
-    return(
+const FundamentalsIntroduction = () => (
         <>
-        <p>
+            <p>
             Mixed Martial Arts has many fundamentals that an individual must learn in order 
             to be successful on both a professional and amateur level. A beginner will need 
             to learn basic striking and grappling techniques, become well conditioned and 
@@ -32,7 +30,6 @@ function FundamentalsIntroduction () {
             are most important to fighters when competing in MMA.
             </p>
         </>
-    )
+)
 
-}
 export default FundamentalsIntroduction;

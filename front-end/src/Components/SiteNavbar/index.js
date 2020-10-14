@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import SiteDropdown from './SiteDropdown'
 import MenuRight from './menuright'
 
-function SiteNavbar () {
+const SiteNavbar = () =>  {
     return (
         <nav className="navbar navbar-expand-lg fixed-top bg-light" id="mainNav">
             < SiteDropdown />  

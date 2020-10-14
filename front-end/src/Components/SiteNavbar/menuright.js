@@ -1,11 +1,10 @@
 import React from 'react'
 // CSS
-
 // Components
 import {Link} from 'react-router-dom' 
 import menuData from '../../Data/menuData'
 
-function Menuright () {
+const Menuright = () =>  {
 
     const topMenu = menuData.filter((menu) => {
         return menu.type === "menu"

@@ -4,8 +4,7 @@ import './index.css'
 // Components
 
 
-function TestPage () {
-
+const TestPage = () => {
     
     return (
         <>

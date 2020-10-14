@@ -5,7 +5,7 @@ import './index.css';
 import footerData from '../../Data/footerData'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function SiteFooter(){
+const SiteFooter = () => {
 
     const displayIcons = footerData.map((item) => {
         return (

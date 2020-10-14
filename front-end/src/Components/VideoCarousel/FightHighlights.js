@@ -6,7 +6,7 @@ import '@brainhubeu/react-carousel/lib/style.css'
 import Icon from 'react-fa'
 import Carousel from '@brainhubeu/react-carousel';
 
-function FightHighlights (props){
+const FightHighlights = () => {
     
   const [isFetching, setIsFetching] = useState(true)
   const [youtube, setYoutube] = useState([]) 

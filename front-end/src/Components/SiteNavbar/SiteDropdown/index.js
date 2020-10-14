@@ -5,14 +5,12 @@ import Basic from './basic'
 import Advanced from './advanced'
 import MMAWorld from './mmaworld'
 
-function Dropdown (){
-
-    return(
+const Dropdown = () => (
         <div className="navbar-nav navbar-section">
             <Basic />
             <Advanced />
             <MMAWorld />
         </div>
     )
-}
+
 export default Dropdown

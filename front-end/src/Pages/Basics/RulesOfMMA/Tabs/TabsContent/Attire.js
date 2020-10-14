@@ -1,9 +1,7 @@
 import React from "react";
 
-function Attire (){
-    return (
+const Attire = () => (
         <>
-            <h3>Attire</h3>
             <p>
                 All competitors must fight in approved shorts, without shoes or any other sort 
                 of foot padding. Shirts, gis or long pants (including gi pants) are not allowed. 
@@ -17,6 +15,5 @@ function Attire (){
             </p>
         </>
     )
-}
 
  export default Attire;

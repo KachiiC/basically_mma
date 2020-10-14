@@ -1,6 +1,6 @@
 import React from "react";
 
-function Fouls (){
+const Fouls = () => {
 
     const FoulsData = [
         {
@@ -71,7 +71,6 @@ function Fouls (){
     
     return (
         <>
-            <h3>Fouls</h3>
             <p>These are the common fouls in Mixed Martial Arts:</p>
             <ul>
                 {listOfFouls}

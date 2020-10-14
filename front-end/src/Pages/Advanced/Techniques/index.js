@@ -7,9 +7,7 @@ import TechniquesList from './TechniquesList'
 import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 
 
-function Techniques() {
-    
-    return (
+const Techniques = () => (
         <div className="site-row">
             <div className="main-container">
                 <Introduction />
@@ -17,7 +15,6 @@ function Techniques() {
             </div>
             <SiteSidebarLong />
         </div>
-    );
-}
+    )
 
 export default Techniques

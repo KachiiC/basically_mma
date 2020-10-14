@@ -1,7 +1,6 @@
 import React from 'react';
 
-function Introduction (){
-    return (
+const Introduction = () => (
         <>
             <h1>Rules of MMA</h1>
             <div>
@@ -31,6 +30,5 @@ function Introduction (){
             </div>
         </>
     )
-}
 
 export default Introduction

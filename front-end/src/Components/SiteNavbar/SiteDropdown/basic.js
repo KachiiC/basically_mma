@@ -3,7 +3,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import menuData from '../../../Data/menuData'
 
-function Basic () {
+const Basic = () => {
 
     const basics = menuData.filter((menu) => {
         return menu.type === "basic"

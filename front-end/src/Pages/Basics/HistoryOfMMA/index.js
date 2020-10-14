@@ -7,9 +7,7 @@ import Introduction from './introduction'
 import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 
 
-function HistoryOfMMA () {
-    
-    return (
+const HistoryOfMMA = () => (
         <div className="site-row">
             <div className="main-container">
                 <Introduction />
@@ -18,6 +16,5 @@ function HistoryOfMMA () {
             <SiteSidebarLong />
         </div>
     );
-}
 
 export default HistoryOfMMA;

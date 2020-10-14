@@ -1,13 +1,13 @@
 import React from 'react'
 // Tabs
-import MethodsOfVictory from './MethodsOfVictory'
-import Attire from './Attire'
-import BoutDuration from './BoutDuration'
-import WeightClasses from './WeightClasses'
-import JudgingCriteria from './JudgingCriteria'
-import Fouls from './Fouls'
-import MedicalRequirements from './MedicalRequirements'
-import ProhibitedSubstances from './ProhibitedSubstances'
+import Attire from './TabsContent/Attire'
+import BoutDuration from './TabsContent/BoutDuration'
+import Fouls from './TabsContent/Fouls'
+import JudgingCriteria from './TabsContent/JudgingCriteria'
+import MedicalRequirements from './TabsContent/MedicalRequirements'
+import MethodsOfVictory from './TabsContent/MethodsOfVictory'
+import ProhibitedSubstances from './TabsContent/ProhibitedSubstances'
+import WeightClasses from './TabsContent/WeightClasses'
 
 const tabTitles = [
 

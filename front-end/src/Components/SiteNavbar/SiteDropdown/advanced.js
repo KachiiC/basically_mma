@@ -3,7 +3,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import menuData from '../../../Data/menuData'
 
-function Advanced () {
+const Advanced = () => {
 
     const advanced = menuData.filter((menu) => {
         return menu.type === "advanced"

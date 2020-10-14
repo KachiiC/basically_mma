@@ -5,17 +5,15 @@ import TwitterWidget from './SidebarSections/TwitterWidget'
 import MMAHighlights from './SidebarSections/MMAHighlights'
 import SiteSignature from './SidebarSections/SiteSignature'
 
-function SiteSidebarLong () {
+const SiteSidebarLong = () => (
     
-    return (
-
-        <div className="sidebar-container">
-            <SiteSignature />
-            <MMAHighlights />
-            <MMANews />
-            <TwitterWidget />
-        </div>
-    )
-}
+    <div className="sidebar-container">
+        <SiteSignature />
+        <MMAHighlights />
+        <MMANews />
+        <TwitterWidget />
+    </div>
+    
+)
 
 export default SiteSidebarLong

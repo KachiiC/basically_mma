@@ -6,7 +6,7 @@ import {Timeline} from 'antd';
 import TimelineData from '../../../Data/Basics/timelineData'
 
 
-function MMATimeline(props) {
+const MMATimeline = () => {
 
     const renderTimelineList = TimelineData.map((item) => {
         return (
@@ -24,7 +24,7 @@ function MMATimeline(props) {
                 {renderTimelineList}
             </Timeline>
         </div>
-        );
+    );
 }
 
 export default MMATimeline;

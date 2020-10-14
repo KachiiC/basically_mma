@@ -5,7 +5,7 @@ import './index.css'
 import fundamentalsData from '../../../Data/Advanced/fundamentals'
 import Skeleton from '@material-ui/lab/Skeleton';
 
-function FundamentalCards () {
+const FundamentalCards = () => {
 
     const displayCards = fundamentalsData.map((card) => {
         return (

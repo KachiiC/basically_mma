@@ -1,8 +1,6 @@
 import React from 'react'
 
-const FightStrategiesIntro = () => {
-    
-    return (
+const FightStrategiesIntro = () => (
         <>
             <p> As a mixed martial artist, you will not only come up against fighters of all 
             shapes and sizes but also fighters with different fighting styles. A fighter 
@@ -25,6 +23,5 @@ const FightStrategiesIntro = () => {
             <p>Below is a list of the most common fight strategies in mixed martial arts.</p>
         </>
     )
-}
 
 export default FightStrategiesIntro
