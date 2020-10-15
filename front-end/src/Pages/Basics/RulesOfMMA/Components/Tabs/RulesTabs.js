@@ -12,9 +12,9 @@ import WeightClasses from './TabsContent/WeightClasses'
 const tabTitles = [
 
     {
-      tab: "Methods of Victory",
-      order: 0,
-      paragraph: <MethodsOfVictory/>
+        tab: "Methods of Victory",
+        order: 0,
+        paragraph: <MethodsOfVictory/>
     },
     {
         tab: "Attire",

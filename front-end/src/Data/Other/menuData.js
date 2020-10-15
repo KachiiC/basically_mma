@@ -68,7 +68,7 @@ const navbarMenu = [
     {
         name: "Articles",
         type: "menu",
-        link: "#"
+        link: "articles"
     },
     {
         name: "About",

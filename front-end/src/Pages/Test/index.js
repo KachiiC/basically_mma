@@ -1,15 +1,12 @@
 import React from 'react'
 // CSS
-import './index.css'
+import './Test.css'
 // Components
 
 
 const TestPage = () => {
-    
     return (
-        <>
-
-        </>
+        <h1>Tests</h1>
     )
 
 }

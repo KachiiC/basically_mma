@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import TabsTitles from './TabTitles'
+import TabsTitles from './RulesTabs'
 
 
 const TabPanel = (props) => {
@@ -53,7 +53,9 @@ const RulesTabs = () => {
   const displayTabs = TabsTitles.map((title) => (
         <TabPanel value={value} index={title.order}>
           <h3>{title.tab}</h3>
-          {title.paragraph}
+          <div className="rules-tab-paragraph"> 
+            <p>{title.paragraph}</p>
+          </div>
         </TabPanel>
       )
   )

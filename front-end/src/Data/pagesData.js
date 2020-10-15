@@ -10,10 +10,11 @@ import RulesOfMMA from '../Pages/Basics/RulesOfMMA'
 import MMADictionary from '../Pages/Basics/MMADictionary'
 // Advanced
 import Fundamentals from '../Pages/Advanced/Fundamentals'
-// Other
-import TestPage from '../Pages/Test'
 import Techniques from '../Pages/Advanced/Techniques'
 import FightStrategies from '../Pages/Advanced/FightStrategies'
+// Other
+import TestPage from '../Pages/Test'
+import Articles from '../Pages/Others/Articles'
 
 const pagesData = [
     {
@@ -23,6 +24,10 @@ const pagesData = [
     {
         name: "/store",
         display: <Store />
+    },
+    {
+        name: "/articles",
+        display: <Articles />
     },
     // Basics
     {

@@ -1,0 +1,111 @@
+.trending-posts {
+    padding: 20px;
+}
+
+.trending-posts .trending-pics,
+.trending-posts .trending-content {
+    flex-basis: 50%;
+    margin-right: 15px;
+    padding: auto !important;
+}
+
+.trending-pics img {
+    border-radius: 10px;
+    height: 230px;
+    width: 345px;
+}
+
+.trending-posts .trending-content {
+    margin-right: 0;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+.trending-meta {
+    align-items: center;
+    justify-content: space-between;
+    display: flex !important;
+}
+
+.trending-meta a,
+.trending-meta a:hover,
+.trending-meta a:focus {
+    cursor: pointer;
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.trending-date-author {
+    display: flex !important;
+}
+
+.trending-author a {
+    margin-right: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.trending-author a:after {
+    width: 2px;
+    height: 60%;
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: -14px;
+    z-index: 2;
+    background-color: #000;
+}
+
+
+.trending-posts {
+    margin-bottom: 35px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.trending-posts h5 {
+    margin: 10px 0;
+    padding: 0px !important;
+    color: #232d37;
+    text-transform: capitalize;
+    transition-duration: 500ms;
+}
+
+.trending-posts p {
+    color: #51545f;
+    padding: 10px !important;
+    text-align: left !important;
+    font-size: 15px;
+}
+
+.trending-posts .trending-button-container {
+    text-align: center;
+}
+
+.trending-posts .read-button {
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 18px;
+    height: 40px;
+    min-width: 175px;
+    line-height: 40px;
+    align-items: center;
+}
+
+.trending-posts .read-button:hover {
+    background-color: #000;
+}
+
+.trending-posts .read-button .button-text:hover {
+    color: #ffffff;
+}
+
+.trending-section .col-12:last-of-type .trending-posts,
+.trending-section .col-12:last-of-type .trending-posts .trending-pics img {
+    margin-bottom: 0;
+}
+
+.trending-section .col-12:last-of-type .trending-posts {
+    border-bottom: none;
+}
