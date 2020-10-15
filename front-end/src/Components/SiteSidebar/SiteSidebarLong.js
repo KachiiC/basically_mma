@@ -2,14 +2,14 @@ import React from 'react'
 //Components
 import MMANews from './SidebarSections/MMANews'
 import TwitterWidget from './SidebarSections/TwitterWidget'
-import MMAHighlights from './SidebarSections/MMAHighlights'
+// import MMAHighlights from './SidebarSections/MMAHighlights'
 import SiteSignature from './SidebarSections/SiteSignature'
 
 const SiteSidebarLong = () => (
     
     <div className="sidebar-container">
         <SiteSignature />
-        <MMAHighlights />
+        {/* <MMAHighlights /> */}
         <MMANews />
         <TwitterWidget />
     </div>

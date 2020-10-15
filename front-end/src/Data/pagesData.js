@@ -1,8 +1,8 @@
 import React from 'react'
 // Pages
 import Home from '../Pages/Others/Home'
-import About from '../Pages/Others/About/about'
-import Store from '../Pages/Others/Store/store'
+import About from '../Pages/Others/About/'
+import Store from '../Pages/Others/Store/'
 // Basic
 import WhatIsMMA from '../Pages/Basics/WhatIsMMA'
 import HistoryOfMMA from '../Pages/Basics/HistoryOfMMA'
