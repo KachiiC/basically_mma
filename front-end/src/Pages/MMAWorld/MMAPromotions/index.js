@@ -1,6 +1,6 @@
 import React from 'react'
 // Data
-import Promotions from '../../../Data/MMAWorld/PromotionsData'
+// import Promotions from '../../../Data/MMAWorld/PromotionsData'
 // Components
 import MMAPromotionsIntroduction from './Components/MMAPromotionsIntroduction'
 

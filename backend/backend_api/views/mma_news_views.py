@@ -15,8 +15,12 @@ def news_list(request):
 
 @api_view(['GET'])
 def news_list_detail(request, pk):
-    news = MMANews.objects.get(pk=pk)
 
-    serializer = MMANewsSerializer(news)
+    try:
+        news = MMANews.objects.get(pk=pk)
+    except MMANews.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+    serializer = MMANewsSerializer(news, context={'request': request})
 
     return Response(serializer.data, status=status.HTTP_200_OK)

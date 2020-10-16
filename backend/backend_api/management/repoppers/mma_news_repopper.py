@@ -6,7 +6,6 @@ def create_new_mma_news(data_location):
     with open(data_location, 'r') as json_file:
         data = json.load(json_file)
         news = data["latestNews"]
-
         for x in news:
             MMANews(
                 title=x["title"],

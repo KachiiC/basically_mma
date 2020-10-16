@@ -15,9 +15,10 @@ def all_mma_videos(request):
 
 
 @api_view(['GET'])
-def highlights_playlist_detail(request, pk):
-    video = MMAPlaylist.objects.get(pk=pk)
+def all_mma_playlist(request):
 
-    serializer = MMAPlaylistSerializer(video)
+    data = MMAPlaylist.objects.all()
 
-    return Response(serializer.data, status=status.HTTP_200_OK)
+    serializer = MMAPlaylistSerializer(data, context={'request': request}, many=True)
+
+    return Response(serializer.data)
