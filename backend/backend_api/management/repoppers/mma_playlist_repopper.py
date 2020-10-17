@@ -1,5 +1,5 @@
 import json
-from backend_api.models.mma_playlists_model import MMAVideo, MMAPlaylist
+from backend_api.models.mma_videos_and_playlists_model import MMAVideo, MMAPlaylist
 
 
 def create_new_mma_videos(data_location):

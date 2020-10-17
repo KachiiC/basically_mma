@@ -2,7 +2,7 @@ from django.core.management.base import BaseCommand
 import os
 # Models
 from backend_api.models.mma_news_model import MMANews
-from backend_api.models.mma_playlists_model import MMAPlaylist, MMAVideo
+from backend_api.models.mma_videos_and_playlists_model import MMAPlaylist, MMAVideo
 # Repoppers
 from backend_api.management.repoppers.mma_news_repopper import create_new_mma_news
 from backend_api.management.repoppers.mma_playlist_repopper import create_new_mma_videos
