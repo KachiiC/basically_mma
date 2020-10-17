@@ -8,5 +8,3 @@ class MMANewsSerializer(serializers.ModelSerializer):  # MMA News
     class Meta:
         model = MMANews
         fields = ('pk', 'title', 'description', 'article', 'thumbnail_url', 'img_url', 'author')
-
-

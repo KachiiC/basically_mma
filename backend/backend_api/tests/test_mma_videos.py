@@ -3,7 +3,6 @@ from rest_framework.test import APITestCase
 from rest_framework import status
 from backend_api.models.mma_videos_and_playlists_model import MMAVideo
 from backend_api.serializers.mma_videos_serializers import MMAVideoSerializer
-# from backend_api.serializers.mma_playlist_serializers import MMAPlaylistSerializer
 
 
 class MMAVideosTest(APITestCase):
@@ -51,7 +50,7 @@ class MMAVideosTest(APITestCase):
         assert response.data == serializer.data
 
     def test_get_single_video(self):
-        """ Retrieve single video"""
+        """ Retrieve a single video"""
         single_video_endpoint = reverse('mma_videos_single', args=[self.mma_video_1.pk])
 
         video = MMAVideo.objects.get(pk=self.mma_video_1.pk)
@@ -64,7 +63,7 @@ class MMAVideosTest(APITestCase):
         assert response.data == serializer.data
 
     def test_get_empty_openers(self):
-        """ Retrieve no articles from db """
+        """ clear videos from db """
         MMAVideo.objects.all().delete()
 
         response = self.client.get(self.videos_endpoint)

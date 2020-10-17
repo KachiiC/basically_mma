@@ -39,7 +39,7 @@ class Command(BaseCommand):
         ).save(),
         MMAPlaylist(
             playlist_name="Fight Highlights",
-            playlist_description = "Fight Highlights Description"
+            playlist_description="Fight Highlights Description"
         ).save()
 
         mma_videos_list = MMAVideo.objects.all()
