@@ -14,7 +14,7 @@ const UFCFights = () => {
 
 
   useEffect(() => {
-      fetch("http://127.0.0.1:8000/backend_api/ufc_playlist") 
+      fetch("http://127.0.0.1:8000/backend_api/mma_playlist/PLaaEeFtNlIJ2Yigy4wHCQlcuRZg4NKbi5") 
       .then((response) => { 
           return response.json() 
       })

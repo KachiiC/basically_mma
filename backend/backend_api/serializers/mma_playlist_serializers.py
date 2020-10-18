@@ -6,4 +6,4 @@ from backend_api.models.mma_videos_and_playlists_model import MMAPlaylist
 class MMAPlaylistSerializer(serializers.ModelSerializer):
     class Meta:
         model = MMAPlaylist
-        fields = ('pk', 'playlist_name', 'playlist_video', 'playlist_description')
+        fields = ('pk', 'playlist_id', 'playlist_name', 'playlist_video', 'playlist_description')

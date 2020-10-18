@@ -39,12 +39,13 @@ class MMAVideosTest(APITestCase):
 
     mma_playlist_1 = MMAPlaylist(
         pk=1,
+        playlist_id="PLaaEeFtNlIJ2IZ3o2kE7jjZ0NZu8tP9YJ",
         playlist_name="Fight Highlights",
         playlist_description="Fight Highlights Description"
     )
 
     mma_playlist_2 = MMAPlaylist(
-        pk=2,
+        playlist_id="PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC",
         playlist_name="Bellator Fights",
         playlist_description="Bellator Fights Description"
     )
@@ -85,9 +86,9 @@ class MMAVideosTest(APITestCase):
 
     def test_retrieve_single_playlist(self):
         """" Retrieve a single playlist"""
-        single_playlist = reverse('mma_playlist_single', args=[self.mma_playlist_1.pk])
+        single_playlist = reverse('mma_playlist_single', args=[self.mma_playlist_1.playlist_id])
 
-        video = MMAPlaylist.objects.get(pk=self.mma_playlist_1.pk)
+        video = MMAPlaylist.objects.get(playlist_id=self.mma_playlist_1.playlist_id)
 
         serializer = MMAPlaylistSerializer(video)
 

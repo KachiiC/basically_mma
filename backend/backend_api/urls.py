@@ -15,5 +15,5 @@ urlpatterns = [
     path('mma_videos/<int:pk>', mma_videos_views.mma_videos_single, name="mma_videos_single"),
     # MMA Playlists
     path('mma_playlist/', mma_playlist_views.mma_playlist_all, name="mma_playlist"),
-    path('mma_playlist/<str:pk>', mma_playlist_views.mma_playlist, name="mma_playlist_single")
+    path('mma_playlist/<str:playlist_id>', mma_playlist_views.mma_playlist, name="mma_playlist_single")
 ]

@@ -2,6 +2,7 @@ from django.db import models
 
 
 class MMAPlaylist(models.Model):
+    playlist_id = models.CharField(max_length=40, blank=True)
     playlist_name = models.CharField(max_length=100)
     playlist_video = models.ManyToManyField('MMAVideo', blank=True)
     playlist_description = models.TextField()

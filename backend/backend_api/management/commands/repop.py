@@ -30,14 +30,17 @@ class Command(BaseCommand):
         MMAPlaylist.objects.all().delete()
 
         MMAPlaylist(
+            playlist_id="PLaaEeFtNlIJ2Yigy4wHCQlcuRZg4NKbi5",
             playlist_name="UFC videos",
             playlist_description="UFC Description"
         ).save(),
         MMAPlaylist(
+            playlist_id="PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC",
             playlist_name="Bellator videos",
             playlist_description="Bellator Description"
         ).save(),
         MMAPlaylist(
+            playlist_id="PLaaEeFtNlIJ2IZ3o2kE7jjZ0NZu8tP9YJ",
             playlist_name="Fight Highlights",
             playlist_description="Fight Highlights Description"
         ).save()

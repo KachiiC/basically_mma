@@ -15,9 +15,9 @@ def mma_playlist_all(request):
 
 
 @api_view(['GET'])
-def mma_playlist(request, pk):
+def mma_playlist(request, playlist_id):
     try:
-        playlist = MMAPlaylist.objects.get(pk=pk)
+        playlist = MMAPlaylist.objects.get(playlist_id=playlist_id)
     except MMAPlaylist.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
