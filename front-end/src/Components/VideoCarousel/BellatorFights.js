@@ -8,12 +8,22 @@ import Carousel from '@brainhubeu/react-carousel';
 
 const BellatorFights = () => {
     
+  const [youtube, setYoutube] = useState({
+    playlist_video:[
+        {
+            title: "", 
+            description: "", 
+            video_id: "", 
+            thumbnail_url: "", 
+            playlist_id: ""
+        }
+    ],
+  }) 
   const [isFetching, setIsFetching] = useState(true)
-  const [youtube, setYoutube] = useState([]) 
   const [isDisplayable, setIsDisplayable] = useState(false)
 
   useEffect(() => {
-      fetch("http://127.0.0.1:8000/backend_api/bellator_playlist") 
+      fetch("http://127.0.0.1:8000/backend_api/mma_playlist/PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC") 
       .then((response) => { 
           return response.json() 
       })
@@ -28,7 +38,7 @@ const BellatorFights = () => {
       
   }, []) 
   
-  const youtubeItems = youtube.map((item, index) => {
+  const youtubeItems = youtube.playlist_video.map((item, index) => {
   
     var myArray = item.title.split(" ");
     var titleArray = [];

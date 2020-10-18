@@ -1,14 +1,13 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import VideoCarousel from '../../Components/VideoCarousel'
 // CSS
 import './Test.css'
 // Components
 
 
-const TestPage = () => {
-    return (
-        <h1>Tests</h1>
-    )
+const TestPage = () => (
+    <VideoCarousel />
+)
 
-}
 
 export default TestPage

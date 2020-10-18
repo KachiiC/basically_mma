@@ -8,8 +8,18 @@ import Carousel from '@brainhubeu/react-carousel';
 
 const UFCFights = () => {
     
+  const [youtube, setYoutube] = useState({
+    playlist_video:[
+        {
+            title: "", 
+            description: "", 
+            video_id: "", 
+            thumbnail_url: "", 
+            playlist_id: ""
+        }
+    ],
+  }) 
   const [isFetching, setIsFetching] = useState(true)
-  const [youtube, setYoutube] = useState([]) 
   const [isDisplayable, setIsDisplayable] = useState(false)
 
 
@@ -30,7 +40,7 @@ const UFCFights = () => {
       
   }, []) 
   
-  const youtubeItems = youtube.map((item, index) => {
+  const youtubeItems = youtube.playlist_video.map((item, index) => {
   
     var myArray = item.title.split(" ");
     var titleArray = [];
