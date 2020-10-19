@@ -29,18 +29,20 @@ class Command(BaseCommand):
 
         MMAPlaylist.objects.all().delete()
 
+        # TODO: Generate playlist ID from playlist name by hashing it.
+
         MMAPlaylist(
-            playlist_id="PLaaEeFtNlIJ2Yigy4wHCQlcuRZg4NKbi5",
+            playlist_id="ufc_playlist",
             playlist_name="UFC videos",
             playlist_description="UFC Description"
         ).save(),
         MMAPlaylist(
-            playlist_id="PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC",
+            playlist_id="bellator_playlist",
             playlist_name="Bellator videos",
             playlist_description="Bellator Description"
         ).save(),
         MMAPlaylist(
-            playlist_id="PLaaEeFtNlIJ2IZ3o2kE7jjZ0NZu8tP9YJ",
+            playlist_id="fight_highlights",
             playlist_name="Fight Highlights",
             playlist_description="Fight Highlights Description"
         ).save()
@@ -48,13 +50,13 @@ class Command(BaseCommand):
         mma_videos_list = MMAVideo.objects.all()
 
         for mma_video in mma_videos_list:
-            if mma_video.playlist_id == "PLaaEeFtNlIJ2Yigy4wHCQlcuRZg4NKbi5":
+            if mma_video.playlist_id == "PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC":
                 ufc_playlist = MMAPlaylist.objects.get(playlist_name="UFC videos")
                 ufc_playlist.playlist_video.add(mma_video)
-            elif mma_video.playlist_id == "PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC":
+            elif mma_video.playlist_id == "PLaaEeFtNlIJ2IZ3o2kE7jjZ0NZu8tP9YJ":
                 bellator_playlist = MMAPlaylist.objects.get(playlist_name="Bellator videos")
                 bellator_playlist.playlist_video.add(mma_video)
-            elif mma_video.playlist_id == "PLaaEeFtNlIJ2IZ3o2kE7jjZ0NZu8tP9YJ":
+            elif mma_video.playlist_id == "PLaaEeFtNlIJ2Yigy4wHCQlcuRZg4NKbi5":
                 fight_highlights_playlist = MMAPlaylist.objects.get(playlist_name="Fight Highlights")
                 fight_highlights_playlist .playlist_video.add(mma_video)
 

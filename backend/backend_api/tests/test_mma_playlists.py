@@ -39,13 +39,13 @@ class MMAVideosTest(APITestCase):
 
     mma_playlist_1 = MMAPlaylist(
         pk=1,
-        playlist_id="PLaaEeFtNlIJ2IZ3o2kE7jjZ0NZu8tP9YJ",
+        playlist_id="fight_highlights",
         playlist_name="Fight Highlights",
         playlist_description="Fight Highlights Description"
     )
 
     mma_playlist_2 = MMAPlaylist(
-        playlist_id="PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC",
+        playlist_id="bellator_highlights",
         playlist_name="Bellator Fights",
         playlist_description="Bellator Fights Description"
     )
@@ -55,6 +55,7 @@ class MMAVideosTest(APITestCase):
     expected_playlists = [mma_playlist_1, mma_playlist_2]
 
     def setUp(self):
+        """Saving videos and playlists"""
         for obj in self.expected_videos:
             obj.save()
 
@@ -62,6 +63,7 @@ class MMAVideosTest(APITestCase):
             obj.save()
 
     def test_adding_to_playlist(self):
+        """ Testing saving videos to playlist depending on playlist_video_id"""
         all_videos = MMAVideo.objects.all()
 
         fight_highlights = MMAPlaylist.objects.get(playlist_name="Fight Highlights")
@@ -77,7 +79,7 @@ class MMAVideosTest(APITestCase):
         assert bellator_fights.playlist_video.count() == 1
 
     def test_retrieve_all_playlists(self):
-        """ Retrieve all existing videos"""
+        """ Retrieve all existing playlists"""
         serializer = MMAPlaylistSerializer(self.expected_playlists, many=True)
 
         response = self.client.get(self.playlist_endpoint)

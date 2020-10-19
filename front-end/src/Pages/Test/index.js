@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import VideoCarousel from '../../Components/VideoCarousel'
 // CSS
 import './Test.css'
@@ -6,7 +6,7 @@ import './Test.css'
 
 
 const TestPage = () => (
-    <VideoCarousel />
+    <VideoCarousel playlist="ufc_playlist" />
 )
 
 

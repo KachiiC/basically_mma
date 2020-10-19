@@ -29,6 +29,7 @@ class MMANewsTest(APITestCase):
     expected_news = [mma_news_1, mma_news_2]
 
     def setUp(self):
+        """ Saving existing videos to test"""
         for obj in self.expected_news:
             obj.save()
 

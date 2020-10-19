@@ -13,13 +13,13 @@ const MMAHighlights = () => {
   
   
     useEffect(() => {
-        fetch("http://127.0.0.1:8000/backend_api/highlights_playlist/") 
+        fetch("http://127.0.0.1:8000/backend_api/mma_playlist/fight_highlights") 
         .then((response) => { 
             return response.json() 
         })
         .then((videoDataFromServer) => { 
   
-            setHighlightVideo(videoDataFromServer)
+            setHighlightVideo(videoDataFromServer.playlist_video)
             setIsDisplayable(true)
             setIsFetching(false)
         })

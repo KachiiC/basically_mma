@@ -1,44 +1,34 @@
 import React, { useState, useEffect} from 'react'
 // CSS
-import './VideoCarousel.css'
-// Components
+import '../../Components/VideoCarousel/VideoCarousel.css'
+// Compoents
 import {Empty} from 'antd'
 import Icon from 'react-fa'
 import Carousel from '@brainhubeu/react-carousel';
 
-const BellatorFights = () => {
-    
-  const [youtube, setYoutube] = useState({
-    playlist_video:[
-        {
-            title: "", 
-            description: "", 
-            video_id: "", 
-            thumbnail_url: "", 
-            playlist_id: ""
-        }
-    ],
-  }) 
-  const [isFetching, setIsFetching] = useState(true)
-  const [isDisplayable, setIsDisplayable] = useState(false)
+const TestCarousel = (props) => {
 
-  useEffect(() => {
-      fetch("http://127.0.0.1:8000/backend_api/mma_playlist/PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC") 
-      .then((response) => { 
-          return response.json() 
-      })
-      .then((youtubeDataFromServer) => { 
-          setYoutube(youtubeDataFromServer)
-          setIsDisplayable(true)
-          setIsFetching(false)
-      })
-      .catch((error) => { 
-          setIsFetching(false)
-      })
-      
-  }, []) 
+    const [youtube, setYoutube] = useState([]) 
+    const [isFetching, setIsFetching] = useState(true)
+    const [isDisplayable, setIsDisplayable] = useState(false)
+    
+    useEffect(() => {
+        fetch(`http://127.0.0.1:8000/backend_api/mma_playlist/${props.playlist}`) 
+        .then((response) => { 
+            return response.json() 
+        })
+        .then((youtubeDataFromServer) => { 
+            setYoutube(youtubeDataFromServer.playlist_video)
+            setIsDisplayable(true)
+            setIsFetching(false)
+        })
+        .catch((error) => { 
+            setIsFetching(false)
+        })
+        
+    }, []) 
   
-  const youtubeItems = youtube.playlist_video.map((item, index) => {
+  const youtubeItems = youtube.map((item, index) => {
   
     var myArray = item.title.split(" ");
     var titleArray = [];
@@ -76,7 +66,7 @@ const BellatorFights = () => {
 
   return (
         <div className="video-slider-container">
-            <h5>Bellator Videos</h5>
+            <h5>Videos</h5>
             <Carousel infinite addArrowClickHandler slidesPerScroll={3} slidesPerPage={3}
               arrowRight={<Icon size="2x" name="angle-double-right" />}
               arrowLeft={<Icon size="2x" name="angle-double-left" />}
@@ -88,4 +78,5 @@ const BellatorFights = () => {
 
 }
 
-export default BellatorFights
+
+export default TestCarousel
