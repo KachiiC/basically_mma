@@ -9,7 +9,6 @@ const SiteSidebarShort = () => (
             <SiteSignature />
             <MMAHighlights />
         </div>
-        
-    )
+)
 
 export default SiteSidebarShort

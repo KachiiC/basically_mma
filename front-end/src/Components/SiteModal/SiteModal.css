@@ -1,4 +1,4 @@
-.fight-strat-overlay {
+.modal-overlay {
     position: fixed;
     display: block; 
     overflow: auto;
@@ -12,7 +12,7 @@
     z-index: 999; 
 }
 
-.fight-strat-modal-content {
+.modal-content {
     margin: 100px auto;
     background-color: white;
     border-radius: 0.25rem;
@@ -29,14 +29,4 @@
 .close-modal-button{
     cursor: pointer;
     width: 10px;
-}
-
-.gallery-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.gallery-item {
-    width: 50%;
-    text-align: center;
 }

@@ -1,10 +1,21 @@
 .video-slider-container {
     margin: 10px 0px 30px;
+    text-align: center;
 }
 .video-slider-container h5 {
     margin: 0 !important;
     text-decoration: underline;
 }
+
+.video-slide {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.video-title{
+    text-align: center;
+}
+
 .video-slider-image {
     height: 200px;
     width: 356px;   

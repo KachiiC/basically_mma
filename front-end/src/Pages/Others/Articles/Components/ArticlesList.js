@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
 // Components
+import { CircularProgress } from '@material-ui/core'
+import {Empty} from 'antd'
 
 
 const ArticlesList = () => {
 
     const [newsArticles, setArticles] = useState([])
+    const [isFetching, setIsFetching] = useState(true)
+    const [isDisplayable, setIsDisplayable] = useState(false)
     
     useEffect(() => {
         fetch("http://127.0.0.1:8000/backend_api/mma_news/")
@@ -14,9 +18,12 @@ const ArticlesList = () => {
         })
         .then((articleData) => {
             setArticles(articleData)
+            setIsDisplayable(true)
+            setIsFetching(false)
         })
         .catch((error) => { 
             console.log(error)
+            setIsFetching(false)
         })
     },[])
     
@@ -51,12 +58,15 @@ const ArticlesList = () => {
         )        
     })
 
+    const renderLogic = (isFetching)?(<CircularProgress />)
+    :((isDisplayable)?(listOfArticles):(<Empty />))
+
 
     return (
             <div className="main-container">
                 <h2>News Articles</h2>
                 <div className="post-container">
-                    {listOfArticles}
+                    {renderLogic}
                 </div>
             </div>
     )

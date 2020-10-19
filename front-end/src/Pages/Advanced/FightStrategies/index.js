@@ -37,6 +37,7 @@ const FightStrategies = () => {
             </FightStrategiesCard>
           )}
           <div className="main-container">
+            <h1>Fight Strategies</h1>
             <FightStrategiesIntro />
             <div className="gallery-row">
               {displayPictures}
