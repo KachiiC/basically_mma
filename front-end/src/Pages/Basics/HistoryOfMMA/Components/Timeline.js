@@ -6,9 +6,9 @@ import TimelineData from '../../../../Data/Basics/timelineData'
 
 const MMATimeline = () => {
 
-    const renderTimelineList = TimelineData.map((item) => {
+    const renderTimelineList = TimelineData.map((item, index) => {
         return (
-            <Timeline.Item>
+            <Timeline.Item key={index}>
                 <h5 className="history-event-header">{item.name}</h5>
                 <h6 className="history-event-year">{item.year}</h6>
                 <p>{item.event}</p>

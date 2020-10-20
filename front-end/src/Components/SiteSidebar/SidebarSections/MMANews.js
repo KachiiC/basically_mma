@@ -30,9 +30,8 @@ const MMANews = () => {
 
     const displayedArticles = mmaNews.slice(0,3)
 
-    const renderListOfArticles = displayedArticles.map((newsArticle) => {
-        return (
-            <div className="sidebar-list">
+    const renderListOfArticles = displayedArticles.map((newsArticle, index) => (
+            <div className="sidebar-list" key={index}>
                 <a href={newsArticle.article} target="_blank" rel="noreferrer noopener">
                     <img src={newsArticle.thumbnail_url} alt="news pic"/>
                     <div className="side-list-heading">
@@ -41,12 +40,11 @@ const MMANews = () => {
                 </a>                
             </div>
         )
-    })
+    )
 
-      const renderLogic = (isFetching)?(
+    const renderLogic = (isFetching)?(
         <h6>Loading</h6>
     ):((isDisplayable)?(renderListOfArticles):(<Empty />))
-
 
     return (
         <div className="single-widget-area">

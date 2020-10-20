@@ -30,10 +30,10 @@ const MMAHighlights = () => {
     }, []) 
       const displayedHighlights = highlightVideo.slice(0,3)
 
-      const renderListOfVideos = displayedHighlights.map((highlight) => {
+      const renderListOfVideos = displayedHighlights.map((highlight, index) => {
 
         return (
-            <div className="sidebar-list">
+            <div className="sidebar-list" key={index}>
                 <a href={`https://www.youtube.com/watch?v=${highlight.video_id}`} 
                    target="_blank" rel="noreferrer noopener">
                     <img src={highlight.thumbnail_url} alt="video pic"/>

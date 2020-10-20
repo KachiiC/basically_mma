@@ -35,7 +35,7 @@ const CollapseSection = (props) => {
                 <Collapse in={open} timeout="auto" unmountOnExit>
                 <h3 className="techniques-header">{technique.name}</h3>
                 <p>{formattedContent}</p>
-                <div class="techniques-row">
+                <div className="techniques-row">
                     <div className="techniques-video-container">
                         <h6>Tutorial</h6>
                         <iframe width="370" height="208" src={`https://www.youtube.com/embed/${technique.tutorial}`}
@@ -45,8 +45,8 @@ const CollapseSection = (props) => {
                     <div className="techniques-video-container">
                         <h6>Mistakes to avoid</h6>
                         <iframe width="370" height="208" src={`https://www.youtube.com/embed/${technique.mistakes}`}
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen title="technique video" className="techniques-video"  />                        
+                        frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowFullScreen title="technique video" className="techniques-video"  />                        
                     </div>                        
                 </div>
                 </Collapse>

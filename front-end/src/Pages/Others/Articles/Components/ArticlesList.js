@@ -27,9 +27,9 @@ const ArticlesList = () => {
         })
     },[])
     
-    const listOfArticles = newsArticles.map((post) => {
+    const listOfArticles = newsArticles.map((post, index) => {
         return (
-            <div className="trending-posts d-sm-flex">
+            <div className="trending-posts d-sm-flex" key={index}>
                 <div className="trending-pics">
                     <img src={post.img_url} alt="post-cover"/>
                 </div>
@@ -37,10 +37,10 @@ const ArticlesList = () => {
                     <div className="trending-meta">
                         <div className="trending-date-author">
                             <div className="trending-author">
-                                By <Link href="#">{post.author}</Link>
+                                By <Link to="#">{post.author}</Link>
                             </div>
                             <div>
-                                <Link href="#">Date</Link>
+                                <Link to="#">Date</Link>
                             </div>
                         </div>
                     </div>

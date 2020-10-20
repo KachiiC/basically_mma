@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
-// Components
+// CSS
+import { CircularProgress } from '@material-ui/core';
 import {Empty} from 'antd'
+// Components
 import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
 import TableContainer from '@material-ui/core/TableContainer';
@@ -37,8 +39,9 @@ const TechniquesList = () => {
     const renderListOfTechniques = techniques.map((technique, index) => {
 
         const formattedContent = technique.description.split('\r\n').map((value, index) => {
-            if (!value) return <p className="technique-description">{'\r\n'}</p>
-            return <p className="technique-description">{value}</p>
+            if (!value) 
+            return <p className="technique-description" key={index}>{'\r\n'}</p>
+            return <p className="technique-description" key={index}>{value}</p>
           })
 
 
@@ -53,7 +56,7 @@ const TechniquesList = () => {
     })
 
     const renderLogic = (isFetching)?(
-        <h6>Loading</h6>
+        <CircularProgress />
     ):((isDisplayable)?(renderListOfTechniques):(<Empty />))
 
 

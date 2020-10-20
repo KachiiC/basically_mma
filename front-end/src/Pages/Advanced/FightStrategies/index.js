@@ -13,13 +13,13 @@ const FightStrategies = () => {
     const [showModal, setShowModal] = useState(false);
     const [result, setResult] = useState([])
   
-    const displayPictures = Pictures.map((picture) => {
+    const displayPictures = Pictures.map((picture, index) => {
   
       const rename = () =>  setResult(picture) 
       const changeVisibility = () => setShowModal(true)
   
       return (
-          <div className="gallery-item">
+          <div className="gallery-item" key={index}>
               <h1>{picture.name}</h1>
               <img src={picture.url} alt={picture.name} onClick={() => {changeVisibility();rename()}} />
           </div>

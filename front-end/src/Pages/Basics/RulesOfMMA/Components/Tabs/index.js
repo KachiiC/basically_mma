@@ -45,21 +45,20 @@ const RulesTabs = () => {
     setValue(newValue);
   };
 
-  const titleList = TabsTitles.map((title) => (
-      <Tab label={title.tab} {...tabOrder(`${title.order}`)} />
+  const titleList = TabsTitles.map((title, index) => (
+      <Tab label={title.tab} {...tabOrder(`${title.order}`)} key={index}/>
     )
   )
 
   const displayTabs = TabsTitles.map((title) => (
-        <TabPanel value={value} index={title.order}>
-          <h3>{title.tab}</h3>
+        <TabPanel value={value} index={title.order} key={title.order}>
+          {title.tab}
           <div className="rules-tab-paragraph"> 
-            <p>{title.paragraph}</p>
+            {title.paragraph}
           </div>
         </TabPanel>
       )
   )
-
 
   return (
       <div className="site-section-container">
