@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 import './FightStrategies.css'
 // Components
 import FightStrategiesIntro from './Components/FightStrategiesIntroduction'
-import FightStrategiesCard from './Components/FightStrategiesCard'
+import SiteModal from '../../../Components/SiteModal'
 import Pictures from '../../../Data/Advanced/FightStratData'
 import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 
@@ -29,12 +29,12 @@ const FightStrategies = () => {
     return (
         <div className="site-row">
           { showModal && (
-            <FightStrategiesCard closeModal={() => setShowModal(false)}>
+            <SiteModal closeModal={() => setShowModal(false)}>
               <div className="modal-content">
                 <h2>{result.name}</h2>
                 <img src={result.url} alt={result.name} />
               </div>
-            </FightStrategiesCard>
+            </SiteModal>
           )}
           <div className="main-container">
             <h1>Fight Strategies</h1>

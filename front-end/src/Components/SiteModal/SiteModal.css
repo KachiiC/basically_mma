@@ -13,17 +13,19 @@
 }
 
 .modal-content {
-    margin: 100px auto;
+    margin: 70px auto;
     background-color: white;
     border-radius: 0.25rem;
     width: 70%;
-    height: 70%;
+    height: 80%;
     padding: 20px;
     text-align: center;
   }
 
 .close-modal-button-container {
-    text-align: right;
+    right: 0px;
+    border: 1px solid black;
+    width: 10px;
 }
 
 .close-modal-button{
