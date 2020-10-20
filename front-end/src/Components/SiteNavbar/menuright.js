@@ -10,10 +10,12 @@ const Menuright = () =>  {
         return menu.type === "menu"
     })
 
-    const displayTopMenu = topMenu.map((menu) => {
+    const displayTopMenu = topMenu.map((menu, index) => {
         return (
-            <div className="nav-item">
-                <Link className="nav-link mx-auto" to={menu.link}>{menu.name}</Link>
+            <div className="nav-item" key={index}>
+                <Link className="nav-link mx-auto" to={menu.link}>
+                    {menu.name}
+                </Link>
             </div>
         )
     })

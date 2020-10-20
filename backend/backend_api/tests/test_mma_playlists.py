@@ -11,7 +11,6 @@ class MMAVideosTest(APITestCase):
     playlist_endpoint = reverse('mma_playlist')
 
     mma_video_1 = MMAVideo(
-        pk=1,
         title="Colby Covington v Tyron Woodley fight highlights | UFC Vegas 11",
         description="Colby Covington and Tyron Woodley finally settled it",
         video_id="z4GjhImDvy0",
@@ -20,7 +19,6 @@ class MMAVideosTest(APITestCase):
     )
 
     mma_video_2 = MMAVideo(
-        pk=2,
         title="Insane fight! Michelle Waterson v Angela Hill fight highlights | UFC Vegas 10",
         description="Michelle Waterson and Angela Hill put on one of the fights of the year.",
         video_id="XemXmylekMI",
@@ -29,7 +27,6 @@ class MMAVideosTest(APITestCase):
     )
 
     mma_video_3 = MMAVideo(
-        pk=3,
         title="Full Fight | Michael Page vs. Richard Kiely - Bellator 227",
         description="It's Full Fight Friday! As we are just one day away from Bellator London.",
         video_id="feWqqdV09ZA",
@@ -38,7 +35,6 @@ class MMAVideosTest(APITestCase):
     )
 
     mma_playlist_1 = MMAPlaylist(
-        pk=1,
         playlist_id="fight_highlights",
         playlist_name="Fight Highlights",
         playlist_description="Fight Highlights Description"

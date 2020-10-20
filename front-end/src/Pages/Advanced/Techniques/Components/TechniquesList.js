@@ -45,6 +45,7 @@ const TechniquesList = () => {
         return (
             <CollapseSection 
                 index={index}
+                key={index}
                 technique={technique}
                 formattedContent={formattedContent}
             />

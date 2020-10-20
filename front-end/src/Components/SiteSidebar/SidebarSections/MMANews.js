@@ -7,11 +7,10 @@ import {Empty} from 'antd'
 
 const MMANews = () => {
 
-    const [isFetching, setIsFetching] = useState(true)
     const [mmaNews, setMMANews] = useState([]) 
+    const [isFetching, setIsFetching] = useState(true)
     const [isDisplayable, setIsDisplayable] = useState(false)
-  
-  
+    
     useEffect(() => {
         fetch("http://127.0.0.1:8000/backend_api/mma_news/") 
         .then((response) => { 
@@ -28,20 +27,21 @@ const MMANews = () => {
         })
         
     }, []) 
-      const displayedArticles = mmaNews.slice(0,3)
 
-      const renderListOfArticles = displayedArticles.map((newsArticle) => {
-            return (
-                <div className="sidebar-list">
-                    <a href={newsArticle.article} target="_blank" rel="noreferrer noopener">
-                        <img src={newsArticle.thumbnail_url} alt="news pic"/>
-                        <div className="side-list-heading">
-                            <p>{newsArticle.title}</p>
-                        </div>
-                    </a>                
-                </div>
-            )
-        })
+    const displayedArticles = mmaNews.slice(0,3)
+
+    const renderListOfArticles = displayedArticles.map((newsArticle) => {
+        return (
+            <div className="sidebar-list">
+                <a href={newsArticle.article} target="_blank" rel="noreferrer noopener">
+                    <img src={newsArticle.thumbnail_url} alt="news pic"/>
+                    <div className="side-list-heading">
+                        <p>{newsArticle.title}</p>
+                    </div>
+                </a>                
+            </div>
+        )
+    })
 
       const renderLogic = (isFetching)?(
         <h6>Loading</h6>

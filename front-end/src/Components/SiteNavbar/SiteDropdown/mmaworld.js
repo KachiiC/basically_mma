@@ -9,9 +9,11 @@ const MMAWorld = () =>  {
         return menu.type === "MMA World"
     })
 
-    const displayMmaworld = mmaworld.map((mma) => {
+    const displayMmaworld = mmaworld.map((mma, index) => {
         return (
-            <Link className="dropdown-item" to={mma.link}>{mma.name}</Link>
+            <Link className="dropdown-item" to={mma.link} key={index}>
+                {mma.name}
+            </Link>
         )
     })
 

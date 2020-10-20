@@ -9,9 +9,11 @@ const Advanced = () => {
         return menu.type === "advanced"
     })
 
-    const displayAdvanced = advanced.map((advance) => {
+    const displayAdvanced = advanced.map((advance, index) => {
         return (
-            <Link className="dropdown-item" to={advance.link}>{advance.name}</Link>
+            <Link className="dropdown-item" to={advance.link} key={index}>
+                {advance.name}
+            </Link>
         )
     })
 

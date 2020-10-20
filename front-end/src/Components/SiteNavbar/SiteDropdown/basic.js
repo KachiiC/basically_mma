@@ -9,9 +9,11 @@ const Basic = () => {
         return menu.type === "basic"
     })
 
-    const displayBasics = basics.map((basic) => {
+    const displayBasics = basics.map((basic, index) => {
         return (
-            <Link className="dropdown-item" to={basic.link}>{basic.name}</Link>
+            <Link className="dropdown-item" to={basic.link} key={index}>
+                {basic.name}
+            </Link>
         )
     })
 
