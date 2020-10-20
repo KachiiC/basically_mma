@@ -10,7 +10,7 @@ const SiteNavbar = () =>  (
     <nav className="navbar navbar-expand-lg fixed-top bg-light" id="mainNav">
         < SiteDropdown />  
         <div className="navbar-brand navbar-section">
-            <Link path to="/">Basically MMA</Link>
+            <Link to="/home">Basically MMA</Link>
         </div>
         < MenuRight />
     </nav>
