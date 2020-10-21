@@ -30,7 +30,7 @@ const WeightCutData = [
     },
     {
       icon: <EventBusyIcon />,
-      description: "The older you are, the harder it will become to cut weight. if you are struggling to make your required weight then consider moving up."
+      description: "The older you are, the harder it will become to cut weight. If you are struggling then consider moving up a weight class."
     },
 
   ]

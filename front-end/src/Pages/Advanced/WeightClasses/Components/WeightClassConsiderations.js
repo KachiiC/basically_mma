@@ -20,7 +20,7 @@ const WeightCutConsiderations = () => {
 
     return (
         <>
-            <h5>Choosing a weight class</h5>
+            <h3>Choosing a weight class</h3>
             <List>
                 {renderList}
             </List>

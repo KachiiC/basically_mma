@@ -11,12 +11,11 @@ const WeightCutProsAndCons = () => {
             <Table.Cell className="weight-cut-pros">{point.pro}</Table.Cell>
             <Table.Cell className="weight-cut-cons">{point.con}</Table.Cell>
         </Table.Row>
-    ))
-            
+    ))     
 
   return (
       <>
-        <h5>Pros and Cons of Weight Cutting</h5>
+        <h3>Pros and Cons of Weight Cutting</h3>
         <div className="pros-cons-container">
             <Table celled fixed>
                 <Table.Header>

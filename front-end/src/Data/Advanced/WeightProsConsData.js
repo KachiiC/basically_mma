@@ -8,11 +8,10 @@ const WeightProsCons = [
     {
         pro:"The more likely you are to have a strength advantage over your oponnent in the grappling exchanges.",
         con:"Mean there is less water in your brain and dehydration means you are far more susceptible to damage during the fight."
-
     },
     {
-        pro:"The more power you'll have in your punches and kicks",
-        con:"Have long term effects on the health of your kidney."
+        pro:"The more knockout power you'll have in your punches and kicks.",
+        con:"Weaken you and you won't perform as effectively as you do at your natural weight in training."
     },
     {
         pro:"The more it builds discipline in the lead up to the fight.",
