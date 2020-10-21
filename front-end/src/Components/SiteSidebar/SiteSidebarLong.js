@@ -1,19 +1,22 @@
 import React from 'react'
 //Components
 import MMANews from './SidebarSections/MMANews'
-import TwitterWidget from './SidebarSections/TwitterWidget'
-// import MMAHighlights from './SidebarSections/MMAHighlights'
+import MMAHighlights from './SidebarSections/MMAHighlights'
 import SiteSignature from './SidebarSections/SiteSignature'
 
-const SiteSidebarLong = () => (
-    
-    <div className="sidebar-container">
+const SiteSidebarLong = (props) => {
+
+    const input_news = props.news
+    const input_videos = props.videos
+
+    return (
+        <div className="sidebar-container">
         <SiteSignature />
-        {/* <MMAHighlights /> */}
-        <MMANews />
-        <TwitterWidget />
+        <MMAHighlights number_of_videos={input_videos}/>
+        <MMANews number_of_articles={input_news} />
     </div>
-    
-)
+
+    )
+}
 
 export default SiteSidebarLong

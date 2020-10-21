@@ -5,7 +5,7 @@ import './index.css'
 import {Empty} from 'antd'
 
 
-const MMAHighlights = () => {
+const MMAHighlights = (props) => {
 
     const [isFetching, setIsFetching] = useState(true)
     const [highlightVideo, setHighlightVideo] = useState([]) 
@@ -28,24 +28,25 @@ const MMAHighlights = () => {
         })
         
     }, []) 
-      const displayedHighlights = highlightVideo.slice(0,3)
 
-      const renderListOfVideos = displayedHighlights.map((highlight, index) => {
+    const displayedHighlights = highlightVideo.slice(0,props.number_of_videos)
 
-        return (
-            <div className="sidebar-list" key={index}>
-                <a href={`https://www.youtube.com/watch?v=${highlight.video_id}`} 
-                   target="_blank" rel="noreferrer noopener">
-                    <img src={highlight.thumbnail_url} alt="video pic"/>
-                    <div className="side-list-heading">
-                        <p>{highlight.title}</p>
-                    </div>
-                </a>
-            </div>
-        )
-      })
+    const renderListOfVideos = displayedHighlights.map((highlight, index) => {
 
-      const renderLogic = (isFetching)?(
+    return (
+        <div className="sidebar-list" key={index}>
+            <a href={`https://www.youtube.com/watch?v=${highlight.video_id}`} 
+                target="_blank" rel="noreferrer noopener">
+                <img src={highlight.thumbnail_url} alt="video pic"/>
+                <div className="side-list-heading">
+                    <p>{highlight.title}</p>
+                </div>
+            </a>
+        </div>
+    )
+    })
+
+    const renderLogic = (isFetching)?(
         <h6>Loading</h6>
     ):((isDisplayable)?(renderListOfVideos):(<Empty />))
 

@@ -13,7 +13,7 @@ const RulesOfMMA = () => (
                 <Introduction />
                 <Tabs />
             </div>
-            <SiteSidebarShort />
+            <SiteSidebarShort videos="5"/>
         </div>
     )
 

@@ -13,7 +13,7 @@ const HistoryOfMMA = () => (
                 <Introduction />
                 <Timeline />
             </div>
-            <SiteSidebarLong />
+            <SiteSidebarLong videos="20" news="14" />
         </div>
     );
 

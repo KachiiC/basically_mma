@@ -1,17 +1,19 @@
 import React, { useState, useEffect} from 'react'
 // CSS
 import './index.css'
-// Components
 import {Empty} from 'antd'
+import { CircularProgress } from '@material-ui/core'
+// Components
 
 
-const MMANews = () => {
+const MMANews = (props) => {
 
     const [mmaNews, setMMANews] = useState([]) 
     const [isFetching, setIsFetching] = useState(true)
     const [isDisplayable, setIsDisplayable] = useState(false)
     
     useEffect(() => {
+
         fetch("http://127.0.0.1:8000/backend_api/mma_news/") 
         .then((response) => { 
             return response.json() 
@@ -25,25 +27,29 @@ const MMANews = () => {
         .catch((error) => { 
             setIsFetching(false)
         })
-        
+
     }, []) 
 
-    const displayedArticles = mmaNews.slice(0,3)
+    const displayedArticles = mmaNews.slice(0, props.number_of_articles)
 
-    const renderListOfArticles = displayedArticles.map((newsArticle, index) => (
+    const renderListOfArticles = displayedArticles.map((newsArticle, index) => {
+
+        const articleTitle = newsArticle.title.split("").slice(0,77).join("")
+
+        return (
             <div className="sidebar-list" key={index}>
                 <a href={newsArticle.article} target="_blank" rel="noreferrer noopener">
                     <img src={newsArticle.thumbnail_url} alt="news pic"/>
                     <div className="side-list-heading">
-                        <p>{newsArticle.title}</p>
+                        <p>{articleTitle}</p>
                     </div>
                 </a>                
             </div>
         )
-    )
+    })
 
     const renderLogic = (isFetching)?(
-        <h6>Loading</h6>
+        <CircularProgress />
     ):((isDisplayable)?(renderListOfArticles):(<Empty />))
 
     return (

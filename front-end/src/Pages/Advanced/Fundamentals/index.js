@@ -14,7 +14,7 @@ const Fundamentals = () => (
                 <FundamentalsIntroduction />
                 <FundamentalCards />
             </div>
-            <SiteSidebarLong />
+            <SiteSidebarLong videos="3" news="3"/>
         </div>
 
     )

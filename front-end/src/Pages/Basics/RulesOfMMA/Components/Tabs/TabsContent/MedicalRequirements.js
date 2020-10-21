@@ -10,11 +10,7 @@ const MedicalRequirements = () => (
             </p>
             <p>
                 Immediately following a contest, each contestant shall be given a medical 
-                examination by a physician appointed by the commission. The medical examination 
-                may include any examinations or tests the commission deems necessary to determine 
-                the post-contest physical fitness of a contestant. Any contestant who refuses to 
-                submit to a post-contest medical examination shall be immediately suspended for an 
-                indefinite period.
+3
             </p>
         </>
     )

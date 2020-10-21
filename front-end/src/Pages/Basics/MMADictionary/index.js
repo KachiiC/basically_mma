@@ -7,12 +7,13 @@ import Introduction from './Components/MMADictionaryIntroduction'
 import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong';
 
 const MMADictionary = () => (
+    
         <div className="site-row">
             <div className="main-container">
                 <Introduction />
                 <Dictionary />
             </div>
-            <SiteSidebarLong />
+            <SiteSidebarLong videos="8" news="5"/>
         </div>
         
     );

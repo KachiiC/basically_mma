@@ -31,33 +31,33 @@ const navbarMenu = [
     },
     {   name: "Weight Classes",
         type: "advanced",
-        link: "#"
+        link: "weight-classes"
     },
     {   
         name: "Fighter Pay",
         type: "advanced",
-        link: "#"
+        link: "fighter-pay"
     },
     // MMA World
     {
         name: "MMA Promotions",
         type: "MMA World",
-        link: "#"
+        link: "mma-promotions"
     },
     {
         name: "MMA Legends",
         type: "MMA World",
-        link: "#"
+        link: "mma-legends"
     },
     {
         name: "The Best of MMA",
         type: "MMA World",
-        link: "#"
+        link: "best-of-mma"
     },
     {
         name: "Recommended",
         type: "MMA World",
-        link: "#"
+        link: "recommended"
     },
     // Other
     {

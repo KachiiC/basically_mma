@@ -33,7 +33,7 @@ const WhatIsMMA = () => (
                     picture-in-picture" allowFullScreen title="ufc 1" />                
                 </div>
             </div>
-            <SiteSidebarShort />
+            <SiteSidebarShort videos="3"/>
         </div>
     )
 

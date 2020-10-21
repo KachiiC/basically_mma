@@ -1,12 +1,13 @@
-.navbar-section {
-    width: 33.3%;
-}
-
 #mainNav {
     border-bottom: 1px solid #e9ecef;
     margin-bottom: 15px;
     color:#000;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.navbar-section,
+.navbar-logo-section {
+    width: 33.3%;
 }
 
 #mainNav .navbar-brand,
@@ -27,7 +28,7 @@
 #mainNav .navbar-nav > .nav-item,
 #mainNav .navbar-nav > .nav-item > .nav-link,
 .dropdown-item {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 800;
     color: #000;
     text-transform: uppercase;
@@ -38,4 +39,38 @@
 .dropdown:hover > .dropdown-menu {
     display: block;
     top: 95%;
+}
+
+@media screen and (max-width: 1363px) {
+    .navbar-logo-section {
+        width: 30%;
+    }
+
+    .navbar-section{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    #mainNav .navbar-nav > .nav-item,
+    #mainNav .navbar-nav > .nav-item > .nav-link,
+    .dropdown-item {
+        font-size: 12px;
+
+    }
+
+    .navbar-logo-section {
+        width: 25%;
+    }
+
+    .navbar-section{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    #mainNav {
+        display: none;
+    }
+
 }

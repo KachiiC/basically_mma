@@ -13,7 +13,7 @@ const Techniques = () => (
                 <TechniquesIntroduction />
                 <TechniquesList />
             </div>
-            <SiteSidebarLong />
+            <SiteSidebarLong videos="3" news="0"/>
         </div>
     )
 

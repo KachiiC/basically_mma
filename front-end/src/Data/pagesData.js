@@ -13,6 +13,7 @@ import Fundamentals from '../Pages/Advanced/Fundamentals'
 import Techniques from '../Pages/Advanced/Techniques'
 import FightStrategies from '../Pages/Advanced/FightStrategies'
 import FighterPay from '../Pages/Advanced/FighterPay'
+import WeightClasses from '../Pages/Advanced/WeightClasses'
 // MMA World
 import MMAPromotions from '../Pages/MMAWorld/MMAPromotions'
 import MMALegends from '../Pages/MMAWorld/MMALegends'
@@ -21,7 +22,6 @@ import Recommended from '../Pages/MMAWorld/BestOfMMA'
 // Other
 import TestPage from '../Pages/Test'
 import Articles from '../Pages/Others/Articles'
-import WeightClasses from '../Pages/Basics/RulesOfMMA/Components/Tabs/TabsContent/WeightClasses'
 
 const pagesData = [
     {
