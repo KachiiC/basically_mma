@@ -3,7 +3,7 @@ from rest_framework import serializers
 from backend_mma.models.dictionary_model import Dictionary
 
 
-class DictionarySerializer(serializers.ModelSerializer):  # MMA News
+class DictionarySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Dictionary
