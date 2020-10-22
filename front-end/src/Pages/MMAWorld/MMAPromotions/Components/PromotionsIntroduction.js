@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MMAPromotionsIntroduction = () => (
+const PromotionsIntroduction = () => (
     <>
         <h1>MMA Promotions</h1>
         <p>
@@ -21,4 +21,4 @@ const MMAPromotionsIntroduction = () => (
     </>
 )
 
-export default MMAPromotionsIntroduction
+export default PromotionsIntroduction
