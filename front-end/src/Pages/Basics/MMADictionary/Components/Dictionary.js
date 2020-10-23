@@ -4,8 +4,8 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 
 const Dictionary = () => {
 
-    const [isFetching, setIsFetching] = useState(true)
     const [terms, setTerms] = useState([]) 
+    const [isFetching, setIsFetching] = useState(true)
     const [isDisplayable, setIsDisplayable] = useState(false)
 
     useEffect(() => {
