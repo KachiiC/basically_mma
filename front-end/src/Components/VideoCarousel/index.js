@@ -36,8 +36,8 @@ const VideoCarousel = (props) => {
             <div key={index} className="video-slide">
                 <p className="video-title">{item.title}</p>
                 <a href={`https://www.youtube.com/watch?v=${item.video_id}`}>
-                <img className="video-slider-image" src={`${item.thumbnail_url}`} alt="item-cover"/>
-              </a>
+                    <img className="video-slider-image" src={`${item.thumbnail_url}`} alt="item-cover"/>
+                </a>
             </div>
         )
     )
@@ -47,7 +47,7 @@ const VideoCarousel = (props) => {
 
     return (
             <div className="video-slider-container">
-                <h5>UFC Fights</h5>
+                <h5>{props.carousel_name}</h5>
                 <Carousel infinite addArrowClickHandler slidesPerScroll={3} slidesPerPage={3}
                     arrowRight={<Icon size="2x" name="angle-double-right" />}
                     arrowLeft={<Icon size="2x" name="angle-double-left" />}
