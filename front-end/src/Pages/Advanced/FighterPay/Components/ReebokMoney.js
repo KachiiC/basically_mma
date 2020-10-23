@@ -1,6 +1,8 @@
 import React from 'react'
+// Data
+import ReebokPayData from '../../../../Data/Advanced/FighterPay/ReebokMoneyData'
+// Components
 import { Table } from 'antd';
-import ReebokPayData from './ReebokMoneyData'
 
 const columns = [
     {
@@ -14,7 +16,6 @@ const columns = [
         sorter: (a, b) => a.AmountPaid - b.AmountPaid,
     },
 ]
-
 
 const ReebokPayTable = () => (
     <div className="reebok-table">

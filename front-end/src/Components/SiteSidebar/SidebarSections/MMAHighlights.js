@@ -1,8 +1,7 @@
 import React, { useState, useEffect} from 'react'
-// CSS
-import './index.css'
 //Components
-import {Empty} from 'antd'
+import { Empty } from 'antd'
+import { CircularProgress } from '@material-ui/core'
 
 
 const MMAHighlights = (props) => {
@@ -10,7 +9,6 @@ const MMAHighlights = (props) => {
     const [isFetching, setIsFetching] = useState(true)
     const [highlightVideo, setHighlightVideo] = useState([]) 
     const [isDisplayable, setIsDisplayable] = useState(false)
-  
   
     useEffect(() => {
         fetch("http://127.0.0.1:8000/backend_api/mma_playlist/fight_highlights") 
@@ -31,23 +29,23 @@ const MMAHighlights = (props) => {
 
     const displayedHighlights = highlightVideo.slice(0,props.number_of_videos)
 
-    const renderListOfVideos = displayedHighlights.map((highlight, index) => {
+    const renderListOfVideos = displayedHighlights.map((highlight, index) => (
 
-    return (
-        <div className="sidebar-list" key={index}>
-            <a href={`https://www.youtube.com/watch?v=${highlight.video_id}`} 
-                target="_blank" rel="noreferrer noopener">
-                <img src={highlight.thumbnail_url} alt="video pic"/>
-                <div className="side-list-heading">
-                    <p>{highlight.title}</p>
-                </div>
-            </a>
-        </div>
+            <div className="sidebar-list" key={index}>
+                <a href={`https://www.youtube.com/watch?v=${highlight.video_id}`} 
+                    target="_blank" rel="noreferrer noopener">
+                    <img src={highlight.thumbnail_url} alt="video pic"/>
+                    <div className="side-list-heading">
+                        <p>{highlight.title}</p>
+                    </div>
+                </a>
+            </div>
+
+        )
     )
-    })
 
     const renderLogic = (isFetching)?(
-        <h6>Loading</h6>
+        <CircularProgress />
     ):((isDisplayable)?(renderListOfVideos):(<Empty />))
 
 

@@ -12,13 +12,12 @@ import pagesData from './Data/pagesData'
 
 const App = () => {
 
-  const displayLinks = pagesData.map((page, index) => {
-    return (
+  const displayLinks = pagesData.map((page, index) => (
       <Route path={page.name} key={index}>
         {page.display}
       </Route>
     )
-  })
+  )
 
   return (
         <BrowserRouter>

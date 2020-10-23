@@ -1,12 +1,13 @@
 import React from 'react'
 // CSS
-import './navbar.css'
+import './SiteNavbar.css'
 // Components
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import SiteDropdown from './SiteDropdown'
 import MenuRight from './menuright'
 
 const SiteNavbar = () =>  (
+
     <nav className="navbar navbar-expand-lg fixed-top bg-light" id="mainNav">
         < SiteDropdown />  
         <div className="navbar-brand navbar-logo-section">
@@ -14,6 +15,7 @@ const SiteNavbar = () =>  (
         </div>
         < MenuRight />
     </nav>
+    
 )
 
 

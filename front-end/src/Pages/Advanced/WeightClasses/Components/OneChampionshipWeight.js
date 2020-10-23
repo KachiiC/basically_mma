@@ -1,8 +1,8 @@
 import React from "react"
-// CSS
+// Data
+import OneChampionshipData from '../../../../Data/Advanced/WeightClasses/OneChampionshipData'
 //Components
 import {Table} from 'antd';
-import OneChampionshipData from '../../../../Data/Advanced/OneChampionshipData'
 
 const columns = [
     {

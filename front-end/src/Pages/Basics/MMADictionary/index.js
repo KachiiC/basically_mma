@@ -16,6 +16,6 @@ const MMADictionary = () => (
             <SiteSidebarLong videos="8" news="5"/>
         </div>
         
-    );
+);
 
 export default MMADictionary

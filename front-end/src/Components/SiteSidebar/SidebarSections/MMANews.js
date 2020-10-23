@@ -1,6 +1,4 @@
 import React, { useState, useEffect} from 'react'
-// CSS
-import './index.css'
 import {Empty} from 'antd'
 import { CircularProgress } from '@material-ui/core'
 // Components
@@ -37,6 +35,7 @@ const MMANews = (props) => {
         const articleTitle = newsArticle.title.split("").slice(0,77).join("")
 
         return (
+
             <div className="sidebar-list" key={index}>
                 <a href={newsArticle.article} target="_blank" rel="noreferrer noopener">
                     <img src={newsArticle.thumbnail_url} alt="news pic"/>
@@ -45,6 +44,7 @@ const MMANews = (props) => {
                     </div>
                 </a>                
             </div>
+            
         )
     })
 
@@ -53,6 +53,7 @@ const MMANews = (props) => {
     ):((isDisplayable)?(renderListOfArticles):(<Empty />))
 
     return (
+
         <div className="single-widget-area">
             <div className="widget-title">
                 <h6>MMA News</h6>

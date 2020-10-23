@@ -27,19 +27,15 @@ const Dictionary = () => {
 
     const {Panel} = Collapse; 
 
-    const renderListOfTerms = terms.map((term) => {
-        return (
+    const renderListOfTerms = terms.map((term) => (
             <Panel header={`${term.name}`} key={term.pk}>
                 {term.definition}
             </Panel>
         )
-    })
+    )
 
-    const renderLogic = (isFetching)?(
-        <div>
-            <CircularProgress />
-        </div>
-    ):((isDisplayable)?(renderListOfTerms):(<Empty />))
+    const renderLogic = (isFetching)?(<CircularProgress />)
+        :((isDisplayable)?(renderListOfTerms):(<Empty />))
 
     return (
         <>

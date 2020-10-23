@@ -1,8 +1,8 @@
 import React from "react"
-// CSS
+// Data
+import WeightTableData from '../../../../Data/Advanced/WeightClasses/WeightTableData'
 //Components
 import {Table} from 'antd';
-import WeightTableData from '../../../../Data/Advanced/WeightTableData'
 
 const columns = [
   {

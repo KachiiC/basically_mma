@@ -1,16 +1,16 @@
 import React from "react"
-//CSS
+// Data
+import PromotionsMoneyData from "../../../../Data/Advanced/FighterPay/PromotionsMoneyData"
 //Icons
 import {Popover } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import PromotionsMoneyData from "../../../../Data/Advanced/PromotionsMoneyData"
 
 const PromotionsMoney = () => {
     
-    const PromotionsIconList = PromotionsMoneyData.map((item) => {
+    const PromotionsIconList = PromotionsMoneyData.map((item, index) => {
         
         return (
-            <div className="promotion-item">
+            <div className="promotion-item" key={index}>
                 <h6 className="promotion-item-title">{item.title}</h6>
                 <Popover content={item.content} title={item.title}>
                     <FontAwesomeIcon icon={item.icon} size="10x" />
@@ -19,7 +19,6 @@ const PromotionsMoney = () => {
         )
     })
 
-    
     return (
         <>
             <h4>How Do Promotions make money?</h4>

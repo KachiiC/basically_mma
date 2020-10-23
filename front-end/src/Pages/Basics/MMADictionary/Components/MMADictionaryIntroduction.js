@@ -16,6 +16,6 @@ const Introduction = () => (
                 a good starting block to build upon.
             </p>
         </>
-    )
+)
 
 export default Introduction

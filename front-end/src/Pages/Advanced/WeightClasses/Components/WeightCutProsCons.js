@@ -1,8 +1,8 @@
 import React from 'react'
-// CSS
+// Data
+import WeightCutProsCons from '../../../../Data/Advanced/WeightClasses/WeightProsConsData'
 // Components
 import {Icon, Table } from 'semantic-ui-react'
-import WeightCutProsCons from '../../../../Data/Advanced/WeightProsConsData'
 
 const WeightCutProsAndCons = () => {
 

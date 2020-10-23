@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 // Components
-import PromotionsList from "../../../../Data/Advanced/PromotionsListData"
+import PromotionsList from "../../../../Data/MMAWorld/MMAPromotions/PromotionsListData"
 import SiteModal from "../../../../Components/SiteModal"
 import VideoCarousel from "../../../../Components/VideoCarousel"
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Introduction = () => (
+const RulesOfMMAIntroduction = () => (
         <>
             <h1>Rules of MMA</h1>
             <div>
@@ -31,4 +31,4 @@ const Introduction = () => (
         </>
     )
 
-export default Introduction
+export default RulesOfMMAIntroduction

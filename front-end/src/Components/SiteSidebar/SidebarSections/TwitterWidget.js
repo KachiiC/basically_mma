@@ -12,7 +12,6 @@ const TwitterWidget = () => (
                 </a>                
             </div>
         </div>
-
     )
 
 export default TwitterWidget

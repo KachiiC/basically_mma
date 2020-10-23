@@ -2,13 +2,13 @@ import React from 'react'
 // CSS
 import './WeightClasses.css'
 // Components
-import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 import WeightClassesIntroduction from './Components/WeightClassesIntroduction'
-import WeightCutProsAndCons from './Components/WeightCutProsCons'
 import WeightTable from './Components/WeightTable'
 import WeightCutConsiderations from './Components/WeightClassConsiderations'
-import OneChampionshipWeight from './Components/OneChampionshipWeight'
+import WeightCutProsAndCons from './Components/WeightCutProsCons'
 import OutsideOfUS from './Components/OutsideOfUS'
+import OneChampionshipWeight from './Components/OneChampionshipWeight'
+import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 
 
 const WeightClasses = () => (

@@ -6,8 +6,3 @@
 .fundamentals-card {
     margin: auto;   
 }
-
-.fundamentals-row {
-    display: flex;
-    flex-wrap: wrap;
-}

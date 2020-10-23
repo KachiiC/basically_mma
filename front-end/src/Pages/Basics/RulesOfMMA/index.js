@@ -2,7 +2,7 @@ import React from 'react'
 // CSS
 import './RulesOfMMA.css'
 // Components
-import Introduction from './Components/RulesOfMMAIntroduction'
+import RulesOfMMAIntroduction from './Components/RulesOfMMAIntroduction'
 import Tabs from './Components/Tabs'
 import SiteSidebarShort from '../../../Components/SiteSidebar/SiteSidebarShort'
 
@@ -10,7 +10,7 @@ import SiteSidebarShort from '../../../Components/SiteSidebar/SiteSidebarShort'
 const RulesOfMMA = () => (
         <div className="site-row">
             <div className="main-container">
-                <Introduction />
+                <RulesOfMMAIntroduction />
                 <Tabs />
             </div>
             <SiteSidebarShort videos="5"/>

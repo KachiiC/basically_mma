@@ -4,7 +4,7 @@ import './FightStrategies.css'
 // Components
 import FightStrategiesIntro from './Components/FightStrategiesIntroduction'
 import SiteModal from '../../../Components/SiteModal'
-import Pictures from '../../../Data/Advanced/FightStratData'
+import FightStrategiesPictures from '../../../Data/Advanced/FightStrategies/FightStratData'
 import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
 
 
@@ -13,7 +13,7 @@ const FightStrategies = () => {
     const [showModal, setShowModal] = useState(false);
     const [result, setResult] = useState([])
   
-    const displayPictures = Pictures.map((picture, index) => {
+    const displayPictures = FightStrategiesPictures.map((picture, index) => {
   
       const rename = () =>  setResult(picture) 
       const changeVisibility = () => setShowModal(true)

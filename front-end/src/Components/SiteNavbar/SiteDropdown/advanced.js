@@ -18,6 +18,7 @@ const Advanced = () => {
     })
 
     return (
+
         <div className="nav-item dropdown">
             <div className="nav-link" id="navbarDropdown" data-toggle="dropdown">
                 Advanced
@@ -26,6 +27,7 @@ const Advanced = () => {
                 {displayAdvanced}
             </div>
         </div>
+        
     )
 }
 export default Advanced

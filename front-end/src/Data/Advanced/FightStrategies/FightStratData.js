@@ -1,4 +1,4 @@
-const Pictures = [
+const FightStrategiesPictures = [
     {
         pk: 1,
         name: "picture",
@@ -21,4 +21,4 @@ const Pictures = [
     },
 ]
 
-export default Pictures
+export default FightStrategiesPictures

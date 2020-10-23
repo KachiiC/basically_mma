@@ -35,6 +35,6 @@ const WhatIsMMA = () => (
             </div>
             <SiteSidebarShort videos="3"/>
         </div>
-    )
+)
 
 export default WhatIsMMA

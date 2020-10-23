@@ -9,7 +9,6 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import TabsTitles from './RulesTabs'
 
-
 const TabPanel = (props) => {
   
   const {children, value, index, ...other} = props;

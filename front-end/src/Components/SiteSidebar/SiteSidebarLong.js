@@ -1,4 +1,6 @@
 import React from 'react'
+// CSS 
+import "./SiteSidebar.css"
 //Components
 import MMANews from './SidebarSections/MMANews'
 import MMAHighlights from './SidebarSections/MMAHighlights'
@@ -11,10 +13,10 @@ const SiteSidebarLong = (props) => {
 
     return (
         <div className="sidebar-container">
-        <SiteSignature />
-        <MMAHighlights number_of_videos={input_videos}/>
-        <MMANews number_of_articles={input_news} />
-    </div>
+            <SiteSignature />
+            <MMAHighlights number_of_videos={input_videos}/>
+            <MMANews number_of_articles={input_news} />
+        </div>
 
     )
 }

@@ -1,9 +1,8 @@
-
 import React from 'react'
-// CSS
+// Data
+import WeightCutData from '../../../../Data/Advanced/WeightClasses/WeightCutData'
 // Components
 import {List } from 'antd' 
-import WeightCutData from '../../../../Data/Advanced/WeightCutData'
 
 const WeightCutConsiderations = () => {
 

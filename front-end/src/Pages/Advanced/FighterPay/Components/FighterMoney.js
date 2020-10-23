@@ -1,17 +1,17 @@
 import React from 'react'
-//CSS
-//Icons
+// Data
+import FighterMoneyData from '../../../../Data/Advanced/FighterPay/FighterMoneyData'
+// Components
 import {Popover } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import FighterMoneyData from '../../../../Data/Advanced/FighterMoneyData'
 
 const FighterMoney = () => {
 
-    const FightersIconList = FighterMoneyData.map((item) => {
+    const FightersIconList = FighterMoneyData.map((item, index) => {
 
         return (
-            <div className="promotion-item">
-                <h6 className="site-section-title">{item.title}</h6>
+            <div className="promotion-item" key={index}>
+                <h6>{item.title}</h6>
                 <Popover content={item.content} title={item.title}>
                     <FontAwesomeIcon icon={item.icon} size="10x" />
                 </Popover>

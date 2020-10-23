@@ -9,15 +9,17 @@ const MMAWorld = () =>  {
         return menu.type === "MMA World"
     })
 
-    const displayMmaworld = mmaworld.map((mma, index) => {
-        return (
+    const displayMmaworld = mmaworld.map((mma, index) => (
+            
             <Link className="dropdown-item" to={mma.link} key={index}>
                 {mma.name}
             </Link>
+            
         )
-    })
+    )
 
     return (
+
         <div className="nav-item dropdown">
             <div className="nav-link" id="navbarDropdown" data-toggle="dropdown">
                 MMA WORLD
@@ -26,6 +28,7 @@ const MMAWorld = () =>  {
                 {displayMmaworld}
             </div>
         </div>
+
     )
 }
 export default MMAWorld

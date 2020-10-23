@@ -6,11 +6,13 @@ import Advanced from './advanced'
 import MMAWorld from './mmaworld'
 
 const Dropdown = () => (
+
         <div className="navbar-nav navbar-section">
             <Basic />
             <Advanced />
             <MMAWorld />
         </div>
-    )
+
+)
 
 export default Dropdown

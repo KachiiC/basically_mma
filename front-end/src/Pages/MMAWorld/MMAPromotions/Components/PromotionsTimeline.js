@@ -1,7 +1,7 @@
 import React from 'react'
 // Components
 import { Timeline, Popover } from 'antd';
-import PromotionsData from "../../../../Data/Advanced/PromotionsData"
+import PromotionsData from "../../../../Data/MMAWorld/MMAPromotions/PromotionsCardData"
 
 const PromotionsTimeline = () => {
 

@@ -1,8 +1,9 @@
 import React from 'react';
 //CSS 
 import './footer.css';
-// Components
+//Data
 import footerData from '../../Data/Other/footerData'
+// Components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SiteFooter = () => {
