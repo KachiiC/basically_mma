@@ -14,25 +14,16 @@ class Champions(models.Model):
     title_obtained = models.CharField(max_length=100)
 
 
-class BestFight(models.Model):
+class BestOfType(models.Model):
+    name = models.ManyToManyField('BestOfFights', max_length=200)
+    list = models.CharField(max_length=200)
+    description = models.TextField()
+
+
+class BestOfFights(models.Model):
     fighters = models.CharField(max_length=200)
-    outcome = models.CharField(max_length=100)
-    event = models.CharField(max_length=100)
-    date = models.CharField(max_length=100)
-    winner = models.CharField(max_length=200)
-
-
-class BestKnockouts(models.Model):
-    fighters = models.CharField(max_length=200)
-    knockout_method = models.CharField(max_length=300)
-    knockout_round = models.IntegerField()
-    knockout_time = models.TimeField()
-    knockout_date = models.DateField
-
-
-class BestSubmissions(models.Model):
-    fighters = models.CharField(max_length=200)
-    submission_method = models.CharField(max_length=300)
-    submission_round = models.IntegerField()
-    submission_time = models.TimeField()
-    submission_date = models.DateField()
+    event = models.CharField(max_length=200)
+    fight_date = models.DateField()
+    fight_outcome = models.CharField(max_length=300)
+    method_of_victory = models.IntegerField(null=True)
+    time_of_finish = models.TimeField(null=True)
