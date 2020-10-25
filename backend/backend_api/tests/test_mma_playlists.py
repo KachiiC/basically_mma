@@ -64,6 +64,7 @@ class MMAVideosTest(APITestCase):
 
         fight_highlights = MMAPlaylist.objects.get(playlist_name="Fight Highlights")
         bellator_fights = MMAPlaylist.objects.get(playlist_name="Bellator Fights")
+
         for mma_video in all_videos:
             if mma_video.playlist_id == "PLaaEeFtNlIJ2Yigy4wHCQlcuRZg4NKbi5":
                 fight_highlights.playlist_video.add(mma_video)
@@ -76,6 +77,7 @@ class MMAVideosTest(APITestCase):
 
     def test_retrieve_all_playlists(self):
         """ Retrieve all existing playlists"""
+
         serializer = MMAPlaylistSerializer(self.expected_playlists, many=True)
 
         response = self.client.get(self.playlist_endpoint)

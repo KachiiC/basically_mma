@@ -4,6 +4,7 @@ from .views import dictionary_views
 from .views import techniques_views
 from .views import legends_views
 from .views import champions_views
+from .views import best_of_mma_views
 
 urlpatterns = [
     # Basics
@@ -20,5 +21,7 @@ urlpatterns = [
     path('legends_list/<int:pk>', legends_views.legends_detail, name="legend_single"),
     # Champion
     path('champions_list/', champions_views.champions_list, name="champions_list"),
-    path('champions_list/<int:pk>', champions_views.champion_single, name="champion_single")
+    path('champions_list/<int:pk>', champions_views.champion_single, name="champion_single"),
+    # BestOfFights
+    path('best_of_fights/', best_of_mma_views.best_of_fights_list, name="best_of_fights")
 ]
