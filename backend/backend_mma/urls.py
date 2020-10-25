@@ -3,6 +3,7 @@ from django.urls import path
 from .views import dictionary_views
 from .views import techniques_views
 from .views import legends_views
+from .views import champions_views
 
 urlpatterns = [
     # Basics
@@ -16,6 +17,8 @@ urlpatterns = [
     # MMA World
     # Legend
     path('legends_list/', legends_views.legends_list, name="legends_list"),
-    path('legends_list/<int:pk>', legends_views.legends_detail, name="legend_single")
-
+    path('legends_list/<int:pk>', legends_views.legends_detail, name="legend_single"),
+    # Champion
+    path('champions_list/', champions_views.champions_list, name="champions_list"),
+    path('champions_list/<int:pk>', champions_views.champion_single, name="champion_single")
 ]
