@@ -1,4 +1,6 @@
 import React, {useState} from 'react'
+// CSS
+import './SiteCarousel.css'
 
 
 const ImageSlider = ({ images }) => {
@@ -11,16 +13,17 @@ const ImageSlider = ({ images }) => {
   
     const slideLeft = () => {
       const nextIndex = index - 1;
-      
+
       (nextIndex < 0)? setIndex(images.length - 1): setIndex(nextIndex);
     };
   
     return (
       images.length > 0 && (
-        <div>
-          <button onClick={slideLeft}>{"<"}</button>
-          <img src={images[index]} alt={index} />
-          <button onClick={slideRight}>{">"}</button>
+        <div className="site-row">
+          <button onClick={slideLeft} class="toggle-button">{"<"}</button>
+          <h6>{images.title}</h6>
+          <img src={images[index]} alt={index} className="site-carousel-images"/>
+          <button onClick={slideRight} class="toggle-button">{">"}</button>
         </div>
       )
     );
