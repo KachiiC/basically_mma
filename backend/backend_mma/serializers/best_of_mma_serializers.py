@@ -8,7 +8,8 @@ class BestOfFightSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = BestOfFight
-        fields = ("pk", "type", "event", "fight_date", "fight_winner", "method_of_victory", "time_of_finish")
+        fields = ("pk", "fighters", "type", "event", "fight_date", "fight_winner",
+                  "method_of_victory", "round_of_finish", "time_of_finish")
 
 
 class BestOfTypeSerializer(serializers.ModelSerializer):
@@ -16,5 +17,4 @@ class BestOfTypeSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = BestOfType
-
         fields = ("pk", "fights", "title", "description")

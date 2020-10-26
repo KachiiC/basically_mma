@@ -9,32 +9,39 @@ class BestOfMMATest(APITestCase):
     endpoint = reverse('best_of_fights')
 
     fight_1 = BestOfFight(
-        type="Best Fights",
+        pk=1,
         fighters="Kelvin Gastelum vs Israel Adesanya",
+        type="Best Fights",
         event="UFC 236",
         fight_date="2019-04-13",
         fight_winner="Israel Adesanya",
         method_of_victory="Unanimous Decision",
+        time_of_finish="05:00",
+        round_of_finish=5,
     )
 
     fight_2 = BestOfFight(
-        type="Best Knockouts",
+        pk=2,
         fighters="Jorge Masvidal vs Ben Askren",
+        type="Best Knockouts",
         event="UFC 239",
         fight_date="2019-07-07",
         fight_winner="Jorge Masvidal",
         method_of_victory="Knockout (Flying Knee)",
-        time_of_finish="00:07"
+        round_of_finish=1,
+        time_of_finish="00:07",
     )
-    #
+
     fight_3 = BestOfFight(
+        pk=3,
         type="Best Submissions",
         fighters="Conor McGregor vs Nate Diaz",
         event="UFC 196",
         fight_date="2016-03-05",
         fight_winner="Nate Diaz",
         method_of_victory="Unanimous Decision",
-        time_of_finish="04:12"
+        time_of_finish="04:12",
+        round_of_finish=2,
     )
 
     fight_list_1 = BestOfType(
@@ -82,3 +89,40 @@ class BestOfMMATest(APITestCase):
         assert best_fights.fights.count() == 1
         assert best_kos.fights.count() == 1
         assert best_subs.fights.count() == 1
+
+    def test_get_all_fights(self):
+        serializer = BestOfFightSerializer(self.expected_fights, many=True)
+
+        response = self.client.get(self.endpoint)
+        assert response.status_code == status.HTTP_200_OK
+        assert response.data == serializer.data
+
+    def test_post_fights(self):
+        """ Testing post fight """
+        data = [
+            {
+                "fighters": "Kelvin Gastelum vs Israel Adesanya",
+                "type": "Best Fights",
+                "event": "UFC 236",
+                "fight_date": "2019-04-13",
+                "fight_winner": "Israel Adesanya",
+                "method_of_victory": "Unanimous Decision",
+                "round_of_finish": 1,
+                "time_of_finish": "5:00"
+            },
+            {
+                "fighters": "Jorge Masvidal vs Ben Askren",
+                "type": "Best Knockouts",
+                "event": "UFC 239",
+                "fight_date": "2019-07-07",
+                "fight_winner": "Jorge Masvidal",
+                "method_of_victory": "Knockout (Flying Knee)",
+                "round_of_finish": 1,
+                "time_of_finish": "0:07"
+            }
+        ]
+
+        BestOfFight.objects.all().delete()
+        response = self.client.post(reverse("best_of_fights"), data=data)
+        assert response.status_code == status.HTTP_201_CREATED
+        assert BestOfFight.objects.count() == 2
