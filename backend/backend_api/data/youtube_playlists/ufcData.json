@@ -1,6 +1,6 @@
 {
     "kind": "youtube#playlistItemListResponse",
-    "etag": "wNvDrjkHXEQogJlnJ_RX5lUs6aU",
+    "etag": "prxEhzNYODU7TLzjTWBSwoGpgU8",
     "items": [
         {
             "kind": "youtube#playlistItem",
@@ -544,52 +544,7 @@
         },
         {
             "kind": "youtube#playlistItem",
-            "etag": "AYmg1joKzUGxbhtHuQyfQpbngFo",
-            "id": "UExhYUVlRnRObElKMVFDU1drQnZ4SXRiS1lFcEdFTkFTQy5CMEQ2Mjk5NTc3NDZFRUNB",
-            "snippet": {
-                "publishedAt": "2020-08-19T21:02:20Z",
-                "channelId": "UCGFG6QjQru4YRlBfZ1HqNFA",
-                "title": "UFC Free Fight: Cerrone vs Story",
-                "description": "UFC 202: Donald 'Cowboy' Cerrone VS Rick 'The Horror' Story\n\nAll Footage of this video belongs to its respectful owners",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/gCIrylU-3Ac/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/gCIrylU-3Ac/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/gCIrylU-3Ac/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    },
-                    "standard": {
-                        "url": "https://i.ytimg.com/vi/gCIrylU-3Ac/sddefault.jpg",
-                        "width": 640,
-                        "height": 480
-                    },
-                    "maxres": {
-                        "url": "https://i.ytimg.com/vi/gCIrylU-3Ac/maxresdefault.jpg",
-                        "width": 1280,
-                        "height": 720
-                    }
-                },
-                "channelTitle": "Basically MMA",
-                "playlistId": "PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC",
-                "position": 12,
-                "resourceId": {
-                    "kind": "youtube#video",
-                    "videoId": "gCIrylU-3Ac"
-                }
-            }
-        },
-        {
-            "kind": "youtube#playlistItem",
-            "etag": "76Mo9xXQXr_Bx5T8mCIYwNeiTq4",
+            "etag": "PcdbSJOAWQmsQa_w_11wwllf4yY",
             "id": "UExhYUVlRnRObElKMVFDU1drQnZ4SXRiS1lFcEdFTkFTQy42MTI4Njc2QjM1RjU1MjlG",
             "snippet": {
                 "publishedAt": "2020-08-19T21:03:27Z",
@@ -625,7 +580,7 @@
                 },
                 "channelTitle": "Basically MMA",
                 "playlistId": "PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC",
-                "position": 13,
+                "position": 12,
                 "resourceId": {
                     "kind": "youtube#video",
                     "videoId": "b7MeXwGku5E"
@@ -634,7 +589,7 @@
         },
         {
             "kind": "youtube#playlistItem",
-            "etag": "ns0TMwiRpWQUwhv_TszTlar6XMI",
+            "etag": "vt2x4LSJrKFBsgZnarpV-483whI",
             "id": "UExhYUVlRnRObElKMVFDU1drQnZ4SXRiS1lFcEdFTkFTQy40QTA3NTU2RkM1QzlCMzYx",
             "snippet": {
                 "publishedAt": "2020-10-01T23:56:53Z",
@@ -670,7 +625,7 @@
                 },
                 "channelTitle": "Basically MMA",
                 "playlistId": "PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC",
-                "position": 14,
+                "position": 13,
                 "resourceId": {
                     "kind": "youtube#video",
                     "videoId": "oaeTtOQVfWw"
@@ -679,7 +634,7 @@
         },
         {
             "kind": "youtube#playlistItem",
-            "etag": "-0GhpmzBOCyBr7n6F08ZGvG_1so",
+            "etag": "XLH1d7umFXIC_-1owatybnTZ8pM",
             "id": "UExhYUVlRnRObElKMVFDU1drQnZ4SXRiS1lFcEdFTkFTQy5BRjJDODk5REM0NjkzMUIy",
             "snippet": {
                 "publishedAt": "2020-10-01T23:57:02Z",
@@ -715,7 +670,7 @@
                 },
                 "channelTitle": "Basically MMA",
                 "playlistId": "PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC",
-                "position": 15,
+                "position": 14,
                 "resourceId": {
                     "kind": "youtube#video",
                     "videoId": "WCPBr1_MaWg"
@@ -724,7 +679,7 @@
         },
         {
             "kind": "youtube#playlistItem",
-            "etag": "TTS44jIBYNIufnudckQdxu67YpQ",
+            "etag": "7lsW7hklQ1URnxbcSqTvI5Ngomg",
             "id": "UExhYUVlRnRObElKMVFDU1drQnZ4SXRiS1lFcEdFTkFTQy4xOTEzQzhBQzU3MDNDNjcz",
             "snippet": {
                 "publishedAt": "2020-10-01T23:57:31Z",
@@ -760,7 +715,7 @@
                 },
                 "channelTitle": "Basically MMA",
                 "playlistId": "PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC",
-                "position": 16,
+                "position": 15,
                 "resourceId": {
                     "kind": "youtube#video",
                     "videoId": "8Xb55612vTE"
@@ -769,7 +724,7 @@
         }
     ],
     "pageInfo": {
-        "totalResults": 17,
+        "totalResults": 16,
         "resultsPerPage": 20
     }
 }

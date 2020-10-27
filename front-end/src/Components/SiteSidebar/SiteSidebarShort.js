@@ -1,7 +1,8 @@
 import React from 'react'
 // Components
-import SiteSignature from "./SidebarSections/SiteSignature"
+// import SiteSignature from "./SidebarSections/SiteSignature"
 import MMAHighlights from './SidebarSections/MMAHighlights'
+import SiteFightSuggestions from './SidebarSections/SiteFightSuggestion'
 
 const SiteSidebarShort = (props) => {
 
@@ -9,7 +10,7 @@ const SiteSidebarShort = (props) => {
 
     return (
         <div className="sidebar-container">
-            <SiteSignature />
+            <SiteFightSuggestions />
             <MMAHighlights number_of_videos={input_videos}/>
         </div>
     )
