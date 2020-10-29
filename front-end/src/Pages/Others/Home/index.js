@@ -1,10 +1,11 @@
 import React from 'react'
-
+// Components
+import MainAndSidebar from 'Components/MainAndSidebar'
 
 const Home = () => (
-        <div>
-            <h1>Home</h1>
-        </div>
-    )
+    <MainAndSidebar videos="5">
+        <h1>Home</h1>
+    </MainAndSidebar>
+)
 
 export default Home;

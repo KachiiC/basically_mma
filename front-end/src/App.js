@@ -5,8 +5,8 @@ import 'antd/dist/antd.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // Components
 import {BrowserRouter, Switch, Route} from "react-router-dom";
-import SiteNavbar from './Components/SiteNavbar';
-import SiteFooter from './Components/SiteFooter';
+import SiteBody from 'Components/SiteBody'
+// Data
 import pagesData from './Data/pagesData'
 
 
@@ -21,13 +21,11 @@ const App = () => {
 
   return (
         <BrowserRouter>
-          <SiteNavbar />
-          <div className="site-container">
+          <SiteBody>
             <Switch>
-              {displayLinks}
+                {displayLinks}
             </Switch>
-          </div>
-          <SiteFooter />
+          </SiteBody>
         </BrowserRouter>
   );
   

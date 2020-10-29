@@ -1,20 +1,19 @@
 import React from 'react'
 // CSS
 import './RulesOfMMA.css'
+import MainAndSidebar from 'Components/MainAndSidebar'
 // Components
-import RulesOfMMAIntroduction from './Components/RulesOfMMAIntroduction'
-import Tabs from './Components/Tabs'
-import SiteSidebarShort from '../../../Components/SiteSidebar/SiteSidebarShort'
+import RulesOfMMAIntroduction from './PageComponents/RulesOfMMAIntroduction'
+import Tabs from './PageComponents/Tabs'
 
 
 const RulesOfMMA = () => (
-        <div className="site-row">
-            <div className="main-container">
-                <RulesOfMMAIntroduction />
-                <Tabs />
-            </div>
-            <SiteSidebarShort videos="5"/>
-        </div>
-    )
+
+    <MainAndSidebar videos="5">
+        <RulesOfMMAIntroduction />
+        <Tabs />
+    </MainAndSidebar>
+
+)
 
 export default RulesOfMMA

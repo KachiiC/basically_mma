@@ -1,29 +1,27 @@
 import React from 'react'
 // CSS
 import './WeightClasses.css'
+import MainAndSidebar from 'Components/MainAndSidebar'
 // Components
-import WeightClassesIntroduction from './Components/WeightClassesIntroduction'
-import WeightTable from './Components/WeightTable'
-import WeightCutConsiderations from './Components/WeightClassConsiderations'
-import WeightCutProsAndCons from './Components/WeightCutProsCons'
-import OutsideOfUS from './Components/OutsideOfUS'
-import OneChampionshipWeight from './Components/OneChampionshipWeight'
-import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
+import WeightClassesIntroduction from './PageComponents/WeightClassesIntroduction'
+import WeightTable from './PageComponents/WeightTable'
+import WeightCutConsiderations from './PageComponents/WeightClassConsiderations'
+import WeightCutProsAndCons from './PageComponents/WeightCutProsCons'
+import OutsideOfUS from './PageComponents/OutsideOfUS'
+import OneChampionshipWeight from './PageComponents/OneChampionshipWeight'
+
 
 
 const WeightClasses = () => (
-
-    <div className="site-row">
-        <div className="main-container">
+    
+    <MainAndSidebar long="yes" videos="9" news="9">
             <WeightClassesIntroduction />
             <WeightTable />
             <WeightCutConsiderations />
             <WeightCutProsAndCons />
             <OutsideOfUS />
             <OneChampionshipWeight />
-        </div>
-        <SiteSidebarLong videos="9" news="9"/>
-    </div>
+    </MainAndSidebar>
     
 )
 

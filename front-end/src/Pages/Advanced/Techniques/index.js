@@ -1,20 +1,19 @@
 import React from 'react';
 //Css
 import './Techniques.css'
+import MainAndSidebar from '../../../Components/MainAndSidebar';
 //Components
-import TechniquesIntroduction from './Components/TechniquesIntroduction.js';
-import TechniquesList from './Components/TechniquesList'
-import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
+import TechniquesIntroduction from './PageComponents/TechniquesIntroduction.js';
+import TechniquesList from './PageComponents/TechniquesList'
 
 
 const Techniques = () => (
-        <div className="site-row">
-            <div className="main-container">
-                <TechniquesIntroduction />
-                <TechniquesList />
-            </div>
-            <SiteSidebarLong videos="3" news="0"/>
-        </div>
-    )
+
+        <MainAndSidebar videos="3">
+            <TechniquesIntroduction />
+            <TechniquesList />
+        </MainAndSidebar>
+        
+)
 
 export default Techniques

@@ -1,21 +1,17 @@
 import React from 'react'
 // CSS
 import './Fundamentals.css'
+import MainAndSidebar from 'Components/MainAndSidebar'
 // Components
-import FundamentalsIntroduction from './Components/FundamentalsIntroduction'
-import FundamentalCards from './Components/FundamentalCards'
-import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
+import FundamentalsIntroduction from './PageComponents/FundamentalsIntroduction'
+import FundamentalCards from './PageComponents/FundamentalCards'
 
 const Fundamentals = () => (
-     
-    <div className="site-row">
-        <div className="main-container">
+        <MainAndSidebar long="yes" videos="3" news="3">
             <h1>Fundamentals</h1>
             <FundamentalsIntroduction />
             <FundamentalCards />
-        </div>
-        <SiteSidebarLong videos="3" news="3"/>
-    </div>
+        </MainAndSidebar>
 
 )
 

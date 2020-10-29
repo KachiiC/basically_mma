@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
+// Data
+import FightStrategiesPictures from 'Data/Advanced/FightStrategies/FightStratData'
 // CSS
 import './FightStrategies.css'
+import MainAndSidebar from 'Components/MainAndSidebar'
 // Components
-import FightStrategiesIntro from './Components/FightStrategiesIntroduction'
-import SiteModal from '../../../Components/SiteModal'
-import FightStrategiesPictures from '../../../Data/Advanced/FightStrategies/FightStratData'
-import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
+import SiteModal from 'Components/SiteModal'
+import FightStrategiesIntro from './PageComponents/FightStrategiesIntroduction'
 
 
 const FightStrategies = () => {
@@ -27,7 +28,7 @@ const FightStrategies = () => {
     })
   
     return (
-        <div className="site-row">
+        <MainAndSidebar long ="yes" videos="3" news="3">
           { showModal && (
             <SiteModal closeModal={() => setShowModal(false)}>
               <div className="site-modal-content">
@@ -36,15 +37,12 @@ const FightStrategies = () => {
               </div>
             </SiteModal>
           )}
-          <div className="main-container">
-            <h1>Fight Strategies</h1>
-            <FightStrategiesIntro />
-            <div className="gallery-row">
-              {displayPictures}
-            </div>
-          </div>
-          <SiteSidebarLong />
-        </div>
+          <h1>Fight Strategies</h1>
+          <FightStrategiesIntro />
+          <div className="gallery-row">
+            {displayPictures}
+          </div>       
+        </MainAndSidebar>
     );
 
 }

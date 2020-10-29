@@ -1,24 +1,21 @@
 import React from 'react'
 // CSS
 import './MMAPromotions.css'
+import MainAndSidebar from 'Components/MainAndSidebar'
 // Components
-import PromotionsIntroduction from './Components/PromotionsIntroduction'
-import PromotionsTimeline from './Components/PromotionsTimeline'
-import PromotionsToday from './Components/PromotionsToday'
-import PromotionsCards from './Components/PromotionsCards'
-import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
+import PromotionsIntroduction from './PageComponents/PromotionsIntroduction'
+import PromotionsTimeline from './PageComponents/PromotionsTimeline'
+import PromotionsToday from './PageComponents/PromotionsToday'
+import PromotionsCards from './PageComponents/PromotionsCards'
 
 const MMAPromotions = () => (
-
-    <div className="site-row">
-        <div className="main-container">
+        
+        <MainAndSidebar long="yes" videos="5" news="5">
             <PromotionsIntroduction />
             <PromotionsTimeline />
             <PromotionsToday />
             <PromotionsCards />
-        </div>
-        <SiteSidebarLong videos="5" news="5"/>
-    </div>
+        </MainAndSidebar>
 
 )
 

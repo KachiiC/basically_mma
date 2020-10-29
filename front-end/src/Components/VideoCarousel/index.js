@@ -21,7 +21,6 @@ const VideoCarousel = (props) => {
             return response.json() 
         })
         .then((youtubeDataFromServer) => { 
-
             setYoutube(youtubeDataFromServer.playlist_video)
             setIsDisplayable(true)
             setIsFetching(false)

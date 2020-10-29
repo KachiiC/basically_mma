@@ -1,23 +1,20 @@
 import React from 'react'
 // CSS
 import "./FightPay.css"
+import MainAndSidebar from 'Components/MainAndSidebar'
 // Components
-import FighterPayIntroduction from './Components/FighterPayIntroduction'
-import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
-import PromotionsMoney from './Components/PromotionMoney'
-import FighterMoney from './Components/FighterMoney'
-import UFCFighterMoney from './Components/UFCFighterMoney'
+import FighterPayIntroduction from './PageComponents/FighterPayIntroduction'
+import PromotionsMoney from './PageComponents/PromotionMoney'
+import FighterMoney from './PageComponents/FighterMoney'
+import UFCFighterMoney from './PageComponents/UFCFighterMoney'
 
 const FighterPay = () => (
-    <div className="site-row">
-        <div className="main-container">
+        <MainAndSidebar videos="4">
             <FighterPayIntroduction />
             <PromotionsMoney />
             <FighterMoney />
             <UFCFighterMoney />
-        </div>
-        <SiteSidebarLong />
-    </div>
+        </MainAndSidebar>
 )
 
 export default FighterPay

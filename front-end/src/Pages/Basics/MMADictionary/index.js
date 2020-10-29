@@ -1,21 +1,18 @@
 import React from 'react'
 // CSS
 import './MMADictionary.css';
+import MainAndSidebar from 'Components/MainAndSidebar';
 // Components
-import Dictionary from './Components/Dictionary'
-import Introduction from './Components/MMADictionaryIntroduction'
-import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong';
+import Dictionary from './PageComponents/Dictionary'
+import Introduction from './PageComponents/MMADictionaryIntroduction'
 
 const MMADictionary = () => (
-    
-        <div className="site-row">
-            <div className="main-container">
-                <Introduction />
-                <Dictionary />
-            </div>
-            <SiteSidebarLong videos="8" news="5"/>
-        </div>
-        
+
+    <MainAndSidebar long="yes" videos="8" news="5">
+        <Introduction />
+        <Dictionary />
+    </MainAndSidebar>
+
 );
 
 export default MMADictionary
