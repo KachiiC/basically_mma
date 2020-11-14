@@ -1,6 +1,6 @@
 import React from 'react'
 // Components
-import SiteSidebar from 'Components/SiteSidebar'
+import SiteSidebar from './SiteSidebar'
 
 
 const MainAndSidebar = (props) => {

@@ -1,15 +1,14 @@
 import React from 'react'
 // CSS
 import './Articles.css'
+import MainAndSidebar from 'Components/MainAndSidebar'
 // Components
-import ArticlesList from './Components/ArticlesList'
-import SiteSidebarLong from '../../../Components/SiteSidebar/SiteSidebarLong'
+import ArticlesList from './PageComponents/ArticlesList'
 
 const Articles = () => (
-        <div className="site-row">
+        <MainAndSidebar  videos="4">
             <ArticlesList />
-            <SiteSidebarLong />
-        </div>
+        </MainAndSidebar>
     )
 
 export default Articles

@@ -1,7 +1,13 @@
 import React from 'react'
+import MainAndSidebar from 'Components/MainAndSidebar';
+
 
 const Store = () => (
-        <h1>Store</h1>
-    )
+    
+    <MainAndSidebar videos="4">
+        <Store />
+    </MainAndSidebar>
+
+)
 
 export default Store;

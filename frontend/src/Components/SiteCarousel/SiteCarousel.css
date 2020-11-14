@@ -1,11 +1,12 @@
 .site-carousel-container {
     text-align: center;
 }
+
 .site-carousel-images {
     max-width: 320px;
     max-height: 180px;
 }
 
 .toggle-button {
-    width: 10%;
+    width: 5%;
 }

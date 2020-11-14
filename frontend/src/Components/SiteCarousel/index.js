@@ -20,17 +20,19 @@ const SiteCarousel = ({ images }) => {
   
     return (
       images.length > 0 && (
-          <div className="site-carousel-container">
+        <>
+            <div className="site-carousel-container">
 
-            <Icon size="2x" name="angle-double-left" 
-              onClick={slideRight} className="toggle-button"/>
-            
-            <img src={images[index]} alt={index} className="site-carousel-images"/>             
-            
-            <Icon size="2x" name="angle-double-right" 
-              onClick={slideLeft} className="toggle-button"/>
+              <Icon size="2x" name="angle-double-left" 
+                onClick={slideRight} className="toggle-button"/>
 
-          </div>
+                <img src={images[index]} alt={index} className="site-carousel-images"/>             
+              
+              <Icon size="2x" name="angle-double-right" 
+                onClick={slideLeft} className="toggle-button"/>
+
+            </div>
+          </>
       )
     )
   }
