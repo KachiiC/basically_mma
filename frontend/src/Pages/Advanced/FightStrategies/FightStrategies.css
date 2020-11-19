@@ -1,9 +1,10 @@
-.gallery-row {
-    display: flex;
-    flex-wrap: wrap;
+.fight-strat-description{
+    margin: 0px 45px;
+    padding: 0px 20px;
+    text-align: left !important;
+    min-height: 270px;
 }
 
-.gallery-item {
-    width: 50%;
-    text-align: center;
+.fight-strat-slides{
+    margin: 40px 0px;
 }

@@ -5,7 +5,7 @@ import MainAndSidebar from 'Components/MainAndSidebar';
 const Store = () => (
     
     <MainAndSidebar videos="4">
-        <Store />
+        <h1>Store</h1>
     </MainAndSidebar>
 
 )
