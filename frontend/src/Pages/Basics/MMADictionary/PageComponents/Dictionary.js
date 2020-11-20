@@ -2,8 +2,9 @@ import React, { useState, useEffect} from 'react'
 // CSS
 import "../MMADictionary.css" 
 // Components
-import { Collapse, Empty } from 'antd';
+import { Empty } from 'antd';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import DictionaryComponents from './DictionaryComponents';
 
 const Dictionary = () => {
 
@@ -28,44 +29,31 @@ const Dictionary = () => {
         
     }, []) 
 
-    const {Panel} = Collapse; 
+    const tab_types = [
+        "General", 
+        "Striking Technique",
+        "Grappling Position",
+        "Grappling Technique",
+        "Submission"
+    ]
 
-    const submissions = terms.filter((term) => {
-        return term.type === "Submission"
-    })
+    const allTabs = tab_types.map((tab_type) => 
+        <DictionaryComponents data={terms} type={tab_type}/>
+    )
 
-    const renderListOfTerms = submissions.map((sub) => {
 
-        return (
-            <Panel header={<div className="term-tab">{sub.name}</div>} key={sub.pk}>
-                <p className="term-definition"><b>Definition:</b> {sub.definition}</p>
-                <div className="term-example-video">
-                    <iframe width="560" height="315"
-                        title="definition-example" 
-                        src={`https://www.youtube.com/embed/${sub.example}`}
-                        frameborder="0" 
-                        allow="accelerometer; 
-                        autoplay; 
-                        clipboard-write; 
-                        encrypted-media; 
-                        gyroscope; 
-                        picture-in-picture" 
-                        allowFullScreen 
-                    />
-                </div>
-            </Panel>
-        )
-    })
-
-    const renderLogic = (isFetching)?(<CircularProgress />)
-        :((isDisplayable)?(renderListOfTerms):(<Empty />))
+    const renderLogic = (isFetching)?(<CircularProgress />):
+        ((isDisplayable)?(
+            <>
+                {allTabs}
+            </>
+            )
+        :(<Empty />))
 
     return (
         <>
             <h4> MMA Dictionary</h4>
-            <Collapse>
-                {renderLogic}
-            </Collapse>
+            {renderLogic}
         </>
     );
 

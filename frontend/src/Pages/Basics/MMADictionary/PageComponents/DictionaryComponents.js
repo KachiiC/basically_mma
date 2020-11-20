@@ -1,17 +1,16 @@
 import React from 'react'
-// CSS
 // Components
 import { Collapse } from 'antd';
 
-const TestTabs = (props) => {
-  
+const DictionaryComponents = (props) => {
+
     const {Panel} = Collapse; 
 
     const filteredTabs = props.data.filter((term) => term.type === `${props.type}`)
     
     const displayedTabs = filteredTabs.map((tab) => {
 
-        const displayMedia = tab.example_type === "video" ?
+        const displayMedia = tab.example_type === "Video" ?
             <iframe 
                 width="560" height="315"
                 title="definition-example" 
@@ -34,12 +33,14 @@ const TestTabs = (props) => {
     }) 
       
     return (
-        <Collapse>
-          {displayedTabs}
-        </Collapse>
+        <>
+            <h4>{props.type} Terms</h4>
+            <Collapse>
+                {displayedTabs}
+            </Collapse>
+        </>
     )
 
 }
 
-
-export default TestTabs
+export default DictionaryComponents

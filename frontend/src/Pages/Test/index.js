@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react'
 // CSS
 import './Test.css'
 // Components
-import { Collapse } from 'antd';
 import MainAndSidebar from 'Components/MainAndSidebar'
 import TestTabs from './TestComponent';
 
@@ -24,8 +23,6 @@ const TestPage = () => {
         console.log(error)
     })
   }, [])
-
-  const {Panel} = Collapse;  
   
 
   return (
