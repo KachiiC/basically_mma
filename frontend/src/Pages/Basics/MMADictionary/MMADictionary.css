@@ -1,0 +1,13 @@
+.term-tab {
+    text-align: center;
+    font-weight: 500;
+}
+
+.term-definition{
+    text-align: left;
+}
+
+.term-example-media{
+    text-align: center;
+    margin: 30px 10px 0px;
+}

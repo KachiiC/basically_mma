@@ -1,82 +1,49 @@
 import React, { useState, useEffect} from 'react'
 // CSS
-import '../../Components/VideoCarousel/VideoCarousel.css'
-// Compoents
-import {Empty} from 'antd'
-import Icon from 'react-fa'
-import Carousel from '@brainhubeu/react-carousel';
 
-const TestCarousel = (props) => {
+// Components
+import { Collapse } from 'antd';
 
-    const [youtube, setYoutube] = useState([]) 
-    const [isFetching, setIsFetching] = useState(true)
-    const [isDisplayable, setIsDisplayable] = useState(false)
-    
-    useEffect(() => {
-        fetch(`http://127.0.0.1:8000/backend_api/mma_playlist/${props.playlist}`) 
-        .then((response) => { 
-            return response.json() 
-        })
-        .then((youtubeDataFromServer) => { 
-            setYoutube(youtubeDataFromServer.playlist_video)
-            setIsDisplayable(true)
-            setIsFetching(false)
-        })
-        .catch((error) => { 
-            setIsFetching(false)
-        })
-        
-    }, []) 
+const TestTabs = (props) => {
   
-  const youtubeItems = youtube.map((item, index) => {
-  
-    var myArray = item.title.split(" ");
-    var titleArray = [];
-    
-      for (var i = 0; i < myArray.length; i++) {
-        if (myArray[i] === "vs"|| myArray[i]=== "vs.") {
-          titleArray.push(myArray[i - 2]);
-          titleArray.push(myArray[i - 1]);
-          titleArray.push(myArray[i]);
-          titleArray.push(myArray[i + 1]);
-          titleArray.push(myArray[i + 2]);
-        }
-      }
+  const {Panel} = Collapse; 
 
-      const newTitle = titleArray.join(" ");
-
-      return (
-            <div key={index}>
-                <div>
-                    <p>{newTitle}</p>
-                </div>
-                <a href={`https://www.youtube.com/watch?v=${item.video_id}`}>
-                    <img className="video-slider-image" src={`${item.thumbnail_url}`} alt="item-cover"/>
-                </a>
-            </div>
-        )
+  const filteredTabs = props.data.filter((term) => {
+    return term.type === `${props.type}`
   })
   
-  const renderLogic = (isFetching)?(
-      <div className="text-center">
-          <h6>Loading</h6>
-      </div>
-  ):((isDisplayable)?(youtubeItems):(<Empty />))
+  const displayedTabs = filteredTabs.map((sub) => {
 
-
-  return (
-        <div className="video-slider-container">
-            <h5>Videos</h5>
-            <Carousel infinite addArrowClickHandler slidesPerScroll={3} slidesPerPage={3}
-              arrowRight={<Icon size="2x" name="angle-double-right" />}
-              arrowLeft={<Icon size="2x" name="angle-double-left" />}
-            >
-              {renderLogic}
-            </Carousel>
-        </div>
-  )
+    const displayMedia = sub.example_type === "video" ? 
+      <iframe 
+        width="560" 
+        height="315"
+        title="definition-example" 
+        src={`https://www.youtube.com/embed/${sub.example}`}
+        frameborder="0" 
+        allow="accelerometer; 
+        autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture" allowFullScreen 
+      />: 
+      <img src="http://via.placeholder.com/560x315.png?text=Placeholder%201" alt="tab-pic"/>
+    
+    return (
+        <Panel header={<div className="term-tab">{sub.name}</div>} key={sub.pk}>
+            <p className="term-definition"><b>Definition:</b> {sub.definition}</p>
+            <div className="term-example-media">
+              {displayMedia}
+            </div>
+        </Panel>
+    )
+  }) 
+    
+    return (
+      <Collapse>
+        {displayedTabs}
+      </Collapse>
+    )
 
 }
 
 
-export default TestCarousel
+export default TestTabs

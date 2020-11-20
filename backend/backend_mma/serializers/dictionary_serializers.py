@@ -7,4 +7,4 @@ class DictionarySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Dictionary
-        fields = ('pk', 'name', 'definition')
+        fields = ('pk', 'name', 'type', 'example', 'example_type', 'definition')

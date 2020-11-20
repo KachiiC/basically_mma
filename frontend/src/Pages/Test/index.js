@@ -1,18 +1,43 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 // CSS
 import './Test.css'
-// Data
-import TestData from './TestData'
 // Components
-import SiteSlideShow from 'Components/SiteSlideShow'
-
+import { Collapse } from 'antd';
+import MainAndSidebar from 'Components/MainAndSidebar'
+import TestTabs from './TestComponent';
 
 
 const TestPage = () => {
 
-    return (
-      <SiteSlideShow slides={TestData}/>
-    )
+  const [terms, setTerms] = useState([]) 
+
+  useEffect(() => {
+    fetch("http://localhost:8000/backend_mma/dictionary_list/") 
+    .then((response) => { 
+        return response.json() 
+    })
+    .then((termsDataFromServer) => { 
+        setTerms(termsDataFromServer)
+
+    })
+    .catch((error) => { 
+        console.log(error)
+    })
+  }, [])
+
+  const {Panel} = Collapse;  
+  
+
+  return (
+    <MainAndSidebar>
+      <h3>Submissions</h3>
+      <TestTabs data={terms} type="Submission"/>
+      <h3>General Terms</h3>
+      <TestTabs data={terms} type="Term"/>
+    </MainAndSidebar>
+  )
+
+
 }
 
 
