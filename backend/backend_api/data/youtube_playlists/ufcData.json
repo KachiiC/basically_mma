@@ -1,6 +1,6 @@
 {
     "kind": "youtube#playlistItemListResponse",
-    "etag": "uvvSJRvTGvmGLa44ZLS3u7ozNbI",
+    "etag": "eaBmcD04ERqHKNHE9fC3ku0nC5A",
     "items": [
         {
             "kind": "youtube#playlistItem",
@@ -721,55 +721,10 @@
                     "videoId": "8Xb55612vTE"
                 }
             }
-        },
-        {
-            "kind": "youtube#playlistItem",
-            "etag": "cT9YLXpFJxXJMQZPwga3HpzPM9c",
-            "id": "UExhYUVlRnRObElKMVFDU1drQnZ4SXRiS1lFcEdFTkFTQy5GNDg1Njc1QzZERjlFRjE5",
-            "snippet": {
-                "publishedAt": "2020-10-27T01:23:46Z",
-                "channelId": "UCGFG6QjQru4YRlBfZ1HqNFA",
-                "title": "Khamzat Chimaev 17-second knockout! This kid is a serious problem 😳",
-                "description": "The Khamzat Chimaev hype train continued at #UFCVegas11 with a 17-second knockout of Gerald Meerschaert.\n\nWho do you want to see the big man fight next?\n\nHit 'Subscribe' above to ensure you never miss a video from the BT Sport YouTube channel.\n\nVisit and subscribe to our 'BT Sport Boxing' YouTube channel ➡️ http://www.youtube.com/c/btsportboxing\n\nTwitter: http://twitter.com/btsport\nFacebook: http://www.facebook.com/btsport\nInstagram:http://instagram.com/btsport\nWebsite: http://sport.bt.com",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/oOdNzUdB79c/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/oOdNzUdB79c/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/oOdNzUdB79c/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    },
-                    "standard": {
-                        "url": "https://i.ytimg.com/vi/oOdNzUdB79c/sddefault.jpg",
-                        "width": 640,
-                        "height": 480
-                    },
-                    "maxres": {
-                        "url": "https://i.ytimg.com/vi/oOdNzUdB79c/maxresdefault.jpg",
-                        "width": 1280,
-                        "height": 720
-                    }
-                },
-                "channelTitle": "Basically MMA",
-                "playlistId": "PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC",
-                "position": 16,
-                "resourceId": {
-                    "kind": "youtube#video",
-                    "videoId": "oOdNzUdB79c"
-                }
-            }
         }
     ],
     "pageInfo": {
-        "totalResults": 17,
+        "totalResults": 16,
         "resultsPerPage": 20
     }
 }

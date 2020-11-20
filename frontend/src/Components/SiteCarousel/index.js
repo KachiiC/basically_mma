@@ -1,40 +1,24 @@
-import React, {useState} from 'react'
+import React from 'react'
 // CSS
 import './SiteCarousel.css'
 // Components
 import Icon from 'react-fa'
 
-
-const SiteCarousel = ({ images }) => {
+const SiteCarousel = (props) => {
      
-    const [index, setIndex] = useState(0); 
-  
-    const slideRight = () => {
-      setIndex((index + 1) % images.length);
-    };
-  
-    const slideLeft = () => {
-      const nextIndex = index - 1;
-      (nextIndex < 0)? setIndex(images.length - 1): setIndex(nextIndex);
-    };
+    const index = props.index
   
     return (
-      images.length > 0 && (
-        <>
             <div className="site-carousel-container">
-
               <Icon size="2x" name="angle-double-left" 
-                onClick={slideRight} className="toggle-button"/>
-
-                <img src={images[index]} alt={index} className="site-carousel-images"/>             
-              
+                onClick={props.prev} className="toggle-button"/>
+              <a href={props.link} target="_blank" rel="noopener noreferrer">
+                <img src={props.image} alt={index} className="site-carousel-images"/>             
+              </a>
               <Icon size="2x" name="angle-double-right" 
-                onClick={slideLeft} className="toggle-button"/>
-
+                onClick={props.next} className="toggle-button"/>
             </div>
-          </>
       )
-    )
   }
   
   export default SiteCarousel;

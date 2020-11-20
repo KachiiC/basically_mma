@@ -15,7 +15,7 @@ const WeightProsCons = [
     },
     {
         pro:"The more it builds discipline in the lead up to the fight.",
-        con:"It will have long term effects on the health of your kidney."
+        con:"Have long term effects on the health of your kidney."
     }
 ]
 

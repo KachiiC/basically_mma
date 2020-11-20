@@ -1,7 +1,9 @@
 import React, { useState, useEffect} from 'react'
-//Components
+// Components
 import { Empty } from 'antd'
 import { CircularProgress } from '@material-ui/core'
+// CSS
+import '../SiteSidebar.css'
 
 
 const MMAHighlights = (props) => {
@@ -54,7 +56,9 @@ const MMAHighlights = (props) => {
             <div className="widget-title">
                 <h6>MMA Highlights</h6>
             </div>
-            {renderLogic}
+            <div className="mma-highlights-container">
+                {renderLogic}
+            </div>
         </div>
     )
 }

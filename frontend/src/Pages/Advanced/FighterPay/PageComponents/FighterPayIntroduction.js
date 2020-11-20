@@ -2,7 +2,7 @@ import React from 'react'
 
 const FighterPayIntroduction = () => (
     <>
-        <h2>Fighter Pay</h2>
+        <h1>Fighter Pay</h1>
         <p>
             The more you follow the sport, the more you will begin to hear about Fighter Pay. 
             At the end of the day, combat sports is prize fighting so negoiating pay is a huge 

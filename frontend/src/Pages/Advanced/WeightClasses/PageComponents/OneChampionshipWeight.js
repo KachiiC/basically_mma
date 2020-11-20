@@ -16,10 +16,6 @@ const columns = [
         sorter: (a, b) => a.weight - b.weight,
     },
     {
-        title:'Expected Fight Night Weight (lbs)',
-        dataIndex: 'naturalWeight',
-    },
-    {
         title: 'Gender',
         dataIndex: 'gender',
         filters: [

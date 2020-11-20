@@ -4,6 +4,11 @@
     margin: auto;
 }
 
-.btn-container {
+.fight-strat-btn-container {
     margin: auto 15px;
+}
+
+.slide-show-slide {
+    height: 281px;
+    width: 500px;
 }
