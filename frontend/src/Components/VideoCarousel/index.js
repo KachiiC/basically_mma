@@ -27,8 +27,7 @@ const VideoCarousel = (props) => {
         })
         .catch((error) => { 
             setIsFetching(false)
-        })
-        
+        })   
     }, [props.playlist])
     
     const youtubeItems = youtube.map((item, index) => (

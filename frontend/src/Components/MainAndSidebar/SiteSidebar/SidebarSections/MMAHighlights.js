@@ -18,7 +18,6 @@ const MMAHighlights = (props) => {
             return response.json() 
         })
         .then((videoDataFromServer) => { 
-  
             setHighlightVideo(videoDataFromServer.playlist_video)
             setIsDisplayable(true)
             setIsFetching(false)
@@ -26,7 +25,6 @@ const MMAHighlights = (props) => {
         .catch((error) => { 
             setIsFetching(false)
         })
-        
     }, []) 
 
     const displayedHighlights = highlightVideo.slice(0,props.number_of_videos)
@@ -49,7 +47,6 @@ const MMAHighlights = (props) => {
     const renderLogic = (isFetching)?(
         <CircularProgress />
     ):((isDisplayable)?(renderListOfVideos):(<Empty />))
-
 
     return (
         <div className="single-widget-area">

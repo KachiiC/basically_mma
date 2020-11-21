@@ -18,7 +18,6 @@ const Dictionary = () => {
             return response.json() 
         })
         .then((termsDataFromServer) => { 
-
             setTerms(termsDataFromServer)
             setIsDisplayable(true)
             setIsFetching(false)
@@ -40,7 +39,6 @@ const Dictionary = () => {
     const allTabs = tab_types.map((tab_type) => 
         <DictionaryComponents data={terms} type={tab_type}/>
     )
-
 
     const renderLogic = (isFetching)?(<CircularProgress />):
         ((isDisplayable)?(
