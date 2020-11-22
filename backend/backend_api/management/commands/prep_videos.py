@@ -5,7 +5,7 @@ import os
 
 OUTFILE_LOCATION = os.getcwd() + "/backend_api/data/youtube_playlists"
 
-DATA_ENDPOINT_URL = "https://www.googleapis.com/youtube/v3/playlistItems?playlistId={}&key=AIzaSyAC-vA8irZClKOO8zVMv4wyF3URfTe6HMA&part=snippet,id&order=date&maxResults=20"
+DATA_ENDPOINT_URL = "https://www.googleapis.com/youtube/v3/playlistItems?playlistId={}&key=AIzaSyD41LBxNrRYGFYOVn0wxxeuIrEs55eKhTo&part=snippet,id&order=date&maxResults=20"
 
 DATA_ENDPOINTS = [
     {

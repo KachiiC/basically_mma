@@ -15,12 +15,12 @@ import OneChampionshipWeight from './PageComponents/OneChampionshipWeight'
 const WeightClasses = () => (
     
     <MainAndSidebar long="yes" videos="9" news="9">
-            <WeightClassesIntroduction />
-            <WeightTable />
-            <WeightCutConsiderations />
-            <WeightCutProsAndCons />
-            <OutsideOfUS />
-            <OneChampionshipWeight />
+        <WeightClassesIntroduction />
+        <WeightTable />
+        <WeightCutConsiderations />
+        <WeightCutProsAndCons />
+        <OutsideOfUS />
+        <OneChampionshipWeight />
     </MainAndSidebar>
     
 )
