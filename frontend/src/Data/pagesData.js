@@ -1,103 +1,121 @@
 import React from 'react'
 // Pages
-import Home from '../Pages/Others/Home'
-import About from '../Pages/Others/About/'
-import Store from '../Pages/Others/Store/'
+import Home from 'Pages/Others/Home'
+import About from 'Pages/Others/About/'
+import Store from 'Pages/Others/Store/'
 // Basic
-import WhatIsMMA from '../Pages/Basics/WhatIsMMA'
-import HistoryOfMMA from '../Pages/Basics/HistoryOfMMA'
-import RulesOfMMA from '../Pages/Basics/RulesOfMMA'
-import MMADictionary from '../Pages/Basics/MMADictionary'
+import WhatIsMMA from 'Pages/Basics/WhatIsMMA'
+import HistoryOfMMA from 'Pages/Basics/HistoryOfMMA'
+import RulesOfMMA from 'Pages/Basics/RulesOfMMA'
+import MMADictionary from 'Pages/Basics/MMADictionary'
 // Advanced
-import Fundamentals from '../Pages/Advanced/Fundamentals'
-import Techniques from '../Pages/Advanced/Techniques'
-import FightStrategies from '../Pages/Advanced/FightStrategies'
-import FighterPay from '../Pages/Advanced/FighterPay'
-import WeightClasses from '../Pages/Advanced/WeightClasses'
+import Fundamentals from 'Pages/Advanced/Fundamentals'
+import Techniques from 'Pages/Advanced/Techniques'
+import FightStrategies from 'Pages/Advanced/FightStrategies'
+import FighterPay from 'Pages/Advanced/FighterPay'
+import WeightClasses from 'Pages/Advanced/WeightClasses'
 // MMA World
-import MMAPromotions from '../Pages/MMAWorld/MMAPromotions'
-import MMALegends from '../Pages/MMAWorld/MMALegends'
-import BestOfMMA from '../Pages/MMAWorld/BestOfMMA'
-import Recommended from '../Pages/MMAWorld/BestOfMMA'
+import MMAPromotions from 'Pages/MMAWorld/MMAPromotions'
+import MMALegends from 'Pages/MMAWorld/MMALegends'
+import BestOfMMA from 'Pages/MMAWorld/BestOfMMA'
+import Recommended from 'Pages/MMAWorld/BestOfMMA'
 // Other
-import TestPage from '../Pages/Test'
-import Articles from '../Pages/Others/Articles'
+import TestPage from 'Pages/Test'
+import Articles from 'Pages/Others/Articles'
 
 const pagesData = [
     {
-        name: "/about",
-        display: <About/>
+        title: "about",
+        display: <About/>,
+        sub_menu: false
     },
     {
-        name: "/store",
-        display: <Store />
+        title: "store",
+        display: <Store />,
+        sub_menu: false
     },
     {
-        name: "/articles",
-        display: <Articles />
-    },
-    // Basics
-    {
-        name: "/what-is-mma",
-        display: <WhatIsMMA />
+        title: "articles",
+        display: <Articles />,
+        sub_menu: false
     },
     {
-        name:"/history-of-mma",
-        display: <HistoryOfMMA />
+        title: "basics",
+        sub_menu: true,
+        menu_list: [
+            {
+                title: "what-is-mma",
+                display: <WhatIsMMA />
+            },
+            {
+                title:"history-of-mma",
+                display: <HistoryOfMMA />
+            },
+            {
+                title:"rules-of-mma",
+                display: <RulesOfMMA />
+            },
+            {
+                title:"mma-dictionary",
+                display: <MMADictionary />
+            }
+        ]
     },
     {
-        name:"/rules-of-mma",
-        display: <RulesOfMMA />
+        title: "advanced",
+        sub_menu: true,
+        menu_list: [
+            {
+                title:"fundamentals",
+                display: <Fundamentals />
+            },
+            {
+                title:"techniques",
+                display: <Techniques />
+            },
+            {
+                title:"fight-strategies",
+                display: <FightStrategies />
+            },
+            {
+                title:"fighter-pay",
+                display: <FighterPay />
+            },
+            {
+                title:"weight-classes",
+                display: <WeightClasses />
+            }
+        ]
     },
     {
-        name:"/mma-dictionary",
-        display: <MMADictionary />
-    },
-    // Advanced
-    {
-        name:"/fundamentals",
-        display: <Fundamentals />
-    },
-    {
-        name:"/techniques",
-        display: <Techniques />
-    },
-    {
-        name:"/fight-strategies",
-        display: <FightStrategies />
-    },
-    {
-        name:"/fighter-pay",
-        display: <FighterPay />
-    },
-    {
-        name:"/weight-classes",
-        display: <WeightClasses />
-    },
-    // MMA World
-    {
-        name:"/best-of-mma",
-        display: <BestOfMMA />
-    },
-    {
-        name:"/mma-legends",
-        display: <MMALegends />
-    },
-    {
-        name:"/mma-promotions",
-        display: <MMAPromotions />
-    },
-    {
-        name:"/recommended",
-        display: <Recommended />
+        title: "mma-world",
+        sub_menu: true,
+        menu_list: [
+            {
+                title:"best-of-mma",
+                display: <BestOfMMA />
+            },
+            {
+                title:"mma-legends",
+                display: <MMALegends />
+            },
+            {
+                title:"mma-promotions",
+                display: <MMAPromotions />
+            },
+            {
+                title:"recommended",
+                display: <Recommended />
+            }
+        ]
     },
     // Test Page
     {
-        name:"/test",
+        title:"test",
         display: <TestPage />
     },
     {
-        name: "",
+        title: "",
         display: <Home/>
     },
 ]

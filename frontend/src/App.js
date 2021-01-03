@@ -13,7 +13,7 @@ import pagesData from './Data/pagesData'
 const App = () => {
 
   const displayLinks = pagesData.map((page, index) => (
-      <Route path={page.name} key={index}>
+      <Route path={`/${page.title}`} key={index}>
         {page.display}
       </Route>
     )
@@ -23,7 +23,7 @@ const App = () => {
         <BrowserRouter>
           <SiteBody>
             <Switch>
-                {displayLinks}
+              {displayLinks}
             </Switch>
           </SiteBody>
         </BrowserRouter>

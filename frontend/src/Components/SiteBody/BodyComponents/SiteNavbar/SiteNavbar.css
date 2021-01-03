@@ -1,76 +1,121 @@
-#mainNav {
-    border-bottom: 1px solid #e9ecef;
-    margin-bottom: 15px;
-    color:#000;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+.topnav {
+    background-color: black;
+    position:fixed;
+    width: 100%;
+    top: 0;
 }
 
-.navbar-section,
-.navbar-logo-section {
-    width: 33.3%;
+.topnav-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
 }
 
-#mainNav .navbar-brand,
-#mainNav .navbar-brand a,
-#mainNav .navbar-brand a:hover {
-    font-size: 25px;
-    font-weight: 800;
-    color: #000;
-    padding: 0px 50px;
-    text-transform: uppercase;
+.topnav-section {
+    grid-column: span 4;
+    margin: 0px auto;
+}
+  
+.site-logo {
     text-align: center;
+    display: block;
+    padding: 14px 16px;
+    font-size: 18px;
+    color: white;
+    font-weight: 900;
 }
 
-#mainNav .navbar-nav {
-    padding: 0px 71px;
-}
-
-#mainNav .navbar-nav > .nav-item,
-#mainNav .navbar-nav > .nav-item > .nav-link,
-.dropdown-item {
-    font-size: 14px;
-    font-weight: 800;
-    color: #000;
+.site-nav-link {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 800;
     cursor: pointer;
 }
 
 
-.dropdown:hover > .dropdown-menu {
+.site-nav-link:hover {
+    color: White;
+}
+
+.site-nav-dropdown-block {
+    float:left;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.site-nav-dropdown-block:hover .site-nav-dropdown-link {
     display: block;
-    top: 95%;
 }
 
-@media screen and (max-width: 1363px) {
-    .navbar-logo-section {
-        width: 30%;
-    }
-
-    .navbar-section{
-        width: 35%;
-    }
+.site-nav-dropdown-link {
+    background-color: black;
+    color: white;
+    position: absolute;
+    display: none;
+    width: 200px;
+    margin-top: 13px;
 }
 
-@media screen and (max-width: 1270px) {
-    #mainNav .navbar-nav > .nav-item,
-    #mainNav .navbar-nav > .nav-item > .nav-link,
-    .dropdown-item {
-        font-size: 12px;
-
-    }
-
-    .navbar-logo-section {
-        width: 25%;
-    }
-
-    .navbar-section{
-        width: 40%;
-    }
+.site-nav-sub-menu-link {
+    padding: 10px 0px;
 }
 
-@media screen and (max-width: 1075px) {
-    #mainNav {
+.icon:hover {
+    cursor: pointer;
+}
+
+.icon,
+.small-menu-block {
+    display:none;
+}
+
+  
+@media screen and (max-width: 910px) {
+    .site-nav-link,
+    .site-nav-dropdown-block {
         display: none;
     }
 
+    .topnav-section {
+        grid-column: span 3;
+    }
+
+    .icon {
+        width: 100%;
+        display: block;
+        padding: 14px 16px;
+        font-size: 17px;
+        color: #000000;
+    }
+    
+
+    .small-menu-block {
+        margin-top: 48px;
+        display:block;
+        background-color: rgb(255, 228, 228);
+        color: #000000;
+    }
+
+    .small-menu-nav {
+        font-size: 14px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .small-menu-divider{
+        width: 80%;
+    }
 }
