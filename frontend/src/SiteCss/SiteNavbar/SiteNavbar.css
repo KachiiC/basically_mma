@@ -32,7 +32,8 @@
 
 .site-logo,
 .site-logo a,
-.small-menu-nav {
+.small-menu-nav,
+.small-menu-nav-dropdown {
     text-align: center;
 }
 
@@ -78,7 +79,9 @@
 .site-nav-sub-menu-link,
 .site-nav-sub-menu-link a,
 .icon,
-.small-menu-block {
+.small-menu-block,
+.small-menu-nav a,
+.small-menu-nav-dropdown a {
     color: white;
 }
 
@@ -98,7 +101,8 @@
 
 .site-nav-dropdown-link,
 .icon,
-.small-menu-block {
+.small-menu-block,
+.small-menu-nav-dropdown-block {
     display:none;
 }
 
@@ -143,7 +147,8 @@
         position: fixed;
     }
 
-    .small-menu-nav {
+    .small-menu-nav,
+    .small-menu-nav-dropdown {
         padding: 5px 0px;
         font-size: 13px;
         font-weight: 700;
@@ -156,6 +161,11 @@
     .small-menu-nav:last-child{
         border-bottom:none;
     }
+
+    .small-menu-nav-dropdown:hover .small-menu-nav-dropdown-block {
+        display:block;
+    }
+    
 
 }
 

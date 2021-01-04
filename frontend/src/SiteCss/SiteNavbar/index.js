@@ -28,7 +28,7 @@ const SiteNavbar = () =>  {
         </div>
         { 
           smallMenu && (
-              <SiteMenuSmall />
+              <SiteMenuSmall function={myFunction} />
           )
         }
       </nav>
