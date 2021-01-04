@@ -3,6 +3,7 @@ import React from 'react'
 import PageData from 'Data/pagesData'
 import SiteMenuDropdown from './SiteMenuDropdown'
 import SiteLogo from './SiteLogo'
+import {Link} from "react-router-dom";
 
 const SiteMenu = (props) => {
 
@@ -22,9 +23,11 @@ const SiteMenu = (props) => {
         }
     )
 
-    const displayMenuRight = menuList.map((menu) => (
-            <div className="site-nav-link">
-                {menu.title}
+    const displayMenuRight = menuList.map((menu, index) => (
+            <div className="site-nav-link" key={index}>
+                <Link to={`/${menu.title}`}>
+                    {menu.title}
+                </Link>
             </div>
         )
     )
@@ -38,9 +41,7 @@ const SiteMenu = (props) => {
                 <div className="topnav-section">
                     {displayMenuRight}
                 </div>
-                <div className="topnav-section">
                     {props.children}
-                </div>
             </div>
     )
 }

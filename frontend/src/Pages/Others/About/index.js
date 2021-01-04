@@ -3,7 +3,7 @@ import MainAndSidebar from 'Components/MainAndSidebar';
 
 const About = () => (
 
-        <MainAndSidebar videos="4">
+        <MainAndSidebar videos="5">
             <h1>About</h1>
         </MainAndSidebar>
         

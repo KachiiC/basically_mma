@@ -5,9 +5,11 @@ import 'antd/dist/antd.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // Components
 import {BrowserRouter, Switch, Route} from "react-router-dom";
-import SiteBody from 'Components/SiteBody'
+import SiteNavbar from 'SiteCss/SiteNavbar';
+import SiteFooter from 'SiteCss/SiteFooter';
 // Data
 import pagesData from './Data/pagesData'
+import Home from './Pages/Others/Home'
 
 
 const App = () => {
@@ -19,13 +21,42 @@ const App = () => {
     )
   )
 
+  const mySubLinks = pagesData.filter((page) => page.sub_menu === true)
+
+  const displayBasics = mySubLinks[0].menu_list.map((sub, index) => (
+      <Route path={`/${sub.title}`} key={index}>
+          {sub.display}
+      </Route>
+    )
+  )
+
+  const diplayAdvanced = mySubLinks[1].menu_list.map((sub, index) => (
+    <Route path={`/${sub.title}`} key={index}>
+      {sub.display}
+    </Route>
+  ))
+
+  const displayMMAWorld = mySubLinks[2].menu_list.map((sub, index) => (
+    <Route path={`/${sub.title}`} key={index}>
+      {sub.display}
+    </Route>
+  ))
+      
   return (
         <BrowserRouter>
-          <SiteBody>
+          <SiteNavbar />
+          <main>
             <Switch>
               {displayLinks}
+              {displayBasics}
+              {diplayAdvanced}
+              {displayMMAWorld}
+              <Route path="/">
+                <Home />
+              </Route>
             </Switch>
-          </SiteBody>
+          </main>
+          <SiteFooter />
         </BrowserRouter>
   );
   

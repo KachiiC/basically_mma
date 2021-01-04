@@ -3,14 +3,13 @@ import PageData from 'Data/pagesData'
 
 const SmallMenu = () => {
 
-    const smallDisplayMenu = PageData.map((menu, index) => {
-        return (
-          <div key={index}>
-            <div className="small-menu-nav">{menu.title}</div>
-            <hr className="small-menu-divider"/>
+    const smallDisplayMenu = PageData.map((menu, index) => (
+      
+          <div className="small-menu-nav" key={index}>
+            {menu.title}
           </div>
-        )
-      })
+      )
+    )
 
       return (
         <div className="small-menu-block">

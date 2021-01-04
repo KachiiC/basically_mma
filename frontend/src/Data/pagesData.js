@@ -1,6 +1,5 @@
 import React from 'react'
 // Pages
-import Home from 'Pages/Others/Home'
 import About from 'Pages/Others/About/'
 import Store from 'Pages/Others/Store/'
 // Basic
@@ -20,7 +19,6 @@ import MMALegends from 'Pages/MMAWorld/MMALegends'
 import BestOfMMA from 'Pages/MMAWorld/BestOfMMA'
 import Recommended from 'Pages/MMAWorld/BestOfMMA'
 // Other
-import TestPage from 'Pages/Test'
 import Articles from 'Pages/Others/Articles'
 
 const pagesData = [
@@ -108,16 +106,7 @@ const pagesData = [
                 display: <Recommended />
             }
         ]
-    },
-    // Test Page
-    {
-        title:"test",
-        display: <TestPage />
-    },
-    {
-        title: "",
-        display: <Home/>
-    },
+    }
 ]
 
 export default pagesData;

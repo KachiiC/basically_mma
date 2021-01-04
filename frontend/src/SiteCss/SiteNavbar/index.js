@@ -4,9 +4,6 @@ import './SiteNavbar.css'
 // Components
 import SiteMenu from './SiteMenu'
 import SiteMenuSmall from './SiteMenuSmall'
-// import { Link } from 'react-router-dom'
-// import SiteDropdown from './SiteDropdown'
-// import MenuRight from './menuright'
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -21,11 +18,11 @@ const SiteNavbar = () =>  {
     }
   
     return (
-      <>
+      <nav>
         <div className="topnav" id="myTopnav">
             <SiteMenu>
-              <div className="icon" onClick={myFunction}>
-                Menu <FontAwesomeIcon icon={faBars} />
+              <div className="icon" onClick={myFunction} >
+                Menu <FontAwesomeIcon icon={faBars}/>
               </div>
             </SiteMenu>
         </div>
@@ -34,7 +31,7 @@ const SiteNavbar = () =>  {
               <SiteMenuSmall />
           )
         }
-      </>
+      </nav>
     )
     
 }

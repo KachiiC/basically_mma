@@ -12,9 +12,9 @@ p {
     margin-bottom: 1rem;
 }
 
-.site-body {
+main {
     padding: 60px;
-    min-height: 550px;
+    min-height: 100%;
     width: 100%
 }
 
