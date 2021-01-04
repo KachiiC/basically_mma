@@ -1,7 +1,6 @@
 import React from 'react'
 // CSS
 import './WeightClasses.css'
-import MainAndSidebar from 'Components/MainAndSidebar'
 // Components
 import WeightClassesIntroduction from './PageComponents/WeightClassesIntroduction'
 import WeightTable from './PageComponents/WeightTable'
@@ -14,14 +13,14 @@ import OneChampionshipWeight from './PageComponents/OneChampionshipWeight'
 
 const WeightClasses = () => (
     
-    <MainAndSidebar long="yes" videos="9" news="9">
+    <>
         <WeightClassesIntroduction />
         <WeightTable />
         <WeightCutConsiderations />
         <WeightCutProsAndCons />
         <OutsideOfUS />
         <OneChampionshipWeight />
-    </MainAndSidebar>
+    </>
     
 )
 

@@ -10,13 +10,13 @@ import SiteFooter from 'SiteCss/SiteFooter';
 // Data
 import pagesData from './Data/pagesData'
 import Home from './Pages/Others/Home'
-
+import SiteMainContainer from './SiteCss/SiteMainContainer'
 
 const App = () => {
 
   const displayLinks = pagesData.map((page, index) => (
       <Route path={`/${page.title}`} key={index}>
-        {page.display}
+        <SiteMainContainer main_display={page.display}/>
       </Route>
     )
   )
@@ -25,37 +25,39 @@ const App = () => {
 
   const displayBasics = mySubLinks[0].menu_list.map((sub, index) => (
       <Route path={`/${sub.title}`} key={index}>
-          {sub.display}
+          <SiteMainContainer main_display={sub.display}/>
       </Route>
     )
   )
 
   const diplayAdvanced = mySubLinks[1].menu_list.map((sub, index) => (
-    <Route path={`/${sub.title}`} key={index}>
-      {sub.display}
-    </Route>
-  ))
+      <Route path={`/${sub.title}`} key={index}>
+        <SiteMainContainer main_display={sub.display}/>
+      </Route>
+    )
+  )
 
   const displayMMAWorld = mySubLinks[2].menu_list.map((sub, index) => (
-    <Route path={`/${sub.title}`} key={index}>
-      {sub.display}
-    </Route>
-  ))
+      <Route path={`/${sub.title}`} key={index}>
+        <SiteMainContainer main_display={sub.display}/>
+      </Route>
+    )
+  )
       
   return (
         <BrowserRouter>
           <SiteNavbar />
-          <main>
-            <Switch>
-              {displayLinks}
-              {displayBasics}
-              {diplayAdvanced}
-              {displayMMAWorld}
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
-          </main>
+          <body>
+              <Switch>
+                {displayLinks}
+                {displayBasics}
+                {diplayAdvanced}
+                {displayMMAWorld}
+                <Route path="/">
+                  <Home />
+                </Route>
+              </Switch>
+          </body>
           <SiteFooter />
         </BrowserRouter>
   );

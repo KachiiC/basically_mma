@@ -1,0 +1,10 @@
+.site-grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+main {
+    grid-column: span 8;
+    width: 100%;
+    border: 1px solid black;
+}

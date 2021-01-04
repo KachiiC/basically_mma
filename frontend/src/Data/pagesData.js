@@ -106,7 +106,7 @@ const pagesData = [
                 display: <Recommended />
             }
         ]
-    }
+    },
 ]
 
 export default pagesData;

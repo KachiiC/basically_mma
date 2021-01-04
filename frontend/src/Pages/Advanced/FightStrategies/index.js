@@ -3,7 +3,6 @@ import React, {useState} from 'react'
 import FightStrategiesData from 'Data/Advanced/FightStrategies/FightStratData'
 // CSS
 import './FightStrategies.css'
-import MainAndSidebar from 'Components/MainAndSidebar'
 // Components
 import FightStrategiesIntro from './PageComponents/FightStrategiesIntroduction'
 import SiteSlideShow from 'Components/SiteSlideShow'
@@ -26,7 +25,7 @@ const FightStrategies = () => {
   }
   
   return (
-      <MainAndSidebar long ="yes" videos="3" news="2">
+      <>
         <h1>Fight Strategies</h1>
         <FightStrategiesIntro />
         <div className="fight-strat-slides">
@@ -40,7 +39,7 @@ const FightStrategies = () => {
                 <p><b>Notable users:</b> {FightStrategiesData[slideIndex].noteable_examples}</p>
             </div>
         </div>
-      </MainAndSidebar>
+      </>
   );
 
 }
