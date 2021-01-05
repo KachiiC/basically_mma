@@ -1,14 +1,5 @@
-.rules-tab-background {
-    background-color: #F8F8FF;
-    min-height: 500px;
-}
-
-.rules-header {
-    text-align: center;
-    margin: 20px 0px;
-}
-
-.rules-tab-paragraph p{
-    text-align: left !important;
-    padding: 5px !important;
+.rules-cards-container {
+    margin: 25px 0px; 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
