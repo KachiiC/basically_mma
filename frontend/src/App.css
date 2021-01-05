@@ -5,14 +5,9 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0.5rem;
 }
 
-body {
-    padding-top: 27px;
+.site-body {
+    padding-top: 53px;
     width: 100%;
-}
-
-aside {
-    grid-column: span 4;
-    width: 100%
 }
 
 p {

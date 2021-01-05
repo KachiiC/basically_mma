@@ -47,7 +47,7 @@ const App = () => {
   return (
         <BrowserRouter>
           <SiteNavbar />
-          <body>
+          <div className="site-body">
               <Switch>
                 {displayLinks}
                 {displayBasics}
@@ -57,7 +57,7 @@ const App = () => {
                   <Home />
                 </Route>
               </Switch>
-          </body>
+          </div>
           <SiteFooter />
         </BrowserRouter>
   );
