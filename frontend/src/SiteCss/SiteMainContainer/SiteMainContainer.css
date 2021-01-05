@@ -16,7 +16,6 @@ main {
         grid-column: span 12;
         width: 80%;  
     }
-    
 }
 
 @media screen and (max-width: 900px) {

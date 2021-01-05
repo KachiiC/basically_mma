@@ -8,9 +8,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SiteFooter = () => {
 
-    const displayIcons = footerData.map((item, index) => (
+    const iconsList = footerData.map((item, index) => (
             <a href={item.link} target="_blank" rel="noreferrer noopener" key={index}>
-                <FontAwesomeIcon className="footer-logos" size='4x' color={item.color} icon={item.icon}/> 
+                <FontAwesomeIcon 
+                    className="footer-logos" 
+                    size="4x"
+                    color={item.color} 
+                    icon={item.icon}
+                /> 
             </a>
         )
     )
@@ -18,7 +23,7 @@ const SiteFooter = () => {
     return (
         <footer>
             <div className="footer-items">
-                {displayIcons}
+                {iconsList}
             </div>
         </footer>
     )

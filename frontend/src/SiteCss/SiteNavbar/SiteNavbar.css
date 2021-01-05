@@ -140,6 +140,7 @@
     .icon,
     .small-menu-block {
         display:block;
+        z-index:99;
     }
     
     .small-menu-block {

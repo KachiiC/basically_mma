@@ -3,14 +3,11 @@ import React from 'react'
 import './RulesOfMMA.css'
 // Components
 import RulesOfMMAIntroduction from './PageComponents/RulesOfMMAIntroduction'
-import Tabs from './PageComponents/Tabs'
-
 
 const RulesOfMMA = () => (
 
     <>
         <RulesOfMMAIntroduction />
-        <Tabs />
     </>
 
 )

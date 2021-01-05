@@ -24,7 +24,7 @@ const SiteNavbar = () =>  {
               <div className="icon" onClick={myFunction} >
                 Menu <FontAwesomeIcon icon={faBars}/>
               </div>
-            </SiteMenu>
+            </SiteMenu >
         </div>
         { 
           smallMenu && (
