@@ -2,25 +2,24 @@ import React from 'react'
 // Data
 import TimelineData from 'Data/Basics/HistoryOfMMA/timelineData'
 // Components
-import {Timeline} from 'antd';
 
 
 const MMATimeline = () => {
 
     const renderTimelineList = TimelineData.map((item, index) => (
-            <Timeline.Item key={index}>
-                <h5 className="history-event-header">{item.name}</h5>
-                <h6 className="history-event-year">{item.year}</h6>
-                <p>{item.event}</p>
-            </Timeline.Item>
+        <div className="site-timeline-item">
+            <div className="site-timeline-content">
+            <h3>{item.year}</h3>
+            <h2>{item.name}</h2>
+            <p>{item.event}</p>
+            </div>
+        </div>
         )
     )
 
     return (
-        <div className="history-timeline">
-            <Timeline mode="alternate">
-                {renderTimelineList}
-            </Timeline>
+        <div className="site-timeline">
+            {renderTimelineList}
         </div>
     );
 }
