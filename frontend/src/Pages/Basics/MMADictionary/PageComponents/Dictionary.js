@@ -13,7 +13,7 @@ const Dictionary = () => {
     const [isDisplayable, setIsDisplayable] = useState(false)
 
     useEffect(() => {
-        fetch("http://localhost:8000/backend_mma/dictionary_list/") 
+        fetch("http://127.0.0.1:8000/backend/mma_dictionary_list/") 
         .then((response) => { 
             return response.json() 
         })
@@ -24,8 +24,8 @@ const Dictionary = () => {
         })
         .catch((error) => { 
             setIsFetching(false)
+            console.log(error)
         })
-        
     }, []) 
 
     const tab_types = [
@@ -40,19 +40,29 @@ const Dictionary = () => {
         <DictionaryComponents data={terms} type={tab_type}/>
     )
 
-    const renderLogic = (isFetching)?(<CircularProgress />):
-        ((isDisplayable)?(
-            <>
-                {allTabs}
-            </>
-            )
-        :(<Empty />))
+    const renderLogic = (isFetching)?(
+        <CircularProgress />
+    ):(
+        (isDisplayable) ? (
+            <> {allTabs} </>
+        ):(
+            <Empty />
+        )
+    )
 
-    return (
-        <>
-            <h4> MMA Dictionary</h4>
-            {renderLogic}
-        </>
+    return (  
+        <div>
+            <h2>MMA Dictionary</h2>
+            <p>
+                These are terms that you will often hearing during a mixed martial arts broadcast 
+                and may not understand if you are not familiar with mma. Although there are a lot
+                of terms that have not been covered, these should give you a good understanding of
+                mma termionology.
+            </p>
+            <div className="data-container">
+                {renderLogic}
+            </div>
+        </div>
     );
 
 }

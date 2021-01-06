@@ -11,13 +11,19 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-    padding: 25px;
+    padding: 15px;
     width: 100%;
 }
 
 .video-container {
     text-align: center;
     margin: 25px;
+}
+
+.data-container {
+    text-align: center;
+    width: 90%;
+    margin: auto;
 }
 
 @media screen and (max-width: 1075px) {

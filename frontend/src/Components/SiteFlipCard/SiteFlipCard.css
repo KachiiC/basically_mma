@@ -1,8 +1,6 @@
 .site-flip-card-container {
     grid-column: span 6;
     padding: 20px;
-    max-width: 100%;
-    border: 1px solid black;
 }
 
 .site-flip-card {
@@ -72,6 +70,18 @@
     margin: 0px;
     padding: 5px 0px;
     text-align: left;
+}
+
+.site-flip-card-font-title {
+    position: absolute;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:dimgrey;
+    font-family:fantasy;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 1300px) {

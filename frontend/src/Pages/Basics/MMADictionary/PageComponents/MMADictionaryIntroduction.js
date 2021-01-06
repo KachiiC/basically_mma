@@ -10,11 +10,6 @@ const Introduction = () => (
                 taekwondo,whilst most grappling techniques and positions derive from wrestling, 
                 judo and Brazilian jiu-jitsu.
             </p>
-            <p>
-                Although the defintions below do not cover every word you'll hear during an MMA
-                broadcast, I feel these terms will cover most things a beginner will not know and
-                a good starting block to build upon.
-            </p>
         </>
 )
 

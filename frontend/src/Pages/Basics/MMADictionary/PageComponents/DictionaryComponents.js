@@ -11,22 +11,35 @@ const DictionaryComponents = (props) => {
     const displayedTabs = filteredTabs.map((tab) => {
 
         const displayMedia = tab.example_type === "Video" ?
-            <iframe 
-                width="560" height="315"
-                title="definition-example" 
-                src={`https://www.youtube.com/embed/${tab.example}`}
-                frameborder="0" 
-                allow="accelerometer; 
-                autoplay; clipboard-write; encrypted-media; 
-                gyroscope; picture-in-picture" allowFullScreen 
-            />: 
-            <img src="http://via.placeholder.com/560x315.png?text=Placeholder%201" alt="tab-pic"/>
+            <div className="term-example-video-container">
+                <iframe 
+                    title="definition-example" 
+                    src={`https://www.youtube.com/embed/${tab.example}`}
+                    frameborder="0" 
+                    allow="accelerometer; 
+                    autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture" allowFullScreen
+                    className="term-exmample-video"
+                />
+            </div>: 
+            <img 
+                src="http://via.placeholder.com/560x315.png?text=Placeholder%201" 
+                alt="tab-pic"
+                className="term-example-media"
+            />
       
         return (
-            <Panel header={<div className="term-tab">{tab.name}</div>} key={tab.pk}>
-                <p className="term-definition"><b>Definition:</b> {tab.definition}</p>
-                <div className="term-example-media">
-                    {displayMedia}
+            <Panel 
+                header={
+                    <div className="term-tab">{tab.name}</div>
+                } 
+                key={tab.pk}
+            >
+                <div className="term-content">
+                    <p className="term-definition">
+                        <b>Definition</b>: {tab.definition}
+                    </p>
+                        {displayMedia}
                 </div>
             </Panel>
         )

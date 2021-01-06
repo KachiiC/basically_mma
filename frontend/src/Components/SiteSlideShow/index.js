@@ -1,6 +1,7 @@
 import React from 'react';
 // CSS
 import './siteslideshow.css';
+// Icons
 import { faAngleDoubleLeft, faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 

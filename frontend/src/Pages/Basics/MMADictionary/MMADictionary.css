@@ -7,7 +7,30 @@
     text-align: left;
 }
 
-.term-example-media{
+.term-content {
     text-align: center;
-    margin: 30px 10px 0px;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+.term-example-media {
+    max-width: 70%;
+    width: 70%;
+    height: 100%;
+    min-height: 100%;
+    margin: 20px auto;
+}
+
+.term-example-video-container {
+    margin: 20px auto;
+    width: 70%;
+    min-height: 315px;
+    max-width: 70%;
+    height: auto;
+}
+
+.term-exmample-video {
+    width: 100%;
+    height: 315px;
 }

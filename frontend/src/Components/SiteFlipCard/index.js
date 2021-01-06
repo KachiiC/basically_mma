@@ -1,4 +1,5 @@
 import React from 'react'
+// CSS
 import './SiteFlipCard.css'
 
 const SiteFlipCard = (props) => {
@@ -28,6 +29,9 @@ const SiteFlipCard = (props) => {
             <div className="site-flip-card" style={renderStyle.size}>
                 <div className="site-flip-card-inner" style={renderStyle.size}>
                     <div className="site-flip-card-front">
+                        <div className="site-flip-card-font-title">
+                            {props.title}
+                        </div>
                         <img src={props.image} 
                             alt="Avatar" 
                             style={renderStyle.size}
