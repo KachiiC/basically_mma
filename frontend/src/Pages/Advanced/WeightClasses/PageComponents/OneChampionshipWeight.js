@@ -57,8 +57,12 @@ const OneChampionshipWeightClasses = () => (
             took effect, there have been no further serious incidents. The new system was well received 
             by athletes in the organisation, as well as other stakeholders in the MMA industry.  
         </p>
-      <h5>One Championship Weight Classes</h5>
-      <Table columns={columns} dataSource={OneChampionshipData} />
+        <h5>One Championship Weight Classes</h5>
+        <Table 
+            columns={columns} 
+            dataSource={OneChampionshipData} 
+            className="weight-class-table"
+        />
     </>
   )
 

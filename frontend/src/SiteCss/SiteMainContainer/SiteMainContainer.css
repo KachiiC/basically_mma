@@ -5,7 +5,7 @@
 
 main {
     grid-column: span 8;
-    margin:  0px auto;
+    margin:  0px auto 25px;
     width: 100%;
     padding: 0px 10px;
     overflow: hidden;

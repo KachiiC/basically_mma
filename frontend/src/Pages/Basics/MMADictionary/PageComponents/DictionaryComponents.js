@@ -8,10 +8,10 @@ const DictionaryComponents = (props) => {
 
     const filteredTabs = props.data.filter((term) => term.type === `${props.type}`)
     
-    const displayedTabs = filteredTabs.map((tab) => {
+    const displayedTabs = filteredTabs.map((tab, index) => {
 
         const displayMedia = tab.example_type === "Video" ?
-            <div className="term-example-video-container">
+            <div className="term-example-video-container" key={index}>
                 <iframe 
                     title="definition-example" 
                     src={`https://www.youtube.com/embed/${tab.example}`}
@@ -23,8 +23,9 @@ const DictionaryComponents = (props) => {
                 />
             </div>: 
             <img 
-                src="http://via.placeholder.com/560x315.png?text=Placeholder%201" 
+                src={`http://via.placeholder.com/560x315.png?text=${tab.name}%20Placeholder`}
                 alt="tab-pic"
+                key={index}
                 className="term-example-media"
             />
       

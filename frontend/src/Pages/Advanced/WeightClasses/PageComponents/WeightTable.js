@@ -4,6 +4,7 @@ import WeightTableData from 'Data/Advanced/WeightClasses/WeightTableData'
 //Components
 import {Table} from 'antd';
 
+
 const columns = [
   {
     title: 'Weight Class',
@@ -45,8 +46,13 @@ const columns = [
 
 const WeightTable = () => (
     <>
-      <h4>The Unified Rules of MMA Weight Classes</h4>
-      <Table columns={columns} dataSource={WeightTableData} />
+      <h4>The Unified Rules of MMA Weight Classes</h4> 
+        <Table 
+          columns={columns} 
+          dataSource={WeightTableData} 
+          pagination={false}
+          className="weight-class-table" 
+        />
       <small>* = weight class does not exist in the UFC</small><br/>
       <small>** = this is a mens only weight class in the UFC</small>
     </>

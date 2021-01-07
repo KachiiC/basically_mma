@@ -3,3 +3,9 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
+
+.rules-weight-container,
+.rules-foul-container {
+    width: 85%;
+    margin: auto;
+}

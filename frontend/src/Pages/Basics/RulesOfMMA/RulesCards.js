@@ -17,7 +17,6 @@ const RulesCards = () => {
         )
     )
 
-
     return (
         <div className="rules-cards-container">
             {displayCardsList}
