@@ -1,9 +1,10 @@
 import React from 'react'
 // CSS
-import './HistoryOfMMA.css'
 // Sections
+import HistoryOfMMAIntroduction from 'Data/Basics/HistoryOfMMA/HistoryOfMMAIntroduction'
+// Components
 import SiteTimeline from 'Components/SiteTimeline'
-import HistoryOfMMAIntroduction from './HistoryOfMMAIntroduction'
+// Data
 import timelineData from 'Data/Basics/HistoryOfMMA/timelineData'
 
 

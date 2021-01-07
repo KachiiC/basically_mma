@@ -1,11 +1,11 @@
 import React from 'react'
 // CSS
 // Components
-import WhatIsMMADescription from './PageComponents/WhatIsMMADescription'
+import WhatIsMMAIntroduction from 'Data/Basics/WhatIsMMA/WhatIsMMAIntroduction'
 
 const WhatIsMMA = () => (
         <div>
-            <WhatIsMMADescription />
+            <WhatIsMMAIntroduction />
         </div>
         
 )

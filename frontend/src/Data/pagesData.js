@@ -17,7 +17,7 @@ import WeightClasses from 'Pages/Advanced/WeightClasses'
 import MMAPromotions from 'Pages/MMAWorld/MMAPromotions'
 import MMALegends from 'Pages/MMAWorld/MMALegends'
 import BestOfMMA from 'Pages/MMAWorld/BestOfMMA'
-import Recommended from 'Pages/MMAWorld/BestOfMMA'
+import Recommended from 'Pages/MMAWorld/Recommended'
 // Other
 import Articles from 'Pages/Others/Articles'
 

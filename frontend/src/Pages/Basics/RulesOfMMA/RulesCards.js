@@ -6,9 +6,7 @@ import RulesData from 'Data/Basics/RulesOfMMA/RulesData'
 
 const RulesCards = () => {
 
-    const displayCardsList = RulesData.map((rule, index) => {
-
-        return (
+    const displayCardsList = RulesData.map((rule, index) =>  (
             <SiteFlipCard 
                 key={index}
                 size={rule.size}
@@ -17,7 +15,7 @@ const RulesCards = () => {
                 image={`http://via.placeholder.com/425x425.png?text=${rule.title}`}
             />
         )
-    })
+    )
 
 
     return (

@@ -15,14 +15,14 @@ aside {
     border-radius: 50%;
 }
 
-.site-sidebar-section{
+.site-sidebar-section {
     margin-bottom: 15px;
 }
 
 .site-sidebar-title {
     background-color: black;
     padding: 10px;
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-transform: uppercase;
     font-weight: 800;

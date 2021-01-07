@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Introduction = () => (
+const MMADictionaryIntroduction = () => (
         <>
             <h1>Mixed Martial Arts Terms</h1>
             <p>As with any sport, before you learn about strategies and the finer details -
@@ -13,4 +13,4 @@ const Introduction = () => (
         </>
 )
 
-export default Introduction
+export default MMADictionaryIntroduction

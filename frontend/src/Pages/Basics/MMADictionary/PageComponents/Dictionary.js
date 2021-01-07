@@ -3,8 +3,8 @@ import React, { useState, useEffect} from 'react'
 import "../MMADictionary.css" 
 // Components
 import { Empty } from 'antd';
-import CircularProgress from '@material-ui/core/CircularProgress';
 import DictionaryComponents from './DictionaryComponents';
+import SiteLoading from 'SiteCss/SiteTransitions/SiteLoading';
 
 const Dictionary = () => {
 
@@ -13,7 +13,7 @@ const Dictionary = () => {
     const [isDisplayable, setIsDisplayable] = useState(false)
 
     useEffect(() => {
-        fetch("http://127.0.0.1:8000/backend/mma_dictionary_list/") 
+        fetch("https://kachiis-rest.herokuapp.com/backend/mma_dictionary_list/") 
         .then((response) => { 
             return response.json() 
         })
@@ -41,11 +41,9 @@ const Dictionary = () => {
     )
 
     const renderLogic = (isFetching)?(
-        <CircularProgress />
+       <SiteLoading />
     ):(
-        (isDisplayable) ? (
-            <> {allTabs} </>
-        ):(
+        (isDisplayable) ? (allTabs) :(
             <Empty />
         )
     )

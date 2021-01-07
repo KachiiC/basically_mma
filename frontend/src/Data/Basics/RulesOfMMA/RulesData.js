@@ -1,9 +1,9 @@
 import React from 'react'
-import Attire from './PageComponents/Attire'
-import BoutDuration from './PageComponents/BoutDuration'
-import MedicalRequirements from './PageComponents/MedicalRequirements'
-import MethodsOfVictory from "./PageComponents/MethodsOfVictory"
-import ProhibitedSubstances from './PageComponents/ProhibitedSubstances'
+import Attire from './RulesComponents/Attire'
+import BoutDuration from './RulesComponents/BoutDuration'
+import MedicalRequirements from './RulesComponents/MedicalRequirements'
+import MethodsOfVictory from "./RulesComponents/MethodsOfVictory"
+import ProhibitedSubstances from './RulesComponents/ProhibitedSubstances'
 
 
 const RulesData = [

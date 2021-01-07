@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Introduction = () => (
+const HistoryOfMMAIntroduction = () => (
     <>
         <h1>History of Mixed Martial Arts</h1>
         <p> 
@@ -25,4 +25,4 @@ const Introduction = () => (
     </>
 )
 
-export default Introduction
+export default HistoryOfMMAIntroduction
