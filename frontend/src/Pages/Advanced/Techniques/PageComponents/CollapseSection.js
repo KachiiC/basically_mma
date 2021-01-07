@@ -15,24 +15,37 @@ const CollapseSection = (props) => {
     const technique = props.technique
     const index = props.index
 
+    const technique_attributes = [technique.title, technique.type, technique.difficulty]
+
+    const displayedTableCells = technique_attributes.map((attribute, index) => (
+        <TableCell align="justify" key={index}>
+            <div>
+                {attribute}
+            </div>
+        </TableCell>
+    ))
+
     return (
         <>
             <TableRow>
                 <TableCell>
-                    <IconButton key={index} aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
+                    <IconButton 
+                        key={index} 
+                        aria-label="expand row" 
+                        size="small" 
+                        onClick={() => setOpen(!open)}
+                    >
                     {open ? <KeyboardArrowDownIcon /> : <ChevronRightIcon />}
                     </IconButton>
                 </TableCell>
-                <TableCell component="th" scope="row">
-                    {technique.name}
-                </TableCell>
-                <TableCell align="right">{technique.type}</TableCell>
-                <TableCell align="right">{technique.difficulty}</TableCell>
+                {displayedTableCells}
             </TableRow>
             <TableRow>
                 <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
                     <Collapse in={open} timeout="auto" unmountOnExit>
-                    <h3 className="techniques-header">{technique.name}</h3>
+                    <h3 className="techniques-header">
+                        {technique.title}
+                    </h3>
                     <p>{formattedContent}</p>
                     <div className="techniques-row">
                         <div className="techniques-video-container">

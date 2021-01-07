@@ -1,12 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
 // Data
 import FightStrategiesData from 'Data/Advanced/FightStrategies/FightStratData'
 // CSS
 import './FightStrategies.css'
 // Components
 import FightStrategiesIntro from './PageComponents/FightStrategiesIntroduction'
-import SiteSlideShow from 'Components/SiteSlideShow'
-import SiteTabs from '../../../Components/SiteTabs'
+import SiteTabs from 'Components/SiteTabs'
 
 
 const FightStrategies = () => {

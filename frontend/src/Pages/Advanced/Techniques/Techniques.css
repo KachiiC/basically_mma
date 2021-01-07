@@ -1,3 +1,13 @@
+.techniques-tabs-component-container {
+    width: 85%;
+    margin: auto;
+}
+
+.techniques-tab-heading {
+    text-align: center;
+    margin: 1px solid black;
+}
+
 .techniques-video-container {
     width: 50%;
     text-align: center;
