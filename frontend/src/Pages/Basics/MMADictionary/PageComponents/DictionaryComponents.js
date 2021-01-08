@@ -32,7 +32,7 @@ const DictionaryComponents = (props) => {
         return (
             <Panel 
                 header={
-                    <div className="term-tab">{tab.name}</div>
+                    <div className="term-tab">{tab.title}</div>
                 } 
                 key={tab.pk}
             >

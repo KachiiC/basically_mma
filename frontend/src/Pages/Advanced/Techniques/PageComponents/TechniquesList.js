@@ -49,6 +49,14 @@ const TechniquesList = () => {
         )
     })
 
+    const techniqueHeadings = ["Technique Name", "Type", "Difficulty"]
+    
+    const renderHeadings = techniqueHeadings.map((heading, index) => (
+        <TableCell align="inherit" key={index}>
+            <b>{heading}</b>
+        </TableCell>
+    ))
+
     const renderLogic = (isFetching)?(
         <SiteLoading />
     ):(
@@ -64,13 +72,6 @@ const TechniquesList = () => {
         )
     )
 
-    const techniqueHeadings = ["Technique Name", "Type", "Difficulty"]
-    const renderHeadings = techniqueHeadings.map((heading, index) => (
-        <TableCell align="inherit" key={index}>
-            <b>{heading}</b>
-        </TableCell>
-    ))
-
     return (
         <div className="techniques-tabs-component-container">
             <TableContainer component={Paper}>
@@ -81,7 +82,7 @@ const TechniquesList = () => {
                             {renderHeadings}
                         </TableRow>
                     </TableHead>
-                        {renderLogic}
+                    {renderLogic}
                 </Table>
             </TableContainer>
         </div>
