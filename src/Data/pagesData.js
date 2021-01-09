@@ -1,5 +1,6 @@
 import React from 'react'
-// Pages
+
+// PAGES
 import About from 'Pages/Others/About/'
 import Store from 'Pages/Others/Store/'
 // Basic
@@ -21,11 +22,26 @@ import Recommended from 'Pages/MMAWorld/Recommended'
 // Other
 import Articles from 'Pages/Others/Articles'
 
+// PAGE INTRODUCTIONS
+
+// Basics
+import WhatIsMMAIntroduction from 'Data/PageIntroductions/Basics/WhatIsMMAIntroduction'
+import HistoryOfMMAIntroduction from 'Data/PageIntroductions/Basics/HistoryOfMMAIntroduction'
+import MMADictionaryIntroduction from 'Data/PageIntroductions/Basics/MMADictionaryIntroduction'
+import RulesOfMMAIntroduction from 'Data/PageIntroductions/Basics/RulesOfMMAIntroduction'
+// Advanced
+import FundamentalsIntroduction from 'Data/PageIntroductions/Advanced/FundamentalsIntroduction'
+import TechniquesIntroduction from 'Data/PageIntroductions/Advanced/TechniquesIntroduction'
+import FightStrategiesIntroduction from 'Data/PageIntroductions/Advanced/FightStrategiesIntroduction'
+import FighterPayIntroduction from 'Data/PageIntroductions/Advanced/FighterPayIntroduction'
+import WeightClassesIntroduction from 'Data/PageIntroductions/Advanced/WeightClassesIntroduction'
+
+
 const pagesData = [
     {
         title: "about",
         display: <About/>,
-        sub_menu: false
+        sub_menu: false,
     },
     {
         title: "store",
@@ -43,19 +59,23 @@ const pagesData = [
         menu_list: [
             {
                 title: "what-is-mma",
-                display: <WhatIsMMA />
+                display: <WhatIsMMA />,
+                introduction: <WhatIsMMAIntroduction />
             },
             {
                 title:"history-of-mma",
-                display: <HistoryOfMMA />
+                display: <HistoryOfMMA />,
+                introduction: <HistoryOfMMAIntroduction />
             },
             {
                 title:"rules-of-mma",
-                display: <RulesOfMMA />
+                display: <RulesOfMMA />,
+                introduction: <RulesOfMMAIntroduction />
             },
             {
                 title:"mma-dictionary",
-                display: <MMADictionary />
+                display: <MMADictionary />,
+                introduction: <MMADictionaryIntroduction />
             }
         ]
     },
@@ -65,23 +85,28 @@ const pagesData = [
         menu_list: [
             {
                 title:"fundamentals",
-                display: <Fundamentals />
+                display: <Fundamentals />,
+                introduction: <FundamentalsIntroduction />
             },
             {
                 title:"techniques",
-                display: <Techniques />
+                display: <Techniques />,
+                introduction: <TechniquesIntroduction />
             },
             {
                 title:"fight-strategies",
-                display: <FightStrategies />
+                display: <FightStrategies />,
+                introduction: <FightStrategiesIntroduction />
             },
             {
                 title:"fighter-pay",
-                display: <FighterPay />
+                display: <FighterPay />,
+                introduction: <FighterPayIntroduction />
             },
             {
                 title:"weight-classes",
-                display: <WeightClasses />
+                display: <WeightClasses />,
+                introduction: <WeightClassesIntroduction />
             }
         ]
     },
@@ -91,19 +116,19 @@ const pagesData = [
         menu_list: [
             {
                 title:"best-of-mma",
-                display: <BestOfMMA />
+                display: <BestOfMMA />,
             },
             {
                 title:"mma-legends",
-                display: <MMALegends />
+                display: <MMALegends />,
             },
             {
                 title:"mma-promotions",
-                display: <MMAPromotions />
+                display: <MMAPromotions />,  
             },
             {
                 title:"recommended",
-                display: <Recommended />
+                display: <Recommended />,
             }
         ]
     },

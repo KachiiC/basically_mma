@@ -1,7 +1,7 @@
 import React from 'react'
 // CSS
 // Components
-import WhatIsMMAIntroduction from 'Data/Basics/WhatIsMMA/WhatIsMMAIntroduction'
+import WhatIsMMAIntroduction from 'Data/PageIntroductions/Basics/WhatIsMMAIntroduction'
 
 const WhatIsMMA = () => (
         <div>

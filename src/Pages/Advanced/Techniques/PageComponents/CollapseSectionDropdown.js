@@ -44,7 +44,7 @@ const CollapseSectionDropdown = (props) => {
                     {props.title}
                 </h3>
                 <p className="techniques-content">
-                    {props.content}
+                    {props.description}
                 </p>
                 <div className="techniques-videos-section">
                     {renderVideos}                     

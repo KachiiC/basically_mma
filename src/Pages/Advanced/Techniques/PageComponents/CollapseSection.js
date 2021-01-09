@@ -11,7 +11,7 @@ import CollapseSectionDropdown from './CollapseSectionDropdown';
 const CollapseSection = (props) => {
     
     const [open, setOpen] = useState(false)
-    const formattedContent = props.formattedContent
+    const formattedContent = props.description
     const technique = props.technique
     const index = props.index
 

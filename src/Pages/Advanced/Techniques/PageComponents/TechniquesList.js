@@ -35,10 +35,10 @@ const TechniquesList = () => {
 
     const renderListOfTechniques = techniques.map((technique, index) => {
 
-        const formattedContent = technique.description.split('\r\n').map(
+        const formattedContent = technique.description.split('\n\n').map(
             (value, index) => {
                 if (!value) {
-                    return <p className="technique-description" key={index}>{'\r\n'}</p>
+                    return <p className="technique-description" key={index}>{'\n\n'}</p>
                 }
                 return <p className="technique-description" key={index}>{value}</p>
             }
@@ -49,7 +49,7 @@ const TechniquesList = () => {
                 key={index}
                 index={index} 
                 technique={technique} 
-                formattedContent={formattedContent} 
+                description={formattedContent} 
             />
         )
     })
@@ -66,12 +66,11 @@ const TechniquesList = () => {
         <SiteLoading />
     ):(
         (isDisplayable)?(
-        <TableBody>
-            <React.Fragment>    
-                {renderListOfTechniques}
-            </React.Fragment>
-        </TableBody>
-            
+            <TableBody>
+                <React.Fragment>    
+                    {renderListOfTechniques}
+                </React.Fragment>
+            </TableBody>  
         ):(
             <Empty />
         )

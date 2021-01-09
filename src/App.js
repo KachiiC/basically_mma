@@ -16,7 +16,10 @@ const App = () => {
 
   const displayLinks = pagesData.map((page, index) => (
       <Route path={`/${page.title}`} key={index}>
-        <SiteMainContainer main_display={page.display}/>
+        <SiteMainContainer 
+          introduction={page.introduction}
+          main_display={page.display}
+          />
       </Route>
     )
   )
@@ -25,21 +28,30 @@ const App = () => {
 
   const displayBasics = mySubLinks[0].menu_list.map((sub, index) => (
       <Route path={`/${sub.title}`} key={index}>
-          <SiteMainContainer main_display={sub.display}/>
+          <SiteMainContainer 
+            introduction={sub.introduction}
+            main_display={sub.display}
+          />
       </Route>
     )
   )
 
   const diplayAdvanced = mySubLinks[1].menu_list.map((sub, index) => (
       <Route path={`/${sub.title}`} key={index}>
-        <SiteMainContainer main_display={sub.display}/>
+          <SiteMainContainer 
+            introduction={sub.introduction}
+            main_display={sub.display}
+          />
       </Route>
     )
   )
 
   const displayMMAWorld = mySubLinks[2].menu_list.map((sub, index) => (
       <Route path={`/${sub.title}`} key={index}>
-        <SiteMainContainer main_display={sub.display}/>
+          <SiteMainContainer 
+            introduction={sub.introduction}
+            main_display={sub.display}
+          />
       </Route>
     )
   )

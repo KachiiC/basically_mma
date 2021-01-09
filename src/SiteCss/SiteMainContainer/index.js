@@ -8,6 +8,7 @@ const SiteMainContainer = (props) => (
 
     <div className="site-grid-container">
         <main>
+            {props.introduction}
             {props.main_display}
         </main>
         <SiteSidebar />
