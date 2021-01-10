@@ -23,7 +23,6 @@ import Recommended from 'Pages/MMAWorld/Recommended'
 import Articles from 'Pages/Others/Articles'
 
 // PAGE INTRODUCTIONS
-
 // Basics
 import WhatIsMMAIntroduction from 'Data/PageIntroductions/Basics/WhatIsMMAIntroduction'
 import HistoryOfMMAIntroduction from 'Data/PageIntroductions/Basics/HistoryOfMMAIntroduction'
@@ -35,7 +34,8 @@ import TechniquesIntroduction from 'Data/PageIntroductions/Advanced/TechniquesIn
 import FightStrategiesIntroduction from 'Data/PageIntroductions/Advanced/FightStrategiesIntroduction'
 import FighterPayIntroduction from 'Data/PageIntroductions/Advanced/FighterPayIntroduction'
 import WeightClassesIntroduction from 'Data/PageIntroductions/Advanced/WeightClassesIntroduction'
-
+// MMA World
+import PromotionsIntroduction from 'Data/PageIntroductions/MMAWorld/MMAPromotions/PromotionsIntroduction'
 
 const pagesData = [
     {
@@ -124,7 +124,8 @@ const pagesData = [
             },
             {
                 title:"mma-promotions",
-                display: <MMAPromotions />,  
+                display: <MMAPromotions />,
+                introduction: <PromotionsIntroduction />
             },
             {
                 title:"recommended",

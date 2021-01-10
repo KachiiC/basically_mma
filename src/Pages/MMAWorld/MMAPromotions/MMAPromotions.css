@@ -1,49 +1,12 @@
-.promotions-carousel-slider-image {
-    width: 350px;
-    height: 210px;
-}
-
-.promotions-carousel-slider-title {
-    text-align: center;
-    font-weight: 800;
-}
-
-.promotions-card-image {
-    height: 200px;
-    width: 200px;
-    margin: 20px 20px;
-    cursor: pointer;
-    border-bottom: 1px solid rgb(172, 172, 172)
-}
-
-.promotions-modal-title{
-    text-align: center;
-    font-weight: 900;
-}
-
-.promotions-title {
-    text-align: center;
-    font-weight: 900;
-    margin: 10px 0px;
-    cursor: pointer;
-}
-
-.promotions-card {
-    margin: 20px 0px;
-}
-
 .promotions-card-container{
     align-items: center;
     text-align: center;
     margin: auto;
+    border: 1px solid black;
 }
 
-.popper-container {
-    height: 200px;
+.popper-content {
+    height: 235px;
     width: 300px;
-}
-
-.popper-title {
-    height: 30px;
-    width: 320px;
+    z-index: 5;  
 }
