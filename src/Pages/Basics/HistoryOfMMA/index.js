@@ -1,15 +1,15 @@
 import React from 'react'
 // CSS
+import './HistoryOfMMA.css'
+import HistoryOfMMAVideo from './PageComponents/HistoryOfMMAVideo';
 // Components
-import SiteTimeline from 'Components/SiteTimeline'
-// Data
-import timelineData from 'Data/Basics/HistoryOfMMA/timelineData'
-
+import HistoryTimelineModal from './PageComponents/HistoryTimelineModal';
 
 const HistoryOfMMA = () => (
-    
-    <SiteTimeline data={timelineData} />
-
-);
+    <>
+        <HistoryOfMMAVideo />
+        <HistoryTimelineModal />
+    </>
+)
 
 export default HistoryOfMMA;

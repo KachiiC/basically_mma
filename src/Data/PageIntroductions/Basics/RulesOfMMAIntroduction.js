@@ -23,10 +23,8 @@ const RulesOfMMAIntroduction = () => (
                 <p>
                     The <b>Unified Rules of Mixed Martial Arts</b> aim to provide a clear set of rules 
                     governing professional MMA competition that remain consistent across the jurisdictions 
-                    of various athletic commissions and other regulatory bodies.
+                    of various athletic commissions and other regulatory bodies.The Unified Rules of MMA are listed below:
                 </p>
-
-                <p>The Unified Rules of MMA govern the following:</p>
             </div>
         </>
     )

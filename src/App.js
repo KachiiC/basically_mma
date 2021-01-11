@@ -5,12 +5,13 @@ import 'antd/dist/antd.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // Components
 import {BrowserRouter, Switch, Route} from "react-router-dom";
+import SiteMainContainer from 'SiteCss/SiteMainContainer'
 import SiteNavbar from 'SiteCss/SiteNavbar';
 import SiteFooter from 'SiteCss/SiteFooter';
 // Data
 import pagesData from './Data/pagesData'
+// Pages
 import Home from './Pages/Others/Home'
-import SiteMainContainer from './SiteCss/SiteMainContainer'
 
 const App = () => {
 
@@ -19,7 +20,7 @@ const App = () => {
         <SiteMainContainer 
           introduction={page.introduction}
           main_display={page.display}
-          />
+        />
       </Route>
     )
   )

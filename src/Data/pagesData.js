@@ -1,5 +1,4 @@
 import React from 'react'
-
 // PAGES
 import About from 'Pages/Others/About/'
 import Store from 'Pages/Others/Store/'
@@ -38,21 +37,6 @@ import WeightClassesIntroduction from 'Data/PageIntroductions/Advanced/WeightCla
 import PromotionsIntroduction from 'Data/PageIntroductions/MMAWorld/MMAPromotions/PromotionsIntroduction'
 
 const pagesData = [
-    {
-        title: "about",
-        display: <About/>,
-        sub_menu: false,
-    },
-    {
-        title: "store",
-        display: <Store />,
-        sub_menu: false
-    },
-    {
-        title: "articles",
-        display: <Articles />,
-        sub_menu: false
-    },
     {
         title: "basics",
         sub_menu: true,
@@ -133,6 +117,21 @@ const pagesData = [
             }
         ]
     },
+    {
+        title: "about",
+        display: <About/>,
+        sub_menu: false,
+    },
+    {
+        title: "store",
+        display: <Store />,
+        sub_menu: false
+    },
+    {
+        title: "articles",
+        display: <Articles />,
+        sub_menu: false
+    }
 ]
 
 export default pagesData;
