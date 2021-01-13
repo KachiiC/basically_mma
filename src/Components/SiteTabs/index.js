@@ -6,7 +6,8 @@ const SiteTabs = (props) => {
     const [currentTab, setCurrentTab] = useState(0)
 
     const displayTabs = tabs.map((tab, index) => (
-        <div className="site-single-tab" 
+        <div className="site-single-tab"
+            style={{"grid-column": `span ${props.tab_size}`}}
             key={index}
             onClick={() => setCurrentTab(tabs.indexOf(tab))}
         >
@@ -16,29 +17,15 @@ const SiteTabs = (props) => {
 
     return (
         <div className="site-tabs-component-container">
-            <div className="site-tabs-component-row">
+            <div 
+                className="site-tabs-component-row"
+                style={{"grid-template-columns": `repeat(${props.grid_size},1fr)`}}
+            >
                 {displayTabs}
             </div>
             <div className="site-tabs-display-content">
                 {tabs[currentTab].content}
-                <p><b>Noteable Examples:</b> {tabs[currentTab].noteable_examples}</p>
-                <div className="site-tab-example-video-container">
-                    <iframe 
-                        className="site-tab-example-video"
-                        src={`https://www.youtube.com/embed/${tabs[currentTab].example}`}
-                        frameborder="0" 
-                        title="example_tab"
-                        allowFullScreen 
-                        allow="accelerometer; 
-                        autoplay; 
-                        clipboard-write; 
-                        encrypted-media; 
-                        gyroscope; 
-                        picture-in-picture" 
-                    />
-                </div>
             </div>
-
         </div>
       );
 

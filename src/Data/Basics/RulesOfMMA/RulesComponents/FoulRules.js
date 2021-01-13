@@ -1,6 +1,6 @@
 import React from 'react'
 // Data
-import foulData from 'Data/Basics/RulesOfMMA/FoulsData'
+import foulData from 'Data/Basics/RulesOfMMA/RulesComponents/FoulsData'
 // Components 
 
 import { List } from 'antd';
@@ -9,8 +9,7 @@ const FoulRules = () => {
 
 
     return (
-        <div>
-            <h2>Fouls</h2>
+        <>
             <p>
                 MMA isn't a no holds barred (no rules or restrictions apply in a conflict or 
                 disputed), competition, there are a long list of rules that fighters must follow 
@@ -26,7 +25,7 @@ const FoulRules = () => {
                     </List.Item>
                 )}
             />
-        </div>
+        </>
     )
 }
 
