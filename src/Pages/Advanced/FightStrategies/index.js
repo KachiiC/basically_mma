@@ -1,16 +1,20 @@
 import React from 'react'
 // Data
-// import FightStrategiesData from 'Data/Advanced/FightStrategies/FightStratData'
+import FightStrategiesData from 'Data/Advanced/FightStrategies/FightStratData'
 // CSS
 import './FightStrategies.css'
 // Components
-// import SiteTabs from 'Components/SiteTabs'
+import SiteTabs from 'Components/SiteTabs'
 
 
 const FightStrategies = () => (
 
-    <h1>Fight Strategies</h1>
-    // <SiteTabs tabs={FightStrategiesData} />
+    <SiteTabs 
+        tabs={FightStrategiesData}
+        grid_size="13" 
+        tab_size="3"
+        example="yes"
+    />
 
 )
 

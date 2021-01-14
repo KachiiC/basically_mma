@@ -31,6 +31,10 @@
     min-height: 80%;
 }
 
+.site-tab-example-container {
+    padding-top: 25px;
+}
+
 .site-tabs-display-content p {
     padding: 10px 0px;
 }

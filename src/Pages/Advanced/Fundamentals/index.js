@@ -9,6 +9,7 @@ const Fundamentals = () => (
     <SiteTabs tabs={FundamentalsData}                                 
         grid_size="14" 
         tab_size="2"
+        example="yes"
     />
     
 )

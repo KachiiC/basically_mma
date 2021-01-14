@@ -5,6 +5,7 @@ import './SiteTabs.css'
 // Icon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleDoubleLeft, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
+import SiteYoutubeVideo from '../SiteYoutubeVideo'
 
 const SiteTabs = (props) => {
 
@@ -63,6 +64,16 @@ const SiteTabs = (props) => {
         setSmallTabIndex(smallTabIndex + 1)
     }
 
+    const renderExample = props.example === "yes" ? (
+        <div className="site-tab-example-container">
+            <h5>Here is an example for you!</h5>
+            <SiteYoutubeVideo youtube_id={tabs[currentTab].example} />
+        </div>
+    ): (
+        <> 
+        </>
+    )
+
     return (
         <div className="site-tabs-component-container">
             <div 
@@ -92,6 +103,7 @@ const SiteTabs = (props) => {
                 style={overflowLogic}
             >
                 {tabs[currentTab].content}
+                {renderExample}
             </div>
         </div>
       );
