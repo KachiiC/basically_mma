@@ -13,15 +13,21 @@ const RulesCards = () => {
 
     return (
         <div>
-            <h1 onClick={modalControl}>Show Rules</h1>
+            <div className="history-of-mma-button" onClick={modalControl}>
+                The Unified Rules of MMA
+            </div>
             { displayModal && (
-                
-                <SiteModal closeModal={modalControl} >
-                    <div className="rules-modal">
-                        <SiteTabs tabs={RulesData} grid_size="14" tab_size="2"/>
-                    </div>
-                </SiteModal>
-            )
+                    <SiteModal closeModal={modalControl} >
+                        <div className="rules-modal">
+                            <SiteTabs 
+                                tabs={RulesData} 
+                                grid_size="14" 
+                                tab_size="2"
+                                overflow="yes"
+                            />
+                        </div>
+                    </SiteModal>
+                )
             }
         </div>
     )

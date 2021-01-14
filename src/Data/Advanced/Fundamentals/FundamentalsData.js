@@ -6,34 +6,34 @@ import GamePlanningModalData from './GamePlanningModalData'
 
 const fundamentalsData = [
     {
-        name: "Striking",
+        title: "Striking",
         image: "",
-        modal_content: <StrikingModalData /> 
+        content: <StrikingModalData /> 
     },
     {
-        name: "Grappling",
+        title: "Grappling",
         image: "",
-        modal_content: <GrapplingModalData />      
+        content: <GrapplingModalData />      
     },
     {
-        name: "Game Planning",
+        title: "Game Planning",
         image: "",
-        modal_content: <GamePlanningModalData />        
+        content: <GamePlanningModalData />        
     },
     {
-        name: "Weight Cutting",
+        title: "Weight Cutting",
         image: "",
-        modal_content: ""        
+        content: ""        
     },
     {
-        name: "Strength & Conditioning",
+        title: "Strength & Conditioning",
         image: "",
-        modal_content: ""        
+        content: ""        
     },
     {
-        name: "Nutrition & recovery",
+        title: "Nutrition & recovery",
         image: "",
-        modal_content: ""        
+        content: ""        
     },
 ]
 

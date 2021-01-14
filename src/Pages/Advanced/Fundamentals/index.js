@@ -1,12 +1,15 @@
 import React from 'react'
+import SiteTabs from 'Components/SiteTabs'
 // CSS
 import './Fundamentals.css'
 // Components
-import FundamentalCards from './PageComponents/FundamentalCards'
+import FundamentalsData from 'Data/Advanced/Fundamentals/FundamentalsData'
 
 const Fundamentals = () => (
-    
-    <FundamentalCards />
+    <SiteTabs tabs={FundamentalsData}                                 
+        grid_size="14" 
+        tab_size="2"
+    />
     
 )
 

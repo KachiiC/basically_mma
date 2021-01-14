@@ -19,6 +19,7 @@
     width: 80%;
     height: 80%;
     min-height: 575px;
+    z-index: 5000;
 }
 
 .close-button-container {
