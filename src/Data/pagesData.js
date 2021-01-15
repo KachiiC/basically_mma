@@ -22,6 +22,7 @@ import Recommended from 'Pages/MMAWorld/Recommended'
 import Articles from 'Pages/Others/Articles'
 
 // PAGE INTRODUCTIONS
+
 // Basics
 import WhatIsMMAIntroduction from 'Data/PageIntroductions/Basics/WhatIsMMAIntroduction'
 import HistoryOfMMAIntroduction from 'Data/PageIntroductions/Basics/HistoryOfMMAIntroduction'
