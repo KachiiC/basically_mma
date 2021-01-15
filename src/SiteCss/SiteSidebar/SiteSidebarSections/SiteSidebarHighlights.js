@@ -25,7 +25,7 @@ const SiteSidebarHighlights = () => {
         })
     },[])
 
-    const renderHighlightsList = fightHighlight.slice(0,5).map((highlight, index) => {
+    const renderHighlightsList = fightHighlight.slice(0,4).map((highlight, index) => {
 
         const highlightTitle = highlight.video_title.split("").length < 57 ? 
             highlight.video_title : 
