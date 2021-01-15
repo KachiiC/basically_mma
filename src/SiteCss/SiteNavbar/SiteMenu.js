@@ -25,7 +25,7 @@ const SiteMenu = (props) => {
 
     const displayMenuRight = menuList.map((menu, index) => (
             <div className="site-nav-link" key={index}>
-                <Link to={`/${menu.title}`}>
+                <Link to={`/basically_mma/${menu.title}`}>
                     {menu.title}
                 </Link>
             </div>

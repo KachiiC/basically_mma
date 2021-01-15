@@ -9,7 +9,7 @@ const SiteMenuDropdown = (props) => {
         
         return (
             <div className="site-nav-sub-menu-link" key={index}>
-                <Link to={`${menu.title}`} onClick={props.function}>
+                <Link to={`/basically_mma/${menu.title}`} onClick={props.function}>
                     {menuName}
                 </Link>
             </div>

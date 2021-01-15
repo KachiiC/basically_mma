@@ -41,7 +41,7 @@ const SmallMenu = (props) => {
 
     return (
       <div className="small-menu-nav" key={index}>
-        <Link to={`${menu.title}`} onClick={props.function}>
+        <Link to={`basically_mma/${menu.title}`} onClick={props.function}>
           {renderDisplayTitle}
         </Link>
       </div>
