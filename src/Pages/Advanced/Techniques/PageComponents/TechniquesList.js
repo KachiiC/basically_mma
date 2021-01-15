@@ -1,15 +1,16 @@
 import React, {useState, useEffect} from 'react';
-// Components
+// CSS
 import SiteLoading from 'SiteCss/SiteTransitions/SiteLoading'
+import { Empty } from 'antd'
+// Components
 import CollapseSection from './CollapseSection'
-import {Empty} from 'antd'
+import TableCell from '@material-ui/core/TableCell';
+import TableBody from '@material-ui/core/TableBody';
 import TableContainer from '@material-ui/core/TableContainer';
 import Paper from '@material-ui/core/Paper';
 import Table from '@material-ui/core/Table';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import TableCell from '@material-ui/core/TableCell';
-import TableBody from '@material-ui/core/TableBody';
 
 const TechniquesList = () => {
     

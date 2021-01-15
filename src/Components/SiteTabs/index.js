@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 // CSS
 import './SiteTabs.css'
-// Components
 // Icon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleDoubleLeft, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
-import SiteYoutubeVideo from '../SiteYoutubeVideo'
+// Components
+import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
 
 const SiteTabs = (props) => {
 
@@ -31,9 +31,9 @@ const SiteTabs = (props) => {
                             "border-bottom": borderLogic
                         }
                     }
-                >
-                    <h6>{tab.title}</h6>
-                </div>
+            >
+                <h6>{tab.title}</h6>
+            </div>
             )
     })
 

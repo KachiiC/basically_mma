@@ -1,6 +1,7 @@
 import React from 'react'
 // Data
 import PageData from 'Data/pagesData'
+// Components
 import SiteMenuDropdown from './SiteMenuDropdown'
 import SiteLogo from './SiteLogo'
 import {Link} from "react-router-dom";

@@ -1,6 +1,7 @@
 import React from 'react'
 // Components
 import { Collapse } from 'antd';
+import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
 
 const DictionaryComponents = (props) => {
 
@@ -11,18 +12,8 @@ const DictionaryComponents = (props) => {
     const displayedTabs = filteredTabs.map((tab, index) => {
 
         const displayMedia = tab.example_type === "Video" ?
-            <div className="term-example-video-container" key={index}>
-                <iframe 
-                    title="definition-example" 
-                    src={`https://www.youtube.com/embed/${tab.example}`}
-                    frameborder="0" 
-                    allow="accelerometer; 
-                    autoplay; clipboard-write; encrypted-media; 
-                    gyroscope; picture-in-picture" allowFullScreen
-                    className="term-exmample-video"
-                />
-            </div>: 
-            <img 
+            <SiteYoutubeVideo youtube_id={tab.example} key={index}/>
+            :<img 
                 src={`http://via.placeholder.com/560x315.png?text=${tab.name}%20Placeholder`}
                 alt="tab-pic"
                 key={index}

@@ -17,12 +17,9 @@ const FundamentalCards = () => {
     ))
     
     return (
-        <>
-            <div className="fundamentals-cards-container">
-                {displayCards}
-            </div>
-        </>
-
+        <div className="fundamentals-cards-container">
+            {displayCards}
+        </div>
     )
 
 }

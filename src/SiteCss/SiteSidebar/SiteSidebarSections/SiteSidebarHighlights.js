@@ -1,5 +1,6 @@
-import { Empty } from 'antd'
 import React, { useEffect, useState } from 'react'
+// CSS
+import { Empty } from 'antd'
 import SiteLoading from 'SiteCss/SiteTransitions/SiteLoading'
 
 const SiteSidebarHighlights = () => {
@@ -34,12 +35,12 @@ const SiteSidebarHighlights = () => {
             <div className="site-highlights-container" 
                 key={index}
             >
-                    <img src={highlight.video_thumbnail} 
-                        alt="highlight-cover"
-                        />
-                    <div className="site-highlight-title" >
-                        {highlightTitle}
-                    </div>
+                <img src={highlight.video_thumbnail} 
+                    alt="highlight-cover"
+                    />
+                <div className="site-highlight-title" >
+                    {highlightTitle}
+                </div>
             </div>
         )
 

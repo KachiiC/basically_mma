@@ -2,7 +2,7 @@ import React from 'react'
 // Data
 import WeightCutProsCons from 'Data/Advanced/WeightClasses/WeightProsConsData'
 // Components
-import {Icon, Table } from 'semantic-ui-react'
+import { Icon, Table } from 'semantic-ui-react'
 
 const WeightCutProsAndCons = () => {
 

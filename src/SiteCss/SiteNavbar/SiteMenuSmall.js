@@ -1,7 +1,7 @@
 import React from 'react' 
 // Data
 import PageData from 'Data/pagesData'
-// Component
+// Components
 import { Link } from 'react-router-dom'
 
 const SmallMenu = (props) => {

@@ -9,7 +9,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const SiteFooter = () => {
 
     const iconsList = footerData.map((item, index) => (
-            <a href={item.link} target="_blank" rel="noreferrer noopener" key={index}>
+        
+            <a href={item.link} 
+                target="_blank" 
+                rel="noreferrer noopener" 
+                key={index}
+            >
                 <FontAwesomeIcon 
                     className="footer-logos" 
                     size="4x"

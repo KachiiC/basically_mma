@@ -9,7 +9,8 @@ const RulesCards = () => {
 
     const [displayModal, setDisplayModal] = useState(false)
 
-    const modalControl = () => displayModal === true ? setDisplayModal(false): setDisplayModal(true)
+    const modalControl = () => displayModal === true ? 
+        setDisplayModal(false): setDisplayModal(true)
 
     return (
         <div>

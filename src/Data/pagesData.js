@@ -24,18 +24,18 @@ import Articles from 'Pages/Others/Articles'
 // PAGE INTRODUCTIONS
 
 // Basics
-import WhatIsMMAIntroduction from 'Data/PageIntroductions/Basics/WhatIsMMAIntroduction'
-import HistoryOfMMAIntroduction from 'Data/PageIntroductions/Basics/HistoryOfMMAIntroduction'
-import MMADictionaryIntroduction from 'Data/PageIntroductions/Basics/MMADictionaryIntroduction'
-import RulesOfMMAIntroduction from 'Data/PageIntroductions/Basics/RulesOfMMAIntroduction'
+import WhatIsMMAIntroduction from 'Pages/PageIntroductions/Basics/WhatIsMMAIntroduction'
+import HistoryOfMMAIntroduction from 'Pages/PageIntroductions/Basics/HistoryOfMMAIntroduction'
+import MMADictionaryIntroduction from 'Pages/PageIntroductions/Basics/MMADictionaryIntroduction'
+import RulesOfMMAIntroduction from 'Pages/PageIntroductions/Basics/RulesOfMMAIntroduction'
 // Advanced
-import FundamentalsIntroduction from 'Data/PageIntroductions/Advanced/FundamentalsIntroduction'
-import TechniquesIntroduction from 'Data/PageIntroductions/Advanced/TechniquesIntroduction'
-import FightStrategiesIntroduction from 'Data/PageIntroductions/Advanced/FightStrategiesIntroduction'
-import FighterPayIntroduction from 'Data/PageIntroductions/Advanced/FighterPayIntroduction'
-import WeightClassesIntroduction from 'Data/PageIntroductions/Advanced/WeightClassesIntroduction'
+import FundamentalsIntroduction from 'Pages/PageIntroductions/Advanced/FundamentalsIntroduction'
+import TechniquesIntroduction from 'Pages/PageIntroductions/Advanced/TechniquesIntroduction'
+import FightStrategiesIntroduction from 'Pages/PageIntroductions/Advanced/FightStrategiesIntroduction'
+import FighterPayIntroduction from 'Pages/PageIntroductions/Advanced/FighterPayIntroduction'
+import WeightClassesIntroduction from 'Pages/PageIntroductions/Advanced/WeightClassesIntroduction'
 // MMA World
-import PromotionsIntroduction from 'Data/PageIntroductions/MMAWorld/MMAPromotions/PromotionsIntroduction'
+import MMAPromotionsIntroduction from 'Pages/PageIntroductions/MMAWorld/MMAPromotions/PromotionsIntroduction'
 
 const pagesData = [
     {
@@ -110,7 +110,7 @@ const pagesData = [
             {
                 title:"mma-promotions",
                 display: <MMAPromotions />,
-                introduction: <PromotionsIntroduction />
+                introduction: <MMAPromotionsIntroduction />
             },
             {
                 title:"recommended",

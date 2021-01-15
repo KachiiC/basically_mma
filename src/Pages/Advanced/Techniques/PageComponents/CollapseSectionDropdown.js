@@ -1,7 +1,7 @@
 import React from 'react'
 // Components
-import Collapse from '@material-ui/core/Collapse';
 import TableCell from '@material-ui/core/TableCell';
+import Collapse from '@material-ui/core/Collapse';
 
 const CollapseSectionDropdown = (props) => {
 

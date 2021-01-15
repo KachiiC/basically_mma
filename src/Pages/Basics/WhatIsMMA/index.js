@@ -1,13 +1,9 @@
 import React from 'react'
 // CSS
-
+import './WhatIsMMA.css'
 // Components
-import MMAExplanation from './MMAExplanation'
+import MMAExplanation from './PageComponents/MMAExplanation'
 
-const WhatIsMMA = () => (
-
-    <MMAExplanation />
-        
-)
+const WhatIsMMA = () => <MMAExplanation />
 
 export default WhatIsMMA

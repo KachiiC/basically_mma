@@ -1,10 +1,9 @@
 import React, { useState, useEffect} from 'react'
 // CSS
-import "../MMADictionary.css" 
-// Components
 import { Empty } from 'antd';
-import DictionaryComponents from './DictionaryComponents';
 import SiteLoading from 'SiteCss/SiteTransitions/SiteLoading';
+// Components
+import DictionaryComponents from './DictionaryComponents';
 
 const Dictionary = () => {
 
