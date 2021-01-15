@@ -38,7 +38,7 @@ const App = () => {
   )
 
   const diplayAdvanced = mySubLinks[1].menu_list.map((sub, index) => (
-      <Route path={`/${sub.title}`} key={index}>
+      <Route path={`basically_mma/${sub.title}`} key={index}>
           <SiteMainContainer 
             introduction={sub.introduction}
             main_display={sub.display}
@@ -48,7 +48,7 @@ const App = () => {
   )
 
   const displayMMAWorld = mySubLinks[2].menu_list.map((sub, index) => (
-      <Route path={`/${sub.title}`} key={index}>
+      <Route path={`basically_mma/${sub.title}`} key={index}>
           <SiteMainContainer 
             introduction={sub.introduction}
             main_display={sub.display}
