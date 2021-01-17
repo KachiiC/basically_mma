@@ -35,9 +35,11 @@ const SiteSidebarHighlights = () => {
             <div className="site-highlights-container" 
                 key={index}
             >
-                <img src={highlight.video_thumbnail} 
-                    alt="highlight-cover"
+                <div className="site-highlights-image-container">
+                    <img src={highlight.video_thumbnail} 
+                        alt="highlight-cover"
                     />
+                </div>
                 <div className="site-highlight-title" >
                     {highlightTitle}
                 </div>
