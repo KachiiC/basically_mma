@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a88121ef6e89b2d13221c4dd3f5eaf8",
+    "revision": "19ecabbf8fbc89ee6046390c71ecb83f",
     "url": "/basically_mma/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/basically_mma/static/css/2.fceb1b9f.chunk.css"
   },
   {
-    "revision": "118ac4788a4ee0a66d04",
-    "url": "/basically_mma/static/css/main.5292d2ca.chunk.css"
+    "revision": "5c4f92954a5ddc2b3239",
+    "url": "/basically_mma/static/css/main.c5744e10.chunk.css"
   },
   {
     "revision": "b0cb8f0cd08e817883b6",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/basically_mma/static/js/2.6320a24d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "118ac4788a4ee0a66d04",
-    "url": "/basically_mma/static/js/main.dbd601d0.chunk.js"
+    "revision": "5c4f92954a5ddc2b3239",
+    "url": "/basically_mma/static/js/main.35589367.chunk.js"
   },
   {
     "revision": "f68813dfc985683c2f58",
