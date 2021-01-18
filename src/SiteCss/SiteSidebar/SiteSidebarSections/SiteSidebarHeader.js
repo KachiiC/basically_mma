@@ -2,7 +2,7 @@ import React from 'react'
 
 const SiteSidebarHeader = () => (
 
-    <div className="site-sidebar-section">
+    <div className="site-sidebar-introduction site-sidebar-section">
         <div className="site-sidebar-title">
             Basically MMA
         </div>

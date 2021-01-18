@@ -5,7 +5,6 @@ aside {
 }
 
 .site-sidebar {
-    width: 100%;
     margin: 0px auto;
     text-align: center;
 }
@@ -22,8 +21,7 @@ aside {
 .site-sidebar-title {
     background-color: black;
     padding: 10px;
-    width: 90%;
-    margin: auto;
+    width: 95%;
     text-transform: uppercase;
     font-weight: 800;
     border-radius: 5px;
@@ -31,8 +29,8 @@ aside {
 }
 
 .site-highlights-container {
-    margin: 30px auto;
-    width: 80%;
+    margin: 30px 0px;
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
@@ -50,12 +48,16 @@ aside {
 .site-highlight-title {
     grid-column: span 6;
     margin: auto;
-    border: 1px solid black;
-    height: 100%;
     padding: 5px;
-    font-weight: 600;
+    height: auto;
     width: 100%;
+    font-size: 15px;
+    font-weight: 600;
     text-align: center;
+}
+
+.site-highlight-title a {
+    color: black;
 }
 
 @media screen and (max-width: 1090px) {
@@ -65,7 +67,11 @@ aside {
     }
 
     .site-sidebar {
-        width: 50%;
+        width: 80%;
+    }
+
+    .site-sidebar-introduction {
+        display: none;
     }
 
     .site-sidebar-title {
@@ -73,39 +79,24 @@ aside {
     }
 
     .site-highlights-container {
-        width: 70%;
+        width: 95%;
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        margin: 30px auto;
         min-height: 110px;
     }
-}
 
-@media screen and (max-width: 800px) {
-    .site-sidebar {
-        width: 60%;
+    .site-highlight-title {
+        font-size: 23px;
     }
 }
 
-@media screen and (max-width: 700px) {
-    .site-sidebar {
-        width: 70%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .site-sidebar {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
     .site-sidebar {
         width: 90%;
     }
-}
 
-@media screen and (max-width: 400px) {
-    .site-sidebar {
-        width: 100%;
+    .site-highlight-title {
+        font-size: 20px;
     }
+
 }

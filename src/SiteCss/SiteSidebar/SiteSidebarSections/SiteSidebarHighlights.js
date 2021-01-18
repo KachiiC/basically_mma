@@ -41,7 +41,9 @@ const SiteSidebarHighlights = () => {
                     />
                 </div>
                 <div className="site-highlight-title" >
-                    {highlightTitle}
+                    <a href="https://www.youtube.com/">
+                        {highlightTitle}
+                    </a>
                 </div>
             </div>
         )
