@@ -36,12 +36,20 @@ const SiteSidebarHighlights = () => {
                 key={index}
             >
                 <div className="site-highlights-image-container">
-                    <img src={highlight.video_thumbnail} 
-                        alt="highlight-cover"
-                    />
+                    <a href={`https://www.youtube.com/watch?v=${highlight.video_id}`}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                    >
+                        <img src={highlight.video_thumbnail} 
+                            alt="highlight-cover"
+                        />
+                    </a>
                 </div>
                 <div className="site-highlight-title" >
-                    <a href="https://www.youtube.com/">
+                    <a href={`https://www.youtube.com/watch?v=${highlight.video_id}`}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >
                         {highlightTitle}
                     </a>
                 </div>

@@ -66,8 +66,8 @@ const App = () => {
                 {displayBasics}
                 {diplayAdvanced}
                 {displayMMAWorld}
-                <Route path="/">
-                  <Home />
+                <Route path="/" >
+                  <Home/>
                 </Route>
               </Switch>
           </div>

@@ -10,6 +10,9 @@
     text-align: inherit;
     padding: 0px;
     width: 98%;
+}
+
+.promotions-timeline h6 {
     cursor: pointer;
 }
 

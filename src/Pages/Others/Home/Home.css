@@ -1,0 +1,12 @@
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.home-container h1{
+    grid-column: span 12;
+}
+
+.home-image-gallery {
+    grid-column: span 12;
+}

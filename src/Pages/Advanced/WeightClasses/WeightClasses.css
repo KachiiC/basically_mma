@@ -18,5 +18,10 @@
 
 .weight-class-table {
     width: 100%;
-    overflow-x: scroll;
+}
+
+@media screen and (max-width: 640px) {
+    .weight-class-table {
+        overflow-x: scroll;
+    }
 }
