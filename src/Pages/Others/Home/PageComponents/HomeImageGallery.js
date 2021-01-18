@@ -12,7 +12,7 @@ const HomeImageGallery = () => {
     }])
 
     useEffect(() => {
-        fetch("http://127.0.0.1:8000/api/youtube_playlists/PLaaEeFtNlIJ2Yigy4wHCQlcuRZg4NKbi5/")
+        fetch("https://kachiis-rest.herokuapp.com/api/youtube_playlists/PLaaEeFtNlIJ2Yigy4wHCQlcuRZg4NKbi5/")
         .then(fetchedData => fetchedData.json())
         .then(imagesData => {
             setGalleryImagesData(imagesData.playlist_videos)
