@@ -5,8 +5,9 @@ import './MMAPromotions.css'
 import PromotionsTimeline from './PageComponents/PromotionsTimeline'
 
 const MMAPromotions = () => (
-        
-    <PromotionsTimeline />
+    <>
+        <PromotionsTimeline />
+    </>
 
 )
 

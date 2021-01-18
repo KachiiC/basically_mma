@@ -5,6 +5,7 @@
 .history-of-mma-modal {
     grid-column: span 12;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .history-of-mma-button {
@@ -21,7 +22,6 @@
     color: white;
     background-color: black;
 }
-
 
 @media screen and (max-width: 500px) {
 

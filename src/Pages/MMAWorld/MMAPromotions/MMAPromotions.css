@@ -1,12 +1,26 @@
-.promotions-card-container{
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    border: 1px solid black;
+.promotions-timeline {
+    height: 350px;
+    padding: 25px 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.promotions-timeline h6,
+.promotions-timeline h5 {
+    text-align: inherit;
+    padding: 0px;
+    width: 98%;
+    cursor: pointer;
 }
 
 .popper-content {
     height: 235px;
     width: 300px;
-    z-index: 5;  
+    z-index: 5;
+}
+
+.promotions-timeline-border{
+    margin: 50px auto;
+    width: 80%;
+    border: 1px solid rgb(106, 106, 106);
 }

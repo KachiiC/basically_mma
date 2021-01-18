@@ -13,7 +13,8 @@ const DictionaryComponents = (props) => {
 
         const displayMedia = tab.example_type === "Video" ?
             <SiteYoutubeVideo youtube_id={tab.example} key={index}/>
-            :<img 
+            :
+            <img 
                 src={`http://via.placeholder.com/560x315.png?text=${tab.name}%20Placeholder`}
                 alt="tab-pic"
                 key={index}
@@ -22,10 +23,8 @@ const DictionaryComponents = (props) => {
       
         return (
             <Panel 
-                header={
-                    <div className="term-tab">{tab.title}</div>
-                } 
-                key={tab.pk}
+                header={<div className="term-tab">{tab.title}</div>} 
+                key={index}
             >
                 <div className="term-content">
                     <p className="term-definition">

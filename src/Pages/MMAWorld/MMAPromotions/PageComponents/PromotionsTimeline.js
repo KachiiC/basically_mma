@@ -6,28 +6,39 @@ import PromotionsData from "Data/MMAWorld/MMAPromotions/PromotionsData"
 
 const PromotionsTimeline = () => {
 
-    const displayData = PromotionsData.map((item, index) => (
-        <Timeline.Item color={item.color} key={index}>
+    const displayData = PromotionsData.map((item, index) => {
+
+        const placementIndex = index % 2 === 0 ? "bottomLeft": "bottomRight"
+
+        return (
+        <Timeline.Item 
+            color={item.color} 
+            key={index}
+            className="timeline-item"
+            >
             <Popover content={
                 <div className="popper-content">
-                    {item.content}
-                </div>}
+                        {item.content}
+                    </div>
+                }
+                trigger="click"
+                placement={placementIndex}
             >
-                {item.event}
+                <h6>{item.year}</h6>
             </Popover>
-            <div className="promotion-year">
-                {item.year}
-            </div>
+            <h5>{item.event}</h5>
         </Timeline.Item>
-    )
-)
+    )})
 
 return (
     <>
         <h3>Timeline of MMA Promotions</h3>
-        <Timeline mode="alternate">
-            {displayData}
-        </Timeline>
+        <div className="promotions-timeline">
+            <Timeline mode="alternate">
+                {displayData}
+            </Timeline>
+        </div>
+        <hr className="promotions-timeline-border"/>
     </>
 )
 

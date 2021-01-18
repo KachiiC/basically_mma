@@ -35,8 +35,12 @@ const Dictionary = () => {
         "Submission"
     ]
 
-    const allTabs = tab_types.map((tab_type) => 
-        <DictionaryComponents data={terms} type={tab_type}/>
+    const allTabs = tab_types.map((tab_type, index) => 
+        <DictionaryComponents
+            key={index}
+            data={terms} 
+            type={tab_type}
+        />
     )
 
     const renderLogic = (isFetching)?(
