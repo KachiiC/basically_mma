@@ -58,7 +58,7 @@ const SiteCarouselModal = (props) => {
             setCurrentYoutubeId({
                 "youtube_id": fight.video_id,
                 "date": fight.upload_date,
-                "description": fight.video_description
+                "description": fight.video_description.split("\n\n")[0]
             })
         }
 
