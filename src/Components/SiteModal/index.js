@@ -11,7 +11,7 @@ const SiteModal = (props) => {
   
     return (
         <div className="overlay">
-          <div className="site-modal-screen">
+          <div className="site-modal-screen" style={{"width": props.width}}>
             <div className="close-button-container" onClick={closeModal}>                  
                 <FontAwesomeIcon icon={faTimes}
                   size="lg" 

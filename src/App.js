@@ -16,7 +16,7 @@ import Home from './Pages/Others/Home'
 const App = () => {
 
   const displayLinks = pagesData.map((page, index) => (
-      <Route path={`/${page.title}`} key={index}>
+      <Route path={`/basically_mma/${page.title}`} key={index}>
         <SiteMainContainer 
           introduction={page.introduction}
           main_display={page.display}

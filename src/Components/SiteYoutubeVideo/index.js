@@ -19,7 +19,9 @@ const SiteYoutubeVideo = (props) => {
                     encrypted-media; 
                     gyroscope; 
                     picture-in-picture
-                " 
+                "
+                height={props.height}
+                weight={props.weight}
             />
         </div>
     )
