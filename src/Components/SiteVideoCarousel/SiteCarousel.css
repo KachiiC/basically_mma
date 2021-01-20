@@ -105,6 +105,12 @@
     .image-carousel {
         width: 70%;
     }
+
+    .gallery-modal-video-section,
+    .gallery-modal-suggestions-section {
+        grid-column: span 12;
+        overflow-y: scroll;
+    }
 }
 
 @media screen and (max-width: 640px) {
