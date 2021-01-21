@@ -7,24 +7,25 @@ const SiteSliderModal = (props) => {
             src={props.media} 
             controls 
             className="site-slider-media"
-        /> :
-        <img 
+        /> 
+        :<img 
             src={props.media} 
             alt="slide_media"
             className="site-slider-media"
         />
+        
     
     return (
-        <div className="site-slider-modal-container">
-            <div className="site-slider-modal-post-container">
+        <>
+            <div className="site-slider-modal-media">
                 <div className="site-slide-media-container">
                     {dislpayedMedia}
                 </div>
-                <div className="site-slide-media-caption">
-                    <p>{props.caption}</p>
-                </div>
             </div>
-        </div>
+            <div className="site-slide-media-caption">
+                <p>{props.caption}</p>
+            </div>
+        </>
     )
 }
 export default SiteSliderModal

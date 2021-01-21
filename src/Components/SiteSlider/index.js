@@ -76,7 +76,7 @@ const SiteSlider = (props) => {
                 />
             </div>
             { showModal && (
-                <SiteModal closeModal={modalChange}>
+                <SiteModal closeModal={modalChange} width="50%">
                     <SiteSliderModal 
                         caption={selected.caption}
                         type={selected.type}
