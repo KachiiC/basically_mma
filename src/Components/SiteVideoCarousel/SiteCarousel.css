@@ -31,6 +31,8 @@
     border: 1px solid white;
 }
 
+/* gallery-modal */
+
 .gallery-modal-video-section {
     grid-column: span 7;
     width: 100%;
@@ -38,7 +40,6 @@
     margin: 0px;
     cursor: auto;
     max-height: 100%;
-    overflow: scroll;
 }
 
 .gallery-modal-description-section {
@@ -47,7 +48,7 @@
     font-size: 22px;
 }
 
-.gallery-modal-description{
+.gallery-modal-description {
     margin-top: 20px;
     font-size: 18px;
     height: 100%;
@@ -74,11 +75,11 @@
 }
 
 .gallery-fight-suggestions-section {
-    margin: auto;
-    width: 95%;
-    display: grid;
     grid-column: span 12;
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    padding: 0px 20px;
 }
 
 .gallery-fight-suggestion-image-container {
@@ -90,6 +91,7 @@
 .gallery-fight-suggestion-image-container img {
     width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 .gallery-fight-suggestion-title {
@@ -98,10 +100,12 @@
     margin: auto;
     width: 100%;
     font-size: 15px;
-    padding: 10px
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1090px) {
     .image-carousel {
         width: 70%;
     }
@@ -109,8 +113,15 @@
     .gallery-modal-video-section,
     .gallery-modal-suggestions-section {
         grid-column: span 12;
-        overflow-y: scroll;
+        height: 100%;
     }
+
+    .gallery-fight-suggestions-header,
+    .gallery-fight-suggestions-section {
+        margin-bottom: 20px;
+    }
+    
+    
 }
 
 @media screen and (max-width: 640px) {

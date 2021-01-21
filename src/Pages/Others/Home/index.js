@@ -1,8 +1,7 @@
 import React from 'react'
 // CSS
 import './Home.css'
-import HomeImageGallery from './PageComponents/HomeImageGallery'
-import HomeInstaSlider from './PageComponents/HomeInstaSlider'
+import HomeVideoGallery from './PageComponents/HomeVideoGallery'
 // Components
 
 const Home = () => {
@@ -10,10 +9,10 @@ const Home = () => {
 
     return (
         <>
-        <div className="home-container">
-            <HomeImageGallery />
-        </div>
-        {/* <HomeInstaSlider /> */}
+            <div className="home-container">
+                <HomeVideoGallery />
+            </div>
+
         </>
     )
 }

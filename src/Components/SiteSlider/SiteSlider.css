@@ -13,6 +13,7 @@
     width: 98%;
     max-width: 98%;
     height: auto;
+    border: 1px solid black;
 }
 
 .site-slider-image {
@@ -40,27 +41,4 @@
     height: 95%;
     overflow: scroll;
     border: 1px solid black;
-}
-
-.site-slide-media-container {
-    width: 75%;
-    height: auto;
-    margin: auto;
-}
-
-.site-slider-media {
-    width: 100%;
-    max-height: 100%;
-    height: auto;
-    margin: auto;
-}
-
-.site-slide-media-caption {
-    grid-column: span 12;
-    display:block;
-    width: 100%;
-    height: 25%;
-    max-height: 20%;
-    min-height: 20%;
-    text-align: center;
 }
