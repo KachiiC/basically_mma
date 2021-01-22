@@ -1,20 +1,17 @@
 import React from 'react'
 // CSS
 import './Home.css'
-import HomeVideoGallery from './PageComponents/HomeVideoGallery'
 // Components
+import HomeVideoGallery from './PageComponents/HomeVideoGallery'
+import HomeFeaturedArticle from './PageComponents/HomeFeaturedArticle'
 
-const Home = () => {
+const Home = () => (  
 
-
-    return (
-        <>
-            <div className="home-container">
-                <HomeVideoGallery />
-            </div>
-
-        </>
-    )
-}
+    <div className="home-container">
+        <HomeVideoGallery />
+        <HomeFeaturedArticle />
+    </div>
+    
+)
 
 export default Home;

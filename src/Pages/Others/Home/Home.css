@@ -7,7 +7,8 @@
     grid-column: span 12;
 }
 
-.home-image-gallery {
+.home-image-gallery,
+.home-featured-article {
     grid-column: span 6;
 }
 

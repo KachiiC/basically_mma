@@ -1,6 +1,7 @@
 .instagram-container {
-    margin: 20px;
+    margin: 20px auto;
     height: auto;
+    width: 100%
 }
 .instagram-loader {
     text-align: center;

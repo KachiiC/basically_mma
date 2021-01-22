@@ -16,7 +16,7 @@ const SiteSlider = (props) => {
 
         return (
             <div className="site-slider-image-container" key={index}>
-                <a href={`https://www.instagram.com/p/${video.post_link}`} 
+                <a href={`http://via.placeholder.com/300x300.png?text=Placeholder%20${video.index}`} 
                     rel="noopener noreferrer" 
                     target="_blank"
                 >
@@ -56,24 +56,20 @@ const SiteSlider = (props) => {
 
 
     return (
-        <>
-            <div>
-                <h5>{props.title}</h5>
-                <div className="site-slider-container">
-                    <SiteSliderButton 
-                        direction="left" 
-                        onClick={prevClick}
-                    />
-                    {displayPosts}
-                    <SiteSliderButton 
-                        direction="right" 
-                        onClick={nextClick}
-                    />
-                </div>
+        <div>
+            <h5>{props.title}</h5>
+            <div className="site-slider-container">
+                <SiteSliderButton 
+                    direction="left" 
+                    onClick={prevClick}
+                />
+                {displayPosts}
+                <SiteSliderButton 
+                    direction="right" 
+                    onClick={nextClick}
+                />
             </div>
-        </>
-
-        
+        </div>
     )
 }
 

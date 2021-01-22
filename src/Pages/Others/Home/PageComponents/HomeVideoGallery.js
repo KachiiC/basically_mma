@@ -15,9 +15,10 @@ const HomeImageGallery = () => {
     }])
     const [isFetching, setIsFetching] = useState(true)
     const [isDisplayable, setIsDisplayable] = useState(false)
+    const playlist_id = "PLaaEeFtNlIJ2Yigy4wHCQlcuRZg4NKbi5"
 
     useEffect(() => {
-        fetch("https://kachiis-rest.herokuapp.com/api/youtube_playlists/PLaaEeFtNlIJ2Yigy4wHCQlcuRZg4NKbi5/")
+        fetch(`https://kachiis-rest.herokuapp.com/api/youtube_playlists/${playlist_id}`)
         .then(fetchedData => fetchedData.json())
         .then(imagesData => {
             setIsDisplayable(true)
@@ -41,11 +42,9 @@ const HomeImageGallery = () => {
     )
 
     return (
-
         <div className="home-image-gallery">
             {renderLogic}
         </div>
-        
     )
 }
 
