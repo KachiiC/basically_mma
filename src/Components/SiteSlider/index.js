@@ -12,11 +12,10 @@ const SiteSlider = (props) => {
         secondSlide: 6
     })
 
-    const displayPosts = props.data.map((video, index) => {
-
-        return (
+    const displayPosts = props.data.map(
+        (video, index) => (
             <div className="site-slider-image-container" key={index}>
-                <a href={`http://via.placeholder.com/300x300.png?text=Placeholder%20${video.index}`} 
+                <a href={`https://www.instagram.com/p/${video.post_link}`} 
                     rel="noopener noreferrer" 
                     target="_blank"
                 >
@@ -27,18 +26,20 @@ const SiteSlider = (props) => {
                 </a>
             </div>
         )
-    }).slice(slideNumber.firstSlide, slideNumber.secondSlide)
-
+    ).slice(
+        slideNumber.firstSlide, 
+        slideNumber.secondSlide
+    )
 
     const prevClick = () => {
-        slideNumber.secondSlide === 30 ?
+        slideNumber.firstSlide === 0 ?
         setSlideNumber({
-            firstSlide: 0,
-            secondSlide: 6
+            firstSlide: 30,
+            secondSlide: 36
         }): setSlideNumber({
-                firstSlide: slideNumber.firstSlide + 6,
-                secondSlide: slideNumber.secondSlide + 6
-            }
+            firstSlide: slideNumber.firstSlide - 6,
+            secondSlide: slideNumber.secondSlide - 6
+        }
         )
     }
 
@@ -53,7 +54,6 @@ const SiteSlider = (props) => {
             }
         )
     }
-
 
     return (
         <div>

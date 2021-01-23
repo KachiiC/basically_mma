@@ -15,7 +15,7 @@ const HomeInstaSlider = () => {
     const [isDisplayable, setIsDisplayable] = useState(false)
 
     useEffect (() => {
-        fetch("https://kachiis-rest.herokuapp.com/api/instagram_posts/")
+        fetch("https://kachiis-rest.herokuapp.com/api/instagram_list/")
         .then(response => response.json())
         .then((responseData) => {
             setIsDisplayable(true)
