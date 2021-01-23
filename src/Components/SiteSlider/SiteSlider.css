@@ -33,12 +33,3 @@
 }
 
 /** Site Slider Modal **/
-
-.site-slider-modal-media {
-    grid-column: span 12;
-    margin: 0px auto;
-    width: 95%;
-    height: 95%;
-    overflow: scroll;
-    border: 1px solid black;
-}
