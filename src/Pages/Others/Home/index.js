@@ -4,12 +4,14 @@ import './Home.css'
 // Components
 import HomeVideoGallery from './PageComponents/HomeVideoGallery'
 import HomeTwitterFeed from './PageComponents/HomeTwitterFeed'
+import HomeFeaturedCards from './PageComponents/HomeRecommendedCards'
 
 const Home = () => (  
 
     <div className="home-container">
+        <HomeFeaturedCards />
         <HomeVideoGallery />
-        <HomeTwitterFeed twitter_handle="basicallymma" />
+        <HomeTwitterFeed />
     </div>
 
 )

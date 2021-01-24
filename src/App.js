@@ -1,6 +1,7 @@
 import React from 'react';
 //CSS 
 import './App.css';
+import 'SiteCss/SiteCss.css'
 import 'antd/dist/antd.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // Components

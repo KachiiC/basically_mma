@@ -3,34 +3,75 @@
     grid-template-columns: repeat(12, 1fr);
 }
 
-.home-container h1{
-    grid-column: span 12;
+.home-image-gallery {
+    grid-column: span 8;
 }
 
-.home-image-gallery,
 .home-twitter-feed {
-    grid-column: span 6;
+    grid-column: span 4;
 }
 
 .twitter-container {
     width: 80%;
-    margin: 65px auto;
-    height: auto;
+    margin: 35px auto; 
 }
+
+/* featured cards */
+.recommended-reading-feature,
+.other-recommended-reading {
+    padding: 10px;
+    width: 100%;
+}
+
+.recommended-featured-image-container {
+    margin: auto 0px auto auto;
+    width: 100%;
+    text-align: center;
+    padding: 10px 12px;
+}
+
+.small-list-image-container {
+    width: 95%;
+    margin: auto;
+    padding: 7px;
+}
+
+.recommended-reading-feature,
+.other-recommended-reading {
+    grid-column: span 6;
+    width: 90%;
+    margin: auto;
+}
+
+
 
 @media screen and (max-width: 1090px) {
     .home-image-gallery,
-    .home-twitter-feed {
-        grid-column: span 12;
+    .home-twitter-feed,
+    .recommended-reading-feature,
+    .other-recommended-reading {
+        grid-column: span 12 !important;
+    }
+
+    .small-list-image-container {
+        width: 95%;
+        margin: 10px auto;
+        padding: 7px;
+    }
+
+    .twitter-container {
+        width: 70%;
+        margin: 50px auto;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .image-carousel {
+    .image-carousel,
+    .twitter-container {
         width: 90%;
     }
 
-    .twitter-container {
-        width: 90%;
+    .small-list-image-container {
+        grid-column: span 12;
     }
 }

@@ -1,12 +1,13 @@
 import React from 'react'
+// CSS
+import './SiteTwitterFeed.css'
 // Components
 import { Timeline } from 'react-twitter-widgets'
 
-const HomeTwitterFeed = () => (
-
-    <div className="home-twitter-feed">
+const SiteTwitterFeed = (props) => {
+    return (
         <div className="twitter-container">
-            <h2>What's Happening?</h2>
+            <h2>{props.title}</h2>
             <Timeline
             dataSource={{
                 sourceType: 'profile',
@@ -18,8 +19,7 @@ const HomeTwitterFeed = () => (
         />
 
         </div>
-    </div>
+    )
+}
 
-)
-
-export default HomeTwitterFeed
+export default SiteTwitterFeed

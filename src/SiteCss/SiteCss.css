@@ -1,0 +1,63 @@
+/* Grid System */
+
+.site-grid-system {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.site-span-1 {
+    grid-column: span 1;
+}
+.site-span-2 {
+    grid-column: span 2;
+}
+
+.site-span-3 {
+    grid-column: span 3;
+}
+
+.site-span-4 {
+    grid-column: span 4;
+}
+
+.site-span-5 {
+    grid-column: span 5;
+}
+
+.site-span-6 {
+    grid-column: span 6;
+}
+
+.site-span-7 {
+    grid-column: span 7;
+}
+
+.site-span-8 {
+    grid-column: span 8;
+}
+
+.site-span-9 {
+    grid-column: span 9;
+}
+
+.site-span-10 {
+    grid-column: span 10;
+}
+
+.site-span-11 {
+    grid-column: span 11;
+}
+
+.site-span-12 {
+    grid-column: span 12;
+}
+
+.site-border {
+    border: 1px solid black;
+}
+
+.site-responsive-image {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}

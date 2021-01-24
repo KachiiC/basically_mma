@@ -11,21 +11,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-    padding: 15px;
+    padding: 10px 15px;
     width: 100%;
-}
-
-.video-container {
-    text-align: center;
-    margin: 25px;
-}
-
-@media screen and (max-width: 1075px) {
-    .main-container {
-        width: 100%;
-    }
-
-    .sidebar-container {
-        width: 100% !important;
-    }
 }
