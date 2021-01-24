@@ -11,7 +11,8 @@ const HomeImageGallery = () => {
         "video_title": "",
         "video_id": "",
         "video_description": "",
-        "video_thumbnail": ""
+        "video_thumbnail": "",
+        "upload_date": ""
     }])
     const [isFetching, setIsFetching] = useState(true)
     const [isDisplayable, setIsDisplayable] = useState(false)
@@ -35,7 +36,10 @@ const HomeImageGallery = () => {
         <SiteLoading />
     ):(
         (isDisplayable) ? (
-            <SiteVideoCarousel images={galleryImagesData} title="Latest Fight Highlights"/>
+            <SiteVideoCarousel 
+                data={galleryImagesData} 
+                title="Latest Fight Highlights"
+            />
         ) :(
             <Empty />
         )

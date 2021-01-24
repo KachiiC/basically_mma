@@ -7,22 +7,43 @@ import { faAngleDoubleLeft, faAngleDoubleRight } from '@fortawesome/free-solid-s
 // Components
 import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
 
+// Data Format: 
+// const ExampleData = {
+//     "title": "",
+//     "example": "",
+//     "content": "",
+//     "noteable_examples": "" <-- youtube_id
+// }
+//
+// Usage Example: 
+// <SiteTabs 
+//  tabs={ExampleData}
+//  tab_size="3" <-- size of each tab
+//  grid_size="12" <-- total of all tabs
+//  example="yes" <-- if yes, all must have an example
+// />
+    
 const SiteTabs = (props) => {
 
     const [currentTab, setCurrentTab] = useState(0)
     const [smallTabIndex, setSmallTabIndex] = useState((0))
     
     const tabs = props.tabs
-    const overflowLogic = props.overflow === "yes" ? {"overflow-y": "scroll"} 
-    : {"overflow-y": "hidden"}
+    const overflowLogic = props.overflow === "yes" ? 
+    {
+        "overflow-y": "scroll"
+    } : {
+            "overflow-y": "hidden"
+        }
 
 
-    const displayTabs = tabs.map((tab, index) => {
+    const displayTabs = tabs.map(
+        (tab, index) => {
+            const borderLogic = tabs.indexOf(tab) === currentTab ? 
+            "2px solid rgb(30, 111, 250)": "none"
         
-        const borderLogic = tabs.indexOf(tab) === currentTab ? "2px solid rgb(30, 111, 250)": ""
-        
-        return (
-            <div className="site-single-tab"
+            return (
+                <div className="site-single-tab"
                     key={index}
                     onClick={() => setCurrentTab(tabs.indexOf(tab))}
                     style={
@@ -31,20 +52,23 @@ const SiteTabs = (props) => {
                             "border-bottom": borderLogic
                         }
                     }
+                >
+                    <h6>{tab.title}</h6>
+                </div>
+            )
+        }
+    )
+
+    const allSmallSiteTabs = tabs.map(
+        (tab, index) => (
+            <div className="small-site-tab"
+                key={index}
+                onClick={() => setCurrentTab(tabs.indexOf(tab))}
             >
                 <h6>{tab.title}</h6>
             </div>
-            )
-    })
-
-    const allSmallSiteTabs = tabs.map((tab, index) => (
-        <div className="small-site-tab"
-            onClick={() => setCurrentTab(tabs.indexOf(tab))}
-            key={index}
-        >
-            <h6>{tab.title}</h6>
-        </div>
-    ))
+        )
+    )
 
     const displayedSmallSiteTabs = (
         <>
@@ -67,10 +91,12 @@ const SiteTabs = (props) => {
     const renderExample = props.example === "yes" ? (
         <div className="site-tab-example-container">
             <h5>Here is an example for you!</h5>
-            <SiteYoutubeVideo youtube_id={tabs[currentTab].example} />
+            <SiteYoutubeVideo 
+                youtube_id={tabs[currentTab].example} 
+            />
         </div>
     ): (
-        <> 
+        <>
         </>
     )
 
@@ -78,7 +104,11 @@ const SiteTabs = (props) => {
         <div className="site-tabs-component-container">
             <div 
                 className="site-tabs-component-row"
-                style={{"grid-template-columns": `repeat(${props.grid_size},1fr)`}}
+                style={
+                    {
+                        "grid-template-columns": `repeat(${props.grid_size},1fr)`
+                    }
+                }
             >
                 {displayTabs}
                 <div className="small-site-tabs-button"

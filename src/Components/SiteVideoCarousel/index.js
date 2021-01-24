@@ -4,9 +4,23 @@ import './SiteCarousel.css'
 // Components
 import SiteCarouselModal from './SiteCarouselModal'
 
+// Data Format: 
+// const ExampleVideoCarouselData = [{
+//     "video_title": "",
+//     "video_id": "",
+//     "video_description": "",
+//     "video_thumbnail": ""
+// }]
+//
+// Usage Example: 
+// <SiteVideoCarousel
+//  data={ExampleVideoCarouselData} 
+//  title="Carousel Title"
+// />
+
 const SiteVideoCarousel = (props) => {
 
-    const imageData = props.images
+    const imageData = props.data
 
     const [selectedImage, setSelectedImage] = useState(0)
     const [showModal, setShowModal] = useState(false)
@@ -39,9 +53,15 @@ const SiteVideoCarousel = (props) => {
                     />
                     {showModal && (
                         <SiteCarouselModal 
-                            youtube_id={imageData[selectedImage].video_id} 
-                            description={imageData[selectedImage].video_description.split("\n\n")[0]}
-                            upload_date={imageData[selectedImage].upload_date.split("T")[0]}
+                            youtube_id={
+                                imageData[selectedImage].video_id
+                            } 
+                            description={
+                                imageData[selectedImage].video_description
+                            }
+                            upload_date={
+                                imageData[selectedImage].upload_date
+                            }
                             closeModal={handleModal}
                         />
                     )}

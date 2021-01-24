@@ -8,9 +8,8 @@ import SiteSlider from 'Components/SiteSlider'
 const HomeInstaSlider = () => {
 
     const [instaData, setInstaData] = useState([{
-            "post_link": "CHUKLpwJAuM"
-        }
-    ])
+        "post_link": "CHUKLpwJAuM"
+    }])
     const [isFetching, setIsFetching] = useState(true)
     const [isDisplayable, setIsDisplayable] = useState(false)
 

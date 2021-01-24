@@ -6,20 +6,31 @@ import SiteSliderButton from './SiteSliderButton'
 
 
 const SiteSlider = (props) => {
-
+    // Data Format: 
+    // const DataExample = [
+    //     {
+    //         "post_link": "", <-- Link
+    //         "thumbnail": "" <-- Image
+    //     }
+    // ]
+    // Each data set must be an array have 36 objects
+    // Each object must have post_link and post_thumbnail properties
+            
     const [slideNumber, setSlideNumber] = useState({
         firstSlide: 0,
         secondSlide: 6
     })
 
     const displayPosts = props.data.map(
-        (video, index) => (
-            <div className="site-slider-image-container" key={index}>
-                <a href={`https://www.instagram.com/p/${video.post_link}`} 
+        (post, index) => (
+            <div className="site-slider-image-container" 
+                key={index}
+            >
+                <a href={`https://www.instagram.com/p/${post.post_link}`} 
                     rel="noopener noreferrer" 
                     target="_blank"
                 >
-                    <img src={video.thumbnail} 
+                    <img src={post.thumbnail} 
                         alt={index} 
                         className="site-slider-image"
                     />
@@ -33,22 +44,28 @@ const SiteSlider = (props) => {
 
     const prevClick = () => {
         slideNumber.firstSlide === 0 ?
-        setSlideNumber({
-            firstSlide: 30,
-            secondSlide: 36
-        }): setSlideNumber({
-            firstSlide: slideNumber.firstSlide - 6,
-            secondSlide: slideNumber.secondSlide - 6
-        }
+        setSlideNumber(
+            {
+                firstSlide: 30,
+                secondSlide: 36
+            }
+        ): setSlideNumber(
+            {
+                firstSlide: slideNumber.firstSlide - 6,
+                secondSlide: slideNumber.secondSlide - 6
+            }
         )
     }
 
     const nextClick = () => {
-        slideNumber.secondSlide === 30 ?
-        setSlideNumber({
-            firstSlide: 0,
-            secondSlide: 6
-        }): setSlideNumber({
+        slideNumber.secondSlide === 36 ?
+        setSlideNumber(
+            {
+                firstSlide: 0,
+                secondSlide: 6
+            }
+        ): setSlideNumber(
+            {
                 firstSlide: slideNumber.firstSlide + 6,
                 secondSlide: slideNumber.secondSlide + 6
             }

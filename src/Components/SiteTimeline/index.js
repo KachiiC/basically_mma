@@ -1,6 +1,19 @@
 import React from 'react'
 // CSS
-import './timeline.css'
+import './SiteTimeline.css'
+
+// Data Format: 
+// const ExampleTimelineData = {
+//  "name":
+//  "year":
+//  "event":
+// }
+//
+// Usage Example: 
+// <SiteTimeline 
+//  data={ExampleTimelineData} 
+// />
+
 
 const SiteTimeline = (props) => {
     

@@ -10,18 +10,19 @@ const SiteCarouselModal = (props) => {
 
     const [currentYoutubeId, setCurrentYoutubeId] = useState({
         "youtube_id": props.youtube_id,
-        "date": props.upload_date,
+        "upload_date": props.upload_date,
         "description": props.description
+        
     })
     const [fightSuggestions, setFightSuggestions] = useState([])
     const [isFetching, setIsFetching] = useState(true)
     const [isDisplayable, setIsDisplayable] = useState(false)
 
     useEffect(() => {
-        fetch("https://kachiis-rest.herokuapp.com/api/youtube_playlists/PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC/") 
-        .then((response) => { 
-            return response.json() 
-        })
+        fetch(
+            "https://kachiis-rest.herokuapp.com/api/youtube_playlists/PLaaEeFtNlIJ1QCSWkBvxItbKYEpGENASC/"
+        ) 
+        .then((response) => response.json())
         .then(highlightsData => { 
             setFightSuggestions(highlightsData.playlist_videos)
             setIsDisplayable(true)
@@ -35,30 +36,11 @@ const SiteCarouselModal = (props) => {
 
     const displayFightSuggestion = fightSuggestions.slice(0,4).map((fight, index) => {
 
-        const displayFightTitle = fight.video_title.split(" ").map((word) => {
-
-            const fightTitle = []
-            const wordIndex = fight.video_title.split(" ").indexOf(word)
-
-            if (word === "vs" || word === "v") {
-                fightTitle.push(
-                    fight.video_title.split(" ")[wordIndex -2],
-                    fight.video_title.split(" ")[wordIndex -1],
-                    fight.video_title.split(" ")[wordIndex],
-                    fight.video_title.split(" ")[wordIndex + 1],
-                    fight.video_title.split(" ")[wordIndex + 2],
-                )
-            }
-
-            return fightTitle.join(" ")
-
-        })
-
         const handleClick = () => {
             setCurrentYoutubeId({
                 "youtube_id": fight.video_id,
-                "date": fight.upload_date,
-                "description": fight.video_description.split("\n\n")[0]
+                "upload_date": fight.upload_date,
+                "description": fight.video_description
             })
         }
 
@@ -71,7 +53,7 @@ const SiteCarouselModal = (props) => {
                     />           
                 </div>
                 <div className="gallery-fight-suggestion-title">
-                    {displayFightTitle}
+                    {fight.video_title}
                 </div>
             </div>
         )
