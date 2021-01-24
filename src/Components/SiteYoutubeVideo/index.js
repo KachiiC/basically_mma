@@ -2,6 +2,9 @@ import React from 'react'
 // CSS
 import './SiteYoutubeVideo.css'
 
+// USEAGE
+// Add youtube_id, height and width
+
 const SiteYoutubeVideo = (props) => {
 
     return (
@@ -9,7 +12,9 @@ const SiteYoutubeVideo = (props) => {
             <iframe 
                 className="youtube-video"
                 title="mma_explanation"
-                src={`https://www.youtube.com/embed/${props.youtube_id}`}
+                src={
+                    `https://www.youtube.com/embed/${props.youtube_id}?start=${props.start}`
+                }
                 frameBorder="0" 
                 allowFullScreen 
                 allow="

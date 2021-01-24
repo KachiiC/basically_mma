@@ -13,7 +13,7 @@ import SiteCarouselModal from './SiteCarouselModal'
 // }]
 //
 // Usage Example: 
-// <SiteVideoCarousel
+// < SiteVideoCarousel
 //  data={ExampleVideoCarouselData} 
 //  title="Carousel Title"
 // />

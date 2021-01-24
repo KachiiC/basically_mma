@@ -7,17 +7,20 @@ import RulesData from 'Data/Basics/RulesOfMMA/RulesData'
 
 const RulesCards = () => {
 
-    const [displayModal, setDisplayModal] = useState(false)
+    const [showModal, setDisplayModal] = useState(false)
 
-    const modalControl = () => displayModal === true ? 
-        setDisplayModal(false): setDisplayModal(true)
+    const modalControl = () => showModal === true ? 
+        setDisplayModal(false): 
+        setDisplayModal(true)
 
     return (
-        <div>
-            <div className="history-of-mma-button" onClick={modalControl}>
+        <div className="rules-of-mma-container">
+            <h5>For a full list of rules, here is a list of the unified rules</h5>
+            <div className="history-of-mma-button" 
+                onClick={modalControl}>
                 The Unified Rules of MMA
             </div>
-            { displayModal && (
+            { showModal && (
                     <SiteModal closeModal={modalControl} >
                         <div className="rules-modal">
                             <SiteTabs 

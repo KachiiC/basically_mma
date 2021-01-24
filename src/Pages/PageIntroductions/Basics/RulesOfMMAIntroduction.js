@@ -25,6 +25,7 @@ const RulesOfMMAIntroduction = () => (
                     governing professional MMA competition that remain consistent across the jurisdictions 
                     of various athletic commissions and other regulatory bodies.The Unified Rules of MMA are listed below:
                 </p>
+                
             </div>
         </>
     )

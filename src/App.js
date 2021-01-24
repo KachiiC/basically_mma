@@ -12,6 +12,7 @@ import SiteFooter from 'SiteCss/SiteFooter';
 import pagesData from './Data/pagesData'
 // Pages
 import Home from './Pages/Others/Home'
+import SiteExampleVideo from './SiteCss/SiteExampleVideo';
 
 const App = () => {
 
@@ -28,12 +29,20 @@ const App = () => {
   const mySubLinks = pagesData.filter((page) => page.sub_menu === true)
 
   const displayBasics = mySubLinks[0].menu_list.map((sub, index) => (
+
       <Route path={`/basically_mma/${sub.title}`} key={index}>
           <SiteMainContainer 
             introduction={sub.introduction}
             main_display={sub.display}
+            example_video={
+              <SiteExampleVideo
+                description={sub.example_video_description}
+                youtube_id={sub.example_video_id}
+              />
+            }
           />
       </Route>
+    
     )
   )
 

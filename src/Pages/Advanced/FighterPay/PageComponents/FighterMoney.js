@@ -7,9 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const FighterMoney = () => {
 
-    const FightersIconList = FighterMoneyData.map((item, index) => {
-
-        return (
+    const FightersIconList = FighterMoneyData.map(
+        
+        (item, index) => (
             <div className="promotion-item" key={index}>
                 <h6>{item.title}</h6>
                 <Popover content={item.content} title={item.title}>
@@ -17,8 +17,7 @@ const FighterMoney = () => {
                 </Popover>
             </div>
         )
-    })
-
+    )
 
     return (
         <>

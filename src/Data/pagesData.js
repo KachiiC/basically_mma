@@ -22,7 +22,6 @@ import Recommended from 'Pages/MMAWorld/Recommended'
 import Articles from 'Pages/Others/Articles'
 
 // PAGE INTRODUCTIONS
-
 // Basics
 import WhatIsMMAIntroduction from 'Pages/PageIntroductions/Basics/WhatIsMMAIntroduction'
 import HistoryOfMMAIntroduction from 'Pages/PageIntroductions/Basics/HistoryOfMMAIntroduction'
@@ -36,6 +35,10 @@ import FighterPayIntroduction from 'Pages/PageIntroductions/Advanced/FighterPayI
 import WeightClassesIntroduction from 'Pages/PageIntroductions/Advanced/WeightClassesIntroduction'
 // MMA World
 import MMAPromotionsIntroduction from 'Pages/PageIntroductions/MMAWorld/MMAPromotions/PromotionsIntroduction'
+// Example Videos
+import WhatIsMMAVideo from 'Data/Basics/WhatIsMMA/WhatIsMMAVideo'
+import HistoryOfMMAVideo from 'Data/Basics/HistoryOfMMA/HistoryOfMMAVideo'
+import RulesOfMMAVideo from 'Data/Basics/RulesOfMMA/RulesOfMMAVideo'
 
 const pagesData = [
     {
@@ -45,22 +48,30 @@ const pagesData = [
             {
                 title: "what-is-mma",
                 display: <WhatIsMMA />,
-                introduction: <WhatIsMMAIntroduction />
+                introduction: <WhatIsMMAIntroduction />,
+                example_video_description: <WhatIsMMAVideo />,
+                example_video_id: "PnUmcL07xnY"
             },
             {
                 title:"history-of-mma",
                 display: <HistoryOfMMA />,
-                introduction: <HistoryOfMMAIntroduction />
+                introduction: <HistoryOfMMAIntroduction />,
+                example_video_description: <HistoryOfMMAVideo />,
+                example_video_id: "ea7Uf7BVBvs"
             },
             {
                 title:"rules-of-mma",
                 display: <RulesOfMMA />,
-                introduction: <RulesOfMMAIntroduction />
+                introduction: <RulesOfMMAIntroduction />,
+                example_video_description: <RulesOfMMAVideo />,
+                example_video_id: "0kKALSgyTOc"
             },
             {
                 title:"mma-dictionary",
                 display: <MMADictionary />,
-                introduction: <MMADictionaryIntroduction />
+                introduction: <MMADictionaryIntroduction />,
+                example_video_description: "",
+                example_video_id: ""
             }
         ]
     },

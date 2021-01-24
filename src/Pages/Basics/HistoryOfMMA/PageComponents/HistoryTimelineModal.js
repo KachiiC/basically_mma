@@ -6,14 +6,19 @@ import SiteTimeline from 'Components/SiteTimeline'
 import timelineData from 'Data/Basics/HistoryOfMMA/timelineData'
 
 const HistoryTimelineModal = () => {
+    
     const [showModal, setShowModal] = useState(false)
     
-    const handleClick = () => showModal === false ? setShowModal(true): setShowModal(false)
+    const handleClick = () => showModal === false ? 
+        setShowModal(true): 
+        setShowModal(false)
     
     return (
         <div className="history-of-modern-mma-container">
             <h5>For a more comprehensive history of modern MMA check out out history MMA timeline!</h5>
-            <div className="history-of-mma-button" onClick={handleClick}>
+            <div className="history-of-mma-button" 
+                onClick={handleClick}
+            >
                 The timeline of modern MMA
             </div>
             {showModal && (
