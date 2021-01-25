@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GrapplingModalData = () => (
+const GrapplingData = () => (
     <>
         <p>
             The most gruelling part of MMA is grappling. In the early days of the UFC grapplers 
@@ -22,4 +22,4 @@ const GrapplingModalData = () => (
     </>
 )
 
-export default GrapplingModalData
+export default GrapplingData

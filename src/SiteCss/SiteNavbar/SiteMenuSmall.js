@@ -10,17 +10,20 @@ const SmallMenu = (props) => {
   const smallSingleMenus = PageData.filter((menu) => menu.sub_menu === false)
   
   const displayedSmallDropdowns = smallDropdownMenus.map((menu, index) => {
-      const smallSubmenu = menu.menu_list.map((sub, index) => {
 
+      const smallSubmenu = menu.menu_list.map((sub, index) => {
+        
         const renderSubTitle = sub.title.split("-").join(" ")
-        return (
-          <div className="small-menu-nav-dropdown-link" key={index}>
-            <Link to={`${sub.title}`} onClick={props.function}>
-              {renderSubTitle}
-            </Link>
-          </div>
-        )
-      })
+
+          return (
+            <div className="small-menu-nav-dropdown-link" key={index}>
+              <Link to={`${sub.title}`} onClick={props.function}>
+                {renderSubTitle}
+              </Link>
+            </div>
+          )
+        }
+      )
 
       const renderDisplayTitle = menu.title.split("-").join(" ")
 
@@ -47,8 +50,6 @@ const SmallMenu = (props) => {
       </div>
     )
   })
-
-
 
   return (
     <div className="small-menu-block">

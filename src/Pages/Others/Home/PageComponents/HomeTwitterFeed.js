@@ -1,23 +1,15 @@
 import React from 'react'
 // Components
-import { Timeline } from 'react-twitter-widgets'
+import SiteTwitterFeed from 'Components/SiteTwitterFeed'
 
 const HomeTwitterFeed = () => (
 
     <div className="home-twitter-feed">
-        <div className="twitter-container">
-            <h2>What's Happening?</h2>
-            <Timeline
-            dataSource={{
-                sourceType: 'profile',
-                screenName: 'basicallymma'
-            }}
-            options={{
-                height: '500'
-            }}
+        <SiteTwitterFeed 
+            height="500" 
+            twitter_id="basicallymma" 
+            title="What's Happening?"
         />
-
-        </div>
     </div>
 
 )

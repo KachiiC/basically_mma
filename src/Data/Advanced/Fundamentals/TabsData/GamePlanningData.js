@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GamePlanningModalData = () => (
+const GamePlanningData = () => (
     <>
         <p>
             Each fighter (at least on paper) will always have strengths and weaknesses relative 
@@ -24,4 +24,4 @@ const GamePlanningModalData = () => (
     </>
 )
 
-export default GamePlanningModalData
+export default GamePlanningData

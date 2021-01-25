@@ -1,6 +1,6 @@
 import React from 'react'
 
-const StrikingModalData = () => (
+const StrikingData = () => (
     <>
         <p>Every mixed martial arts contest starts on the feet, so being comfortable striking 
             and defending against strikes is critical for any mixed martial artist. Being good 
@@ -24,4 +24,4 @@ const StrikingModalData = () => (
     </>
 )
 
-export default StrikingModalData
+export default StrikingData

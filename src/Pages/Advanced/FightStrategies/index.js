@@ -7,15 +7,13 @@ import './FightStrategies.css'
 import SiteTabs from 'Components/SiteTabs'
 
 
-const FightStrategies = () => (
+const FightStrategies = () => 
+<SiteTabs 
+    tabs={FightStrategiesData} 
+    grid_size="12" 
+    tab_size="3" 
+    example="yes" 
+/>
 
-    <SiteTabs 
-        tabs={FightStrategiesData}
-        grid_size="12" 
-        tab_size="3"
-        example="yes"
-    />
-
-)
 
 export default FightStrategies

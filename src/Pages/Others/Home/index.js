@@ -8,7 +8,7 @@ import HomeFeaturedCards from './PageComponents/HomeRecommendedCards'
 
 const Home = () => (  
 
-    <div className="home-container">
+    <div className="site-grid-system site-span-12">
         <HomeFeaturedCards />
         <HomeVideoGallery />
         <HomeTwitterFeed />

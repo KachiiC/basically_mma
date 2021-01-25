@@ -39,6 +39,7 @@ const App = () => {
               <SiteExampleVideo
                 description={sub.example_video_description}
                 youtube_id={sub.example_video_id}
+                start={sub.example_video_start}
               />
             }
           />

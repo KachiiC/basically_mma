@@ -1,39 +1,54 @@
 import React from 'react'
 // Modal Content
-import StrikingModalData from "./StrikingModalData"
-import GrapplingModalData from "./GrapplingModalData"
-import GamePlanningModalData from './GamePlanningModalData'
+import StrikingData from "./TabsData/StrikingData"
+import GrapplingData from "./TabsData/GrapplingData"
+import GamePlanningData from './TabsData/GamePlanningData'
+
+// const ExampleData = {
+//     "title": "",
+//     "example": "",
+//     "content": "",
+//     "noteable_examples": "" <-- youtube_id
+// }
+//
+// Usage Example: 
+// <SiteTabs 
+//  tabs={ExampleData}
+//  tab_size="3" <-- size of each tab
+//  grid_size="12" <-- total of all tabs
+//  example="yes" <-- if yes, all must have an example
+// />
 
 const fundamentalsData = [
     {
         title: "Striking",
+        content: <StrikingData />, 
         image: "",
-        content: <StrikingModalData /> 
     },
     {
         title: "Grappling",
+        content: <GrapplingData />,      
         image: "",
-        content: <GrapplingModalData />      
     },
     {
         title: "Game Planning",
+        content: <GamePlanningData />,        
         image: "",
-        content: <GamePlanningModalData />        
     },
     {
         title: "Weight Cutting",
+        content: "",       
         image: "",
-        content: ""        
     },
     {
         title: "Strength & Conditioning",
-        image: "",
-        content: ""        
+        content: "",       
+        image: ""
     },
     {
         title: "Nutrition & recovery",
-        image: "",
-        content: ""        
+        content: "",       
+        image: ""
     },
 ]
 

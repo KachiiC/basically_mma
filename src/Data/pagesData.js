@@ -39,6 +39,7 @@ import MMAPromotionsIntroduction from 'Pages/PageIntroductions/MMAWorld/MMAPromo
 import WhatIsMMAVideo from 'Data/Basics/WhatIsMMA/WhatIsMMAVideo'
 import HistoryOfMMAVideo from 'Data/Basics/HistoryOfMMA/HistoryOfMMAVideo'
 import RulesOfMMAVideo from 'Data/Basics/RulesOfMMA/RulesOfMMAVideo'
+import MMADictionaryVideo from 'Data/Basics/MMADictionary/MMADictionaryVideo'
 
 const pagesData = [
     {
@@ -70,8 +71,9 @@ const pagesData = [
                 title:"mma-dictionary",
                 display: <MMADictionary />,
                 introduction: <MMADictionaryIntroduction />,
-                example_video_description: "",
-                example_video_id: ""
+                example_video_description: <MMADictionaryVideo />,
+                example_video_id: "_y1e4UpeVr8",
+                example_video_start: "61"
             }
         ]
     },

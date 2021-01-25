@@ -1,62 +1,16 @@
-.home-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-}
-
 .home-image-gallery {
     grid-column: span 8;
 }
 
+/* Home Twitter Feed */
 .home-twitter-feed {
     grid-column: span 4;
 }
 
-.twitter-container {
-    width: 80%;
-    margin: 35px auto; 
-}
-
-/* featured cards */
-.recommended-reading-feature,
-.other-recommended-reading {
-    padding: 10px;
-    width: 100%;
-}
-
-.recommended-featured-image-container {
-    margin: auto 0px auto auto;
-    width: 100%;
-    text-align: center;
-    padding: 10px 12px;
-}
-
-.small-list-image-container {
-    width: 95%;
-    margin: auto;
-    padding: 7px;
-}
-
-.recommended-reading-feature,
-.other-recommended-reading {
-    grid-column: span 6;
-    width: 90%;
-    margin: auto;
-}
-
-
-
 @media screen and (max-width: 1090px) {
     .home-image-gallery,
-    .home-twitter-feed,
-    .recommended-reading-feature,
-    .other-recommended-reading {
+    .home-twitter-feed {
         grid-column: span 12 !important;
-    }
-
-    .small-list-image-container {
-        width: 95%;
-        margin: 10px auto;
-        padding: 7px;
     }
 
     .twitter-container {
