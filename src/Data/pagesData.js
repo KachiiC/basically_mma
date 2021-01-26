@@ -19,7 +19,7 @@ import MMALegends from 'Pages/MMAWorld/MMALegends'
 import BestOfMMA from 'Pages/MMAWorld/BestOfMMA'
 import Recommended from 'Pages/MMAWorld/Recommended'
 // Other
-import Articles from 'Pages/Others/Articles'
+import News from 'Pages/Others/News'
 
 // PAGE INTRODUCTIONS
 // Basics
@@ -142,8 +142,8 @@ const pagesData = [
         sub_menu: false
     },
     {
-        title: "articles",
-        display: <Articles />,
+        title: "news",
+        display: <News />,
         sub_menu: false
     }
 ]

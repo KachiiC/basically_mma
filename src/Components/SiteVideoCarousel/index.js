@@ -32,9 +32,10 @@ const SiteVideoCarousel = (props) => {
         const handleChange = () => setSelectedImage(imageData.indexOf(image))
 
         return(
-            <img 
+            <img
                 src={image.video_thumbnail} 
-                alt={index} 
+                key={index}
+                alt={image.video_title} 
                 className="selectable-images" 
                 onClick={handleChange}
             />

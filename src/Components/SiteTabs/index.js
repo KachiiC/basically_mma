@@ -31,9 +31,9 @@ const SiteTabs = (props) => {
     const tabs = props.tabs
     const overflowLogic = props.overflow === "yes" ? 
     {
-        "overflow-y": "scroll"
+        "overflowY": "scroll"
     } : {
-            "overflow-y": "hidden"
+            "overflowY": "hidden"
         }
 
 
@@ -48,8 +48,8 @@ const SiteTabs = (props) => {
                     onClick={() => setCurrentTab(tabs.indexOf(tab))}
                     style={
                         {
-                            "grid-column": `span ${props.tab_size}`,
-                            "border-bottom": borderLogic
+                            "gridColumn": `span ${props.tab_size}`,
+                            "borderBottom": borderLogic
                         }
                     }
                 >
@@ -106,7 +106,7 @@ const SiteTabs = (props) => {
                 className="site-tabs-component-row"
                 style={
                     {
-                        "grid-template-columns": `repeat(${props.grid_size},1fr)`
+                        "gridTemplateColumns": `repeat(${props.grid_size},1fr)`
                     }
                 }
             >
