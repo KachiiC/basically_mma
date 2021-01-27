@@ -1,6 +1,7 @@
 // Data List
 import ChannelsData from './RecommendedLists/ChannelsData'
 import NewsData from './RecommendedLists/NewsData'
+import BreakdownsData from './RecommendedLists/BreakdownsData'
 import PodcastsData from './RecommendedLists/PodcastsData'
 
 const RecommendedData = [
@@ -11,6 +12,10 @@ const RecommendedData = [
     {
         title: "MMA News Outlets",
         data: NewsData
+    },
+    {
+        title: "MMA Breakdowns and Analysis",
+        data: BreakdownsData
     },
     {
         title: "MMA Podcasts",
