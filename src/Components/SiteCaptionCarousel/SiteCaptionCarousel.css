@@ -1,0 +1,25 @@
+.site-caption-carousel-container {
+    width: 80%;
+    margin: 25px auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.caption-content {
+    bottom: 0;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px 20px;
+    min-height: 70px;
+}
+
+.site-caption-carousel-button {
+    margin: auto;
+    cursor: pointer;
+}
+
+.site-caption-carousel-image {
+    width: 100%;
+}

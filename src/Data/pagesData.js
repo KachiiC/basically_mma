@@ -34,7 +34,8 @@ import FightStrategiesIntroduction from 'Pages/PageIntroductions/Advanced/FightS
 import FighterPayIntroduction from 'Pages/PageIntroductions/Advanced/FighterPayIntroduction'
 import WeightClassesIntroduction from 'Pages/PageIntroductions/Advanced/WeightClassesIntroduction'
 // MMA World
-import MMAPromotionsIntroduction from 'Pages/PageIntroductions/MMAWorld/MMAPromotions/PromotionsIntroduction'
+import MMAPromotionsIntroduction from 'Pages/PageIntroductions/MMAWorld/MMAPromotionsIntroduction'
+import RecommendedIntroduction from 'Pages/PageIntroductions/MMAWorld/RecommendedIntroduction'
 // Example Videos
 import WhatIsMMAVideo from 'Data/Basics/WhatIsMMA/WhatIsMMAVideo'
 import HistoryOfMMAVideo from 'Data/Basics/HistoryOfMMA/HistoryOfMMAVideo'
@@ -128,6 +129,7 @@ const pagesData = [
             {
                 title:"recommended",
                 display: <Recommended />,
+                introduction: <RecommendedIntroduction />
             }
         ]
     },

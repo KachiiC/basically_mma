@@ -20,7 +20,7 @@ const columns = [
 const ReebokPayTable = () => (
     <div className="reebok-table">
         <h6 class="text-center">Reebok pay</h6>
-        <Table columns={columns} dataSource={ReebokPayData} />
+        <Table columns={columns} dataSource={ReebokPayData} pagination={false}/>
     </div>
 )
 

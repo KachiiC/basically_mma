@@ -4,8 +4,9 @@ import ReebokMoney from './ReebokMoney'
 
 
 const UFCFighterMoney = () => (
+    
     <>
-        <h4>UFC Fighters Pay</h4>
+        <h3>UFC Fighters Pay</h3>
         <p>
             Most up and coming fighters will dream of fighting in the UFC. The UFC is the 
             biggest and respected promotion in MMA, more importantly it's where you can earn 

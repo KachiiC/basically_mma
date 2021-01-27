@@ -1,27 +1,14 @@
 import React from 'react'
 // Data
-import FighterMoneyData from 'Data/Advanced/FighterPay/FighterMoneyData'
+import PromotionsMoneyData from 'Data/Advanced/FighterPay/FightersMoneyData'
 // Components
-import {Popover } from 'antd';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import SiteCaptionCarousel from "Components/SiteCaptionCarousel"
 
 const FighterMoney = () => {
 
-    const FightersIconList = FighterMoneyData.map(
-        
-        (item, index) => (
-            <div className="promotion-item" key={index}>
-                <h6>{item.title}</h6>
-                <Popover content={item.content} title={item.title}>
-                    <FontAwesomeIcon icon={item.icon} size="10x" />
-                </Popover>
-            </div>
-        )
-    )
-
     return (
         <>
-            <h4>How do Fighters make money?</h4>
+            <h3>How do Fighters make money?</h3>
             <p>
                 It's hard to argue against the fact that MMA is a dangerous sport, fighters spend 
                 15-25 minutes punching each other in the face for our entertainment. Aside from the 
@@ -34,12 +21,10 @@ const FighterMoney = () => {
                 not paid at all. 
             </p>
 
-            <p>So how much should MMA fighters be paid? Before we can answer that lets examine 
-                how fighters generate their income.
+            <p>So how much should MMA fighters be paid? Before we can answer that lets see how fighters
+                earn their money.
             </p>
-            <div className="site-row">
-                {FightersIconList}
-            </div>
+            <SiteCaptionCarousel data={PromotionsMoneyData} />
         </>
     )
 }

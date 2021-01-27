@@ -2,7 +2,7 @@ import React from 'react'
 // CSS
 import "./SiteArticlesCard.css"
 // Components
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import SiteExternalLink from 'SiteCss/SiteExternalLink'
 import SiteCardsImage from './SiteCardsImage'
 import SiteCardsCaption from './SiteCardsCaption'
@@ -17,15 +17,16 @@ import SiteCardsCaption from './SiteCardsCaption'
 // const ExampleData = {
 //     featured_image: "",
 //     featured_title: "",
-//     featured_link: ""
+//     featured_link: "",
 //     small_images: [
 //         {
-//             image: "",
 //             title: "",
 //             link: ""
+//             image: "",
 //         }
 //     ],
-//     external_link: false
+//     external_link: false, <-- if links are external
+//     border: false    <-- True by default
 // }
 //
 // Note only four small images
@@ -55,13 +56,13 @@ const SiteArticlesCard = (props) => {
                 </Link>
 
             return (
-                    <div className="site-span-6 small-list-image-container" 
-                        key={index}
-                    >
-                        <div className="image-caption-container">
-                            {renderImageAndLink}
-                        </div>
+
+                <div className="site-span-6 small-list-image-container" key={index}>
+                    <div className="image-caption-container">
+                        {renderImageAndLink}
                     </div>
+                </div>
+
             )
         }
     )
@@ -79,13 +80,13 @@ const SiteArticlesCard = (props) => {
         <SiteExternalLink url={myImages.featured_link}>
             {display_featured_image}
         </SiteExternalLink>
-            :
+        :
         <Link to={`basically_mma/${myImages.featured_title}`}>
             {display_featured_image}
         </Link>
 
     const displayBorder = myImages.border === false ? 
-        <></> 
+        <> </> 
         : 
         <hr className="site-span-12"/>
 

@@ -4,17 +4,17 @@ import './SiteSlider.css'
 // Components
 import SiteSliderButton from './SiteSliderButton'
 
+// Data Format: 
+// const DataExample = [
+//     {
+//         "post_link": "", <-- Link
+//         "thumbnail": "" <-- Image
+//     }
+// ]
+// Each data set must be an array have 36 objects
+// Each object must have post_link and post_thumbnail properties
 
 const SiteSlider = (props) => {
-    // Data Format: 
-    // const DataExample = [
-    //     {
-    //         "post_link": "", <-- Link
-    //         "thumbnail": "" <-- Image
-    //     }
-    // ]
-    // Each data set must be an array have 36 objects
-    // Each object must have post_link and post_thumbnail properties
             
     const [slideNumber, setSlideNumber] = useState({
         firstSlide: 0,
@@ -82,6 +82,7 @@ const SiteSlider = (props) => {
                 />
                 {displayPosts}
                 <SiteSliderButton 
+                    className="site-border"
                     direction="right" 
                     onClick={nextClick}
                 />

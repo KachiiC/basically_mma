@@ -2,7 +2,6 @@ import React from 'react'
 
 const FundamentalsIntroduction = () => (
     <>
-        <h1>Fundamentals</h1>
         <p>
             Mixed Martial Arts has many fundamentals that an individual must learn in order 
             to be successful on both a professional and amateur level. A beginner will need 
