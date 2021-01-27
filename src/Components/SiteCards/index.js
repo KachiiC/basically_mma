@@ -31,41 +31,41 @@ import SiteCardsCaption from './SiteCardsCaption'
 // Note only four small images
 
 const SiteArticlesCard = (props) => {
-
+    
     const myImages = props.data
-
+    
     const displayImagesList = myImages.small_images.map(
         
         (item, index) => {
-
+            
             const item_image =  (
                 <>
                     <SiteCardsImage alt={index} url={item.image} />
                     <SiteCardsCaption title={item.title} />
                 </>
             )
-
+            
             const renderImageAndLink = myImages.external_links === true ?
                 <SiteExternalLink url={item.link}>
                     {item_image}
                 </SiteExternalLink>
-                 : 
+                :
                 <Link to={`basically_mma/${item.title}`}>
                     {item_image}
                 </Link>
 
             return (
-                <div className="site-span-6 small-list-image-container" 
-                    key={index}
-                >
-                    <div className="image-caption-container">
-                        {renderImageAndLink}
+                    <div className="site-span-6 small-list-image-container" 
+                        key={index}
+                    >
+                        <div className="image-caption-container">
+                            {renderImageAndLink}
+                        </div>
                     </div>
-                </div>
             )
         }
     )
-
+        
     const display_featured_image = 
         <div className="recommended-featured-image-container">
             <SiteCardsImage 
@@ -73,6 +73,7 @@ const SiteArticlesCard = (props) => {
                 url={myImages.featured_image}
             />
         </div>
+
 
     const display_featured_image_and_image = myImages.external_links === true ?
         <SiteExternalLink url={myImages.featured_link}>
@@ -82,7 +83,12 @@ const SiteArticlesCard = (props) => {
         <Link to={`basically_mma/${myImages.featured_title}`}>
             {display_featured_image}
         </Link>
-        
+
+    const displayBorder = myImages.border === false ? 
+        <></> 
+        : 
+        <hr className="site-span-12"/>
+
     return (
         <div className="recommended-reading-container site-span-12 site-grid-system">
             <h3 className="site-span-12">
@@ -99,6 +105,7 @@ const SiteArticlesCard = (props) => {
             <div className="other-recommended-reading site-grid-system">
                 {displayImagesList}
             </div>
+            {displayBorder}
         </div>
     )
 }

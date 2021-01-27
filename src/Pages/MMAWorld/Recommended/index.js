@@ -2,13 +2,13 @@ import React from 'react'
 // CSS
 import './Recommended.css'
 // Components
-import RecommendedMMAChannels from './PageComponents/RecommendedMMAChannels'
+import RecommendedList from 'Pages/MMAWorld/Recommended/PageComponents/RecommendedList'
 
 const Recommended = () => (
 
     <>
         <h1>Recommended</h1>
-        <RecommendedMMAChannels />
+        <RecommendedList />
     </>
 
 )

@@ -45,6 +45,11 @@
     padding: 7px;
 }
 
+hr {
+    width: 80%;
+    margin: 25px auto;
+}
+
 @media screen and (max-width: 1090px) {
 
     .recommended-reading-feature,
