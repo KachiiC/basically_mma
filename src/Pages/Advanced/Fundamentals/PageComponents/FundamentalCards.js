@@ -6,9 +6,7 @@ import SiteTabs from 'Components/SiteTabs'
 
 const FundamentalCards = () => 
     <SiteTabs 
-        tabs={fundamentalsData} 
-        tab_size="2" 
-        grid_size="12" 
+        tabs={fundamentalsData}
     />
 
 export default FundamentalCards

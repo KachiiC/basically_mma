@@ -3,14 +3,7 @@ import React from 'react'
 // Components
 
 const BestOfMMA = () => (
-
-    <>
-        <h1>Best of MMA</h1>
-        <h3>Best Fighters</h3>
-        <h3>Best Fights</h3>
-        <h3>Best Knockouts</h3>
-        <h3>Best Submissions</h3>
-    </>
+    <h1>Coming Soon</h1>
 )
 
 export default BestOfMMA

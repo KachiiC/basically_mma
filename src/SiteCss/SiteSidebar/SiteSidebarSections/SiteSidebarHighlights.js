@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 // CSS
 import { Empty } from 'antd'
 import SiteLoading from 'SiteCss/SiteTransitions/SiteLoading'
+// Components
+import SiteExternalLink from 'SiteCss/SiteExternalLink'
 
 const SiteSidebarHighlights = () => {
 
@@ -36,22 +38,16 @@ const SiteSidebarHighlights = () => {
                 key={index}
             >
                 <div className="site-highlights-image-container">
-                    <a href={`https://www.youtube.com/watch?v=${highlight.video_id}`}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                    >
+                    <SiteExternalLink url={`https://www.youtube.com/watch?v=${highlight.video_id}`}>
                         <img src={highlight.video_thumbnail} 
                             alt="highlight-cover"
                         />
-                    </a>
+                    </SiteExternalLink>
                 </div>
                 <div className="site-highlight-title" >
-                    <a href={`https://www.youtube.com/watch?v=${highlight.video_id}`}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    >
+                    <SiteExternalLink url={`https://www.youtube.com/watch?v=${highlight.video_id}`}>
                         {highlightTitle}
-                    </a>
+                    </SiteExternalLink>
                 </div>
             </div>
         )

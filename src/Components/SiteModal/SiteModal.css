@@ -34,7 +34,6 @@
     display: grid;
     height: 95%;
     width: 100%;
-    overflow-y: scroll;
 }
 
 @media screen and (max-width: 640px) {

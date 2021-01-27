@@ -6,23 +6,20 @@ import footerData from 'Data/Other/footerData'
 // Components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import FooterInstaSlider from 'SiteCss/SiteFooter/FooterInstaSlider';
+import SiteExternalLink from '../SiteExternalLink';
 
 const SiteFooter = () => {
 
     const iconsList = footerData.map((item, index) => (
-        
-            <a href={item.link} 
-                target="_blank" 
-                rel="noreferrer noopener" 
-                key={index}
-            >
+
+            <SiteExternalLink href={item.link} key={index}>
                 <FontAwesomeIcon 
                     className="footer-logos" 
                     size="4x"
                     color={item.color} 
                     icon={item.icon}
                 /> 
-            </a>
+            </SiteExternalLink>
         )
     )
 

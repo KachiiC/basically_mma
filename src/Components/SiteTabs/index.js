@@ -18,15 +18,14 @@ import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
 // Usage Example: 
 // <SiteTabs 
 //  tabs={ExampleData}
-//  tab_size="3" <-- size of each tab
-//  grid_size="12" <-- total of all tabs
 //  example="yes" <-- if yes, all must have an example
 // />
     
 const SiteTabs = (props) => {
 
     const [currentTab, setCurrentTab] = useState(0)
-    const [smallTabIndex, setSmallTabIndex] = useState((0))
+    const [smallTabIndex, setSmallTabIndex] = useState((1))
+    const numberOfTabs = props.tabs.length
     
     const tabs = props.tabs
     const overflowLogic = props.overflow === "yes" ? 
@@ -36,11 +35,11 @@ const SiteTabs = (props) => {
             "overflowY": "hidden"
         }
 
-
     const displayTabs = tabs.map(
         (tab, index) => {
             const borderLogic = tabs.indexOf(tab) === currentTab ? 
-            "2px solid rgb(30, 111, 250)": "none"
+            "2px solid rgb(30, 111, 250)": 
+            "none"
         
             return (
                 <div className="site-single-tab"
@@ -48,7 +47,7 @@ const SiteTabs = (props) => {
                     onClick={() => setCurrentTab(tabs.indexOf(tab))}
                     style={
                         {
-                            "gridColumn": `span ${props.tab_size}`,
+                            "gridColumn": `span ${numberOfTabs/numberOfTabs}`,
                             "borderBottom": borderLogic
                         }
                     }
@@ -63,7 +62,9 @@ const SiteTabs = (props) => {
         (tab, index) => (
             <div className="small-site-tab"
                 key={index}
-                onClick={() => setCurrentTab(tabs.indexOf(tab))}
+                onClick={
+                    () => setCurrentTab(tabs.indexOf(tab))
+                }
             >
                 <h6>{tab.title}</h6>
             </div>
@@ -79,12 +80,12 @@ const SiteTabs = (props) => {
     )
 
     const handlePrev = () => {
-        smallTabIndex === 0 ? setSmallTabIndex(4):
+        smallTabIndex === 0 ? setSmallTabIndex(tabs.length -1):
         setSmallTabIndex(smallTabIndex - 1)
     }
     
     const handleNext = () => {
-        smallTabIndex === 4 ? setSmallTabIndex(0):
+        smallTabIndex === smallTabIndex + 3 ? setSmallTabIndex(0):
         setSmallTabIndex(smallTabIndex + 1)
     }
 
@@ -106,7 +107,7 @@ const SiteTabs = (props) => {
                 className="site-tabs-component-row"
                 style={
                     {
-                        "gridTemplateColumns": `repeat(${props.grid_size},1fr)`
+                        "gridTemplateColumns": `repeat(${numberOfTabs},1fr)`
                     }
                 }
             >

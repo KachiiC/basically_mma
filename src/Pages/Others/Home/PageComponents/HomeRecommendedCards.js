@@ -1,12 +1,12 @@
 import React from 'react'
 // Data
-import HomeRecommendedCards from 'Data/Other/Home/HomeRecommendedCards'
+import HomeRecommendedCardsData from 'Data/Other/Home/HomeRecommendedCardsData'
 // Components
-import SiteArticlesCard from 'Components/SiteArticlesCard'
+import SiteCards from 'Components/SiteArticlesCard'
 
 const HomeCardComponents = () =>
 
-    <SiteArticlesCard data={HomeRecommendedCards} title="Recommended Reading" />
+    <SiteCards data={HomeRecommendedCardsData} title="Recommended Reading" />
 
 
 export default HomeCardComponents
