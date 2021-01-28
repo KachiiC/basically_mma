@@ -2,7 +2,6 @@ import React from 'react'
 
 const PromotionsIntroduction = () => (
     <>
-        <h1>MMA Promotions</h1>
         <p>
             Today no companies have presented significant competition to the UFC which is regarded as 
             having most of the top ranked talent. Fighters usually get contracts in the UFC after 

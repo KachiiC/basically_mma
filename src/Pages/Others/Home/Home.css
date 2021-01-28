@@ -1,3 +1,36 @@
+.home-feature {
+    margin: 50px 0px;
+}
+
+.home-featured-article {
+    width: 100%;
+    padding: 25px 50px;
+}
+
+.home-featured-fighter {
+    width: 80%;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.home-featured-fighter h4 {
+    padding-bottom: 0px;
+}
+.home-featured-fighter-heading {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.home-featured-fighter-image {
+    width: 75%;
+    margin: 20px auto;
+}
+
 .home-image-gallery {
     grid-column: span 8;
 }

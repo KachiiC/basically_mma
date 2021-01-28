@@ -6,8 +6,6 @@ import SiteCards from 'Components/SiteCards'
 
 const RecommendedList = () => {
 
-    console.log(RecommendedData[0].featured_link)
-
     const listOfRecommended = RecommendedData.map((item, index) => 
             <SiteCards 
                 data={item.data} 

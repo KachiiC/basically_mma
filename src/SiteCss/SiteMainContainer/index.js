@@ -12,8 +12,8 @@ const SiteMainContainer = (props) => (
                 {props.title}
             </h1>
             {props.introduction}
-            {props.main_display}
             {props.example_video}
+            {props.main_display}
         </main>
         <SiteSidebar />
     </div>
