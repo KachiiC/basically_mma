@@ -19,3 +19,9 @@ p {
     padding: 10px 45px;
     width: 100%;
 }
+
+@media screen and (max-width: 640px) {
+    p {
+        padding: 10px 25px;
+    }
+}

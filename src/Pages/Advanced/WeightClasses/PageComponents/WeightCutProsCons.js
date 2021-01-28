@@ -14,7 +14,7 @@ const WeightCutProsAndCons = () => {
     ))     
 
   return (
-      <>
+      <div className="weight-class-component">
         <h3>Pros and Cons of Weight Cutting</h3>
         <div className="pros-cons-container">
             <Table celled fixed>
@@ -29,7 +29,7 @@ const WeightCutProsAndCons = () => {
                 </Table.Body>
             </Table>
         </div>
-      </>
+      </div>
 
   )
 }

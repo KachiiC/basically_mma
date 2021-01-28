@@ -41,7 +41,8 @@ const columns = [
 
 
 const OneChampionshipWeightClasses = () => (
-    <>
+
+    <div className="weight-class-component">
         <h4>One Championship</h4>
         <p>
             One Championship have banned weight-cutting by dehydration in order to promote fighter 
@@ -61,9 +62,11 @@ const OneChampionshipWeightClasses = () => (
         <Table 
             columns={columns} 
             dataSource={OneChampionshipData} 
+            pagination={false}
             className="weight-class-table"
         />
-    </>
+    </div>
+    
   )
 
 export default OneChampionshipWeightClasses;

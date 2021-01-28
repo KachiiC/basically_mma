@@ -42,14 +42,13 @@ const SiteCaptionCarousel = (props) => {
                 direction="left" 
             />
             <div className="site-caption-carousel-image site-span-10">
-                    <img 
-                        className="site-responsive-image"
-                        src={props.data[imageIndex].image} 
-                        alt="gallery-selected"
-                    />
-                    <div className="caption-content">
-                        {props.data[imageIndex].caption}
-                    </div>
+                <img className="site-responsive-image"
+                    src={props.data[imageIndex].image} 
+                    alt="gallery-selected"
+                />
+                <div className="caption-content">
+                    {props.data[imageIndex].caption}
+                </div>
             </div>
             <SiteCaptionCarouselButton 
                 function={handleNextClick} 

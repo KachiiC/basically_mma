@@ -45,17 +45,16 @@ const columns = [
 ];
 
 const WeightTable = () => (
-    <>
+    <div className="weight-class-component">
       <h4>The Unified Rules of MMA Weight Classes</h4> 
-        <Table 
+        <Table className="weight-class-table" 
           columns={columns} 
           dataSource={WeightTableData} 
           pagination={false}
-          className="weight-class-table" 
         />
       <small>* = weight class does not exist in the UFC</small><br/>
       <small>** = this is a mens only weight class in the UFC</small>
-    </>
+    </div>
 )
 
 export default WeightTable;

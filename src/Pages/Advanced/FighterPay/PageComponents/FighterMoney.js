@@ -20,7 +20,6 @@ const FighterMoney = () => {
                 would argue that they are underpaid by their promoters and Amatuer fighters are 
                 not paid at all. 
             </p>
-
             <p>So how much should MMA fighters be paid? Before we can answer that lets see how fighters
                 earn their money.
             </p>

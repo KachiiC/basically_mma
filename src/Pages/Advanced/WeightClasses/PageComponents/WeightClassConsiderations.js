@@ -18,12 +18,12 @@ const WeightCutConsiderations = () => {
       })
 
     return (
-        <>
+        <div className="weight-class-component">
             <h3>Choosing a weight class</h3>
             <List>
                 {renderList}
             </List>
-        </>       
+        </div>       
     )
 
 }

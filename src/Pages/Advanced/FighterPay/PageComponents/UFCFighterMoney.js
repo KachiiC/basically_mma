@@ -1,10 +1,11 @@
 import React from 'react'
+import SiteInlineImage from '../../../../SiteCss/SiteInlineImage'
 // Components
 import ReebokMoney from './ReebokMoney'
 
 
 const UFCFighterMoney = () => (
-    
+
     <>
         <h3>UFC Fighters Pay</h3>
         <p>
@@ -13,7 +14,7 @@ const UFCFighterMoney = () => (
             the most money. Needless to say, you can early a lot of money in other promotions, 
             but being in the biggest stage worldwide. 
         </p>
-        <h6>Fight Night Pay and Bonuses</h6>
+        <h6>Fight Purse and Bonuses</h6>
         <p>
             Most UFC fighter's contracts are structed as show money and win bonus. This means 
             fighters are paid when they fight and a bonus if they win, with the show and win 
@@ -31,6 +32,7 @@ const UFCFighterMoney = () => (
             Historically, UFC president Dana White and former CEO Lorenzo Fertitta have also 
             given fighters undisclosed fight night bonuses.
         </p>
+        <SiteInlineImage url="http://via.placeholder.com/600x340.png?text=Fight%20Night%20Purse"/>
         <h6>The Reebok Sponsorship Deal</h6>
         <p>
             In 2015, the UFC announced Reebok as its official apparel partner. This was 
@@ -64,6 +66,7 @@ const UFCFighterMoney = () => (
             most attention due to their media obligations, only being able to promote reebok 
             reduces their earning potential.
         </p>
+        <SiteInlineImage url="http://via.placeholder.com/600x340.png?text=Fight%20Night%20Purse"/>
         <ReebokMoney />
     </>
 )
