@@ -1,6 +1,5 @@
 import React from 'react'
 // Components
-import SiteInlineImage from 'SiteCss/SiteInlineImage'
 
 const HomeFeaturedFight = () => {
 

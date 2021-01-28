@@ -6,6 +6,7 @@ import 'antd/dist/antd.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // Components
 import {BrowserRouter, Switch, Route} from "react-router-dom";
+import SiteScrollToTop from 'SiteCss/SiteScrollToTop'
 import SiteMainContainer from 'SiteCss/SiteMainContainer'
 import SiteNavbar from 'SiteCss/SiteNavbar';
 import SiteFooter from 'SiteCss/SiteFooter';
@@ -68,6 +69,7 @@ const App = () => {
             />
         </Route>
       )
+
     }
   )
 
@@ -89,6 +91,7 @@ const App = () => {
       
   return (
         <BrowserRouter>
+        <SiteScrollToTop />
           <SiteNavbar />
           <div className="site-body">
               <Switch>

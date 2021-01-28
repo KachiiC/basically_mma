@@ -80,10 +80,16 @@ const SiteArticlesCard = (props) => {
         <SiteExternalLink url={myImages.featured_link}>
             {display_featured_image}
         </SiteExternalLink>
-        :
-        <Link to={`basically_mma/${myImages.featured_title}`}>
-            {display_featured_image}
-        </Link>
+        :(
+            window.location.href === "https://kachiic.github.io/basically_mma/" ? 
+            <Link to={`${myImages.featured_title}`}>
+                {display_featured_image}
+            </Link>
+            :
+            <Link to={`basically_mma/${myImages.featured_title}`}>
+                {display_featured_image}
+            </Link>
+        )
 
     const displayBorder = myImages.border === false ? 
         <> </> 
