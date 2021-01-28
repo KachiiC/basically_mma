@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/basically_mma/static/css/main.5e35c5b5.chunk.css",
-    "main.js": "/basically_mma/static/js/main.39c2b48f.chunk.js",
-    "main.js.map": "/basically_mma/static/js/main.39c2b48f.chunk.js.map",
+    "main.js": "/basically_mma/static/js/main.b0721900.chunk.js",
+    "main.js.map": "/basically_mma/static/js/main.b0721900.chunk.js.map",
     "runtime-main.js": "/basically_mma/static/js/runtime-main.aba3ce24.js",
     "runtime-main.js.map": "/basically_mma/static/js/runtime-main.aba3ce24.js.map",
     "static/css/2.fceb1b9f.chunk.css": "/basically_mma/static/css/2.fceb1b9f.chunk.css",
     "static/js/2.322a88a9.chunk.js": "/basically_mma/static/js/2.322a88a9.chunk.js",
     "static/js/2.322a88a9.chunk.js.map": "/basically_mma/static/js/2.322a88a9.chunk.js.map",
     "index.html": "/basically_mma/index.html",
-    "precache-manifest.10f2277665c80ee8588504a9766451a6.js": "/basically_mma/precache-manifest.10f2277665c80ee8588504a9766451a6.js",
+    "precache-manifest.2b56946a43bae926c500679de9e55974.js": "/basically_mma/precache-manifest.2b56946a43bae926c500679de9e55974.js",
     "service-worker.js": "/basically_mma/service-worker.js",
     "static/css/2.fceb1b9f.chunk.css.map": "/basically_mma/static/css/2.fceb1b9f.chunk.css.map",
     "static/css/main.5e35c5b5.chunk.css.map": "/basically_mma/static/css/main.5e35c5b5.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.fceb1b9f.chunk.css",
     "static/js/2.322a88a9.chunk.js",
     "static/css/main.5e35c5b5.chunk.css",
-    "static/js/main.39c2b48f.chunk.js"
+    "static/js/main.b0721900.chunk.js"
   ]
 }
