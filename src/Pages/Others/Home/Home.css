@@ -2,12 +2,13 @@
     margin: 50px 0px;
 }
 
-.home-featured-article {
+.home-featured-fight {
     width: 100%;
     padding: 25px 50px;
 }
 
 .home-featured-fighter {
+    grid-column: span 4;
     width: 80%;
     margin: 25px auto;
     text-align: center;
@@ -31,6 +32,11 @@
     margin: 20px auto;
 }
 
+.home-featured-fighter-details {
+    width: 80%;
+    margin: auto;
+}
+
 .home-image-gallery {
     grid-column: span 8;
 }
@@ -42,8 +48,14 @@
 
 @media screen and (max-width: 1090px) {
     .home-image-gallery,
-    .home-twitter-feed {
+    .home-twitter-feed,
+    .home-featured-fight,
+    .home-featured-fighter {
         grid-column: span 12 !important;
+    }
+
+    .home-featured-fighter {
+        width: 70%;
     }
 
     .twitter-container {
@@ -54,7 +66,8 @@
 
 @media screen and (max-width: 640px) {
     .image-carousel,
-    .twitter-container {
+    .twitter-container,
+    .home-featured-fighter {
         width: 90%;
     }
 

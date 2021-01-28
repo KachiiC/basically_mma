@@ -72,7 +72,7 @@ const SiteCarouselModal = (props) => {
     )
 
     return (
-        <SiteModal closeModal={props.closeModal} width="70%">
+        <SiteModal closeModal={props.closeModal} width="70%" style={{overflowY: "scroll"}}>
             <div className="gallery-modal-video-section">
                 <div className="gallery-selected-video">
                     <SiteYoutubeVideo youtube_id={currentYoutubeId.youtube_id}    

@@ -18,6 +18,17 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons"
 
 const SiteModal = (props) => {
 
+  // const renderOverflow = props.overflow === "both"? {
+  //     "overflow" : "scroll"
+  //   }: (
+  //     props.overflow === "x" ? 
+  //       {
+  //         "overflowX": "scroll"
+  //       } : {
+  //         "overflowY" : "scroll"
+  //       }
+  //   )  
+
   const { closeModal } = props;
   
     return (
@@ -29,7 +40,7 @@ const SiteModal = (props) => {
                   className="close-button"
                 />
             </div>
-            <div className="site-modal-content">
+            <div className="site-modal-content" style={props.style}>
               {props.children}  
             </div>
           </div>

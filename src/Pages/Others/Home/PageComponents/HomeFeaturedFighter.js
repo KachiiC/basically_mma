@@ -4,7 +4,7 @@ const HomeFeaturedFighter = () => {
 
     return (
 
-        <div className="home-featured-fighter site-span-4">
+        <div className="home-featured-fighter">
             <div className="home-featured-fighter-heading">
                 Featured Fighter
             </div>
@@ -15,7 +15,7 @@ const HomeFeaturedFighter = () => {
                     className="site-responsive-image"
                     />
             </div>
-            <div>
+            <div className="home-featured-fighter-details site-border">
                 Fighter Details
             </div>
         </div>
