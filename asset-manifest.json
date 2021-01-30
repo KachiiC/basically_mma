@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/basically_mma/static/css/main.91366690.chunk.css",
+    "main.css": "/basically_mma/static/css/main.89ea23ce.chunk.css",
     "main.js": "/basically_mma/static/js/main.714a703b.chunk.js",
     "main.js.map": "/basically_mma/static/js/main.714a703b.chunk.js.map",
     "runtime-main.js": "/basically_mma/static/js/runtime-main.aba3ce24.js",
@@ -9,17 +9,17 @@
     "static/js/2.8bb73069.chunk.js": "/basically_mma/static/js/2.8bb73069.chunk.js",
     "static/js/2.8bb73069.chunk.js.map": "/basically_mma/static/js/2.8bb73069.chunk.js.map",
     "index.html": "/basically_mma/index.html",
-    "precache-manifest.4e5a890e6019e9074b1e9b08f3e64058.js": "/basically_mma/precache-manifest.4e5a890e6019e9074b1e9b08f3e64058.js",
+    "precache-manifest.ac22bac8569e350311efc7c841094c95.js": "/basically_mma/precache-manifest.ac22bac8569e350311efc7c841094c95.js",
     "service-worker.js": "/basically_mma/service-worker.js",
     "static/css/2.fceb1b9f.chunk.css.map": "/basically_mma/static/css/2.fceb1b9f.chunk.css.map",
-    "static/css/main.91366690.chunk.css.map": "/basically_mma/static/css/main.91366690.chunk.css.map",
+    "static/css/main.89ea23ce.chunk.css.map": "/basically_mma/static/css/main.89ea23ce.chunk.css.map",
     "static/js/2.8bb73069.chunk.js.LICENSE.txt": "/basically_mma/static/js/2.8bb73069.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.aba3ce24.js",
     "static/css/2.fceb1b9f.chunk.css",
     "static/js/2.8bb73069.chunk.js",
-    "static/css/main.91366690.chunk.css",
+    "static/css/main.89ea23ce.chunk.css",
     "static/js/main.714a703b.chunk.js"
   ]
 }
