@@ -36,6 +36,7 @@
 
 .home-featured-fighter-details table {
     margin: 35px auto;
+    font-size: 15px;
 }
 
 .home-featured-fighter-details td {
@@ -66,11 +67,11 @@
         grid-column: span 12 !important;
     }
 
-    .twitter-container {
+    .home-twitter-feed {
         width: 70%;
-        margin: 50px auto;
+        margin: 0px auto;
     }
-
+    
     .home-featured-fighter {
         width: 70%;
     }
@@ -96,5 +97,10 @@
     .home-featured-fighter-details {
         width: 95%;
         font-size: 17px;
+    }
+
+    .home-twitter-feed {
+        width: 100%;
+        margin: 0px auto;
     }
 }

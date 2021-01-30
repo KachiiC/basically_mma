@@ -128,4 +128,8 @@
     .image-carousel {
         width: 90%;
     }
+
+    .image-carousel-container {
+        margin: 0px auto;
+    }
 }
