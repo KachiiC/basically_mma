@@ -40,6 +40,7 @@
 }
 
 .small-list-image-container {
+    position: relative;
     width: 95%;
     margin: auto;
     padding: 7px;
