@@ -7,30 +7,6 @@ import SiteExternalLink from 'SiteCss/SiteExternalLink'
 import SiteCardsImage from './SiteCardsImage'
 import SiteCardsCaption from './SiteCardsCaption'
 
-// Example Usage:
-// <SiteArticlesCard 
-//  data={HomeRecommendedCards} 
-//  title="Recommended Reading" 
-// />
-//
-// Example Data:
-// const ExampleData = {
-//     featured_image: "",
-//     featured_title: "",
-//     featured_link: "",
-//     small_images: [
-//         {
-//             title: "",
-//             link: ""
-//             image: "",
-//         }
-//     ],
-//     external_link: false, <-- if links are external
-//     border: false    <-- True by default
-// }
-//
-// Note only four small images
-
 const SiteArticlesCard = (props) => {
     
     const myImages = props.data
@@ -118,3 +94,27 @@ const SiteArticlesCard = (props) => {
 }
 
 export default SiteArticlesCard
+
+// Example Usage:
+// <SiteArticlesCard 
+//  data={HomeRecommendedCards} 
+//  title="Recommended Reading" 
+// />
+//
+// Example Data:
+// const ExampleData = {
+//     featured_image: "",
+//     featured_title: "",
+//     featured_link: "",
+//     small_images: [
+//         {
+//             title: "",
+//             link: ""
+//             image: "",
+//         }
+//     ],
+//     external_link: false, <-- if links are external
+//     border: false    <-- True by default
+// }
+//
+// Note only four small images

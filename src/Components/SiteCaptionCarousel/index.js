@@ -5,19 +5,6 @@ import './SiteCaptionCarousel.css'
 import './SiteCaptionCarouselButton'
 import SiteCaptionCarouselButton from './SiteCaptionCarouselButton'
 
-// Example Usage:
-//
-// <SiteCaptionCarousel data={} />
-//
-// ExampleData:
-//
-// const ExampleData = [
-//     {
-//         image: "",
-//         caption: "",
-//     }
-// ]
-
 const SiteCaptionCarousel = (props) => {
 
     const [imageIndex, setImageIndex] = useState(0)
@@ -60,3 +47,16 @@ const SiteCaptionCarousel = (props) => {
 }
 
 export default SiteCaptionCarousel
+
+// Example Usage:
+//
+// <SiteCaptionCarousel data={} />
+//
+// ExampleData:
+//
+// const ExampleData = [
+//     {
+//         image: "",
+//         caption: "",
+//     }
+// ]
