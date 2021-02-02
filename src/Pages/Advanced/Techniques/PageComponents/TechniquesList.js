@@ -1,38 +1,38 @@
-import React, {useState, useEffect} from 'react';
-// CSS
-import SiteLoading from 'SiteCss/SiteTransitions/SiteLoading'
-import { Empty } from 'antd'
-// Components
-import CollapseSection from './CollapseSection'
+import React from 'react'
+// External Components
+// Material UI Table
 import TableCell from '@material-ui/core/TableCell';
-import TableBody from '@material-ui/core/TableBody';
 import TableContainer from '@material-ui/core/TableContainer';
 import Paper from '@material-ui/core/Paper';
 import Table from '@material-ui/core/Table';
-import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import TableHead from '@material-ui/core/TableHead';
+import TableBody from '@material-ui/core/TableBody';
+// My Components
+import CollapseSection from './CollapseSection'
+import SiteFetcher from 'SiteCss/SiteFetcher';
+import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 
 const TechniquesList = () => {
     
-    const [isFetching, setIsFetching] = useState(true)
-    const [techniques, setTechniques] = useState([]) 
-    const [isDisplayable, setIsDisplayable] = useState(false)
+    const techniquesTemplate = [
+        {
+            title: "",
+            type: "",
+            discipline: "",
+            difficulty: "",
+            description: "",
+            tutorial: "",
+            mistakes: ""
+        }
+    ]
+    
+    const responseData = SiteFetcher(
+        "https://kachiis-rest.herokuapp.com/backend/mma_techniques_list/",
+        techniquesTemplate
+    ) 
 
-    useEffect(() => {
-        fetch("https://kachiis-rest.herokuapp.com/backend/mma_techniques_list/") 
-        .then((response) => { 
-            return response.json() 
-        })
-        .then((techniquesDataFromServer) => { 
-            setTechniques(techniquesDataFromServer)
-            setIsDisplayable(true)
-            setIsFetching(false)
-        })
-        .catch((error) => { 
-            setIsFetching(false)
-            console.log(error)
-        })
-    }, []) 
+    const techniques = responseData.response
 
     const renderListOfTechniques = techniques.map((technique, index) => {
 
@@ -55,41 +55,43 @@ const TechniquesList = () => {
         )
     })
 
-    const techniqueHeadings = ["Technique Name", "Type", "Difficulty"]
+    const techniqueHeadings = [
+        "Technique Name", 
+        "Type", 
+        "Difficulty"
+    ]
     
-    const renderHeadings = techniqueHeadings.map((heading, index) => (
-        <TableCell align="inherit" key={index}>
-            <b>{heading}</b>
-        </TableCell>
-    ))
-
-    const renderLogic = (isFetching)?(
-        <SiteLoading />
-    ):(
-        (isDisplayable)?(
-            <TableBody>
-                <React.Fragment>    
-                    {renderListOfTechniques}
-                </React.Fragment>
-            </TableBody>  
-        ):(
-            <Empty />
+    const renderHeadings = techniqueHeadings.map(
+        (heading, index) => (
+            <TableCell align="inherit" key={index}>
+                <b>{heading}</b>
+            </TableCell>
         )
+    )
+
+    const renderTable = (
+
+        <TableContainer component={Paper}>
+            <Table aria-label="collapsible table">
+                <TableHead>
+                    <TableRow>
+                        <TableCell align="justify"/>
+                        {renderHeadings}
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    <React.Fragment>    
+                        {renderListOfTechniques}
+                    </React.Fragment>
+                </TableBody>   
+            </Table>
+        </TableContainer>
+
     )
 
     return (
         <div className="techniques-tabs-component-container">
-            <TableContainer component={Paper}>
-                <Table aria-label="collapsible table">
-                    <TableHead>
-                        <TableRow>
-                            <TableCell align="justify"/>
-                            {renderHeadings}
-                        </TableRow>
-                    </TableHead>
-                    {renderLogic}
-                </Table>
-            </TableContainer>
+            <SiteRender data={responseData} component={renderTable} />
         </div>
     );
 }
