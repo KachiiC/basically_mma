@@ -1,10 +1,10 @@
 import React from 'react'
-// CSS
-import './SiteTransitions.css'
+// Components
+import { Empty } from 'antd';
 
 const SiteLoading = () => (
     <div className="data-container">
-        <div className="site-loading" />
+        <Empty />
     </div>
 )
 

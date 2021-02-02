@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 // CSS
 import './SiteCaptionCarousel.css' 
 // Components
-import './SiteCaptionCarouselButton'
 import SiteCaptionCarouselButton from './SiteCaptionCarouselButton'
 
 const SiteCaptionCarousel = (props) => {
