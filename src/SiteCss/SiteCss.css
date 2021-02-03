@@ -61,3 +61,18 @@
     height: auto;
     border-radius: 3px;
 }
+
+/* Width */
+.width-100 {
+    width: 100%;
+}
+
+/* margin */
+
+.m-auto {
+    margin: auto;
+}
+
+.h-auto {
+    height: auto;
+}

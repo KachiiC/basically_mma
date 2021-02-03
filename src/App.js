@@ -41,6 +41,7 @@ const App = () => {
             title={displayTitle}
             introduction={sub.introduction}
             main_display={sub.display}
+            header_image={sub.header_image}
             example_video={
               <SiteExampleVideo
                 description={sub.example_video_description}
@@ -66,6 +67,7 @@ const App = () => {
               title={displayTitle }
               introduction={sub.introduction}
               main_display={sub.display}
+              header_image={sub.header_image}
             />
         </Route>
       )

@@ -1,22 +1,28 @@
+import FundamentalsImage from 'SiteImages/Others/Home/mma_fundamentals.jpg'
+import DictionaryImage from 'SiteImages/Others/Home/mma_dictionary.jpg'
+import FightStrategiesImage from 'SiteImages/Others/Home/mma_fight_strategies.jpg'
+import RecommendedImage from 'SiteImages/Others/Home/mma_recommended.jpg'
+import TechniquesImage from 'SiteImages/Others/Home/mma_techniques.jpg'
+
 const HomeRecommendedCards = {
-    featured_image: "http://via.placeholder.com/540x300.png?text=Placeholder%20",
+    featured_image: DictionaryImage,
     featured_title: "mma-dictionary",
     featured_link: "https://www.youtube.com/",
     small_images: [
         {
-            image: "http://via.placeholder.com/540x300.png?text=Placeholder%20",
+            image: FundamentalsImage,
             title: "fundamentals",
         },
         {
-            image: "http://via.placeholder.com/540x300.png?text=Placeholder%20",
+            image: TechniquesImage,
             title: "techniques",
         },
         {
-            image: "http://via.placeholder.com/540x300.png?text=Placeholder%20",
+            image: FightStrategiesImage,
             title: "fight-strategies",
         },
         {
-            image: "http://via.placeholder.com/540x300.png?text=Placeholder%20",
+            image: RecommendedImage,
             title: "recommended"
         }
     ],

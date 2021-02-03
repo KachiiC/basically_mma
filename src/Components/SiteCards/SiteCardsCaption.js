@@ -2,7 +2,9 @@ import React from 'react'
 
 const SiteCardsCaption = (props) => {
 
-    const display_title = props.title.split("-").join(" ")
+    const title = props.title
+
+    const display_title = title ? title.split("-").join(" ") : ""
 
     return (
         <div className="image-caption">

@@ -1,30 +1,31 @@
 // Components
 import SiteYoutubeLink from 'SiteCss/SiteYoutubeLink'
+// Images
+import ESPN_MMA from 'SiteImages/MMAWorld/Recommended/NewsOutlets/ESPN_MMA.jpg'
+import MMA_Fighting from 'SiteImages/MMAWorld/Recommended/NewsOutlets/MMA_Fighting.jpg'
+import BT_Sport from 'SiteImages/MMAWorld/Recommended/NewsOutlets/BT_Sport.jpg'
+import MMA_Digest from 'SiteImages/MMAWorld/Recommended/NewsOutlets/MMA_Digest.jpg'
+import MMA_Junkie from 'SiteImages/MMAWorld/Recommended/NewsOutlets/MMA_Junkie.jpg'
 
 const NewsData = {
-    featured_image: "http://via.placeholder.com/540x300.png?text=Placeholder%20",
-    featured_title: "ESPN MMA",
+    featured_image: ESPN_MMA,
     featured_link: "https://www.youtube.com/ufc",
     small_images: [
         {
-            title: "MMA Fighting",
             link: SiteYoutubeLink + "MMAFightingonSBN",
-            image: "http://via.placeholder.com/540x300.png?text=Placeholder%20",
+            image: MMA_Fighting,
         },
         {
-            title: "BT Sports",
             link: SiteYoutubeLink + "BTSportOfficial",
-            image: "http://via.placeholder.com/540x300.png?text=Placeholder%20",
+            image: BT_Sport,
         },
         {
-            title: "MMA Digest",
             link: SiteYoutubeLink + "mmadigest",
-            image: "http://via.placeholder.com/540x300.png?text=Placeholder%20",
+            image: MMA_Digest,
         },
         {
-            title: "MMA Junkie",
             link: SiteYoutubeLink + "MMAjunkieVideo",
-            image: "http://via.placeholder.com/540x300.png?text=Placeholder%20",
+            image: MMA_Junkie,
         }
     ],
     external_links: true

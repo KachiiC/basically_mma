@@ -17,26 +17,23 @@ main {
     font-weight: 600;
 }
 
+.site-page-header-image-container {
+    width: 65%;
+    margin: 0px auto 25px;
+}
+
 @media screen and (max-width: 1090px) {
     main {
-        grid-column: span 12;
-        width: 80%;  
+        grid-column: span 12; 
     }
-}
-
-@media screen and (max-width: 900px) {
-    main {
-        width: 85%;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    main {
+    
+    main,
+    .site-page-header-image-container {
         width: 90%;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     main {
         width: 95%;
     }

@@ -57,12 +57,9 @@ const HomeFeaturedFighter = () => {
             </div>
             <> 
                 <div className="home-featured-fighter-details">
-                    <table className="site-border">
+                    <h6>Fighter Info:</h6>
+                    <table>
                         <tbody>
-                            <tr>
-                                <th>Fighter Info</th>
-                                <th></th>
-                            </tr>
                             <HomeFeaturedFighterData 
                                 promotion={featured_fighter.promotion}
                                 mma_record={mma_record}

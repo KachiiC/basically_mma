@@ -8,10 +8,6 @@ const HomeFeaturedFighterData = (props) => {
             content : props.promotion
         },
         {
-            heading:"MMA Record",
-            content : props.mma_record
-        },
-        {
             heading:"Height",
             content: props.height
         },
@@ -28,6 +24,10 @@ const HomeFeaturedFighterData = (props) => {
             content: props.style
         },
         {
+            heading:"MMA Record",
+            content : props.mma_record
+        },
+        {
             heading:"Knockouts",
             content: props.wins_via_knockout
         },
@@ -40,7 +40,7 @@ const HomeFeaturedFighterData = (props) => {
     const renderFighters = fighterStatsData.map(
         (fighter) => (
             <tr>
-                <td><b>{fighter.heading}</b></td>
+                <td className="featured-fighter-table-title"><b>{fighter.heading}</b></td>
                 <td>{fighter.content}</td>
             </tr>
         )

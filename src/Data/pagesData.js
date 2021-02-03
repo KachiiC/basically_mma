@@ -27,6 +27,11 @@ import WhatIsMMAIntroduction from 'Pages/PageIntroductions/Basics/WhatIsMMAIntro
 import HistoryOfMMAIntroduction from 'Pages/PageIntroductions/Basics/HistoryOfMMAIntroduction'
 import MMADictionaryIntroduction from 'Pages/PageIntroductions/Basics/MMADictionaryIntroduction'
 import RulesOfMMAIntroduction from 'Pages/PageIntroductions/Basics/RulesOfMMAIntroduction'
+// Basics Example Videos
+import WhatIsMMAVideo from 'Data/Basics/WhatIsMMA/WhatIsMMAVideo'
+import HistoryOfMMAVideo from 'Data/Basics/HistoryOfMMA/HistoryOfMMAVideo'
+import RulesOfMMAVideo from 'Data/Basics/RulesOfMMA/RulesOfMMAVideo'
+import MMADictionaryVideo from 'Data/Basics/MMADictionary/MMADictionaryVideo'
 // Advanced
 import FundamentalsIntroduction from 'Pages/PageIntroductions/Advanced/FundamentalsIntroduction'
 import TechniquesIntroduction from 'Pages/PageIntroductions/Advanced/TechniquesIntroduction'
@@ -36,11 +41,6 @@ import WeightClassesIntroduction from 'Pages/PageIntroductions/Advanced/WeightCl
 // MMA World
 import MMAPromotionsIntroduction from 'Pages/PageIntroductions/MMAWorld/MMAPromotionsIntroduction'
 import RecommendedIntroduction from 'Pages/PageIntroductions/MMAWorld/RecommendedIntroduction'
-// Example Videos
-import WhatIsMMAVideo from 'Data/Basics/WhatIsMMA/WhatIsMMAVideo'
-import HistoryOfMMAVideo from 'Data/Basics/HistoryOfMMA/HistoryOfMMAVideo'
-import RulesOfMMAVideo from 'Data/Basics/RulesOfMMA/RulesOfMMAVideo'
-import MMADictionaryVideo from 'Data/Basics/MMADictionary/MMADictionaryVideo'
 
 const pagesData = [
     {
@@ -52,7 +52,8 @@ const pagesData = [
                 display: <WhatIsMMA />,
                 introduction: <WhatIsMMAIntroduction />,
                 example_video_description: <WhatIsMMAVideo />,
-                example_video_id: "PnUmcL07xnY"
+                example_video_id: "PnUmcL07xnY",
+                header_image: "http://via.placeholder.com/540x300.png?text=Basics"
             },
             {
                 title:"history-of-mma",

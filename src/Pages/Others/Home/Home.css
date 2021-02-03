@@ -10,7 +10,8 @@
     text-align: center;
 }
 
-.home-featured-fighter h4 {
+.home-featured-fighter h4,
+.home-featured-fighter h6 {
     padding-bottom: 0px;
 }
 
@@ -35,12 +36,12 @@
 }
 
 .home-featured-fighter-details table {
-    margin: 35px auto;
+    margin: 10px auto;
     font-size: 15px;
 }
 
-.home-featured-fighter-details td {
-    border: 1px solid black;
+.featured-fighter-table-title {
+    text-align: left;
 }
 
 .home-featured-fighter-details td,
