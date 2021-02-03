@@ -43,6 +43,12 @@ import TechniquesIntroduction from 'Pages/PageIntroductions/Advanced/TechniquesI
 import FightStrategiesIntroduction from 'Pages/PageIntroductions/Advanced/FightStrategiesIntroduction'
 import FighterPayIntroduction from 'Pages/PageIntroductions/Advanced/FighterPayIntroduction'
 import WeightClassesIntroduction from 'Pages/PageIntroductions/Advanced/WeightClassesIntroduction'
+// Advanced Header Image
+import FundamentalsHeader from 'SiteImages/Advanced/Fundamentals/Fundamentals.jpg'
+import TechniquesHeader from 'SiteImages/Advanced/Techniques/Techniques.jpg'
+import FighterPayHeader from 'SiteImages/Advanced/FighterPay/FighterPay.jpg'
+import FightStrategiesHeader from 'SiteImages/Advanced/FightStrategies/FightStrategies.jpg'
+import WeightClassesHeader from 'SiteImages/Advanced/WeightClasses/WeightClass.jpg'
 // MMA World
 import MMAPromotionsIntroduction from 'Pages/PageIntroductions/MMAWorld/MMAPromotionsIntroduction'
 import RecommendedIntroduction from 'Pages/PageIntroductions/MMAWorld/RecommendedIntroduction'
@@ -94,27 +100,32 @@ const pagesData = [
             {
                 title:"fundamentals",
                 display: <Fundamentals />,
-                introduction: <FundamentalsIntroduction />
+                introduction: <FundamentalsIntroduction />,
+                header_image: FundamentalsHeader
             },
             {
                 title:"techniques",
                 display: <Techniques />,
-                introduction: <TechniquesIntroduction />
+                introduction: <TechniquesIntroduction />,
+                header_image: TechniquesHeader
             },
             {
                 title:"fight-strategies",
                 display: <FightStrategies />,
-                introduction: <FightStrategiesIntroduction />
+                introduction: <FightStrategiesIntroduction />,
+                header_image: FightStrategiesHeader
             },
             {
                 title:"fighter-pay",
                 display: <FighterPay />,
-                introduction: <FighterPayIntroduction />
+                introduction: <FighterPayIntroduction />,
+                header_image: FighterPayHeader
             },
             {
                 title:"weight-classes",
                 display: <WeightClasses />,
-                introduction: <WeightClassesIntroduction />
+                introduction: <WeightClassesIntroduction />,
+                header_image: WeightClassesHeader
             }
         ]
     },
