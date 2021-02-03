@@ -32,6 +32,11 @@ import WhatIsMMAVideo from 'Data/Basics/WhatIsMMA/WhatIsMMAVideo'
 import HistoryOfMMAVideo from 'Data/Basics/HistoryOfMMA/HistoryOfMMAVideo'
 import RulesOfMMAVideo from 'Data/Basics/RulesOfMMA/RulesOfMMAVideo'
 import MMADictionaryVideo from 'Data/Basics/MMADictionary/MMADictionaryVideo'
+// Basics Header Image
+import WhatIsMMAHeader from 'SiteImages/Basics/WhatIsMMA/WhatIsMMA.jpg'
+import HistoryOfMMAHeader from 'SiteImages/Basics/HistoryOfMMA/HistoryOfMMA.jpg'
+import RulesOfMMAHeader from 'SiteImages/Basics/RulesOfMMA/RulesOfMMA.jpg'
+import MMADictionaryHeader from 'SiteImages/Basics/MMADictionary/MMADictionary.jpg'
 // Advanced
 import FundamentalsIntroduction from 'Pages/PageIntroductions/Advanced/FundamentalsIntroduction'
 import TechniquesIntroduction from 'Pages/PageIntroductions/Advanced/TechniquesIntroduction'
@@ -53,21 +58,23 @@ const pagesData = [
                 introduction: <WhatIsMMAIntroduction />,
                 example_video_description: <WhatIsMMAVideo />,
                 example_video_id: "PnUmcL07xnY",
-                header_image: "http://via.placeholder.com/540x300.png?text=Basics"
+                header_image: WhatIsMMAHeader
             },
             {
                 title:"history-of-mma",
                 display: <HistoryOfMMA />,
                 introduction: <HistoryOfMMAIntroduction />,
                 example_video_description: <HistoryOfMMAVideo />,
-                example_video_id: "ea7Uf7BVBvs"
+                example_video_id: "ea7Uf7BVBvs",
+                header_image: HistoryOfMMAHeader
             },
             {
                 title:"rules-of-mma",
                 display: <RulesOfMMA />,
                 introduction: <RulesOfMMAIntroduction />,
                 example_video_description: <RulesOfMMAVideo />,
-                example_video_id: "0kKALSgyTOc"
+                example_video_id: "0kKALSgyTOc",
+                header_image: RulesOfMMAHeader
             },
             {
                 title:"mma-dictionary",
@@ -75,7 +82,8 @@ const pagesData = [
                 introduction: <MMADictionaryIntroduction />,
                 example_video_description: <MMADictionaryVideo />,
                 example_video_id: "_y1e4UpeVr8",
-                example_video_start: "61"
+                example_video_start: "61",
+                header_image: MMADictionaryHeader
             }
         ]
     },

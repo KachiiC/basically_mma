@@ -25,11 +25,11 @@ main {
 @media screen and (max-width: 1090px) {
     main {
         grid-column: span 12; 
+        width: 85%;
     }
-    
-    main,
+
     .site-page-header-image-container {
-        width: 90%;
+        width: 70%;
     }
 }
 
@@ -37,11 +37,8 @@ main {
     main {
         width: 95%;
     }
-}
 
-@media screen and (max-width: 500px) {
-    main {
-        width: 100%;
+    .site-page-header-image-container {
+        width: 90%;
     }
-    
 }
