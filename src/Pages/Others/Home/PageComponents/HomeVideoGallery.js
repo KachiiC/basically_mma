@@ -19,7 +19,7 @@ const HomeImageGallery = () => {
         ]
     }
 
-    const HomeVideoGalleryURL = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/PLaaEeFtNlIJ2Yigy4wHCQlcuRZg4NKbi5"
+    const HomeVideoGalleryURL = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/fight_highlights"
 
     const responseData = SiteFetcher(
         HomeVideoGalleryURL,

@@ -6,21 +6,33 @@ import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 
 const HomeFeaturedFighter = () => {
 
-    const featuredFighter = [
-        {
-            first_name : "",
-        }
-    ]
+    const featuredFighter = {
+        "first_name": "",
+        "last_name": "",
+        "rank": 0,
+        "is_champion": false,
+        "weight_class": "",
+        "age": 0,
+        "height": "",
+        "reach": "",
+        "wins": 0,
+        "losses": 0,
+        "draws": 0,
+        "wins_via_ko": 0,
+        "wins_via_sub": 0,
+        "wins_via_dec": 0,
+        "fighter_image": ""
+    }
 
     // eslint-disable-next-line
     const[fighterIndex, setFighterIndex] = useState(0)
 
     const responseData = SiteFetcher(
-        "https://kachiis-rest.herokuapp.com/backend/mma_fighters_list",
+        "https://kachiis-rest.herokuapp.com/backend/mma_featured_fighter",
         featuredFighter
     )
 
-    const featured_fighter = responseData.response[fighterIndex]
+    const featured_fighter = responseData.response
     const featured_fighter_name = featured_fighter.first_name + " " + featured_fighter.last_name
 
     const renderDraws = featured_fighter.draws > 0 ? 
@@ -28,16 +40,10 @@ const HomeFeaturedFighter = () => {
         :
         null
 
-    const renderNC = featured_fighter.no_contests > 0 ? 
-        featured_fighter.no_contests + "NC"
-        :
-        null
-
     const mma_record = [
         featured_fighter.wins + "W", 
         featured_fighter.losses + "L", 
         renderDraws, 
-        renderNC
     ].filter(
         (record) => record !== null
     ).join("-")
@@ -45,35 +51,35 @@ const HomeFeaturedFighter = () => {
     const renderFeaturedFighter = (
 
         <div className="home-featured-fighter">
-            <div className="home-featured-fighter-heading ">
+            <div className="home-featured-fighter-heading">
                 Featured Fighter
             </div>
-            <h4>{featured_fighter_name}</h4>
-            <div className="home-featured-fighter-image">
-                <img src="http://via.placeholder.com/300x300.png?text=Featured%20Fighter" 
-                    alt="featured_fighter"
-                    className="site-responsive-image"
+            <h4>{featured_fighter_name}</h4>    
+            <div className="home-medium-screen">
+                <div className="home-featured-fighter-image">
+                    <img src={featured_fighter.fighter_image} 
+                        alt="featured_fighter"
+                        className="site-responsive-image"
                     />
-            </div>
-            <> 
+                </div>
                 <div className="home-featured-fighter-details">
                     <h6>Fighter Info:</h6>
                     <table>
                         <tbody>
                             <HomeFeaturedFighterData 
-                                promotion={featured_fighter.promotion}
                                 mma_record={mma_record}
                                 height={featured_fighter.height}
+                                rank={featured_fighter.rank}
                                 weight_class={featured_fighter.weight_class}
                                 reach={featured_fighter.reach}
-                                style={featured_fighter.style}
-                                wins_via_knockout={featured_fighter.wins_via_knockout}
-                                wins_via_submission={featured_fighter.wins_via_submission}
-                            />
+                                wins_via_ko={featured_fighter.wins_via_ko}
+                                wins_via_sub={featured_fighter.wins_via_sub}
+                                wins_via_dec={featured_fighter.wins_via_dec}
+                                />
                         </tbody>
                     </table>
                 </div>
-            </>
+            </div>
         </div>
     )
 

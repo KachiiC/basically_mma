@@ -48,7 +48,7 @@ import FundamentalsHeader from 'SiteImages/Advanced/Fundamentals/Fundamentals.jp
 import TechniquesHeader from 'SiteImages/Advanced/Techniques/Techniques.jpg'
 import FighterPayHeader from 'SiteImages/Advanced/FighterPay/FighterPay.jpg'
 import FightStrategiesHeader from 'SiteImages/Advanced/FightStrategies/FightStrategies.jpg'
-import WeightClassesHeader from 'SiteImages/Advanced/WeightClasses/WeightClass.jpg'
+import WeightClassesHeader from 'SiteImages/Advanced/WeightClasses/WeightClasses.jpg'
 // MMA World
 import MMAPromotionsIntroduction from 'Pages/PageIntroductions/MMAWorld/MMAPromotionsIntroduction'
 import RecommendedIntroduction from 'Pages/PageIntroductions/MMAWorld/RecommendedIntroduction'

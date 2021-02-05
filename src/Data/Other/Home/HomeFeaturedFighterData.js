@@ -4,36 +4,36 @@ const HomeFeaturedFighterData = (props) => {
 
     const fighterStatsData = [
         {
-            heading: "Promotion",
-            content : props.promotion
+            heading:"MMA Record",
+            content : props.mma_record
+        },
+        {
+            heading:"Weight Class",
+            content: props.weight_class
         },
         {
             heading:"Height",
             content: props.height
         },
         {
-            heading:"Weight",
-            content: props.weight_class
-        },
-        {
             heading:"Reach",
             content: props.reach
         },
         {
-            heading:"Style",
-            content: props.style
-        },
-        {
-            heading:"MMA Record",
-            content : props.mma_record
+            heading: "Rank",
+            content: props.rank
         },
         {
             heading:"Knockouts",
-            content: props.wins_via_knockout
+            content: props.wins_via_ko
         },
         {
             heading:"Submissions",
-            content: props.wins_via_submission
+            content: props.wins_via_sub
+        },
+        {
+            heading:"Decisions",
+            content: props.wins_via_dec
         }
     ]
 

@@ -12,7 +12,7 @@ const SiteSidebarHighlights = () => {
     const [isDisplayable, setIsDisplayable] = useState(false)
 
     useEffect(() => {
-        fetch("https://kachiis-rest.herokuapp.com/api/youtube_playlists/PLaaEeFtNlIJ2Yigy4wHCQlcuRZg4NKbi5/") 
+        fetch("https://kachiis-rest.herokuapp.com/api/youtube_playlists/fight_highlights") 
         .then((response) => { 
             return response.json() 
         })

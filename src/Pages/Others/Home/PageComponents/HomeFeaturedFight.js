@@ -2,6 +2,7 @@ import React from 'react'
 // Components
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 import SiteFetcher from 'SiteCss/SiteFetcher';
+import SiteExternalLink from 'SiteCss/SiteExternalLink';
 
 const HomeFeaturedFight = () => {
 
@@ -20,14 +21,19 @@ const HomeFeaturedFight = () => {
     const featuredFightComponent = (
 
         <div className="home-featured-fight">
-            <img className="site-responsive-image"
-                src={homeFeaturedFight.video_thumbnail} 
-                alt={responseData.response.video_description}
-            />
-            <div className="caption-content">
+            <div className="home-feature-fight-title">Featured Fight</div>
+            <SiteExternalLink 
+                url={`https://www.youtube.com/watch?v=${homeFeaturedFight.video_id}`}
+            >
+                <img className="site-responsive-image"
+                    src={homeFeaturedFight.video_thumbnail} 
+                    alt={responseData.response.video_description}
+                />
+            <div className="home-featured-fight-caption-content">
                 <h6>{homeFeaturedFight.video_title}</h6>
                 <p>{homeFeaturedFight.video_description}</p>
             </div>
+            </SiteExternalLink>
         </div>
 
     )

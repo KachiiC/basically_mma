@@ -6,10 +6,14 @@ import SiteSidebar from 'SiteCss/SiteSidebar'
 
 const SiteMainContainer = (props) => {
     
-    const imageLogic = props.header_image ? 
-        props.header_image 
-        :
-        "http://via.placeholder.com/540x300.png?text=Placeholder"
+    const imageLogic = props.header_image ? (
+        <div className="site-page-header-image-container">
+            <img className="site-responsive-image"
+                alt="page_header" 
+                src={props.header_image}
+                />
+        </div>
+    ) : <></>
 
     return (
         <div className="site-grid-container">
@@ -17,12 +21,7 @@ const SiteMainContainer = (props) => {
                 <h1 className="site-page-title">
                     {props.title}
                 </h1>
-                <div className="site-page-header-image-container">
-                    <img className="site-responsive-image"
-                        alt="page_header" 
-                        src={imageLogic}
-                    />
-                </div>
+                {imageLogic}
                 {props.introduction}
                 {props.example_video}
                 {props.main_display}

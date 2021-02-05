@@ -1,7 +1,20 @@
 .home-featured-fight {
     width: 100%;
-    padding: 25px 50px;
+    padding: 0px 20px 20px 50px;
+    margin:  25px auto;
     text-align: center;
+}
+
+.home-featured-fight-caption-content,
+.home-featured-fight-caption-content h6,
+.home-featured-fight-caption-content p {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.home-feature-fight-title {
+    margin-bottom: 25px;
 }
 
 .home-featured-fighter {
@@ -15,6 +28,7 @@
     padding-bottom: 0px;
 }
 
+.home-feature-fight-title,
 .home-featured-fighter-heading {
     text-align: center;
     font-weight: 700;
@@ -58,7 +72,6 @@
     grid-column: span 4;
 }
 
-
 @media screen and (max-width: 1090px) {
     .home-feature,
     .home-image-gallery,
@@ -68,20 +81,33 @@
         grid-column: span 12 !important;
     }
 
+    .home-featured-fight {
+        width: 80%;
+        padding: 0px;
+    }
     .home-twitter-feed {
         width: 70%;
         margin: 0px auto;
     }
     
-    .home-featured-fighter {
-        width: 70%;
+    .home-medium-screen {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    
+    .home-featured-fighter-image,
+    .home-featured-fighter-details {
+        grid-column: span 6;
+        width: 100%;
+        margin: 0px;
+        max-width: 400px;
     }
 
     .home-featured-fighter-details table {
-        width: 90%;
         font-size: 20px;
+        width: 100%;
     }
-
 }
 
 @media screen and (max-width: 640px) {
@@ -94,10 +120,22 @@
     .small-list-image-container {
         grid-column: span 12;
     }
+    .home-featured-fight {
+        width: 90%;
+    }
+    .home-featured-fighter-details {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .home-featured-fighter-image,
+    .home-featured-fighter-details {
+        grid-column: span 12;
+        margin: auto;
+    }
 
     .home-featured-fighter-details {
-        width: 95%;
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .home-twitter-feed {

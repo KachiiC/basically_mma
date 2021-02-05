@@ -60,6 +60,11 @@
     width: 100%;
     height: auto;
     border-radius: 3px;
+    max-height: 100%;
+}
+
+.site-external-link {
+    text-decoration: none;
 }
 
 /* Width */
