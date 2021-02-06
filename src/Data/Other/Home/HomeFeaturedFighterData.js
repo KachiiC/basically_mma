@@ -8,6 +8,10 @@ const HomeFeaturedFighterData = (props) => {
             content : props.mma_record
         },
         {
+            heading: "Rank",
+            content: props.rank
+        },
+        {
             heading:"Weight Class",
             content: props.weight_class
         },
@@ -18,6 +22,10 @@ const HomeFeaturedFighterData = (props) => {
         {
             heading:"Reach",
             content: props.reach
+        },
+        {
+            heading: "Rank",
+            content: props.rank
         },
         {
             heading: "Rank",

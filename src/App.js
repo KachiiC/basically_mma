@@ -2,19 +2,20 @@ import React from 'react';
 //CSS 
 import './App.css';
 import 'SiteCss/SiteCss.css'
+// External
 import 'antd/dist/antd.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // Components
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import SiteScrollToTop from 'SiteCss/SiteScrollToTop'
-import SiteMainContainer from 'SiteCss/SiteMainContainer'
 import SiteNavbar from 'SiteCss/SiteNavbar';
 import SiteFooter from 'SiteCss/SiteFooter';
+import SiteMainContainer from 'SiteCss/SiteMainContainer'
+import SiteExampleVideo from './SiteCss/SiteExampleVideo';
 // Data
 import pagesData from './Data/pagesData'
 // Pages
 import Home from './Pages/Others/Home'
-import SiteExampleVideo from './SiteCss/SiteExampleVideo';
 
 const App = () => {
 
@@ -29,7 +30,8 @@ const App = () => {
   )
 
   const mySubLinks = pagesData.filter((page) => page.sub_menu === true)
-
+  
+  // Basics
   const displayBasics = mySubLinks[0].menu_list.map((sub, index) => {
 
     const displayTitle = sub.title.split("-").join(" ")
@@ -56,7 +58,7 @@ const App = () => {
     }
   )
 
-
+  // Advanced
   const diplayAdvanced = mySubLinks[1].menu_list.map((sub, index) => {
 
     const displayTitle = sub.title.split("-").join(" ")
@@ -75,25 +77,27 @@ const App = () => {
     }
   )
 
-  const displayMMAWorld = mySubLinks[2].menu_list.map((sub, index) => {
+  const displayMMAWorld = mySubLinks[2].menu_list.map(
+    
+    (sub, index) => {
 
-    const displayTitle = sub.title.split("-").join(" ")
-      
-      return (
-        <Route path={`/basically_mma/${sub.title}`} key={index}>
-            <SiteMainContainer
-              title={displayTitle}
-              main_display={sub.display}
-              introduction={sub.introduction}
-            />
-        </Route>
-      )
+      const displayTitle = sub.title.split("-").join(" ")
+        
+        return (
+          <Route path={`/basically_mma/${sub.title}`} key={index}>
+              <SiteMainContainer
+                title={displayTitle}
+                main_display={sub.display}
+                introduction={sub.introduction}
+              />
+          </Route>
+        )
     }
   )
       
   return (
         <BrowserRouter>
-        <SiteScrollToTop />
+          <SiteScrollToTop />
           <SiteNavbar />
           <div className="site-body">
               <Switch>

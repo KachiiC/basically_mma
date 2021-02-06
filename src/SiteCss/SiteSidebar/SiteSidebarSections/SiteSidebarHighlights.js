@@ -1,75 +1,66 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 // CSS
-import { Empty } from 'antd'
-import SiteLoading from 'SiteCss/SiteTransitions/SiteLoading'
 // Components
 import SiteExternalLink from 'SiteCss/SiteExternalLink'
+import SiteFetcher from 'SiteCss/SiteFetcher'
+import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 
 const SiteSidebarHighlights = () => {
 
-    const [fightHighlight, setFightHighlights] = useState([])
-    const [isFetching, setIsFetching] = useState(true)
-    const [isDisplayable, setIsDisplayable] = useState(false)
+    const fight_highlights = {
+        playlist_videos: [
+            {
+                video_title: "",
+                video_id: "",
+                video_description: "",
+                video_thumbnail: "",
+                upload_date: ""
+            }
+        ]
+    }
 
-    useEffect(() => {
-        fetch("https://kachiis-rest.herokuapp.com/api/youtube_playlists/fight_highlights") 
-        .then((response) => { 
-            return response.json() 
-        })
-        .then(highlightsData => { 
-            setFightHighlights(highlightsData.playlist_videos)
-            setIsDisplayable(true)
-            setIsFetching(false)
-        })
-        .catch((error) => { 
-            setIsFetching(false)
-            console.log(error)
-        })
-    },[])
+    const highlights_url = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/fight_highlights"
 
-    const renderHighlightsList = fightHighlight.slice(0,4).map((highlight, index) => {
+    const responseData = SiteFetcher(highlights_url,fight_highlights)
 
-        const highlightTitle = highlight.video_title.split("").length < 57 ? 
-            highlight.video_title : 
-            highlight.video_title.split("").slice(0,60).join("") + "..."
+    const fightHighlight = responseData.response.playlist_videos
+    console.log(fightHighlight)
 
-        return (
-            <div className="site-highlights-container" 
-                key={index}
-            >
+    const renderHighlightsList = fightHighlight.slice(0,4).map(
+
+        (highlight, index) => (
+
+            <div className="site-highlights-container" key={index}>
                 <div className="site-highlights-image-container">
-                    <SiteExternalLink url={`https://www.youtube.com/watch?v=${highlight.video_id}`}>
-                        <img src={highlight.video_thumbnail} 
-                            alt="highlight-cover"
-                        />
+                    <SiteExternalLink 
+                        url={`https://www.youtube.com/watch?v=${highlight.video_id}`}
+                    >
+                        <img src={highlight.video_thumbnail} alt="highlight-cover"/>
                     </SiteExternalLink>
                 </div>
                 <div className="site-highlight-title" >
-                    <SiteExternalLink url={`https://www.youtube.com/watch?v=${highlight.video_id}`}>
-                        {highlightTitle}
+                    <SiteExternalLink 
+                        url={`https://www.youtube.com/watch?v=${highlight.video_id}`}
+                    >
+                        {highlight.video_title}
                     </SiteExternalLink>
                 </div>
             </div>
+
         )
 
-    })
-
-    const renderLogic = (isFetching)?(
-        <SiteLoading />
-    ):(
-        (isDisplayable)? (
-            renderHighlightsList
-        ):(
-            <Empty />
-        )
     )
+
 
     return (
         <div className="site-sidebar-section">
             <div className="site-sidebar-title">
-                Fight highlights
+                Fight Higlights
             </div>
-            {renderLogic}
+                <SiteRender 
+                    data={responseData} 
+                    component={renderHighlightsList} 
+                />
         </div>
     )
 }
