@@ -1,24 +1,12 @@
 .site-slider-container {
-    grid-column: span 12;
-    width: 100%;
-    height: auto;
     display: grid;
-    color: white;
     grid-template-columns: repeat(14, 1fr);
 }
 
 .site-slider-image-container {
     grid-column: span 2;
-    margin: auto;
     width: 98%;
     max-width: 98%;
-    height: auto;
-    border: 1px solid black;
-}
-
-.site-slider-image {
-    width: 100%;
-    height: auto;
 }
 
 .site-slider-image:hover {
@@ -29,5 +17,4 @@
 .site-slider-button {
     grid-column: span 1;
     width: 90%;
-    margin: auto;
 }

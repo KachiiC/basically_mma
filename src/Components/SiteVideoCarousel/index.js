@@ -4,19 +4,6 @@ import './SiteCarousel.css'
 // Components
 import SiteCarouselModal from './SiteCarouselModal'
 
-// Data Format: 
-// const ExampleVideoCarouselData = [{
-//     "video_title": "",
-//     "video_id": "",
-//     "video_description": "",
-//     "video_thumbnail": ""
-// }]
-//
-// Usage Example: 
-// < SiteVideoCarousel
-//  data={ExampleVideoCarouselData} 
-//  title="Carousel Title"
-// />
 
 const SiteVideoCarousel = (props) => {
 
@@ -36,7 +23,7 @@ const SiteVideoCarousel = (props) => {
                 src={image.video_thumbnail} 
                 key={index}
                 alt={image.video_title} 
-                className="selectable-images" 
+                className="selectable-images site-responsive-image site-span-2" 
                 onClick={handleChange}
             />
         )
@@ -76,3 +63,17 @@ const SiteVideoCarousel = (props) => {
 }
 
 export default SiteVideoCarousel
+
+// Data Format: 
+// const ExampleVideoCarouselData = [{
+//     "video_title": "",
+//     "video_id": "",
+//     "video_description": "",
+//     "video_thumbnail": ""
+// }]
+//
+// Usage Example: 
+// < SiteVideoCarousel
+//  data={ExampleVideoCarouselData} 
+//  title="Carousel Title"
+// />

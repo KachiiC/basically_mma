@@ -14,7 +14,7 @@ const SiteSliderButton = (props) => {
     "start"
 
     return (
-        <div className="site-slider-button" style={{"textAlign": renderPosition}}>
+        <div className="site-slider-button m-auto" style={{"textAlign": renderPosition}}>
             <FontAwesomeIcon 
                 onClick={props.onClick}
                 icon={renderDirection} 

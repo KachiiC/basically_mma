@@ -9,17 +9,13 @@ const SiteTwitterFeed = (props) => (
     <div className="twitter-container">
         <h2>{props.title}</h2>
         <Timeline
-            dataSource={
-                {
+            dataSource={{
                     sourceType: 'profile',
                     screenName: props.twitter_id
-                }
-            }
-            options={
-                {
+                }}
+            options={{
                     height: props.height
-                }
-            }
+                }}
         />
     </div>
     

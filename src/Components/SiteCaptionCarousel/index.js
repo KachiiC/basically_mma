@@ -22,17 +22,17 @@ const SiteCaptionCarousel = (props) => {
     
     return (
 
-        <div className="site-caption-carousel-container site-grid-system">
+        <div className="site-caption-carousel-container site-grid-system width-100">
             <SiteCaptionCarouselButton 
                 function={handleBackClick} 
                 direction="left" 
             />
-            <div className="site-caption-carousel-image site-span-10">
+            <div className="site-caption-carousel-image site-span-10 width-100">
                 <img className="site-responsive-image"
                     src={props.data[imageIndex].image} 
                     alt="gallery-selected"
                 />
-                <div className="caption-content">
+                <div className="caption-content width-100">
                     {props.data[imageIndex].caption}
                 </div>
             </div>
