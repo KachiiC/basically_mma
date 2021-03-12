@@ -40,7 +40,7 @@
 }
 
 .home-featured-fighter-image {
-    width: 60%;
+    width: 40%;
     margin: 20px auto 10px;
 }
 
@@ -52,6 +52,7 @@
 .home-featured-fighter-details table {
     margin: 10px auto;
     font-size: 15px;
+    width: 80%;
 }
 
 .featured-fighter-table-title {
