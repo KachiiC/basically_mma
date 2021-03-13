@@ -100,13 +100,13 @@
     .home-featured-fighter-image,
     .home-featured-fighter-details {
         grid-column: span 6;
-        width: 100%;
-        margin: 0px;
+        width: 70%;
+        margin: 0px auto;
         max-width: 400px;
     }
 
     .home-featured-fighter-details table {
-        font-size: 20px;
+        font-size: 15px;
         width: 100%;
     }
 }
@@ -128,6 +128,7 @@
         width: 100%;
         font-size: 15px;
     }
+    
 
     .home-featured-fighter-image,
     .home-featured-fighter-details {

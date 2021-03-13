@@ -36,9 +36,7 @@ const HomeFeaturedFighter = () => {
     const featured_fighter_name = featured_fighter.first_name + " " + featured_fighter.last_name
 
     const renderDraws = featured_fighter.draws > 0 ? 
-        featured_fighter.draws 
-        :
-        null
+        featured_fighter.draws : null
 
     const mma_record = [
         featured_fighter.wins + "W", 
@@ -75,7 +73,7 @@ const HomeFeaturedFighter = () => {
                                 wins_via_ko={featured_fighter.wins_via_ko}
                                 wins_via_sub={featured_fighter.wins_via_sub}
                                 wins_via_dec={featured_fighter.wins_via_dec}
-                                />
+                            />
                         </tbody>
                     </table>
                 </div>

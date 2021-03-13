@@ -24,7 +24,6 @@ const SiteSidebarHighlights = () => {
     const responseData = SiteFetcher(highlights_url,fight_highlights)
 
     const fightHighlight = responseData.response.playlist_videos
-    console.log(fightHighlight)
 
     const renderHighlightsList = fightHighlight.slice(0,4).map(
 
