@@ -1,0 +1,15 @@
+.store-items-page {
+    text-align: center;
+}
+
+.store-item-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.store-item-image-container,
+.store-item-container h4 {
+    width: 80%;
+    margin: 0px auto;
+}

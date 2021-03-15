@@ -8,6 +8,7 @@
     animation: spin 0.9s linear infinite;
     z-index: -1;
     position: relative;
+    text-align: center;
 }
 
 @keyframes spin {

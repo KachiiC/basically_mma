@@ -21,7 +21,8 @@ const App = () => {
 
   const displayLinks = pagesData.map((page, index) => (
       <Route path={`/basically_mma/${page.title}`} key={index}>
-        <SiteMainContainer 
+        <SiteMainContainer
+          title={page.title} 
           introduction={page.introduction}
           main_display={page.display}
         />

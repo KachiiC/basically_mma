@@ -28,10 +28,6 @@ const HomeFeaturedFighterData = (props) => {
             content: props.rank
         },
         {
-            heading: "Rank",
-            content: props.rank
-        },
-        {
             heading:"Knockouts",
             content: props.wins_via_ko
         },
