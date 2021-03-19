@@ -17,7 +17,7 @@ const SmallMenu = (props) => {
 
           return (
             <div className="small-menu-nav-dropdown-link" key={index}>
-              <Link to={`${sub.title}`} onClick={props.function}>
+              <Link to={`/basically_mma/${sub.title}`} onClick={props.function}>
                 {renderSubTitle}
               </Link>
             </div>

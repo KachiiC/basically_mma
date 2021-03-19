@@ -37,15 +37,13 @@ const StoreItems = () => {
         )
     )
 
-
     return (
-        <div className="site-grid-system store-items-page">
+        <div className="site-grid-system">    
             <SiteRender 
                 data={responseData}
                 component={storeItemsList} 
             />
         </div>
-        
     )
 }
 

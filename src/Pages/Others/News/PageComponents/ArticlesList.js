@@ -16,7 +16,7 @@ const ArticlesList = () => {
         }
     ]
 
-    const articlesListURL = "https://kachiis-rest.herokuapp.com/backend/mma_articles_list/"
+    const articlesListURL = "https://kachiis-rest.herokuapp.com/backend/mma_articles_list"
     const responseData = SiteFetcher(articlesListURL, articleList)
     const siteArticles = responseData.response
 
