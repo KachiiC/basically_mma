@@ -1,18 +1,13 @@
 import React from 'react'
 // CSS
+import './BestOfMMA.css'
 // Components
-import BestFighters from 'Pages/MMAWorld/BestOfMMA/PageComponents/BestFighters'
-import BestFights from 'Pages/MMAWorld/BestOfMMA/PageComponents/BestFights'
-import BestKnockouts from 'Pages/MMAWorld/BestOfMMA/PageComponents/BestKnockouts'
-import BestSubmissions from 'Pages/MMAWorld/BestOfMMA/PageComponents/BestSubmissions'
+import BestCategories from 'Pages/MMAWorld/BestOfMMA/PageComponents/BestCategories'
 
 const BestOfMMA = () => (
 
     <div>
-        <BestFighters />
-        <BestFights />
-        <BestKnockouts />
-        <BestSubmissions />
+        <BestCategories />
     </div>
 
 )
