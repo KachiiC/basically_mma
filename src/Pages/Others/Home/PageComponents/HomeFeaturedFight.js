@@ -1,7 +1,7 @@
 import React from 'react'
 // Components
-import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 import SiteFetcher from 'SiteCss/SiteFetcher';
+import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 import SiteExternalLink from 'SiteCss/SiteExternalLink';
 
 const HomeFeaturedFight = () => {

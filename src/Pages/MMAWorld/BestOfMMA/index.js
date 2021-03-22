@@ -3,13 +3,14 @@ import React from 'react'
 import './BestOfMMA.css'
 // Components
 import BestCategories from 'Pages/MMAWorld/BestOfMMA/PageComponents/BestCategories'
+import BestFighters from 'Pages/MMAWorld/BestOfMMA/PageComponents/BestFighters'
+
 
 const BestOfMMA = () => (
-
-    <div>
+    <>
         <BestCategories />
-    </div>
-
+        <BestFighters />
+    </>
 )
 
 

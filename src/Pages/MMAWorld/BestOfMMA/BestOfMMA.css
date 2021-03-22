@@ -2,3 +2,19 @@
     width: 90%;
     margin: auto;
 }
+
+.p4p-grid-system {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+}
+
+.p4p-grid-system h6 {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 640px) {
+    .site-span-3 {
+        grid-column: span 5;
+    }
+
+}
