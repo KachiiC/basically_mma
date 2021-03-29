@@ -4,20 +4,10 @@ import React from 'react'
 import SiteVideoCarousel from 'Components/SiteVideoCarousel'
 import SiteFetcher from 'SiteCss/SiteFetcher';
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
+// Data 
+import galleryImagesData from 'Data/Other/Home/HomeImageGalleryData'
 
 const HomeImageGallery = () => {
-
-    const galleryImagesData = {
-        playlist_videos : [
-            {
-                video_title: "",
-                video_id: "",
-                video_description: "",
-                video_thumbnail: "",
-                upload_date: ""
-            }
-        ]
-    }
 
     const HomeVideoGalleryURL = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/fight_highlights"
 
