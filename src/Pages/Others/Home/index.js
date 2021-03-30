@@ -1,6 +1,7 @@
 import React from 'react'
 // CSS
 import './Home.css'
+import './Responsive.css'
 // Components
 import HomeFeatured from './PageComponents/HomeFeaturedFight'
 import HomeVideoGallery from './PageComponents/HomeVideoGallery'

@@ -11,10 +11,10 @@ const HomeFeaturedFighter = () => {
         "https://kachiis-rest.herokuapp.com/backend/mma_featured_fighter",
         FeaturedFighterTemplate
     )
-
     const featured_fighter = responseData.response
-    const featured_fighter_name = featured_fighter.first_name + " " + featured_fighter.last_name
 
+    //
+    const featured_fighter_name = featured_fighter.first_name + " " + featured_fighter.last_name
     const renderDraws = featured_fighter.draws > 0 ? 
         featured_fighter.draws : null
 
@@ -29,18 +29,18 @@ const HomeFeaturedFighter = () => {
     const renderFeaturedFighter = (
 
         <div className="home-featured-fighter">
-            <div className="home-featured-fighter-heading">
+            <div className="fighter-heading">
                 Featured Fighter
             </div>
             <h4>{featured_fighter_name}</h4>    
-            <div className="home-medium-screen">
-                <div className="home-featured-fighter-image">
+            <div className="featured-fighter-section">
+                <div className="fighter-image">
                     <img src={featured_fighter.fighter_image} 
                         alt="featured_fighter"
                         className="site-responsive-image"
                     />
                 </div>
-                <div className="home-featured-fighter-details">
+                <div className="fighter-details">
                     <h6>Fighter Info:</h6>
                     <table>
                         <tbody>

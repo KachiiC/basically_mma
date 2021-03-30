@@ -2,9 +2,9 @@ import React from 'react'
 // CSS
 // Components
 import SiteVideoCarousel from 'Components/SiteVideoCarousel'
-import SiteFetcher from 'SiteCss/SiteFetcher';
-import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
-// Data 
+import SiteFetcher from 'SiteCss/SiteFetcher'
+import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
+// Data
 import galleryImagesData from 'Data/Other/Home/HomeImageGalleryData'
 
 const HomeImageGallery = () => {
