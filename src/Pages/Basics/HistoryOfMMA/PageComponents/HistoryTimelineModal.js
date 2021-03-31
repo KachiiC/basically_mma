@@ -16,12 +16,11 @@ const HistoryTimelineModal = () => {
     return (
         <div className="history-of-modern-mma-container">
             <h5>For a more comprehensive history of modern MMA check out out history MMA timeline!</h5>
-            <div className="history-of-mma-button" 
-                onClick={handleClick}
-            >
+            <div className="history-of-mma-button w-80 m-auto" onClick={handleClick}>
                 The timeline of modern MMA
             </div>
-            {showModal && (
+            {showModal && 
+                (
                     <SiteModal closeModal={handleClick}>
                         <div className="history-of-mma-modal">
                             <SiteTimeline data={timelineData} />

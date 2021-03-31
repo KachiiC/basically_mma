@@ -1,20 +1,17 @@
 @media screen and (max-width: 1080px) {
     main {
         grid-column: span 12; 
-        width: 90%;
+        width: 100%;
     }
 
-    .site-page-header-image-container {
-        width: 70%;
+    .main-container-pic {
+        height: 300px;
     }
 }
 
 @media screen and (max-width: 640px) {
-    main {
-        width: 95%;
-    }
 
-    .site-page-header-image-container {
-        width: 90%;
+    .main-container-pic {
+        height: 200px;
     }
 }

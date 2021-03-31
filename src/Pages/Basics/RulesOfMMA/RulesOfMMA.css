@@ -1,11 +1,8 @@
-.rules-modal {
-    grid-column: span 12;
-    width: 100%;
-    height: 100%;
-    margin: 0px auto;
-    overflow-y: hidden;
-}
-
 .rules-of-mma-container {
     margin-top: 50px;
+}
+
+.rules-modal {
+    margin: 0px auto;
+    overflow-y: hidden;
 }

@@ -22,7 +22,7 @@ const RulesCards = () => {
             </div>
             { showModal && (
                     <SiteModal closeModal={modalControl} >
-                        <div className="rules-modal">
+                        <div className="rules-modal w-100 h-100 site-span-12">
                             <SiteTabs 
                                 tabs={RulesData} 
                                 grid_size="14" 
