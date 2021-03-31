@@ -12,12 +12,6 @@
         width: 80%;
         padding: 0px;
     }
-
-    /* Twitter Feed */
-    .home-twitter-feed {
-        width: 50%;
-        margin: 0px auto;
-    }
     
     .featured-fighter-section {
         width: 100%;
@@ -39,6 +33,12 @@
     .home-featured-fighter .fighter-details table {
         font-size: 18px;
         width: 100%;
+    }
+
+    /* Twitter Feed */
+    .home-twitter-feed {
+        width: 50%;
+        margin: 0px auto;
     }
 }
 

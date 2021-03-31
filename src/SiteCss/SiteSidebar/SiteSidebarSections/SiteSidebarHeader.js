@@ -4,13 +4,13 @@ import SiteIcon from 'SiteImages/myicon.jpg'
 
 const SiteSidebarHeader = () => (
 
-    <div className="site-sidebar-introduction site-sidebar-section">
-        <div className="site-sidebar-title">
+    <div className="sidebar-section sidebar-introduction">
+        <div className="sidebar-title">
             Basically MMA
         </div>
-        <div className="site-sidebar-icon-container">
+        <div className="w-50 m-auto">
             <img src={SiteIcon}
-                className="site-sidebar-icon"
+                className="sidebar-icon site-responsive-image"
                 alt="basically_mma_icon"
             />
         </div>

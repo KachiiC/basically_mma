@@ -1,6 +1,7 @@
 import React from 'react'
 // CSS
 import './SiteMainContainer.css'
+import './Responsive.css'
 // Components
 import SiteSidebar from 'SiteCss/SiteSidebar'
 
@@ -8,7 +9,7 @@ const SiteMainContainer = (props) => {
     
     const imageLogic = props.header_image ? (
         <div className="site-page-header-image-container">
-            <img className="site-responsive-image"
+            <img className="main-container-pic"
                 alt="page_header" 
                 src={props.header_image}
                 />

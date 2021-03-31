@@ -1,9 +1,10 @@
 import React from 'react'
-// CSS
 // Components
 import SiteExternalLink from 'SiteCss/SiteExternalLink'
 import SiteFetcher from 'SiteCss/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
+
+const highlights_url = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/fight_highlights"
 
 const SiteSidebarHighlights = () => {
 
@@ -19,25 +20,25 @@ const SiteSidebarHighlights = () => {
         ]
     }
 
-    const highlights_url = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/fight_highlights"
-
     const responseData = SiteFetcher(highlights_url,fight_highlights)
-
     const fightHighlight = responseData.response.playlist_videos
 
     const renderHighlightsList = fightHighlight.slice(0,4).map(
 
         (highlight, index) => (
 
-            <div className="site-highlights-container" key={index}>
-                <div className="site-highlights-image-container">
+            <div className="highlights-container site-grid-system" key={index}>
+                <div className="highlight-image site-span-6 m-auto">
                     <SiteExternalLink 
                         url={`https://www.youtube.com/watch?v=${highlight.video_id}`}
                     >
-                        <img src={highlight.video_thumbnail} alt="highlight-cover"/>
+                        <img src={highlight.video_thumbnail} 
+                            alt="highlight-cover" 
+                            className="site-responsive-image" 
+                        />
                     </SiteExternalLink>
                 </div>
-                <div className="site-highlight-title" >
+                <div className="highlight-title site-span-6 m-auto" >
                     <SiteExternalLink 
                         url={`https://www.youtube.com/watch?v=${highlight.video_id}`}
                     >
@@ -52,14 +53,16 @@ const SiteSidebarHighlights = () => {
 
 
     return (
-        <div className="site-sidebar-section">
-            <div className="site-sidebar-title">
+        <div className="sidebar-section">
+            <div className="sidebar-title">
                 Fight Higlights
             </div>
+            <div className="highlights-list">
                 <SiteRender 
                     data={responseData} 
                     component={renderHighlightsList} 
                 />
+            </div>
         </div>
     )
 }
