@@ -1,21 +1,8 @@
-.history-of-modern-mma-container {
+.history-of-modern-mma {
     margin-top: 50px; 
 }
 
-.history-of-mma-modal {
-    grid-column: span 12;
+.history-modal {
     overflow-y: scroll;
     overflow-x: hidden;
-}
-
-.history-of-mma-button {
-    font-size: 27px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    height: 70px;
-    padding: 5px;
-    color: white;
-    background-color: black;
-    cursor: pointer;
 }

@@ -4,6 +4,7 @@ import SiteTabs from 'Components/SiteTabs'
 import SiteModal from 'Components/SiteModal'
 // Data 
 import RulesData from 'Data/Basics/RulesOfMMA/RulesData'
+import SiteLinkLargeButton from '../../../../SiteCss/SiteLinkLargeButton'
 
 const RulesCards = () => {
 
@@ -16,10 +17,10 @@ const RulesCards = () => {
     return (
         <div className="rules-of-mma-container">
             <h5>For a full list of rules, here is a list of the unified rules</h5>
-            <div className="history-of-mma-button" 
-                onClick={modalControl}>
-                The Unified Rules of MMA
-            </div>
+            <SiteLinkLargeButton 
+                click={modalControl} 
+                text="The Unified Rules of MMA" 
+            />
             { showModal && (
                     <SiteModal closeModal={modalControl} >
                         <div className="rules-modal w-100 h-100 site-span-12">

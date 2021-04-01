@@ -4,6 +4,7 @@ import SiteModal from 'Components/SiteModal'
 import SiteTimeline from 'Components/SiteTimeline'
 // Data
 import timelineData from 'Data/Basics/HistoryOfMMA/timelineData'
+import SiteLinkLargeButton from '../../../../SiteCss/SiteLinkLargeButton'
 
 const HistoryTimelineModal = () => {
     
@@ -14,15 +15,16 @@ const HistoryTimelineModal = () => {
         setShowModal(false)
     
     return (
-        <div className="history-of-modern-mma-container">
+        <div className="history-of-modern-mma">
             <h5>For a more comprehensive history of modern MMA check out out history MMA timeline!</h5>
-            <div className="history-of-mma-button w-80 m-auto" onClick={handleClick}>
-                The timeline of modern MMA
-            </div>
+            <SiteLinkLargeButton 
+                click={handleClick} 
+                text="Timeline of MMA" 
+            />
             {showModal && 
                 (
                     <SiteModal closeModal={handleClick}>
-                        <div className="history-of-mma-modal">
+                        <div className="history-modal site-span-12">
                             <SiteTimeline data={timelineData} />
                         </div>
                     </SiteModal>

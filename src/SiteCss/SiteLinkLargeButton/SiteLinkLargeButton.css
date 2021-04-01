@@ -1,0 +1,11 @@
+.link-large-button {
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    height: 70px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
