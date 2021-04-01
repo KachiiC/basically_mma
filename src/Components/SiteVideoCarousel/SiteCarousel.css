@@ -98,30 +98,3 @@
     text-align: center;
     cursor: pointer;
 }
-
-@media screen and (max-width: 1090px) {
-    .image-carousel {
-        width: 70%;
-    }
-
-    .gallery-modal-video-section,
-    .gallery-modal-suggestions-section {
-        grid-column: span 12;
-        height: 100%;
-    }
-
-    .gallery-fight-suggestions-header,
-    .gallery-fight-suggestions-section {
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .image-carousel {
-        width: 90%;
-    }
-
-    .image-carousel-container {
-        margin: 0px auto;
-    }
-}

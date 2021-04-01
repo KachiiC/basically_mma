@@ -1,0 +1,14 @@
+Data Format: 
+
+    const ExampleTimelineData = [
+        {
+            "name":
+            "year":
+            "event":
+        }
+    ]
+
+Usage Example: 
+    <SiteTimeline 
+        data={ExampleTimelineData} 
+    />

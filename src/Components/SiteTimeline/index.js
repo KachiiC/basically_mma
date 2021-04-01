@@ -1,6 +1,7 @@
 import React from 'react'
 // CSS
 import './SiteTimeline.css'
+import './Responsive.css'
 
 
 const SiteTimeline = (props) => {
@@ -28,14 +29,3 @@ const SiteTimeline = (props) => {
 
 export default SiteTimeline;
 
-// Data Format: 
-// const ExampleTimelineData = {
-//  "name":
-//  "year":
-//  "event":
-// }
-//
-// Usage Example: 
-// <SiteTimeline 
-//  data={ExampleTimelineData} 
-// />

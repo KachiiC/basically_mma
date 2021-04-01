@@ -1,0 +1,16 @@
+Data Format: 
+
+    const ExampleVideoCarouselData = [
+        {
+            "video_title": "",
+            "video_id": "",
+            "video_description": "",
+            "video_thumbnail": ""
+        }
+    ]
+
+Usage Example: 
+    < SiteVideoCarousel
+        data={ExampleVideoCarouselData} 
+        title="Carousel Title"
+    />

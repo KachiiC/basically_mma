@@ -65,25 +65,3 @@
     margin: 0px auto;
     padding: 5px;
 }
-
-@media screen and (max-width: 850px) {
-    
-    .site-timeline::after {
-        left: 31px;
-    }
-
-    .site-timeline-item {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    .site-timeline-item:nth-child(odd):after,
-    .site-timeline-item:nth-child(even):after {
-        left: 18px;
-    }
-
-    .site-timeline-item:nth-child(even) {
-        left: 0%;
-    }
-}

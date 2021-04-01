@@ -1,0 +1,30 @@
+@media screen and (max-width: 1080px) {
+    .site-timeline::after {
+        left: 31px;
+    }
+
+    .site-timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .site-timeline-item:nth-child(odd):after,
+    .site-timeline-item:nth-child(even):after {
+        left: 18px;
+    }
+
+    .site-timeline-item:nth-child(even) {
+        left: 0%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+}

@@ -6,9 +6,9 @@
     padding: 0px 5px;
 }
 
-.site-single-tab:last-child {
+/* .site-single-tab:last-child {
     border: none;
-}
+} */
 
 .site-single-tab:hover,
 .small-site-tab:hover {
@@ -22,10 +22,10 @@
     min-height: 80%;
 }
 
-.site-tab-example-container {
+.example-container {
     padding-top: 25px;
 }
 
 .site-tabs-display-content p {
-    padding: 10px 0px;
+    padding: 15px 0px;
 }

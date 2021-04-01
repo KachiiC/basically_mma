@@ -5,20 +5,7 @@ import './Responsive.css'
 // Components
 import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
 
-// Data Format: 
-// const ExampleData = {
-//     "title": "",
-//     "example": "",
-//     "content": "",
-//     "noteable_examples": "" <-- youtube_id
-// }
-//
-// Usage Example: 
-// <SiteTabs 
-//  tabs={ExampleData}
-//  example="yes" <-- if yes, all must have an example
-// />
-    
+
 const SiteTabs = (props) => {
 
     const [currentTab, setCurrentTab] = useState(0)
@@ -28,7 +15,6 @@ const SiteTabs = (props) => {
     // Tabs Data
     const tabs = props.tabs
 
-    // ???
     const overflowLogic = props.overflow === "yes" ? 
     {
         "overflowY": "scroll"
@@ -36,23 +22,26 @@ const SiteTabs = (props) => {
             "overflowY": "hidden"
         }
 
+    // Tabs
     const displayTabs = tabs.map(
         (tab, index) => {
             // If selected add border to bottom
             const borderLogic = tabs.indexOf(tab) === currentTab ? 
             "2px solid rgb(30, 111, 250)" : 
             "none"
+
+            const handleDisplayClick = () => setCurrentTab(tabs.indexOf(tab))
         
             return (
                 <div className="site-single-tab"
-                    onClick={() => setCurrentTab(tabs.indexOf(tab))}
+                    onClick={handleDisplayClick}
+                    key={index}
                     style={
                         {
                             "gridColumn": `span ${numberOfTabs/numberOfTabs}`,
                             "borderBottom": borderLogic
                         }
                     }
-                    key={index}
                 >
                     <h6 className="m-auto">{tab.title}</h6>
                 </div>
@@ -62,11 +51,9 @@ const SiteTabs = (props) => {
 
     // Render Example
     const renderExample = props.example === "yes" ? (
-        <div className="site-tab-example-container">
+        <div className="tab-example-container">
             <h5>Here is an example for you!</h5>
-            <SiteYoutubeVideo 
-                youtube_id={tabs[currentTab].example} 
-            />
+            <SiteYoutubeVideo youtube_id={tabs[currentTab].example} />
         </div>
     ): (
         <></>
@@ -82,7 +69,6 @@ const SiteTabs = (props) => {
                 }
             >
                 {displayTabs}
-
             </div>
             <div className="site-tabs-display-content w-100 h-80" style={overflowLogic}>
                 {tabs[currentTab].content}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 // CSS
 import './SiteCarousel.css'
+import './Responsive.css'
 // Components
 import SiteCarouselModal from './SiteCarouselModal'
 
@@ -41,15 +42,9 @@ const SiteVideoCarousel = (props) => {
                     />
                     {showModal && (
                         <SiteCarouselModal 
-                            youtube_id={
-                                imageData[selectedImage].video_id
-                            } 
-                            description={
-                                imageData[selectedImage].video_description
-                            }
-                            upload_date={
-                                imageData[selectedImage].upload_date
-                            }
+                            youtube_id={imageData[selectedImage].video_id} 
+                            description={imageData[selectedImage].video_description}
+                            upload_date={imageData[selectedImage].upload_date}
                             closeModal={handleModal}
                         />
                     )}
@@ -63,17 +58,3 @@ const SiteVideoCarousel = (props) => {
 }
 
 export default SiteVideoCarousel
-
-// Data Format: 
-// const ExampleVideoCarouselData = [{
-//     "video_title": "",
-//     "video_id": "",
-//     "video_description": "",
-//     "video_thumbnail": ""
-// }]
-//
-// Usage Example: 
-// < SiteVideoCarousel
-//  data={ExampleVideoCarouselData} 
-//  title="Carousel Title"
-// />
