@@ -5,10 +5,6 @@ import './Techniques.css'
 import TechniquesList from './PageComponents/TechniquesList'
 
 
-const Techniques = () => (
-
-    <TechniquesList />
-    
-)
+const Techniques = () => <TechniquesList />
 
 export default Techniques

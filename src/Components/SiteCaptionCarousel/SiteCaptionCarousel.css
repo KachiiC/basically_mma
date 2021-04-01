@@ -1,5 +1,4 @@
-.site-caption-carousel-container {
-    max-width: 100%;
+.caption-carousel {
     margin: 25px auto;
     padding: 0px 25px;
     text-align: center;
@@ -15,7 +14,6 @@
     padding: 10px 20px;
 }
 
-.site-caption-carousel-button {
-    margin: auto;
+.caption-carousel-button {
     cursor: pointer;
 }

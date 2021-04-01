@@ -26,12 +26,12 @@ const fundamentalsData = [
         image: "",
     },
     {
-        title: "Strength & Conditioning",
+        title: "Conditioning",
         content: "",       
         image: ""
     },
     {
-        title: "Nutrition & recovery",
+        title: "Nutrition",
         content: "",       
         image: ""
     },

@@ -1,9 +1,7 @@
 import React, {useState} from 'react'
 // CSS
 import './SiteTabs.css'
-// Icon
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAngleDoubleLeft, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
+import './Responsive.css'
 // Components
 import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
 
@@ -24,10 +22,13 @@ import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
 const SiteTabs = (props) => {
 
     const [currentTab, setCurrentTab] = useState(0)
-    const [smallTabIndex, setSmallTabIndex] = useState((1))
+
+    // Number of Tabs
     const numberOfTabs = props.tabs.length
-    
+    // Tabs Data
     const tabs = props.tabs
+
+    // ???
     const overflowLogic = props.overflow === "yes" ? 
     {
         "overflowY": "scroll"
@@ -37,13 +38,13 @@ const SiteTabs = (props) => {
 
     const displayTabs = tabs.map(
         (tab, index) => {
+            // If selected add border to bottom
             const borderLogic = tabs.indexOf(tab) === currentTab ? 
-            "2px solid rgb(30, 111, 250)": 
+            "2px solid rgb(30, 111, 250)" : 
             "none"
         
             return (
                 <div className="site-single-tab"
-                    key={index}
                     onClick={() => setCurrentTab(tabs.indexOf(tab))}
                     style={
                         {
@@ -51,44 +52,15 @@ const SiteTabs = (props) => {
                             "borderBottom": borderLogic
                         }
                     }
+                    key={index}
                 >
-                    <h6>{tab.title}</h6>
+                    <h6 className="m-auto">{tab.title}</h6>
                 </div>
             )
         }
     )
 
-    const allSmallSiteTabs = tabs.map(
-        (tab, index) => (
-            <div className="small-site-tab"
-                key={index}
-                onClick={
-                    () => setCurrentTab(tabs.indexOf(tab))
-                }
-            >
-                <h6>{tab.title}</h6>
-            </div>
-        )
-    )
-
-    const displayedSmallSiteTabs = (
-        <>
-            {allSmallSiteTabs[smallTabIndex]}
-            {allSmallSiteTabs[smallTabIndex + 1]}
-            {allSmallSiteTabs[smallTabIndex + 2]}
-        </>
-    )
-
-    const handlePrev = () => {
-        smallTabIndex === 0 ? setSmallTabIndex(tabs.length -1):
-        setSmallTabIndex(smallTabIndex - 1)
-    }
-    
-    const handleNext = () => {
-        smallTabIndex === smallTabIndex + 3 ? setSmallTabIndex(0):
-        setSmallTabIndex(smallTabIndex + 1)
-    }
-
+    // Render Example
     const renderExample = props.example === "yes" ? (
         <div className="site-tab-example-container">
             <h5>Here is an example for you!</h5>
@@ -97,14 +69,12 @@ const SiteTabs = (props) => {
             />
         </div>
     ): (
-        <>
-        </>
+        <></>
     )
 
     return (
-        <div className="site-tabs-component-container">
-            <div 
-                className="site-tabs-component-row"
+        <div className="w-90 m-auto">
+            <div className="site-tabs-component-row"
                 style={
                     {
                         "gridTemplateColumns": `repeat(${numberOfTabs},1fr)`
@@ -112,27 +82,9 @@ const SiteTabs = (props) => {
                 }
             >
                 {displayTabs}
-                <div className="small-site-tabs-button"
-                    onClick={handlePrev}
-                >
-                    <FontAwesomeIcon icon={faAngleDoubleLeft}
-                        size="2x" 
-                        className="tab-prev-button"
-                    />
-                </div>
-                {displayedSmallSiteTabs}
-                <div className="small-site-tabs-button"
-                    onClick={handleNext}
-                >
-                    <FontAwesomeIcon icon={faAngleDoubleRight}
-                        size="2x" 
-                        className="tab-next-button"
-                    />
-                </div>
+
             </div>
-            <div className="site-tabs-display-content"
-                style={overflowLogic}
-            >
+            <div className="site-tabs-display-content w-100 h-80" style={overflowLogic}>
                 {tabs[currentTab].content}
                 {renderExample}
             </div>

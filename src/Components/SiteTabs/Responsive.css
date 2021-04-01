@@ -1,0 +1,23 @@
+@media screen and (max-width: 1080px) {
+
+    .site-tabs-component-row {
+        display: flex;
+        overflow-y: scroll;
+        padding: 20px;
+    }
+
+    .site-single-tab {
+        width: 250%;
+        min-width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+}
