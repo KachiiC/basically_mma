@@ -46,16 +46,3 @@ const SiteCaptionCarousel = (props) => {
 }
 
 export default SiteCaptionCarousel
-
-// Example Usage:
-//
-// <SiteCaptionCarousel data={} />
-//
-// ExampleData:
-//
-// const ExampleData = [
-//     {
-//         image: "",
-//         caption: "",
-//     }
-// ]

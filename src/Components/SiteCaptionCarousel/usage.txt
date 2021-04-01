@@ -1,0 +1,12 @@
+Example Usage:
+
+    <SiteCaptionCarousel data={} />
+
+ExampleData:
+
+    const ExampleData = [
+        {
+            image: "",
+            caption: "",
+        }
+    ]

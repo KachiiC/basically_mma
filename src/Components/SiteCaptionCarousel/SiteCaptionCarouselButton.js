@@ -12,7 +12,7 @@ const SiteCaptionCarouselButton = (props) => {
 
     return (
         <div className="caption-carousel-button m-auto" onClick={props.function}>
-            <FontAwesomeIcon icon={renderDirection} />
+            <FontAwesomeIcon icon={renderDirection} size="2x" />
         </div>
     )
 }

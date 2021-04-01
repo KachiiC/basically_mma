@@ -3,8 +3,7 @@
     grid-template-columns: repeat(14, 1fr);
 }
 
-.site-slider-image-container {
-    grid-column: span 2;
+.slider-container {
     width: 98%;
     max-width: 98%;
 }
@@ -16,5 +15,4 @@
 
 .site-slider-button {
     grid-column: span 1;
-    width: 90%;
 }

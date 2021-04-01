@@ -29,14 +29,3 @@ const SiteModal = (props) => {
   
   
 export default SiteModal;
-
-// Insert the modal content as children of the popup modal
-// sections of the content layout must be in grid format, for example "grid-columns": "span 12"
-
-// SUGGESTED USE
-// const [showModal, setShowModal] = useState(false)
-// const handleClick = showModal === true ?  setShowModal(false): setShowModal(true)
-//
-// <SiteModal onClick={handleClick}>
-//   <div style={{"grid-columns": "span 12"}}>My Content</div>
-// </SiteModal>

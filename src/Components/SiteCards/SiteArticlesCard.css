@@ -51,7 +51,7 @@ hr {
     margin: 25px auto;
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1080px) {
 
     .recommended-reading-feature,
     .other-recommended-reading {

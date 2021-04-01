@@ -1,15 +1,11 @@
 @media screen and (max-width: 1080px) {
-    
     .site-modal-screen {
         width: 95%;
     }
-
 }
 
 @media screen and (max-width: 640px) {
-    
     .site-modal-screen {
         width: 90%;
     }
-
 }

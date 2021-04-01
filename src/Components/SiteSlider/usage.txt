@@ -1,0 +1,16 @@
+**Each data set must be an array divisable by 6 **
+**Each object in the array must have post_link and post_thumbnail properties**
+
+Data Format: 
+
+    const DataExample = [
+        {
+            "post_link": "", <-- Link
+            "thumbnail": "" <-- Image
+        }
+    ]
+
+    <SiteSlider
+        title="slider title"
+        data={DataExample}
+    />

@@ -11,18 +11,18 @@ const SiteSlider = (props) => {
         secondSlide: 6
     })
 
+    const total_slides = props.data.length
+
     const displayPosts = props.data.map(
         (post, index) => (
-            <div className="site-slider-image-container h-auto m-auto" 
-                key={index}
-            >
+            <div className="slider-container h-auto m-auto site-span-2" key={index}>
                 <a href={`https://www.instagram.com/p/${post.post_link}`} 
                     rel="noopener noreferrer" 
                     target="_blank"
                 >
-                    <img src={post.thumbnail} 
+                    <img className="site-responsive-image site-slider-image"
+                        src={post.thumbnail} 
                         alt={index} 
-                        className="site-responsive-image site-slider-image"
                     />
                 </a>
             </div>
@@ -36,8 +36,8 @@ const SiteSlider = (props) => {
         slideNumber.firstSlide === 0 ?
         setSlideNumber(
             {
-                firstSlide: 30,
-                secondSlide: 36
+                firstSlide: total_slides - 6,
+                secondSlide: total_slides
             }
         ): setSlideNumber(
             {
@@ -48,7 +48,7 @@ const SiteSlider = (props) => {
     }
 
     const nextClick = () => {
-        slideNumber.secondSlide === 36 ?
+        slideNumber.secondSlide === total_slides ?
         setSlideNumber(
             {
                 firstSlide: 0,
@@ -63,32 +63,15 @@ const SiteSlider = (props) => {
     }
 
     return (
-        <div>
+        <>
             <h5>{props.title}</h5>
             <div className="site-slider-container h-auto width-100">
-                <SiteSliderButton 
-                    direction="left" 
-                    onClick={prevClick}
-                />
+                <SiteSliderButton direction="left" onClick={prevClick} />
                 {displayPosts}
-                <SiteSliderButton 
-                    className="site-border"
-                    direction="right" 
-                    onClick={nextClick}
-                />
+                <SiteSliderButton direction="right" onClick={nextClick} />
             </div>
-        </div>
+        </>
     )
 }
 
 export default SiteSlider
-
-// Data Format: 
-// const DataExample = [
-//     {
-//         "post_link": "", <-- Link
-//         "thumbnail": "" <-- Image
-//     }
-// ]
-// Each data set must be an array have 36 objects
-// Each object must have post_link and post_thumbnail properties
