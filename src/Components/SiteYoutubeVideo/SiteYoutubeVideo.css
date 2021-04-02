@@ -1,17 +1,20 @@
 .youtube-video-container {
-    width: 100%;
-    max-width: 100%;
     text-align: center;
 }
 
 .youtube-video {
     width: 471px;
     height: 265px;
-    max-width: 100%;
 }
 
-@media screen and (max-width: 500px) {
+.youtube-video-container,
+.youtube-video {
+    max-width: 100%;   
+}
+
+
+@media screen and (max-width: 640px) {
     .youtube-video {
-        width: 100%;
+        width: 95%;
     }
 }

@@ -8,7 +8,7 @@ import './SiteYoutubeVideo.css'
 const SiteYoutubeVideo = (props) => {
 
     return (
-        <div className="youtube-video-container">
+        <div className="youtube-video-container w-100">
             <iframe 
                 className="youtube-video"
                 title="mma_explanation"

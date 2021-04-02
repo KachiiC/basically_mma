@@ -14,40 +14,26 @@
 
 /* GALLERY MODAL */
 
+.video-carousel-section {
+    height: 95%;
+    overflow-y: scroll;
+}
+
 /* MODAL VIDEO SECTION */
-
-.gallery-modal-video-section {
-    grid-column: span 3;
-    width: 100%;
-    max-width: 100%;
-    margin: 0px;
-    cursor: auto;
-    max-height: 100%;
-}
-
-.gallery-modal-suggestions-section {
-    grid-column: span 5;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    cursor: auto;
-}
-
-.gallery-modal-description-section {
+.modal-video-description-section {
     padding: 20px 30px;
     text-align: left;
     font-size: 22px;
 }
 
-.gallery-modal-description {
+.modal-description {
     margin-top: 20px;
     font-size: 18px;
-    height: 100%;
 }
 
-.gallery-fight-suggestions-header {
-    grid-column: span 12;
+/* MODAL SUGGESTION SECTION */
+.fight-suggestions-header {
     margin: 0px auto;
-    width: 95%;
     height: 50px;
     padding: 10px;
     background-color: black;
@@ -57,28 +43,21 @@
     text-align: center;
 }
 
-.gallery-fight-suggestions-section {
-    grid-column: span 12;
-    width: 100%;
+.fight-suggestions-section {
     padding: 0px 20px;
 }
 
-.gallery-fight-suggestions-section {
-
+.fight-suggestions-section .image-container {
+    padding: 20px;
 }
 
-.gallery-fight-suggestion-image-container {
-    width: 100%;
-    height: auto;
+.fight-suggestion-title {
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
 }
 
-.gallery-fight-suggestion-title {
-    max-width: 100%;
-    margin: auto;
-    width: 100%;
-    font-size: 15px;
-    padding: 10px;
-    text-align: center;
+.fight-suggestions-section .image-container,
+.fight-suggestion-title  {
     cursor: pointer;
 }

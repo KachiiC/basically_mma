@@ -1,21 +1,8 @@
 @media screen and (max-width: 1080px) {
-    .image-carousel {
-        width: 70%;
-    }
-
-    .gallery-modal-video-section,
-    .gallery-modal-suggestions-section {
-        grid-column: span 12;
-        height: 100%;
-    }
-
-    .gallery-fight-suggestions-header,
-    .gallery-fight-suggestions-section {
-        margin-bottom: 20px;
-    }
-
     .video-carousel-section {
         grid-column: span 12;
+        height: 100%;
+        overflow: visible;
     }
 
 }

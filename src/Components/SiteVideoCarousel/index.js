@@ -48,6 +48,7 @@ const SiteVideoCarousel = (props) => {
                     youtube_id={imageData[selectedImage].video_id} 
                     description={imageData[selectedImage].video_description}
                     upload_date={imageData[selectedImage].upload_date}
+                    video_title={imageData[selectedImage].video_title}
                     closeModal={handleModal}
                 />
             )}
