@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 // CSS
-import './SiteCarousel.css'
+import './SiteVideoCarousel.css'
 import './Responsive.css'
 // Components
-import SiteCarouselModal from './SiteCarouselModal'
+import VideoCarouselModal from './VideoModal'
 
 
 const SiteVideoCarousel = (props) => {
@@ -15,7 +15,7 @@ const SiteVideoCarousel = (props) => {
 
     const handleModal = () => showModal === true? setShowModal(false) :setShowModal(true)
 
-    const displayImagesRow = imageData.slice(0,5).map((image, index) => {
+    const displayImagesRow = imageData.slice(0,6).map((image, index) => {
 
         const handleChange = () => setSelectedImage(imageData.indexOf(image))
 
@@ -33,26 +33,24 @@ const SiteVideoCarousel = (props) => {
     return (
         <div className="image-carousel-container">
             <h2>{props.title}</h2>
-            <div className="image-carousel">
-                <div className="selected-image-container">
-                    <img src={imageData[selectedImage].video_thumbnail} 
-                        alt="current_slide" 
-                        className="selected-image"
-                        onClick={handleModal}
-                    />
-                    {showModal && (
-                        <SiteCarouselModal 
-                            youtube_id={imageData[selectedImage].video_id} 
-                            description={imageData[selectedImage].video_description}
-                            upload_date={imageData[selectedImage].upload_date}
-                            closeModal={handleModal}
-                        />
-                    )}
-                </div>
-                <div className="selectable-images-row">
+            <div className="m-auto w-90">
+                <img src={imageData[selectedImage].video_thumbnail} 
+                    alt="current_slide" 
+                    className="site-responsive-image selected-image"
+                    onClick={handleModal}
+                />
+                <div className="site-grid-system">
                     {displayImagesRow}
                 </div>
             </div>
+            {showModal && (
+                <VideoCarouselModal 
+                    youtube_id={imageData[selectedImage].video_id} 
+                    description={imageData[selectedImage].video_description}
+                    upload_date={imageData[selectedImage].upload_date}
+                    closeModal={handleModal}
+                />
+            )}
         </div>
     )
 }

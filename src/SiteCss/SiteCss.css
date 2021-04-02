@@ -162,6 +162,11 @@
     margin: auto;
 }
 
+/* overflow */
+.site-overflow {
+    overflow-y: scroll;
+}
+
 @media screen and (max-width: 1080px) {
     
 }

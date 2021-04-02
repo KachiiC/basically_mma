@@ -9,6 +9,9 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons"
 const SiteModal = (props) => {
 
   const { closeModal } = props;
+
+
+  const overflowStyle = props.overflow === "yes" ? "site-overflow": ""
   
     return (
         <div className="site-overlay w-100 h-100">
@@ -19,7 +22,7 @@ const SiteModal = (props) => {
                   className="close-button"
                 />
             </div>
-            <div className="modal-content w-100 site-grid-system" style={props.style}>
+            <div className={`site-modal-content w-100 site-grid-system ${overflowStyle}`} style={props.style}>
               {props.children}  
             </div>
           </div>

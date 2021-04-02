@@ -13,6 +13,11 @@
     .gallery-fight-suggestions-section {
         margin-bottom: 20px;
     }
+
+    .video-carousel-section {
+        grid-column: span 12;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
