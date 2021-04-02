@@ -26,7 +26,7 @@ const SiteYoutubeVideo = (props) => {
                     picture-in-picture
                 "
                 height={props.height}
-                weight={props.weight}
+                width={props.width}
             />
         </div>
     )
