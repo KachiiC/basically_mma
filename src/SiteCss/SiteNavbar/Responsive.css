@@ -1,0 +1,58 @@
+@media screen and (max-width: 900px) {
+    .nav-menu-list {
+        display: none;
+    }
+
+    .nav-logo {
+        float: left;
+        width: 60%;
+        height: 100%;
+        text-align: left;
+    }
+
+    .nav-logo h1 {
+        padding-left: 50px;
+        text-align: left;
+    }
+
+    .small-menu-screen,
+    .small-menu-block {
+        display: block;
+    }
+
+    .small-menu-container {
+        height: 100%;
+        float: right;
+        text-align: end;
+        width: 40%;
+        margin: 25px auto;
+        padding: 0px 20px;
+    }
+
+    .small-menu-button {
+        cursor: pointer;
+        width: 70px;
+        float:right;
+    }
+
+    .small-menu-screen button {
+        margin: 25px 10px;
+    }
+
+    .small-menu-block {
+        background-color: black;
+        width: 100%;
+        position: absolute;
+        margin-top: 79px;
+        padding: 0px;
+        text-align: center;
+        overflow-y: scroll;
+    }
+
+    .small-menu-block h4, 
+    .small-menu-block h5 {
+        color: white !important;
+        padding: 5px;
+    }
+
+}

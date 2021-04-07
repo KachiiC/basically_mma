@@ -1,40 +1,21 @@
-import React, {useState} from 'react'
+import React from 'react'
 // CSS
 import './SiteNavbar.css'
+import './Responsive.css'
 // Components
-import SiteMenu from './SiteMenu'
-import SiteMenuSmall from './SiteMenuSmall'
-// Icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import MenuLogo from './NavbarComponents/MenuLogo'
+import MenuList from './NavbarComponents/MenuList'
+import SmallMenu from './NavbarComponents/SmallMenu'
 
+const SiteNavbar = () => (
 
-const SiteNavbar = () =>  {
+    <nav>
+      <MenuLogo />
+      <MenuList />
+      <SmallMenu />
+    </nav>
 
-    const [smallMenu, setSmallMenu] = useState(false)
-
-    const myFunction = () => {
-      smallMenu === false ? setSmallMenu(true): setSmallMenu(false)
-    }
-  
-    return (
-      <nav>
-        <div className="topnav" id="myTopnav">
-            <SiteMenu>
-              <div className="icon" onClick={myFunction} >
-                Menu <FontAwesomeIcon icon={faBars}/>
-              </div>
-            </SiteMenu >
-        </div>
-        { 
-          smallMenu && (
-              <SiteMenuSmall function={myFunction} />
-          )
-        }
-      </nav>
-    )
-    
-}
+)
 
 
 export default SiteNavbar;
