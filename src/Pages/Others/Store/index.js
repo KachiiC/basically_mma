@@ -3,6 +3,7 @@ import React from 'react'
 import StoreItems from 'Pages/Others/Store/PageComponents/StoreItems'
 // CSS 
 import './Store.css'
+import './Responsive.css'
 
 
 const Store = () => <StoreItems />

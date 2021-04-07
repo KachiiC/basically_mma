@@ -32,6 +32,7 @@ const App = () => {
     )
   )
 
+  // Filter dropdown pages
   const mySubLinks = pagesData.filter((page) => page.sub_menu === true)
   
   // Basics

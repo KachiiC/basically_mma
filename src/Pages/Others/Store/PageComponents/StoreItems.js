@@ -19,10 +19,15 @@ const StoreItems = () => {
     const responseData = SiteFetcher(storeItemsURL, storeList)
     const siteStore = responseData.response
 
-    const storeItemsList = siteStore.map((item, index) => (
+    const storeItemsList = siteStore.map((item, index) => {
 
-            <div className="store-item-container site-span-6" key={index}>
-                <h4>{item.name}</h4>
+        const trimmedName = item.name.split("").slice(0,25).join("") + "..."
+
+        const renderName = item.name.split("").length > 25? trimmedName: item.name
+
+        return(
+            <div className="store-item-container site-span-3" key={index}>
+                <h4>{renderName}</h4>
                 <div className="store-item-image-container">
                     <SiteExternalLink url={item.product_link}>
                         <img src={item.product_thumbnail} 
@@ -35,7 +40,7 @@ const StoreItems = () => {
             </div>
 
         )
-    )
+    })
 
     return (
         <div className="site-grid-system">    
