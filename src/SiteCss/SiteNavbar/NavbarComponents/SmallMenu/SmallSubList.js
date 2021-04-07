@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 // COMPONENTS
 import TitleRender from 'SiteCss/SiteTitleRender'
 import {Link} from "react-router-dom";
 
 const SmallScreenSubList = (props, click) => {
+
+    const [subList, setSubList] = useState(false)
 
     const displaySubList = props.menu_list.map((sub, index) => {
         const displaySub = TitleRender(sub.title)
@@ -18,10 +20,13 @@ const SmallScreenSubList = (props, click) => {
     })
 
     const displayTitle = TitleRender(props.title)
+
+    const handleClick = () => subList === false ? setSubList(true) : setSubList(false)
+
     return (
         <>
-            <h4>{displayTitle}</h4>
-            {displaySubList}
+            <h4 onClick={handleClick}>{displayTitle}</h4>
+            {subList && displaySubList}
         </>
     )
 }

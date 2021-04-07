@@ -53,6 +53,7 @@
     .small-menu-block h5 {
         color: white !important;
         padding: 5px;
+        cursor: pointer;
     }
 
 }
