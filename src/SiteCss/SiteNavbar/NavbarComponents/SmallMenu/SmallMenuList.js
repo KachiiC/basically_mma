@@ -14,7 +14,7 @@ const SmallMenuList = (props) => {
 
         const renderMenuType = menu.sub_menu === true ? 
             SmallScreenSubList(menu, props.click) : (
-                <Link to={`/basically_mma/${menu.title}`} key={index}>
+                <Link to={`/basically_mma/${menu.title}`} key={index} onClick={props.click}>
                     <h4>{menu_title}</h4>
                 </Link>
             )

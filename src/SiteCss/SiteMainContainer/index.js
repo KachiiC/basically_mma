@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 // CSS
 import './SiteMainContainer.css'
 import './Responsive.css'
@@ -6,7 +6,8 @@ import './Responsive.css'
 import SiteSidebar from 'SiteCss/SiteSidebar'
 
 const SiteMainContainer = (props) => {
-    
+
+    // Header Image
     const imageLogic = props.header_image ? (
         <div className="header-image-container w-100">
             <img className="main-container-pic w-100"
@@ -16,11 +17,20 @@ const SiteMainContainer = (props) => {
         </div>
     ) : <></>
 
+    // Sidebar Logic
+    const pageSpan = props.sidebar ? 8 : 12
+
+    const sidebarLogic = props.sidebar
+        if (props.sidebar === true) {
+            return <SiteSidebar />
+        }
+    
+    
     return (
         <>
         {imageLogic}
         <div className="site-grid-system">
-            <main className="site-span-8">
+            <main className={`site-span-${pageSpan}`}>
                 <h1 className="page-title">
                     {props.title}
                 </h1>
@@ -28,7 +38,7 @@ const SiteMainContainer = (props) => {
                 {props.example_video}
                 {props.main_display}
             </main>
-            <SiteSidebar />
+            {sidebarLogic}
         </div>
         </>
     )

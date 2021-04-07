@@ -67,7 +67,6 @@
 @media screen and (max-width: 640px) {
     .site-article-entry-container {
         width: 100%;
-        border: 1px solid black;
     }
 
     .site-article-entry-container h5 {

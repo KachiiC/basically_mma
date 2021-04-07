@@ -12,15 +12,18 @@ const MenuList = () => {
         
         const menu_column = menuData.length/menuData.length
 
+        const regular_menu = 
+        <Link to={`/basically_mma/${menu.title}`}>
+            {TitleRender(menu.title)}
+        </Link>
+
         const renderMenuType = menu.sub_menu === true ? 
-        DropdownList(menu) : TitleRender(menu.title)
+        DropdownList(menu) : regular_menu
 
         return (
-        <div key={index} className={`site-span-${menu_column} nav-heading`}>
-            <Link to={`/basically_mma/${menu.title}`}>
+            <div key={index} className={`site-span-${menu_column} nav-heading`}>
                 {renderMenuType}
-            </Link>
-        </div>
+            </div>
         )
         
     })
@@ -28,7 +31,7 @@ const MenuList = () => {
     const gridNumber = menuData.length
 
     return (
-        <div className="nav-menu-list site-grid-system"
+        <div className="nav-menu-list site-grid-system w-70"
             style={{"gridTemplateColumns": `repeat(${gridNumber},1fr)`}}
         >
             {Menu}

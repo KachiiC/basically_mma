@@ -6,12 +6,13 @@ import 'SiteCss/SiteCss.css'
 import 'antd/dist/antd.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // Components
-import {BrowserRouter, Switch, Route} from "react-router-dom";
+import {BrowserRouter, Switch, Route} from "react-router-dom"
 import SiteScrollToTop from 'SiteCss/SiteScrollToTop'
-import SiteNavbar from 'SiteCss/SiteNavbar';
-import SiteFooter from 'SiteCss/SiteFooter';
+import SiteNavbar from 'SiteCss/SiteNavbar'
+import SiteFooter from 'SiteCss/SiteFooter'
 import SiteMainContainer from 'SiteCss/SiteMainContainer'
-import SiteExampleVideo from './SiteCss/SiteExampleVideo';
+import SiteExampleVideo from './SiteCss/SiteExampleVideo'
+import SiteSidebar from 'SiteCss/SiteSidebar'
 // Data
 import pagesData from './Data/pagesData'
 // Pages
@@ -19,6 +20,7 @@ import Home from './Pages/Others/Home'
 
 const App = () => {
 
+  // Regular Pages
   const displayLinks = pagesData.map((page, index) => (
       <Route path={`/basically_mma/${page.title}`} key={index}>
         <SiteMainContainer
@@ -40,11 +42,12 @@ const App = () => {
       return (
 
         <Route path={`/basically_mma/${sub.title}`} key={index}>
-          <SiteMainContainer 
+          <SiteMainContainer
             title={displayTitle}
             introduction={sub.introduction}
             main_display={sub.display}
             header_image={sub.header_image}
+            sidebar={<SiteSidebar />}
             example_video={
               <SiteExampleVideo
                 description={sub.example_video_description}
@@ -71,6 +74,7 @@ const App = () => {
               introduction={sub.introduction}
               main_display={sub.display}
               header_image={sub.header_image}
+              sidebar={<SiteSidebar />}
             />
         </Route>
       )
@@ -78,6 +82,7 @@ const App = () => {
     }
   )
 
+  // MMA WORLD
   const displayMMAWorld = mySubLinks[2].menu_list.map(
     
     (sub, index) => {
@@ -90,6 +95,7 @@ const App = () => {
                 title={displayTitle}
                 main_display={sub.display}
                 introduction={sub.introduction}
+                sidebar={<SiteSidebar />}
               />
           </Route>
         )
@@ -101,15 +107,15 @@ const App = () => {
           <SiteScrollToTop />
           <SiteNavbar />
           <div className="site-body">
-              <Switch>
-                {displayLinks}
-                {displayBasics}
-                {diplayAdvanced}
-                {displayMMAWorld}
-                <Route path="/" >
-                  <Home/>
-                </Route>
-              </Switch>
+            <Switch>
+              {displayLinks}
+              {displayBasics}
+              {diplayAdvanced}
+              {displayMMAWorld}
+              <Route path="/" >
+                <Home/>
+              </Route>
+            </Switch>
           </div>
           <SiteFooter />
         </BrowserRouter>

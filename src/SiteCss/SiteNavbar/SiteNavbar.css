@@ -6,14 +6,11 @@ nav {
     position: fixed;
     z-index: 100;
     top: 0;
-    width: 100%;
 }
 
 /* MENU LOGO */
 .nav-logo {
     float: left;
-    width: 30%;
-    height: 100%;
 }
 
 .nav-logo h1 {
@@ -23,13 +20,11 @@ nav {
 
 /* MENU LIST */
 .nav-menu-list {
-    width: 70%;
     margin: 27px 0px;
 }
 
 .nav-heading a{
     text-align: center;
-    margin: auto;
     font-weight: 700;
     color: white !important;
 }
