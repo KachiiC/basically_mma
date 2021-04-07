@@ -59,6 +59,7 @@ nav {
 .nav-heading,
 .nav-sub-menu h6 {
     cursor: pointer;
+    font-weight: 700;
 }
 
 /* SMALL MENU  */

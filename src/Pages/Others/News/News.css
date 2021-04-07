@@ -1,21 +1,15 @@
-.site-articles-container {
-
-}
-
 .single-article {
     margin: 10px auto;
-
 }
 
 .single-article .article-text {
     height: 225px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .site-articles-container p {
     padding: 0px 30px;
 }
-
 
 .site-article-entry-container {
     margin: 30px auto;

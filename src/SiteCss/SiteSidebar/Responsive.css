@@ -1,11 +1,7 @@
 @media screen and (max-width: 1080px) {
     aside {
         grid-column: span 12 !important;
-        width: 100%;
-    }
-
-    .site-sidebar {
-        width: 90%;
+        width: 90% !important;
     }
 
     .sidebar-introduction {
@@ -31,7 +27,7 @@
 
 @media screen and (max-width: 640px) {
     .site-sidebar {
-        width: 90%;
+        width: 100%;
     }
 
     .highlights-container {
