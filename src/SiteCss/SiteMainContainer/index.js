@@ -8,7 +8,7 @@ import SiteSidebar from 'SiteCss/SiteSidebar'
 const SiteMainContainer = (props) => {
     
     const imageLogic = props.header_image ? (
-        <div className="header-image-container w-90">
+        <div className="header-image-container w-100">
             <img className="main-container-pic w-100"
                 alt="page_header" 
                 src={props.header_image}
@@ -17,18 +17,20 @@ const SiteMainContainer = (props) => {
     ) : <></>
 
     return (
+        <>
+        {imageLogic}
         <div className="site-grid-system">
-            <main>
+            <main className="site-span-8">
                 <h1 className="page-title">
                     {props.title}
                 </h1>
-                {imageLogic}
                 {props.introduction}
                 {props.example_video}
                 {props.main_display}
             </main>
             <SiteSidebar />
         </div>
+        </>
     )
     
 }

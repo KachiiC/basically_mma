@@ -10,7 +10,6 @@ const SiteModal = (props) => {
 
   const { closeModal } = props;
 
-
   const overflowStyle = props.overflow === "yes" ? "site-overflow": ""
   
     return (

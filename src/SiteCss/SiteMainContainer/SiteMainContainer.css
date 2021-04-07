@@ -1,5 +1,4 @@
 main {
-    grid-column: span 8;
     margin: 0px auto 25px;
     padding: 0px 10px;
     overflow: hidden;
@@ -16,6 +15,7 @@ main {
 }
 
 .main-container-pic {
+    margin-top: 0px;
     height: 360px;
     object-fit: cover;
 }

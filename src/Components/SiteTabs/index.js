@@ -7,47 +7,34 @@ import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
 
 
 const SiteTabs = (props) => {
-
+    // Default is first tab
     const [currentTab, setCurrentTab] = useState(0)
 
-    // Number of Tabs
-    const numberOfTabs = props.tabs.length
-    // Tabs Data
+    // Tab Properties
     const tabs = props.tabs
-
-    const overflowLogic = props.overflow === "yes" ? 
-    {
-        "overflowY": "scroll"
-    } : {
-            "overflowY": "hidden"
-        }
+    const numberOfTabs = props.tabs.length
+    
+    // Tabs border ("yes" if it will overflow)
+    const tabsBorderLogic = props.border === "yes" ? "site-border": ""
 
     // Tabs
-    const displayTabs = tabs.map(
-        (tab, index) => {
-            // If selected add border to bottom
-            const borderLogic = tabs.indexOf(tab) === currentTab ? 
-            "2px solid rgb(30, 111, 250)" : 
-            "none"
+    const displayTabs = tabs.map((tab, index) => {
+        // If selected add border to bottom
+        const borderLogic = tabs.indexOf(tab) === currentTab ? 
+            "2px solid rgb(30, 111, 250)" : ""
 
-            const handleDisplayClick = () => setCurrentTab(tabs.indexOf(tab))
+        const handleDisplayClick = () => setCurrentTab(tabs.indexOf(tab))
         
-            return (
-                <div className="site-single-tab"
-                    onClick={handleDisplayClick}
-                    key={index}
-                    style={
-                        {
-                            "gridColumn": `span ${numberOfTabs/numberOfTabs}`,
-                            "borderBottom": borderLogic
-                        }
-                    }
-                >
-                    <h6 className="m-auto">{tab.title}</h6>
-                </div>
-            )
-        }
-    )
+        return (
+            <div className={`site-single-tab site-span-1`}
+                onClick={handleDisplayClick}
+                key={index}
+                style={{"borderBottom": borderLogic}}
+            >
+                <h6 className="m-auto">{tab.title}</h6>
+            </div>
+        )
+    })
 
     // Render Example
     const renderExample = props.example === "yes" ? (
@@ -60,17 +47,13 @@ const SiteTabs = (props) => {
     )
 
     return (
-        <div className="w-90 m-auto">
-            <div className="site-tabs-component-row"
-                style={
-                    {
-                        "gridTemplateColumns": `repeat(${numberOfTabs},1fr)`
-                    }
-                }
+        <div className={`w-90 m-auto ${tabsBorderLogic}`}>
+            <div className="site-grid site-tabs-row"
+                style={{"gridTemplateColumns": `repeat(${numberOfTabs},1fr)`}}
             >
                 {displayTabs}
             </div>
-            <div className="site-tabs-display-content w-100 h-80" style={overflowLogic}>
+            <div className="site-tabs-display-content site-overflow">
                 {tabs[currentTab].content}
                 {renderExample}
             </div>

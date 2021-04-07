@@ -1,6 +1,6 @@
 aside {
-    grid-column: span 4;
     padding: 25px 0px;
+    margin: 0px auto; 
 }
 
 .site-sidebar {

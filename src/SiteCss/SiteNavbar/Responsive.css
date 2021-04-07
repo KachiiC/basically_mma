@@ -16,7 +16,8 @@
     }
 
     .small-menu-screen,
-    .small-menu-block {
+    .small-menu-block,
+    .small-menu-container {
         display: block;
     }
 
@@ -53,7 +54,7 @@
     .small-menu-block h5 {
         color: white !important;
         padding: 5px;
-        cursor: pointer;
+            cursor: pointer;
     }
 
 }

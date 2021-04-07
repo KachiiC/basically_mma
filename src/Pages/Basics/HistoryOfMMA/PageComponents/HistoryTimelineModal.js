@@ -4,7 +4,7 @@ import SiteModal from 'Components/SiteModal'
 import SiteTimeline from 'Components/SiteTimeline'
 // Data
 import timelineData from 'Data/Basics/HistoryOfMMA/timelineData'
-import SiteLinkLargeButton from '../../../../SiteCss/SiteLinkLargeButton'
+import SiteLinkLargeButton from 'SiteCss/SiteLinkLargeButton'
 
 const HistoryTimelineModal = () => {
     

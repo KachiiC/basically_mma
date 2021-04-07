@@ -8,7 +8,7 @@ import SiteSidebarHighlights from './SiteSidebarSections/SiteSidebarHighlights'
 
 const SiteSidebar = () => (
 
-    <aside class="w-100">
+    <aside class="w-80 site-span-4">
         <div className="site-sidebar">
             <SiteSidebarHeader />
             <SiteSidebarHighlights />

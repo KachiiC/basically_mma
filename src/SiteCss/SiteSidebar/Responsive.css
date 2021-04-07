@@ -1,6 +1,6 @@
 @media screen and (max-width: 1080px) {
     aside {
-        grid-column: span 12;
+        grid-column: span 12 !important;
         width: 100%;
     }
 

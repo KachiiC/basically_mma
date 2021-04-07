@@ -1,5 +1,9 @@
 /* Grid System */
 
+.site-grid {
+    display: grid
+}
+
 .site-grid-system {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -164,7 +168,7 @@
 
 /* overflow */
 .site-overflow {
-    overflow-y: scroll;
+    overflow: scroll;
 }
 
 @media screen and (max-width: 1080px) {

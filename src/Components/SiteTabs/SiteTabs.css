@@ -1,25 +1,15 @@
-.site-tabs-component-row {
-    display: grid;
-}
-
 .site-single-tab {
     padding: 0px 5px;
 }
 
-/* .site-single-tab:last-child {
-    border: none;
-} */
-
-.site-single-tab:hover,
-.small-site-tab:hover {
+.site-single-tab:hover {
     cursor: pointer;
-    border-bottom: 2px solid rgb(30, 111, 250);
+    border-bottom: 2px solid rgb(215, 229, 255);
 }
 
 .site-tabs-display-content {
     padding: 12px;
-    max-height: 80%;
-    min-height: 80%;
+    height: 550px;
 }
 
 .example-container {
