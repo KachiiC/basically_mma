@@ -3,6 +3,7 @@ import React from 'react'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 import SiteFetcher from 'SiteCss/SiteFetcher';
 import SiteExternalLink from 'SiteCss/SiteExternalLink';
+import SiteTextCrop from 'SiteCss/SiteCrop/SiteTextCrop';
 
 const StoreItems = () => {
 
@@ -21,9 +22,7 @@ const StoreItems = () => {
 
     const storeItemsList = siteStore.map((item, index) => {
 
-        const trimmedName = item.name.split("").slice(0,25).join("") + "..."
-
-        const renderName = item.name.split("").length > 25? trimmedName: item.name
+        const renderName = SiteTextCrop(item.name, 25)
 
         return(
             <div className="store-item-container site-span-3" key={index}>

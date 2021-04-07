@@ -1,0 +1,27 @@
+@media screen and (max-width: 1080px) {
+    .single-article {
+        grid-column: span 6;
+    }
+
+    .single-article .article-text {
+        height: 275px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .single-article {
+        grid-column: span 12;
+    }
+
+    .single-article .article-text {
+        height: 200px;
+        border: 1px solid rgb(159, 159, 159);
+        border-top: none;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+}

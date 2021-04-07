@@ -3,6 +3,7 @@ import React from 'react'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 import SiteFetcher from 'SiteCss/SiteFetcher';
 import SiteExternalLink from 'SiteCss/SiteExternalLink';
+import SiteTextCrop from 'SiteCss/SiteCrop/SiteTextCrop';
 
 const ArticlesList = () => {
 
@@ -20,25 +21,31 @@ const ArticlesList = () => {
     const responseData = SiteFetcher(articlesListURL, articleList)
     const siteArticles = responseData.response
 
-    const displayArticles = siteArticles.map((article, index) => (
-        <div key={index} className="site-article-entry-container">
-            <div className="site-article-image-container">
-                <SiteExternalLink url={article.post_link}>
-                    <img src={article.thumbnail_url} alt={article.title} class="site-responsive-image"/>
-                </SiteExternalLink>
+    const displayArticles = siteArticles.map((article, index) => {
+
+        const articleTitle = SiteTextCrop(article.title, 30)
+        const text_preview = SiteTextCrop(article.post_description, 120)
+
+        return (
+            <div key={index} className="single-article site-span-4 w-90">
+                <div className="">
+                    <SiteExternalLink url={article.post_link}>
+                        <img src={article.thumbnail_url} alt={article.title} class="site-responsive-image"/>
+                    </SiteExternalLink>
+                </div>
+                <div className="article-text">
+                    <SiteExternalLink url={article.post_link}>
+                        <h5>{articleTitle}</h5>
+                    </SiteExternalLink>
+                    <p>{text_preview}</p>
+                    <p className="time-stamp">{article.post_time_stamp}</p>
+                </div>
             </div>
-            <div className="site-article-text">
-                <SiteExternalLink url={article.post_link}>
-                    <h5>{article.title}</h5>
-                </SiteExternalLink>
-                <p>{article.post_time_stamp}</p>
-                <p>{article.post_description}</p>
-            </div>
-        </div>
-    ))
+        )
+    })
     
     return(
-        <div className="site-article-list-container">
+        <div className="site-grid-system site-articles-container">
             <SiteRender 
                 data={responseData}
                 component={displayArticles} 
