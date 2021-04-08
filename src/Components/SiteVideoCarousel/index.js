@@ -3,20 +3,29 @@ import React, { useState } from 'react'
 import './SiteVideoCarousel.css'
 import './Responsive.css'
 // Components
-import VideoCarouselModal from './VideoModal'
+import VideoModal from './ComponentParts/VideoModal'
+import VideoCarousel from './ComponentParts/VideoCarousel'
 
 
 const SiteVideoCarousel = (props) => {
 
     const imageData = props.data
-
     const [selectedImage, setSelectedImage] = useState(0)
-    const [showModal, setShowModal] = useState(false)
 
+    // current set image
+    const current = imageData[selectedImage]
+    
+    // Modal set false by default 
+    const [showModal, setShowModal] = useState(false)
     const handleModal = () => showModal === true? setShowModal(false) :setShowModal(true)
 
-    const displayImagesRow = imageData.slice(0,6).map((image, index) => {
+    // Number of images displayed in thumbnail rows
+    const rowImages = props.row_images
 
+    // Slices the data 
+    const displayImagesRow = imageData.slice(0,rowImages).map((image, index) => {
+        
+        // On click changes image of carousel to clicked image
         const handleChange = () => setSelectedImage(imageData.indexOf(image))
 
         return(
@@ -24,35 +33,35 @@ const SiteVideoCarousel = (props) => {
                 src={image.video_thumbnail} 
                 key={index}
                 alt={image.video_title} 
-                className="selectable-images site-responsive-image site-span-2" 
+                className="selectable-images site-responsive-image site-span-1" 
                 onClick={handleChange}
             />
         )
     })
 
     return (
-        <div className="image-carousel-container">
-            <h2>{props.title}</h2>
-            <div className="m-auto w-90">
-                <img src={imageData[selectedImage].video_thumbnail} 
-                    alt="current_slide" 
-                    className="site-responsive-image selected-image"
-                    onClick={handleModal}
+        <>
+            {/* The Video Carousel */}
+            <div className="image-carousel-container">
+                <h2>{props.title}</h2>
+                <VideoCarousel
+                    displayed_image={current.video_thumbnail}
+                    click={handleModal}
+                    images={displayImagesRow}
+                    row_images={rowImages}
                 />
-                <div className="site-grid-system">
-                    {displayImagesRow}
-                </div>
             </div>
+            {/* The Video Modal shown on click */}
             {showModal && (
-                <VideoCarouselModal 
-                    youtube_id={imageData[selectedImage].video_id} 
-                    description={imageData[selectedImage].video_description}
-                    upload_date={imageData[selectedImage].upload_date}
-                    video_title={imageData[selectedImage].video_title}
+                <VideoModal 
+                    youtube_id={current.video_id} 
+                    description={current.video_description}
+                    upload_date={current.upload_date}
+                    video_title={current.video_title}
                     closeModal={handleModal}
                 />
             )}
-        </div>
+        </>
     )
 }
 

@@ -6,16 +6,19 @@ import { Timeline } from 'react-twitter-widgets'
 
 const SiteTwitterFeed = (props) => (
 
+
     <div className="twitter-container w-80">
+        {/* Title of feed */}
         <h2>{props.title}</h2>
         <Timeline
             dataSource={{
-                    sourceType: 'profile',
-                    screenName: props.twitter_id
-                }}
+                // "Set Twitter ID"
+                screenName: props.twitter_id,
+                sourceType: 'profile'
+            }}
             options={{
-                    height: props.height
-                }}
+                height: props.height
+            }}
         />
     </div>
     

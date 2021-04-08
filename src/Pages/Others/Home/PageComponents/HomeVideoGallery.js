@@ -23,6 +23,7 @@ const HomeImageGallery = () => {
         <SiteVideoCarousel 
             data={fetchedGalleryData} 
             title="Latest Fight Highlights"
+            row_images={5}
         />
     )
 

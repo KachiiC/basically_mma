@@ -3,12 +3,10 @@ import React from 'react'
 import './SiteTimeline.css'
 import './Responsive.css'
 
-
 const SiteTimeline = (props) => {
     
-    const TimelineData = props.data
-
-    const renderTimelineList = TimelineData.map((item, index) => (
+    // Makes a single timeline item from objects in data array
+    const renderTimelineList = props.data.map((item, index) => (
         
             <div className="site-timeline-item" key={index}>
                 <div className="site-timeline-content">

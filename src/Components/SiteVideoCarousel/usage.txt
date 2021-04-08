@@ -1,3 +1,6 @@
+**Only works on youtube videos**
+**Must set number of images in the thumbnail row**
+
 Data Format: 
 
     const ExampleVideoCarouselData = [
@@ -13,4 +16,5 @@ Usage Example:
     <SiteVideoCarousel
         data={ExampleVideoCarouselData} 
         title="Carousel Title"
+        row_images={3}
     />

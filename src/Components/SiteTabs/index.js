@@ -3,8 +3,7 @@ import React, {useState} from 'react'
 import './SiteTabs.css'
 import './Responsive.css'
 // Components
-import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
-
+import SiteTabExample from './ComponentParts/SiteTabExample'
 
 const SiteTabs = (props) => {
     // Default is first tab
@@ -23,13 +22,14 @@ const SiteTabs = (props) => {
         const borderLogic = tabs.indexOf(tab) === currentTab ? 
             "2px solid rgb(30, 111, 250)" : ""
 
+        // click sets tab to clicked tab
         const handleDisplayClick = () => setCurrentTab(tabs.indexOf(tab))
         
         return (
-            <div className={`site-single-tab site-span-1`}
-                onClick={handleDisplayClick}
-                key={index}
+            <div key={index}
+                className="site-single-tab site-span-1"
                 style={{"borderBottom": borderLogic}}
+                onClick={handleDisplayClick}
             >
                 <h6 className="m-auto">{tab.title}</h6>
             </div>
@@ -37,14 +37,11 @@ const SiteTabs = (props) => {
     })
 
     // Render Example
-    const renderExample = props.example === "yes" ? (
-        <div className="tab-example-container">
-            <h5>Here is an example for you!</h5>
-            <SiteYoutubeVideo youtube_id={tabs[currentTab].example} />
-        </div>
-    ): (
+    const renderExample = props.example === "yes" ? 
+        <SiteTabExample example={tabs[currentTab].example} />
+        : 
         <></>
-    )
+    
 
     return (
         <div className={`w-90 m-auto ${tabsBorderLogic}`}>
