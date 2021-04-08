@@ -7,7 +7,7 @@ import TechniquesImage from 'SiteImages/Others/Home/mma_techniques.jpg'
 const HomeRecommendedCards = {
     featured_image: DictionaryImage,
     featured_title: "mma-dictionary",
-    featured_link: "https://www.youtube.com/",
+    featured_link: "",
     small_images: [
         {
             image: FundamentalsImage,

@@ -16,10 +16,10 @@ const SiteModal = (props) => {
         <div className="site-overlay w-100 h-100">
           <div className="modal-screen w-80 h-80" style={{"width": props.width}}>
             <div className="close-button-container" onClick={closeModal}>                  
-                <FontAwesomeIcon icon={faTimes}
-                  size="lg" 
-                  className="close-button"
-                />
+              <FontAwesomeIcon icon={faTimes}
+                size="lg" 
+                className="close-button"
+              />
             </div>
             <div className={`site-modal-content w-100 site-grid-system ${overflowStyle}`} style={props.style}>
               {props.children}  

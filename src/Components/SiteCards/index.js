@@ -2,71 +2,43 @@ import React from 'react'
 // CSS
 import "./SiteArticlesCard.css"
 // Components
-import { Link } from "react-router-dom"
-import SiteExternalLink from 'SiteCss/SiteExternalLink'
-import SiteCardsImage from './SiteCardsImage'
-import SiteCardsCaption from './SiteCardsCaption'
+import SiteCardsImage from './ComponentParts/SiteCardsImage'
+import SiteFeaturedCardImage from './ComponentParts/SiteFeaturedCardImage'
 
 const SiteArticlesCard = (props) => {
     
     const myImages = props.data
     
-    const displayImagesList = myImages.small_images.map(
-        
-        (item, index) => {
-            
-            const item_image =  (
-                <>
-                    <SiteCardsImage alt={index} url={item.image} />
-                    <SiteCardsCaption title={item.title} />
-                </>
-            )
-            
-            const renderImageAndLink = myImages.external_links === true ?
-                <SiteExternalLink url={item.link}>
-                    {item_image}
-                </SiteExternalLink>
-                :
-                <Link to={`basically_mma/${item.title}`}>
-                    {item_image}
-                </Link>
+    // SMALL IMAGES
+    const displayImagesList = myImages.small_images.map((item, index) => {
 
-            return (
-
-                <div className="site-span-6 small-list-image-container" key={index}>
-                    <div className="image-caption-container">
-                        {renderImageAndLink}
-                    </div>
-                </div>
-
-            )
-        }
-    )
-        
-    const display_featured_image = 
-        <div className="recommended-featured-image-container">
+        // If external link, card will open link in new tab
+        const renderImageAndLink = myImages.external_links === true ?
             <SiteCardsImage 
-                alt={myImages.featured_title} 
-                url={myImages.featured_image}
+                external_link="yes" 
+                alt={index}
+                title={item.title}
+                image={item.image}
+                link={item.link}
             />
-        </div>
-
-
-    const display_featured_image_and_image = myImages.external_links === true ?
-        <SiteExternalLink url={myImages.featured_link}>
-            {display_featured_image}
-        </SiteExternalLink>
-        :(
-            window.location.href === "https://kachiic.github.io/basically_mma/" ? 
-            <Link to={`${myImages.featured_title}`}>
-                {display_featured_image}
-            </Link>
             :
-            <Link to={`basically_mma/${myImages.featured_title}`}>
-                {display_featured_image}
-            </Link>
+        // If internal link, will open in this window
+            <SiteCardsImage 
+                alt={index}
+                title={item.title}
+                image={item.image}
+            />
+            
+        return (
+            <div className="site-span-6 small-list-image-container" key={index}>
+                <div className="image-caption-container">
+                    {renderImageAndLink}
+                </div>
+            </div>
         )
-
+    })
+    
+    // Cards will have a border bottom by default
     const displayBorder = myImages.border === false ? 
         <> </> 
         : 
@@ -78,12 +50,11 @@ const SiteArticlesCard = (props) => {
                 {props.title}
             </h3>
             {/* Featured Card */}
-            <div className="recommended-reading-feature">
-                <div className="image-caption-container">
-                    {display_featured_image_and_image}
-                    <SiteCardsCaption title={myImages.featured_title} />
-                </div>
-            </div>
+            <SiteFeaturedCardImage
+                title={myImages.featured_title}
+                image={myImages.featured_image}
+                link={myImages.featured_link}
+            />
             {/* Cards list */}
             <div className="other-recommended-reading site-grid-system">
                 {displayImagesList}

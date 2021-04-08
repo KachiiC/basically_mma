@@ -2,42 +2,45 @@ import React, {useState} from 'react'
 // CSS
 import './SiteCaptionCarousel.css' 
 // Components
-import SiteCaptionCarouselButton from './SiteCaptionCarouselButton'
+import SiteCaptionCarouselButton from './ComponentParts/SiteCaptionCarouselButton'
+import SiteCaptionCarouselImage from './ComponentParts/SiteCaptionCarouselImage'
 
 const SiteCaptionCarousel = (props) => {
 
+    // default image 
     const [imageIndex, setImageIndex] = useState(0)
 
-    const handleBackClick = () => {
-        imageIndex === 0 ? setImageIndex(props.data.length - 1) 
+    // Slides Data
+    const current_slide = props.data[imageIndex]
+    const total_slides = props.data.length
+
+    // Previous Slide
+    const prevClick = () => {
+        imageIndex === 0 ? setImageIndex(total_slides - 1) 
         : 
-        setImageIndex(imageIndex -1)
+        setImageIndex(imageIndex - 1)
     }
 
-    const handleNextClick = () => {
-        imageIndex === props.data.length - 1 ? setImageIndex(0) 
+    // Next Slide
+    const nextClick = () => {
+        imageIndex === total_slides - 1 ? setImageIndex(0) 
         : 
-        setImageIndex(imageIndex  + 1)
+        setImageIndex(imageIndex + 1)
     }
     
     return (
 
         <div className="caption-carousel site-grid-system w-90">
             <SiteCaptionCarouselButton 
-                function={handleBackClick} 
+                function={prevClick} 
                 direction="left" 
             />
-            <div className="site-span-10 w-100">
-                <img className="site-responsive-image"
-                    src={props.data[imageIndex].image} 
-                    alt="gallery-selected"
-                />
-                <div className="caption-content w-100">
-                    {props.data[imageIndex].caption}
-                </div>
-            </div>
+            <SiteCaptionCarouselImage
+                image={current_slide.image}
+                caption={current_slide.caption}
+            />
             <SiteCaptionCarouselButton 
-                function={handleNextClick} 
+                function={nextClick} 
                 direction="right" 
             />
         </div>

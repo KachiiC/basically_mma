@@ -13,7 +13,7 @@ Example Data:
         featured_image: "",
         featured_title: "",
         featured_link: "",
-        small_images: [
+        small_images: [ <-- list of small images
             {
                 title: "",
                 link: ""
