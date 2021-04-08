@@ -1,49 +1,33 @@
-import React, {useState, useEffect} from 'react'
-// CSS
-import { Empty } from 'antd';
-import SiteLoading from 'SiteCss/SiteTransitions/SiteLoading';
+import React from 'react'
+// Data
+import instaData from 'Data/Other/Footer/instaFooterData'
 // Components
 import SiteSlider from 'Components/SiteSlider'
+import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
+import SiteFetcher from 'SiteCss/SiteFetcher'
 
 const HomeInstaSlider = () => {
 
-    const [instaData, setInstaData] = useState([{
-        "post_link": "CHUKLpwJAuM"
-    }])
-    const [isFetching, setIsFetching] = useState(true)
-    const [isDisplayable, setIsDisplayable] = useState(false)
+    const instagramURL = "https://kachiis-rest.herokuapp.com/api/instagram_list_refresh/"
+    const responseData = SiteFetcher(instagramURL, instaData)
+    const instaDisplay = responseData.response
 
-    useEffect (() => {
-        fetch("https://kachiis-rest.herokuapp.com/api/instagram_list_refresh/")
-        .then(response => response.json())
-        .then((responseData) => {
-            setIsDisplayable(true)
-            setIsFetching(false)
-            setInstaData(
-                responseData.slice(0,36).sort(
-                    (a,b) => b.time_stamp - a.time_stamp)
-                )
-        })
-        .catch(error => {
-            setIsFetching(false)
-            console.log(error)
-        })
-    },[])
+    const instaSlider = 
+        <SiteSlider 
+            data={instaDisplay}
+            displayed_slides={6} 
+            title="Follow us on instagram! @basically_mma" 
+            type="instagram"
+        />
 
-    const renderLogic = (isFetching)?(
-        <SiteLoading />
-    ):(
-        (isDisplayable) ? (
-            <SiteSlider data={instaData} 
-                title="Follow us on instagram! @basically_mma" 
-                size="big"
-            />
-        ) :(
-            <Empty />
-        )
+    return (
+        <SiteRender 
+            data={responseData}
+            component={instaSlider} 
+        />
+
     )
 
-    return renderLogic
 }
 
 export default HomeInstaSlider

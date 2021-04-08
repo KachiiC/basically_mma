@@ -2,70 +2,96 @@ import React, {useState} from 'react'
 // CSS
 import './SiteSlider.css'
 // Components
-import SiteSliderButton from './SiteSliderButton'
+import SiteSlide from './ComponentParts/SiteSlide'
+import SiteSliderButton from './ComponentParts/SiteSliderButton'
 
 const SiteSlider = (props) => {
-            
+
+    // Number of slides displayed on the slider
+    const number_of_slides = props.displayed_slides 
+
+    // Crop number of total slides
+    const cropped_number = props.data.slice(0, number_of_slides * 5)
+    
+    // New total number of slides
+    const total_slides = cropped_number.length
+    
+    // Slides that are displayed
     const [slideNumber, setSlideNumber] = useState({
         firstSlide: 0,
-        secondSlide: 6
+        lastSlide: number_of_slides
     })
+    
+    // Turn each post (object) from data into a slide
+    const displayPosts = props.data.map((post, index) => {
 
-    const total_slides = props.data.length
+        // if component type is instagram, return instagram post link
+        const slideLink = props.data.type === "instagram" ? 
+            "https://www.instagram.com/p/" + post.post_link
+            :
+            post.post_link
 
-    const displayPosts = props.data.map(
-        (post, index) => (
-            <div className="slider-container h-auto m-auto site-span-2" key={index}>
-                <a href={`https://www.instagram.com/p/${post.post_link}`} 
-                    rel="noopener noreferrer" 
-                    target="_blank"
-                >
-                    <img className="site-responsive-image site-slider-image"
-                        src={post.thumbnail} 
-                        alt={index} 
-                    />
-                </a>
-            </div>
+        return (
+            <SiteSlide
+                key={index} 
+                thumbnail={post.thumbnail}
+                link={slideLink}
+            />
         )
-    ).slice(
+
+    })
+    // only shows slides from state
+    .slice(
         slideNumber.firstSlide, 
-        slideNumber.secondSlide
+        slideNumber.lastSlide
     )
 
+    // Handles previous click
     const prevClick = () => {
         slideNumber.firstSlide === 0 ?
+        // if first slide goes into minus index, set slides to last slides
         setSlideNumber(
             {
-                firstSlide: total_slides - 6,
-                secondSlide: total_slides
+                firstSlide: total_slides - number_of_slides,
+                lastSlide: total_slides
             }
-        ): setSlideNumber(
+        ): 
+        // minus number of displayed slides to first and last slide 
+        setSlideNumber(
             {
-                firstSlide: slideNumber.firstSlide - 6,
-                secondSlide: slideNumber.secondSlide - 6
+                firstSlide: slideNumber.firstSlide - number_of_slides,
+                lastSlide: slideNumber.lastSlide - number_of_slides
             }
         )
     }
 
+    // Handles next click
     const nextClick = () => {
-        slideNumber.secondSlide === total_slides ?
+        // if last displayed slide is equal to total number of slides, reset the carousel 
+        slideNumber.lastSlide === total_slides ?
         setSlideNumber(
             {
                 firstSlide: 0,
-                secondSlide: 6
+                lastSlide: number_of_slides
             }
-        ): setSlideNumber(
+        ): 
+        // add number of displayed slides to first and last slide 
+        setSlideNumber(
             {
-                firstSlide: slideNumber.firstSlide + 6,
-                secondSlide: slideNumber.secondSlide + 6
+                firstSlide: slideNumber.firstSlide + number_of_slides,
+                lastSlide: slideNumber.lastSlide + number_of_slides
             }
         )
     }
 
     return (
         <>
+            {/* Title of slider */}
             <h5>{props.title}</h5>
-            <div className="site-slider-container h-auto width-100">
+            {/* Slider */}
+            <div className="site-grid h-auto width-100" 
+                style={{"gridTemplateColumns": `repeat(${number_of_slides + 2},1fr)`}}
+            >
                 <SiteSliderButton direction="left" onClick={prevClick} />
                 {displayPosts}
                 <SiteSliderButton direction="right" onClick={nextClick} />

@@ -2,7 +2,7 @@ import React from 'react';
 //CSS 
 import './footer.css';
 //Data
-import footerData from 'Data/Other/footerData'
+import footerData from 'Data/Other/Footer/footerData'
 // Components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import FooterInstaSlider from 'SiteCss/SiteFooter/FooterInstaSlider';

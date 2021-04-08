@@ -1,9 +1,9 @@
 import React from 'react'
 // Components
-import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
-import SiteFetcher from 'SiteCss/SiteFetcher';
-import SiteExternalLink from 'SiteCss/SiteExternalLink';
-import SiteTextCrop from 'SiteCss/SiteCrop/SiteTextCrop';
+import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
+import SiteFetcher from 'SiteCss/SiteFetcher'
+import SiteExternalLink from 'SiteCss/SiteExternalLink'
+import SiteTextCrop from 'SiteCss/SiteCrop/SiteTextCrop'
 
 const StoreItems = () => {
 

@@ -1,4 +1,5 @@
-**Each data set must be an array divisable by 6 **
+**Each data set define the number of slides displayed **
+**if type is instagram, define it as a property, if not then no need to define** 
 **Each object in the array must have post_link and post_thumbnail properties**
 
 Data Format: 
@@ -11,6 +12,8 @@ Data Format:
     ]
 
     <SiteSlider
-        title="slider title"
-        data={DataExample}
+        data={instaDisplay}
+        displayed_slides={6} 
+        title="Follow us on instagram! @basically_mma" 
+        type="instagram"
     />
