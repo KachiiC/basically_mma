@@ -1,7 +1,6 @@
 .caption-carousel {
     margin: 25px auto;
     padding: 0px 25px;
-    text-align: center;
     position: relative
 }
 
@@ -11,8 +10,4 @@
     color: #ffffff;
     min-height: 70px;
     padding: 10px 20px;
-}
-
-.caption-carousel-button {
-    cursor: pointer;
 }

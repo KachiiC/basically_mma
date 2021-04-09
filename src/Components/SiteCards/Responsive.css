@@ -1,0 +1,21 @@
+@media screen and (max-width: 1080px) {
+
+    .recommended-reading-feature,
+    .other-recommended-reading {
+        grid-column: span 12 !important;
+        width: 85%;
+    }
+
+    .small-list-image-container {
+        margin: 10px auto;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .small-list-image-container {
+        grid-column: span 12;
+    }
+
+}

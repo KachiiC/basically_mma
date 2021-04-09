@@ -20,6 +20,11 @@ p {
     width: 100%;
 }
 
+hr {
+    width: 80%;
+    margin: 25px auto;
+}
+
 @media screen and (max-width: 640px) {
     p {
         padding: 10px 25px;

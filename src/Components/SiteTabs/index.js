@@ -45,11 +45,13 @@ const SiteTabs = (props) => {
 
     return (
         <div className={`w-90 m-auto ${tabsBorderLogic}`}>
+            {/* Tabs */}
             <div className="site-grid site-tabs-row"
                 style={{"gridTemplateColumns": `repeat(${numberOfTabs},1fr)`}}
             >
                 {displayTabs}
             </div>
+            {/* Content of Tabs */}
             <div className="site-tabs-display-content site-overflow">
                 {tabs[currentTab].content}
                 {renderExample}

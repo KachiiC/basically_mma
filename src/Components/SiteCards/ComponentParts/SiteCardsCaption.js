@@ -7,7 +7,7 @@ const SiteCardsCaption = (props) => {
     const display_title = title ? title.split("-").join(" ") : ""
 
     return (
-        <div className="image-caption">
+        <div className="image-caption text-center">
             {display_title}
         </div>
     )

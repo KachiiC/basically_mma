@@ -1,6 +1,7 @@
 import React from 'react'
 // CSS
 import "./SiteArticlesCard.css"
+import './Responsive.css'
 // Components
 import SiteCardsImage from './ComponentParts/SiteCardsImage'
 import SiteFeaturedCardImage from './ComponentParts/SiteFeaturedCardImage'
@@ -30,7 +31,7 @@ const SiteArticlesCard = (props) => {
             />
             
         return (
-            <div className="site-span-6 small-list-image-container" key={index}>
+            <div className="site-span-6 small-list-image-container m-auto" key={index}>
                 <div className="image-caption-container">
                     {renderImageAndLink}
                 </div>
@@ -56,7 +57,7 @@ const SiteArticlesCard = (props) => {
                 link={myImages.featured_link}
             />
             {/* Cards list */}
-            <div className="other-recommended-reading site-grid-system">
+            <div className="other-recommended-reading site-span-6 m-auto site-grid-system">
                 {displayImagesList}
             </div>
             {displayBorder}

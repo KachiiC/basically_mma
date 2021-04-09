@@ -1,8 +1,3 @@
-.site-slider-container {
-    display: grid;
-    grid-template-columns: repeat(14, 1fr);
-}
-
 .slider-container {
     width: 98%;
     max-width: 98%;
@@ -11,8 +6,4 @@
 .site-slider-image:hover {
     opacity: 0.8;
     cursor: pointer;
-}
-
-.site-slider-button {
-    grid-column: span 1;
 }

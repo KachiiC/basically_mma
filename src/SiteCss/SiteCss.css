@@ -166,9 +166,18 @@
     margin: auto;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /* overflow */
 .site-overflow {
     overflow: scroll;
+}
+
+/** Cursor **/
+.cursor-pointer {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1080px) {

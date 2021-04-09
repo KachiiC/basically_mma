@@ -11,7 +11,7 @@ const SiteCaptionCarouselButton = (props) => {
         faArrowCircleRight
 
     return (
-        <div className="caption-carousel-button m-auto" onClick={props.function}>
+        <div className="m-auto cursor-pointer" onClick={props.function}>
             <FontAwesomeIcon icon={renderDirection} size="2x" />
         </div>
     )

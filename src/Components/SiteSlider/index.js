@@ -84,13 +84,16 @@ const SiteSlider = (props) => {
         )
     }
 
+    // Columns are number of slides and 1 for each button
+    const sliderColumns = number_of_slides + 2
+
     return (
         <>
             {/* Title of slider */}
             <h5>{props.title}</h5>
             {/* Slider */}
             <div className="site-grid h-auto width-100" 
-                style={{"gridTemplateColumns": `repeat(${number_of_slides + 2},1fr)`}}
+                style={{"gridTemplateColumns": `repeat(${sliderColumns},1fr)`}}
             >
                 <SiteSliderButton direction="left" onClick={prevClick} />
                 {displayPosts}

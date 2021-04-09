@@ -30,15 +30,18 @@ const SiteCaptionCarousel = (props) => {
     
     return (
 
-        <div className="caption-carousel site-grid-system w-90">
+        <div className="caption-carousel site-grid-system w-90 text-center">
+            {/* Left Button */}
             <SiteCaptionCarouselButton 
                 function={prevClick} 
                 direction="left" 
             />
+            {/* Carousel */}
             <SiteCaptionCarouselImage
                 image={current_slide.image}
                 caption={current_slide.caption}
             />
+            {/* Right Button */}
             <SiteCaptionCarouselButton 
                 function={nextClick} 
                 direction="right" 

@@ -1,21 +1,19 @@
 .recommended-reading-feature,
 .other-recommended-reading {
-    grid-column: span 6;
     padding: 10px;
     width: 95%;
-    margin: auto;
 }
 
-.recommended-featured-image-container {
+.recommended-featured .image-container {
     margin: auto 0px auto auto;
-    width: 100%;
     text-align: center;
     padding: 0px 20px;
 }
 
+
+/** Image Caption **/ 
 .image-caption-container {
     position: relative;
-    text-align: center;
     top: 0;
     left: 0;
     right: 0;
@@ -23,15 +21,15 @@
 }
 
 .image-caption {
+    position: absolute;
     color: white;
     font-weight: 700;
     font-size: 18px;
-    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-decoration: none;
-    text-transform: uppercase;
     cursor: pointer;
 }
 
@@ -42,13 +40,7 @@
 .small-list-image-container {
     position: relative;
     width: 95%;
-    margin: auto;
     padding: 7px;
-}
-
-hr {
-    width: 80%;
-    margin: 25px auto;
 }
 
 @media screen and (max-width: 1080px) {
