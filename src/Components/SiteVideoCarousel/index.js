@@ -29,21 +29,25 @@ const SiteVideoCarousel = (props) => {
         const handleChange = () => setSelectedImage(imageData.indexOf(image))
 
         return(
-            <img
-                src={image.video_thumbnail} 
-                key={index}
-                alt={image.video_title} 
-                className="selectable-images site-responsive-image site-span-1" 
-                onClick={handleChange}
-            />
+            <div className="site-span-1 site-border-white cursor-pointer">
+                <img key={index}
+                    src={image.video_thumbnail} 
+                    alt={image.video_title} 
+                    className="site-responsive-image site-border-white" 
+                    onClick={handleChange}
+                />
+                <div className="site-overlay-pic"/>
+            </div>
         )
     })
+
+    const titleLogic = props.title ? <h2>{props.title}</h2>: <></>
 
     return (
         <>
             {/* The Video Carousel */}
             <div className="image-carousel-container">
-                <h2>{props.title}</h2>
+                {titleLogic}
                 <VideoCarousel
                     displayed_image={current.video_thumbnail}
                     click={handleModal}

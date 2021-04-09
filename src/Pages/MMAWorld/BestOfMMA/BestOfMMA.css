@@ -6,3 +6,12 @@
 .p4p-grid-system h6 {
     font-size: 14px;
 }
+
+.best-categories-container p,
+.best-categories-container h2 {
+    margin-bottom: 0px;
+}
+
+.best-categories-container {
+    margin-bottom: 20px;
+}

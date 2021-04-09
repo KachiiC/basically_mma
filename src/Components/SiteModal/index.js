@@ -22,7 +22,7 @@ const SiteModal = (props) => {
   return (
       <div className="site-overlay w-100 h-100">
         <div className="modal-screen w-80 h-80" style={{"width": props.width}}>
-          <closeButton />
+          {closeButton}
           <div className={`site-modal-content w-100 site-grid-system ${overflowStyle}`} 
             style={props.style}
           >

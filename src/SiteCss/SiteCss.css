@@ -60,6 +60,10 @@
     border: 1px solid black;
 }
 
+.site-border-white {
+    border: 1px solid white;
+}
+
 .site-responsive-image {
     width: 100%;
     height: auto;
