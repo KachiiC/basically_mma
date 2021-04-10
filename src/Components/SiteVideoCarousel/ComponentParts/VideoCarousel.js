@@ -5,7 +5,7 @@ import SiteOverlay from 'SiteCss/SiteOverlay'
 const VideoCarousel = (props) => (
     
     <div className="m-auto w-90">
-        <SiteOverlay>
+        <SiteOverlay onClick={props.click}>
             <img src={props.displayed_image} 
                 alt="current_slide" 
                 className="site-responsive-image cursor-pointer site-border-white"
