@@ -6,11 +6,11 @@ import SiteFetcher from 'SiteCss/SiteFetcher';
 import SiteModal from 'Components/SiteModal'
 // Data
 import HomeImageGalleryData from 'Data/Other/Home/HomeImageGalleryData'
-import VideoModalPlayer from './VideoModalPlayer';
+import VideoModalPlayer from './ComponentParts/VideoModalPlayer';
 
 const site_url = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/ufc_fights"
 
-const SiteCarouselModal = (props) => {
+const SiteVideoModal = (props) => {
 
     const [currentYoutubeId, setCurrentYoutubeId] = useState({
         video_title: props.video_title,
@@ -73,4 +73,4 @@ const SiteCarouselModal = (props) => {
 
 }
 
-export default SiteCarouselModal
+export default SiteVideoModal

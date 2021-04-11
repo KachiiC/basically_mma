@@ -28,13 +28,13 @@ const HomeFeaturedFighter = () => {
     
     const renderFeaturedFighter = (
 
-        <div className="home-featured-fighter">
+        <div className="home-featured-fighter w-80">
             <div className="fighter-heading">
                 Featured Fighter
             </div>
             <h4>{featured_fighter_name}</h4>    
             <div className="featured-fighter-section">
-                <div className="fighter-image">
+                <div className="fighter-image w-40">
                     <img src={featured_fighter.fighter_image} 
                         alt="featured_fighter"
                         className="site-responsive-image"

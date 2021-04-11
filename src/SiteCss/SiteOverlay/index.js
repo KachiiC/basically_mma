@@ -4,16 +4,13 @@ import React from 'react'
 // CSS
 import './SiteOverlay.css'
 
-const SiteOverlay = (props) => {
-    return (
-        <div className="site-overlay-pic" onClick={props.click}>
-            <FontAwesomeIcon icon={faPlay} size="2x" 
-                className="play-btn cursor-pointer"
-                onClick={props.click}
-            />
-            {props.children}
-        </div>
-    )
-}
+const SiteOverlay = (props) => (
+    <div className="site-overlay-pic" onClick={props.click}>
+        <FontAwesomeIcon icon={faPlay} size="2x" 
+            className="play-btn cursor-pointer"
+        />
+        {props.children}
+    </div>
+)
 
 export default SiteOverlay

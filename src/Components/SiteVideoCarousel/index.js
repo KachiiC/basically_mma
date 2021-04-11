@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 // CSS
 import './SiteVideoCarousel.css'
 import './Responsive.css'
-// Components
-import VideoModal from './ComponentParts/VideoModal'
+// COMPONENTS
+import VideoModal from 'Components/SiteVideoModalPlayer/ComponentParts/VideoModal'
 import VideoCarousel from './ComponentParts/VideoCarousel'
+// ICONS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { PlayArrowRounded } from '@material-ui/icons'
 

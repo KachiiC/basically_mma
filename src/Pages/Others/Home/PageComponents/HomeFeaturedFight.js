@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 // Components
+import SiteVideoModal from 'Components/SiteVideoModalPlayer'
 import SiteFetcher from 'SiteCss/SiteFetcher';
-import SiteExternalLink from 'SiteCss/SiteExternalLink';
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
+import SiteOverlay from 'SiteCss/SiteOverlay'
 // Data
 import featuredFight from 'Data/Other/Home/HomeFeaturedFightData'
 
@@ -13,23 +14,26 @@ const HomeFeaturedFight = () => {
     const responseData = SiteFetcher(homeFeaturedFightURL,featuredFight)
     const homeFeaturedFight = responseData.response
 
+    const [showModal, setShowModal] = useState(false)
+    const handleModal = () => showModal === true ? setShowModal(false) :setShowModal(true)
+
     const featuredFightComponent = (
-        
-        <div className="home-featured-fight">
-            <div className="fight-title">Featured Fight</div>
+        <div className="home-featured-fight cursor-pointer">
+                <div className="fight-title">Featured Fight</div>
                 <div className="w-90 m-auto">
-                    <SiteExternalLink url={`https://www.youtube.com/watch?v=${homeFeaturedFight.video_id}`}>
+                    <SiteOverlay>
                         <img className="site-responsive-image"
                             src={homeFeaturedFight.video_thumbnail} 
                             alt={responseData.response.video_description}
-                        />
-                        <div className="caption-content">
-                            <h6>{homeFeaturedFight.video_title}</h6>
-                            <p>{homeFeaturedFight.video_description}</p>
-                        </div>
-                    </SiteExternalLink>
+                            onClick={handleModal}
+                            />
+                    </SiteOverlay>
+                    <div className="caption-content">
+                        <h6>{homeFeaturedFight.video_title}</h6>
+                        <p>{homeFeaturedFight.video_description}</p>
+                    </div>
                 </div>
-        </div>
+            </div>
 
     )
 
@@ -39,6 +43,15 @@ const HomeFeaturedFight = () => {
                 data={responseData}
                 component={featuredFightComponent} 
             />
+            {showModal && (
+                <SiteVideoModal 
+                    youtube_id={homeFeaturedFight.video_id} 
+                    description={homeFeaturedFight.video_description}
+                    upload_date={homeFeaturedFight.upload_date}
+                    video_title={homeFeaturedFight.video_title}
+                    closeModal={handleModal}
+                />
+            )}
         </div>
     )
 }

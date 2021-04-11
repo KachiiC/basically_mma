@@ -1,7 +1,6 @@
 /* Featured Fight */
 
 .home-featured-fight {
-    width: 100%;
     padding: 0px 20px 20px 50px;
     margin:  25px auto;
     text-align: center;
@@ -22,8 +21,8 @@
 .home-featured-fight .fight-title,
 .home-featured-fighter .fighter-heading {
     text-align: center;
-    font-weight: 700;
     text-transform: uppercase;
+    font-weight: 700;
     padding: 10px;
     color: white;
     background-color: black;
@@ -33,7 +32,6 @@
 /* Featured fighter */
 
 .home-featured-fighter {
-    width: 80%;
     margin: 25px auto;
     text-align: center;
 }
@@ -44,19 +42,12 @@
 }
 
 .home-featured-fighter .fighter-image {
-    width: 40%;
     margin: 20px auto 10px;
-}
-
-.home-featured-fighter-details-container {
-    width: 100%;
-    border: 1px solid red;
 }
 
 .home-featured-fighter .fighter-details table {
     margin: 10px auto;
     font-size: 15px;
-    width: 80%;
 }
 
 .fighter-table-title {
@@ -69,7 +60,7 @@
 }
 
 /* Home Image Gallery */ 
-.home-image-gallery {
+.home-video-gallery {
     grid-column: span 8;
 }
 

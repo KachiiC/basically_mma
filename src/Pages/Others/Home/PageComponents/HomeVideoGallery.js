@@ -28,7 +28,7 @@ const HomeImageGallery = () => {
     )
 
     return (
-        <div className="home-image-gallery">
+        <div className="home-video-gallery">
             <SiteRender 
                 data={responseData}
                 component={renderHomeGallery}
