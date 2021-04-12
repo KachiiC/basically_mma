@@ -1,7 +1,6 @@
 import React from 'react'
 
-const WeightClassesIntroduction = (
-
+const WeightClassesIntroduction = () =>
     <>
         <p>
             Before weight classes existed, fighters would compete in open weight tournments.
@@ -27,8 +26,6 @@ const WeightClassesIntroduction = (
             state athletic commission's body of rules for weight limits.
         </p>
     </>
-    
-)
     
 
 

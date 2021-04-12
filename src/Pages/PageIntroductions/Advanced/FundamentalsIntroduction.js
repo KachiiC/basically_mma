@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FundamentalsIntroduction = (
+const FundamentalsIntroduction = () =>
     <>
         <p>
             Mixed Martial Arts has many fundamentals that an individual must learn in order 
@@ -29,6 +29,5 @@ const FundamentalsIntroduction = (
             which I feel are most important to fighters when competing in MMA.
         </p>
     </>
-)
 
 export default FundamentalsIntroduction;

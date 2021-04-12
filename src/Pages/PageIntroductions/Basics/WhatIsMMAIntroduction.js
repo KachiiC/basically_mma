@@ -1,7 +1,6 @@
 import React from 'react'
 
-const WhatIsMMADescription = (
-    
+const WhatIsMMADescription = () =>
     <>
         <p>
             <b>Mixed Martial Arts (MMA)</b> is a full-contact combat sport that allows a wide variety of 
@@ -25,6 +24,5 @@ const WhatIsMMADescription = (
         </p>
     </>
 
-) 
 
 export default WhatIsMMADescription

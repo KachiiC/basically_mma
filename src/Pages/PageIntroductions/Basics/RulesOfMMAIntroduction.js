@@ -1,7 +1,6 @@
 import React from 'react';
 
-const RulesOfMMAIntroduction = (
-
+const RulesOfMMAIntroduction = () =>
     <>
         <div>
             <p>Most rule sets for mixed martial arts competitions have evolved since the early 
@@ -29,6 +28,5 @@ const RulesOfMMAIntroduction = (
         </div>
     </>
 
-)
 
 export default RulesOfMMAIntroduction

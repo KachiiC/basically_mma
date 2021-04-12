@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-// CSS
 // Components
-import SiteRandom from 'SiteCss/SiteRandom'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 import SiteFetcher from 'SiteCss/SiteFetcher';
 import SiteModal from 'Components/SiteModal'

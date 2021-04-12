@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TechniquesIntroduction = (
+const TechniquesIntroduction = () =>
 
     <>
         <p>Techniques in MMA are generally categorised as either striking and 
@@ -14,6 +14,6 @@ const TechniquesIntroduction = (
         </p>
         <p>Below is a list of the most commonly used techniques used in MMA:</p>
     </>
-)
+
 
 export default TechniquesIntroduction

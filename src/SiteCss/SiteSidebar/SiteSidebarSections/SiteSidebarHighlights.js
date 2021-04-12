@@ -1,26 +1,16 @@
 import React from 'react'
-// Components
+// COMPONENTS
 import SiteExternalLink from 'SiteCss/SiteExternalLink'
 import SiteFetcher from 'SiteCss/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
+// DATA
+import fight_highlightsData from 'Data/Other/Sidebar/SidebarHighlightsData'
 
 const highlights_url = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/fight_highlights"
 
 const SiteSidebarHighlights = () => {
 
-    const fight_highlights = {
-        playlist_videos: [
-            {
-                video_title: "",
-                video_id: "",
-                video_description: "",
-                video_thumbnail: "",
-                upload_date: ""
-            }
-        ]
-    }
-
-    const responseData = SiteFetcher(highlights_url,fight_highlights)
+    const responseData = SiteFetcher(highlights_url,fight_highlightsData)
     const fightHighlight = responseData.response.playlist_videos
 
     const renderHighlightsList = fightHighlight.slice(0,4).map(
