@@ -12,7 +12,7 @@ const SiteFooter = () => {
 
     const iconsList = footerData.map((item, index) => (
 
-            <SiteExternalLink href={item.link} key={index}>
+            <SiteExternalLink url={item.link} key={index}>
                 <FontAwesomeIcon 
                     className="footer-logos" 
                     size="4x"

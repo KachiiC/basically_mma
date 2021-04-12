@@ -1,4 +1,5 @@
 import React from 'react'
+// Components
 import SiteExternalLink from 'SiteCss/SiteExternalLink'
 
 const SiteSlide = (props) => (

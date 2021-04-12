@@ -22,7 +22,7 @@ const HomeFeaturedFight = () => {
         <div className="home-featured-fight cursor-pointer">
             <div className="fight-title">Featured Fight</div>
             <div className="w-90 m-auto">
-                <SiteOverlay click={handleModal}>
+                <SiteOverlay click={handleModal} icon="play">
                     <img className="site-responsive-image"
                         src={homeFeaturedFight.video_thumbnail} 
                         alt={responseData.response.video_description}

@@ -5,11 +5,10 @@ import SiteOverlay from 'SiteCss/SiteOverlay'
 const VideoCarousel = (props) => (
     
     <div className="m-auto w-90">
-        <SiteOverlay click={props.click}>
+        <SiteOverlay click={props.click} icon="play">
             <img src={props.displayed_image} 
                 alt="current_slide" 
-                className="site-responsive-image cursor-pointer site-border-white"
-                // onClick={props.click}
+                className="site-responsive-image site-border-white cursor-pointer"
             /> 
         </SiteOverlay>
         <div style={{"gridTemplateColumns": `repeat(${props.row_images},1fr)`}}

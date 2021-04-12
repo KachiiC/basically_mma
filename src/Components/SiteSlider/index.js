@@ -26,7 +26,7 @@ const SiteSlider = (props) => {
     const displayPosts = props.data.map((post, index) => {
 
         // if component type is instagram, return instagram post link
-        const slideLink = props.data.type === "instagram" ? 
+        const slideLink = props.type === "instagram" ? 
             "https://www.instagram.com/p/" + post.post_link
             :
             post.post_link
