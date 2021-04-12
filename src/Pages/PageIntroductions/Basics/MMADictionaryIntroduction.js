@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MMADictionaryIntroduction = (
+const MMADictionaryIntroduction = () =>
         
     <p>As with any sport, before you learn about strategies and the finer details -
         you should start by learning the language of MMA. As mixed marial art is a blend 
@@ -9,7 +9,5 @@ const MMADictionaryIntroduction = (
         taekwondo,whilst most grappling techniques and positions derive from wrestling, 
         judo and Brazilian jiu-jitsu.
     </p>
-    
-)
 
 export default MMADictionaryIntroduction
