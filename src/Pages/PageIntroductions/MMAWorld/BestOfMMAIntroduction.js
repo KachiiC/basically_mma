@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BestOfMMAIntroduction = () => (
+const BestOfMMAIntroduction = (
     <>
         <p>
             When you start following MMA, it's hard to know what fights to watch and which fighters to follow.

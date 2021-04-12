@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WeightClassesIntroduction = () => (
+const WeightClassesIntroduction = (
 
     <>
         <p>

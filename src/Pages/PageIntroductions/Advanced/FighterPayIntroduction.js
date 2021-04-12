@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FighterPayIntroduction = () => (
+const FighterPayIntroduction = (
     <>
         <p>
             The more you follow the sport, the more you will begin to hear about Fighter Pay. 

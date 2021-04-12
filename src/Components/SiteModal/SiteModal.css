@@ -15,7 +15,7 @@
     margin: 95px auto 0px;
     border-radius: 0.5rem;
     min-height: 575px;
-    z-index: 1;
+    z-index: 1000 !important;
 }
 
 .close-button-container {

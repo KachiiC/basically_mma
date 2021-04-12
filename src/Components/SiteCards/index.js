@@ -1,6 +1,6 @@
 import React from 'react'
 // CSS
-import "./SiteArticlesCard.css"
+import "./SiteCards.css"
 import './Responsive.css'
 // Components
 import SiteCardsImage from './ComponentParts/SiteCardsImage'

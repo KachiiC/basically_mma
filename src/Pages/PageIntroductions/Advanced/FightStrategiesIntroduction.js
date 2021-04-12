@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FightStrategiesIntro = () => (
+const FightStrategiesIntro = (
         <>
             <p> 
                 As a mixed martial artist, you will not only come up against fighters of all 

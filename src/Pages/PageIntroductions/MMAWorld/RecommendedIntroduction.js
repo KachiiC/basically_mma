@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RecommendedIntroduction = () => (
+const RecommendedIntroduction = (
     <>
         <p>
             A great way to develop your knowledge outside of watching live events is to

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WhatIsMMADescription = () => (
+const WhatIsMMADescription = (
     
     <>
         <p>

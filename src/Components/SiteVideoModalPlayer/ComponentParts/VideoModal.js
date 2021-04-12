@@ -21,7 +21,9 @@ const SiteCarouselModal = (props) => {
     })
 
     const responseData = SiteFetcher(site_url, HomeImageGalleryData)
-    const fightSuggestions = SiteRandom(responseData.response.playlist_videos)
+    const fightSuggestions = responseData.response.playlist_videos.sort(
+            (a,b) => b.video_title - a.video_title
+        )
 
     const displayFightSuggestion = fightSuggestions.slice(0,10).map((fight, index) => {
 

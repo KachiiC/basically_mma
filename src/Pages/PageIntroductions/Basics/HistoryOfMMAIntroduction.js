@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const HistoryOfMMAIntroduction = () => (
+const HistoryOfMMAIntroduction = (
 
     <p> 
         Mixed Martial Arts (MMA) has been one of the fastest rising sports 

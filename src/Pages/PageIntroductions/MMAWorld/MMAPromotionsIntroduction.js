@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PromotionsIntroduction = () => (
+const PromotionsIntroduction = (
     <>
         <p>
             Today no companies have presented significant competition to the UFC which is regarded as 

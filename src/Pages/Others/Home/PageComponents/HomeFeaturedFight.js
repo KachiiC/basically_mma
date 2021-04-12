@@ -37,22 +37,24 @@ const HomeFeaturedFight = () => {
 
     )
 
-    return (    
+    return (   
+        <> 
         <div className="home-feature site-span-8">
             <SiteRender 
                 data={responseData}
                 component={featuredFightComponent} 
             />
-            {showModal && (
-                <SiteVideoModal 
-                    youtube_id={homeFeaturedFight.video_id} 
-                    description={homeFeaturedFight.video_description}
-                    upload_date={homeFeaturedFight.upload_date}
-                    video_title={homeFeaturedFight.video_title}
-                    closeModal={handleModal}
-                />
-            )}
         </div>
+        {showModal && (
+            <SiteVideoModal 
+                youtube_id={homeFeaturedFight.video_id} 
+                description={homeFeaturedFight.video_description}
+                upload_date={homeFeaturedFight.upload_date}
+                video_title={homeFeaturedFight.video_title}
+                closeModal={handleModal}
+            />
+        )}
+        </>
     )
 }
 
