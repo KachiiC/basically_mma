@@ -32,7 +32,7 @@ const StoreItems = () => {
                         <img src={item.product_thumbnail} 
                             alt={index} 
                             class="site-responsive-image"
-                    />
+                            />
                     </SiteExternalLink>
                 </div>
                 <h5>£{item.price}</h5>

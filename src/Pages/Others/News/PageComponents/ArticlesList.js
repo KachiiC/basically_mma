@@ -4,6 +4,7 @@ import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 import SiteFetcher from 'SiteCss/SiteFetcher';
 import SiteExternalLink from 'SiteCss/SiteExternalLink';
 import SiteTextCrop from 'SiteCss/SiteCrop/SiteTextCrop';
+import SiteOverlay from 'SiteCss/SiteOverlay'
 
 const ArticlesList = () => {
 
@@ -28,11 +29,11 @@ const ArticlesList = () => {
 
         return (
             <div key={index} className="single-article site-span-4 w-90">
-                <div className="">
+                <SiteOverlay>
                     <SiteExternalLink url={article.post_link}>
                         <img src={article.thumbnail_url} alt={article.title} class="site-responsive-image"/>
                     </SiteExternalLink>
-                </div>
+                </SiteOverlay>
                 <div className="article-text">
                     <SiteExternalLink url={article.post_link}>
                         <h5>{articleTitle}</h5>

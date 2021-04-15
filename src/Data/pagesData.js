@@ -53,6 +53,7 @@ import WeightClassesHeader from 'SiteImages/Advanced/WeightClasses/WeightClasses
 import MMAPromotionsIntroduction from 'Pages/PageIntroductions/MMAWorld/MMAPromotionsIntroduction'
 import RecommendedIntroduction from 'Pages/PageIntroductions/MMAWorld/RecommendedIntroduction'
 import BestOfMMAIntroduction from 'Pages/PageIntroductions/MMAWorld/BestOfMMAIntroduction'
+import MMALegendsIntroduction from 'Pages/PageIntroductions/MMAWorld/MMALegendsIntroduction'
 
 const pagesData = [
     {
@@ -142,6 +143,7 @@ const pagesData = [
             {
                 title:"mma-legends",
                 display: <MMALegends />,
+                introduction: <MMALegendsIntroduction />
             },
             {
                 title:"mma-promotions",

@@ -9,11 +9,11 @@ import SmallMenu from './NavbarComponents/SmallMenu'
 
 const SiteNavbar = () => (
 
-    <nav className="w-100">
-      <MenuLogo />
-      <MenuList />
-      <SmallMenu />
-    </nav>
+  <nav className="w-100">
+    <MenuLogo />
+    <MenuList />
+    <SmallMenu />
+  </nav>
 
 )
 
