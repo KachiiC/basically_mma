@@ -2,27 +2,16 @@ import React from 'react'
 // PAGES
 import About from 'Pages/Others/About/'
 import Store from 'Pages/Others/Store/'
-// Basic
+// Other
+import News from 'Pages/Others/News'
+
+//// BASICS ////
+// Basic Pages
 import WhatIsMMA from 'Pages/Basics/WhatIsMMA'
 import HistoryOfMMA from 'Pages/Basics/HistoryOfMMA'
 import RulesOfMMA from 'Pages/Basics/RulesOfMMA'
 import MMADictionary from 'Pages/Basics/MMADictionary'
-// Advanced
-import Fundamentals from 'Pages/Advanced/Fundamentals'
-import Techniques from 'Pages/Advanced/Techniques'
-import FightStrategies from 'Pages/Advanced/FightStrategies'
-import FighterPay from 'Pages/Advanced/FighterPay'
-import WeightClasses from 'Pages/Advanced/WeightClasses'
-// MMA World
-import MMAPromotions from 'Pages/MMAWorld/MMAPromotions'
-import MMALegends from 'Pages/MMAWorld/MMALegends'
-import BestOfMMA from 'Pages/MMAWorld/BestOfMMA'
-import Recommended from 'Pages/MMAWorld/Recommended'
-// Other
-import News from 'Pages/Others/News'
-
-// PAGE INTRODUCTIONS
-// Basics
+// Basic Introductions
 import WhatIsMMAIntroduction from 'Pages/PageIntroductions/Basics/WhatIsMMAIntroduction'
 import HistoryOfMMAIntroduction from 'Pages/PageIntroductions/Basics/HistoryOfMMAIntroduction'
 import MMADictionaryIntroduction from 'Pages/PageIntroductions/Basics/MMADictionaryIntroduction'
@@ -37,7 +26,15 @@ import WhatIsMMAHeader from 'SiteImages/Basics/WhatIsMMA/WhatIsMMA.jpg'
 import HistoryOfMMAHeader from 'SiteImages/Basics/HistoryOfMMA/HistoryOfMMA.jpg'
 import RulesOfMMAHeader from 'SiteImages/Basics/RulesOfMMA/RulesOfMMA.jpg'
 import MMADictionaryHeader from 'SiteImages/Basics/MMADictionary/MMADictionary.jpg'
-// Advanced
+
+//// ADVANCED ////
+// Advanced Pages
+import Fundamentals from 'Pages/Advanced/Fundamentals'
+import Techniques from 'Pages/Advanced/Techniques'
+import FightStrategies from 'Pages/Advanced/FightStrategies'
+import FighterPay from 'Pages/Advanced/FighterPay'
+import WeightClasses from 'Pages/Advanced/WeightClasses'
+//// Advanced Introductions ////
 import FundamentalsIntroduction from 'Pages/PageIntroductions/Advanced/FundamentalsIntroduction'
 import TechniquesIntroduction from 'Pages/PageIntroductions/Advanced/TechniquesIntroduction'
 import FightStrategiesIntroduction from 'Pages/PageIntroductions/Advanced/FightStrategiesIntroduction'
@@ -49,11 +46,19 @@ import TechniquesHeader from 'SiteImages/Advanced/Techniques/Techniques.jpg'
 import FighterPayHeader from 'SiteImages/Advanced/FighterPay/FighterPay.jpg'
 import FightStrategiesHeader from 'SiteImages/Advanced/FightStrategies/FightStrategies.jpg'
 import WeightClassesHeader from 'SiteImages/Advanced/WeightClasses/WeightClasses.jpg'
-// MMA World
+
+//// MMA WORLD ////
+// MMA World Pages
+import MMAPromotions from 'Pages/MMAWorld/MMAPromotions'
+import MMALegends from 'Pages/MMAWorld/MMALegends'
+import BestOfMMA from 'Pages/MMAWorld/BestOfMMA'
+import Recommended from 'Pages/MMAWorld/Recommended'
+// MMA World introduction //
 import MMAPromotionsIntroduction from 'Pages/PageIntroductions/MMAWorld/MMAPromotionsIntroduction'
 import RecommendedIntroduction from 'Pages/PageIntroductions/MMAWorld/RecommendedIntroduction'
 import BestOfMMAIntroduction from 'Pages/PageIntroductions/MMAWorld/BestOfMMAIntroduction'
 import MMALegendsIntroduction from 'Pages/PageIntroductions/MMAWorld/MMALegendsIntroduction'
+
 
 const pagesData = [
     {
