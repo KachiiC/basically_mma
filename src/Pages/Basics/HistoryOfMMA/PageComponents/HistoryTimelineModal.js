@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import SiteModal from 'Components/SiteModal'
 import SiteTimeline from 'Components/SiteTimeline'
 // Data
-import timelineData from 'Data/Basics/HistoryOfMMA/timelineData'
+import timelineData from 'Data/Basics/HistoryOfMMA/HistoryOfMMA'
 import SiteLinkLargeButton from 'SiteCss/SiteLinkLargeButton'
 
 const HistoryTimelineModal = () => {

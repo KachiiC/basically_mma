@@ -17,10 +17,10 @@ import HistoryOfMMAIntroduction from 'Pages/PageIntroductions/Basics/HistoryOfMM
 import MMADictionaryIntroduction from 'Pages/PageIntroductions/Basics/MMADictionaryIntroduction'
 import RulesOfMMAIntroduction from 'Pages/PageIntroductions/Basics/RulesOfMMAIntroduction'
 // Basics Example Videos
-import WhatIsMMAVideo from 'Data/Basics/WhatIsMMA/WhatIsMMAVideo'
-import HistoryOfMMAVideo from 'Data/Basics/HistoryOfMMA/HistoryOfMMAVideo'
-import RulesOfMMAVideo from 'Data/Basics/RulesOfMMA/RulesOfMMAVideo'
-import MMADictionaryVideo from 'Data/Basics/MMADictionary/MMADictionaryVideo'
+import WhatIsMMAVideo from 'Data/Basics/WhatIsMMA/WhatIsMMA'
+import HistoryOfMMAVideo from 'Data/Basics/HistoryOfMMA/HistoryOfMMA'
+import RulesOfMMAVideo from 'Data/Basics/RulesOfMMA/RulesOfMMA'
+import MMADictionaryVideo from 'Data/Basics/MMADictionary/MMADictionary'
 // Basics Header Image
 import WhatIsMMAHeader from 'SiteImages/Basics/WhatIsMMA/WhatIsMMA.jpg'
 import HistoryOfMMAHeader from 'SiteImages/Basics/HistoryOfMMA/HistoryOfMMA.jpg'

@@ -6,5 +6,4 @@ import HistoryTimelineModal from './PageComponents/HistoryTimelineModal';
 
 const HistoryOfMMA = () => <HistoryTimelineModal />
 
-
 export default HistoryOfMMA;

@@ -2,7 +2,7 @@ import React from 'react'
 // Components
 import SiteTabs from 'Components/SiteTabs'
 // Data 
-import RulesData from 'Data/Basics/RulesOfMMA/RulesData'
+import RulesData from 'Data/Basics/RulesOfMMA/RulesOfMMA'
 
 const RulesCards = () => (
     <div className="rules-of-mma-container">
