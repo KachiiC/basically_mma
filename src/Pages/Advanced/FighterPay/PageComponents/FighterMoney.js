@@ -1,6 +1,6 @@
 import React from 'react'
 // Data
-import PromotionsMoneyData from 'Data/Advanced/FighterPay/FightersMoneyData'
+import PromotionsMoneyData from 'Data/Advanced/FighterPay/FighterPay'
 // Components
 import SiteCaptionCarousel from "Components/SiteCaptionCarousel"
 

@@ -1,23 +1,20 @@
-import React from 'react'
 // Modal Content
-import StrikingData from "./TabsData/StrikingData"
-import GrapplingData from "./TabsData/GrapplingData"
-import GamePlanningData from './TabsData/GamePlanningData'
+import * as TabsData from './TabsData'
 
 const fundamentalsData = [
     {
         title: "Striking",
-        content: <StrikingData />, 
+        content: TabsData.StrikingData, 
         image: "",
     },
     {
         title: "Grappling",
-        content: <GrapplingData />,      
+        content: TabsData.GrapplingData,      
         image: "",
     },
     {
         title: "Game Planning",
-        content: <GamePlanningData />,        
+        content: TabsData.GamePlanningData,        
         image: "",
     },
     {

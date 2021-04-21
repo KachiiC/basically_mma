@@ -1,6 +1,6 @@
 import React from 'react'
 // Data
-import ReebokPayData from 'Data/Advanced/FighterPay/ReebokMoneyData'
+import ReebokPayData from 'Data/Advanced/FighterPay/FighterPay'
 // Components
 import { Table } from 'antd';
 
