@@ -19,7 +19,7 @@ import RulesOfMMAIntroduction from 'Pages/PageIntroductions/Basics/RulesOfMMAInt
 // Basics Example Videos
 import WhatIsMMAVideo from 'Data/Basics/WhatIsMMA/WhatIsMMA'
 import HistoryOfMMAVideo from 'Data/Basics/HistoryOfMMA/HistoryOfMMA'
-import RulesOfMMAVideo from 'Data/Basics/RulesOfMMA/RulesOfMMA'
+import RulesOfMMAVideo from 'Data/Basics/RulesOfMMA/RulesOfMMAVideo'
 import MMADictionaryVideo from 'Data/Basics/MMADictionary/MMADictionary'
 // Basics Header Image
 import WhatIsMMAHeader from 'SiteImages/Basics/WhatIsMMA/WhatIsMMA.jpg'
@@ -85,7 +85,7 @@ const pagesData = [
                 title:"rules-of-mma",
                 display: <RulesOfMMA />,
                 introduction: <RulesOfMMAIntroduction />,
-                example_video_description: <RulesOfMMAVideo />,
+                example_video_description: RulesOfMMAVideo,
                 example_video_id: "0kKALSgyTOc",
                 header_image: RulesOfMMAHeader
             },

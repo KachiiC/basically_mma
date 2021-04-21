@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import SiteModal from 'Components/SiteModal'
 import SiteTimeline from 'Components/SiteTimeline'
 // Data
-import timelineData from 'Data/Basics/HistoryOfMMA/HistoryOfMMA'
+import TimelineData from 'Data/Basics/HistoryOfMMA/TimelineData'
 import SiteLinkLargeButton from 'SiteCss/SiteLinkLargeButton'
 
 const HistoryTimelineModal = () => {
@@ -25,7 +25,7 @@ const HistoryTimelineModal = () => {
                 (
                     <SiteModal closeModal={handleClick}>
                         <div className="history-modal site-span-12">
-                            <SiteTimeline data={timelineData} />
+                            <SiteTimeline data={TimelineData} />
                         </div>
                     </SiteModal>
                 )

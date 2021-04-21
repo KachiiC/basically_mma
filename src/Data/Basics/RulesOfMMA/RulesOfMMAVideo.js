@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react' 
 
-const HistoryOfMMAVideo = () =>  (
+const RulesOfMMAVideo = () => (
     <>
-        <h4>The Origins of Mixed Martial Arts</h4>
+        <h4>Rules of Mixed Martial Arts</h4>
         <p>This is a short documentary of the origin of mixed martial arts and how it came to
             become the sport that it is today. The age old question of 'which martial arts is
             the best?' and the evolution of mixed martial arts is really fascinating for people
@@ -11,4 +11,4 @@ const HistoryOfMMAVideo = () =>  (
     </>
 )
 
-export default HistoryOfMMAVideo
+export default RulesOfMMAVideo
