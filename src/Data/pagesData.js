@@ -12,7 +12,7 @@ import HistoryOfMMA from 'Pages/Basics/HistoryOfMMA'
 import RulesOfMMA from 'Pages/Basics/RulesOfMMA'
 import MMADictionary from 'Pages/Basics/MMADictionary'
 // Basic Introductions
-import * as BasicIntroductions from 'Pages/PageIntroductions/Basics/BasicIntroductions'
+import * as BasicIntro from 'Pages/PageIntroductions/Basics/BasicIntroductions'
 // Basics Example Videos
 import WhatIsMMAVideo from 'Data/Basics/WhatIsMMA/WhatIsMMA'
 import HistoryOfMMAVideo from 'Data/Basics/HistoryOfMMA/HistoryOfMMA'
@@ -31,12 +31,13 @@ import Techniques from 'Pages/Advanced/Techniques'
 import FightStrategies from 'Pages/Advanced/FightStrategies'
 import FighterPay from 'Pages/Advanced/FighterPay'
 import WeightClasses from 'Pages/Advanced/WeightClasses'
-//// Advanced Introductions ////
-import FundamentalsIntroduction from 'Pages/PageIntroductions/Advanced/FundamentalsIntroduction'
-import TechniquesIntroduction from 'Pages/PageIntroductions/Advanced/TechniquesIntroduction'
-import FightStrategiesIntroduction from 'Pages/PageIntroductions/Advanced/FightStrategiesIntroduction'
-import FighterPayIntroduction from 'Pages/PageIntroductions/Advanced/FighterPayIntroduction'
-import WeightClassesIntroduction from 'Pages/PageIntroductions/Advanced/WeightClassesIntroduction'
+//// Advanced Introductions
+import * as AdvancedIntro from 'Pages/PageIntroductions/Advanced/AdvancedIntroductions'
+// import FundamentalsIntroduction from 'Pages/PageIntroductions/Advanced/FundamentalsIntroduction'
+// import TechniquesIntroduction from 'Pages/PageIntroductions/Advanced/TechniquesIntroduction'
+// import FightStrategiesIntroduction from 'Pages/PageIntroductions/Advanced/FightStrategiesIntroduction'
+// import FighterPayIntroduction from 'Pages/PageIntroductions/Advanced/FighterPayIntroduction'
+// import WeightClassesIntroduction from 'Pages/PageIntroductions/Advanced/WeightClassesIntroduction'
 // Advanced Header Image
 import FundamentalsHeader from 'SiteImages/Advanced/Fundamentals/Fundamentals.jpg'
 import TechniquesHeader from 'SiteImages/Advanced/Techniques/Techniques.jpg'
@@ -65,7 +66,7 @@ const pagesData = [
             {
                 title: "what-is-mma",
                 display: <WhatIsMMA />,
-                introduction: BasicIntroductions.WhatIsMMAIntroduction,
+                introduction: BasicIntro.WhatIsMMAIntroduction,
                 example_video_description: <WhatIsMMAVideo />,
                 example_video_id: "PnUmcL07xnY",
                 header_image: WhatIsMMAHeader
@@ -73,7 +74,7 @@ const pagesData = [
             {
                 title:"history-of-mma",
                 display: <HistoryOfMMA />,
-                introduction: BasicIntroductions.HistoryOfMMAIntroduction,
+                introduction: BasicIntro.HistoryOfMMAIntroduction,
                 example_video_description: <HistoryOfMMAVideo />,
                 example_video_id: "ea7Uf7BVBvs",
                 header_image: HistoryOfMMAHeader
@@ -81,7 +82,7 @@ const pagesData = [
             {
                 title:"rules-of-mma",
                 display: <RulesOfMMA />,
-                introduction: BasicIntroductions.MMADictionaryIntroduction,
+                introduction: BasicIntro.MMADictionaryIntroduction,
                 example_video_description: RulesOfMMAVideo,
                 example_video_id: "0kKALSgyTOc",
                 header_image: RulesOfMMAHeader
@@ -89,7 +90,7 @@ const pagesData = [
             {
                 title:"mma-dictionary",
                 display: <MMADictionary />,
-                introduction: BasicIntroductions.RulesOfMMAIntroduction,
+                introduction: BasicIntro.RulesOfMMAIntroduction,
                 example_video_description: <MMADictionaryVideo />,
                 example_video_id: "_y1e4UpeVr8",
                 example_video_start: "61",
@@ -104,31 +105,31 @@ const pagesData = [
             {
                 title:"fundamentals",
                 display: <Fundamentals />,
-                introduction: <FundamentalsIntroduction />,
+                introduction: AdvancedIntro.FundamentalsIntroduction,
                 header_image: FundamentalsHeader
             },
             {
                 title:"techniques",
                 display: <Techniques />,
-                introduction: <TechniquesIntroduction />,
+                introduction: AdvancedIntro.TechniquesIntroduction,
                 header_image: TechniquesHeader
             },
             {
                 title:"fight-strategies",
                 display: <FightStrategies />,
-                introduction: <FightStrategiesIntroduction />,
+                introduction: AdvancedIntro.FightStrategiesIntroduction,
                 header_image: FightStrategiesHeader
             },
             {
                 title:"fighter-pay",
                 display: <FighterPay />,
-                introduction: <FighterPayIntroduction />,
+                introduction: AdvancedIntro.FighterPayIntroduction,
                 header_image: FighterPayHeader
             },
             {
                 title:"weight-classes",
                 display: <WeightClasses />,
-                introduction: <WeightClassesIntroduction />,
+                introduction: AdvancedIntro.WeightClassesIntroduction,
                 header_image: WeightClassesHeader
             }
         ]
