@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PromotionsIntroduction = () =>
+const PromotionsIntroduction = (
     <>
         <p>
             Today no companies have presented significant competition to the UFC which is regarded as 
@@ -18,6 +18,6 @@ const PromotionsIntroduction = () =>
             in MMA is also pocessed by other promotions such as Bellator MMA and One Championship.
         </p>
     </>
-
+)
 
 export default PromotionsIntroduction

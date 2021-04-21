@@ -87,4 +87,9 @@ export const MMADictionaryIntroduction = (
     </p>
 )
 
-export default WhatIsMMAIntroduction
+export default {
+    WhatIsMMAIntroduction,
+    HistoryOfMMAIntroduction,
+    RulesOfMMAIntroduction,
+    MMADictionaryIntroduction
+}

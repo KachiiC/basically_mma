@@ -116,4 +116,10 @@ export const WeightClassesIntroduction = (
     </>
 )
 
-export default FundamentalsIntroduction
+export default {
+    FundamentalsIntroduction,
+    TechniquesIntroduction,
+    FightStrategiesIntroduction,
+    FighterPayIntroduction,
+    WeightClassesIntroduction
+}

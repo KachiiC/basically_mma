@@ -12,7 +12,7 @@ import HistoryOfMMA from 'Pages/Basics/HistoryOfMMA'
 import RulesOfMMA from 'Pages/Basics/RulesOfMMA'
 import MMADictionary from 'Pages/Basics/MMADictionary'
 // Basic Introductions
-import * as BasicIntro from 'Pages/PageIntroductions/Basics/BasicIntroductions'
+import * as BasicIntro from 'Pages/PageIntroductions/BasicIntroductions'
 // Basics Example Videos
 import WhatIsMMAVideo from 'Data/Basics/WhatIsMMA/WhatIsMMA'
 import HistoryOfMMAVideo from 'Data/Basics/HistoryOfMMA/HistoryOfMMA'
@@ -32,12 +32,7 @@ import FightStrategies from 'Pages/Advanced/FightStrategies'
 import FighterPay from 'Pages/Advanced/FighterPay'
 import WeightClasses from 'Pages/Advanced/WeightClasses'
 //// Advanced Introductions
-import * as AdvancedIntro from 'Pages/PageIntroductions/Advanced/AdvancedIntroductions'
-// import FundamentalsIntroduction from 'Pages/PageIntroductions/Advanced/FundamentalsIntroduction'
-// import TechniquesIntroduction from 'Pages/PageIntroductions/Advanced/TechniquesIntroduction'
-// import FightStrategiesIntroduction from 'Pages/PageIntroductions/Advanced/FightStrategiesIntroduction'
-// import FighterPayIntroduction from 'Pages/PageIntroductions/Advanced/FighterPayIntroduction'
-// import WeightClassesIntroduction from 'Pages/PageIntroductions/Advanced/WeightClassesIntroduction'
+import * as AdvancedIntro from 'Pages/PageIntroductions/AdvancedIntroductions'
 // Advanced Header Image
 import FundamentalsHeader from 'SiteImages/Advanced/Fundamentals/Fundamentals.jpg'
 import TechniquesHeader from 'SiteImages/Advanced/Techniques/Techniques.jpg'
@@ -52,11 +47,7 @@ import MMALegends from 'Pages/MMAWorld/MMALegends'
 import BestOfMMA from 'Pages/MMAWorld/BestOfMMA'
 import Recommended from 'Pages/MMAWorld/Recommended'
 // MMA World introduction //
-import MMAPromotionsIntroduction from 'Pages/PageIntroductions/MMAWorld/MMAPromotionsIntroduction'
-import RecommendedIntroduction from 'Pages/PageIntroductions/MMAWorld/RecommendedIntroduction'
-import BestOfMMAIntroduction from 'Pages/PageIntroductions/MMAWorld/BestOfMMAIntroduction'
-import MMALegendsIntroduction from 'Pages/PageIntroductions/MMAWorld/MMALegendsIntroduction'
-
+import * as MMAWorldIntro from 'Pages/PageIntroductions/MMAWorldIntroductions'
 
 const pagesData = [
     {
@@ -141,22 +132,22 @@ const pagesData = [
             {
                 title:"best-of-mma",
                 display: <BestOfMMA />,
-                introduction: <BestOfMMAIntroduction />
+                introduction: MMAWorldIntro.BestOfMMAIntroduction
             },
             {
                 title:"mma-legends",
                 display: <MMALegends />,
-                introduction: <MMALegendsIntroduction />
+                introduction: MMAWorldIntro.MMALegendsIntroduction
             },
             {
                 title:"mma-promotions",
                 display: <MMAPromotions />,
-                introduction: <MMAPromotionsIntroduction />
+                introduction: MMAWorldIntro.MMAPromotionsIntroduction
             },
             {
                 title:"recommended",
                 display: <Recommended />,
-                introduction: <RecommendedIntroduction />
+                introduction: MMAWorldIntro.RecommendedIntroduction
             }
         ]
     },
