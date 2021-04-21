@@ -12,10 +12,7 @@ import HistoryOfMMA from 'Pages/Basics/HistoryOfMMA'
 import RulesOfMMA from 'Pages/Basics/RulesOfMMA'
 import MMADictionary from 'Pages/Basics/MMADictionary'
 // Basic Introductions
-import WhatIsMMAIntroduction from 'Pages/PageIntroductions/Basics/WhatIsMMAIntroduction'
-import HistoryOfMMAIntroduction from 'Pages/PageIntroductions/Basics/HistoryOfMMAIntroduction'
-import MMADictionaryIntroduction from 'Pages/PageIntroductions/Basics/MMADictionaryIntroduction'
-import RulesOfMMAIntroduction from 'Pages/PageIntroductions/Basics/RulesOfMMAIntroduction'
+import * as BasicIntroductions from 'Pages/PageIntroductions/Basics/BasicIntroductions'
 // Basics Example Videos
 import WhatIsMMAVideo from 'Data/Basics/WhatIsMMA/WhatIsMMA'
 import HistoryOfMMAVideo from 'Data/Basics/HistoryOfMMA/HistoryOfMMA'
@@ -68,7 +65,7 @@ const pagesData = [
             {
                 title: "what-is-mma",
                 display: <WhatIsMMA />,
-                introduction: <WhatIsMMAIntroduction />,
+                introduction: BasicIntroductions.WhatIsMMAIntroduction,
                 example_video_description: <WhatIsMMAVideo />,
                 example_video_id: "PnUmcL07xnY",
                 header_image: WhatIsMMAHeader
@@ -76,7 +73,7 @@ const pagesData = [
             {
                 title:"history-of-mma",
                 display: <HistoryOfMMA />,
-                introduction: <HistoryOfMMAIntroduction />,
+                introduction: BasicIntroductions.HistoryOfMMAIntroduction,
                 example_video_description: <HistoryOfMMAVideo />,
                 example_video_id: "ea7Uf7BVBvs",
                 header_image: HistoryOfMMAHeader
@@ -84,7 +81,7 @@ const pagesData = [
             {
                 title:"rules-of-mma",
                 display: <RulesOfMMA />,
-                introduction: <RulesOfMMAIntroduction />,
+                introduction: BasicIntroductions.MMADictionaryIntroduction,
                 example_video_description: RulesOfMMAVideo,
                 example_video_id: "0kKALSgyTOc",
                 header_image: RulesOfMMAHeader
@@ -92,7 +89,7 @@ const pagesData = [
             {
                 title:"mma-dictionary",
                 display: <MMADictionary />,
-                introduction: <MMADictionaryIntroduction />,
+                introduction: BasicIntroductions.RulesOfMMAIntroduction,
                 example_video_description: <MMADictionaryVideo />,
                 example_video_id: "_y1e4UpeVr8",
                 example_video_start: "61",
