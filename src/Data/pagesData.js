@@ -4,44 +4,18 @@ import About from 'Pages/Others/About/'
 import Store from 'Pages/Others/Store/'
 // Other
 import News from 'Pages/Others/News'
-
 //// BASICS ////
-// Basic Pages
-import WhatIsMMA from 'Pages/Basics/WhatIsMMA'
-import HistoryOfMMA from 'Pages/Basics/HistoryOfMMA'
-import RulesOfMMA from 'Pages/Basics/RulesOfMMA'
-import MMADictionary from 'Pages/Basics/MMADictionary'
-// Basic Introductions
+import BasicPages from 'Pages/Basics/BasicPages'
 import BasicIntro from 'Pages/PageIntroductions/BasicIntroductions'
-// Basics Example Videos
 import BasicVideos from 'Data/Basics/BasicVideos'
-// Basics Header Image
 import BasicImages from 'SiteImages/Basics/BasicImages'
-
 //// ADVANCED ////
-// Advanced Pages
-import Fundamentals from 'Pages/Advanced/Fundamentals'
-import Techniques from 'Pages/Advanced/Techniques'
-import FightStrategies from 'Pages/Advanced/FightStrategies'
-import FighterPay from 'Pages/Advanced/FighterPay'
-import WeightClasses from 'Pages/Advanced/WeightClasses'
-//// Advanced Introductions
-import * as AdvancedIntro from 'Pages/PageIntroductions/AdvancedIntroductions'
-// Advanced Header Image
-import FundamentalsHeader from 'SiteImages/Advanced/Fundamentals/Fundamentals.jpg'
-import TechniquesHeader from 'SiteImages/Advanced/Techniques/Techniques.jpg'
-import FighterPayHeader from 'SiteImages/Advanced/FighterPay/FighterPay.jpg'
-import FightStrategiesHeader from 'SiteImages/Advanced/FightStrategies/FightStrategies.jpg'
-import WeightClassesHeader from 'SiteImages/Advanced/WeightClasses/WeightClasses.jpg'
-
+import AdvancedPages from 'Pages/Advanced/AdvancedPages'
+import AdvancedIntro from 'Pages/PageIntroductions/AdvancedIntroductions'
+import AdvancedImages from 'SiteImages/Advanced/AdvancedImages'
 //// MMA WORLD ////
-// MMA World Pages
-import MMAPromotions from 'Pages/MMAWorld/MMAPromotions'
-import MMALegends from 'Pages/MMAWorld/MMALegends'
-import BestOfMMA from 'Pages/MMAWorld/BestOfMMA'
-import Recommended from 'Pages/MMAWorld/Recommended'
-// MMA World introduction //
-import * as MMAWorldIntro from 'Pages/PageIntroductions/MMAWorldIntroductions'
+import MMAWorldPages from 'Pages/MMAWorld/MMAWorldPages'
+import MMAWorldIntro from 'Pages/PageIntroductions/MMAWorldIntroductions'
 
 const pagesData = [
     {
@@ -50,7 +24,7 @@ const pagesData = [
         menu_list: [
             {
                 title: "what-is-mma",
-                display: <WhatIsMMA />,
+                display: BasicPages.WhatIsMMA,
                 header_image: BasicImages.WhatIsMMAHeader,
                 introduction: BasicIntro.WhatIsMMAIntroduction,
                 example_title: BasicVideos.WhatIsMMAVideo.title,
@@ -59,7 +33,7 @@ const pagesData = [
             },
             {
                 title:"history-of-mma",
-                display: <HistoryOfMMA />,
+                display: BasicPages.HistoryOfMMA,
                 header_image: BasicImages.HistoryOfMMAHeader,
                 introduction: BasicIntro.HistoryOfMMAIntroduction,
                 example_title: BasicVideos.HistoryOfMMAVideo.title,
@@ -68,13 +42,13 @@ const pagesData = [
             },
             {
                 title:"rules-of-mma",
-                display: <RulesOfMMA />,
+                display: BasicPages.RulesOfMMA,
                 header_image: BasicImages.RulesOfMMAHeader,
                 introduction: BasicIntro.RulesOfMMAIntroduction,
             },
             {
                 title:"mma-dictionary",
-                display: <MMADictionary />,
+                display: BasicPages.MMADictionary,
                 header_image: BasicImages.MMADictionaryHeader,
                 introduction: BasicIntro.MMADictionaryIntroduction,
             }
@@ -86,33 +60,33 @@ const pagesData = [
         menu_list: [
             {
                 title:"fundamentals",
-                display: <Fundamentals />,
+                display: AdvancedPages.Fundamentals,
                 introduction: AdvancedIntro.FundamentalsIntroduction,
-                header_image: FundamentalsHeader
+                header_image: AdvancedImages.FundamentalsHeader
             },
             {
                 title:"techniques",
-                display: <Techniques />,
+                display: AdvancedPages.Techniques,
                 introduction: AdvancedIntro.TechniquesIntroduction,
-                header_image: TechniquesHeader
+                header_image: AdvancedImages.TechniquesHeader
             },
             {
                 title:"fight-strategies",
-                display: <FightStrategies />,
+                display: AdvancedPages.FightStrategies,
                 introduction: AdvancedIntro.FightStrategiesIntroduction,
-                header_image: FightStrategiesHeader
+                header_image: AdvancedImages.FightStrategiesHeader
             },
             {
                 title:"fighter-pay",
-                display: <FighterPay />,
+                display: AdvancedPages.FighterPay,
                 introduction: AdvancedIntro.FighterPayIntroduction,
-                header_image: FighterPayHeader
+                header_image: AdvancedImages.FighterPayHeader
             },
             {
                 title:"weight-classes",
-                display: <WeightClasses />,
+                display: AdvancedPages.WeightClasses,
                 introduction: AdvancedIntro.WeightClassesIntroduction,
-                header_image: WeightClassesHeader
+                header_image: AdvancedImages.WeightClassesHeader
             }
         ]
     },
@@ -122,22 +96,22 @@ const pagesData = [
         menu_list: [
             {
                 title:"best-of-mma",
-                display: <BestOfMMA />,
+                display: MMAWorldPages.BestOfMMA,
                 introduction: MMAWorldIntro.BestOfMMAIntroduction
             },
             {
                 title:"mma-legends",
-                display: <MMALegends />,
+                display: MMAWorldPages.MMALegends,
                 introduction: MMAWorldIntro.MMALegendsIntroduction
             },
             {
                 title:"mma-promotions",
-                display: <MMAPromotions />,
+                display: MMAWorldPages.MMAPromotions,
                 introduction: MMAWorldIntro.MMAPromotionsIntroduction
             },
             {
                 title:"recommended",
-                display: <Recommended />,
+                display: MMAWorldPages.Recommended,
                 introduction: MMAWorldIntro.RecommendedIntroduction
             }
         ]

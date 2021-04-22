@@ -6,7 +6,7 @@ import 'SiteCss/SiteCss.css'
 import 'antd/dist/antd.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // Components
-import {BrowserRouter, Switch, Route} from "react-router-dom"
+import { BrowserRouter, Switch, Route } from "react-router-dom"
 import SiteScrollToTop from 'SiteCss/SiteScrollToTop'
 import SiteNavbar from 'SiteCss/SiteNavbar'
 import SiteFooter from 'SiteCss/SiteFooter'
