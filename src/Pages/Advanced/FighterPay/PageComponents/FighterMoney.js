@@ -1,8 +1,6 @@
 import React from 'react'
 // Data
-import PromotionsMoneyData from 'Data/Advanced/FighterPay/FighterPay'
 // Components
-import SiteCaptionCarousel from "Components/SiteCaptionCarousel"
 
 const FighterMoney = () => {
 
@@ -23,7 +21,6 @@ const FighterMoney = () => {
             <p>So how much should MMA fighters be paid? Before we can answer that lets see how fighters
                 earn their money.
             </p>
-            <SiteCaptionCarousel data={PromotionsMoneyData} />
         </>
     )
 }

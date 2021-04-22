@@ -1,8 +1,6 @@
 import React  from "react"
 // Data
-import PromotionsMoneyData from 'Data/Advanced/FighterPay/FighterPay'
 // Components
-import SiteCaptionCarousel from "Components/SiteCaptionCarousel"
 
 
 const PromotionsMoney = () => {
@@ -16,7 +14,6 @@ const PromotionsMoney = () => {
                 operates differently, the main sources of income remain relatively similar.
                 These are the main three ways most promotions generate their income.
             </p>
-            <SiteCaptionCarousel data={PromotionsMoneyData} />
         </>
     )
 

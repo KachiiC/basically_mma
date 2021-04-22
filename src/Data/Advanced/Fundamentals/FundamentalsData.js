@@ -1,36 +1,36 @@
 // Modal Content
-import * as TabsData from './TabsData'
+import TabsData from './TabsData'
 
 const fundamentalsData = [
     {
         title: "Striking",
         content: TabsData.StrikingData, 
-        image: "",
+        icon: "",
     },
     {
         title: "Grappling",
         content: TabsData.GrapplingData,      
-        image: "",
+        icon: "",
     },
     {
         title: "Game Planning",
         content: TabsData.GamePlanningData,        
-        image: "",
+        icon: "",
     },
     {
         title: "Weight Cutting",
         content: "",       
-        image: "",
+        icon: "",
     },
     {
         title: "Conditioning",
         content: "",       
-        image: ""
+        icon: ""
     },
     {
         title: "Nutrition",
         content: "",       
-        image: ""
+        icon: ""
     },
 ]
 

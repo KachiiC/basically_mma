@@ -2,8 +2,8 @@ import React from 'react'
 // CSS
 import './Fundamentals.css'
 // Components
-import FundamentalCards from './PageComponents/FundamentalCards'
+import FundamentalTabs from './PageComponents/FundamentalTabs'
 
-const Fundamentals = () => <FundamentalCards />
+const Fundamentals = () => <FundamentalTabs />
 
 export default Fundamentals

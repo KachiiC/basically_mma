@@ -1,11 +1,9 @@
 import React from 'react'
-import SiteInlineImage from '../../../../SiteCss/SiteInlineImage'
 // Components
-import ReebokMoney from './ReebokMoney'
+import SiteInlineImage from 'SiteCss/SiteInlineImage'
 
 
 const UFCFighterMoney = () => (
-
     <>
         <h3>UFC Fighters Pay</h3>
         <p>
@@ -32,7 +30,7 @@ const UFCFighterMoney = () => (
             Historically, UFC president Dana White and former CEO Lorenzo Fertitta have also 
             given fighters undisclosed fight night bonuses.
         </p>
-        <SiteInlineImage url="http://via.placeholder.com/600x340.png?text=Fight%20Night%20Purse"/>
+        <SiteInlineImage url="http://via.placeholder.com/600x340.png?text=Fight%20Night%20Purse" />
         <h6>The Reebok Sponsorship Deal</h6>
         <p>
             In 2015, the UFC announced Reebok as its official apparel partner. This was 
@@ -66,8 +64,7 @@ const UFCFighterMoney = () => (
             most attention due to their media obligations, only being able to promote reebok 
             reduces their earning potential.
         </p>
-        <SiteInlineImage url="http://via.placeholder.com/600x340.png?text=Fight%20Night%20Purse"/>
-        <ReebokMoney />
+        <SiteInlineImage url="http://via.placeholder.com/600x340.png?text=Fight%20Night%20Purse" />
     </>
 )
 
