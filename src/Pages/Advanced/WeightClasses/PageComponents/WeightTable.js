@@ -4,8 +4,7 @@ import WeightTableData from 'Data/Advanced/WeightClasses/WeightTableData'
 //Components
 import {Table} from 'antd';
 
-
-const columns = [
+const weight_columns = [
   {
     title: 'Weight Class',
     dataIndex: 'name',
@@ -45,10 +44,10 @@ const columns = [
 ];
 
 const WeightTable = () => (
-    <div className="weight-class-component">
+    <div className="w-90 m-auto">
       <h4>The Unified Rules of MMA Weight Classes</h4> 
         <Table className="weight-class-table" 
-          columns={columns} 
+          columns={weight_columns} 
           dataSource={WeightTableData} 
           pagination={false}
         />

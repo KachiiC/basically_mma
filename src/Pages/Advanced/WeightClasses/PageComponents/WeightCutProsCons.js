@@ -8,13 +8,18 @@ const WeightCutProsAndCons = () => {
 
     const ProsAndCons = WeightCutProsCons.map((point, index) => (
         <Table.Row key={index}>
-            <Table.Cell className="weight-cut-pros">{point.pro}</Table.Cell>
-            <Table.Cell className="weight-cut-cons">{point.con}</Table.Cell>
+            <Table.Cell className="weight-cut-pros">
+                {point.pro}
+            </Table.Cell>
+            <Table.Cell className="weight-cut-cons">
+                {point.con}
+            </Table.Cell>
         </Table.Row>
     ))     
 
   return (
-      <div className="weight-class-component">
+
+    <div className="w-90 m-auto">
         <h3>Pros and Cons of Weight Cutting</h3>
         <div className="pros-cons-container">
             <Table celled fixed>
@@ -29,7 +34,7 @@ const WeightCutProsAndCons = () => {
                 </Table.Body>
             </Table>
         </div>
-      </div>
+    </div>
 
   )
 }

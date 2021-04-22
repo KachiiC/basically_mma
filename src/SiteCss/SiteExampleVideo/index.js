@@ -3,13 +3,13 @@ import React from 'react'
 import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
 
 const SiteExampleVideo = (props) => (
-    <>
-        {props.description}
+    
         <SiteYoutubeVideo 
             youtube_id={props.youtube_id} 
-            start={props.start} 
+            start={props.start}
+            title={props.title}
+            caption={props.caption}
         />
-    </>
 )
 
 export default SiteExampleVideo

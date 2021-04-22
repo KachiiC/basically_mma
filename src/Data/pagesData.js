@@ -12,17 +12,11 @@ import HistoryOfMMA from 'Pages/Basics/HistoryOfMMA'
 import RulesOfMMA from 'Pages/Basics/RulesOfMMA'
 import MMADictionary from 'Pages/Basics/MMADictionary'
 // Basic Introductions
-import * as BasicIntro from 'Pages/PageIntroductions/BasicIntroductions'
+import BasicIntro from 'Pages/PageIntroductions/BasicIntroductions'
 // Basics Example Videos
-import WhatIsMMAVideo from 'Data/Basics/WhatIsMMA/WhatIsMMA'
-import HistoryOfMMAVideo from 'Data/Basics/HistoryOfMMA/HistoryOfMMA'
-import RulesOfMMAVideo from 'Data/Basics/RulesOfMMA/RulesOfMMAVideo'
-import MMADictionaryVideo from 'Data/Basics/MMADictionary/MMADictionary'
+import BasicVideos from 'Data/Basics/BasicVideos'
 // Basics Header Image
-import WhatIsMMAHeader from 'SiteImages/Basics/WhatIsMMA/WhatIsMMA.jpg'
-import HistoryOfMMAHeader from 'SiteImages/Basics/HistoryOfMMA/HistoryOfMMA.jpg'
-import RulesOfMMAHeader from 'SiteImages/Basics/RulesOfMMA/RulesOfMMA.jpg'
-import MMADictionaryHeader from 'SiteImages/Basics/MMADictionary/MMADictionary.jpg'
+import BasicImages from 'SiteImages/Basics/BasicImages'
 
 //// ADVANCED ////
 // Advanced Pages
@@ -57,35 +51,32 @@ const pagesData = [
             {
                 title: "what-is-mma",
                 display: <WhatIsMMA />,
+                header_image: BasicImages.WhatIsMMAHeader,
                 introduction: BasicIntro.WhatIsMMAIntroduction,
-                example_video_description: <WhatIsMMAVideo />,
-                example_video_id: "PnUmcL07xnY",
-                header_image: WhatIsMMAHeader
+                example_title: BasicVideos.WhatIsMMAVideo.title,
+                example_caption: BasicVideos.WhatIsMMAVideo.description,
+                example_video_id: BasicVideos.WhatIsMMAVideo.video_id
             },
             {
                 title:"history-of-mma",
                 display: <HistoryOfMMA />,
+                header_image: BasicImages.HistoryOfMMAHeader,
                 introduction: BasicIntro.HistoryOfMMAIntroduction,
-                example_video_description: <HistoryOfMMAVideo />,
-                example_video_id: "ea7Uf7BVBvs",
-                header_image: HistoryOfMMAHeader
+                example_title: BasicVideos.HistoryOfMMAVideo.title,
+                example_caption: BasicVideos.HistoryOfMMAVideo.description,
+                example_video_id: BasicVideos.HistoryOfMMAVideo.video_id
             },
             {
                 title:"rules-of-mma",
                 display: <RulesOfMMA />,
-                introduction: BasicIntro.MMADictionaryIntroduction,
-                example_video_description: RulesOfMMAVideo,
-                example_video_id: "0kKALSgyTOc",
-                header_image: RulesOfMMAHeader
+                header_image: BasicImages.RulesOfMMAHeader,
+                introduction: BasicIntro.RulesOfMMAIntroduction,
             },
             {
                 title:"mma-dictionary",
                 display: <MMADictionary />,
-                introduction: BasicIntro.RulesOfMMAIntroduction,
-                example_video_description: <MMADictionaryVideo />,
-                example_video_id: "_y1e4UpeVr8",
-                example_video_start: "61",
-                header_image: MMADictionaryHeader
+                header_image: BasicImages.MMADictionaryHeader,
+                introduction: BasicIntro.MMADictionaryIntroduction,
             }
         ]
     },

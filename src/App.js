@@ -11,12 +11,12 @@ import SiteScrollToTop from 'SiteCss/SiteScrollToTop'
 import SiteNavbar from 'SiteCss/SiteNavbar'
 import SiteFooter from 'SiteCss/SiteFooter'
 import SiteMainContainer from 'SiteCss/SiteMainContainer'
-import SiteExampleVideo from './SiteCss/SiteExampleVideo'
 import SiteSidebar from 'SiteCss/SiteSidebar'
 // Data
 import pagesData from './Data/pagesData'
 // Pages
 import Home from './Pages/Others/Home'
+import SiteYoutubeVideo from './Components/SiteYoutubeVideo';
 
 const App = () => {
 
@@ -40,6 +40,15 @@ const App = () => {
 
     const displayTitle = sub.title.split("-").join(" ")
 
+    const videoLogic = sub.example_video_id ? 
+      <SiteYoutubeVideo
+        title={sub.example_title}
+        caption={sub.example_caption}
+        youtube_id={sub.example_video_id}
+        start={sub.example_video_start}
+      /> : 
+      <></>
+
       return (
 
         <Route path={`/basically_mma/${sub.title}`} key={index}>
@@ -49,13 +58,7 @@ const App = () => {
             main_display={sub.display}
             header_image={sub.header_image}
             sidebar={<SiteSidebar />}
-            example_video={
-              <SiteExampleVideo
-                description={sub.example_video_description}
-                youtube_id={sub.example_video_id}
-                start={sub.example_video_start}
-              />
-            }
+            example_video={videoLogic}
           />
         </Route>
 

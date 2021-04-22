@@ -1,4 +1,4 @@
-var WeightData = [
+const WeightData = [
    {
       name: 'Atomweight',
       weight: 105,

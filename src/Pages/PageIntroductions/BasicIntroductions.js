@@ -17,13 +17,6 @@ export const WhatIsMMAIntroduction = (
             knew how to do one thing. They never really “mixed” the martial arts as the name of the sport 
             would indicate they might.
         </p>
-        <p> 
-            As the sport has evolved, fighters have learned the importance of being great at multiple fighting 
-            disciplines. Understanding which forms of martial arts a fighter excels at and which they lack 
-            in is important to help you understand what their game plan is going to be. What is MORE 
-            important is to know how that style is going to match up with their opponent’s style (or styles) 
-            and which is going to be more effective.
-        </p>
     </>
 )
 

@@ -24,22 +24,23 @@ const SiteMainContainer = (props) => {
         if (props.sidebar === true) {
             return <SiteSidebar />
         }
-    
+
+    const videoLogic = props.example_video ? props.example_video : <> </>
     
     return (
         <>
-        {imageLogic}
-        <div className="site-grid-system">
-            <main className={`site-span-${pageSpan}`}>
-                <h1 className="page-title">
-                    {props.title}
-                </h1>
-                {props.introduction}
-                {props.example_video}
-                {props.main_display}
-            </main>
-            {sidebarLogic}
-        </div>
+            {imageLogic}
+            <div className="site-grid-system">
+                <main className={`site-span-${pageSpan}`}>
+                    <h1 className="page-title">
+                        {props.title}
+                    </h1>
+                    {props.introduction}
+                    {videoLogic}
+                    {props.main_display}
+                </main>
+                {sidebarLogic}
+            </div>
         </>
     )
     

@@ -15,7 +15,7 @@ const WeightClasses = () => (
         <WeightTable />
         <WeightCutConsiderations />
         <WeightCutProsAndCons />
-        <OutsideOfUS />
+        {OutsideOfUS}
         <OneChampionshipWeight />
     </>
     

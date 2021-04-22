@@ -39,10 +39,8 @@ const columns = [
     },
 ];
 
-
 const OneChampionshipWeightClasses = () => (
-
-    <div className="weight-class-component">
+    <>
         <h4>One Championship</h4>
         <p>
             One Championship have banned weight-cutting by dehydration in order to promote fighter 
@@ -59,13 +57,16 @@ const OneChampionshipWeightClasses = () => (
             by athletes in the organisation, as well as other stakeholders in the MMA industry.  
         </p>
         <h5>One Championship Weight Classes</h5>
-        <Table 
-            columns={columns} 
-            dataSource={OneChampionshipData} 
-            pagination={false}
-            className="weight-class-table"
-        />
-    </div>
+        <div class="w-90 m-auto">
+
+            <Table 
+                columns={columns} 
+                dataSource={OneChampionshipData} 
+                pagination={false}
+                className="weight-class-table"
+            />
+        </div>
+    </>
     
   )
 
