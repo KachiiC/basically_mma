@@ -14,7 +14,7 @@ const SiteTabs = (props) => {
     const numberOfTabs = props.tabs.length
     
     // Tabs border ("yes" if it will overflow)
-    const tabsBorderLogic = props.border === "yes" ? "site-border": ""
+    const tabsShadowLogic = props.shadow === "yes" ? "site-shadow": ""
 
     // Tabs
     const displayTabs = tabs.map((tab, index) => {
@@ -27,7 +27,7 @@ const SiteTabs = (props) => {
         
         return (
             <div key={index}
-                className="site-single-tab site-span-1"
+                className="site-single-tab site-span-1 cursor-pointer"
                 style={{"borderBottom": borderLogic}}
                 onClick={handleDisplayClick}
             >
@@ -41,10 +41,9 @@ const SiteTabs = (props) => {
         <SiteTabExample example={tabs[currentTab].example} />
         : 
         <></>
-    
 
     return (
-        <div className={`w-90 m-auto ${tabsBorderLogic}`}>
+        <div className={`w-90 m-auto ${tabsShadowLogic}`}>
             {/* Tabs */}
             <div className="site-grid site-tabs-row"
                 style={{"gridTemplateColumns": `repeat(${numberOfTabs},1fr)`}}
@@ -52,7 +51,8 @@ const SiteTabs = (props) => {
                 {displayTabs}
             </div>
             {/* Content of Tabs */}
-            <div className="site-tabs-display-content site-overflow">
+            <div className="site-tabs-display-content site-overflow"
+                style={{"minHeight": `${props.min_height}px`}}>
                 {tabs[currentTab].content}
                 {renderExample}
             </div>

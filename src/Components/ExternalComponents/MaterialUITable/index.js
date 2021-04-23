@@ -11,7 +11,7 @@ import TableContents from './TableContents/TableContents';
 
 const MaterialUITable = (props) => (
 
-    <div className="techniques-tabs-component-container">
+    <div className="w-90 m-auto">
         <TableContainer component={Paper}>
             <Table aria-label="collapsible table">
                 {/* TABLE HEADINGS */}
@@ -27,7 +27,7 @@ const MaterialUITable = (props) => (
             </Table>
         </TableContainer>
     </div>
-    
+
 )
 
 export default MaterialUITable

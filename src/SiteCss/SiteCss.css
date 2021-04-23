@@ -64,6 +64,10 @@
     border: 1px solid white;
 }
 
+.site-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 10px 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
 .site-responsive-image {
     width: 100%;
     height: auto;

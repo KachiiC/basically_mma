@@ -33,10 +33,8 @@ const TechniquesDropdown = (props) => {
             <h3 className="techniques-heading">
                 {props.title}
             </h3>
-            <p className="techniques-content">
-                {formattedContent}
-            </p>
-            <div className="techniques-videos-section">
+            {formattedContent}
+            <div className="site-grid-system">
                 {renderVideos}                     
             </div>
         </>

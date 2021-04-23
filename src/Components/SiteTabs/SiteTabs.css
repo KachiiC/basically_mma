@@ -3,13 +3,12 @@
 }
 
 .site-single-tab:hover {
-    cursor: pointer;
     border-bottom: 2px solid rgb(215, 229, 255);
 }
 
 .site-tabs-display-content {
-    padding: 12px;
-    height: 550px;
+    padding: 20px 30px;
+    background-color: rgb(249, 255, 255);
 }
 
 .example-container {

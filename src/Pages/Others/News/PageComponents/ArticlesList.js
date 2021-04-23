@@ -1,35 +1,36 @@
 import React from 'react'
 // Components
-import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
-import SiteFetcher from 'SiteCss/SiteFetcher';
-import SiteExternalLink from 'SiteCss/SiteExternalLink';
-import SiteTextCrop from 'SiteCss/SiteCrop/SiteTextCrop';
+import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
+import SiteFetcher from 'SiteCss/SiteFetcher'
+import SiteExternalLink from 'SiteCss/SiteExternalLink'
+import SiteTextCrop from 'SiteCss/SiteCrop/SiteTextCrop'
 import SiteOverlay from 'SiteCss/SiteOverlay'
+// Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faReadme } from '@fortawesome/free-brands-svg-icons'
+import ArticlesListData from 'Data/Other/Articles/ArticlesListTemplate'
 
 const ArticlesList = () => {
 
-    const articleList = [
-        {
-            title: "",
-            thumbnail_url: "",
-            post_time_stamp: "",
-            post_description: "",
-            post_link: ""
-        }
-    ]
-
     const articlesListURL = "https://kachiis-rest.herokuapp.com/backend/mma_articles_list"
-    const responseData = SiteFetcher(articlesListURL, articleList)
+    const responseData = SiteFetcher(articlesListURL, ArticlesListData)
     const siteArticles = responseData.response
 
     const displayArticles = siteArticles.map((article, index) => {
 
         const articleTitle = SiteTextCrop(article.title, 30)
         const text_preview = SiteTextCrop(article.post_description, 120)
+        const overlayIcon = (
+            <FontAwesomeIcon 
+                className="play-btn cursor-pointer"
+                icon={faReadme} 
+                size="2x" 
+            />
+        )
 
         return (
             <div key={index} className="single-article site-span-4 w-90">
-                <SiteOverlay>
+                <SiteOverlay icon={overlayIcon}>
                     <SiteExternalLink url={article.post_link}>
                         <img src={article.thumbnail_url} alt={article.title} class="site-responsive-image"/>
                     </SiteExternalLink>
