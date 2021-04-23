@@ -2,9 +2,8 @@ import React from 'react';
 //Css
 import './Techniques.css'
 //Components
-import TechniquesList from './PageComponents/TechniquesList'
+import TechniquesListTable from './PageComponents/TechniquesListTable';
 
-
-const Techniques = () => <TechniquesList />
-
+const Techniques = () => <TechniquesListTable />
+    
 export default Techniques
