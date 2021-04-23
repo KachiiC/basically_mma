@@ -6,15 +6,18 @@ import TableHead from '@material-ui/core/TableHead';
 
 const TableHeadings = (props) => {
 
-    const table_headings = Object.keys(props.data)
-        
+    // Grabs the key values from a single object 
+    const table_headings = Object.keys(props.data[0])
+    
+    // Renders the keys for each object 
     const renderHeadings = table_headings.map(
         (heading, index) => (
             <TableCell align="inherit" key={index}>
-                <b>{heading}</b>
+                <b className="material-table-heading">{heading}</b>
             </TableCell>
         )
     ).slice(0,props.table_columns)
+    // crops based on the number of table columns
     
     return (
         <TableHead>
