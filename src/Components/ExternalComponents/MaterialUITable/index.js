@@ -11,26 +11,18 @@ import TableContentRow from './TableContentRow'
 import TableHeadings from './TableHeadings';
 
 const MaterialUITable = (props) => {
-
+    
+    // Table Contents
     const TableData = props.data
 
-    const renderListOfTechniques = TableData.map((data, index) => {
-
-        const formattedContent = data.description.split('\n\n').map(
-            (value, index) => {
-                if (!value) {
-                    return <p className="technique-description" key={index}>{'\n\n'}</p>
-                }
-                return <p className="technique-description" key={index}>{value}</p>
-            }
-        )
+    // Table data List
+    const renderDataList = TableData.map((data, index) => {
 
         return (
             <TableContentRow
                 key={index}
                 index={index} 
                 row={data} 
-                description={formattedContent} 
                 table_columns={props.table_columns}
                 content={data.content}
             />
@@ -48,7 +40,7 @@ const MaterialUITable = (props) => {
                     />
                     <TableBody>
                         <Fragment>    
-                            {renderListOfTechniques}
+                            {renderDataList}
                         </Fragment>
                     </TableBody>   
                 </Table>

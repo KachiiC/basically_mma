@@ -1,6 +1,7 @@
 import React from 'react'
 // COMPONENTS
 import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
+import SiteParagraphFormatter from 'SiteCss/SiteParagraphFormatter'
 
 const TechniquesDropdown = (props) => {
 
@@ -25,13 +26,15 @@ const TechniquesDropdown = (props) => {
         )
     )
 
+    const formattedContent = SiteParagraphFormatter(props.description)
+
     return (
         <>
             <h3 className="techniques-heading">
                 {props.title}
             </h3>
             <p className="techniques-content">
-                {props.description}
+                {formattedContent}
             </p>
             <div className="techniques-videos-section">
                 {renderVideos}                     
