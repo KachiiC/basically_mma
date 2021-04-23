@@ -2,9 +2,11 @@ import React from 'react'
 // CSS
 import './RulesOfMMA.css'
 import './Responsive.css'
+// Data
+import RulesData from 'Data/Basics/RulesOfMMA/RulesOfMMA'
 // Components
-import RulesCards from './PageComponents/RulesCards'
+import MaterialUITabs from 'Components/ExternalComponents/MaterialUITabs'
 
-const RulesOfMMA = () => <RulesCards />
+const RulesOfMMA = () => <MaterialUITabs data={RulesData} width="90"/>
 
 export default RulesOfMMA

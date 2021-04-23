@@ -31,7 +31,7 @@ const SiteMainContainer = (props) => {
         <>
             {imageLogic}
             <div className="site-grid-system">
-                <main className={`site-span-${pageSpan}`}>
+                <main className={`site-span-${pageSpan} w-100`}>
                     <h1 className="page-title">
                         {props.title}
                     </h1>

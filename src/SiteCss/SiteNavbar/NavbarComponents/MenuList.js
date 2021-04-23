@@ -18,14 +18,14 @@ const MenuList = () => {
         </Link>
 
         const renderMenuType = menu.sub_menu === true ? 
-        DropdownList(menu) : regular_menu
+            DropdownList(menu): 
+            regular_menu
 
         return (
             <div key={index} className={`site-span-${menu_column} nav-heading`}>
                 {renderMenuType}
             </div>
         )
-        
     })
 
     const gridNumber = menuData.length

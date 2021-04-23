@@ -1,18 +1,14 @@
 import React from 'react'
 // Components
 import SiteTabs from 'Components/SiteTabs'
+import MaterialUITabs from 'Components/ExternalComponents/MaterialUITabs'
 // Data 
 import RulesData from 'Data/Basics/RulesOfMMA/RulesOfMMA'
 
-const RulesCards = () => (
-    <div className="rules-of-mma-container">
-        <div className="rules-modal w-100 h-100 site-span-12">
-            <SiteTabs 
-                tabs={RulesData}
-                border="yes"
-            />
-        </div>
-    </div>
+const RulesTabs = () => (
+    
+    // <MaterialUITabs data={RulesData} width="90"/>
+
 )
 
-export default RulesCards
+export default RulesTabs

@@ -1,30 +1,35 @@
 import React, {useState} from 'react';
+// Material UI Components
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 // External Components
 import TabPanel from './MaterialUITabPanel'
-import MaterialTabProps from './MaterialUIProps'
+import TabProps from './MaterialUIProps'
 // Data 
 
 const MaterialUITabs = (props) => {
 
     const TabsData = props.data
 
+    // Tab currently show, default value is first in array
     const [value, setValue] = useState(0);
 
+    // On Click changes the clicked value to new value
     const handleChange = (event, newValue) => {
         setValue(newValue);
     }
 
+    // Returns Title and Icon from each object in Data
     const displayTabs = TabsData.map((tab,index) => (
             <Tab label={tab.title} 
                 icon={tab.icon}
-                {...MaterialTabProps(index)} 
+                {...TabProps(index)} 
             />
         )
     )
 
+    // Returns Content from each object in Data
     const displayTabPanels = TabsData.map((tab,index) => (
             <TabPanel value={value} index={index}>
                 {tab.content}

@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-// Components
+// MATERIAL UI COMPONENTS
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 
 const MaterialUITabPanel = (props) => {
+
+    // Takes the index and content (as a child property) as keys for toggling
     const { children, value, index, ...other } = props;
   
     return (

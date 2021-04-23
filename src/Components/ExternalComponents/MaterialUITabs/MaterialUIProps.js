@@ -1,3 +1,5 @@
+// Creates new Id based on index input (used to toggle tabs)
+
 const MaterialTabProps = (index) => {
     return {
         id: `scrollable-force-tab-${index}`,

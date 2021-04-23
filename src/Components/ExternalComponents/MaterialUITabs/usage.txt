@@ -1,0 +1,14 @@
+Data Format:
+
+    const ExampleData = [
+        {
+            title: "Example Title",
+            content: "Example Content", 
+            icon: "",
+        }
+    ] 
+
+Usage Format: 
+    <MaterialUITabs
+        data={exampleData}
+    />
