@@ -36,8 +36,8 @@ const columns = [
         onFilter: (value, record) => record.gender.indexOf(value) === 0,
         sorter: (a, b) => a.gender.length - b.gender.length,
         sortDirections: ['descend', 'ascend'],
-    },
-];
+    }
+]
 
 const OneChampionshipWeightClasses = () => (
     <>
@@ -59,11 +59,10 @@ const OneChampionshipWeightClasses = () => (
         <h5>One Championship Weight Classes</h5>
         <div class="w-90 m-auto">
 
-            <Table 
-                columns={columns} 
-                dataSource={OneChampionshipData} 
+            <Table className="weight-class-table"
+                columns={columns}
                 pagination={false}
-                className="weight-class-table"
+                dataSource={OneChampionshipData}
             />
         </div>
     </>
