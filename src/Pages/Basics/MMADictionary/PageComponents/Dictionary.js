@@ -3,31 +3,19 @@ import React from 'react'
 import DictionaryComponents from './DictionaryComponents';
 import SiteFetcher from 'SiteCss/SiteFetcher';
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
+import {
+    DictionaryListTemplate, 
+    DictionaryTabTypes
+} from 'Data/Basics/MMADictionary/MMADictionary'
 
 const Dictionary = () => {
 
-    const dictionaryList = [{
-        title: "",
-        type: "",
-        example_type: "",
-        example: "",
-        definition: "",
-    }]
-
     const responseData = SiteFetcher(
         "https://kachiis-rest.herokuapp.com/backend/mma_dictionary_list/",
-        dictionaryList
+        DictionaryListTemplate
     )
 
-    const tab_types = [
-        "General", 
-        "Striking Technique",
-        "Grappling Position",
-        "Grappling Technique",
-        "Submission"
-    ]
-
-    const allTabs = tab_types.map((tab_type, index) => 
+    const allTabs = DictionaryTabTypes.map((tab_type, index) => 
         <DictionaryComponents
             key={index}
             data={responseData.response} 
@@ -37,7 +25,10 @@ const Dictionary = () => {
 
     return (  
         <div className="dictionary-container">
-            <SiteRender data={responseData} component={allTabs} />
+            <SiteRender 
+                data={responseData} 
+                component={allTabs} 
+            />
         </div>
     );
 
