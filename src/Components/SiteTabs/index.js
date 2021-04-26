@@ -14,7 +14,11 @@ const SiteTabs = (props) => {
     const numberOfTabs = props.tabs.length
     
     // Tabs border ("yes" if it will overflow)
-    const tabsShadowLogic = props.shadow === "yes" ? "site-shadow": ""
+    const tabsShadowLogic = () => {
+        if (props.shadow === "yes" ) {
+            return "site-shadow"
+        }
+    }
 
     // Tabs
     const displayTabs = tabs.map((tab, index) => {
@@ -47,7 +51,7 @@ const SiteTabs = (props) => {
     }
 
     return (
-        <div className={`w-90 m-auto ${tabsShadowLogic}`}>
+        <div className={`w-90 m-auto ${tabsShadowLogic()}`}>
             {/* Tabs */}
             <div className="site-grid site-tabs-row"
                 style={{"gridTemplateColumns": `repeat(${numberOfTabs},1fr)`}}

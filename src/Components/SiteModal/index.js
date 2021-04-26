@@ -10,7 +10,11 @@ const SiteModal = (props) => {
   
   const { closeModal } = props;
 
-  const overflowStyle = props.overflow === "yes" ? "site-overflow": ""
+  const overflowStyle = () => {
+    if (props.overflow === "yes") {
+      return "site-overflow"
+    }
+  }
 
   // Close Button 
   const closeButton = (
@@ -27,7 +31,7 @@ const SiteModal = (props) => {
       <div className="site-overlay w-100 h-100">
         <div className="site-modal-window w-80 h-80" style={{"width": props.width}}>
           {closeButton}
-          <div className={`site-modal-content w-100 site-grid-system ${overflowStyle}`} 
+          <div className={`site-modal-content w-100 site-grid-system ${overflowStyle()}`} 
             style={props.style}
           >
             {props.children}  
