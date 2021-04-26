@@ -11,11 +11,12 @@ const SiteArticlesCard = (props) => {
     const myImages = props.data
     
     // Cards will have a border bottom by default
-    const displayBorder = myImages.border === false ? 
-        <> </> 
-        : 
-        <hr className="site-span-12"/>
-
+    const displayBorder = () => {
+        if (myImages.border !== false) {
+            return <hr className="site-span-12"/>
+        }
+    }
+    
     return (
         <div className="recommended-reading-container site-span-12 site-grid-system">
             <h3 className="site-span-12">
@@ -31,7 +32,7 @@ const SiteArticlesCard = (props) => {
             <div className="other-recommended-reading site-span-6 m-auto site-grid-system">
                 <SiteSmallCards data={myImages} />
             </div>
-            {displayBorder}
+            {displayBorder()}
         </div>
     )
 }

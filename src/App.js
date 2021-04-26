@@ -40,31 +40,30 @@ const App = () => {
 
     const displayTitle = sub.title.split("-").join(" ")
 
-    const videoLogic = sub.example_video_id ? 
-      <SiteYoutubeVideo
-        title={sub.example_title}
-        caption={sub.example_caption}
-        youtube_id={sub.example_video_id}
-        start={sub.example_video_start}
-      /> : 
-      <></>
-
-      return (
-
-        <Route path={`/basically_mma/${sub.title}`} key={index}>
-          <SiteMainContainer
-            title={displayTitle}
-            introduction={sub.introduction}
-            main_display={sub.display}
-            header_image={sub.header_image}
-            sidebar={<SiteSidebar />}
-            example_video={videoLogic}
-          />
-        </Route>
-
-      )
+    const videoLogic = () => {
+      if (sub.example_video_id) {        
+        return <SiteYoutubeVideo
+          title={sub.example_title}
+          caption={sub.example_caption}
+          youtube_id={sub.example_video_id}
+          start={sub.example_video_start}
+        />
+      } 
     }
-  )
+
+    return (
+      <Route path={`/basically_mma/${sub.title}`} key={index}>
+        <SiteMainContainer
+          title={displayTitle}
+          introduction={sub.introduction}
+          main_display={sub.display}
+          header_image={sub.header_image}
+          sidebar={<SiteSidebar />}
+          example_video={videoLogic()}
+        />
+      </Route>
+    )
+  })
 
   // Advanced
   const diplayAdvanced = mySubLinks[1].menu_list.map((sub, index) => {

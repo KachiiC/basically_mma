@@ -1,20 +1,24 @@
-// Modal Content
-import TabsData from './TabsData'
+// Tabs
+import {
+    StrikingData,
+    GrapplingData,
+    GamePlanningData
+} from './TabsData'
 
-const fundamentalsData = [
+export const fundamentalsData = [
     {
         title: "Striking",
-        content: TabsData.StrikingData, 
+        content: StrikingData, 
         icon: "",
     },
     {
         title: "Grappling",
-        content: TabsData.GrapplingData,      
+        content: GrapplingData,      
         icon: "",
     },
     {
         title: "Game Planning",
-        content: TabsData.GamePlanningData,        
+        content: GamePlanningData,        
         icon: "",
     },
     {

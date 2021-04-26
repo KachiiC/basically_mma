@@ -44,13 +44,17 @@ const SiteVideoCarousel = (props) => {
         )
     })
 
-    const titleLogic = props.title ? <h2>{props.title}</h2>: <></>
+    const titleLogic = () => {
+        if (props.title) {
+            return <h2>{props.title}</h2>
+        } 
+    }
 
     return (
         <>
             {/* The Video Carousel */}
             <div className="image-carousel-container">
-                {titleLogic}
+                {titleLogic()}
                 <VideoCarousel
                     displayed_image={current.video_thumbnail}
                     click={handleModal}

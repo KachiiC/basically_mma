@@ -7,13 +7,21 @@ import './SiteYoutubeVideo.css'
 
 const SiteYoutubeVideo = (props) => {
 
-    const titleLogic = props.title ? <h3>{props.title}</h3> : <></>
-    const captionLogic = props.caption ? <p>{props.caption}</p> : <></>
+    const titleLogic = () => {
+        if (props.title) {
+            return <h3>{props.title}</h3>
+        } 
+    }
+    const captionLogic = () => {
+        if (props.caption) {
+            return <p>{props.caption}</p>
+        } 
+    }
     
     return (
     <>
-        {titleLogic}
-        {captionLogic}
+        {titleLogic()}
+        {captionLogic()}
         <div className="youtube-video-container w-100">
             <iframe 
                 className="youtube-video"

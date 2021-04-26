@@ -4,14 +4,15 @@ import './SiteOverlay.css'
 
 const SiteOverlay = (props) => {
 
-    const iconLogic = props.icon ? 
-        props.icon
-        :
-        <></>
+    const iconLogic = () => {
+        if (props.icon) {
+            return props.icon
+        } 
+    }
     
     return (
         <div className="site-overlay-pic" onClick={props.click}>
-            {iconLogic}
+            {iconLogic ()}
             {props.children}
         </div>
     )

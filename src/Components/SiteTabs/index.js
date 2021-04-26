@@ -19,8 +19,11 @@ const SiteTabs = (props) => {
     // Tabs
     const displayTabs = tabs.map((tab, index) => {
         // If selected add border to bottom
-        const borderLogic = tabs.indexOf(tab) === currentTab ? 
-            "2px solid rgb(30, 111, 250)" : ""
+        const borderLogic = () => {
+            if (tabs.indexOf(tab) === currentTab) {
+                return "2px solid rgb(30, 111, 250)"
+            } 
+        }
 
         // click sets tab to clicked tab
         const handleDisplayClick = () => setCurrentTab(tabs.indexOf(tab))
@@ -28,7 +31,7 @@ const SiteTabs = (props) => {
         return (
             <div key={index}
                 className="site-single-tab site-span-1 cursor-pointer"
-                style={{"borderBottom": borderLogic}}
+                style={{"borderBottom": borderLogic ()}}
                 onClick={handleDisplayClick}
             >
                 <h6 className="m-auto">{tab.title}</h6>
@@ -37,10 +40,11 @@ const SiteTabs = (props) => {
     })
 
     // Render Example
-    const renderExample = props.example === "yes" ? 
-        <SiteTabExample example={tabs[currentTab].example} />
-        : 
-        <></>
+    const renderExample = () => {
+        if (props.example === "yes") {
+            return <SiteTabExample example={tabs[currentTab].example} />
+        } 
+    }
 
     return (
         <div className={`w-90 m-auto ${tabsShadowLogic}`}>
@@ -54,7 +58,7 @@ const SiteTabs = (props) => {
             <div className="site-tabs-display-content site-overflow"
                 style={{"minHeight": `${props.min_height}px`}}>
                 {tabs[currentTab].content}
-                {renderExample}
+                {renderExample()}
             </div>
         </div>
       );
