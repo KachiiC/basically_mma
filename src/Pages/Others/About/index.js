@@ -1,5 +1,6 @@
 import React from 'react'
+import SiteIcon from 'SiteCss/SiteIcon'
 
-const About = () => <h1>About</h1>
+const About = () => <SiteIcon icon="instagram" color="red" />
 
 export default About

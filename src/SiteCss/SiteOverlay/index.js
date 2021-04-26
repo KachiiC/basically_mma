@@ -6,7 +6,11 @@ const SiteOverlay = (props) => {
 
     const iconLogic = () => {
         if (props.icon) {
-            return props.icon
+            return (
+                <div className="overlay-icon">
+                    {props.icon}
+                </div>
+            )
         } 
     }
     

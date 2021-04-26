@@ -9,6 +9,7 @@ import SiteOverlay from 'SiteCss/SiteOverlay'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReadme } from '@fortawesome/free-brands-svg-icons'
 import ArticlesListData from 'Data/Other/Articles/ArticlesListTemplate'
+import SiteIcon from 'SiteCss/SiteIcon'
 
 const ArticlesList = () => {
 
@@ -20,13 +21,7 @@ const ArticlesList = () => {
 
         const articleTitle = SiteTextCrop(article.title, 30)
         const text_preview = SiteTextCrop(article.post_description, 120)
-        const overlayIcon = (
-            <FontAwesomeIcon 
-                className="play-btn cursor-pointer"
-                icon={faReadme} 
-                size="2x" 
-            />
-        )
+        const overlayIcon = <SiteIcon icon="read-me" color="white" />
 
         return (
             <div key={index} className="single-article site-span-4 w-90">

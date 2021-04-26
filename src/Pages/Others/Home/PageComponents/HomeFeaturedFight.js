@@ -6,6 +6,7 @@ import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 import SiteOverlay from 'SiteCss/SiteOverlay'
 // Data
 import featuredFight from 'Data/Other/Home/HomeFeaturedFightData'
+import SiteIcon from '../../../../SiteCss/SiteIcon';
 
 const homeFeaturedFightURL = "https://kachiis-rest.herokuapp.com/api/youtube_featured_video/"
 
@@ -22,7 +23,10 @@ const HomeFeaturedFight = () => {
         <div className="home-featured-fight cursor-pointer">
             <div className="fight-title">Featured Fight</div>
             <div className="w-90 m-auto">
-                <SiteOverlay click={handleModal} icon="play">
+                <SiteOverlay 
+                    click={handleModal} 
+                    icon={<SiteIcon icon="play" color="white" />}
+                >
                     <img className="site-responsive-image"
                         src={homeFeaturedFight.video_thumbnail} 
                         alt={responseData.response.video_description}

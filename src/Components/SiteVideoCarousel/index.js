@@ -6,8 +6,7 @@ import './Responsive.css'
 import VideoModal from 'Components/SiteVideoModalPlayer/ComponentParts/VideoModal'
 import VideoCarousel from './ComponentParts/VideoCarousel'
 // ICONS
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { PlayArrowRounded } from '@material-ui/icons'
+import SiteIcon from 'SiteCss/SiteIcon'
 
 
 const SiteVideoCarousel = (props) => {
@@ -61,7 +60,6 @@ const SiteVideoCarousel = (props) => {
                     images={displayImagesRow}
                     row_images={rowImages}
                 />
-                <FontAwesomeIcon icon={PlayArrowRounded} size="4x" />
             </div>
             {/* The Video Modal shown on click */}
             {showModal && (

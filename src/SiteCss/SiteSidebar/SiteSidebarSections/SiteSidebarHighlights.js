@@ -4,6 +4,7 @@ import SiteOverlay from 'SiteCss/SiteOverlay'
 import SiteFetcher from 'SiteCss/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import SiteVideoModalPlayer from 'Components/SiteVideoModalPlayer'
+import SiteIcon from 'SiteCss/SiteIcon'
 // DATA
 import fight_highlightsData from 'Data/Other/Sidebar/SidebarHighlightsData'
 
@@ -42,7 +43,12 @@ const SiteSidebarHighlights = () => {
                     key={index}
                 >
                     <div className="highlight-image site-span-6 m-auto">
-                        <SiteOverlay click={handleClick} icon="play">
+                        <SiteOverlay 
+                            click={handleClick}
+                            icon={
+                                <SiteIcon icon="play" color="white" />
+                            } 
+                        >
                             <img src={highlight.video_thumbnail} 
                                 alt="highlight-cover" 
                                 className="site-responsive-image" 

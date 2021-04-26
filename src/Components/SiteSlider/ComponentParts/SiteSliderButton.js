@@ -1,29 +1,21 @@
 import React from 'react'
 // Icons
-import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import SiteIcon from 'SiteCss/SiteIcon'
 
 const SiteSliderButton = (props) => {
 
     const renderDirection = props.direction === "left" ? 
-    faArrowCircleLeft: 
-    faArrowCircleRight
+        "circle-left"
+        :
+        "circle-right"
 
     const renderPosition = props.direction === "left" ? 
-    "end" : 
-    "start"
+        "end" : 
+        "start"
 
     return (
         <div className="site-span-1 m-auto" style={{"textAlign": renderPosition}}>
-            <FontAwesomeIcon 
-                onClick={props.onClick}
-                icon={renderDirection} 
-                size="2x" 
-                color="black"
-                style={{
-                    "cursor": "pointer"
-                }}
-            />
+            <SiteIcon icon={renderDirection} />
         </div>
     )
 }
