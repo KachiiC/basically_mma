@@ -9,9 +9,7 @@ const SiteSlide = (props) => (
     
     <div className="slider-container h-auto m-auto site-span-1" key={props.key}>
         <SiteExternalLink url={props.link}>
-            <SiteOverlay 
-                icon={<SiteIcon icon="play" color="white" />}
-            >
+            <SiteOverlay icon={<SiteIcon icon="play" color="white" />}>
                 <img className="site-responsive-image"
                     src={props.thumbnail} 
                     alt={props.key} 

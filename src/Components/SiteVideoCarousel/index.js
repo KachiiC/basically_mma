@@ -5,8 +5,6 @@ import './Responsive.css'
 // COMPONENTS
 import VideoModal from 'Components/SiteVideoModalPlayer/ComponentParts/VideoModal'
 import VideoCarousel from './ComponentParts/VideoCarousel'
-// ICONS
-import SiteIcon from 'SiteCss/SiteIcon'
 
 
 const SiteVideoCarousel = (props) => {

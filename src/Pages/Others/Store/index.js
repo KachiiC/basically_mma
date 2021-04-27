@@ -1,11 +1,11 @@
 import React from 'react'
 // Components
-import StoreItems from 'Pages/Others/Store/PageComponents/StoreItems'
+import StoreItemsList from 'Pages/Others/Store/PageComponents/StoreItemsList'
 // CSS 
 import './Store.css'
 import './Responsive.css'
 
 
-const Store = () => <StoreItems />
+const Store = () => <StoreItemsList />
 
 export default Store;

@@ -8,6 +8,7 @@ import {
     faArrowCircleRight,
     faBars,
     faPlay,
+    faShoppingCart,
 } from '@fortawesome/free-solid-svg-icons'
 // Font Awesome BrandIcons
 import { 
@@ -41,6 +42,9 @@ const SiteIcon = (props) => {
         case "bars":
             icon = faBars 
             break;
+        case "shopping-cart": 
+            icon = faShoppingCart
+            break
         default:
             icon = faReadme
     }

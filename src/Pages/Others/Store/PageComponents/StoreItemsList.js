@@ -2,8 +2,8 @@ import React from 'react'
 // Components
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import SiteFetcher from 'SiteCss/SiteFetcher'
-import SiteExternalLink from 'SiteCss/SiteExternalLink'
 import SiteTextCrop from 'SiteCss/SiteCrop/SiteTextCrop'
+import SingleStoreItem from './SingleStoreItem'
 
 const StoreItems = () => {
 
@@ -24,20 +24,13 @@ const StoreItems = () => {
 
         const renderName = SiteTextCrop(item.name, 25)
 
-        return(
-            <div className="store-item-container site-span-3" key={index}>
-                <h4>{renderName}</h4>
-                <div className="store-item-image-container">
-                    <SiteExternalLink url={item.product_link}>
-                        <img src={item.product_thumbnail} 
-                            alt={index} 
-                            class="site-responsive-image"
-                            />
-                    </SiteExternalLink>
-                </div>
-                <h5>£{item.price}</h5>
-            </div>
-
+        return (
+            <SingleStoreItem
+                name={renderName}
+                product_link={item.product_link}
+                product_thumbnail={item.product_thumbnail}
+                price={item.price}
+            />
         )
     })
 

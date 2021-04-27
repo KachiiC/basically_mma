@@ -10,7 +10,8 @@ const SiteSliderButton = (props) => {
         "circle-right"
 
     const renderPosition = props.direction === "left" ? 
-        "end" : 
+        "end" 
+        : 
         "start"
 
     return (
