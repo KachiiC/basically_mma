@@ -6,7 +6,7 @@ import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 import SiteOverlay from 'SiteCss/SiteOverlay'
 // Data
 import featuredFight from 'Data/Other/Home/HomeFeaturedFightData'
-import SiteIcon from '../../../../SiteCss/SiteIcon';
+import SiteIcon from 'SiteCss/SiteIcon';
 
 const homeFeaturedFightURL = "https://kachiis-rest.herokuapp.com/api/youtube_featured_video/"
 
@@ -21,7 +21,9 @@ const HomeFeaturedFight = () => {
 
     const featuredFightComponent = (
         <div className="home-featured-fight cursor-pointer">
-            <div className="fight-title">Featured Fight</div>
+            <div className="fight-title">
+                Featured Fight
+            </div>
             <div className="w-90 m-auto">
                 <SiteOverlay 
                     click={handleModal} 

@@ -59,6 +59,19 @@ export const ReebokPayData = [
     }
 ]
 
+export const ReebokPayTableColumns = [
+    {
+      title: 'Number of UFC Fights',
+      dataIndex: 'numberOfFights',
+    },
+    {
+        title: 'Reebok Sponsorship ($)',
+        dataIndex: 'AmountPaid',
+        defaultSortOrder: 'descend',
+        sorter: (a, b) => a.AmountPaid - b.AmountPaid,
+    },
+]
+
 export default {
     FightersMoneyData,
     PromotionsMoneyData,

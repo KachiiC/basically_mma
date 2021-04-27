@@ -11,7 +11,8 @@ const HistoryTimelineModal = () => {
     const [showModal, setShowModal] = useState(false)
     
     const handleClick = () => showModal === false ? 
-        setShowModal(true): 
+        setShowModal(true)
+        : 
         setShowModal(false)
     
     return (
@@ -21,15 +22,13 @@ const HistoryTimelineModal = () => {
                 click={handleClick} 
                 text="Timeline of MMA" 
             />
-            {showModal && 
-                (
-                    <SiteModal closeModal={handleClick}>
-                        <div className="history-modal site-span-12">
-                            <SiteTimeline data={TimelineData} />
-                        </div>
-                    </SiteModal>
-                )
-            }
+            {showModal && (
+                <SiteModal closeModal={handleClick}>
+                    <div className="history-modal site-span-12">
+                        <SiteTimeline data={TimelineData} />
+                    </div>
+                </SiteModal>
+            )}
         </div>
 
     )

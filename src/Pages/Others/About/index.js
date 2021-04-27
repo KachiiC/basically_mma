@@ -1,6 +1,7 @@
 import React from 'react'
-import SiteIcon from 'SiteCss/SiteIcon'
+import WeightCutProsCons from 'Data/Advanced/WeightClasses/WeightProsConsData'
+import SemanticProsAndConsTable from 'Components/ExternalComponents/SemanticProsAndConsTable'
 
-const About = () => <SiteIcon icon="instagram" color="red" />
+const About = () => <SemanticProsAndConsTable data={WeightCutProsCons}/>
 
 export default About

@@ -12,9 +12,9 @@ import OneChampionshipWeight from './PageComponents/OneChampionshipWeight'
 const WeightClasses = () => (
     
     <>
-        <WeightTable />
-        <WeightCutConsiderations />
-        <WeightCutProsAndCons />
+        {WeightTable}
+        {WeightCutConsiderations}
+        {WeightCutProsAndCons}
         {OutsideOfUS}
         <OneChampionshipWeight />
     </>

@@ -3,10 +3,7 @@ import React from 'react'
 import DictionaryComponents from './DictionaryComponents';
 import SiteFetcher from 'SiteCss/SiteFetcher';
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
-import {
-    DictionaryListTemplate, 
-    DictionaryTabTypes
-} from 'Data/Basics/MMADictionary/MMADictionary'
+import { DictionaryListTemplate, DictionaryTabTypes } from 'Data/Basics/MMADictionary/MMADictionary'
 
 const Dictionary = () => {
 

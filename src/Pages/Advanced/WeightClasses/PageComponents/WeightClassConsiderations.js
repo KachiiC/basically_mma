@@ -2,30 +2,8 @@ import React from 'react'
 // Data
 import WeightCutData from 'Data/Advanced/WeightClasses/WeightCutData'
 // Components
-import {List } from 'antd' 
+import AntList from 'Components/ExternalComponents/AntList'
 
-const WeightCutConsiderations = () => {
-
-    const renderList = WeightCutData.map((item,index) => {
-        return (
-            <List.Item>
-              <List.Item.Meta
-                avatar={item.icon}
-                description={item.description}
-              />
-            </List.Item>
-        )
-      })
-
-    return (
-        <div className="w-90 m-auto">
-            <h3>Choosing a weight class</h3>
-            <List>
-                {renderList}
-            </List>
-        </div>       
-    )
-
-}
+const WeightCutConsiderations = <AntList data={WeightCutData} title="Choosing a weight class"/>
   
 export default WeightCutConsiderations
