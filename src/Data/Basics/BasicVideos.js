@@ -1,7 +1,7 @@
 export const WhatIsMMAVideo = {
-    video_id: "PnUmcL07xnY",
-    title: "So what is MMA today?",
-    description: "As the sport has evolved, fighters have learned the importance of being great at multiple fighting disciplines. Understanding which forms of martial arts a fighter excels at and which they lack in is important to help you understand what their game plan is going to be. What is MORE important is to know how that style is going to match up with their opponent’s style (or styles) and which is going to be more effective. For a more comprehensive explanation? Watch this short clip!"   
+    video_id: "LNySNc76NNU",
+    title: "Here is a brief explaination!",
+    video_start: 22
 }
 
 export const HistoryOfMMAVideo = {

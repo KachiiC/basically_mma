@@ -6,26 +6,30 @@ export const WhatIsMMAIntroduction = (
             <b>Mixed Martial Arts (MMA)</b> is a full-contact combat sport that allows a wide variety of 
             fighting techniques and skills from a mixture of other combat sports to be used in competition. 
             The rules allow usage of both striking and grappling techniques while standing and on the ground. 
-            Competitions allow athletes of different martial arts disciplines to compete.
+            Competitions allow athletes of different martial arts disciplines to compete against one another.
         </p>
+        <h4>How did MMA start?</h4>
         <p>
-            Although originally promoted as a competition to find the most effective martial arts for real 
-            unarmed combat, competitors from different fighting styles were pitted against one another 
-            in contests with relatively few rules. Later, individual fighters incorporated multiple 
-            martial arts into their style. Mixed martial arts is (by definition) the ability to mix serval 
-            disciplines whilst competing. In the early days of mixed martial arts, fighters only 
-            knew how to do one thing. They never really “mixed” the martial arts as the name of the sport 
-            would indicate they might.
+            Originally promoted as a competition with very few rules to find the most effective 
+            martial arts for unarmed combat. The early days of the UFC and Pride FC, promoters would
+            get martial artist who represented that combat sports to fight each other. However, as 
+            the sport evolved fighters would incorporate multiple martial arts into their style.
+            Mixed martial arts is (by definition) the ability to mix serval disciplines whilst 
+            competing.
+        </p>
+        <h4>The Sport today</h4>
+        <p>
+            Although the sport is less than 30 years old, MMA has been one of the fastest rising 
+            sports in the world for the better part of the last two decades. In modern times, 
+            it is a mainstream sport that enjoys a massive following from millions of people all 
+            over the world in all continents. MMA has produced stars that have transcended the sport
+            including Conor McGregor, Ronda Rousey and Gina Carano.
         </p>
     </>
 )
 
 export const HistoryOfMMAIntroduction = (
-    <p> 
-        Mixed Martial Arts (MMA) has been one of the fastest rising sports 
-        in the world for the better part of the last two decades. In modern 
-        times, it is a mainstream sport that enjoys a massive following from 
-        millions of people all over the world in all continents. Modern day 
+    <p>  
         MMA came to prominence in the early 1990’s, when the Ultimate Fighting 
         Championship was established in the United States, inviting the world’s 
         best fighters to compete in the Octagon to determine who reigned supreme. 

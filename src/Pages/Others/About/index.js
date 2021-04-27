@@ -1,7 +1,7 @@
 import React from 'react'
-import WeightCutProsCons from 'Data/Advanced/WeightClasses/WeightProsConsData'
-import SemanticProsAndConsTable from 'Components/ExternalComponents/SemanticProsAndConsTable'
 
-const About = () => <SemanticProsAndConsTable data={WeightCutProsCons}/>
+const About = (
+    <h1>About</h1>
+)
 
 export default About

@@ -6,6 +6,6 @@ import './Store.css'
 import './Responsive.css'
 
 
-const Store = () => <StoreItemsList />
+const Store = <StoreItemsList />
 
 export default Store;

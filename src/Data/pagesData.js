@@ -29,7 +29,8 @@ const pagesData = [
                 introduction: BasicIntro.WhatIsMMAIntroduction,
                 example_title: BasicVideos.WhatIsMMAVideo.title,
                 example_caption: BasicVideos.WhatIsMMAVideo.description,
-                example_video_id: BasicVideos.WhatIsMMAVideo.video_id
+                example_video_id: BasicVideos.WhatIsMMAVideo.video_id,
+                example_video_start: BasicVideos.WhatIsMMAVideo.video_start
             },
             {
                 title:"history-of-mma",
