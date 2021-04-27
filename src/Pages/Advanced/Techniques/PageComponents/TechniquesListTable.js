@@ -15,6 +15,7 @@ const TechniquesListTable = () => {
     )
 
     const techniquesData = responseData.response.map((technique) => {
+        // Adding a content value to each technique object 
         technique.content = (
             <TechniquesDropdown
                 title={technique.title} 

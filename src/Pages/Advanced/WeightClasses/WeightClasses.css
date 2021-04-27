@@ -16,10 +16,6 @@
     padding: 0px 15px;
 }
 
-.weight-class-table {
-    width: 100%;
-}
-
 @media screen and (max-width: 640px) {
     .weight-class-component {
         width: 95%;

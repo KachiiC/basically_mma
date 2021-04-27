@@ -1,29 +1,30 @@
 import React from "react"
 //Components
 import {Table} from 'antd';
+import TableCaption from "./TableContents/TableCaption";
 
 const AntdTable = (props) => {
 
-    const table_info = props.captions.map((info, index) => (
-            <>
-                <small key={index}>
-                {"*".repeat(index + 1)} = {info}
-                </small>
-                <br/>
-            </>
-        )
-    )
+    const table_info = () => {
+        if (props.captions) {
+            return props.captions.map((info, index) => (   
+                <TableCaption 
+                    index={index} 
+                    info={info} 
+                />
+            ))
+        }
+    }
 
     return (
         <div className="w-90 m-auto">
             <h4>{props.title}</h4> 
-                <Table 
-                    className="weight-class-table" 
-                    columns={props.columns} 
-                    dataSource={props.data} 
-                    pagination={props.pagination}
-                />
-            {table_info}
+            <Table 
+                columns={props.columns} 
+                dataSource={props.data} 
+                pagination={props.pagination}
+            />
+            {table_info()}
         </div>
     )
 }

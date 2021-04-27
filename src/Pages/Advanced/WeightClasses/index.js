@@ -10,15 +10,13 @@ import OneChampionshipWeight from './PageComponents/OneChampionshipWeight'
 
 
 const WeightClasses = () => (
-    
     <>
         {WeightTable}
         {WeightCutConsiderations}
         {WeightCutProsAndCons}
         {OutsideOfUS}
-        <OneChampionshipWeight />
+        {OneChampionshipWeight}
     </>
-    
 )
 
 export default WeightClasses 

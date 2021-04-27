@@ -1,45 +1,21 @@
 import React from "react"
 // Data
-import OneChampionshipData from 'Data/Advanced/WeightClasses/OneChampionshipData'
+import { OneChampionshipColumns, OneChampionshipData } from "Data/Advanced/WeightClasses/OneChampionshipData"
 //Components
-import {Table} from 'antd';
+import AntdTable from 'Components/ExternalComponents/AntdTable'
 
-const columns = [
-    {
-        title: 'Weight Class',
-        dataIndex: 'name',
-    },
-    {
-        title: 'Weight Limit (lbs)',
-        dataIndex: 'weight',
-        defaultSortOrder: 'descend',
-        sorter: (a, b) => a.weight - b.weight,
-    },
-    {
-        title: 'Gender',
-        dataIndex: 'gender',
-        filters: [
-            {
-                text: 'Male',
-                value: 'Male',
-            },
-            {
-                text: 'Female',
-                value: 'Female',
-            },
-            {
-            text: 'Both',
-            value: 'Both',
-        },
-        ],
-        filterMultiple: false,
-        onFilter: (value, record) => record.gender.indexOf(value) === 0,
-        sorter: (a, b) => a.gender.length - b.gender.length,
-        sortDirections: ['descend', 'ascend'],
-    }
-]
+const OneChampionshipTable = (
+    <div class="w-90 m-auto">
+        <AntdTable 
+            data={OneChampionshipData} 
+            columns={OneChampionshipColumns}
+            pagination={false}
+            title="One Championship Weight Classes"
+        />
+    </div>
+)
 
-const OneChampionshipWeightClasses = () => (
+const OneChampionshipWeightClasses = (
     <>
         <h4>One Championship</h4>
         <p>
@@ -56,17 +32,9 @@ const OneChampionshipWeightClasses = () => (
             took effect, there have been no further serious incidents. The new system was well received 
             by athletes in the organisation, as well as other stakeholders in the MMA industry.  
         </p>
-        <h5>One Championship Weight Classes</h5>
-        <div class="w-90 m-auto">
-
-            <Table className="weight-class-table"
-                columns={columns}
-                pagination={false}
-                dataSource={OneChampionshipData}
-            />
-        </div>
+        {OneChampionshipTable}   
     </>
     
-  )
+)
 
 export default OneChampionshipWeightClasses;

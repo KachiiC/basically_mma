@@ -1,13 +1,13 @@
 import React from 'react'
 // Components
 import { Table } from 'semantic-ui-react'
-import SemanticTableHeadings from './TableComponents/SemanticTableHeadings'
-import SemanticTableBody from './TableComponents/SemanticTableBody'
+import SemanticTableHeadings from './TableContents/SemanticTableHeadings'
+import SemanticTableBody from './TableContents/SemanticTableBody'
 
-const SemanticProsAndCons = (props) => (
+const SemanticProsAndConsTable = (props) => (
 
     <div className="w-90 m-auto">
-        <h3>Pros and Cons of Weight Cutting</h3>
+        <h3>{props.title}</h3>
         <div className="pros-cons-container">
             <Table celled fixed>
                 <SemanticTableHeadings data={props.data} />
@@ -17,4 +17,4 @@ const SemanticProsAndCons = (props) => (
     </div>
 )
 
-export default SemanticProsAndCons
+export default SemanticProsAndConsTable
