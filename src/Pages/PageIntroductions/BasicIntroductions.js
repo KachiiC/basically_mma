@@ -6,7 +6,8 @@ export const WhatIsMMAIntroduction = (
             <b>Mixed Martial Arts (MMA)</b> is a full-contact combat sport that allows a wide variety of 
             fighting techniques and skills from a mixture of other combat sports to be used in competition. 
             The rules allow usage of both striking and grappling techniques while standing and on the ground. 
-            Competitions allow athletes of different martial arts disciplines to compete against one another.
+            Competitions allow athletes of different martial arts disciplines (such as boxing and wrestling)
+            to compete against one another.
         </p>
         <h4>How did MMA start?</h4>
         <p>
@@ -23,26 +24,30 @@ export const WhatIsMMAIntroduction = (
             sports in the world for the better part of the last two decades. In modern times, 
             it is a mainstream sport that enjoys a massive following from millions of people all 
             over the world in all continents. MMA has produced stars that have transcended the sport
-            including Conor McGregor, Ronda Rousey and Gina Carano.
+            including <i>Conor McGregor, Ronda Rousey and Gina Carano</i>.
         </p>
     </>
 )
 
 export const HistoryOfMMAIntroduction = (
-    <p>  
-        MMA came to prominence in the early 1990’s, when the Ultimate Fighting 
-        Championship was established in the United States, inviting the world’s 
-        best fighters to compete in the Octagon to determine who reigned supreme. 
-        But the sport has been around much longer than that and shares its origins 
-        during man’s early history. At its core, MMA is an amalgamation of all 
-        combat disciplines, harmoniously combined together to form a seamless, 
-        unified system. Considered the purest form of unarmed combat as it takes 
-        the greatest elements of various martial arts and mixes them together. 
-        Many fans have fallen in love with MMA’s undeniable allure, and today 
-        the sport has grown as big as any, rivaling that of other sports like 
-        basketball and football. Let’s examine how the sport came to be and how 
-        it all started.
-    </p>
+    <>
+        <p>
+            MMA came to prominence in the early 1990’s, when the Ultimate Fighting 
+            Championship was established in the United States, inviting the world’s 
+            best fighters to compete in the Octagon to determine who reigned supreme. 
+            But the sport has been around much longer than that and shares its origins 
+            during man’s early history. 
+        </p>
+        <p>
+            At its core, MMA is an amalgamation of all combat disciplines, harmoniously 
+            combined together to form a seamless, unified system. Considered the purest form 
+            of unarmed combat as it takes the greatest elements of various martial arts and 
+            mixes them together. Many fans have fallen in love with MMA’s undeniable allure, 
+            and today the sport has grown as big as any, rivaling that of other sports like 
+            basketball and football. Let’s examine how the sport came to be and how 
+            it all started.
+        </p>
+    </>
 )
 
 export const RulesOfMMAIntroduction = (
@@ -73,15 +78,20 @@ export const RulesOfMMAIntroduction = (
     </>
 )
 
-export const MMADictionaryIntroduction = (    
-    <p>
-        As with any sport, before you learn about strategies and the finer details -
-        you should start by learning the language of MMA. As mixed marial art is a blend 
-        of all martial arts, techniques and positions generally originate from other combat
-        sports. Most striking techniques derive from sports such a boxing, muaythai or 
-        taekwondo,whilst most grappling techniques and positions derive from wrestling, 
-        judo and Brazilian jiu-jitsu.
-    </p>
+export const MMADictionaryIntroduction = (
+    <>   
+        <p>
+            As with any sport, before you learn about strategies and the finer details -
+            you should start by learning the language of MMA. As mixed marial art is a blend 
+            of all martial arts, techniques and positions generally originate from other combat
+            sports. 
+        </p>
+        <p>
+                Most striking techniques derive from sports such a boxing, muaythai or 
+            taekwondo,whilst most grappling techniques and positions derive from wrestling, 
+            judo and Brazilian jiu-jitsu.
+        </p>
+    </>
 )
 
 export default {

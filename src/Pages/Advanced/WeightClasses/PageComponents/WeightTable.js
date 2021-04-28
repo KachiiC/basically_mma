@@ -12,6 +12,7 @@ const WeightTable = (
     captions={WeightData.WeightCaptions}
     pagination={false}
     title="The Unified Rules of MMA Weight Classes"
+    filter="yes"
   />
 
 )
