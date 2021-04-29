@@ -1,5 +1,3 @@
-import FilterByNameInput from "Components/ExternalComponents/AntdTable/TableContents/FilterByNameInput"
-
 export const WeightCaptions = [
    "weight class does not exist in the UFC",
    "this is a mens only weight class in the UFC"

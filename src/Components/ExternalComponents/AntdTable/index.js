@@ -2,7 +2,6 @@ import React from "react"
 //Components
 import { Table } from 'antd';
 import TableCaption from "./TableContents/TableCaption";
-import FilterByNameInput from './TableContents/FilterByNameInput'
 
 const AntdTable = (props) => {
 
