@@ -2,8 +2,8 @@ import React from 'react'
 // Data
 import WeightCutData from 'Data/Advanced/WeightClasses/WeightCutData'
 // Components
-import AntList from 'Components/ExternalComponents/AntList'
+import AntdList from 'Components/ExternalComponents/AntdList'
 
-const WeightCutConsiderations = <AntList data={WeightCutData} title="Choosing a weight class"/>
+const WeightCutConsiderations = <AntdList data={WeightCutData} title="Choosing a weight class"/>
   
 export default WeightCutConsiderations
