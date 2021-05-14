@@ -38,7 +38,7 @@ const SiteTabs = (props) => {
                 style={{"borderBottom": borderLogic ()}}
                 onClick={handleDisplayClick}
             >
-                <h6 className="m-auto">{tab.title}</h6>
+                <h3 className="m-auto">{tab.title}</h3>
             </div>
         )
     })

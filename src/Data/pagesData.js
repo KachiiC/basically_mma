@@ -121,16 +121,19 @@ const pagesData = [
         title: "about",
         display: <About/>,
         sub_menu: false,
+        introduction: "About Intro"
     },
     {
         title: "store",
         display: <Store />,
-        sub_menu: false
+        sub_menu: false,
+        introduction: "Store Intro"
     },
     {
         title: "news",
         display: <News />,
-        sub_menu: false
+        sub_menu: false,
+        introduction: "News Intro"
     }
 ]
 

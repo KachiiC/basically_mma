@@ -1,8 +1,4 @@
 .rules-of-mma-container {
     margin-top: 50px;
-}
-
-.rules-modal {
-    margin: 0px auto;
-    overflow-y: hidden;
+    height: 500px
 }
