@@ -16,7 +16,7 @@ import AdvancedImages from 'SiteImages/Advanced/AdvancedImages'
 import MMAWorldPages from 'Pages/MMAWorld/MMAWorldPages'
 import MMAWorldIntro from 'Pages/PageIntroductions/MMAWorldIntroductions'
 
-const pagesData = [
+const PagesData = [
     {
         title: "basics",
         sub_menu: true,
@@ -125,7 +125,6 @@ const pagesData = [
         title: "store",
         display: Store,
         sub_menu: false,
-        introduction: "Store Intro"
     },
     {
         title: "news",
@@ -134,4 +133,4 @@ const pagesData = [
     }
 ]
 
-export default pagesData;
+export default PagesData;

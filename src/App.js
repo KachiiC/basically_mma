@@ -12,7 +12,7 @@ import SiteNavbar from 'SiteCss/SiteNavbar'
 import SiteMainContainer from 'SiteCss/SiteMainContainer'
 import SiteFooter from 'SiteCss/SiteFooter'
 // Data
-import PagesData from './Data/pagesData'
+import PagesData from 'Data/PagesData'
 // Pages
 import Home from './Pages/Others/Home'
 import SiteYoutubeVideo from './Components/SiteYoutubeVideo';
@@ -71,7 +71,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <SiteScrollToTop />
-      <SiteNavbar />
+      <SiteNavbar data={PagesData} title="Basically MMA"/>
       <div className="site-body">
         <Switch>
           {displayLinks}

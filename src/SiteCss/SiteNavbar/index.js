@@ -7,12 +7,12 @@ import MenuLogo from './NavbarComponents/MenuLogo'
 import MenuList from './NavbarComponents/MenuList'
 import SmallMenu from './NavbarComponents/SmallMenu'
 
-const SiteNavbar = () => (
+const SiteNavbar = (props) => (
 
   <nav className="w-100">
-    <MenuLogo />
-    <MenuList />
-    <SmallMenu />
+    <MenuLogo title={props.title}/>
+    <MenuList data={props.data} />
+    <SmallMenu data={props.data} />
   </nav>
 
 )

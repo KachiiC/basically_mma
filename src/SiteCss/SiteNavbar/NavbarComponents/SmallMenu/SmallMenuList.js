@@ -1,14 +1,12 @@
 import React from 'react'
-import {Link} from "react-router-dom";
-// DATA
-import menuData from 'Data/pagesData'
 // COMPONENTS
+import { Link } from "react-router-dom";
 import SmallScreenSubList from './SmallSubList'
 import TitleRender from 'SiteCss/SiteTitleRender'
 
 const SmallMenuList = (props) => {
 
-    const displayMenuList = menuData.map((menu, index) => {
+    const displayMenuList = props.data.map((menu, index) => {
 
         const menu_title = TitleRender(menu.title)
 
