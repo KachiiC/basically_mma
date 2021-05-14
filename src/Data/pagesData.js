@@ -1,4 +1,3 @@
-import React from 'react'
 // PAGES
 import About from 'Pages/Others/About/'
 import Store from 'Pages/Others/Store/'
@@ -119,21 +118,19 @@ const pagesData = [
     },
     {
         title: "about",
-        display: <About/>,
+        display: About,
         sub_menu: false,
-        introduction: "About Intro"
     },
     {
         title: "store",
-        display: <Store />,
+        display: Store,
         sub_menu: false,
         introduction: "Store Intro"
     },
     {
         title: "news",
-        display: <News />,
+        display: News,
         sub_menu: false,
-        introduction: "News Intro"
     }
 ]
 

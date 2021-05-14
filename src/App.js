@@ -21,6 +21,7 @@ const App = () => {
 
   // Pages
   const displayLinks = PagesData.map((page, index) => {
+    
     if (page.sub_menu === true) {
       
       return page.menu_list.map((sub_menu, index) => {
@@ -66,22 +67,21 @@ const App = () => {
       </Route>
     )
   })
-
       
   return (
-        <BrowserRouter>
-          <SiteScrollToTop />
-          <SiteNavbar />
-          <div className="site-body">
-            <Switch>
-              {displayLinks}
-              <Route path="/" >
-                <Home/>
-              </Route>
-            </Switch>
-          </div>
-          <SiteFooter />
-        </BrowserRouter>
+    <BrowserRouter>
+      <SiteScrollToTop />
+      <SiteNavbar />
+      <div className="site-body">
+        <Switch>
+          {displayLinks}
+          <Route path="/" >
+            <Home/>
+          </Route>
+        </Switch>
+      </div>
+      <SiteFooter />
+    </BrowserRouter>
   );
   
 }

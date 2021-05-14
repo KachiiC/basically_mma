@@ -5,6 +5,6 @@ import './Responsive.css'
 // Components
 import ArticlesList from './PageComponents/ArticlesList'
 
-const News = () => <ArticlesList />
+const News = <ArticlesList />
 
 export default News
