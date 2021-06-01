@@ -3,6 +3,6 @@ import React from 'react'
 import './WhatIsMMA.css'
 // Components
 
-const WhatIsMMA = () => <></>
+const WhatIsMMA = <></>
 
 export default WhatIsMMA

@@ -7,7 +7,7 @@ import RecommendedComponent from 'Pages/MMAWorld/Recommended'
 
 export const MMAPromotions = <MMAPromotionsComponent/>
 export const MMALegends = <MMALegendsComponent/>
-export const BestOfMMA = <BestOfMMAComponent/>
+export const BestOfMMA = BestOfMMAComponent
 export const Recommended = <RecommendedComponent/>
 
 export default {

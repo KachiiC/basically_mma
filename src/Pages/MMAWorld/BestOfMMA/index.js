@@ -3,16 +3,9 @@ import React from 'react'
 import './BestOfMMA.css'
 import './Responsive.css'
 // Components
-import BestCategories from 'Pages/MMAWorld/BestOfMMA/PageComponents/BestCategories'
-import BestFighters from 'Pages/MMAWorld/BestOfMMA/PageComponents/BestFighters'
+import BestOfMMAData from 'Data/MMAWorld/BestOfMMA/BestOfMMA'
+import AntdTabs from 'Components/ExternalComponents/AntdTabs'
 
-
-const BestOfMMA = () => (
-    <>
-        <BestCategories />
-        <BestFighters />
-    </>
-)
-
+const BestOfMMA = <AntdTabs data={BestOfMMAData} />
 
 export default BestOfMMA

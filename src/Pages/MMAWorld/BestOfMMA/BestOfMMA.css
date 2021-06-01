@@ -1,6 +1,6 @@
 .p4p-grid-system {
     display: grid;
-    grid-template-columns: repeat(15, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .p4p-grid-system h6 {
