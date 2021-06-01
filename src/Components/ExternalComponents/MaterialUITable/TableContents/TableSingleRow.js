@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 // Components
 import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
@@ -9,38 +9,49 @@ import TableCollapsableRow from './TableCollapsableRow';
 
 
 const TableSingleRow = (props) => {
-
-    // Index (used to define each row)
-    const index = props.index
-    // grabs all value 
-    const rowContent = Object.values(props.row)
+    
+    const rowContent = Object.keys(props.row).filter(heading => heading !== "content")
 
     // By default rows are closed and content is hidden
     const [open, setOpen] = useState(false)
+
     // When clicked open Logic with toggle 
     const openLogic = () => setOpen(!open)
 
     // Returns a table cell for each value in object until cropped
     const displayedTableCells = rowContent.map((attribute, index) => (
-            <TableCell align="justify" key={index}>
-                {attribute}
+            <TableCell align="center" key={index}>
+                {props.row[attribute]}
             </TableCell>
         )
-    // cropped based on table columns
-    ).slice(0, props.table_columns)
+    ).slice(0,props.table_columns)
+
+    const arrowLogic = open ? 
+        <KeyboardArrowDownIcon /> 
+        : 
+        <ChevronRightIcon />
+
+
+    const dropDownLogic = () => {
+        if (props.content) {
+            return (
+                <IconButton 
+                    key={props.index} 
+                    aria-label="expand row" 
+                    size="small" 
+                    onClick={openLogic}
+                >
+                    {arrowLogic}
+                </IconButton>
+            )
+        }
+    }
 
     return (
         <>
             <TableRow>
                 <TableCell>
-                    <IconButton 
-                        key={index} 
-                        aria-label="expand row" 
-                        size="small" 
-                        onClick={openLogic}
-                    >
-                    {open ? <KeyboardArrowDownIcon /> : <ChevronRightIcon />}
-                    </IconButton>
+                    {dropDownLogic()}
                 </TableCell>
                 {displayedTableCells}
             </TableRow>
