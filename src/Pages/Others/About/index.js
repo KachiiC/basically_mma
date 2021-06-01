@@ -1,12 +1,11 @@
 import React from 'react'
-import AntdTabs from 'Components/ExternalComponents/AntdTabs'
-import FightStrategiesData from 'Data/Advanced/FightStrategies/FightStratData'
 
 const About = (
-    <>
-    <h1>About</h1>
-    <AntdTabs data={FightStrategiesData}/>
-    </>
+    <div className="text-center">
+        <p>
+            This is a website is designed with react and django rest framework 
+        </p>
+    </div>
 )
 
 export default About
