@@ -24,14 +24,15 @@ const MaterialUITabs = (props) => {
     const displayTabs = TabsData.map((tab,index) => (
             <Tab label={tab.title} 
                 icon={tab.icon}
-                {...TabProps(index)} 
+                {...TabProps(index)}
+                key={index}
             />
         )
     )
 
     // Returns Content from each object in Data
     const displayTabPanels = TabsData.map((tab,index) => (
-            <TabPanel value={value} index={index}>
+            <TabPanel value={value} index={index} key={index}>
                 {tab.content}
             </TabPanel>
         )

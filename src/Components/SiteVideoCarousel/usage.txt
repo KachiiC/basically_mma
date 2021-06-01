@@ -12,7 +12,8 @@ Data Format:
         }
     ]
 
-Usage Example: 
+Usage Example:
+
     <SiteVideoCarousel
         data={ExampleVideoCarouselData} 
         title="Carousel Title"

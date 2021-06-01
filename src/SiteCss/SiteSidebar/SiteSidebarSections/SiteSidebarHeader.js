@@ -2,7 +2,7 @@ import React from 'react'
 // Icon
 import SiteIcon from 'SiteImages/myicon.jpg'
 
-const SiteSidebarHeader = () => (
+const SiteSidebarHeader = (
 
     <div className="sidebar-section sidebar-introduction">
         <div className="sidebar-title">

@@ -38,10 +38,8 @@ const SiteSidebarHighlights = () => {
             }
             
             return (
-            <>
-                <div className="highlights-container site-grid-system cursor-pointer" 
-                    key={index}
-                >
+            <div key={index}>
+                <div className="highlights-container site-grid-system cursor-pointer">
                     <div className="highlight-image site-span-6 m-auto">
                         <SiteOverlay 
                             click={handleClick}
@@ -61,7 +59,7 @@ const SiteSidebarHighlights = () => {
                         {highlight.video_title}
                     </div>
                 </div>
-            </>
+            </div>
         )
     })
 

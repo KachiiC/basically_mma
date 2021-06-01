@@ -10,8 +10,10 @@ const DropdownList = (props) => {
         const displayTitle = TitleRender(sub.title)
 
         return (
-            <Link to={`/basically_mma/${sub.title}`}>
-                <h6 key={index}>{displayTitle}</h6>
+            <Link to={`/basically_mma/${sub.title}`} 
+                key={index}
+            >
+                <h6>{displayTitle}</h6>
             </Link>
         )
     })

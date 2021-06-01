@@ -5,6 +5,12 @@
     min-height: 270px;
 }
 
-.fight-strat-slides{
-    margin: 40px 0px;
+.fight-strat-tabs {
+    margin: 50px auto;
+    width: 90%
+}
+
+.fight-strat-content {
+    margin: 20px auto 25px;
+    width: 90%;
 }

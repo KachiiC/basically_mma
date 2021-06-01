@@ -10,7 +10,7 @@ const SiteSidebar = () => (
 
     <aside class="w-80 site-span-4">
         <div className="site-sidebar">
-            <SiteSidebarHeader />
+            {SiteSidebarHeader}
             <SiteSidebarHighlights />
         </div>
     </aside>
