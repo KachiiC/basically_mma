@@ -9,9 +9,9 @@ import OutsideOfUS from './PageComponents/OutsideOfUS'
 import OneChampionshipWeight from './PageComponents/OneChampionshipWeight'
 
 
-const WeightClasses = () => (
+const WeightClasses = (
     <>
-        {WeightTable}
+        <WeightTable />
         {WeightCutConsiderations}
         {WeightCutProsAndCons}
         {OutsideOfUS}

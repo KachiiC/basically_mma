@@ -4,6 +4,6 @@ import './HistoryOfMMA.css'
 // Components
 import HistoryTimelineModal from './PageComponents/HistoryTimelineModal';
 
-const HistoryOfMMA = () => <HistoryTimelineModal />
+const HistoryOfMMA = <HistoryTimelineModal />
 
 export default HistoryOfMMA;

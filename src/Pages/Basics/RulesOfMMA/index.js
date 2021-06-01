@@ -7,7 +7,7 @@ import RulesData from 'Data/Basics/RulesOfMMA/RulesOfMMA'
 // Components
 import MaterialUITabs from 'Components/ExternalComponents/MaterialUITabs'
 
-const RulesOfMMA = () => (
+const RulesOfMMA = (
     <div className="rules-of-mma-container">
         <MaterialUITabs data={RulesData} width="90"/>
     </div>

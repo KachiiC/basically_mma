@@ -4,7 +4,7 @@ import fundamentalsData from 'Data/Advanced/Fundamentals/FundamentalsData'
 // Components
 import MaterialUITabs from 'Components/ExternalComponents/MaterialUITabs'
 
-const FundamentalTabs = () => (
+const FundamentalTabs = (
     
     <div className="fundamental-tabs">
         <MaterialUITabs

@@ -4,6 +4,6 @@ import './Techniques.css'
 //Components
 import TechniquesListTable from './PageComponents/TechniquesListTable';
 
-const Techniques = () => <TechniquesListTable />
+const Techniques = <TechniquesListTable />
     
 export default Techniques

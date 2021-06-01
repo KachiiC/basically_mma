@@ -5,7 +5,7 @@ import "./FightPay.css"
 import PromotionsMoney from './PageComponents/PromotionMoney'
 import FighterMoney from './PageComponents/FighterMoney'
 
-const FighterPay = () => (
+const FighterPay = (
     <>
         {PromotionsMoney}
         {FighterMoney}

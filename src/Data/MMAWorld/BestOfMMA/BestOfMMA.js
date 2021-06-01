@@ -4,31 +4,10 @@ import SiteVideoCarousel from 'Components/SiteVideoCarousel'
 // DATA
 import BestFighterData from './BestFighterData'
 
-const FightsDesription = (
-    <p>
-        In a mma fight, anything can happen. The greatest fights are when both fighters put on a great 
-        display of their heart and skills, here are some of the best contests to date.
-    </p>
-)
-
-const KnockoutsDescription = (
-    <p>
-        Some knockouts had world titles are on the line, some were just breath taking, but regardless 
-        MMA fans love Knockouts and here are compliations of some of the best of all time.
-    </p>
-)
-
-const SubmissionsDescription = (
-    <p>
-        For those who love grappling, for those who love technique, there is no better feeling than 
-        making your oponnent surrender from your submission. Here are some of the best.
-    </p>
-)
-
 const BestOfFightCategoriesData = [
     {
         title: "Best Fights",
-        description: FightsDesription,
+        description: "In a mma fight, anything can happen. The greatest fights are when both fighters put on a great display of their heart and skills, here are some of the best contests to date",
         videos: [
             {
                 video_title: "Best UFC Fights of 2020",
@@ -58,7 +37,7 @@ const BestOfFightCategoriesData = [
     },
     {
         title: "Best Knockouts",
-        description: KnockoutsDescription,
+        description: "Some knockouts had world titles are on the line, some were just breath taking, but regardless MMA fans love Knockouts and here are compliations of some of the best of all time",
         videos: [
             {
                 video_title: "Greatest UFC knockouts of all time",
@@ -88,7 +67,7 @@ const BestOfFightCategoriesData = [
     },
     {
         title: "Best Submissions",
-        description: SubmissionsDescription,
+        description: "For those who love grappling, for those who love technique, there is no better feeling than making your oponnent surrender from your submission. Here are some of the best",
         videos: [
             {
                 video_title: "Best One Championship submissions",
@@ -125,7 +104,7 @@ const BestOfMMACategories = BestOfFightCategoriesData.map((category, index) => {
     category.content = (
         <div key={index}>
             <h2>{category.title}</h2>
-            {category.description}
+            <p>{category.description}</p>
             <SiteVideoCarousel
                 data={category.videos} 
                 row_images={4}
