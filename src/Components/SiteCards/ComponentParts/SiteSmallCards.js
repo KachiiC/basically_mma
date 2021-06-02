@@ -33,7 +33,11 @@ const SiteSmallCards = (props) => {
         )
     })
 
-    return displayImagesList
+    return (
+        <div className="other-recommended-reading site-span-6 m-auto site-grid-system">
+            {displayImagesList}
+        </div>
+    )
 
 }
 

@@ -8,11 +8,9 @@ import SiteSmallCards from './ComponentParts/SiteSmallCards'
 
 const SiteArticlesCard = (props) => {
     
-    const myImages = props.data
-    
     // Cards will have a border bottom by default
     const displayBorder = () => {
-        if (myImages.border !== false) {
+        if (props.data.border !== false) {
             return <hr className="site-span-12"/>
         }
     }
@@ -24,14 +22,14 @@ const SiteArticlesCard = (props) => {
             </h3>
             {/* Featured Card */}
             <SiteFeaturedCardImage
-                title={myImages.featured_title}
-                image={myImages.featured_image}
-                link={myImages.featured_link}
+                title={props.data.featured_title}
+                image={props.data.featured_image}
+                link={props.data.featured_link}
             />
             {/* Cards list */}
-            <div className="other-recommended-reading site-span-6 m-auto site-grid-system">
-                <SiteSmallCards data={myImages} />
-            </div>
+            <SiteSmallCards 
+                data={props.data}
+            />
             {displayBorder()}
         </div>
     )

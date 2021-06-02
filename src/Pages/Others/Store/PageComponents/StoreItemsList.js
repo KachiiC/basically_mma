@@ -23,6 +23,7 @@ const StoreItems = () => {
                 product_link={item.product_link}
                 product_thumbnail={item.product_thumbnail}
                 price={item.price}
+                key={index}
             />
         )
     })
