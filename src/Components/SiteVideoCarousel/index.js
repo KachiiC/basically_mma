@@ -3,8 +3,10 @@ import React, { useState } from 'react'
 import './SiteVideoCarousel.css'
 import './Responsive.css'
 // COMPONENTS
+import SiteOverlay from 'SiteCss/SiteOverlay'
 import SiteVideoModalPlayer from 'Components/SiteVideoModalPlayer/'
 import VideoCarousel from './ComponentParts/VideoCarousel'
+import CarouselRowImage from './ComponentParts/CarouselRowImage'
 
 
 const SiteVideoCarousel = (props) => {
@@ -29,15 +31,14 @@ const SiteVideoCarousel = (props) => {
         const handleChange = () => setSelectedImage(imageData.indexOf(image))
 
         return(
-            <div className="site-span-1 site-border-white cursor-pointer">
-                <img key={index}
-                    src={image.video_thumbnail} 
-                    alt={image.video_title} 
-                    className="site-responsive-image site-border-white" 
-                    onClick={handleChange}
+            <SiteOverlay>
+                <CarouselRowImage
+                    key={index}
+                    video_thumbnail={image.video_thumbnail}
+                    video_title={image.video_title}
+                    click={handleChange}
                 />
-                <div className="site-overlay-pic"/>
-            </div>
+            </SiteOverlay>
         )
     })
 

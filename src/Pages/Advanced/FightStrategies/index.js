@@ -6,11 +6,6 @@ import './FightStrategies.css'
 // COMPONENTS
 import AntdTabs from 'Components/ExternalComponents/AntdTabs'
 
-const FightStrategies = (
-    <div className="fight-strat-tabs">
-        <AntdTabs data={FightStrategiesData} />
-    </div>
-)
-
+const FightStrategies = <AntdTabs data={FightStrategiesData} />
 
 export default FightStrategies

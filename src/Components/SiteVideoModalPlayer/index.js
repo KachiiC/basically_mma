@@ -7,6 +7,7 @@ import SiteModal from 'Components/SiteModal'
 // Data
 import HomeImageGalleryData from 'Data/Other/Home/HomeImageGalleryData'
 import VideoModalPlayer from './ComponentParts/VideoModalPlayer'
+import VideoModalSuggestion from './ComponentParts/VideoModalSuggestions';
 
 const SiteVideoModal = (props) => {
 
@@ -35,18 +36,12 @@ const SiteVideoModal = (props) => {
         }
 
         return (
-            <div className="fight-suggestions-section site-grid-system w-100" key={index}>
-                <div className="image-container site-span-6">
-                    <img src={fight.video_thumbnail} 
-                        alt={index} 
-                        onClick={handleClick} 
-                        className="site-responsive-image"
-                    />           
-                </div>
-                <div className="fight-suggestion-title site-span-6 m-auto">
-                    {fight.video_title}
-                </div>
-            </div>
+            <VideoModalSuggestion
+                key={index}
+                video_thumbnail={fight.video_thumbnail}
+                video_title={fight.video_title}
+                click={handleClick}
+            />
         )
     })
 

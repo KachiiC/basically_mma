@@ -1,19 +1,19 @@
 import React from 'react'
 // COMPONENTS
-import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 
-const VideoModalSuggestions = (props) => {
-    return (
-        <div className="video-carousel-section site-span-6">
-            <div className="fight-suggestions-header w-90">
-                Have you seen these fights?
-            </div>
-            <SiteRender 
-                data={props.data}
-                component={props.compoennt} 
-            />
+const VideoModalSuggestion = (props) => (
+    <div className="fight-suggestions-section site-grid-system w-100">
+        <div className="image-container site-span-6">
+            <img src={props.video_thumbnail} 
+                alt={props.video_thumbnail} 
+                onClick={props.click} 
+                className="site-responsive-image"
+            />           
         </div>
-    )
-}
+        <div className="fight-suggestion-title site-span-6 m-auto">
+            {props.video_title}
+        </div>
+    </div>
+)
 
-export default VideoModalSuggestions
+export default VideoModalSuggestion

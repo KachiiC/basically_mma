@@ -14,10 +14,21 @@ const AntdTabs = (props) => {
                 return <SiteYoutubeVideo youtube_id={tab.example} />
             }
         }
+
+        const overFlowLogic = () => {
+            if (props.overflow) {
+                return {
+                    "overflowY": "scroll",
+                    "height": "400px"
+                }
+            }
+        }
         
         return (
             <TabPane tab={tab.title} key={index}>
-                <div>
+                <div style={overFlowLogic()}
+                    className="tabs-height"
+                >
                     {tab.content}
                 </div>
                 {exampleLogic()}
@@ -26,17 +37,18 @@ const AntdTabs = (props) => {
     })
 
     const sizeLogic = props.size ? props.size : "small"
+    const widthLogic = props.width ? props.width: "90"
 
     return (
-        // <div className="">
-        <Tabs defaultActiveKey="0" 
-            type="card" 
-            size={sizeLogic}
-            centered
-        >
-            {renderTabs}
-        </Tabs>
-        // </div>
+        <div className={`w-${widthLogic} m-auto`}>
+            <Tabs defaultActiveKey="0" 
+                type="card" 
+                size={sizeLogic}
+                centered
+            >
+                {renderTabs}
+            </Tabs>
+        </div>
     )
 }
 
