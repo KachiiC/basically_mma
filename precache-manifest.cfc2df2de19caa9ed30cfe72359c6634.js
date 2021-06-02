@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5b0c4203a706430764e5e02ac7e18346",
+    "revision": "7fc197383b16bc60d36ebd67ec7dfce4",
     "url": "/basically_mma/index.html"
   },
   {
-    "revision": "05c0d5f5a43782ddedda",
+    "revision": "5625e5f14e851d1b8b63",
     "url": "/basically_mma/static/css/2.fceb1b9f.chunk.css"
   },
   {
-    "revision": "4221c5cc1c50fcf1aa82",
-    "url": "/basically_mma/static/css/main.e18c82fc.chunk.css"
+    "revision": "e690d1af67b6b95b4c29",
+    "url": "/basically_mma/static/css/main.383e2c8b.chunk.css"
   },
   {
-    "revision": "05c0d5f5a43782ddedda",
-    "url": "/basically_mma/static/js/2.2c984025.chunk.js"
+    "revision": "5625e5f14e851d1b8b63",
+    "url": "/basically_mma/static/js/2.8622f267.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/basically_mma/static/js/2.2c984025.chunk.js.LICENSE.txt"
+    "url": "/basically_mma/static/js/2.8622f267.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4221c5cc1c50fcf1aa82",
-    "url": "/basically_mma/static/js/main.223bee4c.chunk.js"
+    "revision": "e690d1af67b6b95b4c29",
+    "url": "/basically_mma/static/js/main.77c74ea2.chunk.js"
   },
   {
     "revision": "f68813dfc985683c2f58",

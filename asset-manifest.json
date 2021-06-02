@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/basically_mma/static/css/main.e18c82fc.chunk.css",
-    "main.js": "/basically_mma/static/js/main.223bee4c.chunk.js",
-    "main.js.map": "/basically_mma/static/js/main.223bee4c.chunk.js.map",
+    "main.css": "/basically_mma/static/css/main.383e2c8b.chunk.css",
+    "main.js": "/basically_mma/static/js/main.77c74ea2.chunk.js",
+    "main.js.map": "/basically_mma/static/js/main.77c74ea2.chunk.js.map",
     "runtime-main.js": "/basically_mma/static/js/runtime-main.aba3ce24.js",
     "runtime-main.js.map": "/basically_mma/static/js/runtime-main.aba3ce24.js.map",
     "static/css/2.fceb1b9f.chunk.css": "/basically_mma/static/css/2.fceb1b9f.chunk.css",
-    "static/js/2.2c984025.chunk.js": "/basically_mma/static/js/2.2c984025.chunk.js",
-    "static/js/2.2c984025.chunk.js.map": "/basically_mma/static/js/2.2c984025.chunk.js.map",
+    "static/js/2.8622f267.chunk.js": "/basically_mma/static/js/2.8622f267.chunk.js",
+    "static/js/2.8622f267.chunk.js.map": "/basically_mma/static/js/2.8622f267.chunk.js.map",
     "index.html": "/basically_mma/index.html",
-    "precache-manifest.4ab594ff11f6a8d5226074035c1ee018.js": "/basically_mma/precache-manifest.4ab594ff11f6a8d5226074035c1ee018.js",
+    "precache-manifest.cfc2df2de19caa9ed30cfe72359c6634.js": "/basically_mma/precache-manifest.cfc2df2de19caa9ed30cfe72359c6634.js",
     "service-worker.js": "/basically_mma/service-worker.js",
     "static/css/2.fceb1b9f.chunk.css.map": "/basically_mma/static/css/2.fceb1b9f.chunk.css.map",
-    "static/css/main.e18c82fc.chunk.css.map": "/basically_mma/static/css/main.e18c82fc.chunk.css.map",
-    "static/js/2.2c984025.chunk.js.LICENSE.txt": "/basically_mma/static/js/2.2c984025.chunk.js.LICENSE.txt",
+    "static/css/main.383e2c8b.chunk.css.map": "/basically_mma/static/css/main.383e2c8b.chunk.css.map",
+    "static/js/2.8622f267.chunk.js.LICENSE.txt": "/basically_mma/static/js/2.8622f267.chunk.js.LICENSE.txt",
     "static/media/AnikAndFlorian.jpg": "/basically_mma/static/media/AnikAndFlorian.e6040b50.jpg",
     "static/media/BT_Sport.jpg": "/basically_mma/static/media/BT_Sport.3cd61eb0.jpg",
     "static/media/Bellator_logo.jpg": "/basically_mma/static/media/Bellator_logo.ed1d8924.jpg",
@@ -53,8 +53,8 @@
   "entrypoints": [
     "static/js/runtime-main.aba3ce24.js",
     "static/css/2.fceb1b9f.chunk.css",
-    "static/js/2.2c984025.chunk.js",
-    "static/css/main.e18c82fc.chunk.css",
-    "static/js/main.223bee4c.chunk.js"
+    "static/js/2.8622f267.chunk.js",
+    "static/css/main.383e2c8b.chunk.css",
+    "static/js/main.77c74ea2.chunk.js"
   ]
 }
