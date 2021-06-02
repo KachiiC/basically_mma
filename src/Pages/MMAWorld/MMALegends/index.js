@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MMALegends = () => (
+const MMALegends = (
     <h1>Coming Soon</h1>
 )
 

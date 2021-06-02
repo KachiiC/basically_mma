@@ -1,3 +1,5 @@
+import React from 'react'
+import SiteCards from 'Components/SiteCards'
 // Data List
 import ChannelsData from './RecommendedLists/ChannelsData'
 import NewsData from './RecommendedLists/NewsData'
@@ -6,21 +8,31 @@ import PodcastsData from './RecommendedLists/PodcastsData'
 
 const RecommendedData = [
     {
-        title: "MMA Promotion Channels",
+        title: "Promotion Channels",
         data: ChannelsData
     },
     {
-        title: "MMA News Outlets",
+        title: "News Outlets",
         data: NewsData
     },
     {
-        title: "MMA Breakdowns and Analysis",
+        title: "Breakdowns and Analysis",
         data: BreakdownsData
     },
     {
-        title: "MMA Podcasts",
+        title: "Podcasts",
         data: PodcastsData
     }
 ]
+
+RecommendedData.map((category, index) => {
+        category.content = (
+            <SiteCards 
+            data={category.data} 
+            key={index}
+        />
+    )
+    return category
+})
 
 export default RecommendedData

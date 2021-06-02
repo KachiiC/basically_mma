@@ -8,7 +8,6 @@ import WeightCutProsAndCons from './PageComponents/WeightCutProsCons'
 import OutsideOfUS from './PageComponents/OutsideOfUS'
 import OneChampionshipWeight from './PageComponents/OneChampionshipWeight'
 
-
 const WeightClasses = (
     <>
         <WeightTable />

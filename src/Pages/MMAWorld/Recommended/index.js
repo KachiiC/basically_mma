@@ -2,8 +2,9 @@ import React from 'react'
 // CSS
 import './Recommended.css'
 // Components
-import RecommendedList from 'Pages/MMAWorld/Recommended/PageComponents/RecommendedList'
+import RecommendedData from 'Data/MMAWorld/Recommended/RecommendedData'
+import AntdTabs from 'Components/ExternalComponents/AntdTabs'
 
-const Recommended = () => <RecommendedList />
+const Recommended = <AntdTabs data={RecommendedData} />
 
 export default Recommended
