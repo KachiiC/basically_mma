@@ -5,7 +5,7 @@ import SmallMenuList from './SmallMenuList'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
-const SmallMenu = () => {
+const SmallMenu = (props) => {
 
     const [menuList, setMenuList] = useState(false)
 
@@ -18,7 +18,7 @@ const SmallMenu = () => {
                 <FontAwesomeIcon icon={faBars} /> MENU
             </div>
         </div>
-        {menuList && <SmallMenuList click={handleMenuList} /> }
+        {menuList && <SmallMenuList click={handleMenuList} data={props.data}/> }
         </>
     )
 }

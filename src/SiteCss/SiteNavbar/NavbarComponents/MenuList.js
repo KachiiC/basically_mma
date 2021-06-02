@@ -25,11 +25,9 @@ const MenuList = (props) => {
         )
     })
 
-    const gridNumber = props.data.length
-
     return (
         <div className="nav-menu-list site-grid-system w-70"
-            style={{"gridTemplateColumns": `repeat(${gridNumber},1fr)`}}
+            style={{"gridTemplateColumns": `repeat(${props.data.length},1fr)`}}
         >
             {ListOfMenu}
         </div>
