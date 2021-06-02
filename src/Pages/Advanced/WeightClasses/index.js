@@ -10,7 +10,7 @@ import OneChampionshipWeight from './PageComponents/OneChampionshipWeight'
 
 const WeightClasses = (
     <>
-        <WeightTable />
+        {WeightTable}
         {WeightCutConsiderations}
         {WeightCutProsAndCons}
         {OutsideOfUS}

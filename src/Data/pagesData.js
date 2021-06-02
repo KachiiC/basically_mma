@@ -100,11 +100,6 @@ const PagesData = [
                 introduction: MMAWorldIntro.BestOfMMAIntroduction
             },
             {
-                title:"mma-legends",
-                display: MMAWorldPages.MMALegends,
-                introduction: MMAWorldIntro.MMALegendsIntroduction
-            },
-            {
                 title:"mma-promotions",
                 display: MMAWorldPages.MMAPromotions,
                 introduction: MMAWorldIntro.MMAPromotionsIntroduction

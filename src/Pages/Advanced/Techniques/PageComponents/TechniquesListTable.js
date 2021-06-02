@@ -27,17 +27,15 @@ const TechniquesListTable = () => {
         return technique
     })
 
-    const TechniquesTable = (
-        <MaterialUITable 
-            data={techniquesData} 
-            table_columns={4}
-        />
-    )
-
     return (
         <SiteRender 
             data={responseData} 
-            component={TechniquesTable} 
+            component={
+                <MaterialUITable 
+                    data={techniquesData} 
+                    table_columns={4}
+                />
+            } 
         />
     )
 
