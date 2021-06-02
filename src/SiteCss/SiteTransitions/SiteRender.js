@@ -11,7 +11,7 @@ const SiteRender = (props) => {
           (props.data.isDisplayable) ? (
             props.component
           ):(
-            <SiteLoading />
+            <SiteLoading span={props.span}/>
           )
         )
 

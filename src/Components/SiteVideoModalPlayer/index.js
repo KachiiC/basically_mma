@@ -6,9 +6,7 @@ import SiteFetcher from 'SiteCss/SiteFetcher';
 import SiteModal from 'Components/SiteModal'
 // Data
 import HomeImageGalleryData from 'Data/Other/Home/HomeImageGalleryData'
-import VideoModalPlayer from './ComponentParts/VideoModalPlayer';
-
-const site_url = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/ufc_fights"
+import VideoModalPlayer from './ComponentParts/VideoModalPlayer'
 
 const SiteVideoModal = (props) => {
 
@@ -19,12 +17,13 @@ const SiteVideoModal = (props) => {
         description: props.description   
     })
 
-    const responseData = SiteFetcher(site_url, HomeImageGalleryData)
+    const responseData = SiteFetcher(props.suggestions_url, HomeImageGalleryData)
     const fightSuggestions = responseData.response.playlist_videos
 
     const displayFightSuggestion = fightSuggestions.slice(0,10).map((fight, index) => {
 
         const handleClick = () => {
+            window.scrollTo(0, 0)
             setCurrentYoutubeId(
                 {
                     "video_title": fight.video_title,

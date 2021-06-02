@@ -9,6 +9,7 @@ import featuredFight from 'Data/Other/Home/HomeFeaturedFightData'
 import SiteIcon from 'SiteCss/SiteIcon';
 
 const homeFeaturedFightURL = "https://kachiis-rest.herokuapp.com/api/youtube_featured_video/"
+const suggestions_url = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/ufc_fights"
 
 const HomeFeaturedFight = () => {
     
@@ -57,6 +58,7 @@ const HomeFeaturedFight = () => {
                     upload_date={homeFeaturedFight.upload_date}
                     video_title={homeFeaturedFight.video_title}
                     closeModal={handleModal}
+                    suggestions_url={suggestions_url}
                 />
             )}
         </>

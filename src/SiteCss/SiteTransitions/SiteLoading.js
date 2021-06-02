@@ -2,8 +2,8 @@ import React from 'react'
 // CSS
 import './SiteTransitions.css'
 
-const SiteLoading = () => (
-    <div className="data-container">
+const SiteLoading = (props) => (
+    <div className={`data-container site-span-${props.span}` }>
         <div className="site-loading" />
     </div>
 )

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import './SiteVideoCarousel.css'
 import './Responsive.css'
 // COMPONENTS
-import VideoModal from 'Components/SiteVideoModalPlayer/ComponentParts/VideoModal'
+import SiteVideoModalPlayer from 'Components/SiteVideoModalPlayer/'
 import VideoCarousel from './ComponentParts/VideoCarousel'
 
 
@@ -61,12 +61,13 @@ const SiteVideoCarousel = (props) => {
             </div>
             {/* The Video Modal shown on click */}
             {showModal && (
-                <VideoModal 
+                <SiteVideoModalPlayer 
                     youtube_id={current.video_id} 
                     description={current.video_description}
                     upload_date={current.upload_date}
                     video_title={current.video_title}
                     closeModal={handleModal}
+                    suggestions_url={props.suggestions_url}
                 />
             )}
         </>

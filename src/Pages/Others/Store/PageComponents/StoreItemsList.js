@@ -7,7 +7,6 @@ import SiteFetcher from 'SiteCss/SiteFetcher'
 import SiteTextCrop from 'SiteCss/SiteCrop/SiteTextCrop'
 import SingleStoreItem from './SingleStoreItem'
 
-
 const StoreItems = () => {
 
     const storeItemsURL = "https://kachiis-rest.herokuapp.com/backend/mma_store_list/"
@@ -29,10 +28,11 @@ const StoreItems = () => {
     })
 
     return (
-        <div className="site-grid-system">    
+        <div className="site-grid-system"> 
             <SiteRender 
                 data={responseData}
                 component={storeItemsList} 
+                span={12}
             />
         </div>
     )

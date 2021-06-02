@@ -7,6 +7,7 @@ import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 // Data
 import galleryImagesData from 'Data/Other/Home/HomeImageGalleryData'
 
+
 const HomeImageGallery = () => {
 
     const HomeVideoGalleryURL = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/fight_highlights"
@@ -24,6 +25,7 @@ const HomeImageGallery = () => {
             data={fetchedGalleryData} 
             title="Latest Fight Highlights"
             row_images={5}
+            suggestions_url={HomeVideoGalleryURL}
         />
     )
 

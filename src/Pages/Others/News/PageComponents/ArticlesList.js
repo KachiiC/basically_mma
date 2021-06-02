@@ -37,7 +37,8 @@ const ArticlesList = () => {
         <div className="site-grid-system site-articles-container">
             <SiteRender 
                 data={responseData}
-                component={displayArticles} 
+                component={displayArticles}
+                span={12}
             />
         </div>
     )

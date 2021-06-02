@@ -2,12 +2,12 @@ import React from 'react'
 // Data
 import fundamentalsData from 'Data/Advanced/Fundamentals/FundamentalsData'
 // Components
-import MaterialUITabs from 'Components/ExternalComponents/MaterialUITabs'
+import AntdTabs from 'Components/ExternalComponents/AntdTabs'
 
 const FundamentalTabs = (
     
     <div className="fundamental-tabs">
-        <MaterialUITabs
+        <AntdTabs
             data={fundamentalsData}
         />
     </div>

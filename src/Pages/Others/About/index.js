@@ -1,17 +1,13 @@
 import React from 'react'
-import AntdTimeline from 'Components/ExternalComponents/AntdTimeline'
-import PromotionsData from "Data/MMAWorld/MMAPromotions/PromotionsData"
 
-const About = (
+const About =  (
     <>
-    <div className="text-center">
-        <p>
-            This is a website is designed with react and django rest framework 
-        </p>
-        <AntdTimeline data={PromotionsData} 
-            title="History of Promotions"
-        />
-    </div>
+        <div className="text-center">
+            <p>
+                This is a website is designed with react and django rest framework 
+            </p>
+
+        </div>
     </>
 )
 
