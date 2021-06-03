@@ -16,8 +16,7 @@ const SiteCardsImage = (props) => {
         </>
     )
 
-
-    const renderCard = props.external_link === "yes" ? (
+    const renderCard = props.external_links === true ? (
         <SiteExternalLink url={props.link}>
             {card_image}
         </SiteExternalLink>
