@@ -28,7 +28,6 @@ const PodcastsData = {
         }
     ],
     external_links: true,
-    border: false
 }
 
 export default PodcastsData

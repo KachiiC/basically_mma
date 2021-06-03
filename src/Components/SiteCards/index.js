@@ -14,6 +14,8 @@ const SiteArticlesCard = (props) => {
             return <hr className="site-span-12"/>
         }
     }
+
+    console.log(props.data)
     
     return (
         <div className="recommended-reading-container site-span-12 site-grid-system">
@@ -22,9 +24,7 @@ const SiteArticlesCard = (props) => {
             </h3>
             {/* Featured Card */}
             <SiteFeaturedCardImage
-                title={props.data.featured_title}
-                image={props.data.featured_image}
-                link={props.data.featured_link}
+                data={props.data}
             />
             {/* Cards list */}
             <SiteSmallCards 
