@@ -16,11 +16,11 @@ const BreakdownsData = {
             image: Morning_Kombat,
         },
         {
-            link: SiteYoutubeLink + "UFCwatch?v=DgQt2QEGRVg&list=PL9m3-_Hv6qNgxCn8Oo05rvafPCZ6FHuZf",
+            link: SiteYoutubeLink + "watch?v=DgQt2QEGRVg&list=PL9m3-_Hv6qNgxCn8Oo05rvafPCZ6FHuZf",
             image: Inside_The_Octagon
         },
         {
-            link: SiteYoutubeLink + "UC2i7H-EzzpQLeaj3Qplatjw",
+            link: SiteYoutubeLink + "channel/UC2i7H-EzzpQLeaj3Qplatjw",
             image: Jack_Slack
         },
         {
