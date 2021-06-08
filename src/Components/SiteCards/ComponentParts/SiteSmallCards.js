@@ -8,7 +8,7 @@ const SiteSmallCards = (props) => {
     const displayImagesList = cardData.small_images.map((item, index) => {
             
         return (
-            <div className="site-span-6 small-list-image-container m-auto" key={index}>
+            <div className="site-span-6 small-image-container m-auto" key={index}>
                 <div className="image-caption-container">
                     <SiteCardsImage 
                         external_links={props.data.external_links}
@@ -23,7 +23,7 @@ const SiteSmallCards = (props) => {
     })
 
     return (
-        <div className="other-recommended-reading site-span-6 m-auto site-grid-system">
+        <div className="small-image-list site-span-6 site-grid-system">
             {displayImagesList}
         </div>
     )

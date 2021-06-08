@@ -1,7 +1,8 @@
-.recommended-reading-feature,
+.featured-card {
+}
+
 .other-recommended-reading {
-    padding: 10px;
-    width: 95%;
+
 }
 
 .recommended-featured .image-container {
@@ -36,8 +37,6 @@
     font-size: 30px;
 }
 
-.small-list-image-container {
+.small-image-container {
     position: relative;
-    width: 95%;
-    padding: 7px;
 }
