@@ -2,20 +2,24 @@
 
     .featured-card,
     .small-image-list {
-        grid-column: span 12 !important;
-        width: 85%;
+        grid-column: span 12;
+        width: 90%;
     }
 
     .small-image-list {
-        margin: 10px auto;
+        margin: 5px auto;
     }
-
 }
 
 @media screen and (max-width: 640px) {
 
-    .small-list-image-container {
+    .small-image-container {
         grid-column: span 12;
+        margin-top: 20px;
+    }
+
+    .small-image-container .site-responsive-image {
+        padding: 0px !important;
     }
 
 }

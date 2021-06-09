@@ -1,14 +1,26 @@
-.featured-card {
+.featured-card,
+.small-image-list,
+.small-image-container {
+    grid-column: span 6;
 }
 
-.other-recommended-reading {
-
+.featured-card,
+.small-image-list {
+    margin: 0px auto;
+    width: 90%;
 }
 
-.recommended-featured .image-container {
-    margin: auto 0px auto auto;
-    text-align: center;
-    padding: 0px 20px;
+.small-image-container:nth-of-type(odd) .site-responsive-image {
+    padding-right: 1.25px;
+}
+
+.small-image-container:nth-of-type(even) .site-responsive-image {
+    padding-left: 1.25px;
+}
+
+.small-image-container:nth-of-type(1) .site-responsive-image, 
+.small-image-container:nth-of-type(2) .site-responsive-image {
+    padding-bottom: 2.5px;
 }
 
 /** Image Caption **/ 
@@ -24,19 +36,8 @@
     position: absolute;
     color: white;
     font-weight: 700;
-    font-size: 18px;
     text-transform: uppercase;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.featured-title {
-    font-size: 30px;
-}
-
-.small-image-container {
-    position: relative;
 }

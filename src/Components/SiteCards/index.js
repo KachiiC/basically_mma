@@ -14,11 +14,9 @@ const SiteArticlesCard = (props) => {
             return <hr className="site-span-12"/>
         }
     }
-
-    console.log(props.data)
     
     return (
-        <div className="recommended-reading-container site-span-12 site-grid-system">
+        <div className="site-span-12 site-grid-system">
             <h3 className="site-span-12">
                 {props.title}
             </h3>
