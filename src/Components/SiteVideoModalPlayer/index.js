@@ -21,10 +21,10 @@ const SiteVideoModal = (props) => {
     const responseData = SiteFetcher(props.suggestions_url, HomeImageGalleryData)
     const fightSuggestions = responseData.response.playlist_videos
 
+
     const displayFightSuggestion = fightSuggestions.slice(0,10).map((fight, index) => {
 
         const handleClick = () => {
-            window.scrollTo(0, 0)
             setCurrentYoutubeId(
                 {
                     "video_title": fight.video_title,

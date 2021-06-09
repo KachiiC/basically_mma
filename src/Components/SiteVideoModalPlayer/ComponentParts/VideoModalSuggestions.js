@@ -2,7 +2,7 @@ import React from 'react'
 // COMPONENTS
 
 const VideoModalSuggestion = (props) => (
-    <div className="fight-suggestions-section site-grid-system w-100">
+    <div className="fight-suggestions-section site-grid-system w-100" id="fight-modal-suggestions">
         <div className="image-container site-span-6">
             <img src={props.video_thumbnail} 
                 alt={props.video_thumbnail} 

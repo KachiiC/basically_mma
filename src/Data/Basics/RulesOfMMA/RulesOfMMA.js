@@ -2,9 +2,9 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 // COMPONENTS
 import { List } from 'antd';
-import WeightTable from 'Pages/Advanced/WeightClasses/PageComponents/WeightTable'
 // DATA
 import foulData from 'Data/Basics/RulesOfMMA/RulesComponents/FoulsData'
+import WeightTable from 'Pages/Advanced/WeightClasses/PageComponents/WeightTable'
 
 //// SECTIONS ////
 const Attire = (
@@ -122,7 +122,7 @@ const WeightClassRules = (
             missed weight or the bout is on short notice. More details regarding weight classes 
             can be found <Link to="/basically_mma/weight-classes">here.</Link>
         </p>
-        <WeightTable />
+        {WeightTable}
     </>
 )
 

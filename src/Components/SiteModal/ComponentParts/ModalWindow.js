@@ -17,6 +17,7 @@ const ModalWindow = (props) => {
             >
                 <CloseButton click={props.click} />
                 <div className={`site-modal-content w-100 site-grid-system ${overflowStyle()}`} 
+                    id="model-content"
                     style={props.style}
                 >
                     {props.content}  
