@@ -8,7 +8,7 @@ const SemanticProsAndConsTable = (props) => (
 
     <div className="w-90 m-auto">
         <h3>{props.title}</h3>
-        <div className="pros-cons-container">
+        <div className="semantic-container">
             <Table celled fixed>
                 <SemanticTableHeadings data={props.data} />
                 <SemanticTableBody data={props.data} />

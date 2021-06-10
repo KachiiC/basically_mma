@@ -1,21 +1,40 @@
 import React from 'react'
 // Components
 import { Table } from 'semantic-ui-react'
+import SemanticTableCell from './SemanticTableCell'
 
 const TableBody = (props) => {
 
-    const ProsConsData = props.data.pros_cons_list
+    const ProsConsLogic = props.data.list.map((point, index) => {
 
-    const ProsConsLogic = ProsConsData.map((point, index) => (
-        <Table.Row key={index}>
-            <Table.Cell className="weight-cut-pros">
-                {point.pro}
-            </Table.Cell>
-            <Table.Cell className="weight-cut-cons">
-                {point.con}
-            </Table.Cell>
-        </Table.Row>
-    ))
+        const pointRow = Object.values(point)
+
+        const pointColor = Object.values(props.data.color_code)
+        
+        console.log(pointColor)
+
+        const pointContent = pointRow.map((content, index) => {
+
+            // const colorLogic = pointRow.indexOf(content) === 0 ? 
+            //     "#99da99" 
+            //     : 
+            //     "#fe8e8e"
+
+            return (
+                <SemanticTableCell 
+                    key={index}
+                    color={pointColor[pointRow.indexOf(content)]}
+                    content={content}
+                />
+            )
+        })
+
+        return (
+            <Table.Row key={index}>
+                {pointContent}
+            </Table.Row>
+        )
+    })
 
     return (
         <Table.Body>
