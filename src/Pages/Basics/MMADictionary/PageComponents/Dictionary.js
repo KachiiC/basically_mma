@@ -29,7 +29,7 @@ const Dictionary = () => {
     }) 
 
     return (  
-        <div className="dictionary-container">
+        <div className="dictionary-container w-90">
             <SiteRender 
                 data={responseData} 
                 component={

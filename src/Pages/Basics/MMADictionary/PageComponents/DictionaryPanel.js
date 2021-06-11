@@ -13,8 +13,8 @@ const DictionaryPanel = (props) => {
         />
     
     return ( 
-        <div className="term-content">
-            <p className="term-definition">
+        <div className="text-center">
+            <p>
                 <b>Definition</b>: {props.definition}
             </p>
             {displayMedia}
