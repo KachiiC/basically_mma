@@ -1,10 +1,10 @@
 import React from 'react'
 // Components
-import SiteFetcher from 'SiteCss/SiteFetcher';
-import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
+import SiteFetcher from 'SiteCss/SiteFetcher'
+import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import { DictionaryListTemplate } from 'Data/Basics/MMADictionary/MMADictionary'
-import AntdCollapsable from 'Components/ExternalComponents/AntdCollapsable';
-import DictionaryPanel from './DictionaryPanel';
+import AntdCollapsable from 'Components/ExternalComponents/AntdCollapsable'
+import DictionaryPanel from './DictionaryPanel'
 
 const Dictionary = () => {
 
