@@ -1,9 +1,10 @@
 import React from 'react'
 // Components
-import DictionaryComponents from './DictionaryComponents';
 import SiteFetcher from 'SiteCss/SiteFetcher';
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
-import { DictionaryListTemplate, DictionaryTabTypes } from 'Data/Basics/MMADictionary/MMADictionary'
+import { DictionaryListTemplate } from 'Data/Basics/MMADictionary/MMADictionary'
+import AntdCollapsable from 'Components/ExternalComponents/AntdCollapsable';
+import DictionaryPanel from './DictionaryPanel';
 
 const Dictionary = () => {
 
@@ -12,19 +13,28 @@ const Dictionary = () => {
         DictionaryListTemplate
     )
 
-    const allTabs = DictionaryTabTypes.map((tab_type, index) => 
-        <DictionaryComponents
-            key={index}
-            data={responseData.response} 
-            type={tab_type}
-        />
-    )
+    const DictionaryData = responseData.response.map((term, index) => {
+
+        term.content = (
+            <DictionaryPanel
+                key={index}
+                example_type={term.example_type}
+                title={term.title}
+                definition={term.definition}
+                example={term.example}
+            />
+        )
+
+        return term
+    }) 
 
     return (  
         <div className="dictionary-container">
             <SiteRender 
                 data={responseData} 
-                component={allTabs} 
+                component={
+                    <AntdCollapsable data={DictionaryData} />
+                } 
             />
         </div>
     );
