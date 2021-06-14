@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "29b39c6535df3cfb06bbab0d165ea580",
+    "revision": "7932f945db196297f565d4e96ea7a31b",
     "url": "/basically_mma/index.html"
   },
   {
-    "revision": "5625e5f14e851d1b8b63",
+    "revision": "7d83ca51e3496ad71d5e",
     "url": "/basically_mma/static/css/2.fceb1b9f.chunk.css"
   },
   {
-    "revision": "a4538b3dab11b7e9c066",
-    "url": "/basically_mma/static/css/main.799e5cb4.chunk.css"
+    "revision": "1a53af70bbb550f66b5f",
+    "url": "/basically_mma/static/css/main.01716462.chunk.css"
   },
   {
-    "revision": "5625e5f14e851d1b8b63",
-    "url": "/basically_mma/static/js/2.8622f267.chunk.js"
+    "revision": "7d83ca51e3496ad71d5e",
+    "url": "/basically_mma/static/js/2.4384ec81.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/basically_mma/static/js/2.8622f267.chunk.js.LICENSE.txt"
+    "url": "/basically_mma/static/js/2.4384ec81.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a4538b3dab11b7e9c066",
-    "url": "/basically_mma/static/js/main.15236c6e.chunk.js"
+    "revision": "1a53af70bbb550f66b5f",
+    "url": "/basically_mma/static/js/main.5ddf3d36.chunk.js"
   },
   {
     "revision": "f68813dfc985683c2f58",
@@ -148,8 +148,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/basically_mma/static/media/mma_dictionary.f10c3299.jpg"
   },
   {
-    "revision": "4584ebb1f8c432dcc491fb46bd6ccbf8",
-    "url": "/basically_mma/static/media/mma_fight_strategies.4584ebb1.jpg"
+    "revision": "ff0b5c6ecc5efba67764e2dc596d8ec2",
+    "url": "/basically_mma/static/media/mma_fight_strategies.ff0b5c6e.jpg"
   },
   {
     "revision": "b175799520f5bc6316948245fd566675",

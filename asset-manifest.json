@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/basically_mma/static/css/main.799e5cb4.chunk.css",
-    "main.js": "/basically_mma/static/js/main.15236c6e.chunk.js",
-    "main.js.map": "/basically_mma/static/js/main.15236c6e.chunk.js.map",
+    "main.css": "/basically_mma/static/css/main.01716462.chunk.css",
+    "main.js": "/basically_mma/static/js/main.5ddf3d36.chunk.js",
+    "main.js.map": "/basically_mma/static/js/main.5ddf3d36.chunk.js.map",
     "runtime-main.js": "/basically_mma/static/js/runtime-main.aba3ce24.js",
     "runtime-main.js.map": "/basically_mma/static/js/runtime-main.aba3ce24.js.map",
     "static/css/2.fceb1b9f.chunk.css": "/basically_mma/static/css/2.fceb1b9f.chunk.css",
-    "static/js/2.8622f267.chunk.js": "/basically_mma/static/js/2.8622f267.chunk.js",
-    "static/js/2.8622f267.chunk.js.map": "/basically_mma/static/js/2.8622f267.chunk.js.map",
+    "static/js/2.4384ec81.chunk.js": "/basically_mma/static/js/2.4384ec81.chunk.js",
+    "static/js/2.4384ec81.chunk.js.map": "/basically_mma/static/js/2.4384ec81.chunk.js.map",
     "index.html": "/basically_mma/index.html",
-    "precache-manifest.f5b400a1ec48e2c23dc010bf093a62eb.js": "/basically_mma/precache-manifest.f5b400a1ec48e2c23dc010bf093a62eb.js",
+    "precache-manifest.4e44e2398d99533551739309eaa16376.js": "/basically_mma/precache-manifest.4e44e2398d99533551739309eaa16376.js",
     "service-worker.js": "/basically_mma/service-worker.js",
     "static/css/2.fceb1b9f.chunk.css.map": "/basically_mma/static/css/2.fceb1b9f.chunk.css.map",
-    "static/css/main.799e5cb4.chunk.css.map": "/basically_mma/static/css/main.799e5cb4.chunk.css.map",
-    "static/js/2.8622f267.chunk.js.LICENSE.txt": "/basically_mma/static/js/2.8622f267.chunk.js.LICENSE.txt",
+    "static/css/main.01716462.chunk.css.map": "/basically_mma/static/css/main.01716462.chunk.css.map",
+    "static/js/2.4384ec81.chunk.js.LICENSE.txt": "/basically_mma/static/js/2.4384ec81.chunk.js.LICENSE.txt",
     "static/media/AnikAndFlorian.jpg": "/basically_mma/static/media/AnikAndFlorian.e6040b50.jpg",
     "static/media/BT_Sport.jpg": "/basically_mma/static/media/BT_Sport.3cd61eb0.jpg",
     "static/media/Bellator_logo.jpg": "/basically_mma/static/media/Bellator_logo.ed1d8924.jpg",
@@ -44,7 +44,7 @@
     "static/media/WeightClasses.jpg": "/basically_mma/static/media/WeightClasses.acf92d4d.jpg",
     "static/media/WhatIsMMA.jpg": "/basically_mma/static/media/WhatIsMMA.0240faf1.jpg",
     "static/media/mma_dictionary.jpg": "/basically_mma/static/media/mma_dictionary.f10c3299.jpg",
-    "static/media/mma_fight_strategies.jpg": "/basically_mma/static/media/mma_fight_strategies.4584ebb1.jpg",
+    "static/media/mma_fight_strategies.jpg": "/basically_mma/static/media/mma_fight_strategies.ff0b5c6e.jpg",
     "static/media/mma_fundamentals.jpg": "/basically_mma/static/media/mma_fundamentals.b1757995.jpg",
     "static/media/mma_recommended.jpg": "/basically_mma/static/media/mma_recommended.34436de5.jpg",
     "static/media/mma_techniques.jpg": "/basically_mma/static/media/mma_techniques.c83c0a48.jpg",
@@ -53,8 +53,8 @@
   "entrypoints": [
     "static/js/runtime-main.aba3ce24.js",
     "static/css/2.fceb1b9f.chunk.css",
-    "static/js/2.8622f267.chunk.js",
-    "static/css/main.799e5cb4.chunk.css",
-    "static/js/main.15236c6e.chunk.js"
+    "static/js/2.4384ec81.chunk.js",
+    "static/css/main.01716462.chunk.css",
+    "static/js/main.5ddf3d36.chunk.js"
   ]
 }
