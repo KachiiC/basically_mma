@@ -5,7 +5,7 @@ import './footer.css';
 import footerData from 'Data/Other/Footer/footerData'
 // Components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import FooterInstaSlider from 'SiteCss/SiteFooter/FooterInstaSlider';
+// import FooterInstaSlider from 'SiteCss/SiteFooter/FooterInstaSlider';
 import SiteExternalLink from 'SiteCss/SiteExternalLink'
 
 const SiteFooter = () => {
@@ -25,7 +25,7 @@ const SiteFooter = () => {
 
     return (
         <footer>
-            <FooterInstaSlider />
+            {/* <FooterInstaSlider /> */}
             <div className="footer-items">
                 {iconsList}
             </div>

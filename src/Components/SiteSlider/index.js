@@ -7,6 +7,8 @@ import SiteSliderButton from './ComponentParts/SiteSliderButton'
 
 const SiteSlider = (props) => {
 
+    console.log(props.data)
+
     // Number of slides displayed on the slider
     const number_of_slides = props.displayed_slides 
 
