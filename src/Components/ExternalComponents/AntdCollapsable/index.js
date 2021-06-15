@@ -2,13 +2,18 @@ import React from 'react'
 // COMPONENTS
 import { Collapse } from 'antd';
 import './AntdCollapsable.css'
+import AntdPanelTitle from './AntdPanelTitle';
 
 const AntdCollapsable = (props) => {
 
     const {Panel} = Collapse; 
-    
+
+    // For each object in props.data returns panel title and content inside panel on click
     const displayedTabs = props.data.map((panel, index) => (
-            <Panel header={<div className="panel-title">{panel.title}</div>} key={index}>
+            <Panel 
+                key={index}
+                header={<AntdPanelTitle title={panel.title}/>}
+            >
                 {panel.content}
             </Panel>
         )

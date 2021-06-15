@@ -9,16 +9,21 @@ const SmallMenu = (props) => {
 
     const [menuList, setMenuList] = useState(false)
 
-    const handleMenuList = () => menuList === false ? setMenuList(true) : setMenuList(false)
+    const handleMenuList = () => !menuList ? setMenuList(true) : setMenuList(false)
 
     return (
         <>
-        <div className="small-menu-container">
-            <div className="small-menu-button" onClick={handleMenuList}>
-                <FontAwesomeIcon icon={faBars} /> MENU
+            <div className="small-menu-container">
+                <div className="small-menu-button" onClick={handleMenuList}>
+                    <FontAwesomeIcon icon={faBars} /> MENU
+                </div>
             </div>
-        </div>
-        {menuList && <SmallMenuList click={handleMenuList} data={props.data}/> }
+            {menuList && 
+                <SmallMenuList 
+                    click={handleMenuList} 
+                    data={props.data}
+                />
+            }
         </>
     )
 }

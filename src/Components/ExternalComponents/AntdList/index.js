@@ -1,7 +1,7 @@
 import React from 'react'
 // Data
 // Components
-import {List } from 'antd' 
+import {  List } from 'antd' 
 import SingleListLine from './ListContents/SingleListLine'
 
 const AntList = (props) => {
