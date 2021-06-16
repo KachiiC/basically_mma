@@ -9,7 +9,10 @@ const SiteTwitterFeed = (props) => (
 
     <div className="twitter-container w-80">
         {/* Title of feed */}
-        <SiteSectionTitle title={props.title}/>
+        <SiteSectionTitle 
+            title={props.title} 
+            width={props.width} 
+        />
         <Timeline
             dataSource={{
                 // "Set Twitter ID"

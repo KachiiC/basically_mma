@@ -1,9 +1,9 @@
 .twitter-container {
-    margin: 35px auto; 
+    margin: 0px auto; 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1080px) {
     .twitter-container {
-        margin: 0px auto; 
+        width: 90%;
     }
 }

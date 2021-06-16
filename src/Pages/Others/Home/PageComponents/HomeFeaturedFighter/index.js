@@ -10,15 +10,12 @@ import FeaturedFighterTemplate from 'Data/Other/Home/HomeFeaturedFighter'
 // DATA
 import FeaturedFighterImage from './Components/FeaturedFighterImage'
 import FeaturedFighterTable from './Components/FeaturedFighterTable'
+import {FeaturedFighterURL} from 'Data/Other/Home/HomeUrlsData'
 
-const featured_fighter_url = "https://kachiis-rest.herokuapp.com/backend/mma_featured_fighter/"
 
 const HomeFeaturedFighter = () => {
 
-    const responseData = SiteFetcher(
-        featured_fighter_url,
-        FeaturedFighterTemplate
-    )
+    const responseData = SiteFetcher(FeaturedFighterURL, FeaturedFighterTemplate)
 
     const featured_fighter_name = responseData.response.first_name + " " + responseData.response.last_name
     

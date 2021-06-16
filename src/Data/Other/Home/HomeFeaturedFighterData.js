@@ -53,7 +53,13 @@ const HomeFeaturedFighterData = (props) => {
         )
     )
 
-    return renderFighters
+    return (
+        <table>
+            <tbody>
+                {renderFighters}
+            </tbody>
+        </table>
+    )
 }
 
 export default HomeFeaturedFighterData

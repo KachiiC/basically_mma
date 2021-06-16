@@ -7,8 +7,7 @@ import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 // Data
 import galleryImagesData from 'Data/Other/Home/HomeImageGalleryData'
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
-
-const HomeVideoGalleryURL = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/fight_highlights"
+import {HomeVideoGalleryURL} from 'Data/Other/Home/HomeUrlsData'
 
 const HomeImageGallery = () => {
 
@@ -23,7 +22,6 @@ const HomeImageGallery = () => {
 
         <SiteVideoCarousel 
             data={fetchedGalleryData} 
-            // title="Latest Fight Highlights"
             row_images={5}
             suggestions_url={HomeVideoGalleryURL}
         />

@@ -9,13 +9,11 @@ import SiteSectionTitle from 'SiteCss/SiteSectionTitle';
 // Data
 import featuredFightData from 'Data/Other/Home/HomeFeaturedFightData'
 import FeaturedFight from './Components/FeaturedFight';
-
-const homeFeaturedFightURL = "https://kachiis-rest.herokuapp.com/api/youtube_featured_video/"
-const suggestions_url = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/ufc_fights"
+import { FeaturedFightURL, SuggestedFightsURL } from 'Data/Other/Home/HomeUrlsData'
 
 const HomeFeaturedFight = () => {
     
-    const responseData = SiteFetcher(homeFeaturedFightURL,featuredFightData)
+    const responseData = SiteFetcher(FeaturedFightURL,featuredFightData)
     const homeFeaturedFight = responseData.response
 
     const [showModal, setShowModal] = useState(false)
@@ -47,7 +45,7 @@ const HomeFeaturedFight = () => {
                     upload_date={homeFeaturedFight.upload_date}
                     video_title={homeFeaturedFight.video_title}
                     closeModal={handleModal}
-                    suggestions_url={suggestions_url}
+                    suggestions_url={SuggestedFightsURL}
                 />
             )}
         </>

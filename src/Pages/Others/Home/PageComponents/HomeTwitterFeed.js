@@ -6,7 +6,8 @@ const HomeTwitterFeed = (
 
     <div className="site-span-4">
         <SiteTwitterFeed 
-            height="500" 
+            height="500"
+            width="100"
             twitter_id="basicallymma" 
             title="What's Happening?"
         />
