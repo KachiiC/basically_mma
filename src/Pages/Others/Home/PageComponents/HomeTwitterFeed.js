@@ -2,9 +2,9 @@ import React from 'react'
 // Components
 import SiteTwitterFeed from 'Components/SiteTwitterFeed'
 
-const HomeTwitterFeed = () => (
+const HomeTwitterFeed = (
 
-    <div className="home-twitter-feed">
+    <div className="site-span-4">
         <SiteTwitterFeed 
             height="500" 
             twitter_id="basicallymma" 

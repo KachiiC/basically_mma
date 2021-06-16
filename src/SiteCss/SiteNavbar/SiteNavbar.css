@@ -2,7 +2,7 @@ nav {
     border: 1px solid black;
     height: 80px;
     background-color: black;
-    color: white !important;
+    color: white;
     position: fixed;
     z-index: 100;
     top: 0;
@@ -23,7 +23,7 @@ nav {
     margin: 27px 0px;
 }
 
-.nav-heading a{
+.nav-heading a {
     text-align: center;
     font-weight: 700;
     color: white !important;
@@ -60,6 +60,7 @@ nav {
 .nav-sub-menu h6 {
     cursor: pointer;
     font-weight: 700;
+    text-align: center;
 }
 
 /* SMALL MENU  */

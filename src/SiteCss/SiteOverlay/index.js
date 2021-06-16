@@ -15,7 +15,9 @@ const SiteOverlay = (props) => {
     }
     
     return (
-        <div className="site-overlay-pic" onClick={props.click}>
+        <div className="site-overlay-pic cursor-pointer" 
+            onClick={props.click}
+        >
             {iconLogic ()}
             {props.children}
         </div>

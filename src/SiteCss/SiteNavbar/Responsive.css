@@ -1,11 +1,11 @@
 @media screen and (max-width: 900px) {
     .nav-menu-list {
-        display: none;
+        display: none !important;
     }
 
     .nav-logo {
         float: left;
-        width: 60%;
+        width: 60% !important;
         height: 100%;
         text-align: left;
     }

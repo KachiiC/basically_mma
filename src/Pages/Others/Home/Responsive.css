@@ -1,38 +1,7 @@
 @media screen and (max-width: 1080px) {
-    .home-feature,
-    .home-video-gallery,
-    .home-twitter-feed,
-    .home-featured-fight,
-    .home-featured-fighter {
-        grid-column: span 12 !important;
-    }
-
-    /* Feature Fight */
-    .home-featured-fight {
-        width: 80%;
-        padding: 0px;
-    }
-    
-    .featured-fighter-section {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-    }
-    
-    .featured-fighter-section .fighter-details,
-    .featured-fighter-section .fighter-image {
-        grid-column: span 6;
-        margin: auto;
-    }
-
-    .featured-fighter-section .fighter-image {
-        width: 60%;
-    }
-
-    .home-featured-fighter h6,
-    .home-featured-fighter .fighter-details table {
-        font-size: 18px;
-        width: 100%;
+    .home-page .site-span-4,
+    .home-page .site-span-8 {
+        grid-column: span 12;
     }
 
     /* Twitter Feed */
@@ -49,22 +18,8 @@
         width: 90%;
     }
 
-    .home-featured-fight .caption-content h6 {
-        font-size: 16px;
-        margin-bottom: 0px;
-    }
-
-    .home-featured-fight .caption-content p {
-        font-size: 14px;
-        margin: 0px;
-    }
-
     .small-list-image-container {
         grid-column: span 12;
-    }
-
-    .home-featured-fight {
-        width: 90%;
     }
 
     .home-featured-fighter .fighter-details {

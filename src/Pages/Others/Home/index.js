@@ -3,20 +3,21 @@ import React from 'react'
 import './Home.css'
 import './Responsive.css'
 // Components
-import HomeFeatured from './PageComponents/HomeFeaturedFight'
+// import HomeFeaturedFight from './PageComponents/HomeFeaturedFight'
+import HomeFeaturedFight from './PageComponents/HomeFeaturedFight'
 import HomeVideoGallery from './PageComponents/HomeVideoGallery'
 import HomeTwitterFeed from './PageComponents/HomeTwitterFeed'
-import HomeFeaturedCards from './PageComponents/HomeRecommendedCards'
+import HomeRecommendedCards from './PageComponents/HomeRecommendedCards'
 import HomeFeaturedFighter from './PageComponents/HomeFeaturedFighter'
 
-const Home = () => (  
+const Home = (  
 
-    <div className="site-grid-system">
-        <HomeFeatured />
+    <div className="site-grid-system home-page">
+        <HomeFeaturedFight />
         <HomeFeaturedFighter />
-        <HomeFeaturedCards />
+        {HomeRecommendedCards}
         <HomeVideoGallery />
-        <HomeTwitterFeed />
+        {HomeTwitterFeed}
     </div>
 
 )

@@ -1,0 +1,15 @@
+@mixin paddingX($pad){
+    padding: $pad 0px;
+}
+
+@mixin paddingY($pad){
+    padding: 0px $padding;
+}
+
+@mixin MarginX($marg){
+    margin: $marg auto;
+}
+
+@mixin MarginY($marg){
+    margin: auto $marg;
+}

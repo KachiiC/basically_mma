@@ -9,10 +9,11 @@ const MenuList = (props) => {
 
     const ListOfMenu = props.data.map((menu, index) => {
 
-        const regular_menu = 
-        <Link to={`/basically_mma/${menu.title}`}>
-            {TitleRender(menu.title)}
-        </Link>
+        const regular_menu = (
+            <Link to={`/basically_mma/${menu.title}`}>
+                {TitleRender(menu.title)}
+            </Link>
+        )
 
         const renderMenuType = menu.sub_menu === true ? 
             DropdownList(menu): 

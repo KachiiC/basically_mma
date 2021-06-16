@@ -20,22 +20,24 @@ const HomeImageGallery = () => {
     const fetchedGalleryData = responseData.response.playlist_videos
 
     const renderHomeGallery = (
+        <div className="site-span-8">
 
-        <SiteVideoCarousel 
-            data={fetchedGalleryData} 
-            title="Latest Fight Highlights"
-            row_images={5}
-            suggestions_url={HomeVideoGalleryURL}
-        />
+            <SiteVideoCarousel 
+                data={fetchedGalleryData} 
+                title="Latest Fight Highlights"
+                row_images={5}
+                suggestions_url={HomeVideoGalleryURL}
+            />
+        </div>
     )
 
     return (
-        <div className="home-video-gallery">
-            <SiteRender 
-                data={responseData}
-                component={renderHomeGallery}
-            />
-        </div>
+
+        <SiteRender 
+            data={responseData}
+            component={renderHomeGallery}
+        />
+
     )
 }
 

@@ -59,13 +59,13 @@ const displayLinks = PagesData.map((page, index) => {
 // Add Homepage (which must be at the end)
 displayLinks.push(
     <Route path="/" >
-        <Home/>
+        {Home}
     </Route>
 )
 
 
 const PageLinks = (
-    <div className="site-body">
+    <div className="site-body w-100">
         <Switch>
             {displayLinks}
         </Switch>

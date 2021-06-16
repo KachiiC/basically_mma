@@ -1,5 +1,5 @@
 import React from 'react'
-import 'SiteCss/SiteCss.css'
+import 'SiteCss/CSS/SiteCss.scss'
 
 const SiteExternalLink = (props) => 
 

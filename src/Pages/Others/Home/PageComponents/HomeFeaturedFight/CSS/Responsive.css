@@ -1,0 +1,25 @@
+@media screen and (max-width: 1080px) {
+
+    /* Feature Fight */
+    .home-featured-fight {
+        width: 100%;
+        padding: 0px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .home-featured-fight .caption-content h6 {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    .home-featured-fight .caption-content p {
+        font-size: 14px;
+        margin: 0px;
+    }
+    .home-featured-fight {
+        width: 100%;
+    }
+}

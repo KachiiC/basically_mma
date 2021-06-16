@@ -1,11 +1,13 @@
+
+
 /* Grid System */
 
-.site-grid {
+.site-grid,
+.site-grid-system {
     display: grid
 }
 
 .site-grid-system {
-    display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 
@@ -70,8 +72,8 @@
 
 .site-responsive-image {
     width: 100%;
-    height: auto;
     max-height: 100%;
+    height: auto;
     border-radius: 3px;
 }
 

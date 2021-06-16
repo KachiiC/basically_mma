@@ -1,0 +1,27 @@
+.home-featured-fighter {
+    text-align: center;
+}
+
+.featured-fighter h4 {
+    padding: 0px
+}
+
+.featured-fighter-profile .fighter-details table {
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+.featured-fighter-profile .fighter-image,
+.featured-fighter-profile .fighter-details {
+    margin: 25px auto;
+}
+
+.featured-fighter-profile .fighter-details td,
+.featured-fighter-profile .fighter-details th {
+    padding: 5px 15px;
+}
+
+.fighter-table-title {
+    text-align: left;
+}

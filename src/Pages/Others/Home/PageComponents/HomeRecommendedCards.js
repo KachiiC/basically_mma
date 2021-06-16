@@ -4,12 +4,12 @@ import HomeRecommendedCardsData from 'Data/Other/Home/HomeRecommendedCardsData'
 // Components
 import SiteCards from 'Components/SiteCards'
 
-const HomeCardComponents = () =>
+const HomeRecommendedCards = (
 
     <SiteCards 
         data={HomeRecommendedCardsData} 
         title="Recommended Reading" 
     />
+)
 
-
-export default HomeCardComponents
+export default HomeRecommendedCards

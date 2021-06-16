@@ -10,16 +10,20 @@
     width: 90%;
 }
 
-.small-image-container:nth-of-type(odd) .site-responsive-image {
+.small-image-container:nth-of-type(odd) 
+.site-responsive-image {
     padding-right: 1.25px;
 }
 
-.small-image-container:nth-of-type(even) .site-responsive-image {
+.small-image-container:nth-of-type(even) 
+.site-responsive-image {
     padding-left: 1.25px;
 }
 
-.small-image-container:nth-of-type(1) .site-responsive-image, 
-.small-image-container:nth-of-type(2) .site-responsive-image {
+.small-image-container:nth-of-type(1) 
+.site-responsive-image, 
+.small-image-container:nth-of-type(2) 
+.site-responsive-image {
     padding-bottom: 2.5px;
 }
 
