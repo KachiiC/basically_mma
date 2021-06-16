@@ -3,12 +3,9 @@ import React from 'react'
 // COMPONENTS
 import SiteIcon from 'SiteCss/SiteIcon';
 import SiteOverlay from 'SiteCss/SiteOverlay'
-import SiteSectionTitle from 'SiteCss/SiteSectionTitle';
 
 const FeaturedFight = (props) => (
 
-    <div className="home-featured-fight site-span-8">
-        <SiteSectionTitle title="Feature Fight" />
         <div className="w-90 m-auto">
             <SiteOverlay 
                 click={props.click} 
@@ -29,7 +26,6 @@ const FeaturedFight = (props) => (
                 <p>{props.video_description}</p>
             </div>
         </div>
-    </div>
 
 )
 

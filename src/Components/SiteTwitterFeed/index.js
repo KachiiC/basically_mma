@@ -1,6 +1,7 @@
 import React from 'react'
 // CSS
 import './SiteTwitterFeed.css'
+import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 // Components
 import { Timeline } from 'react-twitter-widgets'
 
@@ -8,7 +9,7 @@ const SiteTwitterFeed = (props) => (
 
     <div className="twitter-container w-80">
         {/* Title of feed */}
-        <h2>{props.title}</h2>
+        <SiteSectionTitle title={props.title}/>
         <Timeline
             dataSource={{
                 // "Set Twitter ID"

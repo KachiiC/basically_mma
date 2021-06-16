@@ -11,7 +11,7 @@ import FeaturedFighterTemplate from 'Data/Other/Home/HomeFeaturedFighter'
 import FeaturedFighterImage from './Components/FeaturedFighterImage'
 import FeaturedFighterTable from './Components/FeaturedFighterTable'
 
-const featured_fighter_url = "https://kachiis-rest.herokuapp.com/backend/mma_featured_fighter"
+const featured_fighter_url = "https://kachiis-rest.herokuapp.com/backend/mma_featured_fighter/"
 
 const HomeFeaturedFighter = () => {
 
@@ -23,24 +23,24 @@ const HomeFeaturedFighter = () => {
     const featured_fighter_name = responseData.response.first_name + " " + responseData.response.last_name
     
     const renderFeaturedFighter = (
-
-        <div className="site-span-4 featured-fighter">
-            <SiteSectionTitle title="Featured Fighter" />
+        <>
             <h4>{featured_fighter_name}</h4> 
             <div className="featured-fighter-profile">
-                <FeaturedFighterImage data={responseData.response} />
+                <FeaturedFighterImage fighter_image={responseData.response.fighter_image} />
                 <FeaturedFighterTable data={responseData.response} />            
             </div>
-        </div>
+        </>
         
     )
 
     return (
-
-        <SiteRender 
-            data={responseData}
-            component={renderFeaturedFighter}
-        />
+        <div className="site-span-4 featured-fighter">
+            <SiteSectionTitle title="Featured Fighter" />
+            <SiteRender 
+                data={responseData}
+                component={renderFeaturedFighter}
+            />
+        </div>
 
     )
 

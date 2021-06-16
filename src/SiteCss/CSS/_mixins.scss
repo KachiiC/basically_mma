@@ -13,3 +13,14 @@
 @mixin MarginY($marg){
     margin: auto $marg;
 }
+
+@mixin margin25XautoY {
+    margin: 25px auto;
+}
+
+@mixin gridSystem() {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}  
+
+// @include flexCenter(center);

@@ -5,6 +5,7 @@ import './CSS/HomeFeaturedFight.css'
 import SiteVideoModalPlayer from 'Components/SiteVideoModalPlayer'
 import SiteFetcher from 'SiteCss/SiteFetcher';
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
+import SiteSectionTitle from 'SiteCss/SiteSectionTitle';
 // Data
 import featuredFightData from 'Data/Other/Home/HomeFeaturedFightData'
 import FeaturedFight from './Components/FeaturedFight';
@@ -31,11 +32,14 @@ const HomeFeaturedFight = () => {
     )
 
     return (   
-        <> 
+        <>
+        <div className="home-featured-fight site-span-8">
+            <SiteSectionTitle title="Feature Fight" />
             <SiteRender 
                 data={responseData}
                 component={featuredFightComponent} 
             />
+        </div>
             {showModal && (
                 <SiteVideoModalPlayer
                     youtube_id={homeFeaturedFight.video_id} 

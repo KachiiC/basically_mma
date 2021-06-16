@@ -6,11 +6,11 @@ import SiteFetcher from 'SiteCss/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 // Data
 import galleryImagesData from 'Data/Other/Home/HomeImageGalleryData'
+import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 
+const HomeVideoGalleryURL = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/fight_highlights"
 
 const HomeImageGallery = () => {
-
-    const HomeVideoGalleryURL = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/fight_highlights"
 
     const responseData = SiteFetcher(
         HomeVideoGalleryURL,
@@ -20,23 +20,25 @@ const HomeImageGallery = () => {
     const fetchedGalleryData = responseData.response.playlist_videos
 
     const renderHomeGallery = (
-        <div className="site-span-8">
 
-            <SiteVideoCarousel 
-                data={fetchedGalleryData} 
-                title="Latest Fight Highlights"
-                row_images={5}
-                suggestions_url={HomeVideoGalleryURL}
-            />
-        </div>
+        <SiteVideoCarousel 
+            data={fetchedGalleryData} 
+            // title="Latest Fight Highlights"
+            row_images={5}
+            suggestions_url={HomeVideoGalleryURL}
+        />
+    
     )
 
     return (
 
-        <SiteRender 
-            data={responseData}
-            component={renderHomeGallery}
-        />
+        <div className="site-span-8">
+            <SiteSectionTitle title="Latest Fight Highlights" />
+            <SiteRender 
+                data={responseData}
+                component={renderHomeGallery}
+            />
+        </div>
 
     )
 }

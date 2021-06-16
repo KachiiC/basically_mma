@@ -1,14 +1,13 @@
-
+@import './mixins';
 
 /* Grid System */
 
-.site-grid,
-.site-grid-system {
-    display: grid
+.site-grid {
+    display: grid;
 }
 
 .site-grid-system {
-    grid-template-columns: repeat(12, 1fr);
+    @include gridSystem();
 }
 
 .site-span-1 {

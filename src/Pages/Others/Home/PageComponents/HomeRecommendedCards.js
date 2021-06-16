@@ -8,8 +8,8 @@ const HomeRecommendedCards = (
 
     <SiteCards 
         data={HomeRecommendedCardsData} 
-        title="Recommended Reading" 
     />
+
 )
 
 export default HomeRecommendedCards

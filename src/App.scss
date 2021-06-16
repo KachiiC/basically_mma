@@ -1,4 +1,4 @@
-@import './SiteCss/CSS/SiteCss';
+@import 'SiteCss/CSS/_mixins';
 
 h1, 
 h2, 
@@ -23,7 +23,7 @@ p {
 
 hr {
     width: 80%;
-    margin: 25px auto;
+    @include margin25XautoY;
 }
 
 @media screen and (max-width: 640px) {
