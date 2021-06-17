@@ -12,20 +12,20 @@ const HomeInstaSlider = () => {
     const responseData = SiteFetcher(instagramURL, instaData)
     const instaDisplay = responseData.response
 
-    const instaSlider = 
+    const instaSlider = (
         <SiteSlider 
             data={instaDisplay}
             displayed_slides={6} 
             title="Follow us on instagram! @basically_mma" 
             type="instagram"
         />
+    )
 
     return (
         <SiteRender 
             data={responseData}
             component={instaSlider} 
         />
-
     )
 
 }

@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 import SiteFetcher from 'SiteCss/SiteFetcher';
 import SiteModal from 'Components/SiteModal'
+import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 // Data
 import HomeImageGalleryData from 'Data/Other/Home/HomeImageGalleryData'
 import VideoModalPlayer from './ComponentParts/VideoModalPlayer'
@@ -54,9 +55,7 @@ const SiteVideoModal = (props) => {
                 description={currentYoutubeId.description }
             />
             <div className="video-carousel-section site-span-6">
-                <div className="fight-suggestions-header w-90">
-                    Have you seen these fights?
-                </div>
+                <SiteSectionTitle title="Have you seen these fights?" />
                 <SiteRender 
                     data={responseData}
                     component={displayFightSuggestion} 

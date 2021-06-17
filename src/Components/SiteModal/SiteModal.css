@@ -1,5 +1,5 @@
 .site-overlay {
-    position: fixed;
+    position:fixed;
     display: block; 
     overflow: auto;
     top: 0; 
