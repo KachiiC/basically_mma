@@ -26,12 +26,14 @@ const RecommendedData = [
 ]
 
 RecommendedData.map((category, index) => {
-        category.content = (
-            <SiteCards 
+
+    category.content = (
+        <SiteCards 
             data={category.data} 
             key={index}
         />
     )
+    
     return category
 })
 

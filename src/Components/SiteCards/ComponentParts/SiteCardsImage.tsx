@@ -2,9 +2,17 @@ import React from 'react'
 // Components
 import { Link } from "react-router-dom"
 import SiteExternalLink from 'SiteCss/SiteExternalLink'
-import SiteCardsCaption from './SiteCardsCaption'
+import SiteCardsCaption from './SiteCardsCaption.tsx'
 
-const SiteCardsImage = (props) => {
+interface Props {
+    image: string;
+    title: string;
+    link: string;
+    external_links?: boolean;
+    alt: string;
+}
+
+const SiteCardsImage = (props : Props) => {
 
     const card_image = (
         <div className="image-caption-container">

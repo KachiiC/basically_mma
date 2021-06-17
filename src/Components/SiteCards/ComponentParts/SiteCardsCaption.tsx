@@ -1,12 +1,14 @@
 import React from 'react'
 
-const SiteCardsCaption = (props) => {
+interface Props {
+    title?: string
+}
 
-    const title = props.title
+const SiteCardsCaption = (props : Props) => {
 
     const display_title = () => {
-        if (title) {
-            return title.split("-").join(" ")
+        if (props.title) {
+            return props.title.split("-").join(" ")
         } 
     }
 

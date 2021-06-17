@@ -1,8 +1,20 @@
 import React from 'react'
 // COMPONENTS
-import SiteCardsImage from './SiteCardsImage'
+import SiteCardsImage from './SiteCardsImage.tsx'
 
-const SiteFeaturedCardImage = (props) => (
+interface dataProps {
+    external_links: boolean;
+    featured_title: string;
+    featured_image: string;
+    featured_link: string;
+    alt: string;
+}
+
+interface Props {
+    data: dataProps;
+}
+
+const SiteFeaturedCardImage = (props: Props) => (
 
     <div className="featured-card">
         <SiteCardsImage 
@@ -10,6 +22,7 @@ const SiteFeaturedCardImage = (props) => (
             title={props.data.featured_title}
             image={props.data.featured_image}
             link={props.data.featured_link}
+            alt={props.data.alt}
         />
     </div>
     
