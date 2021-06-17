@@ -2,7 +2,7 @@ import React from 'react'
 // Components
 import { Link } from "react-router-dom"
 import SiteExternalLink from 'SiteCss/SiteExternalLink'
-import SiteCardsCaption from './SiteCardsCaption.tsx'
+import SiteCardsCaption from './SiteCardsCaption'
 
 interface Props {
     image: string;

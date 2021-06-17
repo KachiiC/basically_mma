@@ -3,8 +3,9 @@ import React from 'react'
 import "./SiteCards.css"
 import './Responsive.css'
 // Components
-import SiteFeaturedCardImage from './ComponentParts/SiteFeaturedCardImage.tsx'
-import SiteSmallCards from './ComponentParts/SiteSmallCards.tsx'
+import SiteFeaturedCardImage from './ComponentParts/SiteFeaturedCardImage'
+import SiteSmallCards from './ComponentParts/SiteSmallCards'
+
 
 const SiteArticlesCard = (props) => {
     

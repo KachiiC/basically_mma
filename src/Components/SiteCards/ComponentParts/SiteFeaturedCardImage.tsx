@@ -1,6 +1,6 @@
 import React from 'react'
 // COMPONENTS
-import SiteCardsImage from './SiteCardsImage.tsx'
+import SiteCardsImage from './SiteCardsImage'
 
 interface dataProps {
     external_links: boolean;

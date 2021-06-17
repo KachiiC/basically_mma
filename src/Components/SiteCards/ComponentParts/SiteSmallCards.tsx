@@ -1,6 +1,6 @@
 import React from 'react'
 // COMPONENTS
-import SiteCardsImage from './SiteCardsImage.tsx'
+import SiteCardsImage from './SiteCardsImage'
 
 interface dataProps {
     external_links: boolean;
@@ -10,18 +10,27 @@ interface dataProps {
 }
 
 interface Props {
-    data: any;
+    data: {
+        small_images: {
+            title?: string;
+            link?: string;
+            image: string;
+            map: (item: object) => dataProps
+            indexOf: (item: object) => number
+        };  
+        external_links: boolean;
+    };
 }
 
 const SiteSmallCards = (props: Props) => {
 
     const smallImages = props.data.small_images
 
-    const displayImagesList = props.data.small_images.map((item : dataProps) => (
+    const displayImagesList = smallImages.map((item : dataProps) => (
             <div className="small-image-container" key={smallImages.indexOf(item)}>
-                <SiteCardsImage 
+                <SiteCardsImage
                     external_links={props.data.external_links}
-                    alt={smallImages.indexOf(item)}
+                    alt={item.title}
                     title={item.title}
                     image={item.image}
                     link={item.link}
