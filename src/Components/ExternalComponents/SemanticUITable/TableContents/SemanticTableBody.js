@@ -10,24 +10,15 @@ const TableBody = (props) => {
         const pointRow = Object.values(point)
 
         const pointColor = Object.values(props.data.color_code)
-        
-        console.log(pointColor)
 
-        const pointContent = pointRow.map((content, index) => {
-
-            // const colorLogic = pointRow.indexOf(content) === 0 ? 
-            //     "#99da99" 
-            //     : 
-            //     "#fe8e8e"
-
-            return (
+        const pointContent = pointRow.map((content, index) => (
                 <SemanticTableCell 
                     key={index}
                     color={pointColor[pointRow.indexOf(content)]}
                     content={content}
                 />
             )
-        })
+        )
 
         return (
             <Table.Row key={index}>
