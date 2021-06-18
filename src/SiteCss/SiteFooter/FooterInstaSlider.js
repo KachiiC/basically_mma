@@ -4,7 +4,7 @@ import instaData from 'Data/Other/Footer/instaFooterData'
 // Components
 import SiteSlider from 'Components/SiteSlider'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
-import SiteFetcher from 'SiteCss/SiteFetcher'
+import SiteFetcher from 'SiteTools/SiteFetcher'
 // LINKS
 import { InstagramURL } from 'Data/SiteUrlsData'
 

@@ -2,7 +2,7 @@ import React from 'react'
 // DATA
 import TechniquesTemplate from 'Data/Advanced/Techniques/TechniquesTemplate'
 // Components
-import SiteFetcher from 'SiteCss/SiteFetcher'
+import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import MaterialUITable from 'Components/ExternalComponents/MaterialUITable';
 import TechniquesDropdown from './TechniquesDropdown';

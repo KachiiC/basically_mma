@@ -6,9 +6,9 @@ import 'antd/dist/antd.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // Components
 import { BrowserRouter } from "react-router-dom"
-import SiteScrollToTop from 'SiteCss/SiteScrollToTop'
+import SiteScrollToTop from 'SiteTools/SiteScrollToTop'
 import SiteNavbar from 'SiteCss/SiteNavbar'
-import SiteFooter from 'SiteCss/SiteFooter'
+import SiteFooter from 'SiteCss/SiteFooter/'
 // Data
 import PagesData from 'Data/PagesData'
 // Pages

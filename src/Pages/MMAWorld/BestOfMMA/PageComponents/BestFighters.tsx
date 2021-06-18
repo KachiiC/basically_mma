@@ -2,7 +2,7 @@ import React from 'react'
 // Data
 import {BestFighterTemplateData} from 'Data/MMAWorld/BestOfMMA/BestFighterData'
 // Components
-import SiteFetcher from 'SiteCss/SiteFetcher'
+import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import SingleFighter from './SingleFighter'
 

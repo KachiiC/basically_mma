@@ -3,7 +3,7 @@ import React from 'react'
 import StoreListTemplate from 'Data/Other/Store/StoreListTemplate'
 // Components
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
-import SiteFetcher from 'SiteCss/SiteFetcher'
+import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteTextCrop from 'SiteCss/SiteCrop/SiteTextCrop'
 import SingleStoreItem from './SingleStoreItem'
 

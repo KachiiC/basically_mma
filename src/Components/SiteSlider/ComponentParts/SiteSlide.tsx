@@ -1,6 +1,6 @@
 import React from 'react'
 // Components
-import SiteExternalLink from 'SiteCss/SiteExternalLink'
+import SiteExternalLink from 'SiteTools/SiteExternalLink'
 import SiteOverlay from 'SiteCss/SiteOverlay'
 // ICONS
 import SiteIcon from 'SiteCss/SiteIcon'

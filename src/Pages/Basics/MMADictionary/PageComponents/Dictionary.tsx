@@ -1,6 +1,6 @@
 import React from 'react'
 // Components
-import SiteFetcher from 'SiteCss/SiteFetcher'
+import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import { DictionaryListTemplate } from 'Data/Basics/MMADictionary/MMADictionary'
 import AntdCollapsable from 'Components/ExternalComponents/AntdCollapsable'

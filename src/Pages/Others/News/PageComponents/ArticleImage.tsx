@@ -1,5 +1,5 @@
 import React from 'react'
-import SiteExternalLink from 'SiteCss/SiteExternalLink'
+import SiteExternalLink from 'SiteTools/SiteExternalLink'
 import SiteOverlay from 'SiteCss/SiteOverlay'
 
 interface Props {

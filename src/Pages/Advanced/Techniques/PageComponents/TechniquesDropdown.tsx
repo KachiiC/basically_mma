@@ -1,7 +1,7 @@
 import React from 'react'
 // COMPONENTS
 import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
-import SiteParagraphFormatter from 'SiteCss/SiteParagraphFormatter'
+import SiteParagraphFormatter from 'SiteTools/SiteParagraphFormatter'
 
 interface Props {
     title: string;

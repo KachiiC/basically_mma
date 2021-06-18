@@ -1,7 +1,7 @@
 import React from 'react'
 // Components
 import { Link } from "react-router-dom"
-import SiteExternalLink from 'SiteCss/SiteExternalLink'
+import SiteExternalLink from 'SiteTools/SiteExternalLink'
 import SiteCardsCaption from './SiteCardsCaption'
 
 interface Props {

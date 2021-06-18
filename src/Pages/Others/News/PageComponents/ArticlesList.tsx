@@ -1,7 +1,7 @@
 import React from 'react'
 // Components
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
-import SiteFetcher from 'SiteCss/SiteFetcher'
+import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteTextCrop from 'SiteCss/SiteCrop/SiteTextCrop'
 // Icons
 import ArticlesListData from 'Data/Other/Articles/ArticlesListTemplate'
