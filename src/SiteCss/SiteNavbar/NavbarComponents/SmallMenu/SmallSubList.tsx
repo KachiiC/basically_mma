@@ -9,7 +9,7 @@ interface subMenuProps {
 
 interface Props {
     title: string;
-    menu_list: any;
+    menu_list?: any;
 }
 
 const SmallScreenSubList = (props: Props, click: React.MouseEventHandler<HTMLAnchorElement> | undefined) => {

@@ -7,7 +7,7 @@ import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 // Data
 import galleryImagesData from 'Data/Other/Home/HomeImageGalleryData'
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
-import {HomeVideoGalleryURL} from 'Data/Other/Home/HomeUrlsData'
+import { HomeVideoGalleryURL } from 'Data/SiteUrlsData'
 
 const HomeImageGallery = () => {
 

@@ -5,16 +5,16 @@ import instaData from 'Data/Other/Footer/instaFooterData'
 import SiteSlider from 'Components/SiteSlider'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import SiteFetcher from 'SiteCss/SiteFetcher'
+// LINKS
+import { InstagramURL } from 'Data/SiteUrlsData'
 
 const HomeInstaSlider = () => {
 
-    const instagramURL = "https://kachiis-rest.herokuapp.com/api/instagram_list_refresh/"
-    const responseData = SiteFetcher(instagramURL, instaData)
-    const instaDisplay = responseData.response
+    const responseData = SiteFetcher(InstagramURL, instaData)
 
     const instaSlider = (
         <SiteSlider 
-            data={instaDisplay}
+            data={responseData.response}
             displayed_slides={6} 
             title="Follow us on instagram! @basically_mma" 
             type="instagram"

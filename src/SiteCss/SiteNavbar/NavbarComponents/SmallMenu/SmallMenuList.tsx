@@ -1,13 +1,13 @@
 import React from 'react'
 // COMPONENTS
 import { Link } from "react-router-dom";
-import SmallScreenSubList from './SmallSubList'
+import SmallSubList from './SmallSubList'
 import TitleRender from 'SiteCss/SiteTitleRender'
 
 interface menuProps {
-    title: React.Key | null | undefined; 
+    title: string; 
     sub_menu: boolean;
-} 
+}
 
 interface Props {
     click: any;
@@ -21,7 +21,7 @@ const SmallMenuList = (props: Props) => {
         const menu_title = TitleRender(menu.title)
 
         const renderMenuType = menu.sub_menu === true ? 
-            SmallScreenSubList(menu, props.click) : (
+            SmallSubList(menu, props.click) : (
                 <Link to={`/basically_mma/${menu.title}`} 
                     key={menu.title} 
                     onClick={props.click}

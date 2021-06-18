@@ -9,7 +9,7 @@ import SiteSectionTitle from 'SiteCss/SiteSectionTitle';
 // Data
 import featuredFightData from 'Data/Other/Home/HomeFeaturedFightData'
 import FeaturedFight from './Components/FeaturedFight';
-import { FeaturedFightURL, SuggestedFightsURL } from 'Data/Other/Home/HomeUrlsData'
+import { FeaturedFightURL, SuggestedFightsURL } from 'Data/SiteUrlsData'
 
 const HomeFeaturedFight = () => {
     

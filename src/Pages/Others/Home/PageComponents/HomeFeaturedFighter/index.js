@@ -10,7 +10,7 @@ import FeaturedFighterTemplate from 'Data/Other/Home/HomeFeaturedFighter'
 // DATA
 import FeaturedFighterImage from './Components/FeaturedFighterImage'
 import FeaturedFighterTable from './Components/FeaturedFighterTable'
-import {FeaturedFighterURL} from 'Data/Other/Home/HomeUrlsData'
+import {FeaturedFighterURL} from 'Data/SiteUrlsData'
 
 
 const HomeFeaturedFighter = () => {
