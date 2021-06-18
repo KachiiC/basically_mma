@@ -4,17 +4,19 @@ import React from 'react'
 import SiteIcon from 'SiteCss/SiteIcon';
 import SiteOverlay from 'SiteCss/SiteOverlay'
 
-const FeaturedFight = (props) => (
+interface Props {
+    click: any;
+    video_thumbnail: string;
+    video_description: string;
+    video_title: string;
+}
+
+const FeaturedFight = (props: Props) => (
 
         <div className="w-90 m-auto">
             <SiteOverlay 
                 click={props.click} 
-                icon={
-                    <SiteIcon 
-                        icon="play" 
-                        color="white" 
-                    />
-                }
+                icon={<SiteIcon icon="play" color="white" />}
             >
                 <img className="site-responsive-image"
                     src={props.video_thumbnail} 

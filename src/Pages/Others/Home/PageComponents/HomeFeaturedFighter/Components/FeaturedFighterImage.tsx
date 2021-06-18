@@ -1,6 +1,10 @@
 import React from 'react'
 
-const FeatureFighterImage = (props) => (
+interface Props {
+    fighter_image: string;
+}
+
+const FeatureFighterImage = (props: Props) => (
 
     <div className="fighter-image w-30">
         <img src={props.fighter_image} 
