@@ -8,13 +8,22 @@ import ArticlesListData from 'Data/Other/Articles/ArticlesListTemplate'
 import SiteIcon from 'SiteCss/SiteIcon'
 import SingleArticle from './SingleArticle'
 
+interface articleProps {
+    title: string;
+    post_description: string;
+    post_link: string;
+    thumbnail_url: string;
+    post_time_stamp: string;
+
+}
+
 const ArticlesList = () => {
 
     const articlesListURL = "https://kachiis-rest.herokuapp.com/backend/mma_articles_list"
     const responseData = SiteFetcher(articlesListURL, ArticlesListData)
     const siteArticles = responseData.response
 
-    const displayArticles = siteArticles.map((article, index) => {
+    const displayArticles = siteArticles.map((article: articleProps) => {
 
         const readIcon = <SiteIcon icon="read-me" color="white" />
         const articleTitle = SiteTextCrop(article.title, 30)
@@ -22,7 +31,7 @@ const ArticlesList = () => {
 
         return (
             <SingleArticle 
-                index={index}
+                key={siteArticles.indexOf(article)}
                 icon={readIcon}
                 post_link={article.post_link}
                 thumbnail_url={article.thumbnail_url}

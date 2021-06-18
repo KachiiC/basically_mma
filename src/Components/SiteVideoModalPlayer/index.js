@@ -7,7 +7,7 @@ import SiteModal from 'Components/SiteModal'
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 // Data
 import HomeImageGalleryData from 'Data/Other/Home/HomeImageGalleryData'
-import VideoModalPlayer from './ComponentParts/VideoModalPlayer'
+import VideoModalPlayer from './ComponentParts/VideoModalPlayer.tsx'
 import VideoModalSuggestion from './ComponentParts/VideoModalSuggestions';
 
 const SiteVideoModal = (props) => {
