@@ -3,18 +3,27 @@ import React, {useState} from 'react'
 import { Link } from "react-router-dom";
 import TitleRender from 'SiteCss/SiteTitleRender'
 
-const SmallScreenSubList = (props, click) => {
+interface subMenuProps {
+    title: string; 
+}
+
+interface Props {
+    title: string;
+    menu_list: any;
+}
+
+const SmallScreenSubList = (props: Props, click: React.MouseEventHandler<HTMLAnchorElement> | undefined) => {
 
     const [subList, setSubList] = useState(false)
 
-    const displaySubList = props.menu_list.map((sub, index) => {
+    const displaySubList = props.menu_list.map((sub: subMenuProps) => {
         
         const displaySub = TitleRender(sub.title)
 
         return (
             <Link to={`/basically_mma/${sub.title}`} 
                 onClick={click}
-                key={index}
+                key={sub.title}
             >
                 <h5>{displaySub}</h5>
             </Link>

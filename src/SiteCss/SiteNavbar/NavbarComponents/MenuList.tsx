@@ -5,9 +5,20 @@ import DropdownList from './Dropdown'
 import TitleRender from 'SiteCss/SiteTitleRender'
 import {Link} from "react-router-dom";
 
-const MenuList = (props) => {
+interface menuProps {
+    title: string | null | undefined; 
+    sub_menu: boolean;
+}
 
-    const ListOfMenu = props.data.map((menu, index) => {
+interface Props {
+    data: any;
+}
+
+
+
+const MenuList = (props: Props) => {
+
+    const ListOfMenu = props.data.map((menu: menuProps) => {
 
         const regular_menu = (
             <Link to={`/basically_mma/${menu.title}`}>
@@ -20,7 +31,7 @@ const MenuList = (props) => {
             regular_menu
 
         return (
-            <div key={index} className={`site-span-1 nav-heading`}>
+            <div key={menu.title} className={`site-span-1 nav-heading`}>
                 {renderMenuType}
             </div>
         )

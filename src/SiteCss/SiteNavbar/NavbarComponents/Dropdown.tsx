@@ -3,15 +3,24 @@ import React from 'react'
 import TitleRender from 'SiteCss/SiteTitleRender'
 import {Link} from "react-router-dom";
 
-const DropdownList = (props) => {
+interface menuProps {
+    title: string | null | undefined;
+}
 
-    const displayList = props.menu_list.map((sub, index) => {
+interface Props {
+    title: any;
+    menu_list?: any;
+}
+
+const DropdownList = (props: Props) => {
+
+    const displayList = props.menu_list.map((sub: menuProps) => {
 
         const displayTitle = TitleRender(sub.title)
 
         return (
             <Link to={`/basically_mma/${sub.title}`} 
-                key={index}
+                key={sub.title}
             >
                 <h6>{displayTitle}</h6>
             </Link>
