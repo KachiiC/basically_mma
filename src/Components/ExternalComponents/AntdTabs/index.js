@@ -1,7 +1,7 @@
 import React from 'react'
 // COMPONENTS
 import { Tabs } from 'antd';
-import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
+import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo'
 
 const AntdTabs = (props) => {
 

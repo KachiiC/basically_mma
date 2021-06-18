@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 // COMPONENTS
 import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
-import SiteVideoModalPlayer from 'Components/SiteVideoModalPlayer'
+import SiteVideoModalPlayer from 'Components/MyComponents/SiteVideoModalPlayer'
 // DATA
 import fight_highlightsData from 'Data/Other/Sidebar/SidebarHighlightsData'
 import SiteSingleHighlight from './SiteSingleHighlight'

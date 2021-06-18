@@ -1,6 +1,6 @@
 import React from 'react'
 // Components
-import SiteTwitterFeed from 'Components/SiteTwitterFeed'
+import SiteTwitterFeed from 'Components/MyComponents/SiteTwitterFeed'
 
 const HomeTwitterFeed = (
 

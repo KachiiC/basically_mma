@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 // Components
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 import SiteFetcher from 'SiteTools/SiteFetcher';
-import SiteModal from 'Components/SiteModal'
+import SiteModal from 'Components/MyComponents/SiteModal'
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 // Data
 import HomeImageGalleryData from 'Data/Other/Home/HomeImageGalleryData'

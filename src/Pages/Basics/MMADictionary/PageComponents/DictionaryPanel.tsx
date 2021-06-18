@@ -1,6 +1,6 @@
 import React from 'react'
 // COMPONENTS
-import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
+import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo'
 
 interface Props {
     example_type: string;

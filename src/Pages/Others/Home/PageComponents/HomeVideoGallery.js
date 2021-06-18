@@ -1,7 +1,7 @@
 import React from 'react'
 // CSS
 // Components
-import SiteVideoCarousel from 'Components/SiteVideoCarousel'
+import SiteVideoCarousel from 'Components/MyComponents/SiteVideoCarousel'
 import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 // Data
@@ -16,12 +16,10 @@ const HomeImageGallery = () => {
         galleryImagesData
     )
 
-    const fetchedGalleryData = responseData.response.playlist_videos
-
     const renderHomeGallery = (
 
         <SiteVideoCarousel 
-            data={fetchedGalleryData} 
+            data={responseData.response.playlist_videos} 
             row_images={5}
             suggestions_url={HomeVideoGalleryURL}
         />

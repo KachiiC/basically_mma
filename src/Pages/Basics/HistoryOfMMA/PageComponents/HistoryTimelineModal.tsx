@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 // Components
-import SiteModal from 'Components/SiteModal'
-import SiteTimeline from 'Components/SiteTimeline'
+import SiteModal from 'Components/MyComponents/SiteModal'
+import SiteTimeline from 'Components/MyComponents/SiteTimeline'
 // Data
 import TimelineData from 'Data/Basics/HistoryOfMMA/TimelineData'
 import SiteLinkLargeButton from 'SiteCss/SiteLinkLargeButton'

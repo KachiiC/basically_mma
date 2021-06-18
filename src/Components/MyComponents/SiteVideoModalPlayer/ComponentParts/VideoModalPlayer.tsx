@@ -1,6 +1,6 @@
 import React from 'react'
 // Components
-import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
+import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo'
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 
 interface Props {

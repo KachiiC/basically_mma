@@ -2,7 +2,7 @@ import React from 'react'
 // Data
 import instaData from 'Data/Other/Footer/instaFooterData'
 // Components
-import SiteSlider from 'Components/SiteSlider'
+import SiteSlider from 'Components/MyComponents/SiteSlider'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import SiteFetcher from 'SiteTools/SiteFetcher'
 // LINKS

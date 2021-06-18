@@ -1,5 +1,5 @@
 import React from 'react'
-import SiteCards from 'Components/SiteCards'
+import SiteCards from 'Components/MyComponents/SiteCards'
 // Data List
 import ChannelsData from './RecommendedLists/ChannelsData'
 import NewsData from './RecommendedLists/NewsData'

@@ -4,7 +4,7 @@ import './SiteVideoCarousel.css'
 import './Responsive.css'
 // COMPONENTS
 import SiteOverlay from 'SiteCss/SiteOverlay'
-import SiteVideoModalPlayer from 'Components/SiteVideoModalPlayer/'
+import SiteVideoModalPlayer from 'Components/MyComponents/SiteVideoModalPlayer'
 import VideoCarousel from './ComponentParts/VideoCarousel'
 import CarouselRowImage from './ComponentParts/CarouselRowImage'
 

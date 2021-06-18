@@ -1,6 +1,6 @@
 import React from 'react'
 // COMPONENTS
-import SiteVideoCarousel from 'Components/SiteVideoCarousel'
+import SiteVideoCarousel from 'Components/MyComponents/SiteVideoCarousel'
 // DATA
 import BestFighterData from './BestFighterData'
 
