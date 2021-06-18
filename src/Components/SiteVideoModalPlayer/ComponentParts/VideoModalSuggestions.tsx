@@ -1,7 +1,13 @@
 import React from 'react'
 // COMPONENTS
 
-const VideoModalSuggestion = (props) => (
+interface Props {
+    video_thumbnail: string;
+    video_title: string;
+    click: any;
+}
+
+const VideoModalSuggestion = (props: Props) => (
     <div className="fight-suggestions-section site-grid-system" 
         id="fight-modal-suggestions"
     >

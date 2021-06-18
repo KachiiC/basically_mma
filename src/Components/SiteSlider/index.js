@@ -7,8 +7,6 @@ import SiteSliderButton from './ComponentParts/SiteSliderButton'
 
 const SiteSlider = (props) => {
 
-    console.log(props.data)
-
     // Number of slides displayed on the slider
     const number_of_slides = props.displayed_slides 
 
@@ -97,9 +95,15 @@ const SiteSlider = (props) => {
             <div className="site-grid h-auto width-100" 
                 style={{"gridTemplateColumns": `repeat(${sliderColumns},1fr)`}}
             >
-                <SiteSliderButton direction="left" onClick={prevClick} />
-                {displayPosts}
-                <SiteSliderButton direction="right" onClick={nextClick} />
+                <SiteSliderButton 
+                    direction="left" 
+                    onClick={prevClick} 
+                />
+                    {displayPosts}
+                <SiteSliderButton 
+                    direction="right" 
+                    onClick={nextClick} 
+                />
             </div>
         </>
     )

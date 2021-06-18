@@ -3,7 +3,14 @@ import React from 'react'
 import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 
-const VideoModalPlayer = (props) => {
+interface Props {
+    title: string;
+    upload_date: string;
+    youtube_id: string;
+    description: string;
+}
+
+const VideoModalPlayer = (props: Props) => {
 
     const titleLogic = () => {
         if (props.title) {

@@ -1,11 +1,16 @@
 import React from 'react'
 
-const CarouselRowImage = (props) => (
+interface Props {
+    video_thumbnail: string;
+    video_title: string;
+    click: any;
+}
+
+const CarouselRowImage = (props: Props) => (
     <div className="site-span-1 site-border-white cursor-pointer">
-        <img 
+        <img className="site-responsive-image site-border-white" 
             src={props.video_thumbnail} 
             alt={props.video_title} 
-            className="site-responsive-image site-border-white" 
             onClick={props.click}
         />
     </div>

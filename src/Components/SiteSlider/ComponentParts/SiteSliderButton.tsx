@@ -2,17 +2,17 @@ import React from 'react'
 // Icons
 import SiteIcon from 'SiteCss/SiteIcon'
 
-const SiteSliderButton = (props) => {
+interface Props {
+    direction: string;
+}
+
+const SiteSliderButton = (props: Props) => {
 
     const renderDirection = props.direction === "left" ? 
-        "circle-left"
-        :
-        "circle-right"
+        "circle-left" : "circle-right"
 
     const renderPosition = props.direction === "left" ? 
-        "end" 
-        : 
-        "start"
+        "end" : "start"
 
     return (
         <div className="site-span-1 m-auto" style={{"textAlign": renderPosition}}>

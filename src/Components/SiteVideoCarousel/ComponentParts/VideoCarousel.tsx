@@ -3,7 +3,14 @@ import React from 'react'
 import SiteOverlay from 'SiteCss/SiteOverlay'
 import SiteIcon from 'SiteCss/SiteIcon'
 
-const VideoCarousel = (props) => (
+interface Props {
+    click: any;
+    displayed_image: string;
+    row_images: number
+    images: any
+}
+
+const VideoCarousel = (props: Props) => (
     
     <div className="m-auto w-90">
         <SiteOverlay 
