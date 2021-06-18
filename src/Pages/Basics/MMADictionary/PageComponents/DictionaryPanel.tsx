@@ -2,7 +2,14 @@ import React from 'react'
 // COMPONENTS
 import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
 
-const DictionaryPanel = (props) => {
+interface Props {
+    example_type: string;
+    title: string;
+    example: string;
+    definition: string;
+}
+
+const DictionaryPanel = (props: Props) => {
 
     const displayMedia = props.example_type === "Video" ?
         <SiteYoutubeVideo youtube_id={props.example} />

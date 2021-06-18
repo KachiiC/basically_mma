@@ -3,7 +3,19 @@ import React from 'react'
 import SiteYoutubeVideo from 'Components/SiteYoutubeVideo'
 import SiteParagraphFormatter from 'SiteCss/SiteParagraphFormatter'
 
-const TechniquesDropdown = (props) => {
+interface Props {
+    title: string;
+    tutorial: string;
+    mistakes: string;
+    description: string;
+}
+
+interface videoProps {
+    title: string;
+    video: string;
+}
+
+const TechniquesDropdown = (props: Props) => {
 
     const collapseVideos = [
         {
@@ -16,8 +28,10 @@ const TechniquesDropdown = (props) => {
         }
     ]
 
-    const renderVideos = collapseVideos.map((item, index) => (
-            <div className="site-span-6 w-90 m-auto" key={index}>
+    const renderVideos = collapseVideos.map((item: videoProps) => (
+            <div className="site-span-6 w-90 m-auto" 
+                key={collapseVideos.indexOf(item)}
+            >
                 <SiteYoutubeVideo 
                     youtube_id={item.video} 
                     title={item.title}

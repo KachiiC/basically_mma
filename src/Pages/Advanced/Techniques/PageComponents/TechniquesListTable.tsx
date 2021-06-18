@@ -7,6 +7,14 @@ import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import MaterialUITable from 'Components/ExternalComponents/MaterialUITable';
 import TechniquesDropdown from './TechniquesDropdown';
 
+interface techniqueProps {
+    content: any;
+    title: string;
+    tutorial: string;
+    mistakes: string;
+    description: string;
+}
+
 const TechniquesListTable = () => {
 
     const responseData = SiteFetcher(
@@ -14,7 +22,7 @@ const TechniquesListTable = () => {
         TechniquesTemplate
     )
 
-    const techniquesData = responseData.response.map((technique) => {
+    const techniquesData = responseData.response.map((technique: techniqueProps) => {
         // Adding a content value to each technique object 
         technique.content = (
             <TechniquesDropdown
@@ -22,6 +30,7 @@ const TechniquesListTable = () => {
                 tutorial={technique.tutorial}
                 mistakes={technique.mistakes}
                 description={technique.description}
+                key={responseData.response.indexOf(technique)}
             />
         )
         return technique

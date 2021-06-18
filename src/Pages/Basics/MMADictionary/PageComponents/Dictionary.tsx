@@ -6,6 +6,14 @@ import { DictionaryListTemplate } from 'Data/Basics/MMADictionary/MMADictionary'
 import AntdCollapsable from 'Components/ExternalComponents/AntdCollapsable'
 import DictionaryPanel from './DictionaryPanel'
 
+interface termProps {
+    content: any;
+    title: string;
+    example_type: string;
+    definition: string;
+    example: string;
+}
+
 const Dictionary = () => {
 
     const responseData = SiteFetcher(
@@ -13,11 +21,11 @@ const Dictionary = () => {
         DictionaryListTemplate
     )
 
-    const DictionaryData = responseData.response.map((term, index) => {
+    const DictionaryData = responseData.response.map((term: termProps) => {
 
         term.content = (
             <DictionaryPanel
-                key={index}
+                key={term.title}
                 example_type={term.example_type}
                 title={term.title}
                 definition={term.definition}

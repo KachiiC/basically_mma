@@ -4,9 +4,17 @@ import SiteExternalLink from 'SiteCss/SiteExternalLink'
 import SiteOverlay from 'SiteCss/SiteOverlay'
 import SiteIcon from 'SiteCss/SiteIcon'
 
-const StoreItems = (props) => (
+interface Props {
+    name: string;
+    click?: any;
+    product_link: string;
+    product_thumbnail: string;
+    price: string | number;
+}
 
-    <div className="store-item-container site-span-3" key={props.index}>
+const StoreItems = (props: Props) => (
+
+    <div className="store-item-container site-span-3">
         <h4>{props.name}</h4>
         <SiteOverlay
             click={props.click} 
@@ -15,8 +23,8 @@ const StoreItems = (props) => (
             <div className="store-item-image-container">
                 <SiteExternalLink url={props.product_link}>
                     <img src={props.product_thumbnail} 
-                        alt={props.index} 
-                        class="site-responsive-image"
+                        alt={props.name} 
+                        className="site-responsive-image"
                         />
                 </SiteExternalLink>
             </div>

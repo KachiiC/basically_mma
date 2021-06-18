@@ -7,13 +7,21 @@ import SiteFetcher from 'SiteCss/SiteFetcher'
 import SiteTextCrop from 'SiteCss/SiteCrop/SiteTextCrop'
 import SingleStoreItem from './SingleStoreItem'
 
+interface itemProps {
+    name: string;
+    click: any;
+    product_link: string;
+    product_thumbnail: string;
+    price: string | number;
+}
+
 const StoreItems = () => {
 
     const storeItemsURL = "https://kachiis-rest.herokuapp.com/backend/mma_store_list/"
     const responseData = SiteFetcher(storeItemsURL, StoreListTemplate)
     const siteStore = responseData.response
 
-    const storeItemsList = siteStore.map((item, index) => {
+    const storeItemsList = siteStore.map((item: itemProps) => {
 
         const renderName = SiteTextCrop(item.name, 25)
 
@@ -23,7 +31,7 @@ const StoreItems = () => {
                 product_link={item.product_link}
                 product_thumbnail={item.product_thumbnail}
                 price={item.price}
-                key={index}
+                key={item.name}
             />
         )
     })
