@@ -2,9 +2,9 @@ import React from 'react'
 import { Table } from 'semantic-ui-react'
 
 interface Props {
-    color: any;
-    content: any;
-    key: any;
+    color: string;
+    content: string;
+    key: number;
 }
 
 const SemanticTableCell = (props : Props) => (

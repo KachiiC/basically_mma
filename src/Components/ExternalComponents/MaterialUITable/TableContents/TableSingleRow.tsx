@@ -1,14 +1,21 @@
 import React, { useState } from 'react';
 // Components
-import TableCell from '@material-ui/core/TableCell';
-import TableRow from '@material-ui/core/TableRow';
-import IconButton from '@material-ui/core/IconButton';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
-import TableCollapsableRow from './TableCollapsableRow';
+import TableCell from '@material-ui/core/TableCell'
+import TableRow from '@material-ui/core/TableRow'
+import IconButton from '@material-ui/core/IconButton'
+import ChevronRightIcon from '@material-ui/icons/ChevronRight'
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
+import TableCollapsableRow from './TableCollapsableRow'
+
+interface Props {
+    row: any;
+    content?: any;
+    table_columns: number;
+    index: number;
+}
 
 
-const TableSingleRow = (props) => {
+const TableSingleRow = (props: Props) => {
     
     const rowContent = Object.keys(props.row).filter(heading => heading !== "content")
 
@@ -26,11 +33,7 @@ const TableSingleRow = (props) => {
         )
     ).slice(0,props.table_columns)
 
-    const arrowLogic = open ? 
-        <KeyboardArrowDownIcon /> 
-        : 
-        <ChevronRightIcon />
-
+    const arrowLogic = open ? <KeyboardArrowDownIcon /> : <ChevronRightIcon />
 
     const dropDownLogic = () => {
         if (props.content) {

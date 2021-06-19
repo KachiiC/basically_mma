@@ -41,7 +41,8 @@ const AntdTabs = (props) => {
 
     return (
         <div className={`w-${widthLogic} m-auto`}>
-            <Tabs defaultActiveKey="0" 
+            <Tabs 
+                defaultActiveKey="0" 
                 type="card" 
                 size={sizeLogic}
                 centered

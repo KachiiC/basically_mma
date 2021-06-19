@@ -2,7 +2,7 @@ import React from 'react'
 // COMPONENTS
 import { Collapse } from 'antd';
 import './AntdCollapsable.css'
-import AntdPanelTitle from './AntdPanelTitle';
+import AntdPanelTitle from './CollapsableContents/AntdPanelTitle';
 
 const AntdCollapsable = (props) => {
 

@@ -3,14 +3,22 @@ import React, {Fragment} from 'react';
 import TableBody from '@material-ui/core/TableBody';
 import TableSingleRow from './TableSingleRow'
 
+interface rowProps {
+    content: any;
+}
 
-const TableContentRow = (props) => {
+interface Props {
+    data: any;
+    table_columns: number;
+}
+
+const TableContentRow = (props: Props) => {
 
     // Takes Data and renders a single row for each
-    const renderDataList = props.data.map((row, index) => (
+    const renderDataList = props.data.map((row: rowProps) => (
             <TableSingleRow
-                key={index}
-                index={index} 
+                key={props.data.indexOf(row)}
+                index={props.data.indexOf(row)} 
                 row={row} 
                 content={row.content}
                 // crops the number of rows based on table_columns

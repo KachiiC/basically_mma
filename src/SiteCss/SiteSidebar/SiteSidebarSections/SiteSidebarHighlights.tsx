@@ -7,6 +7,7 @@ import SiteVideoModalPlayer from 'Components/MyComponents/SiteVideoModalPlayer'
 import fight_highlightsData from 'Data/Other/Sidebar/SidebarHighlightsData'
 import SiteSingleHighlight from './SiteSingleHighlight'
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
+import { HighlightsURL } from 'Data/SiteUrlsData'
 
 interface highlightProps {
     video_thumbnail: string | undefined
@@ -20,12 +21,10 @@ interface highlightProps {
     }[]
 }
 
-const highlights_url = "https://kachiis-rest.herokuapp.com/api/youtube_playlists/fight_highlights"
-
 const SiteSidebarHighlights = () => {
 
     // Data
-    const responseData = SiteFetcher(highlights_url,fight_highlightsData)
+    const responseData = SiteFetcher(HighlightsURL, fight_highlightsData)
     const fightHighlight = responseData.response.playlist_videos
 
     const [selectedHighlight, setSelectedHighlight] = useState<any>(fight_highlightsData)

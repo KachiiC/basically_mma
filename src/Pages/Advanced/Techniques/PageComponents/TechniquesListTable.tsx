@@ -6,6 +6,7 @@ import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import MaterialUITable from 'Components/ExternalComponents/MaterialUITable';
 import TechniquesDropdown from './TechniquesDropdown';
+import { TechniquesListURL } from 'Data/SiteUrlsData';
 
 interface techniqueProps {
     content: any;
@@ -17,10 +18,7 @@ interface techniqueProps {
 
 const TechniquesListTable = () => {
 
-    const responseData = SiteFetcher(
-        "https://kachiis-rest.herokuapp.com/backend/mma_techniques_list/",
-        TechniquesTemplate
-    )
+    const responseData = SiteFetcher(TechniquesListURL,TechniquesTemplate)
 
     const techniquesData = responseData.response.map((technique: techniqueProps) => {
         // Adding a content value to each technique object 

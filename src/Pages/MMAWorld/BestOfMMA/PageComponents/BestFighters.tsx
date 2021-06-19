@@ -5,6 +5,7 @@ import {BestFighterTemplateData} from 'Data/MMAWorld/BestOfMMA/BestFighterData'
 import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import SingleFighter from './SingleFighter'
+import { DivisionsURL } from 'Data/SiteUrlsData'
 
 interface fighterProps {
     first_name: string;
@@ -14,9 +15,8 @@ interface fighterProps {
 }
 
 const BestFighters = () => {
-    
-    const divisionsURL = "https://kachiis-rest.herokuapp.com/backend/mma_divisions_list/mma_mens_p4p/"
-    const responseData = SiteFetcher(divisionsURL, BestFighterTemplateData)
+
+    const responseData = SiteFetcher(DivisionsURL, BestFighterTemplateData)
     const p4p_list = responseData.response.fighters.sort(
         (a:{
             p4p_ranking: number 

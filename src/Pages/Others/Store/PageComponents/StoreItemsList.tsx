@@ -6,6 +6,7 @@ import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteTextCrop from 'SiteCss/SiteCrop/SiteTextCrop'
 import SingleStoreItem from './SingleStoreItem'
+import { StoreItemsURL } from 'Data/SiteUrlsData'
 
 interface itemProps {
     name: string;
@@ -17,8 +18,7 @@ interface itemProps {
 
 const StoreItems = () => {
 
-    const storeItemsURL = "https://kachiis-rest.herokuapp.com/backend/mma_store_list/"
-    const responseData = SiteFetcher(storeItemsURL, StoreListTemplate)
+    const responseData = SiteFetcher(StoreItemsURL, StoreListTemplate)
     const siteStore = responseData.response
 
     const storeItemsList = siteStore.map((item: itemProps) => {

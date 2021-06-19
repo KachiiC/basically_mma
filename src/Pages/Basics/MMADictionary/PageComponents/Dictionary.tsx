@@ -5,6 +5,7 @@ import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import { DictionaryListTemplate } from 'Data/Basics/MMADictionary/MMADictionary'
 import AntdCollapsable from 'Components/ExternalComponents/AntdCollapsable'
 import DictionaryPanel from './DictionaryPanel'
+import { DictionaryListURL } from 'Data/SiteUrlsData'
 
 interface termProps {
     content: any;
@@ -16,10 +17,7 @@ interface termProps {
 
 const Dictionary = () => {
 
-    const responseData = SiteFetcher(
-        "https://kachiis-rest.herokuapp.com/backend/mma_dictionary_list/",
-        DictionaryListTemplate
-    )
+    const responseData = SiteFetcher(DictionaryListURL, DictionaryListTemplate)
 
     const DictionaryData = responseData.response.map((term: termProps) => {
 

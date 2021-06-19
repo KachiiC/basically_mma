@@ -7,6 +7,7 @@ import SiteTextCrop from 'SiteCss/SiteCrop/SiteTextCrop'
 import ArticlesListData from 'Data/Other/Articles/ArticlesListTemplate'
 import SiteIcon from 'SiteCss/SiteIcon'
 import SingleArticle from './SingleArticle'
+import { ArticlesListURL } from 'Data/SiteUrlsData'
 
 interface articleProps {
     title: string;
@@ -14,13 +15,11 @@ interface articleProps {
     post_link: string;
     thumbnail_url: string;
     post_time_stamp: string;
-
 }
 
 const ArticlesList = () => {
 
-    const articlesListURL = "https://kachiis-rest.herokuapp.com/backend/mma_articles_list"
-    const responseData = SiteFetcher(articlesListURL, ArticlesListData)
+    const responseData = SiteFetcher(ArticlesListURL, ArticlesListData)
     const siteArticles = responseData.response
 
     const displayArticles = siteArticles.map((article: articleProps) => {
