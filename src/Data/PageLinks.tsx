@@ -1,8 +1,8 @@
 import React from 'react'
-import { Switch, Route } from "react-router-dom"
 // DATA
 import PagesData from 'Data/PagesData'
 // COMPONENTS
+import { Switch, Route } from "react-router-dom"
 import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo';
 import SiteMainContainer from 'SiteCss/SiteMainContainer'
 // PAGES
@@ -10,15 +10,14 @@ import Home from 'Pages/Others/Home'
 
 interface subMenuProps { 
     title: string; 
-    display: any; 
+    display: Element; 
     introduction: any; 
-    example_video_id?: any; 
+    example_video_id?: string; 
     example_title?: string; 
-    example_caption?: any; 
-    example_video_start?: any; 
+    example_caption?: string | Element; 
+    example_video_start?: number; 
     header_image?: any; 
 }
-
 
 interface Props {
     display?: any;
@@ -39,19 +38,22 @@ const displayLinks = PagesData.map((page: Props) => {
             // Video Logic
             const videoLogic = () => {
                 if (sub_menu.example_video_id) {
-                return (
-                    <SiteYoutubeVideo
-                        title={sub_menu.example_title}
-                        caption={sub_menu.example_caption}
-                        youtube_id={sub_menu.example_video_id}
-                        start={sub_menu.example_video_start}
-                    />
-                )
-                } 
+                    return (
+                        <SiteYoutubeVideo
+                            title={sub_menu.example_title}
+                            caption={sub_menu.example_caption}
+                            youtube_id={sub_menu.example_video_id}
+                            start={sub_menu.example_video_start}
+                        />
+                    )
+                }
             }
 
             return (
-                <Route path={`/basically_mma/${sub_menu.title}`} key={displayTitle}>
+                <Route 
+                    path={`/basically_mma/${sub_menu.title}`} 
+                    key={displayTitle}
+                >
                     <SiteMainContainer
                         title={displayTitle}
                         header_image={sub_menu.header_image}

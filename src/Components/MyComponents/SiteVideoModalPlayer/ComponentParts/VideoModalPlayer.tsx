@@ -29,7 +29,6 @@ const VideoModalPlayer = (props: Props) => {
         } 
     }
 
-
     return (
         <div className="video-carousel-section site-span-6">
             {titleLogic()}

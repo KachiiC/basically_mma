@@ -3,7 +3,27 @@ import React from 'react'
 import { Table } from 'semantic-ui-react'
 import SemanticTableCell from './SemanticTableCell'
 
-const TableBody = (props) => {
+interface dataProps {
+    headings: {
+        heading_1: string;
+        heading_2: string;
+    };
+    color_code: {
+        column_1: string; 
+        column_2: string;
+    }
+    list: {
+        column_1: string;
+        column_2: string;
+    }[]
+
+}
+
+interface Props {
+    data: dataProps
+}
+
+const TableBody = (props : Props) => {
 
     const ProsConsLogic = props.data.list.map((point, index) => {
 

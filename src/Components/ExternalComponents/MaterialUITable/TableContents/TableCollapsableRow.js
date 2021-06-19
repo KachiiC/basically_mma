@@ -1,15 +1,8 @@
 import React from 'react'
 // Components
-import TableRow from '@material-ui/core/TableRow';
-import TableCell from '@material-ui/core/TableCell';
-import Collapse from '@material-ui/core/Collapse';
-
-// Takes "content" as a child property
-// 
-// Example: 
-//  <CollapseSectionDropdown> 
-//      "This Content"
-//  </CollapseSectionDropdown>
+import TableRow from '@material-ui/core/TableRow'
+import TableCell from '@material-ui/core/TableCell'
+import Collapse from '@material-ui/core/Collapse'
 
 const CollapseSectionDropdown = (props) => ( 
     <TableRow>

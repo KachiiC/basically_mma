@@ -1,9 +1,14 @@
 import React from 'react'
 import {List } from 'antd' 
 
-const SingleListLine = (props) => (
+interface Props {
+    icon: string;
+    description: string;
+}
 
-    <List.Item key={props.index}>
+const SingleListLine = (props: Props) => (
+
+    <List.Item>
         <List.Item.Meta
             avatar={props.icon}
             description={props.description}

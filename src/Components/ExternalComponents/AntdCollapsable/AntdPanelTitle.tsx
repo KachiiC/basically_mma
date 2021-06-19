@@ -1,6 +1,10 @@
 import React from 'react'
 
-const AntdPanelTitle = (props) => (
+interface Props {
+    title: string;
+}
+
+const AntdPanelTitle = (props: Props) => (
     <div className="panel-title">
         {props.title}
     </div>
