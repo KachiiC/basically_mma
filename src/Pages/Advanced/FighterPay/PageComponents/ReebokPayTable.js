@@ -1,7 +1,7 @@
 import React from 'react'
 // Data
 // Components
-import AntdTable from 'Components/ExternalComponents/AntdTable'
+import AntdTable from 'Components/ExternalComponents/AntdTable/index.d'
 import { ReebokPayTableColumns, ReebokPayData } from 'Data/Advanced/FighterPay/FighterPay'
 
 const ReebokPayTable = (

@@ -2,9 +2,21 @@ import React from 'react'
 // COMPONENTS
 import { Timeline, Popover } from 'antd';
 
-const AntdTimeline = (props) => {
+interface dataProps { 
+    content: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined; 
+    year: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined; 
+    event: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined; 
+    color: string | undefined; 
+}
 
-    const displayData = props.data.map((item, index) => {
+interface Props {
+    [x: string]: any;
+    title: string;
+}
+
+const AntdTimeline = (props: Props) => {
+
+    const displayData = props.data.map((item: dataProps, index: number) => {
 
         const placementIndex = index % 2 === 0 ? "bottomLeft" : "bottomRight"
 

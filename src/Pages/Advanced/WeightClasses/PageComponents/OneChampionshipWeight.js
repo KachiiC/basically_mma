@@ -2,7 +2,7 @@ import React from "react"
 // Data
 import { OneChampionshipColumns, OneChampionshipData } from "Data/Advanced/WeightClasses/OneChampionshipData"
 //Components
-import AntdTable from 'Components/ExternalComponents/AntdTable'
+import AntdTable from 'Components/ExternalComponents/AntdTable/index.d'
 
 const OneChampionshipTable = (
     <div class="w-90 m-auto">

@@ -4,7 +4,16 @@ import { Collapse } from 'antd';
 import './AntdCollapsable.css'
 import AntdPanelTitle from './CollapsableContents/AntdPanelTitle';
 
-const AntdCollapsable = (props) => {
+interface panelProps {
+    title: string;
+    content: any;
+}
+
+interface Props {
+    data: panelProps[];
+}
+
+const AntdCollapsable = (props: Props) => {
 
     const {Panel} = Collapse; 
 

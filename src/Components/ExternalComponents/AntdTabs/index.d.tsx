@@ -1,13 +1,28 @@
 import React from 'react'
+// CSS
+import './AntdTabs.css'
 // COMPONENTS
 import { Tabs } from 'antd';
 import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo'
 
-const AntdTabs = (props) => {
+interface tabProps {
+    title: string;
+    example: string;
+    content: any;
+}
+
+interface Props {
+    width: any;
+    size: any;
+    overflow: string;
+    data: tabProps[];
+}
+
+const AntdTabs = (props: Props) => {
 
     const { TabPane } = Tabs;
     
-    const renderTabs = props.data.map((tab, index) => {
+    const renderTabs = props.data.map((tab) => {
 
         const exampleLogic = () => {
             if (tab.example) {
@@ -15,20 +30,15 @@ const AntdTabs = (props) => {
             }
         }
 
-        const overFlowLogic = () => {
+        const overflowLogic = () => {
             if (props.overflow) {
-                return {
-                    "overflowY": "scroll",
-                    "height": "400px"
-                }
+                return "overflow-logic"
             }
         }
         
         return (
-            <TabPane tab={tab.title} key={index}>
-                <div style={overFlowLogic()}
-                    className="tabs-height"
-                >
+            <TabPane tab={tab.title} key={tab.title}>
+                <div className={`tabs-height ${overflowLogic()}`}>
                     {tab.content}
                 </div>
                 {exampleLogic()}
@@ -37,7 +47,7 @@ const AntdTabs = (props) => {
     })
 
     const sizeLogic = props.size ? props.size : "small"
-    const widthLogic = props.width ? props.width: "90"
+    const widthLogic = props.width ? props.width: 90
 
     return (
         <div className={`w-${widthLogic} m-auto`}>

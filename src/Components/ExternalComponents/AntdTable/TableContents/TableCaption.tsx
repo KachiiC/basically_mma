@@ -2,7 +2,7 @@ import React from 'react'
 
 interface Props {
     index: number;
-    info: string;
+    info: any;
 }
 
 const TableCaption = (props: Props) => (

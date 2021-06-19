@@ -4,7 +4,7 @@ import './BestOfMMA.css'
 import './Responsive.css'
 // Components
 import BestOfMMAData from 'Data/MMAWorld/BestOfMMA/BestOfMMA'
-import AntdTabs from 'Components/ExternalComponents/AntdTabs'
+import AntdTabs from 'Components/ExternalComponents/AntdTabs/index.d'
 
 const BestOfMMA = <AntdTabs data={BestOfMMAData} />
 

@@ -4,7 +4,7 @@ import './RulesOfMMA.css'
 // Data
 import RulesData from 'Data/Basics/RulesOfMMA/RulesOfMMA'
 // Components
-import AntdTabs from 'Components/ExternalComponents/AntdTabs'
+import AntdTabs from 'Components/ExternalComponents/AntdTabs/index.d'
 
 const RulesOfMMA = (
 

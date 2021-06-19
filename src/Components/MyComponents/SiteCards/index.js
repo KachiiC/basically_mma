@@ -6,7 +6,6 @@ import './Responsive.css'
 import SiteFeaturedCardImage from './ComponentParts/SiteFeaturedCardImage'
 import SiteSmallCards from './ComponentParts/SiteSmallCards'
 
-
 const SiteArticlesCard = (props) => {
     
     // Cards will have a border bottom by default

@@ -3,7 +3,7 @@ import React from 'react'
 import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import { DictionaryListTemplate } from 'Data/Basics/MMADictionary/MMADictionary'
-import AntdCollapsable from 'Components/ExternalComponents/AntdCollapsable'
+import AntdCollapsable from 'Components/ExternalComponents/AntdCollapsable/index.d'
 import DictionaryPanel from './DictionaryPanel'
 import { DictionaryListURL } from 'Data/SiteUrlsData'
 

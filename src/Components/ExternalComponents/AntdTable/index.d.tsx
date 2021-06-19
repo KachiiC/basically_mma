@@ -1,9 +1,20 @@
 import React from "react"
 //Components
 import { Table } from 'antd';
+import { TablePaginationConfig } from "antd/lib/table";
 import TableCaption from "./TableContents/TableCaption";
 
-const AntdTable = (props) => {
+interface Props {
+    pagination?: false | TablePaginationConfig | undefined;
+    title: string;
+    columns: any;
+    data: any;
+    captions: {
+        info: string;
+    }[]
+}
+
+const AntdTable = (props: Props) => {
 
     const table_info = () => {
         if (props.captions) {

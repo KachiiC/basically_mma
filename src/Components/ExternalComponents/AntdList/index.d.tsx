@@ -4,7 +4,17 @@ import React from 'react'
 import {  List } from 'antd' 
 import SingleListLine from './ListContents/SingleListLine'
 
-const AntList = (props) => {
+interface itemProps {
+    icon: any;
+    description: string;
+}
+
+interface Props {
+    data: itemProps[]
+    title: string;
+}
+
+const AntList = (props: Props) => {
 
     const renderList = props.data.map((item,index) => (
             <SingleListLine

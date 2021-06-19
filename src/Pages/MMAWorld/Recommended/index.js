@@ -3,7 +3,7 @@ import React from 'react'
 import './Recommended.css'
 // Components
 import RecommendedData from 'Data/MMAWorld/Recommended/RecommendedData'
-import AntdTabs from 'Components/ExternalComponents/AntdTabs'
+import AntdTabs from 'Components/ExternalComponents/AntdTabs/index.d'
 
 const Recommended = <AntdTabs data={RecommendedData} />
 

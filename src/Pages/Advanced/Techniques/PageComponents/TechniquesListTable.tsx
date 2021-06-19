@@ -4,7 +4,7 @@ import TechniquesTemplate from 'Data/Advanced/Techniques/TechniquesTemplate'
 // Components
 import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
-import MaterialUITable from 'Components/ExternalComponents/MaterialUITable';
+import MaterialUITable from 'Components/ExternalComponents/MaterialUITable/index.d';
 import TechniquesDropdown from './TechniquesDropdown';
 import { TechniquesListURL } from 'Data/SiteUrlsData';
 

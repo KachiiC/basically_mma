@@ -9,7 +9,12 @@ import Table from '@material-ui/core/Table';
 import TableHeadings from './TableContents/TableHeadings';
 import TableContents from './TableContents/TableContents';
 
-const MaterialUITable = (props) => (
+interface Props {
+    data: any;
+    table_columns: number;
+}
+
+const MaterialUITable = (props: Props) => (
 
     <div className="w-90 m-auto">
         <TableContainer component={Paper}>

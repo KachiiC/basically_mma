@@ -2,7 +2,7 @@ import React from "react"
 // Data
 import WeightData from "Data/Advanced/WeightClasses/WeightTableData"
 //Components
-import AntdTable from 'Components/ExternalComponents/AntdTable'
+import AntdTable from 'Components/ExternalComponents/AntdTable/index.d'
 
 const WeightTable = (
 
