@@ -1,6 +1,6 @@
 import React from 'react'
 // COMPONENTS
-import SiteExternalLink from 'SiteTools/SiteExternalLink'
+import SiteExternalLink from 'SiteTools/SiteExternalLink/index.d'
 
 interface Props {
     post_link: string;

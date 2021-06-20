@@ -6,11 +6,32 @@ import './Responsive.css'
 import SiteFeaturedCardImage from './ComponentParts/SiteFeaturedCardImage'
 import SiteSmallCards from './ComponentParts/SiteSmallCards'
 
-const SiteArticlesCard = (props) => {
+interface dataProps {
+    border: boolean;
+    featured_image: string;
+    featured_title: string;
+    featured_link: string;
+    external_links: boolean;
+    small_images: any;
+    // {
+    //     title?: string;
+    //     link?: string;
+    //     image: any;
+    //     map: (item: object) => dataProps
+    //     indexOf: (item: object) => number
+    // }[]
+}
+
+interface Props {
+    data: dataProps;
+    title: string;
+}
+
+const SiteArticlesCard = (props: Props) => {
     
     // Cards will have a border bottom by default
     const displayBorder = () => {
-        if (props.data.border !== false) {
+        if (props.data.border === true) {
             return <hr className="site-span-12"/>
         }
     }

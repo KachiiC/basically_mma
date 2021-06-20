@@ -1,6 +1,6 @@
 import React from 'react'
 // COMPONENTS
-import TitleRender from 'SiteCss/SiteTitleRender'
+import TitleRender from 'SiteTools/SiteTitleRender'
 import {Link} from "react-router-dom";
 
 interface menuProps {

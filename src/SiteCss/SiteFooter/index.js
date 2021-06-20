@@ -6,7 +6,7 @@ import footerData from 'Data/Other/Footer/footerData'
 // Components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import FooterInstaSlider from 'SiteCss/SiteFooter/FooterInstaSlider';
-import SiteExternalLink from 'SiteTools/SiteExternalLink'
+import SiteExternalLink from 'SiteTools/SiteExternalLink/index.d'
 
 const SiteFooter = () => {
 

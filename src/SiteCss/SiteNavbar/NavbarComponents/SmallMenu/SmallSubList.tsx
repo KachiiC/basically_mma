@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 // COMPONENTS
 import { Link } from "react-router-dom";
-import TitleRender from 'SiteCss/SiteTitleRender'
+import TitleRender from 'SiteTools/SiteTitleRender'
 
 interface subMenuProps {
     title: string; 

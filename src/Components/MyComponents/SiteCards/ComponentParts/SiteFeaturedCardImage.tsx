@@ -7,7 +7,6 @@ interface dataProps {
     featured_title: string;
     featured_image: string;
     featured_link: string;
-    alt: string;
 }
 
 interface Props {
@@ -22,7 +21,6 @@ const SiteFeaturedCardImage = (props: Props) => (
             title={props.data.featured_title}
             image={props.data.featured_image}
             link={props.data.featured_link}
-            alt={props.data.alt}
         />
     </div>
     

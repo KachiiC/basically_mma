@@ -2,7 +2,7 @@ import React from 'react'
 // COMPONENTS
 import { Link } from "react-router-dom";
 import SmallSubList from './SmallSubList'
-import TitleRender from 'SiteCss/SiteTitleRender'
+import TitleRender from 'SiteTools/SiteTitleRender'
 
 interface menuProps {
     title: string; 

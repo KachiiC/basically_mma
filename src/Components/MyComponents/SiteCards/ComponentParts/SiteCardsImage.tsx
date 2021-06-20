@@ -1,7 +1,7 @@
 import React from 'react'
 // Components
 import { Link } from "react-router-dom"
-import SiteExternalLink from 'SiteTools/SiteExternalLink'
+import SiteExternalLink from 'SiteTools/SiteExternalLink/index.d'
 import SiteCardsCaption from './SiteCardsCaption'
 
 interface Props {
@@ -9,7 +9,6 @@ interface Props {
     title: string;
     link: string;
     external_links?: boolean;
-    alt: string;
 }
 
 const SiteCardsImage = (props : Props) => {
@@ -17,7 +16,7 @@ const SiteCardsImage = (props : Props) => {
     const card_image = (
         <div className="image-caption-container">
             <img className="site-responsive-image"
-                alt={props.alt}
+                alt={props.title}
                 src={props.image}
                 />
             <SiteCardsCaption title={props.title} />

@@ -2,7 +2,7 @@ import React from 'react'
 // DATA
 // COMPONENTS
 import DropdownList from './Dropdown'
-import TitleRender from 'SiteCss/SiteTitleRender'
+import TitleRender from 'SiteTools/SiteTitleRender'
 import {Link} from "react-router-dom";
 
 interface menuProps {

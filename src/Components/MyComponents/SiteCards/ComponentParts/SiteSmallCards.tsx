@@ -14,7 +14,7 @@ interface Props {
         small_images: {
             title?: string;
             link?: string;
-            image: string;
+            image: any;
             map: (item: object) => dataProps
             indexOf: (item: object) => number
         };  
@@ -30,7 +30,6 @@ const SiteSmallCards = (props: Props) => {
             <div className="small-image-container" key={smallImages.indexOf(item)}>
                 <SiteCardsImage
                     external_links={props.data.external_links}
-                    alt={item.title}
                     title={item.title}
                     image={item.image}
                     link={item.link}
