@@ -8,7 +8,6 @@ import SiteIcon from 'SiteCss/SiteIcon'
 interface Props {
     link: string;
     thumbnail: string;
-    alt: string
 }
 
 const SiteSlide = (props: Props) => (

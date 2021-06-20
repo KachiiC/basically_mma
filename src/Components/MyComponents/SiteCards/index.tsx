@@ -13,13 +13,6 @@ interface dataProps {
     featured_link: string;
     external_links: boolean;
     small_images: any;
-    // {
-    //     title?: string;
-    //     link?: string;
-    //     image: any;
-    //     map: (item: object) => dataProps
-    //     indexOf: (item: object) => number
-    // }[]
 }
 
 interface Props {

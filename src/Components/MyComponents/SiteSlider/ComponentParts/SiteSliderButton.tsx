@@ -4,6 +4,7 @@ import SiteIcon from 'SiteCss/SiteIcon'
 
 interface Props {
     direction: string;
+    onClick: any;
 }
 
 const SiteSliderButton = (props: Props) => {

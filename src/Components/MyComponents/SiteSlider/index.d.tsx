@@ -5,7 +5,21 @@ import './SiteSlider.css'
 import SiteSlide from './ComponentParts/SiteSlide'
 import SiteSliderButton from './ComponentParts/SiteSliderButton'
 
-const SiteSlider = (props) => {
+interface postProps {
+    thumbnail: string
+    post_link: string
+}
+
+interface Props {
+    displayed_slides: any;
+    data: any;
+    type: any;
+    title: string;
+    slice: (number: number) => number;
+    onClick: any;
+}
+
+const SiteSlider = (props: Props) => {
 
     // Number of slides displayed on the slider
     const number_of_slides = props.displayed_slides 
@@ -23,7 +37,7 @@ const SiteSlider = (props) => {
     })
     
     // Turn each post (object) from data into a slide
-    const displayPosts = props.data.map((post, index) => {
+    const displayPosts = props.data.map((post: postProps) => {
 
         // if component type is instagram, return instagram post link
         const slideLink = props.type === "instagram" ? 
@@ -33,7 +47,7 @@ const SiteSlider = (props) => {
 
         return (
             <SiteSlide
-                key={index} 
+                key={post.post_link} 
                 thumbnail={post.thumbnail}
                 link={slideLink}
             />
