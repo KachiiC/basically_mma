@@ -2,8 +2,8 @@ import React from 'react'
 // COMPONENTS
 
 interface Props {
-    video_thumbnail: string;
-    video_title: string;
+    video_thumbnail: string | undefined;
+    video_title: string | undefined;
     click: any;
 }
 

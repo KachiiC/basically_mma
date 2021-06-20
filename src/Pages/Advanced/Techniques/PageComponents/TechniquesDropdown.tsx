@@ -1,6 +1,6 @@
 import React from 'react'
 // COMPONENTS
-import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo'
+import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo/index.d'
 import SiteParagraphFormatter from 'SiteTools/SiteParagraphFormatter'
 
 interface Props {

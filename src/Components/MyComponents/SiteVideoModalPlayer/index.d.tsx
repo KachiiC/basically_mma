@@ -7,10 +7,27 @@ import SiteModal from 'Components/MyComponents/SiteModal'
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 // Data
 import HomeImageGalleryData from 'Data/Other/Home/HomeImageGalleryData'
-import VideoModalPlayer from './ComponentParts/VideoModalPlayer.tsx'
+import VideoModalPlayer from './ComponentParts/VideoModalPlayer'
 import VideoModalSuggestion from './ComponentParts/VideoModalSuggestions';
 
-const SiteVideoModal = (props) => {
+interface fightProps {
+    video_title: string | undefined;
+    video_id: string | undefined;
+    video_description: string | undefined;
+    video_thumbnail: string | undefined;
+    upload_date: string | undefined;
+}
+
+interface Props {
+    closeModal: any;
+    suggestions_url?: any; 
+    video_title?: string | undefined;
+    youtube_id?: string | undefined;
+    upload_date: string | undefined;
+    description: string | undefined;
+}
+
+const SiteVideoModal = (props: Props) => {
 
     const [currentYoutubeId, setCurrentYoutubeId] = useState({
         video_title: props.video_title,
@@ -23,24 +40,24 @@ const SiteVideoModal = (props) => {
     const fightSuggestions = responseData.response.playlist_videos
 
 
-    const displayFightSuggestion = fightSuggestions.slice(0,10).map((fight, index) => {
+    const displayFightSuggestion = fightSuggestions.slice(0,10).map((fight: fightProps) => {
 
         const handleClick = () => {
             setCurrentYoutubeId(
                 {
-                    "video_title": fight.video_title,
-                    "youtube_id": fight.video_id,
-                    "upload_date": fight.upload_date,
-                    "description": fight.video_description,
+                    video_title: fight.video_title,
+                    youtube_id: fight.video_id,
+                    upload_date: fight.upload_date,
+                    description: fight.video_description,
                 }
             )
         }
 
         return (
             <VideoModalSuggestion
-                key={index}
-                video_thumbnail={fight.video_thumbnail}
+                key={fight.video_title}
                 video_title={fight.video_title}
+                video_thumbnail={fight.video_thumbnail}
                 click={handleClick}
             />
         )

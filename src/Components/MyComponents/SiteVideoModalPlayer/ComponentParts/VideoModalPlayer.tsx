@@ -1,13 +1,13 @@
 import React from 'react'
 // Components
-import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo'
+import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo/index.d'
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 
 interface Props {
-    title: string;
-    upload_date: string;
-    youtube_id: string;
-    description: string;
+    title: string | undefined;
+    upload_date: string | undefined;
+    youtube_id: string | undefined;
+    description: string | undefined;
 }
 
 const VideoModalPlayer = (props: Props) => {

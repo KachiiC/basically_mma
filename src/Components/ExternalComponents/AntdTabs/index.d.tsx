@@ -3,7 +3,7 @@ import React from 'react'
 import './AntdTabs.css'
 // COMPONENTS
 import { Tabs } from 'antd';
-import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo'
+import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo/index.d'
 
 interface tabProps {
     title: string;

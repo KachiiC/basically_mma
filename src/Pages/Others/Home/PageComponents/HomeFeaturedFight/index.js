@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 // CSS
 import './CSS/HomeFeaturedFight.css'
 // Components
-import SiteVideoModalPlayer from 'Components/MyComponents/SiteVideoModalPlayer'
+import SiteVideoModalPlayer from 'Components/MyComponents/SiteVideoModalPlayer/index.d'
 import SiteFetcher from 'SiteTools/SiteFetcher';
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle';

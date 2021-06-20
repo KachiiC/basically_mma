@@ -3,7 +3,7 @@ import React from 'react'
 import PagesData from 'Data/PagesData'
 // COMPONENTS
 import { Switch, Route } from "react-router-dom"
-import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo';
+import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo/index.d'
 import SiteMainContainer from 'SiteCss/SiteMainContainer'
 // PAGES
 import Home from 'Pages/Others/Home'

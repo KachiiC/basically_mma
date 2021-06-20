@@ -5,7 +5,14 @@ import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 // Components
 import { Timeline } from 'react-twitter-widgets'
 
-const SiteTwitterFeed = (props) => (
+interface Props {
+    title: string | number;
+    width: number | string;
+    twitter_id: string;
+    height: number | string;
+}
+
+const SiteTwitterFeed = (props: Props) => (
 
     <div className="twitter-container w-80">
         {/* Title of feed */}

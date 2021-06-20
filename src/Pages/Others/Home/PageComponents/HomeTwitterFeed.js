@@ -1,13 +1,13 @@
 import React from 'react'
 // Components
-import SiteTwitterFeed from 'Components/MyComponents/SiteTwitterFeed'
+import SiteTwitterFeed from 'Components/MyComponents/SiteTwitterFeed/index.d'
 
 const HomeTwitterFeed = (
 
     <div className="site-span-4">
         <SiteTwitterFeed 
-            height="500"
-            width="100"
+            height={500}
+            width={100}
             twitter_id="basicallymma" 
             title="What's Happening?"
         />

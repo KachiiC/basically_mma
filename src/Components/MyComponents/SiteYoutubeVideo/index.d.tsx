@@ -5,7 +5,16 @@ import './SiteYoutubeVideo.css'
 // USEAGE
 // Add youtube_id, height and width
 
-const SiteYoutubeVideo = (props) => {
+interface Props {
+    title?: string| undefined;
+    caption?: string| undefined | Element;
+    youtube_id: string| undefined;
+    start?: number | string;
+    height?: number | string;
+    width?: number | string;
+}
+
+const SiteYoutubeVideo = (props: Props) => {
 
     const titleLogic = () => {
         if (props.title) {

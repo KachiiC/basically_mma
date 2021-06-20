@@ -1,7 +1,7 @@
 import React from 'react'
 // CSS
 // Components
-import SiteVideoCarousel from 'Components/MyComponents/SiteVideoCarousel'
+import SiteVideoCarousel from 'Components/MyComponents/SiteVideoCarousel/index.d'
 import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 // Data
@@ -23,7 +23,6 @@ const HomeImageGallery = () => {
             row_images={5}
             suggestions_url={HomeVideoGalleryURL}
         />
-    
     )
 
     return (

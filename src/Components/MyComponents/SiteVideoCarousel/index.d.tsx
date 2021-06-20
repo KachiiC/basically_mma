@@ -4,12 +4,23 @@ import './SiteVideoCarousel.css'
 import './Responsive.css'
 // COMPONENTS
 import SiteOverlay from 'SiteCss/SiteOverlay'
-import SiteVideoModalPlayer from 'Components/MyComponents/SiteVideoModalPlayer'
+import SiteVideoModalPlayer from 'Components/MyComponents/SiteVideoModalPlayer/index.d'
 import VideoCarousel from './ComponentParts/VideoCarousel'
 import CarouselRowImage from './ComponentParts/CarouselRowImage'
 
+interface imageProps {
+    video_title: string | undefined;
+    video_thumbnail: string | undefined;
+}
 
-const SiteVideoCarousel = (props) => {
+interface Props {
+    data: any;
+    row_images: number;
+    title?: string;
+    suggestions_url: string;
+}
+
+const SiteVideoCarousel = (props: Props) => {
 
     const imageData = props.data
     const [selectedImage, setSelectedImage] = useState(0)
@@ -25,7 +36,7 @@ const SiteVideoCarousel = (props) => {
     const rowImages = props.row_images
 
     // Slices the data 
-    const displayImagesRow = imageData.slice(0,rowImages).map((image, index) => {
+    const displayImagesRow = imageData.slice(0,rowImages).map((image: imageProps) => {
         
         // On click changes image of carousel to clicked image
         const handleChange = () => setSelectedImage(imageData.indexOf(image))
@@ -33,9 +44,9 @@ const SiteVideoCarousel = (props) => {
         return(
             <SiteOverlay>
                 <CarouselRowImage
-                    key={index}
-                    video_thumbnail={image.video_thumbnail}
+                    key={image.video_title}
                     video_title={image.video_title}
+                    video_thumbnail={image.video_thumbnail}
                     click={handleChange}
                 />
             </SiteOverlay>
