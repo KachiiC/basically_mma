@@ -1,5 +1,3 @@
-
-
 const SiteTextCrop = (props: string, number: number) => {
 
     const limit_length = number + 3

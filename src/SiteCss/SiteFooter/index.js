@@ -4,33 +4,18 @@ import './footer.css';
 //Data
 import footerData from 'Data/Other/Footer/footerData'
 // Components
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import FooterInstaSlider from 'SiteCss/SiteFooter/FooterInstaSlider';
-import SiteExternalLink from 'SiteTools/SiteExternalLink/index.d'
+import FooterIcons from './FooterComponents/FooterIcons';
 
-const SiteFooter = () => {
+const SiteFooter = () => (
 
-    const iconsList = footerData.map((item, index) => (
+    <footer>
+        {/* <FooterInstaSlider /> */}
+        <div className="footer-items">
+            <FooterIcons data={footerData} />
+        </div>
+    </footer>
 
-            <SiteExternalLink url={item.link} key={index}>
-                <FontAwesomeIcon 
-                    className="footer-logos" 
-                    size="4x"
-                    color={item.color} 
-                    icon={item.icon}
-                /> 
-            </SiteExternalLink>
-        )
-    )
-
-    return (
-        <footer>
-            {/* <FooterInstaSlider /> */}
-            <div className="footer-items">
-                {iconsList}
-            </div>
-        </footer>
-    )
-}
+)
 
 export default SiteFooter;
