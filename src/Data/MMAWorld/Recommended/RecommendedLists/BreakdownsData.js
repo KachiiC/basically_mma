@@ -1,5 +1,5 @@
 // Components
-import SiteYoutubeLink from 'SiteCss/SiteYoutubeLink'
+import SiteYoutubeLink from 'SiteTools/SiteYoutubeLink'
 // Images
 import Weasle from 'SiteImages/MMAWorld/Recommended/BreakdownAnalysis/Weasle.jpg'
 import Morning_Kombat from 'SiteImages/MMAWorld/Recommended/BreakdownAnalysis/Morning_Kombat.jpg'

@@ -1,5 +1,5 @@
 // Components
-import SiteYoutubeLink from 'SiteCss/SiteYoutubeLink'
+import SiteYoutubeLink from 'SiteTools/SiteYoutubeLink'
 // Images List
 import UFC_logo from 'SiteImages/MMAWorld/Recommended/PromotionChannels/UFC_logo.jpg'
 import Bellator_logo from 'SiteImages/MMAWorld/Recommended/PromotionChannels/Bellator_logo.jpg'

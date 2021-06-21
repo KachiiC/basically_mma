@@ -1,5 +1,5 @@
 // Components
-import SiteYoutubeLink from 'SiteCss/SiteYoutubeLink'
+import SiteYoutubeLink from 'SiteTools/SiteYoutubeLink'
 // Images
 import ESPN_MMA from 'SiteImages/MMAWorld/Recommended/NewsOutlets/ESPN_MMA.jpg'
 import MMA_Fighting from 'SiteImages/MMAWorld/Recommended/NewsOutlets/MMA_Fighting.jpg'

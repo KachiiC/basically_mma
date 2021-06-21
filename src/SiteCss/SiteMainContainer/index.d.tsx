@@ -35,7 +35,7 @@ const SiteMainContainer = (props: Props) => {
 
     const sidebarLogic = () => {
         if (props.sidebar === true) {
-            return <SiteSidebar />
+            return SiteSidebar
         }
     }
 

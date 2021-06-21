@@ -56,7 +56,10 @@ const SiteSidebarHighlights = () => {
     return (
         <>
             <div className="sidebar-section">
-                <SiteSectionTitle title ="Fight Highlights" />
+                <SiteSectionTitle 
+                    title="Fight Highlights" 
+                    width={100}
+                />
                 <div className="highlights-list">
                     <SiteRender 
                         data={responseData} 

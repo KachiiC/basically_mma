@@ -2,11 +2,11 @@ import React from 'react'
 // Components
 import { Empty } from 'antd';
 
-const SiteLoading = () => (
+const SiteEmpty = (
     <div className="data-container">
         <Empty />
     </div>
 )
 
 
-export default SiteLoading
+export default SiteEmpty
