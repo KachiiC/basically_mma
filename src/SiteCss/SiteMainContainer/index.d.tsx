@@ -5,7 +5,16 @@ import './Responsive.css'
 // Components
 import SiteSidebar from 'SiteCss/SiteSidebar'
 
-const SiteMainContainer = (props) => {
+interface Props {
+    header_image?: any;
+    sidebar?: boolean;
+    example_video ?: any;
+    title: string;
+    introduction?: string | Element;
+    main_display: string | Element
+}
+
+const SiteMainContainer = (props: Props) => {
 
     // Header Image
     const imageLogic = () => {

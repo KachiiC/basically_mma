@@ -4,7 +4,7 @@ import PagesData from 'Data/PagesData'
 // COMPONENTS
 import { Switch, Route } from "react-router-dom"
 import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo/index.d'
-import SiteMainContainer from 'SiteCss/SiteMainContainer'
+import SiteMainContainer from 'SiteCss/SiteMainContainer/index.d'
 // PAGES
 import Home from 'Pages/Others/Home'
 
