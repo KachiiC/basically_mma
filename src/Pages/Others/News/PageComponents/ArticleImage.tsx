@@ -1,6 +1,6 @@
 import React from 'react'
 import SiteExternalLink from 'SiteTools/SiteExternalLink/index.d'
-import SiteOverlay from 'SiteCss/SiteOverlay'
+import SiteOverlay from 'SiteCss/SiteOverlay/index.d'
 
 interface Props {
     icon: any;

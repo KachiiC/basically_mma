@@ -1,6 +1,6 @@
 import React from 'react'
 // COMPONENTS
-import SiteOverlay from 'SiteCss/SiteOverlay'
+import SiteOverlay from 'SiteCss/SiteOverlay/index.d'
 import SiteIcon from 'SiteCss/SiteIcon'
 
 interface Props {

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import './SiteVideoCarousel.css'
 import './Responsive.css'
 // COMPONENTS
-import SiteOverlay from 'SiteCss/SiteOverlay'
+import SiteOverlay from 'SiteCss/SiteOverlay/index.d'
 import SiteVideoModalPlayer from 'Components/MyComponents/SiteVideoModalPlayer/index.d'
 import VideoCarousel from './ComponentParts/VideoCarousel'
 import CarouselRowImage from './ComponentParts/CarouselRowImage'

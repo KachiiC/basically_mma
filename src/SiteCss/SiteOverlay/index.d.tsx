@@ -2,7 +2,13 @@ import React from 'react'
 // CSS
 import './SiteOverlay.css'
 
-const SiteOverlay = (props) => {
+interface Props {
+    icon?: any;
+    click?: any;
+    children: any;
+}
+
+const SiteOverlay = (props: Props) => {
 
     const iconLogic = () => {
         if (props.icon) {

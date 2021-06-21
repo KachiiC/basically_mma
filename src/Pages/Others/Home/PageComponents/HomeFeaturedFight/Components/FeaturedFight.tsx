@@ -2,7 +2,7 @@ import React from 'react'
 // CSS
 // COMPONENTS
 import SiteIcon from 'SiteCss/SiteIcon';
-import SiteOverlay from 'SiteCss/SiteOverlay'
+import SiteOverlay from 'SiteCss/SiteOverlay/index.d'
 
 interface Props {
     click: any;
