@@ -1,5 +1,6 @@
+import React from 'react'
 // PAGES
-import About from 'Pages/Others/About/'
+import About from 'Pages/Others/About/index'
 import Store from 'Pages/Others/Store/'
 // Other
 import News from 'Pages/Others/News'
@@ -113,7 +114,7 @@ const PagesData = [
     },
     {
         title: "about",
-        display: About,
+        display: <About />,
         sub_menu: false,
     },
     {

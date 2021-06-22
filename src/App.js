@@ -14,9 +14,11 @@ import PagesData from 'Data/PagesData'
 // Pages
 // import Home from './Pages/Others/Home'
 import PageLinks from './Data/PageLinks';
+import ReduxModal from 'SiteRedux/SiteModal/ReduxModal'
 
 const App = (
   <BrowserRouter>
+    <ReduxModal />
     <SiteScrollToTop />
     <SiteNavbar data={PagesData} title="Basically MMA"/>
     {PageLinks}
