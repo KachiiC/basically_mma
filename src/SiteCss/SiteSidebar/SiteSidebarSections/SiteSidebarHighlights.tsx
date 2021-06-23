@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 // COMPONENTS
+import { connect, ConnectedProps } from 'react-redux';
+import { showModal } from 'SiteRedux/SiteReducers/actions';
 import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import SiteVideoModalPlayer from 'Components/MyComponents/SiteVideoModalPlayer/index.d'
@@ -8,6 +10,14 @@ import fight_highlightsData from 'Data/Other/Sidebar/SidebarHighlightsData'
 import SiteSingleHighlight from './SiteSingleHighlight'
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 import { HighlightsURL } from 'Data/SiteUrlsData'
+
+const mapDispatchToProps = {
+    dispatchShowModal: showModal,
+};
+  
+const connector = connect(undefined, mapDispatchToProps);
+  
+type AppProps = {} & ConnectedProps<typeof connector>;
 
 interface highlightProps {
     video_thumbnail: string | undefined
@@ -21,7 +31,7 @@ interface highlightProps {
     }[]
 }
 
-const SiteSidebarHighlights = () => {
+const SiteSidebarHighlights = (props:AppProps) => {
 
     // Data
     const responseData = SiteFetcher(HighlightsURL, fight_highlightsData)
@@ -29,18 +39,10 @@ const SiteSidebarHighlights = () => {
 
     const [selectedHighlight, setSelectedHighlight] = useState<any>(fight_highlightsData)
 
-    // Handles Modal Click
-    const [showModal, setShowModal] = useState(false)
-    const handleModal = () => !showModal ? setShowModal(true) : setShowModal(false)
 
     const renderHighlightsList = fightHighlight.slice(0,4).map((highlight: highlightProps) => {
 
         const highlightLogic = () => setSelectedHighlight(highlight)
-
-        const handleClick = () => {
-            handleModal();
-            highlightLogic();
-        }
         
         return (
             <SiteSingleHighlight
@@ -52,6 +54,22 @@ const SiteSidebarHighlights = () => {
 
         )
     })
+
+    const { dispatchShowModal } = props;
+    
+    const handleClick = () => dispatchShowModal({
+        content: modalContent
+    })
+
+    const modalContent = (
+        <SiteVideoModalPlayer 
+            youtube_id={selectedHighlight.video_id} 
+            description={selectedHighlight.video_description}
+            upload_date={selectedHighlight.upload_date}
+            video_title={selectedHighlight.video_title}
+            suggestions_url={HighlightsURL}
+        />
+    )
 
     return (
         <>
@@ -67,15 +85,6 @@ const SiteSidebarHighlights = () => {
                     />
                 </div>
             </div>
-            {showModal && (
-                <SiteVideoModalPlayer 
-                    youtube_id={selectedHighlight.video_id} 
-                    description={selectedHighlight.video_description}
-                    upload_date={selectedHighlight.upload_date}
-                    video_title={selectedHighlight.video_title}
-                    closeModal={handleModal}
-                />
-            )}
         </>
     )
 }

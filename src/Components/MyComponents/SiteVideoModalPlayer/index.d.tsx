@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 // Components
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 import SiteFetcher from 'SiteTools/SiteFetcher';
-import SiteModal from 'Components/MyComponents/SiteModal'
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 // Data
 import HomeImageGalleryData from 'Data/Other/Home/HomeImageGalleryData'
@@ -19,7 +18,7 @@ interface fightProps {
 }
 
 interface Props {
-    closeModal: any;
+    closeModal?: any;
     suggestions_url?: any; 
     video_title?: string | undefined;
     youtube_id?: string | undefined;
@@ -43,14 +42,12 @@ const SiteVideoModal = (props: Props) => {
     const displayFightSuggestion = fightSuggestions.slice(0,10).map((fight: fightProps) => {
 
         const handleClick = () => {
-            setCurrentYoutubeId(
-                {
-                    video_title: fight.video_title,
-                    youtube_id: fight.video_id,
-                    upload_date: fight.upload_date,
-                    description: fight.video_description,
-                }
-            )
+            setCurrentYoutubeId({
+                video_title: fight.video_title,
+                youtube_id: fight.video_id,
+                upload_date: fight.upload_date,
+                description: fight.video_description,
+            })
         }
 
         return (
@@ -64,7 +61,7 @@ const SiteVideoModal = (props: Props) => {
     })
 
     return (
-        <SiteModal closeModal={props.closeModal} width="90%" overflow="yes">
+        <>
             <VideoModalPlayer 
                 title={currentYoutubeId.video_title}
                 youtube_id={currentYoutubeId.youtube_id}
@@ -78,7 +75,7 @@ const SiteVideoModal = (props: Props) => {
                     component={displayFightSuggestion} 
                 />
             </div>
-        </SiteModal>
+        </>
     )
 
 }

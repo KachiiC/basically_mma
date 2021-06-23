@@ -14,11 +14,9 @@ const About = (props: AppProps) => {
 
     const { dispatchShowModal } = props;
 
-    const dispatchLogic = () => dispatchShowModal(
-        {
+    const dispatchLogic = () => dispatchShowModal({
             content: <h1>This is the Content</h1>
-        }
-    )
+        })
 
     return (
         <>

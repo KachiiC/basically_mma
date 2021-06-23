@@ -1,20 +1,34 @@
-import React, { useState } from 'react'
+import React from 'react'
 // Components
-import SiteModal from 'Components/MyComponents/SiteModal'
+import { connect, ConnectedProps } from 'react-redux';
+import { showModal } from 'SiteRedux/SiteReducers/actions';
 import SiteTimeline from 'Components/MyComponents/SiteTimeline/index.d'
 // Data
 import TimelineData from 'Data/Basics/HistoryOfMMA/TimelineData'
 import SiteLinkLargeButton from 'SiteCss/SiteLinkLargeButton'
 
 
-const HistoryTimelineModal = () => {
+const mapDispatchToProps = {
+    dispatchShowModal: showModal,
+};
+  
+const connector = connect(undefined, mapDispatchToProps);
+  
+type AppProps = {} & ConnectedProps<typeof connector>;
+
+const HistoryTimelineModal = (props: AppProps) => {
+
+    const { dispatchShowModal } = props;
     
-    const [showModal, setShowModal] = useState(false)
-    
-    const handleClick = () => showModal === false ? 
-        setShowModal(true)
-        : 
-        setShowModal(false)
+    const handleClick = () => dispatchShowModal({
+        content: modalContent
+    })
+
+    const modalContent = (
+        <div className={`history-modal site-span-12`}>
+            <SiteTimeline data={TimelineData} />
+        </div>
+    )
     
     return (
         <div className="history-of-modern-mma">
@@ -23,16 +37,9 @@ const HistoryTimelineModal = () => {
                 click={handleClick} 
                 text="Timeline of MMA" 
             />
-            {showModal && (
-                <SiteModal closeModal={handleClick}>
-                    <div className="history-modal site-span-12">
-                        <SiteTimeline data={TimelineData} />
-                    </div>
-                </SiteModal>
-            )}
         </div>
 
     )
 }
 
-export default HistoryTimelineModal
+export default connector(HistoryTimelineModal);
