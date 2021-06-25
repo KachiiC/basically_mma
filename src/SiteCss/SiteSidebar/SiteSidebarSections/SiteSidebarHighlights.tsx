@@ -1,37 +1,21 @@
 import React, {useState} from 'react'
+// PROPS
+import { highlightProps } from '../SiteSidebarProps'
 // COMPONENTS
-import { connect, ConnectedProps } from 'react-redux';
-import { showModal } from 'SiteRedux/SiteReducers/actions';
 import SiteFetcher from 'SiteTools/SiteFetcher'
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender'
 import SiteVideoModalPlayer from 'Components/MyComponents/SiteVideoModalPlayer/index.d'
+import { modalProps } from 'SiteRedux/SiteModal/ReduxModalProps'
+import { modalConnector } from 'SiteRedux/SiteModal/ReduxModalProps'
+import SiteSingleHighlight from './SiteSingleHighlight'
 // DATA
 import fight_highlightsData from 'Data/Other/Sidebar/SidebarHighlightsData'
-import SiteSingleHighlight from './SiteSingleHighlight'
-import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 import { HighlightsURL } from 'Data/SiteUrlsData'
+// CSS
+import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 
-const mapDispatchToProps = {
-    dispatchShowModal: showModal,
-};
-  
-const connector = connect(undefined, mapDispatchToProps);
-  
-type AppProps = {} & ConnectedProps<typeof connector>;
 
-interface highlightProps {
-    video_thumbnail: string | undefined
-    video_title: string | null | undefined
-    playlist_videos: { 
-        video_title: string; 
-        video_id: string; 
-        video_description: string; 
-        video_thumbnail: string; 
-        upload_date: string 
-    }[]
-}
-
-const SiteSidebarHighlights = (props:AppProps) => {
+const SiteSidebarHighlights = (props:modalProps) => {
 
     // Data
     const responseData = SiteFetcher(HighlightsURL, fight_highlightsData)
@@ -39,9 +23,25 @@ const SiteSidebarHighlights = (props:AppProps) => {
 
     const [selectedHighlight, setSelectedHighlight] = useState<any>(fight_highlightsData)
 
-
     const renderHighlightsList = fightHighlight.slice(0,4).map((highlight: highlightProps) => {
 
+        const modalContent = (
+            <SiteVideoModalPlayer 
+                youtube_id={selectedHighlight.video_id} 
+                description={selectedHighlight.video_description}
+                upload_date={selectedHighlight.upload_date}
+                video_title={selectedHighlight.video_title}
+                suggestions_url={HighlightsURL}
+            />
+        )
+
+        const { dispatchShowModal } = props;
+        
+        const handleClick = () => {
+            setSelectedHighlight(highlight)
+            dispatchShowModal({content: modalContent});
+        }
+        
         const highlightLogic = () => setSelectedHighlight(highlight)
         
         return (
@@ -51,25 +51,8 @@ const SiteSidebarHighlights = (props:AppProps) => {
                 click_logic={handleClick}
                 highlight_logic={highlightLogic}
             />
-
         )
     })
-
-    const { dispatchShowModal } = props;
-    
-    const handleClick = () => dispatchShowModal({
-        content: modalContent
-    })
-
-    const modalContent = (
-        <SiteVideoModalPlayer 
-            youtube_id={selectedHighlight.video_id} 
-            description={selectedHighlight.video_description}
-            upload_date={selectedHighlight.upload_date}
-            video_title={selectedHighlight.video_title}
-            suggestions_url={HighlightsURL}
-        />
-    )
 
     return (
         <>
@@ -89,4 +72,4 @@ const SiteSidebarHighlights = (props:AppProps) => {
     )
 }
 
-export default SiteSidebarHighlights
+export default modalConnector(SiteSidebarHighlights)

@@ -1,12 +1,8 @@
 import React from 'react'
+// PROPS
+import {carouselRowImageProps} from '../SiteVideoCarouselProps'
 
-interface Props {
-    video_thumbnail: string | undefined;
-    video_title: string | undefined;
-    click: any;
-}
-
-const CarouselRowImage = (props: Props) => (
+const CarouselRowImage = (props: carouselRowImageProps) => (
     <div className="site-span-1 site-border-white cursor-pointer">
         <img className="site-responsive-image site-border-white" 
             src={props.video_thumbnail} 

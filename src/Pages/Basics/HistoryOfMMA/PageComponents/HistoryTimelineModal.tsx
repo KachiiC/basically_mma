@@ -1,22 +1,14 @@
 import React from 'react'
 // Components
-import { connect, ConnectedProps } from 'react-redux';
-import { showModal } from 'SiteRedux/SiteReducers/actions';
 import SiteTimeline from 'Components/MyComponents/SiteTimeline/index.d'
+import { modalProps } from 'SiteRedux/SiteModal/ReduxModalProps'
+import { modalConnector } from 'SiteRedux/SiteModal/ReduxModalProps'
 // Data
 import TimelineData from 'Data/Basics/HistoryOfMMA/TimelineData'
 import SiteLinkLargeButton from 'SiteCss/SiteLinkLargeButton'
 
 
-const mapDispatchToProps = {
-    dispatchShowModal: showModal,
-};
-  
-const connector = connect(undefined, mapDispatchToProps);
-  
-type AppProps = {} & ConnectedProps<typeof connector>;
-
-const HistoryTimelineModal = (props: AppProps) => {
+const HistoryTimelineModal = (props: modalProps) => {
 
     const { dispatchShowModal } = props;
     
@@ -42,4 +34,4 @@ const HistoryTimelineModal = (props: AppProps) => {
     )
 }
 
-export default connector(HistoryTimelineModal);
+export default modalConnector(HistoryTimelineModal);

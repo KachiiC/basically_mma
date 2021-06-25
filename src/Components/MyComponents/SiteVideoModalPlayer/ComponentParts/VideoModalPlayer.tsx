@@ -1,6 +1,7 @@
 import React from 'react'
-// Components
+// COMPONENTS
 import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo/index.d'
+// CSS
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
 
 interface Props {
@@ -13,20 +14,16 @@ interface Props {
 const VideoModalPlayer = (props: Props) => {
 
     const titleLogic = () => {
-        if (props.title) {
-            return <SiteSectionTitle title={props.title} />
-        } 
+        if (props.title) return <SiteSectionTitle title={props.title} />
     }
 
     const dateLogic = () => {
-        if (props.upload_date) {
-            return (
-                <>
-                    <b>Date Posted: {props.upload_date}</b>
-                    <br/>
-                </>
-            )
-        } 
+        if (props.upload_date) return (
+            <>
+                <b>Date Posted: {props.upload_date}</b>
+                <br/>
+            </>
+        )
     }
 
     return (

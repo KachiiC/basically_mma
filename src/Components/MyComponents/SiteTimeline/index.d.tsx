@@ -4,21 +4,14 @@ import TimelineItem from './ComponentParts/TimelineItem'
 // CSS
 import './SiteTimeline.css'
 import './Responsive.css'
+// PROPS
+import { timelineProps, timelineItemProps } from './SiteTimelineProps'
 
-interface itemProps {  
-    year: number;
-    name: string;
-    event: string;
-}
 
-interface Props {
-    data: itemProps[];
-}
-
-const SiteTimeline = (props: Props) => {
+const SiteTimeline = (props: timelineProps) => {
     
     // Makes a single timeline item from objects in data array
-    const renderTimelineList = props.data.map((item: itemProps) => (
+    const renderTimelineList = props.data.map((item: timelineItemProps) => (
             <TimelineItem 
                 year={item.year}
                 name={item.name}

@@ -2,16 +2,12 @@ import React from 'react'
 // COMPONENTS
 import SiteOverlay from 'SiteCss/SiteOverlay/index.d'
 import SiteIcon from 'SiteCss/SiteIcon'
+// PROPS
+import { highlightProps } from '../SiteSidebarProps'
 
-interface Props {
-    video_thumbnail: string | undefined
-    video_title: string | null | undefined
-    click_logic: any;
-    highlight_logic: any;
 
-}
+const SiteSingleHighlight = (props: highlightProps) => (
 
-const SiteSingleHighlight = (props: Props) => (
     <div key={props.video_title}>
         <div className="highlights-container site-grid-system cursor-pointer">
             <div className="highlight-image site-span-6 m-auto">

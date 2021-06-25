@@ -1,12 +1,8 @@
 import React from 'react'
+//PROPS
+import { timelineItemProps } from '../SiteTimelineProps'
 
-interface Props {     
-    year: Number;
-    name: String;
-    event: String;
-}
-
-const TimelineItem = (props: Props) => (
+const TimelineItem = (props: timelineItemProps) => (
 
     <div className="site-timeline-item" >
         <div className="site-timeline-content">

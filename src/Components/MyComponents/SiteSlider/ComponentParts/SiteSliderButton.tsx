@@ -9,14 +9,14 @@ interface Props {
 
 const SiteSliderButton = (props: Props) => {
 
-    const renderDirection = props.direction === "left" ? 
-        "circle-left" : "circle-right"
+    const renderDirection = props.direction === "left" ? "circle-left" : "circle-right"
 
-    const renderPosition = props.direction === "left" ? 
-        "end" : "start"
+    const renderPosition = props.direction === "left" ? "end" : "start"
 
     return (
-        <div className="site-span-1 m-auto" style={{"textAlign": renderPosition}}>
+        <div className="site-span-1 m-auto" 
+            style={{"textAlign": renderPosition}}
+        >
             <SiteIcon icon={renderDirection} />
         </div>
     )

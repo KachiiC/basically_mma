@@ -7,39 +7,28 @@ import SiteOverlay from 'SiteCss/SiteOverlay/index.d'
 import SiteVideoModalPlayer from 'Components/MyComponents/SiteVideoModalPlayer/index.d'
 import VideoCarousel from './ComponentParts/VideoCarousel'
 import CarouselRowImage from './ComponentParts/CarouselRowImage'
+import { modalConnector } from 'SiteRedux/SiteModal/ReduxModalProps'
+// PROPS
+import { imageProps, siteVideoCarouselProps } from './SiteVideoCarouselProps'
+import { modalProps } from 'SiteRedux/SiteModal/ReduxModalProps'
 
-interface imageProps {
-    video_title: string | undefined;
-    video_thumbnail: string | undefined;
-}
 
-interface Props {
-    data: any;
-    row_images: number;
-    title?: string;
-    suggestions_url: string;
-}
+const SiteVideoCarousel = (props: siteVideoCarouselProps, modal: modalProps) => {
 
-const SiteVideoCarousel = (props: Props) => {
-
-    const imageData = props.data
     const [selectedImage, setSelectedImage] = useState(0)
 
     // current set image
-    const current = imageData[selectedImage]
+    const current = props.data[selectedImage]
+
+    const titleLogic = () => {
+        if (props.title) return <h2>{props.title}</h2>
+    }
     
-    // Modal set false by default 
-    const [showModal, setShowModal] = useState(false)
-    const handleModal = () => showModal === true? setShowModal(false) :setShowModal(true)
-
-    // Number of images displayed in thumbnail rows
-    const rowImages = props.row_images
-
     // Slices the data 
-    const displayImagesRow = imageData.slice(0,rowImages).map((image: imageProps) => {
+    const displayImagesRow = props.data.slice(0, props.row_images).map((image: imageProps) => {
         
         // On click changes image of carousel to clicked image
-        const handleChange = () => setSelectedImage(imageData.indexOf(image))
+        const handleClick = () => setSelectedImage(props.data.indexOf(image))
 
         return(
             <SiteOverlay>
@@ -47,17 +36,25 @@ const SiteVideoCarousel = (props: Props) => {
                     key={image.video_title}
                     video_title={image.video_title}
                     video_thumbnail={image.video_thumbnail}
-                    click={handleChange}
+                    click={handleClick}
                 />
             </SiteOverlay>
         )
     })
+    
+    const modalContent = (
+        <SiteVideoModalPlayer 
+            youtube_id={current.video_id} 
+            description={current.video_description}
+            upload_date={current.upload_date}
+            video_title={current.video_title}
+            suggestions_url={props.suggestions_url}
+        /> 
+    )
 
-    const titleLogic = () => {
-        if (props.title) {
-            return <h2>{props.title}</h2>
-        } 
-    }
+    const { dispatchShowModal } = modal;
+    
+    const handleClick = () => dispatchShowModal({content: modalContent})
 
     return (
         <>
@@ -66,24 +63,13 @@ const SiteVideoCarousel = (props: Props) => {
                 {titleLogic()}
                 <VideoCarousel
                     displayed_image={current.video_thumbnail}
-                    click={handleModal}
+                    click={handleClick}
                     images={displayImagesRow}
-                    row_images={rowImages}
+                    row_images={props.row_images}
                 />
             </div>
-            {/* The Video Modal shown on click */}
-            {showModal && (
-                <SiteVideoModalPlayer 
-                    youtube_id={current.video_id} 
-                    description={current.video_description}
-                    upload_date={current.upload_date}
-                    video_title={current.video_title}
-                    closeModal={handleModal}
-                    suggestions_url={props.suggestions_url}
-                />
-            )}
         </>
     )
 }
 
-export default SiteVideoCarousel
+export default modalConnector(SiteVideoCarousel)
