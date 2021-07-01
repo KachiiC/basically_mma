@@ -12,15 +12,16 @@ const HistoryTimelineModal = (props: modalProps) => {
 
     const { dispatchShowModal } = props;
     
-    const handleClick = () => dispatchShowModal({
-        content: modalContent
-    })
-
     const modalContent = (
         <div className={`history-modal site-span-12`}>
             <SiteTimeline data={TimelineData} />
         </div>
     )
+    
+    const handleClick = () => dispatchShowModal({
+        content: modalContent
+    })
+
     
     return (
         <div className="history-of-modern-mma">

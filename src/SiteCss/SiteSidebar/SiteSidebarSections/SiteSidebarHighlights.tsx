@@ -25,6 +25,8 @@ const SiteSidebarHighlights = (props:modalProps) => {
 
     const renderHighlightsList = fightHighlight.slice(0,4).map((highlight: highlightProps) => {
 
+        const { dispatchShowModal } = props;
+
         const modalContent = (
             <SiteVideoModalPlayer 
                 youtube_id={selectedHighlight.video_id} 
@@ -35,14 +37,13 @@ const SiteSidebarHighlights = (props:modalProps) => {
             />
         )
 
-        const { dispatchShowModal } = props;
+        const highlightLogic = () => setSelectedHighlight(highlight)
         
         const handleClick = () => {
-            setSelectedHighlight(highlight)
+            setSelectedHighlight(highlight);
             dispatchShowModal({content: modalContent});
         }
         
-        const highlightLogic = () => setSelectedHighlight(highlight)
         
         return (
             <SiteSingleHighlight
