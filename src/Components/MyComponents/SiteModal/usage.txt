@@ -3,9 +3,9 @@ layout must be in grid format, for example "grid-columns": "span 12"
 
 SUGGESTED USE:
     const [showModal, setShowModal] = useState(false)
-    const handleClick = showModal === true ?  setShowModal(false): setShowModal(true)
+    const handleModal = !showModal ?  setShowModal(false) : setShowModal(true)
 
-    <SiteModal onClick={handleClick}>
+    <SiteModal onClick={handleModal}>
         <div style={{"grid-columns": "span 12"}}>
             My Content
         </div>

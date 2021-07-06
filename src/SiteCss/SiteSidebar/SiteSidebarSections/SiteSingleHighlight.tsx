@@ -13,9 +13,7 @@ const SiteSingleHighlight = (props: highlightProps) => (
             <div className="highlight-image site-span-6 m-auto">
                 <SiteOverlay 
                     click={props.click_logic}
-                    icon={
-                        <SiteIcon icon="play" color="white" />
-                    } 
+                    icon={<SiteIcon icon="play" color="white" />} 
                 >
                     <img src={props.video_thumbnail} 
                         alt="highlight-cover" 

@@ -42,13 +42,14 @@ const SiteVideoCarousel = (props: siteVideoCarouselProps, modal: modalProps) => 
     })
     
     const modalContent = (
-        <SiteVideoModalPlayer 
-            youtube_id={current.video_id} 
-            description={current.video_description}
-            upload_date={current.upload_date}
-            video_title={current.video_title}
-            suggestions_url={props.suggestions_url}
-        /> 
+        // <SiteVideoModalPlayer 
+        //     youtube_id={current.video_id} 
+        //     description={current.video_description}
+        //     upload_date={current.upload_date}
+        //     video_title={current.video_title}
+        //     suggestions_url={props.suggestions_url}
+        // /> 
+        <h1>Content</h1>
     )
 
     const { dispatchShowModal } = modal;

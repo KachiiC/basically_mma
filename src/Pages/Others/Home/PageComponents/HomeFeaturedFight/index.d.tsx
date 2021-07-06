@@ -33,13 +33,14 @@ const HomeFeaturedFight = (props: modalProps) => {
     )
 
     const modalContent = (
-        <SiteVideoModalPlayer 
-            youtube_id={homeFeaturedFight.video_id} 
-            description={homeFeaturedFight.video_description}
-            upload_date={homeFeaturedFight.upload_date}
-            video_title={homeFeaturedFight.video_title}
-            suggestions_url={SuggestedFightsURL}
-        />
+        <h1>Modal Content</h1>
+        // <SiteVideoModalPlayer 
+        //     youtube_id={homeFeaturedFight.video_id} 
+        //     description={homeFeaturedFight.video_description}
+        //     upload_date={homeFeaturedFight.upload_date}
+        //     video_title={homeFeaturedFight.video_title}
+        //     suggestions_url={SuggestedFightsURL}
+        // />
     )
 
     return (

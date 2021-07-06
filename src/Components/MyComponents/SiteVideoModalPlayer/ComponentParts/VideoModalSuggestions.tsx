@@ -1,13 +1,9 @@
 import React from 'react'
 // COMPONENTS
+import {VideoModalSuggestionProps} from '../SiteVideoModalProps'
 
-interface Props {
-    video_thumbnail: string | undefined;
-    video_title: string | undefined;
-    click: any;
-}
+const VideoModalSuggestion = (props: VideoModalSuggestionProps) => (
 
-const VideoModalSuggestion = (props: Props) => (
     <div className="fight-suggestions-section site-grid-system" 
         id="fight-modal-suggestions"
     >
@@ -22,6 +18,7 @@ const VideoModalSuggestion = (props: Props) => (
             {props.video_title}
         </div>
     </div>
+    
 )
 
 export default VideoModalSuggestion

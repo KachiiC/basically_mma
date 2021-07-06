@@ -1,52 +1,37 @@
 import React, { useState } from 'react'
+// PROPS
+import { SiteVideoModalProps, fightProps } from './SiteVideoModalProps';
+// DATA
+import HomeImageGalleryData from 'Data/Other/Home/HomeImageGalleryData'
 // CSS
 // Components
 import SiteRender from 'SiteCss/SiteTransitions/SiteRender';
 import SiteFetcher from 'SiteTools/SiteFetcher';
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
-// Data
-import HomeImageGalleryData from 'Data/Other/Home/HomeImageGalleryData'
 import VideoModalPlayer from './ComponentParts/VideoModalPlayer'
 import VideoModalSuggestion from './ComponentParts/VideoModalSuggestions';
+import SiteModal from '../SiteModal'
 
-interface fightProps {
-    video_title: string | undefined;
-    video_id: string | undefined;
-    video_description: string | undefined;
-    video_thumbnail: string | undefined;
-    upload_date: string | undefined;
-}
-
-interface Props {
-    closeModal?: any;
-    suggestions_url?: any; 
-    video_title?: string | undefined;
-    youtube_id?: string | undefined;
-    upload_date: string | undefined;
-    description: string | undefined;
-}
-
-const SiteVideoModal = (props: Props) => {
+const SiteVideoModal = (props: SiteVideoModalProps) => {
 
     const [currentYoutubeId, setCurrentYoutubeId] = useState({
         video_title: props.video_title,
         youtube_id: props.youtube_id,
         upload_date: props.upload_date,
-        description: props.description   
+        video_description: props.video_description   
     })
 
     const responseData = SiteFetcher(props.suggestions_url, HomeImageGalleryData)
-    const fightSuggestions = responseData.response.playlist_videos
+    const fightSuggestions = responseData.response.playlist_videos.slice(0,10)
 
-
-    const displayFightSuggestion = fightSuggestions.slice(0,10).map((fight: fightProps) => {
+    const displayFightSuggestion = fightSuggestions.map((fight: fightProps) => {
 
         const handleClick = () => {
             setCurrentYoutubeId({
                 video_title: fight.video_title,
                 youtube_id: fight.video_id,
                 upload_date: fight.upload_date,
-                description: fight.video_description,
+                video_description: fight.video_description,
             })
         }
 
@@ -61,12 +46,12 @@ const SiteVideoModal = (props: Props) => {
     })
 
     return (
-        <>
+        <SiteModal closeModal={props.closeModal} width="90%" overflow="yes">
             <VideoModalPlayer 
                 title={currentYoutubeId.video_title}
                 youtube_id={currentYoutubeId.youtube_id}
                 upload_date={currentYoutubeId.upload_date}
-                description={currentYoutubeId.description }
+                description={currentYoutubeId.video_description }
             />
             <div className="video-carousel-section site-span-6">
                 <SiteSectionTitle title="Have you seen these fights?" />
@@ -75,7 +60,7 @@ const SiteVideoModal = (props: Props) => {
                     component={displayFightSuggestion} 
                 />
             </div>
-        </>
+        </SiteModal>
     )
 
 }

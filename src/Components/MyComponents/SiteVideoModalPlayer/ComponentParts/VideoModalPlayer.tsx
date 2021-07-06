@@ -1,17 +1,12 @@
 import React from 'react'
-// COMPONENTS
-import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo/index.d'
 // CSS
 import SiteSectionTitle from 'SiteCss/SiteSectionTitle'
+// PROPS
+import { SiteVideoModalPlayerProps } from '../SiteVideoModalProps'
+// COMPONENTS
+import SiteYoutubeVideo from 'Components/MyComponents/SiteYoutubeVideo/index.d'
 
-interface Props {
-    title: string | undefined;
-    upload_date: string | undefined;
-    youtube_id: string | undefined;
-    description: string | undefined;
-}
-
-const VideoModalPlayer = (props: Props) => {
+const VideoModalPlayer = (props: SiteVideoModalPlayerProps) => {
 
     const titleLogic = () => {
         if (props.title) return <SiteSectionTitle title={props.title} />
