@@ -1,0 +1,19 @@
+.filter-list {
+    margin: 25px auto;
+    animation: fadeIn 2s;
+}
+
+.filter-search select {
+    padding: 10px 5px;
+}
+
+.filter-search input {
+    padding: 10px 5px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: inherit;
+}
+
+.filter-table-container {
+    margin: 25px auto;
+}

@@ -1,0 +1,59 @@
+// PROPS
+import { objectData } from "Props/PropsTemplates"
+import { ObjectDataProps } from "Props/Tools/ToolProps"
+
+// Filter Tool
+export const FilterTool = (data: objectData[], key: string, value: any) =>  data.filter((obj: objectData) => obj[key] === value)
+
+// Returns keys of an object
+export const ObjKeys = (input: Object) => Object.keys(input)
+
+// Returns values of an object
+export const ObjValue = (input: Object) => Object.values(input)
+
+// Returns keys of first object
+export const ArrrayObjectKeys = (data: Object[]) => ObjKeys(data[0])
+
+// Checks if object is empty
+export const EmptyObjectChecker = (obj: {}) => ObjKeys(obj).length === 0 ? true : false
+
+// Checks if all objects in array of a particular value are unique
+export const UnqiueValues = (data: any[], value: string) =>  {
+
+    const allValues = data.map(obj => obj[value])
+
+    const uniqueArray = allValues.filter(function(item, pos) {
+        return allValues.indexOf(item) === pos;
+    })
+
+    return uniqueArray
+}
+
+export const ObjectDataRender = (data: ObjectDataProps , type: string) => {
+
+    const data_keys = ObjKeys(data)
+  
+    const data_links = data_keys.map(key => {
+
+        const social_data = {
+            title: key,
+            icon: key,
+            link: `https://www.${key}.com/${data[key]}`
+        }
+
+        const routerLogic = typeof data[key] === "string" ? 
+            {
+                title: key,
+                external_link: ObjValue(data)[data_keys.indexOf(key)],
+            }
+            :
+            {
+                title: key,
+                content: data[key]
+            }
+
+        return type === "social" ? social_data : routerLogic
+    })
+
+    return data_links
+}
