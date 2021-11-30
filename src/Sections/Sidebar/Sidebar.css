@@ -14,7 +14,8 @@
 }
 
 .site-video-rows-container {
-    margin: auto
+    margin: auto;
+    animation: fadeIn 2s;
 }
 
 .sidebar-recommendation-row {

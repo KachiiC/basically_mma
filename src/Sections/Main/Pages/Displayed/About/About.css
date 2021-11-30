@@ -1,0 +1,9 @@
+.about-content {
+    width: 90%;
+    margin: 35px auto;
+    /* border: 1px solid black; */
+}
+
+.about-content p {
+    text-align: left;
+}

@@ -1,3 +1,5 @@
+import About from "Sections/Main/Pages/Displayed/About"
+
 const DataOverview = {
     // Replace the strings with your social media handles
     social_media: {
@@ -21,7 +23,7 @@ const DataOverview = {
     },
     footer_pages: {
         // Replace this with your own pages or remove key and value if not required 
-        about: "about",
+        about: About,
         faq: <h1>FAQ</h1>,
     }
 }

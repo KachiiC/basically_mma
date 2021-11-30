@@ -3,6 +3,7 @@ import Basics from "./Basics"
 import Advanced from "./Advanced"
 // import MMAWorld from "./MMAWorld"
 import Store from "Sections/Main/Pages/Displayed/Store"
+import About from "Sections/Main/Pages/Displayed/About"
 
 const PagesData = [
     {
@@ -19,7 +20,7 @@ const PagesData = [
     // },
     {
         title: "About",
-        content: <h1>About</h1>
+        content: About
     },
     {
         title: "Store",
