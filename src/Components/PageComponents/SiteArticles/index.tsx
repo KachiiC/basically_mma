@@ -1,54 +1,42 @@
-import { SiteLink } from "Tools/LinkTools"
+// COMPONENTS
+import SiteSingleArticle from "./components/SiteSingleArticle"
+// CSS
+import './SiteArticles.css'
+// PROPS
+import {  SiteArticleProps } from "Props/SiteProps/SiteArticleProps"
+// TOOLS
+import { TitleTrimmer } from "Tools/StringTools"
 
-const SiteArticles = (props: any) => {
+const SiteArticle = (props: SiteArticleProps) => {
 
-    const { data } = props
+    const displayCards = props.data.map(card => {
 
-    const displayArticles = data.map((article: any) => {
-
-        const { 
-            description,
-            link,
+        const {
+            date,
+            image,
             title,
-            thumbnail
-        } = article
+            description,
+            link
+        } = card
 
-        const ArticleEntry = (props: any) => (
-            <div className={`article-${props.type}`}>
-                <h3>{title}</h3>
-                <img src={thumbnail} 
-                    alt={title}
-                    className="site-responsive-image"
-                />
-                <p className="article-description">
-                    {description}
-                </p>
-            </div>
-        )
+        const SingleArticle = {
+            date: date ,
+            description: description ,
+            image: image,
+            link: link,
+            title: TitleTrimmer(title, 60),
+            key: title
+        }
 
-        const articleLogic = (data.indexOf(article) + 1) % 4 === 0 ?
-            "large"
-            :
-            "entry"
+        return <SiteSingleArticle {...SingleArticle} />
 
-        return (
-            <article>
-                <SiteLink 
-                    link={link} 
-                    type="external" 
-                    placeholder={<ArticleEntry type={articleLogic} />}
-                />
-            </article>
-        )
-    }).slice(0, 8)
-
+    }).slice(0, 6)
+    
     return (
-        <div className="article-body">
-            <div className="grid-wrapper">
-                {displayArticles}
-            </div>
+        <div className="gridywrap">
+            {displayCards}
         </div>
     )
 }
 
-export default SiteArticles
+export default SiteArticle

@@ -45,7 +45,7 @@ const FilterCollapsible = (props: FilterCollapsibleProps) => {
         <h2>No results found!</h2>
 
     return (
-        <div className={`filter-collapsible w-${RenderLogic(width, 100)} m-auto`}>
+        <div className={`filter-collapsible w-${RenderLogic(width, 100)}`}>
             {/* Filter begins on change */}
             <input onChange={filterFunction}
                 className="w-100"

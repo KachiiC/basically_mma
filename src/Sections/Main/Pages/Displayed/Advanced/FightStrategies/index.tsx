@@ -1,3 +1,20 @@
+// COMPONENTS
+import SitePopUpCard from "Components/PageComponents/SitePopUpCard"
+// CSS
+import './FightStrategies.css'
+// DATA
+import FightStrategiesData from "Data/Main/Displayed/Advanced/Pages/FightStrategies"
+
+const FightStrategiesCards = FightStrategiesData.map(strat => 
+    <div className="fight-strat-card site-col-6"> 
+        <SitePopUpCard
+            image={strat.image} 
+            title={strat.title}
+            description={strat.description}
+        />
+    </div>
+)
+
 const FightStrategies = (
     <>
         <p>
@@ -23,6 +40,9 @@ const FightStrategies = (
         <p>
             Below is a list of the most common fight strategies in mixed martial arts.
         </p>
+        <div className="site-grid-system">
+            {FightStrategiesCards}
+        </div>
     </>
 )
 

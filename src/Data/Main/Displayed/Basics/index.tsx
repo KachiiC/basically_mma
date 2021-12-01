@@ -11,7 +11,7 @@ const Basics = [
     {
         content: WhatIsMMA,
         header: "https://kachiic.github.io/basically_mma/static/media/WhatIsMMA.0240faf1.jpg",
-        title: "What is MMA",
+        title: "Introduction",
     },
     {
         title: "History of MMA",
@@ -27,7 +27,7 @@ const Basics = [
     }
 ]
 
-Basics.map((page:any) => {
+Basics.map(page => {
 
     page.content = (
         <SidebarPage 

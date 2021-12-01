@@ -1,9 +1,10 @@
 // CSS
 import './ProsConsList.css'
+// PROPS
+import { ProsConsListProps } from 'Props/Components/ProsConsListProps'
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 import { FilterTool } from "Tools/ObjectDataTools"
-import { ProsConsListProps } from 'Props/Components/ProsConsListProps'
 
 const ProsConsList = (props: ProsConsListProps) => {
 
@@ -28,7 +29,7 @@ const ProsConsList = (props: ProsConsListProps) => {
     }
 
     return (
-        <table className="pros-cons-list w-80 m-auto">
+        <table className="pros-cons-list w-80">
             <tbody>
                 <tr>
                     <th>{RenderLogic(pros, "PROS")}</th>

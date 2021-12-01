@@ -18,7 +18,7 @@ const IconsList = (props: IconsListProps) => {
     )
 
     return (
-        <div className="site-grid-system w-80 m-auto">
+        <div className="site-grid-system w-80">
             {displayedIcons}
         </div>
     )

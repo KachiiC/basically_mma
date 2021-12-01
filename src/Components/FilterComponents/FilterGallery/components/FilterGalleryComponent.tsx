@@ -10,7 +10,7 @@ const GalleryComponent = (props: FilterGalleryProps) => {
 
     return (
         <>
-            <div className="filter-buttons-container w-80 m-auto" >
+            <div className="filter-buttons-container w-80" >
                 {buttons}
             </div>
             {/* Using site cards as the displayed data */} 

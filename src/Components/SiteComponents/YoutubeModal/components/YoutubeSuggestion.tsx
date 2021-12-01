@@ -9,8 +9,8 @@ const SingleYoutubeSuggestion = (props: SingleYoutubeSuggestionProps) => {
     const { click, video_title, video_thumbnail } = props
 
     return (
-        <div className="site-flex suggestion-row w-90 m-auto">
-            <div className="youtube-suggestion-title cursor-pointer w-50 m-auto">
+        <div className="site-flex suggestion-row w-90">
+            <div className="youtube-suggestion-title cursor-pointer w-50">
                 {TitleRender(video_title)}
             </div>
             <div className="youtube-thumbnail w-50 cursor-pointer" onClick={click}>
@@ -46,7 +46,7 @@ const YoutubeSuggestions = (props: YoutubeSuggestionProps) => {
 
     return (
         <div className="site-col-6 youtube-suggestions">
-            <div className="suggestion-list-title w-90 m-auto">
+            <div className="suggestion-list-title w-90">
                 Recommended Video
             </div>
             {displaySuggestions}

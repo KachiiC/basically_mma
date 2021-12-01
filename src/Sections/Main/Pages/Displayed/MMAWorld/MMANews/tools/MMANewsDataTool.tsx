@@ -2,11 +2,11 @@ const MMANewsDataTool = (data: any) => {
 
     return data.map((article: any) => {
         return {
-            title: article.title,
-            thumbnail: article.thumbnail_url,
-            time_stamp: article.post_time_stamp,
+            date: article.post_time_stamp,
             description: article.post_description,
+            image: article.thumbnail_url,
             link: article.post_link,
+            title: article.title
         }
     })
 }

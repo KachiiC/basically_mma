@@ -21,7 +21,7 @@ const Techniques = () => {
         } = technique
 
         const techniqueContent = (
-            <div className="w-90 m-auto">
+            <div className="w-90">
                 <TechniquesTab
                     description={description}
                     mistakes={mistakes}
