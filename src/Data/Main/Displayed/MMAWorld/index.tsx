@@ -11,7 +11,7 @@ const MMAWorld = [
     }, 
     {
         title: "Promotions",
-        content: <Promotions />
+        content: Promotions
     },
     {
         title: "News",

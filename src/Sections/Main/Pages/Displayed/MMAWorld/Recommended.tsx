@@ -1,6 +1,6 @@
 const Recommended = () => {
     return (
-        <> 
+        <div className="recommended-container"> 
             <h1>Recommended</h1>
             <p>
                 A great way to develop your knowledge outside of watching live events is to follow the 
@@ -12,7 +12,7 @@ const Recommended = () => {
                 Here is a list of youtube channels, podcasts and outlets that will help you 
                 understand the sport better.
             </p>
-        </>
+        </div>
     )
 }
 

@@ -6,11 +6,12 @@ import './SiteCard.css'
 import { SiteCardProps } from 'Props/Components/CardProps'
 // TOOLS
 import { GridSpanSwitcher } from 'Tools/GridTools'
+import PictureIconCard from "./components/PictureIconCard"
 
 const SiteCards = (props: SiteCardProps) => {
 
     // PROPS
-    const { card_size , data } = props
+    const { card_size , data, type } = props
     
     const displayCards = data.map(card => {
 
@@ -20,7 +21,8 @@ const SiteCards = (props: SiteCardProps) => {
             image,
             link,
             link_type,
-            title
+            title,
+            icon
         } = card
 
         // CARD PROPS
@@ -28,20 +30,38 @@ const SiteCards = (props: SiteCardProps) => {
             title: title,
             description: description,
             image: image,
-            link: link,
-            link_type: link_type,
-            // Size of card can be passed through, default is "small" (4 cards a row)
         }
 
+        const singleCardProps = {
+            link: link,
+            link_type: link_type,
+        }
+
+        const pictureIconsCardProps = {
+            icon: icon,
+            type: card.type
+        }
+
+        const CardLogic = type === 'icons' ? 
+            <PictureIconCard 
+                {...CardProps} 
+                {...pictureIconsCardProps}
+            />
+            :
+            <SingleCard
+                key={card.title}
+                {...CardProps}
+                {...singleCardProps}
+            />
+
         return (
-        // returns a card for each object in the array
-        <SingleCard
-            {...CardProps}
-            key={card.title}
+            // returns a card for each object in the array
             // Size of card can be passed through, default is "small" (4 cards a row)
-            span={GridSpanSwitcher(card_size)}
-        />
-    )})
+            <div className={`site-col-${GridSpanSwitcher(card_size)}`}>
+                {CardLogic}
+            </div>
+       )
+    })
 
     return (
         <div className="site-grid-system">

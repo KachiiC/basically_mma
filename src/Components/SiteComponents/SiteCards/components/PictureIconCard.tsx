@@ -1,14 +1,21 @@
 import SiteIcon from "Tools/SiteIcon"
 
-// PROPS
-const SingleComponent = (props: any) => {
+interface PictureIconCardProps {
+    description: string
+    icon: string | undefined;
+    image: string
+    title: string
+    type: string | undefined;
+}
+
+const PictureIconCard = (props: PictureIconCardProps) => {
     
     const {
         title,
         type,
         description,
         image,
-        icon
+        icon,
     } = props
 
     const imageUrl = {
@@ -34,4 +41,4 @@ const SingleComponent = (props: any) => {
     )
 }
 
-export default SingleComponent
+export default PictureIconCard

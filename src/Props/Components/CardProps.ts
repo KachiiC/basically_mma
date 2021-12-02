@@ -7,9 +7,11 @@ export interface SiteSingleCardProps {
     link_type?: 'external' | 'local' | string | undefined
     // For Filter Gallery
     type?: string;
+    icon?: string;
 }
 
 export interface SiteCardProps  { 
     data: SiteSingleCardProps[] 
     card_size?: 'xs'|'small'|'medium'|'large'|'xl'; 
+    type?: 'icons' | 'standard'
 }

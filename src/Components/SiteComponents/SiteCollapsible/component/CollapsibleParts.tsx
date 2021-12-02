@@ -30,7 +30,7 @@ export const CollapsibleContent = (props: CollapsibleContentProps) => {
     const { content } = props
 
     return (
-        <div className={`site-collapsible-content m-auto site-border`}>
+        <div className="site-collapsible-content">
             {content}
         </div>
     )

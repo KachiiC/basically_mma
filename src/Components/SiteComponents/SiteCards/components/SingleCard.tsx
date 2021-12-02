@@ -11,7 +11,6 @@ const SingleCard = (props: SiteSingleCardProps) => {
         image,
         link,
         link_type,
-        span,
         title,
     } = props
 
@@ -39,7 +38,7 @@ const SingleCard = (props: SiteSingleCardProps) => {
     }
 
     return (
-        <div className={`site-single-card w-90 site-col-${span}`} >
+        <div className={`site-single-card w-90`} >
             {/* If link is passed, returns a link based on type, else it will just return the image */}
             {LinkLogic()}
             <div className="site-text-container">

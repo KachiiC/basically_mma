@@ -1,6 +1,5 @@
 const PromotionsIntroduction = (
-    
-    <div className="w-70">
+    <>
         <h1>Promotions</h1>
         <p>
             Today no companies have presented significant competition to the UFC which is 
@@ -18,7 +17,7 @@ const PromotionsIntroduction = (
             talent in MMA is also pocessed by other promotions such as Bellator MMA and 
             One Championship.
         </p>
-    </div>
+    </>
 )
 
 export default PromotionsIntroduction

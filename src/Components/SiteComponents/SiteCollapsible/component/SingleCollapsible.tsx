@@ -1,7 +1,6 @@
 import { useReducer, useState } from "react"
 // COMPONENTS
 import { CollapsibleContent, CollapsibleHeading } from "./CollapsibleParts"
-import CollapsibleTransition from "./CollapsibleTransition"
 // PROPS
 import { singleCollapsibleProps } from "Props/Components/CollapsibleProps"
 
@@ -36,13 +35,11 @@ const SingleCollapsible = (props: singleCollapsibleProps) => {
                 click={() => clickLogic()}
                 direction={direction}
             />
-            <CollapsibleTransition 
-                DisplayContent={displayContent}
-            >
+            {displayContent && (
                 <CollapsibleContent 
                     content={content}
                 />
-            </CollapsibleTransition>
+            )}
         </>
     )
 }

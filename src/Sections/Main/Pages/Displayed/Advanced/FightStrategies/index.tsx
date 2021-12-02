@@ -5,15 +5,24 @@ import './FightStrategies.css'
 // DATA
 import FightStrategiesData from "Data/Main/Displayed/Advanced/Pages/FightStrategies"
 
-const FightStrategiesCards = FightStrategiesData.map(strat => 
-    <div className="fight-strat-card site-col-6"> 
-        <SitePopUpCard
-            image={strat.image} 
-            title={strat.title}
-            description={strat.description}
-        />
-    </div>
-)
+const FightStrategiesCards = FightStrategiesData.map(strat => {
+
+    const {
+        description,
+        image,
+        title,
+    } = strat
+
+    return (
+        <div className="fight-strat-card site-col-6"> 
+            <SitePopUpCard
+                image={image} 
+                title={title}
+                description={description}
+            />
+        </div>
+    )
+})
 
 const FightStrategies = (
     <>
