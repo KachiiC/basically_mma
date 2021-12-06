@@ -1,25 +1,36 @@
+// COMPONENTS
 import SidebarPage from "Components/PageComponents/SidebarPage"
+// IMAGES
+import BasicHeaders from "Images/Basics"
+// PAGES
 import HistoryOfMMA from "Sections/Main/Pages/Displayed/Basics/HistoryOfMMA"
 import RulesOfMMA from "Sections/Main/Pages/Displayed/Basics/RulesOfMMA"
-// PAGES
 import WhatIsMMA from "Sections/Main/Pages/Displayed/Basics/WhatIsMMA"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 import MMADictionary from "./Pages/MMADictionary"
 
+const {
+    WhatIsMMAHeader,
+    HistoryOfMMAHeader,
+    RulesOfMMAHeader
+} = BasicHeaders
+
 const Basics = [
     {
         content: WhatIsMMA,
-        header: "https://kachiic.github.io/basically_mma/static/media/WhatIsMMA.0240faf1.jpg",
+        header: WhatIsMMAHeader,
         title: "Introduction",
     },
     {
         title: "History of MMA",
-        content: HistoryOfMMA
+        content: HistoryOfMMA,
+        header: HistoryOfMMAHeader
     },
     {
         title: "Rules of MMA",
-        content: RulesOfMMA
+        content: RulesOfMMA,
+        header: RulesOfMMAHeader
     },
     {
         title: "MMA Dictionary",
@@ -29,11 +40,13 @@ const Basics = [
 
 Basics.map(page => {
 
+    const { content, header, title } = page
+
     page.content = (
         <SidebarPage 
-            content={page.content} 
-            title={page.title}
-            header={RenderLogic(page.header, "")}
+            content={content} 
+            title={title}
+            header={RenderLogic(header, "")}
         />
     )
 

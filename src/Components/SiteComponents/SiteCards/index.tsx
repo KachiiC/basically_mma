@@ -30,11 +30,9 @@ const SiteCards = (props: SiteCardProps) => {
             title: title,
             description: description,
             image: image,
-        }
-
-        const singleCardProps = {
             link: link,
             link_type: link_type,
+            key: title
         }
 
         const pictureIconsCardProps = {
@@ -43,15 +41,13 @@ const SiteCards = (props: SiteCardProps) => {
         }
 
         const CardLogic = type === 'icons' ? 
-            <PictureIconCard 
+            <PictureIconCard
                 {...CardProps} 
                 {...pictureIconsCardProps}
             />
             :
             <SingleCard
-                key={card.title}
                 {...CardProps}
-                {...singleCardProps}
             />
 
         return (

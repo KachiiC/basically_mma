@@ -29,6 +29,7 @@ import {
     faDatabase, 
     faFont, 
     faMobile, 
+    faPodcast, 
     faQuestion, 
     faScroll, 
     faTimes 
@@ -37,6 +38,7 @@ import {
 import { SiteIconProps } from "Props/Tools/ToolProps"
 // TOOLS
 import { RenderLogic } from "./FunctionTools"
+import { faNewspaper } from "@fortawesome/free-regular-svg-icons";
 
 // Returns icon based on type, size and color
 const SiteIcon = (props: SiteIconProps) => {
@@ -85,8 +87,14 @@ const SiteIcon = (props: SiteIconProps) => {
         case "mobile":
             icon = faMobile
             break;
+        case "news":
+            icon = faNewspaper
+            break;
         case "pintrest":
             icon = faPinterest
+            break;
+        case "podcast":
+            icon = faPodcast
             break;
         case "postgres":
             icon = faDatabase

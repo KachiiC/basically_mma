@@ -3,14 +3,10 @@ import About from "Sections/Main/Pages/Displayed/About"
 const DataOverview = {
     // Replace the strings with your social media handles
     social_media: {
-        facebook: "facebook",
-        instagram: "instagram",
-        github: "github",
-        twitter: "twitter",
-        pintrest: "pintrest",
-        snapchat: "snapchat",
-        tiktok: "tiktok",
-        youtube: "youtube",
+        // facebook: "facebook",
+        instagram: "basically_mma/",
+        github: "KachiiC/basically_mma",
+        twitter: "basicallymma",
     },
     navbar_data: {
         title: "Basically MMA",
@@ -21,10 +17,8 @@ const DataOverview = {
         name: "Kachi Cheong",
         year: "2021"
     },
-    footer_pages: {
-        // Replace this with your own pages or remove key and value if not required 
+    footer_pages: { 
         about: About,
-        faq: <h1>FAQ</h1>,
     }
 }
 

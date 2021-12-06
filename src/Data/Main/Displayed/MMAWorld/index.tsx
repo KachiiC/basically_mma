@@ -1,4 +1,4 @@
-import BestOfMMA from "Sections/Main/Pages/Displayed/MMAWorld/BestOfMMA"
+// import BestOfMMA from "Sections/Main/Pages/Displayed/MMAWorld/BestOfMMA"
 import Fighters from "Sections/Main/Pages/Displayed/MMAWorld/Fighters"
 import MMANews from "Sections/Main/Pages/Displayed/MMAWorld/MMANews"
 import Promotions from "Sections/Main/Pages/Displayed/MMAWorld/Promotions"
@@ -18,13 +18,13 @@ const MMAWorld = [
         content: <MMANews />
     },
     {
-        title: "Best of MMA",
-        content: <BestOfMMA />
-    },
-    {
         title: "Recommended",
-        content: <Recommended />
+        content: Recommended
     },
+    // {
+    //     title: "Best of MMA",
+    //     content: <BestOfMMA />
+    // },
 ]
 
 

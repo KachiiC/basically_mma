@@ -1,14 +1,10 @@
+// PROPS
+import { SiteSingleCardProps } from "Props/Components/CardProps"
+import { SiteLink } from "Tools/LinkTools"
+// TOOLS
 import SiteIcon from "Tools/SiteIcon"
 
-interface PictureIconCardProps {
-    description: string
-    icon: string | undefined;
-    image: string
-    title: string
-    type: string | undefined;
-}
-
-const PictureIconCard = (props: PictureIconCardProps) => {
+const PictureIconCard = (props: SiteSingleCardProps) => {
     
     const {
         title,
@@ -16,14 +12,15 @@ const PictureIconCard = (props: PictureIconCardProps) => {
         description,
         image,
         icon,
+        link,
+        link_type
     } = props
 
     const imageUrl = {
         "backgroundImage" : `url('${image}')`
     }
-
-    return (
-        <div className="picture-icon-card">
+    const cardComponent = (
+        <>
             <div className="img-avatar">
                 <SiteIcon type={icon} color="black"/>
             </div>
@@ -31,12 +28,35 @@ const PictureIconCard = (props: PictureIconCardProps) => {
                 <div className="portada" 
                     style={imageUrl}
                 />
-                <div className="title-total">  
+                <div className="title-total">
                     <div className="title">{type}</div>
                     <h2>{title}</h2>
                     <div className="desc">{description}</div>
                 </div>
             </div>
+        </>
+    )
+
+    const LinkLogic = () => {
+        // If object has a link key...
+        if (link_type && link) {
+            // if link type is external, returns a href tag
+            return (
+                <SiteLink 
+                    link={link}
+                    type={link_type}
+                    placeholder={cardComponent}
+                />
+            )
+        }
+        
+        return cardComponent
+    }
+
+
+    return (
+        <div className="picture-icon-card">
+            {LinkLogic()}
         </div>
     )
 }

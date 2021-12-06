@@ -33,6 +33,11 @@
     border-radius: 25px;
     position: relative;
     max-width: 400px;
+    color: black;
+}
+
+.picture-icon-card a {
+    color: black;
 }
 
 .picture-icon-card h2 {
@@ -45,6 +50,7 @@
     text-align: right;
     font-weight: bold;
     font-size: 14px;
+    text-transform: uppercase;
 }
 
 .picture-icon-card .desc {
