@@ -25,7 +25,8 @@ const SiteArticle = (props: SiteArticleProps) => {
             image: image,
             link: link,
             title: TitleTrimmer(title, 60),
-            key: title
+            key: title,
+            link_type: props.link_type
         }
 
         return <SiteSingleArticle {...SingleArticle} />

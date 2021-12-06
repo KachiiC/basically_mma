@@ -1,12 +1,15 @@
+// COMPONENTS
+import SiteArticle from 'Components/PageComponents/SiteArticles'
 // CSS
 import './Home.css'
-// COMPONENTS
-
+// DATA
+import { HomeData } from './HomeData'
 
 const Home = (
-    <>
-        <h1>Home</h1>
-    </>
+    <SiteArticle 
+        link_type="local" 
+        data={HomeData} 
+    />
 )
 
 export default Home

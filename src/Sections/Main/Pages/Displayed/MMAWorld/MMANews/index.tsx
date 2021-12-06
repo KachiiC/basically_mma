@@ -18,6 +18,7 @@ const MMANews = () => {
     const component = (
         <SiteArticles 
             data={MMANewsDataTool(fetch.response)} 
+            link_type="external"
         />
     )
 

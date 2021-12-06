@@ -1,10 +1,11 @@
 // PROPS
 import { SingleArticleProps } from "Props/SiteProps/SiteArticleProps"
+import { IfStatement } from "Tools/FunctionTools"
 import { SiteLink } from "Tools/LinkTools"
 
 const SiteSingleArticle = (props: SingleArticleProps) => {
 
-    const { date, image, link, title, description } = props
+    const { date, image, link, link_type, title, description } = props
 
     const imageUrl = {
         "backgroundImage": `url('${image}')`
@@ -23,7 +24,7 @@ const SiteSingleArticle = (props: SingleArticleProps) => {
                     </p>
                 </div>
                 <p className="gridexerpt">
-                    {description}
+                    {IfStatement(description)}
                 </p>
             </div>
         </>
@@ -33,7 +34,7 @@ const SiteSingleArticle = (props: SingleArticleProps) => {
         <div className="gridytest">
             <SiteLink 
                 link={link} 
-                type={"external"} 
+                type={link_type} 
                 placeholder={component}
             />
         </div>
