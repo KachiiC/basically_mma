@@ -13,7 +13,7 @@ import { UnqiueValues } from "Tools/ObjectDataTools"
 const FilterGallery = (props: SiteCardProps) => {
 
     // PROPS
-    const { card_size, data } = props
+    const { card_size, data, type } = props
 
     // The filter type's initial state is empty
     const [filterType, setFilterType] = useState('')
@@ -43,6 +43,7 @@ const FilterGallery = (props: SiteCardProps) => {
             // If card size is not defined, it is set to medium as a default.
             card_size={RenderLogic(card_size, "medium")}
             data={resultsData}
+            type={type}
         />
     )
 }

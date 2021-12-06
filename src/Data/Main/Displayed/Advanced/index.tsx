@@ -1,5 +1,7 @@
+// COMPONENTS
 import SidebarPage from "Components/PageComponents/SidebarPage"
-import FighterPay from "Sections/Main/Pages/Displayed/Advanced/FighterPay"
+// import FighterPay from "Sections/Main/Pages/Displayed/Advanced/FighterPay"
+// PAGES
 import FightStrategies from "Sections/Main/Pages/Displayed/Advanced/FightStrategies"
 import Fundamentals from "Sections/Main/Pages/Displayed/Advanced/Fundamentals"
 import Techniques from "Sections/Main/Pages/Displayed/Advanced/Techniques"
@@ -21,13 +23,13 @@ const Advanced = [
         content: FightStrategies
     },
     {
-        title: "FIGHTER PAY",
-        content: <FighterPay />
-    },
-    {
         title: "WEIGHT CLASSES",
-        content: <WeightClasses />
+        content: WeightClasses
     }
+    // {
+    //     title: "FIGHTER PAY",
+    //     content: <FighterPay />
+    // },
 ]
 
 Advanced.map((page:any) => {

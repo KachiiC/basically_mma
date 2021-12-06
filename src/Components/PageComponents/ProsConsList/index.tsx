@@ -5,10 +5,11 @@ import { ProsConsListProps } from 'Props/Components/ProsConsListProps'
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 import { FilterTool } from "Tools/ObjectDataTools"
+import { TitleLogic } from 'Tools/StringTools'
 
 const ProsConsList = (props: ProsConsListProps) => {
 
-    const { cons, data, pros } = props
+    const { cons, data, pros, title } = props
     
     const displayedPoints = () => {
 
@@ -29,6 +30,8 @@ const ProsConsList = (props: ProsConsListProps) => {
     }
 
     return (
+        <>
+        {TitleLogic(title, "h2")}
         <table className="pros-cons-list w-80">
             <tbody>
                 <tr>
@@ -38,6 +41,7 @@ const ProsConsList = (props: ProsConsListProps) => {
                 {displayedPoints()}
             </tbody>
         </table>
+        </>
     )
 }
 

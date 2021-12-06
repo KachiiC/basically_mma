@@ -23,11 +23,11 @@ const PictureIconCard = (props: PictureIconCardProps) => {
     }
 
     return (
-        <div className="test-card">
+        <div className="picture-icon-card">
             <div className="img-avatar">
                 <SiteIcon type={icon} color="black"/>
             </div>
-            <div className="test-card-text">
+            <div className="picture-icon-card-text">
                 <div className="portada" 
                     style={imageUrl}
                 />

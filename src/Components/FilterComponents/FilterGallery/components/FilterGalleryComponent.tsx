@@ -6,7 +6,7 @@ import { FilterGalleryProps } from "Props/Components/FilterComponentProps/Filter
 const GalleryComponent = (props: FilterGalleryProps) => {
     
     // PROPS
-    const { buttons, card_size, data } = props
+    const { buttons, card_size, data, type } = props
 
     return (
         <>
@@ -15,10 +15,13 @@ const GalleryComponent = (props: FilterGalleryProps) => {
             </div>
             {/* Using site cards as the displayed data */} 
             {/* The cards will be filtered on click on the level above */}
-            <SiteCards 
-                data={data} 
-                card_size={card_size}
-            />
+            <div className="filter-gallery-cards">
+                <SiteCards 
+                    data={data} 
+                    card_size={card_size}
+                    type={type}
+                />
+            </div>
         </>
     )
 }

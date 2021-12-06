@@ -4,4 +4,5 @@ export interface ProsConsListProps {
     cons?: string; 
     data: objectData[]; 
     pros?: string 
+    title?: string
 }

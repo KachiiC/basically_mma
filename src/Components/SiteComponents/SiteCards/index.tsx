@@ -57,7 +57,7 @@ const SiteCards = (props: SiteCardProps) => {
         return (
             // returns a card for each object in the array
             // Size of card can be passed through, default is "small" (4 cards a row)
-            <div className={`site-col-${GridSpanSwitcher(card_size)}`}>
+            <div className={`site-col-${GridSpanSwitcher(card_size)} site-card`}>
                 {CardLogic}
             </div>
        )

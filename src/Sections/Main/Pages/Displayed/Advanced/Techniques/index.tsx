@@ -29,6 +29,7 @@ const Techniques = () => {
                 />
             </div>
         )
+        
         return {
             title: technique.title,
             content: techniqueContent

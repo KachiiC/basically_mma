@@ -11,6 +11,7 @@ export interface FilterGalleryProps {
     data: SiteSingleCardProps[]
     card_size?: 'xs'|'small'|'medium'|'large'|'xl'; 
     buttons?: JSX.Element
+    type?: 'icons' | 'standard'
 }
 
 export interface FilterButtonProps {
