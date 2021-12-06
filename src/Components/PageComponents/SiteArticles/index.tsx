@@ -9,7 +9,9 @@ import { TitleTrimmer } from "Tools/StringTools"
 
 const SiteArticle = (props: SiteArticleProps) => {
 
-    const displayCards = props.data.map(card => {
+    const { data, link_type } = props
+
+    const displayCards = data.map(card => {
 
         const {
             date,
@@ -19,14 +21,16 @@ const SiteArticle = (props: SiteArticleProps) => {
             link
         } = card
 
+        const linkLogic = link_type === "external" ? link : `/${link}`
+
         const SingleArticle = {
             date: date ,
             description: description ,
             image: image,
-            link: link,
+            link: linkLogic,
             title: TitleTrimmer(title, 60),
             key: title,
-            link_type: props.link_type
+            link_type: link_type
         }
 
         return <SiteSingleArticle {...SingleArticle} />
