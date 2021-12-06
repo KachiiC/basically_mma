@@ -68,6 +68,45 @@ export const GamePlanningData = (
     </>
 )
 
+export const NutritionData = (
+    <>
+        <p>
+            If you want to get in shape then training like a professional MMA fighter is a good way 
+            to achieve exactly that. But there’s a lot more to being a professional athlete than 
+            just training regularly. In truth, it’s an entire lifestyle commitment.
+        </p>
+        <p>
+            Your diet is arguably the most important aspect of that lifestyle commitment. Without 
+            adequate fuel, you just won’t have the energy to train at 100%. And even when you do 
+            train, your body won’t feel the full benefits if you have an unhealthy diet.
+        </p>
+    </>
+)
+
+export const ConditioningData = (
+    <>
+        <p>
+            Conditioning training is a ‘buzzword’ that is often interchanged with the word ‘fitness.’ You’ll 
+            often hear martial artists and fighters talk about what they do for conditioning, or will finish 
+            their training with extra conditioning on the mats usually consisting of running or circuit 
+            training. Outside of fight training, their martial arts conditioning may involve road running, 
+            hill sprints, suicide runs, and every endurance activity in-between.
+        </p>
+        <p>
+            But why does conditioning only refer to ‘fitness?’ I’d assume it’s because of the rise in 
+            popularity of the term ‘strength and conditioning’ where strength refers to what you do in 
+            the gym and conditioning refers to what you do outside of it. However, to get conditioned 
+            for your sport, it is more than just ‘fitness.’
+        </p>
+        <p>
+            Conditioning training refers to being conditioned for the sport. That means being able to 
+            throw a volume of strikes without gassing out, or holding strong isometric grip and leg 
+            contractions during grappling without fatiguing. That means being conditioned, and the 
+            subsequent conditioning training, is going to be different for different sports and martial arts.
+        </p>
+    </>
+)
+
 const FundamentalsData  = [
     {
         title: "Striking",
@@ -83,11 +122,11 @@ const FundamentalsData  = [
     },
     {
         title: "Nutrition",
-        content: GamePlanningData
+        content: NutritionData
     },
     {
         title: "Conditioning",
-        content: GamePlanningData
+        content: ConditioningData
     },
 ]
 export default FundamentalsData 

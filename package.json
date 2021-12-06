@@ -1,7 +1,8 @@
 {
-  "name": "typescript_template",
+  "name": "basically_mma",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kachiic.github.io/basically_mma/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",

@@ -19,6 +19,7 @@ const PictureIconCard = (props: SiteSingleCardProps) => {
     const imageUrl = {
         "backgroundImage" : `url('${image}')`
     }
+    
     const cardComponent = (
         <>
             <div className="img-avatar">
