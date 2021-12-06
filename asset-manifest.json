@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/basically_mma/static/css/main.c9989975.chunk.css",
-    "main.js": "/basically_mma/static/js/main.3cfb5b61.chunk.js",
-    "main.js.map": "/basically_mma/static/js/main.3cfb5b61.chunk.js.map",
+    "main.js": "/basically_mma/static/js/main.e8928397.chunk.js",
+    "main.js.map": "/basically_mma/static/js/main.e8928397.chunk.js.map",
     "runtime-main.js": "/basically_mma/static/js/runtime-main.90a304b1.js",
     "runtime-main.js.map": "/basically_mma/static/js/runtime-main.90a304b1.js.map",
     "static/css/2.a95be28f.chunk.css": "/basically_mma/static/css/2.a95be28f.chunk.css",
@@ -36,6 +36,8 @@
     "static/media/HistoryOfMMA.09e9274a.jpg": "/basically_mma/static/media/HistoryOfMMA.09e9274a.jpg",
     "static/media/JRE.90178506.jpg": "/basically_mma/static/media/JRE.90178506.jpg",
     "static/media/LoadingError.bacb5cd4.gif": "/basically_mma/static/media/LoadingError.bacb5cd4.gif",
+    "static/media/MMADictionary.c3fae5ac.jpg": "/basically_mma/static/media/MMADictionary.c3fae5ac.jpg",
+    "static/media/MMATechniques.4e6ea18e.jpg": "/basically_mma/static/media/MMATechniques.4e6ea18e.jpg",
     "static/media/MMA_Digest.a6ff4265.jpg": "/basically_mma/static/media/MMA_Digest.a6ff4265.jpg",
     "static/media/MMA_Fighting.81949aee.jpg": "/basically_mma/static/media/MMA_Fighting.81949aee.jpg",
     "static/media/MMA_Hour.ce444561.jpg": "/basically_mma/static/media/MMA_Hour.ce444561.jpg",
@@ -54,6 +56,6 @@
     "static/css/2.a95be28f.chunk.css",
     "static/js/2.83ab7213.chunk.js",
     "static/css/main.c9989975.chunk.css",
-    "static/js/main.3cfb5b61.chunk.js"
+    "static/js/main.e8928397.chunk.js"
   ]
 }
