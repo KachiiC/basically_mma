@@ -3,7 +3,7 @@ import { TiltCardProps } from "Props/SiteProps/TiltCardProps"
 
 const SingleTiltCard = (props: TiltCardProps) => {
     
-    const { content, name, type, image } = props
+    const { content, image, name, type } = props
 
     return (
         <figure className="tilt-cards-container site-shadow">

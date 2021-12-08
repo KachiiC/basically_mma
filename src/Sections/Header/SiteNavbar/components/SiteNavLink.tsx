@@ -24,24 +24,24 @@ export const SiteNavLink = (props: SiteNavLinkProps) => {
         title,
     } = props
 
-    const NavLinkLogic = link ?
-        <SiteLink 
-            link={link}
-            placeholder={title}
-            type="external"
-        />
-        :
-        <SiteLink
-            link={`/${StringJoin(title, " ", "-")}`}
-            placeholder={title}
-            type="local"
-        />
+    // LINK
+    const linkLogic = RenderLogic(link, `/${StringJoin(title, " ", "-")}`)
+    // LINK TYPE
+    const typeLogic = link ? "external" : "local"
+
+    const linkProps = {
+        link: linkLogic,
+        placeholder: title,
+        type: typeLogic
+    }
 
     return (
         <div className={`site-${link_type}-link`} 
             onClick={click}
         >
-            {NavLinkLogic}
+            <SiteLink 
+                {...linkProps}
+            />
         </div>
     )
 }

@@ -13,9 +13,9 @@ const SidebarPage = (props: SidebarPageProps) => {
         if (header) {
             return (
                 <img src={header} 
-                alt="page-header" 
-                className="page-container-image" 
-            />
+                    alt="page-header" 
+                    className="page-container-image" 
+                />
             )
         }
     }

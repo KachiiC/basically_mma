@@ -5,7 +5,6 @@ import './SitePhotos.css'
 // PROPS
 import { SitePhotoProps } from "Props/SiteProps/SitePhotos"
 
-
 const SitePhotos = (props: SitePhotoProps) => {
 
     const displayCards = props.data.map(card => {

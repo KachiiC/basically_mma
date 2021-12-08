@@ -1,5 +1,6 @@
 // PROPS
 import { SingleArticleProps } from "Props/SiteProps/SiteArticleProps"
+// TOOLS
 import { IfStatement } from "Tools/FunctionTools"
 import { SiteLink } from "Tools/LinkTools"
 

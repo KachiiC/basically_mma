@@ -10,22 +10,21 @@ const SiteTiltCards = (props: SiteTiltCardsProps) => {
     const displayTiltCards = props.data.map((card) => {
 
         const {
-            name,
-            type,
+            content,
             image,
-            content
+            name,
+            type
         } = card
 
         const cardProps = {
-            name: name,
-            type: type,
+            content: content,
             image: image,
-            content: content
+            name: name,
+            type: type
         }
 
-        return (
-            <SingleTiltCard {...cardProps} />
-        )
+        return <SingleTiltCard {...cardProps} />
+        
     })
 
     return (

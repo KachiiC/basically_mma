@@ -15,6 +15,7 @@ export const DisplayMenuType = (props: DisplayMenuTypeProps) => {
     }
 
     return data.external_link ?
+    
         <SiteNavLink
             link={data.external_link}
             {...dataProps}

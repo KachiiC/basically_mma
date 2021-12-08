@@ -1,9 +1,6 @@
 // COMPONENTS
-// DATA
-// import foulData from 'Data/Basics/RulesOfMMA/RulesComponents/FoulsData'
-// import WeightTable from 'Pages/Advanced/WeightClasses/PageComponents/WeightTable'
-
 import SiteTable from "Components/SiteComponents/SiteTable"
+// DATA
 import { WeightClassesData } from "../../Advanced/Pages/WeightClasses"
 
 //// SECTIONS ////
@@ -47,6 +44,38 @@ const BoutDuration = (
     </>
 )
 
+const FoulsList = [
+    "Butting with the head",
+    "Eye gouging of any kind",
+    "Biting or spitting at an opponent",
+    "Fish hooking (act of inserting a finger or fingers or one or both hands into the mouth or nostrils or a person, pulling away from the centerline of the body)",
+    "Hair pulling",
+    "Spiking an opponent to the canvas on his head or neck",
+    "Strikes to the spine or the back of the head.",
+    "Throat strikes of any kind, and/or grabbing the trachea",
+    "Fingers outstretched toward an opponent’s face/eyes",
+    "Downward pointing elbow strike (’12 to ‘6 strike)",
+    "Groin attacks of any kind",
+    "Kneeing and/or kicking the head of a grounded opponent",
+    "Stomping a grounded opponent",
+    "Holding opponent’s gloves or shorts",
+    "Holding or grabbing the fence or ropes with fingers or toes",
+    "Small joint manipulation",
+    "Throwing opponent out of ring/fighting area",
+    "Intentionally placing a finger into any orifice or any cut or laceration of an opponent",
+    "Clawing, pinching or twisting the flesh",
+    "Timidity (avoiding contact with an opponent, intentionally or consistently dropping the mouthpiece or faking an injury)",
+    "Using abusive language in the fighting area",
+    "Flagrant disregarding of the referee’s instructions",
+    "Unsportsmanlike conduct that causes injury to an opponent",
+    "Attacking an opponent after the bell has sounded the end of the period of unarmed combat",
+    "Attacking an opponent on or during the break",
+    "Attacking an opponent who is under the care of the referee",
+    "Interference from a mixed martial artist’s corner or seconds",
+]
+
+const DisplayedFouls = FoulsList.map(foul => <li>{foul}</li>)
+
 const Fouls = (
     <>
         <p>
@@ -62,33 +91,7 @@ const Fouls = (
             may result in penalties, at the discretion of the referee, if committed:
         </p>
         <ul>
-            <li>Butting with the head</li>
-            <li>Eye gouging of any kind</li>
-            <li>Biting or spitting at an opponent</li>
-            <li>Fish hooking (act of inserting a finger or fingers or one or both hands into the mouth or nostrils or a person, pulling away from the centerline of the body)</li>
-            <li>Hair pulling</li>
-            <li>Spiking an opponent to the canvas on his head or neck</li>
-            <li>Strikes to the spine or the back of the head.</li>
-            <li>Throat strikes of any kind, and/or grabbing the trachea</li>
-            <li>Fingers outstretched toward an opponent’s face/eyes</li>
-            <li>Downward pointing elbow strike (’12 to ‘6 strike)</li>
-            <li>Groin attacks of any kind</li>
-            <li>Kneeing and/or kicking the head of a grounded opponent</li>
-            <li>Stomping a grounded opponent</li>
-            <li>Holding opponent’s gloves or shorts</li>
-            <li>Holding or grabbing the fence or ropes with fingers or toes</li>
-            <li>Small joint manipulation</li>
-            <li>Throwing opponent out of ring/fighting area</li>
-            <li>Intentionally placing a finger into any orifice or any cut or laceration of an opponent</li>
-            <li>Clawing, pinching or twisting the flesh</li>
-            <li>Timidity (avoiding contact with an opponent, intentionally or consistently dropping the mouthpiece or faking an injury)</li>
-            <li>Using abusive language in the fighting area</li>
-            <li>Flagrant disregarding of the referee’s instructions</li>
-            <li>Unsportsmanlike conduct that causes injury to an opponent</li>
-            <li>Attacking an opponent after the bell has sounded the end of the period of unarmed combat</li>
-            <li>Attacking an opponent on or during the break</li>
-            <li>Attacking an opponent who is under the care of the referee</li>
-            <li>Interference from a mixed martial artist’s corner or seconds</li>
+            {DisplayedFouls}
         </ul>
     </>
 )

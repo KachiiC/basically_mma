@@ -3,8 +3,8 @@ import './ProsConsList.css'
 // PROPS
 import { ProsConsListProps } from 'Props/Components/ProsConsListProps'
 // TOOLS
-import { RenderLogic } from "Tools/FunctionTools"
 import { FilterTool } from "Tools/ObjectDataTools"
+import { RenderLogic } from "Tools/FunctionTools"
 import { TitleLogic } from 'Tools/StringTools'
 
 const ProsConsList = (props: ProsConsListProps) => {

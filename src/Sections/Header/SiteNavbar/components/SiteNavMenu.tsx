@@ -4,6 +4,7 @@ import { SiteLogo, SmallMenuDropdown, SmallMenuIcon } from "./SiteNavLink"
 import { SiteNavbarProps } from "Props/Sections/HeaderProps"
 // TOOLS
 import { DisplayMenuList, DisplayMenuType } from "../tools/SiteNavbarTools"
+import { RenderLogic } from "Tools/FunctionTools"
 
 // NAV MENU
 export const SiteNavMenu = (props: SiteNavbarProps) => {
@@ -33,22 +34,27 @@ export const SmallNavMenu = (props: SiteNavbarProps) => {
 
     const { click, data } = props
 
-    const menu_block = data.map(obj => 
-        obj.sub_menu ? 
+    const menu_block = data.map(obj => {
+
+        const menuLogic = RenderLogic(obj.sub_menu, obj)
+
+        const menuProps = {
+            click: click,
+            key: obj.title,
+            data: menuLogic
+        } 
+
+        return obj.sub_menu ? 
             <SmallMenuDropdown
-                click={click}
-                data={obj.sub_menu}
+                {...menuProps}
                 title={obj.title}
-                key={obj.title}
             />
             : 
             <DisplayMenuType
-                click={click} 
-                data={obj} 
+                {...menuProps}
                 type="small" 
-                key={obj.title}
             />
-    )
+    })
 
     return (
         <div className="small-menu">

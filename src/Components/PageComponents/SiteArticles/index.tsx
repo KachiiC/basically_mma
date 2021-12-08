@@ -15,10 +15,10 @@ const SiteArticle = (props: SiteArticleProps) => {
 
         const {
             date,
-            image,
-            title,
             description,
-            link
+            image,
+            link,
+            title
         } = card
 
         const linkLogic = link_type === "external" ? link : `/${link}`
@@ -27,10 +27,10 @@ const SiteArticle = (props: SiteArticleProps) => {
             date: date ,
             description: description ,
             image: image,
-            link: linkLogic,
-            title: TitleTrimmer(title, 60),
             key: title,
-            link_type: link_type
+            link: linkLogic,
+            link_type: link_type,
+            title: TitleTrimmer(title, 60),
         }
 
         return <SiteSingleArticle {...SingleArticle} />

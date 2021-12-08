@@ -1,6 +1,8 @@
 // COMPONENTS
 import SiteCollapsible from "Components/SiteComponents/SiteCollapsible"
 import TechniquesTab from "./components/TechniqueTab"
+// PROPS
+import { stringObjectData } from "Props/PropsTemplates"
 // TOOLS
 import { SiteFetcher, SiteRender } from "Tools/SiteFetcherTool"
 // URLS
@@ -12,11 +14,12 @@ const Techniques = () => {
     
     const fetch = SiteFetcher(url)
 
-    const TechniquesData = fetch.response.map((technique: any) => {
+    const TechniquesData = fetch.response.map((technique: stringObjectData) => {
 
         const {
             description,
             mistakes,
+            title,
             tutorial,
         } = technique
 
@@ -26,6 +29,7 @@ const Techniques = () => {
                     description={description}
                     mistakes={mistakes}
                     tutorial={tutorial}
+                    title={title}
                 />
             </div>
         )

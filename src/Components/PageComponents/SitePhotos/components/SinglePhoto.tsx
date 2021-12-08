@@ -1,10 +1,11 @@
 // PROPS
 import { SinglePhotoProps } from "Props/SiteProps/SitePhotos"
+// TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 
 const SinglePhoto = (props: SinglePhotoProps) => {
 
-    const { description, image, title, text_color } = props
+    const { description, image, text_color, title } = props
 
     const colorLogic = {
         "color": RenderLogic(text_color, "white")

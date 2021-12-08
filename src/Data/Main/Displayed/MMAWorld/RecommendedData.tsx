@@ -1,4 +1,5 @@
 import Recommended from "Images/MMAWorld/Recommended";
+import { SiteSingleCardProps } from "Props/Components/CardProps";
 
 const {
     AnikAndFlorian,
@@ -114,7 +115,7 @@ export const RecommendedData = [
     },
 ]
 
-RecommendedData.map((obj: any) => {
+RecommendedData.map((obj: SiteSingleCardProps) => {
     obj.link_type = "external"
     return obj
 })
