@@ -60,19 +60,6 @@
     grid-column: span 12;
 }
 
-.w-100,
-.w-90,
-.w-80,
-.w-70,
-.w-60,
-.w-50,
-.w-40,
-.w-30,
-.w-20,
-.w-10 {
-    margin: auto
-}
-
 .site-border {
     border: 1px solid black;
 }
@@ -179,6 +166,10 @@
 
 .w-auto {
     width: auto;
+}
+
+div[class*=w-] {
+    margin: auto
 }
 
 .m-auto {

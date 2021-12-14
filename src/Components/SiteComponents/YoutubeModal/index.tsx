@@ -1,10 +1,10 @@
 // COMPONENTS
-import SiteModal from "../SiteModal"
+import SiteModalComponent from "../SiteModal"
 import YoutubeModalContent from "./components/YoutubeModalContent"
 // CSS
-import './YoutubeModal.css'
+import "./YoutubeModal.css"
 // PROPS
-import { YoutubeModalProps } from "Props/Components/YoutubeModalProps"
+import { YoutubeModalProps } from "./YoutubeModalProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 
@@ -28,7 +28,7 @@ const YoutubeModal = (props: YoutubeModalProps) => {
     )
 
     return (
-        <SiteModal
+        <SiteModalComponent
             // If no component is specificed, the thumbnail for current object is used instead 
             component={RenderLogic(component, currentThumbnail)}
             content={modalContent}

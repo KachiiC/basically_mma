@@ -1,27 +1,27 @@
 //COMPONENTS
-import { Table } from 'antd';
+import { Table } from "antd"
 // CSS
-import 'antd/dist/antd.css'
-import './AntdTable.css'
+import "antd/dist/antd.css"
 // PROPS
-import { AntdTableProps } from 'Props/Components/AntdProps/AntdTableProps';
+import { AntdTableProps } from "./AntdTableProps"
 // TOOLS
-import { defaultColumn } from './tools/AntdColumns';
-import { IfStatement, RenderLogic } from "Tools/FunctionTools";
+import { defaultColumn } from "./tools/columnFunctions"
+import { IfStatement, RenderLogic } from "Tools/FunctionTools"
 
 const AntdTable = (props: AntdTableProps) => {
 
-    const { columns, data, default_sort, pagination, title } = props
+    const { columns, data, pagination, title, default_sort } = props
 
     const columnsLogic = RenderLogic(
         columns, 
         defaultColumn(
-            data, IfStatement(default_sort)
+            data,
+            IfStatement(default_sort)
         )
     )
 
     return (
-        <div className="site-antd-table w-90">
+        <div className="w-90">
             <h1>{IfStatement(title)}</h1>
             <Table 
                 columns={columnsLogic} 

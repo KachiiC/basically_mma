@@ -1,6 +1,7 @@
 // PROPS
-import { objectData } from "Props/PropsTemplates"
+import { objectData, stringDataProps } from "Props/PropsTemplates"
 import { ObjectDataProps } from "Props/Tools/ToolProps"
+import { StringJoin } from "./StringTools"
 
 // Filter Tool
 export const FilterTool = (data: objectData[], key: string, value: any) =>  data.filter((obj: objectData) => obj[key] === value)
@@ -29,31 +30,40 @@ export const UnqiueValues = (data: any[], value: string) =>  {
     return uniqueArray
 }
 
-export const ObjectDataRender = (data: ObjectDataProps , type: string) => {
+export const ObjectIconDataRender = (data: stringDataProps) => {
 
     const data_keys = ObjKeys(data)
   
     const data_links = data_keys.map(key => {
 
-        const social_data = {
+        return {
             title: key,
             icon: key,
             link: `https://www.${key}.com/${data[key]}`
         }
-
-        const routerLogic = typeof data[key] === "string" ? 
-            {
-                title: key,
-                external_link: ObjValue(data)[data_keys.indexOf(key)],
-            }
-            :
-            {
-                title: key,
-                content: data[key]
-            }
-
-        return type === "social" ? social_data : routerLogic
     })
 
     return data_links
+}
+
+export const ObjectDataRender = (data: ObjectDataProps) => {
+
+    const keys = ObjKeys(data)
+  
+    return keys.map(key => {
+
+        const external_link = {
+            title: key,
+            external_link: data[key],
+        }
+
+        const footer_content = {
+            title: key,
+            content: data[key],
+            link: StringJoin(key, "_", "-")
+        }
+
+        return typeof data[key] === "string" ? external_link : footer_content
+    })
+
 }

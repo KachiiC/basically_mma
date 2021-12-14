@@ -1,5 +1,5 @@
 // COMPONENTS
-import { SidebarVideoRows } from "./components/SidebarVideoRows"
+import { SidebarVideoRows } from "../SidebarVideoRows"
 // TOOLS
 import { SiteFetcher, SiteRender } from "Tools/SiteFetcherTool"
 import { KachiiRestApi } from "URLs/KachiisRestApi"

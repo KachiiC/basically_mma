@@ -6,13 +6,14 @@
     top: 0;
     left: 0;
     padding-top: 100px;
+    background-color: (0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
     z-index: 1;
 }
 
 .modal-container {
     width: 90%;
-    height: 80vh;
+    height: 90%;
     background: white;
     margin: auto;
 }

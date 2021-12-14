@@ -1,7 +1,7 @@
 // PROPS
-import { SingleYoutubeSuggestionProps, YoutubeSuggestionProps } from "Props/Components/YoutubeModalProps"
+import { SingleYoutubeSuggestionProps, YoutubeSuggestionProps } from "../YoutubeModalProps"
 // TOOLS
-import { TitleRender } from "Sections/Sidebar/components/SidebarRecommendations/tools/TitleRender"
+import { TitleTrimmer } from "Tools/StringTools"
 
 const SingleYoutubeSuggestion = (props: SingleYoutubeSuggestionProps) => {
     
@@ -10,10 +10,12 @@ const SingleYoutubeSuggestion = (props: SingleYoutubeSuggestionProps) => {
 
     return (
         <div className="site-flex suggestion-row w-90">
-            <div className="youtube-suggestion-title cursor-pointer w-50">
-                {TitleRender(video_title)}
+            <div className="youtube-suggestion-title cursor-pointer w-50 ">
+                {TitleTrimmer(video_title, 45)}
             </div>
-            <div className="youtube-thumbnail w-50 cursor-pointer" onClick={click}>
+            <div className="youtube-thumbnail w-50 cursor-pointer" 
+                onClick={click}
+            >
                 <img src={video_thumbnail} 
                     alt={video_title} 
                     className="site-responsive-image"

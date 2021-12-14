@@ -1,5 +1,5 @@
 // PROPS
-import { TimelineEventProps } from "Props/Components/TimlineProps"
+import { TimelineEventProps } from "../SiteTimlineProps"
 
 const TimelineEvent = (props: TimelineEventProps) => {
 
@@ -10,7 +10,7 @@ const TimelineEvent = (props: TimelineEventProps) => {
         <div className="timeline-container">
             <div className="timeline-content site-border">
                 <h3>{year}</h3>
-                <h3>{event}</h3>
+                <h1>{event}</h1>
                 <p>{description}</p>
             </div>
         </div>

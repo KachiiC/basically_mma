@@ -1,17 +1,16 @@
 // COMPONENTS
 import SingleCard from "./components/SingleCard"
 // CSS
-import './SiteCard.css'
+import "./SiteCard.css"
 // PROPS
-import { SiteCardProps } from 'Props/Components/CardProps'
+import { SiteCardProps } from "./SiteCardProps"
 // TOOLS
-import { GridSpanSwitcher } from 'Tools/GridTools'
-import PictureIconCard from "./components/PictureIconCard"
+import { GridSpanSwitcher } from "Tools/GridTools"
 
 const SiteCards = (props: SiteCardProps) => {
 
     // PROPS
-    const { card_size , data, type } = props
+    const { card_size , data } = props
     
     const displayCards = data.map(card => {
 
@@ -21,43 +20,28 @@ const SiteCards = (props: SiteCardProps) => {
             image,
             link,
             link_type,
-            title,
-            icon
+            title
         } = card
 
         // CARD PROPS
         const CardProps = {
-            title: title,
+            title:  title,
             description: description,
             image: image,
             link: link,
             link_type: link_type,
-            key: title
+            // Size of card can be passed through, default is "small" (4 cards a row)
         }
-
-        const pictureIconsCardProps = {
-            icon: icon,
-            type: card.type
-        }
-
-        const CardLogic = type === 'icons' ? 
-            <PictureIconCard
-                {...CardProps} 
-                {...pictureIconsCardProps}
-            />
-            :
-            <SingleCard
-                {...CardProps}
-            />
 
         return (
-            // returns a card for each object in the array
+        // returns a card for each object in the array
+        <SingleCard
+            {...CardProps}
+            key={card.title}
             // Size of card can be passed through, default is "small" (4 cards a row)
-            <div className={`site-col-${GridSpanSwitcher(card_size)} site-card`}>
-                {CardLogic}
-            </div>
-       )
-    })
+            span={GridSpanSwitcher(card_size)}
+        />
+    )})
 
     return (
         <div className="site-grid-system">

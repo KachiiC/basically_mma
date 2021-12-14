@@ -1,0 +1,23 @@
+
+{
+    "compilerOptions": {
+      "baseUrl": "./src",
+      "paths": {
+        "@components/*": [
+          "Components/SiteComponents/*"
+        ],
+        "@libraries/*": [
+          "Components/ExternalLibraries/*"
+        ],
+        "@data/*": [
+          "Data/Pages/Displayed/*"
+        ],
+        "@pages/*": [
+          "Pages/Displayed/*"
+        ],
+        "@page_components/*": [
+          "Components/PageComponents/*"
+        ]
+      }
+    }
+}

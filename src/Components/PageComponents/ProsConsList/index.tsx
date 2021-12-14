@@ -1,7 +1,7 @@
 // CSS
 import './ProsConsList.css'
 // PROPS
-import { ProsConsListProps } from 'Props/Components/ProsConsListProps'
+import { ProsConsListProps } from './ProsConsListProps'
 // TOOLS
 import { FilterTool } from "Tools/ObjectDataTools"
 import { RenderLogic } from "Tools/FunctionTools"

@@ -1,7 +1,7 @@
 // COMPONENTS
 import { GalleryImage } from "./GalleryImage"
 // PROPS
-import { GalleryImageProps, GalleryImageRowProps } from "Props/Components/GalleryProps"
+import { GalleryImageProps, GalleryImageRowProps } from "../SiteGalleryProps"
 // TOOLS
 import { GridStyle } from "Tools/GridTools"
 
@@ -36,7 +36,7 @@ const GalleryImagesRow = (props: GalleryImageRowProps) => {
     ).slice(0, row_number)
 
     return (
-        <div className={`w-${width}`}>
+        <div className={`w-${width} `}>
             <div className="site-grid" 
                 style={GridStyle(row_number)}
             >

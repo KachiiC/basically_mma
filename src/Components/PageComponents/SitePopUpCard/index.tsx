@@ -1,7 +1,7 @@
 // CSS
 import './SitePopUpCard.css'
 // PROPS
-import { SitePopUpCardProps } from "Props/SiteProps/SitePopUpCardProps"
+import { SitePopUpCardProps } from "./SitePopUpCardProps"
 
 const SitePopUpCard = (props: SitePopUpCardProps) => {
 

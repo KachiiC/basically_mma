@@ -1,10 +1,10 @@
 import { useState } from "react"
 // COMPONENTS
-import SiteCollapsible from "Components/SiteComponents/SiteCollapsible"
+import SiteCollapsible from "@components/SiteCollapsible"
 // CSS
-import './FilterCollapsible.css'
+import "./FilterCollapsible.css"
 // PROPS
-import { FilterCollapsibleProps } from "Props/Components/FilterComponentProps/FilterCollapsibleProps"
+import { FilterCollapsibleProps } from "./FilterCollapsibleProps"
 import { TargetProps } from "Props/Tools/ToolProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
@@ -27,7 +27,7 @@ const FilterCollapsible = (props: FilterCollapsibleProps) => {
         )
 
         // logic only kicks in when keyword is not empty string
-        keyword !== '' ? 
+        keyword !== "" ? 
             setFoundResults(resultsLogic) 
             : 
             setFoundResults(data)
@@ -45,7 +45,7 @@ const FilterCollapsible = (props: FilterCollapsibleProps) => {
         <h2>No results found!</h2>
 
     return (
-        <div className={`filter-collapsible w-${RenderLogic(width, 100)}`}>
+        <div className={`filter-collapsible w-${RenderLogic(width, 90)}`}>
             {/* Filter begins on change */}
             <input onChange={filterFunction}
                 className="w-100"

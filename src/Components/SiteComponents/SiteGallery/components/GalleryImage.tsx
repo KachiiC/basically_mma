@@ -3,7 +3,7 @@ import {
     GalleryImageProps, 
     GalleryModalImageProps, 
     GallerySelectedImageProps 
-} from "Props/Components/GalleryProps"
+} from "../SiteGalleryProps"
 // TOOLS
 import { IfStatement } from "Tools/FunctionTools"
 
@@ -27,7 +27,7 @@ export const GallerySelectedImage = (props: GallerySelectedImageProps) => {
     const { image, width } = props
 
     return (
-        <div className={`w-${width}`}>
+        <div className={`w-${width} `}>
             <GalleryImage 
                 image={image}
                 title="selected_image"

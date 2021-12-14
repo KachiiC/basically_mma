@@ -9,15 +9,15 @@
 
 .site-tab-link {
     background-color: black;
-    border-right: 1px solid rgb(206, 206, 206);
-    border-radius: 10px 10px 0px 0px;
+    border-right: 1px solid white;
     color: white;
     text-transform: uppercase;
     font-weight: 800;
-    padding: 15px 5px;
+    padding: 15px;
     font-size: 15px;
-    min-width: 220px;
+    min-width: 200px;
     user-select: none;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .site-tab-link:last-child {
@@ -25,22 +25,13 @@
 }
 
 .site-tab-content {
-    color: black;
-    text-align: left;
-    padding: 0px 20px;
-    height: 400px;
+    /* color: white; */
+    padding: 20px;
+    min-height: 350px;
     overflow-y: scroll;
-    border: 1px solid rgb(206, 206, 206)
 }
 
 .site-tab-rows::-webkit-scrollbar,
 .site-tab-content::-webkit-scrollbar {
     display: none;
-}
-
-@media screen and (max-width: 1080px) {
-    .site-tab-link {
-        font-size: 10px;
-        min-width: 175px;
-    }
 }

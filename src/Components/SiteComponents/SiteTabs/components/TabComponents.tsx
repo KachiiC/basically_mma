@@ -3,7 +3,7 @@ import {
     TabContentProps, 
     TabLinkProps, 
     TabLinkRowProps 
-} from "Props/Components/TabProps"
+} from "../SiteTabsProps"
 
 
 export const TabLink = (props: TabLinkProps) => {
@@ -34,6 +34,7 @@ export const TabLinksRow = (props: TabLinkRowProps) => {
             click={() => setFunction(data.indexOf(tab))}
         />
     )
+    
 
     return (
         <div className="site-tab-rows">
@@ -43,7 +44,7 @@ export const TabLinksRow = (props: TabLinkRowProps) => {
 }
 
 export const TabContent = (props: TabContentProps) => (
-    <div className="site-tab-content">
+    <div className="site-tab-content site-border">
         {props.content}
     </div> 
 )

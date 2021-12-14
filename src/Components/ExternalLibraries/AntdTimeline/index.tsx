@@ -1,12 +1,11 @@
-import MediaQuery from 'react-responsive'
+import MediaQuery from "react-responsive"
 // COMPONENTS
-import { Timeline } from 'antd'
+import { Timeline } from "antd"
 // CSS
-import 'antd/dist/antd.css'
-import './AntdTimeline.css'
+import "antd/dist/antd.css"
+import "./AntdTimeline.css"
 // PROPS
-import { AntdTimelineProps } from 'Props/Components/AntdProps/AntdTimelineProps'
-
+import { AntdTimelineProps } from "./AntdTimelineProps"
 
 const AntdTimeline = (props: AntdTimelineProps) => {
 
