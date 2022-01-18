@@ -1,0 +1,15 @@
+.main-section {
+    grid-column: span 8;
+    padding: 25px;
+}
+
+.sidebar-section {
+    grid-column: span 4;
+}
+
+@media screen and (max-width: 1080px) {
+    .main-section,
+    .sidebar-section {
+        grid-column: span 12;
+    }
+}

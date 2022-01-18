@@ -1,24 +1,12 @@
 // COMPONENTS
-import SiteArticle from '@components/SiteArticles'
-import { Route } from 'react-router-dom'
+import SiteArticle from "@components/SiteArticles"
 // CSS
-import './Home.css'
+import "./Home.css"
 // DATA
-import { HomeData } from './HomeData'
+import HomeData from "Data/Main/Hidden/HomeData"
 
 const Home = (
-    <SiteArticle 
-        link_type="local" 
-        data={HomeData} 
-    />
-)
-
-export const HomeRoute = (
-    <Route key="home" 
-        path="/"
-    >
-        {Home}
-    </Route>
+    <SiteArticle data={HomeData} link_type={"local"} />
 )
 
 export default Home

@@ -1,8 +1,8 @@
 // COMPONENTS
+import { WeightClassesData, WeightCutProConsData } from "@data/Advanced/WeightClassesData"
 import AntdTable from "@libraries/AntdTable"
-import ProsConsList from "@page_components/ProsConsList/"
+import ProsConsList from "Components/PageComponents/ProsConsList/"
 // DATA
-import { WeightClassesData, WeightCutProConsData } from "@data/Advanced/Pages/WeightClasses"
 
 export const WeightClassTables = <AntdTable data={WeightClassesData} />
 

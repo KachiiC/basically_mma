@@ -1,36 +1,29 @@
+export interface footerHeadingProps {
+    heading?: string
+}
+
 export interface footerCopyrightProps {
     name: string
     year: string | number 
 }
 
-export interface FooterLogoProps { 
-    title: string; 
-    link: string; 
+export interface footerSectionDataProps { 
+    external_link?: string
+    icon?: string
+    link?: string
+    span?: number
+    title: string
 }
 
-export interface FooterLogoSectionProps {
-    data: FooterLogoProps[]
-}
-
-export interface FooterLinkProps {
-    external_link?: string; 
-    link?: string; 
-    title: string; 
-    span: number
-}
-
-export interface FooterLinksSectionProps {
-    data: { 
-        external_link: string; 
-        link: string; 
-        title: string 
-    }[]
+export interface footerSectionProps { 
+    data: footerSectionDataProps[]
+    type?: string | undefined
 }
 
 export interface SiteFooterProps {
-    links: any[]
-    logos: FooterLogoProps[]
-    heading: string
+    heading: string | undefined
+    links_data: footerSectionDataProps[]
+    logo_data: footerSectionDataProps[]
     name: string ;
     year: string | number
 }

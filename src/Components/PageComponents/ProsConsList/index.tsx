@@ -3,7 +3,7 @@ import './ProsConsList.css'
 // PROPS
 import { ProsConsListProps } from './ProsConsListProps'
 // TOOLS
-import { FilterTool } from "Tools/ObjectDataTools"
+import { FilterTool } from "Tools/FilterTools"
 import { RenderLogic } from "Tools/FunctionTools"
 import { TitleLogic } from 'Tools/StringTools'
 

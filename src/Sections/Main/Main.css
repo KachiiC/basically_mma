@@ -1,6 +1,14 @@
 main {
-    text-align: center;
-    min-height: 80vh;
     background: white;
-    padding-top: 66px;
+    min-height: 80vh;
+    padding-top: 73px;
+    text-align: center;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;  
+    -ms-overflow-style: none;
+}
+
+main::-webkit-scrollbar {
+    display: none;
 }

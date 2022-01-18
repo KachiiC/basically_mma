@@ -1,7 +1,7 @@
 // COMPONENTS
 import AntdTimeline from "@libraries/AntdTimeline"
 // DATA
-import HistoryOfMMAData from "@data/Basics/Pages/HistoryOfMMA"
+import HistoryOfMMAData from "@data/Basics/HistoryOfMMAData"
 
 const HistoryOfMMA = (
     <>

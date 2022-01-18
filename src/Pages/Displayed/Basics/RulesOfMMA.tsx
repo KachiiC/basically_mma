@@ -1,7 +1,7 @@
 // COMPONENTS
 import SiteTabs from "@components/SiteTabs"
+import { RulesOfMMAData } from "@data/Basics/RulesOfMMAData"
 // DATA
-import RulesOfMMAData from "@data/Basics/Pages/RulesOfMMA"
 
 const RulesOfMMA = (
     <>
@@ -29,6 +29,6 @@ const RulesOfMMA = (
         </p>
         <SiteTabs data={RulesOfMMAData} width={100}/>
     </>
-)   
+) 
 
 export default RulesOfMMA

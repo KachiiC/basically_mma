@@ -1,45 +1,20 @@
 // CSS
-
+import MediaQuery from "react-responsive"
 // PROPS
-import { footerCopyrightProps, FooterLinkProps } from "../SiteFooterProps"
-import { stringDataProps } from 'Props/PropsTemplates'
+import { 
+    footerCopyrightProps,
+    footerHeadingProps,
+    footerSectionDataProps
+} from "../SiteFooterProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 import SiteIcon from "Tools/SiteIcon"
 import { SiteLink } from "Tools/LinkTools"
 import { StringJoin } from "Tools/StringTools"
 
-export const FooterCopyRight = (props: footerCopyrightProps) => (
-    <div className="footer-copyright">
-        &copy; <i>Designed by {props.name} {props.year}</i>
-    </div>
-)
+export const FooterHeading = (props: footerHeadingProps) => RenderLogic(<h3>{props.heading}</h3>, "")
 
-export const FooterHeading = (props: {heading?: string}) => RenderLogic(<h3>{props.heading}</h3>, "")
-
-export const FooterLink = (props: FooterLinkProps) => {
-
-    const {
-        external_link,
-        link,
-        title,
-        span
-    } = props
-
-    return (
-        <div className={`site-col-${span} footer-link`}
-            key={title}
-        >
-            <SiteLink
-                link={`${RenderLogic(external_link, `/${link}`)}`}
-                type={external_link ? "external" : "local"}
-                placeholder={StringJoin(title, "_", "")} 
-            />
-        </div>
-    )
-}
-
-export const FooterLogos = (props: stringDataProps) => {
+export const FooterLogos = (props: footerSectionDataProps) => {
 
     const { icon, link } = props
 
@@ -61,3 +36,36 @@ export const FooterLogos = (props: stringDataProps) => {
     )
 }
 
+export const FooterLinks = (props: footerSectionDataProps) => {
+
+    const { external_link, link, span, title } = props
+
+    const FooterLink = (props: { input: any }) => (
+        <div className={`site-col-${props.input} footer-link`}
+            key={title}
+        >
+            <SiteLink
+                link={`${RenderLogic(external_link, `/${link}`)}`}
+                type={external_link ? "external" : "local"}
+                placeholder={StringJoin(title, "_", "")} 
+            />
+        </div>
+    )
+
+    return (
+        <>
+            <MediaQuery minWidth={1000}>
+                <FooterLink input={1} />
+            </MediaQuery>
+            <MediaQuery maxWidth={1000}>
+                <FooterLink input={span} />
+            </MediaQuery>
+        </>
+    )
+}
+
+export const FooterCopyRight = (props: footerCopyrightProps) => (
+    <div className="footer-copyright">
+        &copy; <i>Designed by {props.name} {props.year}</i>
+    </div>
+)

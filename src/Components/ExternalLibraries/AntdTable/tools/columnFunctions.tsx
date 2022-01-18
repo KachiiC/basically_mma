@@ -1,6 +1,10 @@
 // PROPS
 import { AntdTableColumnProps } from "../AntdTableProps"
-import { intDataProps, objectData, stringDataProps } from "Props/PropsTemplates"
+import {
+    intDataProps,
+    objectData,
+    stringDataProps
+} from "Props/PropsTemplates"
 // TOOLS
 import { ObjKeys } from "Tools/ObjectDataTools"
 import { StringJoin } from "Tools/StringTools"
@@ -17,9 +21,9 @@ export const antdColumns = (data: objectData[]) => {
             (a: intDataProps, b: intDataProps) => a[key] - b[key]
 
         return {
-            title: StringJoin(key, "_", " "),
             dataIndex: key,
-            sorter: sortLogic
+            sorter: sortLogic,
+            title: StringJoin(key, "_", " ")
         } 
     })
 }

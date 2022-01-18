@@ -1,14 +1,13 @@
-
 const path = require("path");
 
 module.exports = {
   webpack: {
     alias: {
       "@components": path.resolve(__dirname, "src/Components/SiteComponents/"),
-      "@data": path.resolve(__dirname, "src/Data/Pages/Displayed/"),
-      "@page_components": path.resolve(__dirname, "src/Components/PageComponents/"),
-      "@pages": path.resolve(__dirname, "src/Pages/Displayed/"),
+      "@data": path.resolve(__dirname, "src/Data/Main/Displayed/"),
+      "@filter": path.resolve(__dirname, "src/Components/FilterComponents/"),
       "@libraries": path.resolve(__dirname, "src/Components/ExternalLibraries/"),
+      "@pages": path.resolve(__dirname, "src/Pages/Displayed/"),
     }
   }
 }

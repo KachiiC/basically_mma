@@ -6,17 +6,17 @@
         "@components/*": [
           "Components/SiteComponents/*"
         ],
+        "@data/*": [
+          "Data/Main/Displayed/*"
+        ],
+        "@filter/*": [
+          "Components/FilterComponents/*"
+        ],
         "@libraries/*": [
           "Components/ExternalLibraries/*"
         ],
-        "@data/*": [
-          "Data/Pages/Displayed/*"
-        ],
         "@pages/*": [
           "Pages/Displayed/*"
-        ],
-        "@page_components/*": [
-          "Components/PageComponents/*"
         ]
       }
     }

@@ -10,14 +10,14 @@
 .site-tab-link {
     background-color: black;
     border-right: 1px solid white;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 800;
-    padding: 15px;
-    font-size: 15px;
-    min-width: 200px;
-    user-select: none;
     border-radius: 10px 10px 0px 0px;
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    min-width: 200px;
+    padding: 15px;
+    text-transform: uppercase;
+    user-select: none;
 }
 
 .site-tab-link:last-child {
@@ -25,10 +25,9 @@
 }
 
 .site-tab-content {
-    /* color: white; */
-    padding: 20px;
     min-height: 350px;
     overflow-y: scroll;
+    padding: 20px;
 }
 
 .site-tab-rows::-webkit-scrollbar,

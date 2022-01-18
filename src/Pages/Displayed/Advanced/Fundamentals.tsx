@@ -1,7 +1,7 @@
 // COMPONENT
 import SiteTabs from "@components/SiteTabs"
 // DATA
-import FundamentalsData from "@data/Advanced/Pages/Fundamentals"
+import { FundamentalsData } from "@data/Advanced/FundamentalsData"
 
 const Fundamentals = (
     <>
@@ -19,7 +19,7 @@ const Fundamentals = (
         </p>
         <p>
             Fighters transitioning from another martial art will have a general understanding 
-            of some of the fundamentals. Let’s take a boxer transitioning to MMA as an example, 
+            of some of the fundamentals. Let's take a boxer transitioning to MMA as an example, 
             a well trained boxer would probably have a good understanding of how to strike, the 
             level of endurance and nutirition needed to train. This would in theory give them a 
             distinct advantage over an absolute beginner. However, a boxer will have habits such 

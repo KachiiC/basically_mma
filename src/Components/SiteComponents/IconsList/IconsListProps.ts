@@ -1,6 +1,6 @@
 export interface IconDataProps {
+    name: string
     type?: string
-    skill: string
 }
 
 export interface IconsListProps {

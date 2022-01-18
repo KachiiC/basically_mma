@@ -1,4 +1,9 @@
-import { intDataProps, objectData, stringDataProps } from "Props/PropsTemplates"
+import { 
+    intDataProps, 
+    objectData, 
+    stringDataProps 
+} from "Props/PropsTemplates"
+
 
 export interface AntdTableColumnProps {
     dataIndex: string
@@ -14,4 +19,5 @@ export interface AntdTableProps {
     default_sort?: string
     pagination?: boolean
     title?: string
+    width?: string | number
 }

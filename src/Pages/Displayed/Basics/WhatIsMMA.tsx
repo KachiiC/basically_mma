@@ -21,7 +21,7 @@ const WhatIsMMA = (
         <h4>Here is a brief explaination!</h4>
         <YoutubePlayer 
             id={`LNySNc76NNU`} 
-            width="90%" 
+            width="100%" 
         />
         <h4>The Sport today</h4>
         <p>

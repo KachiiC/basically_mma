@@ -1,14 +1,14 @@
 // COMPONENTS
-import SidebarRecommendation from "./components/SidebarRecommendations"
+import SidebarHeader from "./components/SidebarHeader"
+import { SidebarRecommendation } from "./components/SidebarVideos"
 // CSS
-import './Sidebar.css'
+import "./Sidebar.css"
 
-const Sidebar = () => {
-    return (
-        <div className="w-100">
-            <SidebarRecommendation />
-        </div>
-    )
-}
+const Sidebar = (
+    <div className="w-90">
+        {SidebarHeader}
+        <SidebarRecommendation />
+    </div>
+)
 
 export default Sidebar

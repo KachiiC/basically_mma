@@ -1,5 +1,5 @@
 // COMPONENTS
-import { FooterLinksSection, FooterLogoSection } from "./components/FooterSection"
+import FooterSection from "./components/FooterSection"
 import { FooterHeading, FooterCopyRight } from "./components/FooterItems"
 // CSS 
 import "./SiteFooter.css"
@@ -10,8 +10,8 @@ const SiteFooter = (props: SiteFooterProps) => {
 
     const {
         heading,
-        links,
-        logos,
+        links_data,
+        logo_data,
         name,
         year
     } = props
@@ -21,11 +21,13 @@ const SiteFooter = (props: SiteFooterProps) => {
             <FooterHeading 
                 heading={heading} 
             />
-            <FooterLogoSection 
-                data={logos} 
+            <FooterSection 
+                data={logo_data} 
+                type="logos"
             />
-            <FooterLinksSection 
-                data={links} 
+            <FooterSection 
+                data={links_data} 
+                type="links"
             />
             <FooterCopyRight 
                 name={name}

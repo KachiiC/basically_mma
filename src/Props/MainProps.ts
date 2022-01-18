@@ -1,15 +1,13 @@
 export interface subMenuProps {
-    content?: JSX.Element
+    content?: string | JSX.Element
     external_link?: string
-    header?: string 
-    link?: string
     title: string
+    link?: string
 }
 
 export interface pageDataProps {
-    content?: JSX.Element
+    content?: string | JSX.Element | undefined
     external_link?: string
-    header?: string
     link?: string
     sub_menu?: subMenuProps[]
     title: string

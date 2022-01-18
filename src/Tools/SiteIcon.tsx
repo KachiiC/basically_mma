@@ -17,7 +17,7 @@ import {
     faTiktok, 
     faTwitter, 
     faYoutube 
-} from "@fortawesome/free-brands-svg-icons";
+} from "@fortawesome/free-brands-svg-icons"
 import { 
     faAt,
     faBars, 
@@ -37,7 +37,6 @@ import {
 import { SiteIconProps } from "Props/Tools/ToolProps"
 // TOOLS
 import { RenderLogic } from "./FunctionTools"
-
 
 // Returns icon based on type, size and color
 const SiteIcon = (props: SiteIconProps) => {

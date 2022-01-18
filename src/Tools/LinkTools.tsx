@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 // PROPS
 import { SiteLinkProps } from "Props/Tools/ToolProps"
-import { StringJoin } from "./StringTools"
 
 // A site Link for local and external
 export const SiteLink = (props: SiteLinkProps) => {
@@ -22,11 +21,4 @@ export const SiteLink = (props: SiteLinkProps) => {
         </Link>
 
     return LinkLogic
-}
-
-export const linkCreate = (input: string) => {
-    if (input.length > 1) {
-        return StringJoin(input, " ", "-")
-    }
-    return input
 }
